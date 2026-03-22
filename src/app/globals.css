@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-arena-50 text-arena-900 font-sans;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .btn-primary {
+    @apply bg-terracotta-500 hover:bg-terracotta-600 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200 shadow-lg shadow-terracotta-500/25 hover:shadow-terracotta-500/40 active:scale-[0.98];
+  }
+  .btn-secondary {
+    @apply bg-azul-700 hover:bg-azul-800 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200;
+  }
+  .btn-outline {
+    @apply border-2 border-terracotta-500 text-terracotta-600 hover:bg-terracotta-500 hover:text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200;
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden;
+  }
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold;
+  }
+  .gradient-hero {
+    background: linear-gradient(135deg, #e96424 0%, #da4b1a 40%, #1d3ad7 100%);
+  }
+  .gradient-hero-overlay {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 100%);
+  }
+}
+
+/* Leaflet overrides */
+.leaflet-container {
+  @apply rounded-2xl z-0;
+  font-family: inherit !important;
+}
+
+.leaflet-popup-content-wrapper {
+  @apply rounded-xl shadow-lg;
+}
+
+.leaflet-popup-content {
+  @apply m-0 p-3;
+}

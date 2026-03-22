@@ -1,0 +1,649 @@
+[
+  {
+    "id": "cdmx-cancun",
+    "slug": "cdmx-a-cancun",
+    "originId": "cdmx",
+    "destinationId": "cancun",
+    "options": [
+      {
+        "id": "cdmx-cancun-flight",
+        "mode": "flight",
+        "provider": {
+          "es": "Aeroméxico, Volaris, VivaAerobus",
+          "en": "Aeroméxico, Volaris, VivaAerobus"
+        },
+        "duration": {
+          "minMinutes": 135,
+          "maxMinutes": 165,
+          "label": {
+            "es": "2h 15min - 2h 45min",
+            "en": "2h 15min - 2h 45min"
+          }
+        },
+        "priceRange": { "min": 1200, "max": 3500, "currency": "MXN" },
+        "guideId": "cdmx-cancun-flight-guide",
+        "frequency": {
+          "es": "Más de 30 vuelos diarios entre todas las aerolíneas",
+          "en": "Over 30 daily flights across all airlines"
+        },
+        "recommended": true
+      },
+      {
+        "id": "cdmx-cancun-bus",
+        "mode": "bus",
+        "provider": {
+          "es": "ADO GL / ADO Platino",
+          "en": "ADO GL / ADO Platino"
+        },
+        "duration": {
+          "minMinutes": 1440,
+          "maxMinutes": 1560,
+          "label": {
+            "es": "24 - 26 horas",
+            "en": "24 - 26 hours"
+          }
+        },
+        "priceRange": { "min": 1500, "max": 2200, "currency": "MXN" },
+        "guideId": "cdmx-cancun-bus-guide",
+        "frequency": {
+          "es": "3-4 salidas diarias desde TAPO, principalmente nocturnas",
+          "en": "3-4 daily departures from TAPO, mostly overnight"
+        },
+        "recommended": false
+      },
+      {
+        "id": "cdmx-cancun-car",
+        "mode": "car",
+        "provider": {
+          "es": "Vehículo propio / Auto rentado",
+          "en": "Own vehicle / Rental car"
+        },
+        "duration": {
+          "minMinutes": 1080,
+          "maxMinutes": 1200,
+          "label": {
+            "es": "18 - 20 horas",
+            "en": "18 - 20 hours"
+          }
+        },
+        "priceRange": { "min": 3000, "max": 4500, "currency": "MXN" },
+        "guideId": "cdmx-cancun-car-guide",
+        "frequency": {
+          "es": "Ruta por autopista vía Villahermosa y Campeche",
+          "en": "Highway route via Villahermosa and Campeche"
+        },
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "id": "cdmx-oaxaca",
+    "slug": "cdmx-a-oaxaca",
+    "originId": "cdmx",
+    "destinationId": "oaxaca",
+    "options": [
+      {
+        "id": "cdmx-oaxaca-flight",
+        "mode": "flight",
+        "provider": {
+          "es": "Aeroméxico, Volaris, VivaAerobus",
+          "en": "Aeroméxico, Volaris, VivaAerobus"
+        },
+        "duration": {
+          "minMinutes": 55,
+          "maxMinutes": 65,
+          "label": {
+            "es": "Aprox. 1 hora",
+            "en": "Approx. 1 hour"
+          }
+        },
+        "priceRange": { "min": 900, "max": 2500, "currency": "MXN" },
+        "guideId": "cdmx-oaxaca-flight-guide",
+        "frequency": {
+          "es": "8-12 vuelos diarios entre todas las aerolíneas",
+          "en": "8-12 daily flights across all airlines"
+        },
+        "recommended": false
+      },
+      {
+        "id": "cdmx-oaxaca-bus",
+        "mode": "bus",
+        "provider": {
+          "es": "ADO GL / AU",
+          "en": "ADO GL / AU"
+        },
+        "duration": {
+          "minMinutes": 360,
+          "maxMinutes": 420,
+          "label": {
+            "es": "6 - 7 horas",
+            "en": "6 - 7 hours"
+          }
+        },
+        "priceRange": { "min": 600, "max": 950, "currency": "MXN" },
+        "guideId": "cdmx-oaxaca-bus-guide",
+        "frequency": {
+          "es": "Salidas cada 1-2 horas desde TAPO, desde las 6:00 hasta las 23:30",
+          "en": "Departures every 1-2 hours from TAPO, from 6:00 AM to 11:30 PM"
+        },
+        "recommended": true
+      },
+      {
+        "id": "cdmx-oaxaca-car",
+        "mode": "car",
+        "provider": {
+          "es": "Vehículo propio / Auto rentado",
+          "en": "Own vehicle / Rental car"
+        },
+        "duration": {
+          "minMinutes": 300,
+          "maxMinutes": 360,
+          "label": {
+            "es": "5 - 6 horas",
+            "en": "5 - 6 hours"
+          }
+        },
+        "priceRange": { "min": 1200, "max": 1800, "currency": "MXN" },
+        "guideId": "cdmx-oaxaca-car-guide",
+        "frequency": {
+          "es": "Autopista 135D vía Cuacnopalan-Oaxaca (cuota ~$600)",
+          "en": "Highway 135D via Cuacnopalan-Oaxaca (tolls ~$600)"
+        },
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "id": "cdmx-guadalajara",
+    "slug": "cdmx-a-guadalajara",
+    "originId": "cdmx",
+    "destinationId": "guadalajara",
+    "options": [
+      {
+        "id": "cdmx-guadalajara-flight",
+        "mode": "flight",
+        "provider": {
+          "es": "Aeroméxico, Volaris, VivaAerobus",
+          "en": "Aeroméxico, Volaris, VivaAerobus"
+        },
+        "duration": {
+          "minMinutes": 70,
+          "maxMinutes": 80,
+          "label": {
+            "es": "1h 10min - 1h 20min",
+            "en": "1h 10min - 1h 20min"
+          }
+        },
+        "priceRange": { "min": 800, "max": 2200, "currency": "MXN" },
+        "guideId": "cdmx-guadalajara-flight-guide",
+        "frequency": {
+          "es": "Más de 25 vuelos diarios, es una de las rutas más operadas del país",
+          "en": "Over 25 daily flights, one of the country's busiest routes"
+        },
+        "recommended": false
+      },
+      {
+        "id": "cdmx-guadalajara-bus",
+        "mode": "bus",
+        "provider": {
+          "es": "ETN / Primera Plus",
+          "en": "ETN / Primera Plus"
+        },
+        "duration": {
+          "minMinutes": 360,
+          "maxMinutes": 420,
+          "label": {
+            "es": "6 - 7 horas",
+            "en": "6 - 7 hours"
+          }
+        },
+        "priceRange": { "min": 700, "max": 1100, "currency": "MXN" },
+        "guideId": "cdmx-guadalajara-bus-guide",
+        "frequency": {
+          "es": "Salidas cada 30-60 minutos desde Terminal Norte, todo el día",
+          "en": "Departures every 30-60 minutes from Terminal Norte, all day"
+        },
+        "recommended": true
+      },
+      {
+        "id": "cdmx-guadalajara-car",
+        "mode": "car",
+        "provider": {
+          "es": "Vehículo propio / Auto rentado",
+          "en": "Own vehicle / Rental car"
+        },
+        "duration": {
+          "minMinutes": 330,
+          "maxMinutes": 390,
+          "label": {
+            "es": "5.5 - 6.5 horas",
+            "en": "5.5 - 6.5 hours"
+          }
+        },
+        "priceRange": { "min": 1500, "max": 2200, "currency": "MXN" },
+        "guideId": "cdmx-guadalajara-car-guide",
+        "frequency": {
+          "es": "Autopista México-Guadalajara (57D/45D) vía Querétaro e Irapuato",
+          "en": "Mexico-Guadalajara Highway (57D/45D) via Querétaro and Irapuato"
+        },
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "id": "cdmx-puerto-vallarta",
+    "slug": "cdmx-a-puerto-vallarta",
+    "originId": "cdmx",
+    "destinationId": "puerto-vallarta",
+    "options": [
+      {
+        "id": "cdmx-puerto-vallarta-flight",
+        "mode": "flight",
+        "provider": {
+          "es": "Volaris, VivaAerobus, Aeroméxico",
+          "en": "Volaris, VivaAerobus, Aeroméxico"
+        },
+        "duration": {
+          "minMinutes": 85,
+          "maxMinutes": 95,
+          "label": {
+            "es": "1h 25min - 1h 35min",
+            "en": "1h 25min - 1h 35min"
+          }
+        },
+        "priceRange": { "min": 1000, "max": 3000, "currency": "MXN" },
+        "guideId": "cdmx-puerto-vallarta-flight-guide",
+        "frequency": {
+          "es": "10-15 vuelos diarios entre todas las aerolíneas",
+          "en": "10-15 daily flights across all airlines"
+        },
+        "recommended": true
+      },
+      {
+        "id": "cdmx-puerto-vallarta-bus",
+        "mode": "bus",
+        "provider": {
+          "es": "ETN / Primera Plus",
+          "en": "ETN / Primera Plus"
+        },
+        "duration": {
+          "minMinutes": 600,
+          "maxMinutes": 720,
+          "label": {
+            "es": "10 - 12 horas",
+            "en": "10 - 12 hours"
+          }
+        },
+        "priceRange": { "min": 1000, "max": 1500, "currency": "MXN" },
+        "guideId": "cdmx-puerto-vallarta-bus-guide",
+        "frequency": {
+          "es": "3-5 salidas diarias desde Terminal Norte, varias nocturnas",
+          "en": "3-5 daily departures from Terminal Norte, several overnight"
+        },
+        "recommended": false
+      },
+      {
+        "id": "cdmx-puerto-vallarta-car",
+        "mode": "car",
+        "provider": {
+          "es": "Vehículo propio / Auto rentado",
+          "en": "Own vehicle / Rental car"
+        },
+        "duration": {
+          "minMinutes": 540,
+          "maxMinutes": 600,
+          "label": {
+            "es": "9 - 10 horas",
+            "en": "9 - 10 hours"
+          }
+        },
+        "priceRange": { "min": 2000, "max": 3000, "currency": "MXN" },
+        "guideId": "cdmx-puerto-vallarta-car-guide",
+        "frequency": {
+          "es": "Autopista vía Guadalajara, luego carretera a la costa por Tepic o Chapala",
+          "en": "Highway via Guadalajara, then coastal road via Tepic or Chapala"
+        },
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "id": "cdmx-los-cabos",
+    "slug": "cdmx-a-los-cabos",
+    "originId": "cdmx",
+    "destinationId": "los-cabos",
+    "options": [
+      {
+        "id": "cdmx-los-cabos-flight",
+        "mode": "flight",
+        "provider": {
+          "es": "Aeroméxico, Volaris, VivaAerobus",
+          "en": "Aeroméxico, Volaris, VivaAerobus"
+        },
+        "duration": {
+          "minMinutes": 145,
+          "maxMinutes": 155,
+          "label": {
+            "es": "Aprox. 2h 30min",
+            "en": "Approx. 2h 30min"
+          }
+        },
+        "priceRange": { "min": 1500, "max": 4000, "currency": "MXN" },
+        "guideId": "cdmx-los-cabos-flight-guide",
+        "frequency": {
+          "es": "10-14 vuelos diarios entre todas las aerolíneas",
+          "en": "10-14 daily flights across all airlines"
+        },
+        "recommended": true
+      },
+      {
+        "id": "cdmx-los-cabos-car",
+        "mode": "car",
+        "provider": {
+          "es": "Vehículo propio / Auto rentado",
+          "en": "Own vehicle / Rental car"
+        },
+        "duration": {
+          "minMinutes": 1200,
+          "maxMinutes": 1440,
+          "label": {
+            "es": "20+ horas (incluye ferry La Paz-Mazatlán o rodear por Sonora)",
+            "en": "20+ hours (includes La Paz-Mazatlán ferry or detour via Sonora)"
+          }
+        },
+        "priceRange": { "min": 4000, "max": 6000, "currency": "MXN" },
+        "guideId": "cdmx-los-cabos-car-guide",
+        "frequency": {
+          "es": "Ruta larga vía Mazatlán + ferry Baja Ferries a La Paz, o vía Nogales/Tijuana por la península",
+          "en": "Long route via Mazatlán + Baja Ferries ferry to La Paz, or via Nogales/Tijuana down the peninsula"
+        },
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "id": "cdmx-merida",
+    "slug": "cdmx-a-merida",
+    "originId": "cdmx",
+    "destinationId": "merida",
+    "options": [
+      {
+        "id": "cdmx-merida-flight",
+        "mode": "flight",
+        "provider": {
+          "es": "Volaris, VivaAerobus, Aeroméxico",
+          "en": "Volaris, VivaAerobus, Aeroméxico"
+        },
+        "duration": {
+          "minMinutes": 115,
+          "maxMinutes": 125,
+          "label": {
+            "es": "Aprox. 2 horas",
+            "en": "Approx. 2 hours"
+          }
+        },
+        "priceRange": { "min": 1100, "max": 3000, "currency": "MXN" },
+        "guideId": "cdmx-merida-flight-guide",
+        "frequency": {
+          "es": "12-18 vuelos diarios entre todas las aerolíneas",
+          "en": "12-18 daily flights across all airlines"
+        },
+        "recommended": true
+      },
+      {
+        "id": "cdmx-merida-bus",
+        "mode": "bus",
+        "provider": {
+          "es": "ADO GL / ADO Platino",
+          "en": "ADO GL / ADO Platino"
+        },
+        "duration": {
+          "minMinutes": 1080,
+          "maxMinutes": 1200,
+          "label": {
+            "es": "18 - 20 horas",
+            "en": "18 - 20 hours"
+          }
+        },
+        "priceRange": { "min": 1400, "max": 2000, "currency": "MXN" },
+        "guideId": "cdmx-merida-bus-guide",
+        "frequency": {
+          "es": "4-6 salidas diarias desde TAPO, la mayoría nocturnas",
+          "en": "4-6 daily departures from TAPO, mostly overnight"
+        },
+        "recommended": false
+      },
+      {
+        "id": "cdmx-merida-car",
+        "mode": "car",
+        "provider": {
+          "es": "Vehículo propio / Auto rentado",
+          "en": "Own vehicle / Rental car"
+        },
+        "duration": {
+          "minMinutes": 840,
+          "maxMinutes": 960,
+          "label": {
+            "es": "14 - 16 horas",
+            "en": "14 - 16 hours"
+          }
+        },
+        "priceRange": { "min": 3000, "max": 4500, "currency": "MXN" },
+        "guideId": "cdmx-merida-car-guide",
+        "frequency": {
+          "es": "Autopista vía Puebla, Veracruz, Villahermosa y Campeche",
+          "en": "Highway via Puebla, Veracruz, Villahermosa, and Campeche"
+        },
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "id": "cdmx-san-miguel-de-allende",
+    "slug": "cdmx-a-san-miguel-de-allende",
+    "originId": "cdmx",
+    "destinationId": "san-miguel-de-allende",
+    "options": [
+      {
+        "id": "cdmx-san-miguel-bus",
+        "mode": "bus",
+        "provider": {
+          "es": "ETN / Primera Plus / Flecha Amarilla",
+          "en": "ETN / Primera Plus / Flecha Amarilla"
+        },
+        "duration": {
+          "minMinutes": 210,
+          "maxMinutes": 240,
+          "label": {
+            "es": "3.5 - 4 horas",
+            "en": "3.5 - 4 hours"
+          }
+        },
+        "priceRange": { "min": 500, "max": 800, "currency": "MXN" },
+        "guideId": "cdmx-san-miguel-bus-guide",
+        "frequency": {
+          "es": "6-10 salidas diarias desde Terminal Norte (ETN y Primera Plus)",
+          "en": "6-10 daily departures from Terminal Norte (ETN and Primera Plus)"
+        },
+        "recommended": true
+      },
+      {
+        "id": "cdmx-san-miguel-car",
+        "mode": "car",
+        "provider": {
+          "es": "Vehículo propio / Auto rentado",
+          "en": "Own vehicle / Rental car"
+        },
+        "duration": {
+          "minMinutes": 180,
+          "maxMinutes": 210,
+          "label": {
+            "es": "3 - 3.5 horas",
+            "en": "3 - 3.5 hours"
+          }
+        },
+        "priceRange": { "min": 800, "max": 1200, "currency": "MXN" },
+        "guideId": "cdmx-san-miguel-car-guide",
+        "frequency": {
+          "es": "Autopista 57D México-Querétaro, luego desviación a San Miguel por la 111",
+          "en": "Highway 57D México-Querétaro, then detour to San Miguel via route 111"
+        },
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "id": "cdmx-guanajuato",
+    "slug": "cdmx-a-guanajuato",
+    "originId": "cdmx",
+    "destinationId": "guanajuato",
+    "options": [
+      {
+        "id": "cdmx-guanajuato-flight",
+        "mode": "flight",
+        "provider": {
+          "es": "Aeroméxico, Volaris (Aeropuerto del Bajío, León/Guanajuato)",
+          "en": "Aeroméxico, Volaris (Bajío Airport, León/Guanajuato)"
+        },
+        "duration": {
+          "minMinutes": 55,
+          "maxMinutes": 65,
+          "label": {
+            "es": "Aprox. 1 hora",
+            "en": "Approx. 1 hour"
+          }
+        },
+        "priceRange": { "min": 900, "max": 2200, "currency": "MXN" },
+        "guideId": "cdmx-guanajuato-flight-guide",
+        "frequency": {
+          "es": "5-8 vuelos diarios al Aeropuerto del Bajío (BJX), a 30 min de Guanajuato",
+          "en": "5-8 daily flights to Bajío Airport (BJX), 30 min from Guanajuato"
+        },
+        "recommended": false
+      },
+      {
+        "id": "cdmx-guanajuato-bus",
+        "mode": "bus",
+        "provider": {
+          "es": "ETN / Primera Plus",
+          "en": "ETN / Primera Plus"
+        },
+        "duration": {
+          "minMinutes": 270,
+          "maxMinutes": 300,
+          "label": {
+            "es": "4.5 - 5 horas",
+            "en": "4.5 - 5 hours"
+          }
+        },
+        "priceRange": { "min": 600, "max": 900, "currency": "MXN" },
+        "guideId": "cdmx-guanajuato-bus-guide",
+        "frequency": {
+          "es": "8-12 salidas diarias desde Terminal Norte, servicio directo ETN y Primera Plus",
+          "en": "8-12 daily departures from Terminal Norte, direct ETN and Primera Plus service"
+        },
+        "recommended": true
+      },
+      {
+        "id": "cdmx-guanajuato-car",
+        "mode": "car",
+        "provider": {
+          "es": "Vehículo propio / Auto rentado",
+          "en": "Own vehicle / Rental car"
+        },
+        "duration": {
+          "minMinutes": 240,
+          "maxMinutes": 270,
+          "label": {
+            "es": "4 - 4.5 horas",
+            "en": "4 - 4.5 hours"
+          }
+        },
+        "priceRange": { "min": 900, "max": 1400, "currency": "MXN" },
+        "guideId": "cdmx-guanajuato-car-guide",
+        "frequency": {
+          "es": "Autopista 57D vía Querétaro, luego 45D hacia Silao y desviación a Guanajuato",
+          "en": "Highway 57D via Querétaro, then 45D toward Silao and detour to Guanajuato"
+        },
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "id": "cdmx-monterrey",
+    "slug": "cdmx-a-monterrey",
+    "originId": "cdmx",
+    "destinationId": "monterrey",
+    "options": [
+      {
+        "id": "cdmx-monterrey-flight",
+        "mode": "flight",
+        "provider": {
+          "es": "Aeroméxico, Volaris, VivaAerobus",
+          "en": "Aeroméxico, Volaris, VivaAerobus"
+        },
+        "duration": {
+          "minMinutes": 85,
+          "maxMinutes": 95,
+          "label": {
+            "es": "1h 25min - 1h 35min",
+            "en": "1h 25min - 1h 35min"
+          }
+        },
+        "priceRange": { "min": 900, "max": 2500, "currency": "MXN" },
+        "guideId": "cdmx-monterrey-flight-guide",
+        "frequency": {
+          "es": "Más de 30 vuelos diarios, ruta de altísima demanda",
+          "en": "Over 30 daily flights, extremely high-demand route"
+        },
+        "recommended": true
+      },
+      {
+        "id": "cdmx-monterrey-bus",
+        "mode": "bus",
+        "provider": {
+          "es": "ETN / Omnibus de México",
+          "en": "ETN / Omnibus de México"
+        },
+        "duration": {
+          "minMinutes": 600,
+          "maxMinutes": 720,
+          "label": {
+            "es": "10 - 12 horas",
+            "en": "10 - 12 hours"
+          }
+        },
+        "priceRange": { "min": 1000, "max": 1500, "currency": "MXN" },
+        "guideId": "cdmx-monterrey-bus-guide",
+        "frequency": {
+          "es": "6-10 salidas diarias desde Terminal Norte, muchas nocturnas",
+          "en": "6-10 daily departures from Terminal Norte, many overnight"
+        },
+        "recommended": false
+      },
+      {
+        "id": "cdmx-monterrey-car",
+        "mode": "car",
+        "provider": {
+          "es": "Vehículo propio / Auto rentado",
+          "en": "Own vehicle / Rental car"
+        },
+        "duration": {
+          "minMinutes": 540,
+          "maxMinutes": 600,
+          "label": {
+            "es": "9 - 10 horas",
+            "en": "9 - 10 hours"
+          }
+        },
+        "priceRange": { "min": 2500, "max": 3500, "currency": "MXN" },
+        "guideId": "cdmx-monterrey-car-guide",
+        "frequency": {
+          "es": "Autopista 57D norte vía San Luis Potosí y Saltillo",
+          "en": "Highway 57D north via San Luis Potosí and Saltillo"
+        },
+        "recommended": false
+      }
+    ]
+  }
+]

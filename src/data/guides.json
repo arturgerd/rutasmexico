@@ -1,0 +1,1015 @@
+[
+  {
+    "id": "cdmx-cancun-flight-guide",
+    "routeOptionId": "cdmx-cancun-flight",
+    "title": {
+      "es": "Cómo volar de CDMX a Cancún: Guía completa paso a paso",
+      "en": "How to fly from Mexico City to Cancún: Complete step-by-step guide"
+    },
+    "overview": {
+      "es": "El vuelo de la Ciudad de México a Cancún es la forma más rápida y popular de llegar al Caribe mexicano. Con más de 30 vuelos diarios operados por Aeroméxico, Volaris y VivaAerobus, encontrarás opciones desde $1,200 MXN si reservas con anticipación. El vuelo dura entre 2 horas 15 minutos y 2 horas 45 minutos. Esta guía te lleva desde tu casa hasta la Zona Hotelera de Cancún.",
+      "en": "Flying from Mexico City to Cancún is the fastest and most popular way to reach the Mexican Caribbean. With over 30 daily flights operated by Aeroméxico, Volaris, and VivaAerobus, you'll find options starting at $1,200 MXN if you book in advance. The flight takes between 2 hours 15 minutes and 2 hours 45 minutes. This guide takes you from your home all the way to Cancún's Hotel Zone."
+    },
+    "steps": [
+      {
+        "order": 1,
+        "type": "departure_preparation",
+        "title": {
+          "es": "Llegar al Aeropuerto Internacional de la Ciudad de México (AICM)",
+          "en": "Getting to Mexico City International Airport (AICM)"
+        },
+        "description": {
+          "es": "El AICM tiene dos terminales: la Terminal 1 (T1) es usada por Volaris y VivaAerobus, mientras que la Terminal 2 (T2) es la base de Aeroméxico. Verifica tu terminal antes de salir porque están separadas y el traslado entre ellas toma 15-20 minutos en el Aerotrén gratuito. Lo ideal es llegar 2 horas antes de tu vuelo. Si vienes del Centro Histórico o la Zona Rosa, un Uber cuesta entre $80 y $150 MXN (20-40 minutos dependiendo del tráfico). La opción más barata es el Metro: toma la Línea 5 (amarilla) hasta la estación Terminal Aérea, que te deja en la puerta de la T1. Si vas a la T2, camina al Aerotrén dentro de T1. Ojo: el metro no es práctico con maletas grandes en hora pico (7-9 AM y 6-8 PM).",
+          "en": "The AICM has two terminals: Terminal 1 (T1) is used by Volaris and VivaAerobus, while Terminal 2 (T2) is Aeroméxico's hub. Check your terminal before leaving because they're separate and transferring between them takes 15-20 minutes on the free Aerotrén. Ideally arrive 2 hours before your flight. From the Historic Center or Zona Rosa, an Uber costs $80-$150 MXN (20-40 minutes depending on traffic). The cheapest option is the Metro: take Line 5 (yellow) to Terminal Aérea station, which drops you at T1's door. For T2, walk to the Aerotrén inside T1. Note: the metro isn't practical with large luggage during rush hour (7-9 AM and 6-8 PM)."
+        },
+        "location": {
+          "name": {
+            "es": "Aeropuerto Internacional de la Ciudad de México (AICM)",
+            "en": "Mexico City International Airport (AICM)"
+          },
+          "address": {
+            "es": "Av. Capitán Carlos León S/N, Peñón de los Baños, Venustiano Carranza, 15620 Ciudad de México",
+            "en": "Av. Capitán Carlos León S/N, Peñón de los Baños, Venustiano Carranza, 15620 Mexico City"
+          },
+          "coordinates": { "lat": 19.4361, "lng": -99.0719 }
+        },
+        "duration": {
+          "minutes": 120,
+          "label": {
+            "es": "Llegar 2 horas antes del vuelo",
+            "en": "Arrive 2 hours before flight"
+          }
+        },
+        "cost": { "min": 5, "max": 150, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "Si tomas Uber, pon como destino 'AICM Terminal 1' o 'AICM Terminal 2' para que el GPS te lleve a la terminal correcta.",
+            "en": "If taking Uber, set the destination as 'AICM Terminal 1' or 'AICM Terminal 2' so the GPS takes you to the right terminal."
+          },
+          {
+            "es": "En la T1, las filas de seguridad pueden ser largas. Lleva tu equipaje de mano dentro de las medidas (55x40x25 cm) para evitar cargos extra en aerolíneas de bajo costo.",
+            "en": "At T1, security lines can be long. Keep your carry-on within size limits (55x40x25 cm) to avoid surcharges on low-cost airlines."
+          },
+          {
+            "es": "Si vuelas con Volaris o VivaAerobus, haz check-in online 24h antes. Si no, te cobran $300-500 por hacerlo en el aeropuerto.",
+            "en": "If flying Volaris or VivaAerobus, check in online 24 hours before. Otherwise, they charge $300-500 to do it at the airport."
+          }
+        ]
+      },
+      {
+        "order": 2,
+        "type": "transit_segment",
+        "title": {
+          "es": "El vuelo CDMX - Cancún",
+          "en": "The CDMX - Cancún flight"
+        },
+        "description": {
+          "es": "El vuelo directo dura entre 2 horas 15 minutos y 2 horas 45 minutos. Aeroméxico opera desde la T2 y suele incluir una maleta documentada en su tarifa básica. Volaris y VivaAerobus vuelan desde la T1 con tarifas desde $1,200 MXN solo con equipaje de mano; la maleta documentada cuesta $400-700 extra si la agregas en línea, o más en el aeropuerto. Si buscas el mejor precio, compra con 3-4 semanas de anticipación entre martes y jueves. Los vuelos de las 6:00 AM suelen ser los más baratos. La ruta tiene buena frecuencia: hay salidas casi cada hora desde las 5:30 AM hasta las 9:00 PM.",
+          "en": "The direct flight takes 2 hours 15 minutes to 2 hours 45 minutes. Aeroméxico operates from T2 and usually includes one checked bag in the basic fare. Volaris and VivaAerobus fly from T1 with fares starting at $1,200 MXN with carry-on only; a checked bag costs $400-700 extra if added online, or more at the airport. For the best price, buy 3-4 weeks in advance on Tuesday through Thursday. The 6:00 AM flights are usually cheapest. The route has great frequency: departures nearly every hour from 5:30 AM to 9:00 PM."
+        },
+        "duration": {
+          "minutes": 150,
+          "label": {
+            "es": "2h 15min - 2h 45min de vuelo",
+            "en": "2h 15min - 2h 45min flight"
+          }
+        },
+        "cost": { "min": 1200, "max": 3500, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "Pide asiento del lado izquierdo del avión (ventanilla A) para ver la costa del Caribe al llegar. La vista es espectacular.",
+            "en": "Request a left-side window seat (window A) to see the Caribbean coast on arrival. The view is spectacular."
+          },
+          {
+            "es": "Volaris y VivaAerobus no incluyen comida ni bebida. Compra algo antes de abordar o lleva snacks.",
+            "en": "Volaris and VivaAerobus don't include food or drinks. Buy something before boarding or bring snacks."
+          }
+        ]
+      },
+      {
+        "order": 3,
+        "type": "arrival_navigation",
+        "title": {
+          "es": "Llegada al Aeropuerto Internacional de Cancún",
+          "en": "Arrival at Cancún International Airport"
+        },
+        "description": {
+          "es": "El Aeropuerto de Cancún tiene 4 terminales. Los vuelos nacionales de aerolíneas de bajo costo (Volaris, VivaAerobus) llegan a la Terminal 4 o Terminal 2; Aeroméxico generalmente llega a la Terminal 2. Al salir de la zona de equipaje, vas a encontrar un mar de vendedores de tiempo compartido y taxis. Ignóralos amablemente y busca las siguientes opciones: el autobús ADO al centro de Cancún ($98 MXN, sale cada 30 min) te deja en la terminal de autobuses del centro; los taxis oficiales del aeropuerto cuestan $500-800 MXN a la Zona Hotelera (precio fijo, paga en el mostrador antes de salir); los shuttles compartidos cuestan $150-250 por persona. Si pediste transfer desde tu hotel, busca a tu nombre en las pantallas de los representantes después de aduanas.",
+          "en": "Cancún Airport has 4 terminals. Domestic low-cost flights (Volaris, VivaAerobus) arrive at Terminal 4 or Terminal 2; Aeroméxico usually arrives at Terminal 2. Leaving the baggage area, you'll encounter a sea of timeshare sellers and taxi drivers. Politely ignore them and look for these options: the ADO bus to downtown Cancún ($98 MXN, departs every 30 min) drops you at the downtown bus terminal; official airport taxis cost $500-800 MXN to the Hotel Zone (fixed price, pay at the counter before exiting); shared shuttles cost $150-250 per person. If you arranged a hotel transfer, look for your name on the representatives' screens after customs."
+        },
+        "location": {
+          "name": {
+            "es": "Aeropuerto Internacional de Cancún (CUN)",
+            "en": "Cancún International Airport (CUN)"
+          },
+          "address": {
+            "es": "Carretera Cancún-Chetumal Km 22, 77565 Cancún, Quintana Roo",
+            "en": "Carretera Cancún-Chetumal Km 22, 77565 Cancún, Quintana Roo"
+          },
+          "coordinates": { "lat": 21.0365, "lng": -86.8771 }
+        },
+        "duration": {
+          "minutes": 30,
+          "label": {
+            "es": "30 min para salir del aeropuerto",
+            "en": "30 min to exit the airport"
+          }
+        },
+        "tips": [
+          {
+            "es": "NO aceptes los taxis que te abordan dentro del aeropuerto. Ve directo al mostrador de taxis oficiales para pagar la tarifa fija.",
+            "en": "DO NOT accept taxis that approach you inside the airport. Go directly to the official taxi counter to pay the fixed fare."
+          },
+          {
+            "es": "Si solo llevas equipaje de mano, puedes salir más rápido evitando la banda de equipaje. Ve directo a la salida.",
+            "en": "If you only have carry-on luggage, you can exit faster by skipping the baggage carousel. Head straight to the exit."
+          },
+          {
+            "es": "La parada del ADO está señalizada afuera de cada terminal. Es la opción más económica si vas al centro de Cancún.",
+            "en": "The ADO stop is signposted outside each terminal. It's the most economical option if you're going to downtown Cancún."
+          }
+        ]
+      },
+      {
+        "order": 4,
+        "type": "local_transport",
+        "title": {
+          "es": "Llegar a la Zona Hotelera de Cancún",
+          "en": "Getting to Cancún's Hotel Zone"
+        },
+        "description": {
+          "es": "La Zona Hotelera es una franja de 25 km en forma de '7' rodeada por la Laguna Nichupté y el mar Caribe. Desde el aeropuerto, el taxi oficial es la opción más directa (30-45 min, $500-800 MXN). Si tomaste el ADO al centro, desde la Terminal de Autobuses ADO en Av. Tulum puedes tomar el autobús urbano R-1 (Ruta 1) que recorre toda la Zona Hotelera por solo $12 MXN. El R-1 pasa cada 5-10 minutos y opera de 5:00 AM a 12:00 AM. También puedes tomar un Uber desde el centro ($80-200 MXN a la Zona Hotelera). Dentro de la Zona Hotelera, el mismo R-1 te mueve entre todos los hoteles, centros comerciales y playas públicas.",
+          "en": "The Hotel Zone is a 25 km strip shaped like a '7' surrounded by Nichupté Lagoon and the Caribbean Sea. From the airport, the official taxi is the most direct option (30-45 min, $500-800 MXN). If you took the ADO to downtown, from the ADO Bus Terminal on Av. Tulum you can take the R-1 (Route 1) urban bus which runs the entire Hotel Zone for just $12 MXN. The R-1 passes every 5-10 minutes and operates from 5:00 AM to 12:00 AM. You can also take an Uber from downtown ($80-200 MXN to the Hotel Zone). Within the Hotel Zone, the same R-1 bus moves you between all hotels, malls, and public beaches."
+        },
+        "location": {
+          "name": {
+            "es": "Zona Hotelera de Cancún",
+            "en": "Cancún Hotel Zone"
+          },
+          "address": {
+            "es": "Blvd. Kukulcán, Zona Hotelera, 77500 Cancún, Quintana Roo",
+            "en": "Blvd. Kukulcán, Zona Hotelera, 77500 Cancún, Quintana Roo"
+          },
+          "coordinates": { "lat": 21.1326, "lng": -86.7516 }
+        },
+        "duration": {
+          "minutes": 40,
+          "label": {
+            "es": "30 - 50 min desde el aeropuerto",
+            "en": "30 - 50 min from the airport"
+          }
+        },
+        "cost": { "min": 12, "max": 800, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "El autobús R-1 es seguro y lo usan tanto locales como turistas. Paga en efectivo al subir (lleva cambio).",
+            "en": "The R-1 bus is safe and used by both locals and tourists. Pay cash when boarding (bring change)."
+          },
+          {
+            "es": "Si llegas de noche (después de las 12 AM), el R-1 ya no opera. Tu única opción será taxi o Uber.",
+            "en": "If you arrive at night (after 12 AM), the R-1 is no longer running. Your only option will be a taxi or Uber."
+          },
+          {
+            "es": "Descarga la app de Uber antes de llegar. Funciona bien en Cancún y los precios son menores que los taxis del aeropuerto.",
+            "en": "Download the Uber app before arriving. It works well in Cancún and prices are lower than airport taxis."
+          }
+        ]
+      }
+    ],
+    "tips": [
+      {
+        "es": "Reserva tu vuelo con al menos 3 semanas de anticipación para obtener los mejores precios. Las tarifas más bajas están entre martes y jueves.",
+        "en": "Book your flight at least 3 weeks in advance for the best prices. The lowest fares are Tuesday through Thursday."
+      },
+      {
+        "es": "La temporada alta en Cancún es de diciembre a abril y Semana Santa. Los vuelos pueden costar el doble. La mejor relación precio-clima es mayo-junio y noviembre.",
+        "en": "Peak season in Cancún is December through April and Easter week. Flights can cost double. The best price-weather ratio is May-June and November."
+      },
+      {
+        "es": "Lleva bloqueador solar biodegradable si vas a nadar en cenotes o el mar. En Quintana Roo es obligatorio para proteger los arrecifes.",
+        "en": "Bring biodegradable sunscreen if you'll be swimming in cenotes or the sea. It's mandatory in Quintana Roo to protect the reefs."
+      },
+      {
+        "es": "Si planeas visitar Tulum, Playa del Carmen o Isla Mujeres, es más barato moverte en autobús ADO o colectivo desde el centro de Cancún que contratar tours.",
+        "en": "If you plan to visit Tulum, Playa del Carmen, or Isla Mujeres, it's cheaper to take ADO buses or colectivos from downtown Cancún than to book tours."
+      }
+    ]
+  },
+  {
+    "id": "cdmx-oaxaca-bus-guide",
+    "routeOptionId": "cdmx-oaxaca-bus",
+    "title": {
+      "es": "Cómo ir de CDMX a Oaxaca en autobús ADO: Guía completa",
+      "en": "How to get from Mexico City to Oaxaca by ADO bus: Complete guide"
+    },
+    "overview": {
+      "es": "El autobús es la forma más popular de viajar de la Ciudad de México a Oaxaca. El trayecto dura entre 6 y 7 horas por la autopista a través de la Sierra Mixteca, con paisajes espectaculares. ADO y AU operan servicios de primera clase y clase GL (lujo) desde la terminal TAPO. Los boletos van de $600 a $950 MXN dependiendo del tipo de servicio. Esta guía te explica todo lo que necesitas saber para un viaje cómodo.",
+      "en": "The bus is the most popular way to travel from Mexico City to Oaxaca. The journey takes 6 to 7 hours along the highway through the Sierra Mixteca, with spectacular scenery. ADO and AU operate first class and GL (luxury) services from the TAPO terminal. Tickets range from $600 to $950 MXN depending on the service type. This guide explains everything you need for a comfortable trip."
+    },
+    "steps": [
+      {
+        "order": 1,
+        "type": "departure_preparation",
+        "title": {
+          "es": "Llegar a la Terminal de Autobuses de Pasajeros de Oriente (TAPO)",
+          "en": "Getting to the Eastern Bus Terminal (TAPO)"
+        },
+        "description": {
+          "es": "La TAPO es la terminal de autobuses para destinos al sur y sureste de México, incluyendo Oaxaca, Puebla, Veracruz y la Península de Yucatán. Está ubicada junto a la estación del Metro San Lázaro, que es servida por la Línea 1 (rosa, la más céntrica) y la Línea B (verde/gris). Desde el metro, sigue las señales 'TAPO' por el pasillo subterráneo que conecta directamente. Si vienes en Uber desde la Condesa, Roma o el Centro, el viaje cuesta $60-120 MXN y toma 15-30 minutos. Llega con al menos 30 minutos de anticipación para comprar tu boleto si no lo compraste en línea, o 15 minutos si ya lo tienes. La terminal tiene baños ($10 MXN), tiendas OXXO, restaurantes y cajeros automáticos.",
+          "en": "TAPO is the bus terminal for destinations south and southeast of Mexico City, including Oaxaca, Puebla, Veracruz, and the Yucatán Peninsula. It's located next to the San Lázaro Metro station, served by Line 1 (pink, the most central line) and Line B (green/gray). From the metro, follow the 'TAPO' signs through the underground passageway that connects directly. If coming by Uber from Condesa, Roma, or downtown, the ride costs $60-120 MXN and takes 15-30 minutes. Arrive at least 30 minutes early to buy your ticket if you didn't purchase it online, or 15 minutes if you already have it. The terminal has restrooms ($10 MXN), OXXO stores, restaurants, and ATMs."
+        },
+        "location": {
+          "name": {
+            "es": "Terminal de Autobuses de Pasajeros de Oriente (TAPO)",
+            "en": "Eastern Bus Terminal (TAPO)"
+          },
+          "address": {
+            "es": "Calzada Ignacio Zaragoza 200, Venustiano Carranza, 15530 Ciudad de México",
+            "en": "Calzada Ignacio Zaragoza 200, Venustiano Carranza, 15530 Mexico City"
+          },
+          "coordinates": { "lat": 19.4226, "lng": -99.0964 }
+        },
+        "duration": {
+          "minutes": 30,
+          "label": {
+            "es": "Llegar 30 min antes de la salida",
+            "en": "Arrive 30 min before departure"
+          }
+        },
+        "cost": { "min": 5, "max": 120, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "La estación de Metro San Lázaro puede estar muy llena en hora pico. Si llevas maleta grande, mejor toma Uber directamente a TAPO.",
+            "en": "San Lázaro Metro station can be very crowded during rush hour. If you have a large suitcase, it's better to take an Uber directly to TAPO."
+          },
+          {
+            "es": "La TAPO tiene WiFi gratuito, pero es lento. Descarga películas o series antes de llegar para el viaje.",
+            "en": "TAPO has free WiFi, but it's slow. Download movies or shows before arriving for the trip."
+          }
+        ]
+      },
+      {
+        "order": 2,
+        "type": "departure_preparation",
+        "title": {
+          "es": "Comprar tu boleto ADO o AU para Oaxaca",
+          "en": "Buying your ADO or AU ticket to Oaxaca"
+        },
+        "description": {
+          "es": "Tienes varias opciones de servicio: ADO Primera Clase ($600-700 MXN) es cómodo con asientos reclinables, aire acondicionado y una película; ADO GL ($750-850 MXN) tiene asientos más amplios tipo ejecutivo, enchufes para cargar tu celular y menos pasajeros; ADO Platino ($850-950 MXN) es el más lujoso con asientos que se reclinan casi completamente, pantallas individuales y servicio de snack. También está AU ($550-650 MXN), que es un poco más básico pero perfectamente funcional. Puedes comprar en la página web de ADO (ado.com.mx) o en la app, lo cual te ahorra hacer fila. Si compras en taquilla, lleva efectivo o tarjeta. Las salidas más populares son las de 7:00 AM, 11:00 PM (nocturno) y 23:30. En temporada alta (Guelaguetza en julio, Día de Muertos, Semana Santa) compra con días de anticipación.",
+          "en": "You have several service options: ADO First Class ($600-700 MXN) is comfortable with reclining seats, AC, and a movie; ADO GL ($750-850 MXN) has wider executive-style seats, charging outlets, and fewer passengers; ADO Platino ($850-950 MXN) is the most luxurious with near-flat reclining seats, individual screens, and snack service. There's also AU ($550-650 MXN), which is slightly more basic but perfectly functional. You can buy on the ADO website (ado.com.mx) or the app, which saves you from waiting in line. If buying at the counter, bring cash or a card. The most popular departures are 7:00 AM, 11:00 PM (overnight), and 11:30 PM. During peak season (Guelaguetza in July, Day of the Dead, Easter) buy days in advance."
+        },
+        "cost": { "min": 600, "max": 950, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "El servicio ADO GL vale la pena por los enchufes y el espacio extra. La diferencia de $150 se siente mucho en 6-7 horas de viaje.",
+            "en": "The ADO GL service is worth it for the outlets and extra space. The $150 difference really shows on a 6-7 hour trip."
+          },
+          {
+            "es": "Si viajas de noche, el Platino es excelente porque puedes dormir en un asiento casi horizontal y llegas descansado.",
+            "en": "If traveling overnight, Platino is excellent because you can sleep in a near-flat seat and arrive well-rested."
+          },
+          {
+            "es": "Compra en línea y recibe tu boleto electrónico. Solo muestra el QR en tu celular al abordar, sin necesidad de imprimir.",
+            "en": "Buy online and get your e-ticket. Just show the QR code on your phone when boarding, no need to print."
+          }
+        ]
+      },
+      {
+        "order": 3,
+        "type": "transit_segment",
+        "title": {
+          "es": "El viaje en autobús a Oaxaca",
+          "en": "The bus journey to Oaxaca"
+        },
+        "description": {
+          "es": "El autobús sale de TAPO y toma la autopista México-Puebla (150D), pasando por Puebla sin detenerse. Luego continúa por la autopista Cuacnopalan-Oaxaca (135D), una carretera moderna que cruza la Sierra Mixteca con túneles y puentes espectaculares. Antes de esta autopista (inaugurada en 2018), el viaje tomaba 8-9 horas por caminos sinuosos. Ahora son 6-7 horas fluidas. La mayoría de los autobuses hacen una parada técnica de 15-20 minutos en Nochixtlán, donde hay baños y una pequeña tienda. El paisaje cambia dramáticamente: pasas de la meseta central a montañas cubiertas de neblina y luego a los valles verdes de Oaxaca. El autobús tiene baño a bordo (básico pero funcional), aire acondicionado y, en ADO GL/Platino, enchufes USB y de corriente.",
+          "en": "The bus leaves TAPO and takes the México-Puebla highway (150D), passing through Puebla without stopping. It then continues on the Cuacnopalan-Oaxaca highway (135D), a modern road crossing the Sierra Mixteca with spectacular tunnels and bridges. Before this highway (opened in 2018), the trip took 8-9 hours on winding roads. Now it's a smooth 6-7 hours. Most buses make a 15-20 minute rest stop in Nochixtlán, where there are restrooms and a small shop. The scenery changes dramatically: you go from the central plateau to fog-covered mountains and then to Oaxaca's green valleys. The bus has an onboard restroom (basic but functional), AC, and in ADO GL/Platino, USB and power outlets."
+        },
+        "duration": {
+          "minutes": 390,
+          "label": {
+            "es": "6 - 7 horas de viaje",
+            "en": "6 - 7 hour journey"
+          }
+        },
+        "tips": [
+          {
+            "es": "Lleva una chamarra o suéter. El aire acondicionado del autobús suele estar muy fuerte y hace frío.",
+            "en": "Bring a jacket or sweater. The bus AC is usually set very cold."
+          },
+          {
+            "es": "Compra comida y agua antes de subir. En la parada de Nochixtlán hay opciones limitadas y caras.",
+            "en": "Buy food and water before boarding. The Nochixtlán stop has limited and expensive options."
+          },
+          {
+            "es": "Si te mareas en carretera, toma una pastilla de Dramamine 30 minutos antes del viaje. La ruta tiene algunas curvas en la sierra.",
+            "en": "If you get carsick, take a Dramamine pill 30 minutes before the trip. The route has some curves in the mountains."
+          }
+        ]
+      },
+      {
+        "order": 4,
+        "type": "arrival_navigation",
+        "title": {
+          "es": "Llegada a la Terminal ADO de Oaxaca",
+          "en": "Arrival at the ADO Terminal in Oaxaca"
+        },
+        "description": {
+          "es": "La Terminal ADO de Oaxaca está ubicada en la Calzada Héroes de Chapultepec, a unos 10-15 minutos caminando del Zócalo (centro histórico). Al bajar del autobús, recoge tu equipaje de la bodega lateral (muestra tu boleto como comprobante). La terminal es pequeña pero tiene baños, un OXXO y servicio de taxis. Si quieres caminar al centro, sal de la terminal y camina hacia el norte por Héroes de Chapultepec; llegarás al mercado de Abastos primero y luego al centro. Si prefieres taxi, los de sitio en la terminal cobran $50-70 MXN al centro; un Uber cuesta $35-50 MXN. La zona es segura de día y de noche, pero si llegas muy tarde, toma taxi.",
+          "en": "The ADO Terminal in Oaxaca is on Calzada Héroes de Chapultepec, about 10-15 minutes walking from the Zócalo (historic center). When you get off the bus, collect your luggage from the side cargo hold (show your ticket as proof). The terminal is small but has restrooms, an OXXO, and taxi service. To walk to the center, exit the terminal and walk north on Héroes de Chapultepec; you'll reach the Abastos market first and then downtown. If you prefer a taxi, the terminal taxi stand charges $50-70 MXN to the center; an Uber costs $35-50 MXN. The area is safe day and night, but if you arrive very late, take a taxi."
+        },
+        "location": {
+          "name": {
+            "es": "Terminal ADO Oaxaca",
+            "en": "ADO Terminal Oaxaca"
+          },
+          "address": {
+            "es": "Calzada Héroes de Chapultepec 1036, Centro, 68000 Oaxaca de Juárez, Oaxaca",
+            "en": "Calzada Héroes de Chapultepec 1036, Centro, 68000 Oaxaca de Juárez, Oaxaca"
+          },
+          "coordinates": { "lat": 17.0656, "lng": -96.7197 }
+        },
+        "duration": {
+          "minutes": 15,
+          "label": {
+            "es": "15 min para recoger equipaje y salir",
+            "en": "15 min to collect luggage and exit"
+          }
+        },
+        "tips": [
+          {
+            "es": "Guarda tu boleto hasta recoger tu maleta. Los cargadores de la bodega te lo pedirán como comprobante.",
+            "en": "Keep your ticket until you collect your bag. The cargo hold attendants will ask for it as proof."
+          },
+          {
+            "es": "Si llegas con hambre, el Mercado de Abastos está a 5 minutos caminando y tiene comida oaxaqueña auténtica y barata.",
+            "en": "If you arrive hungry, the Mercado de Abastos is a 5-minute walk and has authentic, inexpensive Oaxacan food."
+          }
+        ]
+      },
+      {
+        "order": 5,
+        "type": "local_transport",
+        "title": {
+          "es": "Cómo moverse en Oaxaca",
+          "en": "Getting around Oaxaca"
+        },
+        "description": {
+          "es": "El centro histórico de Oaxaca es compacto y se recorre fácilmente a pie. Desde la terminal ADO hasta el Zócalo son unos 10-15 minutos caminando. Para moverte dentro del centro, todo está a distancia caminable: el Templo de Santo Domingo, el mercado 20 de Noviembre, la calle Macedonio Alcalá (peatonal) y los restaurantes del centro. Para ir a Monte Albán, la zona arqueológica más importante, puedes tomar un colectivo desde el Hotel Rivera del Ángel en Calle Mina 518 ($70-80 MXN ida y vuelta, salen cada 30 min de 8:30 AM a 3:30 PM) o un taxi ($150-200 MXN solo ida). Para Hierve el Agua o Mitla, busca los colectivos en la Central de Abastos que salen a las comunidades de los Valles Centrales ($40-60 MXN). También puedes rentar bicicleta en el centro por $150-200 MXN el día.",
+          "en": "Oaxaca's historic center is compact and easily walkable. From the ADO terminal to the Zócalo is about 10-15 minutes on foot. Within the center, everything is within walking distance: the Templo de Santo Domingo, the 20 de Noviembre market, Macedonio Alcalá street (pedestrian), and the downtown restaurants. To visit Monte Albán, the most important archaeological site, you can take a colectivo from the Hotel Rivera del Ángel on Calle Mina 518 ($70-80 MXN round trip, departing every 30 min from 8:30 AM to 3:30 PM) or a taxi ($150-200 MXN one way). For Hierve el Agua or Mitla, look for colectivos at the Central de Abastos that leave for the Central Valleys communities ($40-60 MXN). You can also rent a bicycle downtown for $150-200 MXN per day."
+        },
+        "location": {
+          "name": {
+            "es": "Centro Histórico de Oaxaca",
+            "en": "Oaxaca Historic Center"
+          },
+          "address": {
+            "es": "Zócalo, Centro, 68000 Oaxaca de Juárez, Oaxaca",
+            "en": "Zócalo, Centro, 68000 Oaxaca de Juárez, Oaxaca"
+          },
+          "coordinates": { "lat": 17.0609, "lng": -96.7253 }
+        },
+        "cost": { "min": 0, "max": 200, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "Para Monte Albán, llega temprano (antes de las 10 AM). Después se llena de tours y el sol es muy fuerte.",
+            "en": "For Monte Albán, arrive early (before 10 AM). It gets crowded with tours later and the sun is very strong."
+          },
+          {
+            "es": "Los colectivos a Mitla y Hierve el Agua salen del sector de la Central de Abastos. Pregunta a los locales por la ruta específica, son muy amables.",
+            "en": "Colectivos to Mitla and Hierve el Agua leave from the Central de Abastos area. Ask locals for the specific route, they're very helpful."
+          },
+          {
+            "es": "Uber funciona en Oaxaca pero la cobertura no es tan buena como en CDMX. Para distancias cortas, los taxis de sitio son confiables y baratos.",
+            "en": "Uber works in Oaxaca but coverage isn't as good as in CDMX. For short distances, taxi stands (taxis de sitio) are reliable and cheap."
+          }
+        ]
+      }
+    ],
+    "tips": [
+      {
+        "es": "Oaxaca está a 1,550 metros de altitud. Las noches pueden ser frescas (15-18°C) incluso en verano. Lleva una chamarra ligera.",
+        "en": "Oaxaca is at 1,550 meters altitude. Nights can be cool (15-18°C / 59-64°F) even in summer. Bring a light jacket."
+      },
+      {
+        "es": "La mejor época para visitar es octubre-noviembre (Día de Muertos) y julio (Guelaguetza), pero los boletos de autobús se agotan rápido. Reserva con semanas de anticipación.",
+        "en": "The best time to visit is October-November (Day of the Dead) and July (Guelaguetza), but bus tickets sell out fast. Book weeks in advance."
+      },
+      {
+        "es": "No te vayas de Oaxaca sin probar el mole negro, las tlayudas, el mezcal y el chocolate oaxaqueño en el Mercado 20 de Noviembre.",
+        "en": "Don't leave Oaxaca without trying mole negro, tlayudas, mezcal, and Oaxacan chocolate at the 20 de Noviembre Market."
+      },
+      {
+        "es": "Si compras mezcal, elige productores artesanales certificados. Hay muchas mezcalerías en la calle de Macedonio Alcalá donde puedes probar antes de comprar.",
+        "en": "If buying mezcal, choose certified artisanal producers. There are many mezcalerías on Macedonio Alcalá street where you can taste before buying."
+      }
+    ]
+  },
+  {
+    "id": "cdmx-guadalajara-bus-guide",
+    "routeOptionId": "cdmx-guadalajara-bus",
+    "title": {
+      "es": "Cómo ir de CDMX a Guadalajara en autobús ETN o Primera Plus: Guía completa",
+      "en": "How to get from Mexico City to Guadalajara by ETN or Primera Plus bus: Complete guide"
+    },
+    "overview": {
+      "es": "El autobús de lujo es una de las mejores formas de viajar de la Ciudad de México a Guadalajara. El trayecto dura entre 6 y 7 horas por la autopista del Bajío, con paradas en Querétaro e Irapuato. ETN y Primera Plus ofrecen autobuses de primera clase y lujo con asientos amplios, WiFi y enchufes. Los boletos van de $700 a $1,100 MXN. Con salidas cada 30-60 minutos durante todo el día, siempre encontrarás un horario conveniente.",
+      "en": "The luxury bus is one of the best ways to travel from Mexico City to Guadalajara. The journey takes 6 to 7 hours along the Bajío highway, with stops in Querétaro and Irapuato. ETN and Primera Plus offer first class and luxury buses with spacious seats, WiFi, and power outlets. Tickets range from $700 to $1,100 MXN. With departures every 30-60 minutes throughout the day, you'll always find a convenient schedule."
+    },
+    "steps": [
+      {
+        "order": 1,
+        "type": "departure_preparation",
+        "title": {
+          "es": "Llegar a la Terminal Central de Autobuses del Norte",
+          "en": "Getting to the Northern Central Bus Terminal"
+        },
+        "description": {
+          "es": "La Terminal Norte es la más grande de la Ciudad de México y la de mayor tráfico en el país. Atiende destinos al norte y occidente, incluyendo Guadalajara, Querétaro, San Miguel de Allende, Guanajuato y Monterrey. Está conectada directamente al Metro por la estación Autobuses del Norte (Línea 5, amarilla). Si vienes del centro, toma la Línea 3 (verde olivo) hasta La Raza y haz transbordo a la Línea 5 dirección Politécnico; baja en Autobuses del Norte. En Uber desde la Condesa o Roma cuesta $100-200 MXN (30-50 min). La terminal es enorme con múltiples módulos; ETN y Primera Plus están en el módulo norte (a la derecha al entrar por la entrada principal). Hay muchos restaurantes, tiendas y cajeros dentro de la terminal.",
+          "en": "Terminal Norte is Mexico City's largest bus terminal and the busiest in the country. It serves destinations north and west, including Guadalajara, Querétaro, San Miguel de Allende, Guanajuato, and Monterrey. It's directly connected to the Metro via the Autobuses del Norte station (Line 5, yellow). From downtown, take Line 3 (olive green) to La Raza and transfer to Line 5 toward Politécnico; get off at Autobuses del Norte. An Uber from Condesa or Roma costs $100-200 MXN (30-50 min). The terminal is massive with multiple modules; ETN and Primera Plus are in the north module (to the right when entering through the main entrance). There are many restaurants, shops, and ATMs inside the terminal."
+        },
+        "location": {
+          "name": {
+            "es": "Terminal Central de Autobuses del Norte",
+            "en": "Northern Central Bus Terminal"
+          },
+          "address": {
+            "es": "Av. de los Cien Metros 4907, Magdalena de las Salinas, Gustavo A. Madero, 07760 Ciudad de México",
+            "en": "Av. de los Cien Metros 4907, Magdalena de las Salinas, Gustavo A. Madero, 07760 Mexico City"
+          },
+          "coordinates": { "lat": 19.4848, "lng": -99.1447 }
+        },
+        "duration": {
+          "minutes": 30,
+          "label": {
+            "es": "Llegar 30 min antes de la salida",
+            "en": "Arrive 30 min before departure"
+          }
+        },
+        "cost": { "min": 5, "max": 200, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "La Terminal Norte tiene estacionamiento si alguien te lleva. Cuesta $20 MXN por hora las primeras 3 horas.",
+            "en": "Terminal Norte has parking if someone drops you off. It costs $20 MXN per hour for the first 3 hours."
+          },
+          {
+            "es": "Si llegas con hambre, hay un Sanborns y varias opciones de comida en el área central de la terminal antes de pasar a las salas de abordaje.",
+            "en": "If you arrive hungry, there's a Sanborns and several food options in the central area of the terminal before reaching the boarding gates."
+          }
+        ]
+      },
+      {
+        "order": 2,
+        "type": "departure_preparation",
+        "title": {
+          "es": "Comprar tu boleto ETN o Primera Plus a Guadalajara",
+          "en": "Buying your ETN or Primera Plus ticket to Guadalajara"
+        },
+        "description": {
+          "es": "Para esta ruta tienes dos excelentes opciones. ETN ($800-1,100 MXN) es considerada la mejor línea de autobuses de México: sus autobuses tienen solo 24 asientos (2-1 configuración), mucho espacio para piernas, pantallas individuales, WiFi, enchufes y snacks incluidos. ETN Diamante ($950-1,100 MXN) es su servicio premium con solo 18 asientos y servicio tipo primera clase. Primera Plus ($700-900 MXN) es ligeramente más económica con configuración 2-2 pero también muy cómoda, con enchufes, WiFi y películas. Ambas tienen salidas cada 30-60 minutos. Puedes comprar en sus páginas web (etn.com.mx o primeraplus.com.mx), en la app, o en taquilla. Los asientos se seleccionan al comprar: en ETN, los del lado derecho (fila individual) son los más codiciados.",
+          "en": "For this route you have two excellent options. ETN ($800-1,100 MXN) is considered Mexico's best bus line: their buses have only 24 seats (2-1 configuration), lots of legroom, individual screens, WiFi, outlets, and included snacks. ETN Diamante ($950-1,100 MXN) is their premium service with only 18 seats and first-class-style service. Primera Plus ($700-900 MXN) is slightly cheaper with a 2-2 configuration but also very comfortable, with outlets, WiFi, and movies. Both have departures every 30-60 minutes. You can buy on their websites (etn.com.mx or primeraplus.com.mx), on the app, or at the counter. Seats are selected at purchase: on ETN, the right-side seats (single row) are the most coveted."
+        },
+        "cost": { "min": 700, "max": 1100, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "Si puedes pagar la diferencia, el ETN Diamante es una experiencia increíble. 18 asientos, como ir en clase ejecutiva de avión pero con más espacio.",
+            "en": "If you can afford the difference, ETN Diamante is an incredible experience. 18 seats, like flying business class but with more space."
+          },
+          {
+            "es": "Compra en línea: a veces ETN tiene promociones de 2x1 los martes o descuentos para compras anticipadas.",
+            "en": "Buy online: ETN sometimes has 2-for-1 promotions on Tuesdays or discounts for advance purchases."
+          },
+          {
+            "es": "Si viajas con estudiante ISIC o eres mayor de 60 años (INAPAM), pide tu descuento en taquilla. Puede ser hasta 50%.",
+            "en": "If you have an ISIC student card or are over 60 (INAPAM), ask for your discount at the counter. It can be up to 50%."
+          }
+        ]
+      },
+      {
+        "order": 3,
+        "type": "transit_segment",
+        "title": {
+          "es": "El viaje en autobús a Guadalajara",
+          "en": "The bus journey to Guadalajara"
+        },
+        "description": {
+          "es": "El autobús toma la autopista México-Querétaro (57D), una de las carreteras más transitadas de México. El primer tramo hasta Querétaro (2.5-3 horas) pasa por Tepotzotlán y San Juan del Río. Algunos autobuses hacen una parada en Querétaro (10 min) para recoger pasajeros. Luego continúa por la autopista 45D hacia Irapuato y León, atravesando el Bajío, la región agrícola más fértil de México. El paisaje es de llanuras verdes, campos de cultivo y ciudades medianas. Hay otra parada breve en Irapuato o León. El tramo final de León a Guadalajara (1.5-2 horas) pasa por Lagos de Moreno y Tepatitlán. En total, el viaje toma 6-7 horas. Los autobuses ETN y Primera Plus tienen baño, aire acondicionado, y en los servicios de lujo te dan una cobija y almohada.",
+          "en": "The bus takes the México-Querétaro highway (57D), one of Mexico's busiest roads. The first stretch to Querétaro (2.5-3 hours) passes through Tepotzotlán and San Juan del Río. Some buses stop in Querétaro (10 min) to pick up passengers. It then continues on highway 45D toward Irapuato and León, crossing the Bajío, Mexico's most fertile agricultural region. The landscape is green plains, crop fields, and mid-sized cities. There's another brief stop in Irapuato or León. The final stretch from León to Guadalajara (1.5-2 hours) passes through Lagos de Moreno and Tepatitlán. In total, the trip takes 6-7 hours. ETN and Primera Plus buses have restrooms, AC, and luxury services provide a blanket and pillow."
+        },
+        "duration": {
+          "minutes": 390,
+          "label": {
+            "es": "6 - 7 horas de viaje",
+            "en": "6 - 7 hour journey"
+          }
+        },
+        "tips": [
+          {
+            "es": "El autobús sale puntual. Si no estás en tu asiento a la hora de salida, se va sin ti y no hay reembolso.",
+            "en": "The bus leaves on time. If you're not in your seat at departure time, it leaves without you and there's no refund."
+          },
+          {
+            "es": "Lleva audífonos. Las películas del autobús a veces no son las mejores y el audio es compartido.",
+            "en": "Bring headphones. The bus movies aren't always great and the audio is shared."
+          },
+          {
+            "es": "El WiFi del autobús funciona de manera intermitente. No dependas de él para trabajo. Mejor descarga lo que necesites antes.",
+            "en": "The bus WiFi works intermittently. Don't rely on it for work. Better download what you need beforehand."
+          }
+        ]
+      },
+      {
+        "order": 4,
+        "type": "arrival_navigation",
+        "title": {
+          "es": "Llegada a la Nueva Central Camionera de Guadalajara",
+          "en": "Arrival at Guadalajara's New Central Bus Terminal"
+        },
+        "description": {
+          "es": "La Nueva Central Camionera de Guadalajara está ubicada en Tlaquepaque, al sureste de la ciudad, a unos 25-30 minutos del centro histórico. Es una terminal moderna y grande con 7 módulos. ETN y Primera Plus llegan al Módulo 1 o 2. Al bajar, recoge tu equipaje de la bodega y dirígete a la salida. Opciones para llegar al centro: taxi de sitio ($200-300 MXN al Centro Histórico o Chapultepec), Uber ($120-200 MXN), o el Macrobús. Para el Macrobús, sal de la terminal y camina a la estación Central Camionera de la Línea 3 del Mi Tren (tren ligero, $9.50 MXN) que te lleva hasta el centro en 30-40 minutos. La terminal tiene restaurantes, tiendas y casas de cambio.",
+          "en": "Guadalajara's New Central Bus Terminal is located in Tlaquepaque, southeast of the city, about 25-30 minutes from the historic center. It's a modern, large terminal with 7 modules. ETN and Primera Plus arrive at Module 1 or 2. When you get off, collect your luggage from the cargo hold and head to the exit. Options to reach the center: taxi stand ($200-300 MXN to the Historic Center or Chapultepec), Uber ($120-200 MXN), or the Macrobús. For the Macrobús, exit the terminal and walk to the Central Camionera station of Mi Tren Line 3 (light rail, $9.50 MXN) which takes you to the center in 30-40 minutes. The terminal has restaurants, shops, and currency exchange."
+        },
+        "location": {
+          "name": {
+            "es": "Nueva Central Camionera de Guadalajara",
+            "en": "Guadalajara New Central Bus Terminal"
+          },
+          "address": {
+            "es": "Carretera Libre a Zapotlanejo Km 17.5, 45580 San Pedro Tlaquepaque, Jalisco",
+            "en": "Carretera Libre a Zapotlanejo Km 17.5, 45580 San Pedro Tlaquepaque, Jalisco"
+          },
+          "coordinates": { "lat": 20.6262, "lng": -103.2850 }
+        },
+        "duration": {
+          "minutes": 15,
+          "label": {
+            "es": "15 min para bajar y recoger equipaje",
+            "en": "15 min to get off and collect luggage"
+          }
+        },
+        "tips": [
+          {
+            "es": "El Uber es significativamente más barato que el taxi de sitio aquí. Si tienes datos móviles, úsalo.",
+            "en": "Uber is significantly cheaper than the taxi stand here. If you have mobile data, use it."
+          },
+          {
+            "es": "Si llegas de noche, toma taxi de sitio o Uber. El transporte público no opera después de las 11 PM.",
+            "en": "If arriving at night, take a taxi stand or Uber. Public transport doesn't operate after 11 PM."
+          }
+        ]
+      },
+      {
+        "order": 5,
+        "type": "local_transport",
+        "title": {
+          "es": "Cómo moverse en Guadalajara",
+          "en": "Getting around Guadalajara"
+        },
+        "description": {
+          "es": "Guadalajara tiene un buen sistema de transporte público. El Mi Tren (tren ligero) tiene 3 líneas: la Línea 1 cruza de norte a sur por el centro, la Línea 2 va de oriente a poniente, y la Línea 3 conecta la zona de Zapopan con Tlaquepaque (donde está la central camionera). Un viaje cuesta $9.50 MXN con la tarjeta Mi Movilidad (se compra en las estaciones por $20 MXN). El Macrobús es un sistema BRT (autobús rápido) que corre por la Calzada Independencia, conectando el norte y sur de la ciudad. Para la zona de Chapultepec (la mejor para restaurantes y vida nocturna), toma la Línea 1 del tren hasta la estación Juárez y camina 10 minutos. Los taxis en Guadalajara son seguros; también funcionan Uber y Didi. Para visitar Tlaquepaque (pueblo artesanal), toma la Línea 3 del tren o un Uber ($60-100 MXN desde el centro).",
+          "en": "Guadalajara has a good public transport system. Mi Tren (light rail) has 3 lines: Line 1 crosses north-south through downtown, Line 2 goes east-west, and Line 3 connects Zapopan with Tlaquepaque (where the bus terminal is). A ride costs $9.50 MXN with the Mi Movilidad card (purchased at stations for $20 MXN). The Macrobús is a BRT (bus rapid transit) system running along Calzada Independencia, connecting the north and south of the city. For the Chapultepec area (best for restaurants and nightlife), take train Line 1 to Juárez station and walk 10 minutes. Taxis in Guadalajara are safe; Uber and Didi also work. To visit Tlaquepaque (artisan town), take train Line 3 or an Uber ($60-100 MXN from downtown)."
+        },
+        "location": {
+          "name": {
+            "es": "Centro Histórico de Guadalajara",
+            "en": "Guadalajara Historic Center"
+          },
+          "address": {
+            "es": "Plaza de Armas, Centro, 44100 Guadalajara, Jalisco",
+            "en": "Plaza de Armas, Centro, 44100 Guadalajara, Jalisco"
+          },
+          "coordinates": { "lat": 20.6737, "lng": -103.3443 }
+        },
+        "cost": { "min": 10, "max": 300, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "La tarjeta Mi Movilidad te permite hacer transbordos gratis entre tren y Macrobús por 2 horas. Vale mucho la pena comprarla.",
+            "en": "The Mi Movilidad card allows free transfers between train and Macrobús for 2 hours. It's well worth buying."
+          },
+          {
+            "es": "Para ir a Tequila (pueblo mágico), hay tours desde $500 MXN que incluyen transporte y visita a una destilería. Salen desde el Centro Histórico.",
+            "en": "To visit Tequila (pueblo mágico), there are tours from $500 MXN that include transport and a distillery visit. They leave from the Historic Center."
+          },
+          {
+            "es": "Guadalajara es caliente. Si caminas por el centro, lleva agua, gorra y bloqueador. Los mejores horarios para caminar son las mañanas y después de las 5 PM.",
+            "en": "Guadalajara is hot. If walking downtown, bring water, a hat, and sunscreen. The best walking hours are mornings and after 5 PM."
+          }
+        ]
+      }
+    ],
+    "tips": [
+      {
+        "es": "Guadalajara es la segunda ciudad más grande de México y la cuna del mariachi y el tequila. No te pierdas un espectáculo de mariachi en la Plaza de los Mariachis.",
+        "en": "Guadalajara is Mexico's second-largest city and the birthplace of mariachi and tequila. Don't miss a mariachi performance at the Plaza de los Mariachis."
+      },
+      {
+        "es": "La Zona de Chapultepec es la mejor área para hospedarte si buscas vida nocturna, restaurantes y cafés. Está bien conectada por tren ligero.",
+        "en": "The Chapultepec area is the best neighborhood to stay if you want nightlife, restaurants, and cafés. It's well connected by light rail."
+      },
+      {
+        "es": "Prueba la torta ahogada, la birria y el tejuino. Son platillos emblemáticos de Guadalajara que no encontrarás tan auténticos en ningún otro lugar.",
+        "en": "Try the torta ahogada, birria, and tejuino. They're iconic Guadalajara dishes you won't find as authentic anywhere else."
+      },
+      {
+        "es": "Si viajas en fin de semana, compra tu boleto con anticipación. La ruta CDMX-Guadalajara es de las más demandadas y los autobuses se llenan.",
+        "en": "If traveling on a weekend, buy your ticket in advance. The CDMX-Guadalajara route is one of the busiest and buses fill up."
+      }
+    ]
+  },
+  {
+    "id": "cdmx-cancun-bus-guide",
+    "routeOptionId": "cdmx-cancun-bus",
+    "title": {
+      "es": "Cómo ir de CDMX a Cancún en autobús ADO: Guía completa para el viaje largo",
+      "en": "How to get from Mexico City to Cancún by ADO bus: Complete guide for the long journey"
+    },
+    "overview": {
+      "es": "El viaje en autobús de la Ciudad de México a Cancún es una aventura de 24 a 26 horas que cruza el sureste mexicano pasando por Puebla, Villahermosa, Campeche y Mérida. Aunque es largo, es una opción económica y te permite ver la increíble diversidad de paisajes de México. ADO opera servicios GL y Platino con asientos reclinables, ideal para viajar de noche. Los boletos van de $1,500 a $2,200 MXN. Esta guía te prepara para el viaje completo.",
+      "en": "The bus trip from Mexico City to Cancún is a 24 to 26-hour adventure crossing southeastern Mexico through Puebla, Villahermosa, Campeche, and Mérida. Though long, it's an economical option and lets you see Mexico's incredible landscape diversity. ADO operates GL and Platino services with reclining seats, ideal for overnight travel. Tickets range from $1,500 to $2,200 MXN. This guide prepares you for the complete journey."
+    },
+    "steps": [
+      {
+        "order": 1,
+        "type": "departure_preparation",
+        "title": {
+          "es": "Llegar a la Terminal TAPO",
+          "en": "Getting to the TAPO Terminal"
+        },
+        "description": {
+          "es": "El viaje a Cancún sale de la TAPO (Terminal de Autobuses de Pasajeros de Oriente). Está directamente conectada a la estación de Metro San Lázaro (Línea 1 rosa y Línea B). Sigue las señales 'TAPO' al salir del metro. En Uber desde zonas céntricas cuesta $60-120 MXN. Como este es un viaje muy largo, llega con tiempo extra (45 minutos antes) para comprar comida, agua y lo que necesites. La terminal tiene OXXO, restaurantes, y una farmacia donde puedes comprar Dramamine si te mareas. Asegúrate de cargar completamente tu celular y llevar una batería portátil; 24 horas es mucho tiempo.",
+          "en": "The trip to Cancún departs from TAPO (Terminal de Autobuses de Pasajeros de Oriente). It's directly connected to the San Lázaro Metro station (Line 1 pink and Line B). Follow the 'TAPO' signs when exiting the metro. An Uber from central areas costs $60-120 MXN. Since this is a very long trip, arrive with extra time (45 minutes before) to buy food, water, and whatever you need. The terminal has OXXO, restaurants, and a pharmacy where you can buy Dramamine if you get motion sick. Make sure to fully charge your phone and bring a portable battery; 24 hours is a long time."
+        },
+        "location": {
+          "name": {
+            "es": "Terminal de Autobuses de Pasajeros de Oriente (TAPO)",
+            "en": "Eastern Bus Terminal (TAPO)"
+          },
+          "address": {
+            "es": "Calzada Ignacio Zaragoza 200, Venustiano Carranza, 15530 Ciudad de México",
+            "en": "Calzada Ignacio Zaragoza 200, Venustiano Carranza, 15530 Mexico City"
+          },
+          "coordinates": { "lat": 19.4226, "lng": -99.0964 }
+        },
+        "duration": {
+          "minutes": 45,
+          "label": {
+            "es": "Llegar 45 min antes para prepararte",
+            "en": "Arrive 45 min early to prepare"
+          }
+        },
+        "cost": { "min": 5, "max": 120, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "Compra mínimo 2 litros de agua, snacks variados y un sándwich para el camino. Las paradas tienen comida pero es cara y limitada.",
+            "en": "Buy at least 2 liters of water, varied snacks, and a sandwich for the road. The stops have food but it's expensive and limited."
+          },
+          {
+            "es": "Lleva una almohada de viaje para el cuello, tapones para los oídos y un antifaz. Son esenciales para dormir en el autobús.",
+            "en": "Bring a travel neck pillow, earplugs, and an eye mask. They're essential for sleeping on the bus."
+          }
+        ]
+      },
+      {
+        "order": 2,
+        "type": "departure_preparation",
+        "title": {
+          "es": "Comprar tu boleto ADO GL o Platino a Cancún",
+          "en": "Buying your ADO GL or Platino ticket to Cancún"
+        },
+        "description": {
+          "es": "Para un viaje de 24+ horas, la clase de servicio importa mucho. ADO GL ($1,500-1,800 MXN) tiene asientos ejecutivos amplios con reclinación extendida, enchufes y entretenimiento individual. ADO Platino ($1,800-2,200 MXN) es la mejor opción: asientos que se reclinan casi 180 grados, pantallas táctiles, servicio de snack y cobija. NO recomiendo la primera clase regular para este viaje; la diferencia de comodidad es enorme. Las salidas más populares son nocturnas (10:00 PM, 11:00 PM y 11:30 PM) para que duermas la mayor parte del camino. También hay salidas matutinas (8:00 AM, 9:00 AM). Compra en ado.com.mx con anticipación, especialmente en temporada alta (diciembre, Semana Santa, verano).",
+          "en": "For a 24+ hour trip, the service class matters a lot. ADO GL ($1,500-1,800 MXN) has wide executive seats with extended recline, outlets, and individual entertainment. ADO Platino ($1,800-2,200 MXN) is the best option: seats that recline nearly 180 degrees, touchscreens, snack service, and a blanket. I do NOT recommend regular first class for this trip; the comfort difference is enormous. The most popular departures are overnight (10:00 PM, 11:00 PM, and 11:30 PM) so you sleep through most of it. There are also morning departures (8:00 AM, 9:00 AM). Buy at ado.com.mx in advance, especially during peak season (December, Easter, summer)."
+        },
+        "cost": { "min": 1500, "max": 2200, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "El Platino para este viaje es una inversión que vale cada peso. Podrás dormir cómodamente y llegarás descansado.",
+            "en": "Platino for this trip is an investment worth every peso. You'll sleep comfortably and arrive well-rested."
+          },
+          {
+            "es": "Elige un asiento del lado de la ventanilla para apoyar la cabeza al dormir. Los asientos individuales (si los hay) son los mejores.",
+            "en": "Choose a window seat to rest your head against while sleeping. Single seats (if available) are the best."
+          }
+        ]
+      },
+      {
+        "order": 3,
+        "type": "transit_segment",
+        "title": {
+          "es": "El viaje nocturno a Cancún (24-26 horas)",
+          "en": "The overnight journey to Cancún (24-26 hours)"
+        },
+        "description": {
+          "es": "Este es uno de los viajes en autobús más largos de México y cruza algunos de los estados más hermosos del país. La ruta sale de CDMX y pasa por Puebla (2h), luego baja hacia Veracruz y Villahermosa, Tabasco (10-12h). Aquí el paisaje cambia de montañas a selva tropical y pantanos. Después sigue por Campeche (15-16h), una de las ciudades coloniales más bonitas de México, y Mérida (18-20h), la capital de Yucatán. El último tramo de Mérida a Cancún toma 4-5 horas por la autopista de la Península. El autobús hace paradas técnicas cada 4-5 horas (15-20 min cada una) donde puedes bajar, estirar las piernas, ir al baño y comprar comida. El aire acondicionado puede ser muy frío, así que lleva una chamarra gruesa o usa la cobija que te dan.",
+          "en": "This is one of Mexico's longest bus journeys and crosses some of the country's most beautiful states. The route leaves CDMX and passes through Puebla (2h), then descends toward Veracruz and Villahermosa, Tabasco (10-12h). Here the landscape changes from mountains to tropical jungle and wetlands. It continues through Campeche (15-16h), one of Mexico's most beautiful colonial cities, and Mérida (18-20h), the capital of Yucatán. The final stretch from Mérida to Cancún takes 4-5 hours on the Peninsula highway. The bus makes rest stops every 4-5 hours (15-20 min each) where you can get off, stretch your legs, use the restroom, and buy food. The AC can be very cold, so bring a thick jacket or use the blanket they provide."
+        },
+        "duration": {
+          "minutes": 1500,
+          "label": {
+            "es": "24 - 26 horas de viaje total",
+            "en": "24 - 26 hours total travel time"
+          }
+        },
+        "tips": [
+          {
+            "es": "Descarga series, películas y música antes del viaje. Son 24 horas y el WiFi del autobús no es confiable.",
+            "en": "Download shows, movies, and music before the trip. It's 24 hours and the bus WiFi isn't reliable."
+          },
+          {
+            "es": "En las paradas técnicas, siempre lleva tus objetos de valor contigo. Nunca dejes celular, cartera o pasaporte en el asiento.",
+            "en": "At rest stops, always take your valuables with you. Never leave your phone, wallet, or passport on the seat."
+          },
+          {
+            "es": "Si sales a las 11 PM, dormirás las primeras 8 horas y despertarás en Villahermosa al amanecer. El tramo diurno por Campeche y Mérida es hermoso.",
+            "en": "If you leave at 11 PM, you'll sleep the first 8 hours and wake up in Villahermosa at dawn. The daytime stretch through Campeche and Mérida is beautiful."
+          }
+        ]
+      },
+      {
+        "order": 4,
+        "type": "arrival_navigation",
+        "title": {
+          "es": "Llegada a la Terminal ADO de Cancún (Centro)",
+          "en": "Arrival at the ADO Terminal in Cancún (Downtown)"
+        },
+        "description": {
+          "es": "El autobús ADO llega a la terminal del centro de Cancún en Avenida Tulum, la avenida principal de la ciudad. A diferencia del aeropuerto, esta terminal está en pleno centro de la ciudad, lo cual es muy conveniente. Al bajar, recoge tu equipaje y oriéntate: estás a pocas cuadras del Parque de las Palapas (centro de la vida local), de restaurantes, tiendas y hoteles económicos. La terminal tiene servicio de taxis, baños, y lockers si necesitas guardar equipaje ($50-80 MXN). Si tu hotel está en la Zona Hotelera, puedes tomar el autobús urbano R-1 que para justo afuera de la terminal ($12 MXN) y recorre toda la zona; un taxi cuesta $150-250 MXN desde aquí (mucho más barato que desde el aeropuerto); Uber cuesta $80-150 MXN.",
+          "en": "The ADO bus arrives at the downtown Cancún terminal on Avenida Tulum, the city's main avenue. Unlike the airport, this terminal is right in the city center, which is very convenient. When you get off, collect your luggage and orient yourself: you're just blocks from Parque de las Palapas (center of local life), restaurants, shops, and budget hotels. The terminal has taxi service, restrooms, and lockers if you need to store luggage ($50-80 MXN). If your hotel is in the Hotel Zone, you can take the R-1 urban bus that stops right outside the terminal ($12 MXN) and runs the entire zone; a taxi costs $150-250 MXN from here (much cheaper than from the airport); Uber costs $80-150 MXN."
+        },
+        "location": {
+          "name": {
+            "es": "Terminal ADO Cancún Centro",
+            "en": "ADO Terminal Cancún Downtown"
+          },
+          "address": {
+            "es": "Av. Tulum esquina Uxmal, SM 23, 77500 Cancún, Quintana Roo",
+            "en": "Av. Tulum corner of Uxmal, SM 23, 77500 Cancún, Quintana Roo"
+          },
+          "coordinates": { "lat": 21.1742, "lng": -86.8466 }
+        },
+        "duration": {
+          "minutes": 15,
+          "label": {
+            "es": "15 min para recoger equipaje y orientarte",
+            "en": "15 min to collect luggage and orient yourself"
+          }
+        },
+        "tips": [
+          {
+            "es": "Si llegas cansado del viaje de 24 horas, considera hospedarte una noche en el centro de Cancún (hoteles desde $400 MXN/noche) antes de ir a la Zona Hotelera.",
+            "en": "If you arrive tired from the 24-hour trip, consider staying one night in downtown Cancún (hotels from $400 MXN/night) before heading to the Hotel Zone."
+          },
+          {
+            "es": "El centro de Cancún tiene comida mucho más barata que la Zona Hotelera. Aprovecha para comer unas tortas o tacos de cochinita pibil en Av. Tulum.",
+            "en": "Downtown Cancún has much cheaper food than the Hotel Zone. Take the opportunity to eat some tortas or cochinita pibil tacos on Av. Tulum."
+          }
+        ]
+      },
+      {
+        "order": 5,
+        "type": "local_transport",
+        "title": {
+          "es": "Llegar a la Zona Hotelera desde el centro de Cancún",
+          "en": "Getting to the Hotel Zone from downtown Cancún"
+        },
+        "description": {
+          "es": "Desde la terminal ADO del centro, llegar a la Zona Hotelera es fácil y mucho más barato que desde el aeropuerto. La opción más económica es el autobús urbano R-1 ($12 MXN, pasa cada 5-10 minutos, opera de 5 AM a 12 AM). La parada está sobre la Avenida Tulum, justo afuera de la terminal. El R-1 recorre todo el Blvd. Kukulcán de la Zona Hotelera, así que puedes bajarte en la parada más cercana a tu hotel. El trayecto toma 20-40 minutos dependiendo de qué tan lejos esté tu hotel. Un Uber desde la terminal al inicio de la Zona Hotelera cuesta $80-120 MXN, y hasta Punta Cancún (la zona de los clubs) unos $100-150 MXN. Un taxi de sitio pide $150-250 MXN. Si es de noche y el R-1 ya no pasa, Uber es tu mejor opción.",
+          "en": "From the downtown ADO terminal, reaching the Hotel Zone is easy and much cheaper than from the airport. The most economical option is the R-1 urban bus ($12 MXN, every 5-10 minutes, operates 5 AM to 12 AM). The stop is on Avenida Tulum, right outside the terminal. The R-1 runs the entire Blvd. Kukulcán in the Hotel Zone, so you can get off at the stop closest to your hotel. The trip takes 20-40 minutes depending on how far your hotel is. An Uber from the terminal to the start of the Hotel Zone costs $80-120 MXN, and to Punta Cancún (the club area) about $100-150 MXN. A taxi stand charges $150-250 MXN. If it's nighttime and the R-1 has stopped running, Uber is your best bet."
+        },
+        "location": {
+          "name": {
+            "es": "Zona Hotelera de Cancún",
+            "en": "Cancún Hotel Zone"
+          },
+          "address": {
+            "es": "Blvd. Kukulcán, Zona Hotelera, 77500 Cancún, Quintana Roo",
+            "en": "Blvd. Kukulcán, Zona Hotelera, 77500 Cancún, Quintana Roo"
+          },
+          "coordinates": { "lat": 21.1326, "lng": -86.7516 }
+        },
+        "duration": {
+          "minutes": 30,
+          "label": {
+            "es": "20 - 40 min a la Zona Hotelera",
+            "en": "20 - 40 min to the Hotel Zone"
+          }
+        },
+        "cost": { "min": 12, "max": 250, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "Una ventaja de llegar en autobús vs avión es que el transporte a la Zona Hotelera cuesta una fracción. Un taxi del centro es $150-250 MXN vs $500-800 del aeropuerto.",
+            "en": "An advantage of arriving by bus vs plane is that transport to the Hotel Zone costs a fraction. A taxi from downtown is $150-250 MXN vs $500-800 from the airport."
+          },
+          {
+            "es": "Si tu hotel tiene servicio de shuttle, pregunta si pueden recogerte en la terminal ADO. Muchos lo hacen sin costo extra.",
+            "en": "If your hotel has shuttle service, ask if they can pick you up at the ADO terminal. Many do so at no extra cost."
+          }
+        ]
+      }
+    ],
+    "tips": [
+      {
+        "es": "Este viaje solo vale la pena si disfrutas los viajes largos en carretera o si tu presupuesto es muy ajustado. Si no, el vuelo ($1,200-1,500 MXN en oferta) es mucho más práctico.",
+        "en": "This trip is only worth it if you enjoy long road journeys or if your budget is very tight. Otherwise, flying ($1,200-1,500 MXN on sale) is much more practical."
+      },
+      {
+        "es": "Si tienes tiempo y quieres convertirlo en aventura, considera hacer el viaje en 2 o 3 etapas: CDMX-Villahermosa (10h), Villahermosa-Campeche (5h) y Campeche-Cancún (6h), visitando cada ciudad un día.",
+        "en": "If you have time and want to turn it into an adventure, consider doing the trip in 2-3 stages: CDMX-Villahermosa (10h), Villahermosa-Campeche (5h), and Campeche-Cancún (6h), visiting each city for a day."
+      },
+      {
+        "es": "Lleva medicamento para mareo, antidiarreico, y algún analgésico. En un viaje de 24 horas puede pasar cualquier cosa.",
+        "en": "Bring motion sickness medicine, anti-diarrheal medication, and a painkiller. On a 24-hour trip, anything can happen."
+      }
+    ]
+  },
+  {
+    "id": "cdmx-oaxaca-flight-guide",
+    "routeOptionId": "cdmx-oaxaca-flight",
+    "title": {
+      "es": "Cómo volar de CDMX a Oaxaca: Guía rápida paso a paso",
+      "en": "How to fly from Mexico City to Oaxaca: Quick step-by-step guide"
+    },
+    "overview": {
+      "es": "El vuelo de la Ciudad de México a Oaxaca es la opción más rápida: apenas 1 hora de vuelo. Con tarifas desde $900 MXN en Volaris o VivaAerobus, y alrededor de $1,500-2,500 en Aeroméxico, es una excelente opción si valoras tu tiempo. El Aeropuerto de Oaxaca (Xoxocotlán) es pequeño y está a solo 15-20 minutos del centro histórico. Esta guía te lleva desde el AICM hasta las calles empedradas de Oaxaca.",
+      "en": "Flying from Mexico City to Oaxaca is the fastest option: just 1 hour of flight time. With fares starting at $900 MXN on Volaris or VivaAerobus, and around $1,500-2,500 on Aeroméxico, it's an excellent option if you value your time. Oaxaca Airport (Xoxocotlán) is small and just 15-20 minutes from the historic center. This guide takes you from AICM to the cobblestone streets of Oaxaca."
+    },
+    "steps": [
+      {
+        "order": 1,
+        "type": "departure_preparation",
+        "title": {
+          "es": "Llegar al Aeropuerto Internacional de la Ciudad de México (AICM)",
+          "en": "Getting to Mexico City International Airport (AICM)"
+        },
+        "description": {
+          "es": "Los vuelos a Oaxaca salen tanto de la Terminal 1 (Volaris y VivaAerobus) como de la Terminal 2 (Aeroméxico). Verifica tu terminal en tu boleto electrónico antes de salir. Llega con 1.5 a 2 horas de anticipación. La forma más rápida y económica de llegar es el Metro Línea 5 (amarilla) hasta la estación Terminal Aérea ($5 MXN), que conecta directamente con la T1. Para la T2, usa el Aerotrén gratuito dentro de T1 (15 min). Un Uber desde la Condesa o Roma cuesta $80-150 MXN. Si vuelas con aerolínea de bajo costo, haz el check-in en línea 24 horas antes para evitar cargos extra en el aeropuerto ($300-500 MXN). Lleva tu equipaje dentro de las medidas permitidas para evitar sorpresas.",
+          "en": "Flights to Oaxaca leave from both Terminal 1 (Volaris and VivaAerobus) and Terminal 2 (Aeroméxico). Check your terminal on your e-ticket before leaving. Arrive 1.5 to 2 hours early. The fastest and cheapest way to get there is Metro Line 5 (yellow) to Terminal Aérea station ($5 MXN), which connects directly to T1. For T2, use the free Aerotrén inside T1 (15 min). An Uber from Condesa or Roma costs $80-150 MXN. If flying a low-cost airline, check in online 24 hours before to avoid surcharges at the airport ($300-500 MXN). Keep your luggage within the allowed dimensions to avoid surprises."
+        },
+        "location": {
+          "name": {
+            "es": "Aeropuerto Internacional de la Ciudad de México (AICM)",
+            "en": "Mexico City International Airport (AICM)"
+          },
+          "address": {
+            "es": "Av. Capitán Carlos León S/N, Peñón de los Baños, Venustiano Carranza, 15620 Ciudad de México",
+            "en": "Av. Capitán Carlos León S/N, Peñón de los Baños, Venustiano Carranza, 15620 Mexico City"
+          },
+          "coordinates": { "lat": 19.4361, "lng": -99.0719 }
+        },
+        "duration": {
+          "minutes": 120,
+          "label": {
+            "es": "Llegar 1.5 - 2 horas antes del vuelo",
+            "en": "Arrive 1.5 - 2 hours before flight"
+          }
+        },
+        "cost": { "min": 5, "max": 150, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "Los vuelos a Oaxaca suelen ser en aviones pequeños (A320 o 737). El equipaje de mano se llena rápido en los compartimentos superiores. Si puedes, aborda temprano.",
+            "en": "Flights to Oaxaca are usually on smaller planes (A320 or 737). Overhead bins fill up fast. If possible, board early."
+          },
+          {
+            "es": "Para la T2, puedes tomar el Metrobús Línea 4 que tiene estación en la Terminal 2 del aeropuerto. Es una buena alternativa al metro.",
+            "en": "For T2, you can take Metrobús Line 4 which has a station at Terminal 2. It's a good alternative to the metro."
+          }
+        ]
+      },
+      {
+        "order": 2,
+        "type": "transit_segment",
+        "title": {
+          "es": "El vuelo directo a Oaxaca",
+          "en": "The direct flight to Oaxaca"
+        },
+        "description": {
+          "es": "El vuelo directo CDMX-Oaxaca dura aproximadamente 1 hora. Es una ruta operada por las tres principales aerolíneas: Aeroméxico (T2, desde $1,500 MXN, incluye maleta documentada), Volaris (T1, desde $900 MXN, solo equipaje de mano) y VivaAerobus (T1, desde $900 MXN, solo equipaje de mano). Hay entre 8 y 12 vuelos diarios, lo que te da mucha flexibilidad de horarios. Los vuelos más baratos suelen ser los de temprano por la mañana (6-7 AM). La vista durante el descenso a Oaxaca es hermosa: verás los Valles Centrales rodeados de montañas. El vuelo es corto, así que prácticamente acabas de despegar cuando empiezan a preparar el aterrizaje.",
+          "en": "The direct CDMX-Oaxaca flight takes approximately 1 hour. It's a route operated by all three major airlines: Aeroméxico (T2, from $1,500 MXN, includes checked bag), Volaris (T1, from $900 MXN, carry-on only) and VivaAerobus (T1, from $900 MXN, carry-on only). There are 8-12 daily flights, giving you plenty of schedule flexibility. The cheapest flights are usually early morning (6-7 AM). The view during descent into Oaxaca is beautiful: you'll see the Central Valleys surrounded by mountains. The flight is short, so you've barely taken off when they start preparing for landing."
+        },
+        "duration": {
+          "minutes": 60,
+          "label": {
+            "es": "Aprox. 1 hora de vuelo",
+            "en": "Approx. 1 hour flight"
+          }
+        },
+        "cost": { "min": 900, "max": 2500, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "Si solo vas un fin de semana, puedes viajar solo con equipaje de mano y ahorrar en la tarifa de aerolíneas de bajo costo.",
+            "en": "If you're just going for a weekend, you can travel with carry-on only and save on low-cost airline fares."
+          },
+          {
+            "es": "Compara precios entre las tres aerolíneas. A veces Aeroméxico tiene ofertas que, con maleta incluida, sale igual que Volaris con maleta extra.",
+            "en": "Compare prices among all three airlines. Sometimes Aeroméxico has deals that, with bag included, cost the same as Volaris with an extra bag."
+          }
+        ]
+      },
+      {
+        "order": 3,
+        "type": "arrival_navigation",
+        "title": {
+          "es": "Llegada al Aeropuerto Internacional de Oaxaca (Xoxocotlán)",
+          "en": "Arrival at Oaxaca International Airport (Xoxocotlán)"
+        },
+        "description": {
+          "es": "El Aeropuerto de Oaxaca Xoxocotlán (OAX) es pequeño y fácil de navegar. Solo tiene una terminal y una banda de equipaje. Al salir de la zona de llegadas, encontrarás dos opciones principales de transporte: los taxis colectivos ($100-120 MXN por persona, salen cuando se llenan con 3-4 pasajeros) y los taxis privados ($250-350 MXN, precio fijo). Los colectivos te dejan en el centro de Oaxaca en un punto cercano al Zócalo; los privados te llevan directamente a tu hotel. No hay servicio de Uber confiable en el aeropuerto de Oaxaca. Compra tu boleto de taxi en el mostrador oficial adentro de la terminal ANTES de salir. No negocies con taxistas afuera, paga la tarifa oficial.",
+          "en": "Oaxaca's Xoxocotlán Airport (OAX) is small and easy to navigate. It has just one terminal and one baggage carousel. Exiting the arrivals area, you'll find two main transport options: shared taxis ($100-120 MXN per person, they leave when full with 3-4 passengers) and private taxis ($250-350 MXN, fixed price). Shared taxis drop you off at a central point near the Zócalo; private taxis take you directly to your hotel. There's no reliable Uber service at Oaxaca's airport. Buy your taxi ticket at the official counter inside the terminal BEFORE exiting. Don't negotiate with drivers outside, pay the official rate."
+        },
+        "location": {
+          "name": {
+            "es": "Aeropuerto Internacional de Oaxaca Xoxocotlán (OAX)",
+            "en": "Oaxaca Xoxocotlán International Airport (OAX)"
+          },
+          "address": {
+            "es": "Carretera a San Pablo Etla, 71230 Santa Cruz Xoxocotlán, Oaxaca",
+            "en": "Carretera a San Pablo Etla, 71230 Santa Cruz Xoxocotlán, Oaxaca"
+          },
+          "coordinates": { "lat": 16.9999, "lng": -96.7266 }
+        },
+        "duration": {
+          "minutes": 20,
+          "label": {
+            "es": "15 - 20 min para recoger equipaje y tomar transporte",
+            "en": "15 - 20 min to collect luggage and get transport"
+          }
+        },
+        "cost": { "min": 100, "max": 350, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "El taxi colectivo es la opción más popular. Esperas 5-10 minutos a que se llene y compartes el costo. Son vans seguras y organizadas.",
+            "en": "The shared taxi is the most popular option. You wait 5-10 minutes for it to fill and share the cost. They're safe, organized vans."
+          },
+          {
+            "es": "Si tu hospedaje está en el centro, el colectivo te deja muy cerca. Si está más lejos (ej. en San Felipe del Agua o Xochimilco), mejor toma el privado.",
+            "en": "If your accommodation is downtown, the shared taxi drops you off very close. If it's farther (e.g., San Felipe del Agua or Xochimilco), better take the private taxi."
+          },
+          {
+            "es": "El aeropuerto tiene un pequeño café y una tienda de souvenirs, pero no hay mucho. Si necesitas algo, espera a llegar al centro.",
+            "en": "The airport has a small café and a souvenir shop, but not much else. If you need anything, wait until you reach downtown."
+          }
+        ]
+      },
+      {
+        "order": 4,
+        "type": "local_transport",
+        "title": {
+          "es": "Del aeropuerto al Centro Histórico de Oaxaca",
+          "en": "From the airport to Oaxaca's Historic Center"
+        },
+        "description": {
+          "es": "El trayecto del aeropuerto al centro de Oaxaca es corto: solo 15-20 minutos por la carretera que pasa por Xoxocotlán. El taxi colectivo te deja generalmente en las cercanías del Zócalo, en la calle de Independencia o en el estacionamiento de Alameda de León. De ahí, puedes caminar a casi cualquier hotel del centro en 5-10 minutos. El taxi privado te lleva puerta a puerta. Una vez en el centro, todo se recorre a pie: el Zócalo, Santo Domingo, el Andador Macedonio Alcalá (calle peatonal con galerías, cafés y tiendas de artesanías), el Mercado Benito Juárez y el Mercado 20 de Noviembre están todos a distancia caminable. Oaxaca es una ciudad segura y muy agradable para caminar, con calles empedradas y arquitectura colonial colorida.",
+          "en": "The ride from the airport to downtown Oaxaca is short: just 15-20 minutes along the road through Xoxocotlán. The shared taxi usually drops you off near the Zócalo, on Independencia street or at the Alameda de León parking area. From there, you can walk to almost any downtown hotel in 5-10 minutes. Private taxis take you door-to-door. Once downtown, everything is walkable: the Zócalo, Santo Domingo, Andador Macedonio Alcalá (pedestrian street with galleries, cafés, and craft shops), Mercado Benito Juárez, and Mercado 20 de Noviembre are all within walking distance. Oaxaca is a safe city and very pleasant to walk in, with cobblestone streets and colorful colonial architecture."
+        },
+        "location": {
+          "name": {
+            "es": "Centro Histórico de Oaxaca",
+            "en": "Oaxaca Historic Center"
+          },
+          "address": {
+            "es": "Zócalo, Centro, 68000 Oaxaca de Juárez, Oaxaca",
+            "en": "Zócalo, Centro, 68000 Oaxaca de Juárez, Oaxaca"
+          },
+          "coordinates": { "lat": 17.0609, "lng": -96.7253 }
+        },
+        "duration": {
+          "minutes": 18,
+          "label": {
+            "es": "15 - 20 min del aeropuerto al centro",
+            "en": "15 - 20 min from airport to downtown"
+          }
+        },
+        "cost": { "min": 100, "max": 350, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "Al llegar, tu primera parada debe ser un café con chocolate oaxaqueño. Chocolate Mayordomo en la calle Mina es una institución local.",
+            "en": "Upon arriving, your first stop should be a café with Oaxacan chocolate. Chocolate Mayordomo on Calle Mina is a local institution."
+          },
+          {
+            "es": "Si llegas temprano, desayuna en el Mercado 20 de Noviembre. Pide un chocolate caliente con pan de yema y una memela con asiento. Bienvenido a Oaxaca.",
+            "en": "If you arrive early, have breakfast at the 20 de Noviembre Market. Order a hot chocolate with pan de yema and a memela with asiento. Welcome to Oaxaca."
+          }
+        ]
+      }
+    ],
+    "tips": [
+      {
+        "es": "Volar a Oaxaca es ideal para un fin de semana largo (viernes a domingo). Sales a las 7 AM, a las 9 AM ya estás desayunando en el mercado.",
+        "en": "Flying to Oaxaca is ideal for a long weekend (Friday to Sunday). Leave at 7 AM, by 9 AM you're having breakfast at the market."
+      },
+      {
+        "es": "El aeropuerto de Oaxaca es chico y puede retrasarse con mal clima (neblina en la sierra). Ten un plan B si tienes conexión ajustada de regreso.",
+        "en": "Oaxaca's airport is small and can experience delays in bad weather (mountain fog). Have a plan B if you have a tight return connection."
+      },
+      {
+        "es": "Reserva tus clases de cocina, tours de mezcal y visitas a comunidades artesanales con anticipación. Son las experiencias más memorables de Oaxaca.",
+        "en": "Book your cooking classes, mezcal tours, and artisan community visits in advance. They're Oaxaca's most memorable experiences."
+      },
+      {
+        "es": "Si el vuelo es caro para tu fecha, revisa el autobús nocturno ADO como alternativa. Es 6-7 horas pero llegas descansado si eliges un servicio GL o Platino.",
+        "en": "If the flight is expensive for your date, check the overnight ADO bus as an alternative. It's 6-7 hours but you arrive rested if you choose GL or Platino service."
+      }
+    ]
+  }
+]

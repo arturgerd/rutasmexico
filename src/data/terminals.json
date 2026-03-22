@@ -1,0 +1,794 @@
+[
+  {
+    "id": "aicm-t1",
+    "type": "airport",
+    "name": {
+      "es": "Aeropuerto Internacional de la Ciudad de México - Terminal 1",
+      "en": "Mexico City International Airport - Terminal 1"
+    },
+    "shortCode": "MEX-T1",
+    "cityId": "cdmx",
+    "address": {
+      "es": "Av. Capitán Carlos León S/N, Peñón de los Baños, Venustiano Carranza, 15620 Ciudad de México",
+      "en": "Av. Capitán Carlos León S/N, Peñón de los Baños, Venustiano Carranza, 15620 Mexico City"
+    },
+    "coordinates": { "lat": 19.4361, "lng": -99.0719 },
+    "howToGetThere": {
+      "es": "Se accede por el Circuito Interior o Viaducto Miguel Alemán. La Terminal 1 tiene conexión directa con la Línea 5 del Metro (estación Terminal Aérea). El Metrobús Línea 4 también llega a la terminal. Si vienes del centro, el trayecto en taxi o app toma 20-40 minutos dependiendo del tráfico.",
+      "en": "Accessed via Circuito Interior or Viaducto Miguel Alemán. Terminal 1 has a direct connection to Metro Line 5 (Terminal Aérea station). Metrobús Line 4 also reaches the terminal. From downtown, a taxi or app ride takes 20-40 minutes depending on traffic."
+    },
+    "transportOptions": [
+      {
+        "mode": "metro",
+        "description": {
+          "es": "Metro Línea 5 (amarilla), estación Terminal Aérea. Conecta con el centro vía transbordo en La Raza (Línea 3) o Pantitlán (Líneas 1, 9, A). Solo recomendable con poco equipaje.",
+          "en": "Metro Line 5 (yellow), Terminal Aérea station. Connects to downtown via transfer at La Raza (Line 3) or Pantitlán (Lines 1, 9, A). Only recommended with light luggage."
+        },
+        "cost": { "min": 5, "max": 5, "currency": "MXN" },
+        "duration": { "minutes": 40, "label": { "es": "40 min al centro", "en": "40 min to downtown" } }
+      },
+      {
+        "mode": "metrobus",
+        "description": {
+          "es": "Metrobús Línea 4 conecta la terminal con el centro de la ciudad pasando por Buenavista y San Lázaro. Más cómodo que el metro con espacio para equipaje.",
+          "en": "Metrobús Line 4 connects the terminal to the city center via Buenavista and San Lázaro. More comfortable than the metro with luggage space."
+        },
+        "cost": { "min": 30, "max": 30, "currency": "MXN" },
+        "duration": { "minutes": 45, "label": { "es": "45 min al centro", "en": "45 min to downtown" } }
+      },
+      {
+        "mode": "taxi_autorizado",
+        "description": {
+          "es": "Taxis autorizados del aeropuerto con boleto prepagado en los módulos de la sala de llegadas. Tarifa fija según zona de destino. Seguros y confiables.",
+          "en": "Authorized airport taxis with prepaid tickets at arrival hall booths. Fixed fare by destination zone. Safe and reliable."
+        },
+        "cost": { "min": 200, "max": 350, "currency": "MXN" },
+        "duration": { "minutes": 30, "label": { "es": "25-40 min al centro", "en": "25-40 min to downtown" } }
+      },
+      {
+        "mode": "uber_didi",
+        "description": {
+          "es": "Uber y DiDi operan en la Terminal 1. El punto de encuentro está en la puerta 4 de la sala de llegadas en el área de estacionamiento. Sigue la señalización de apps de transporte.",
+          "en": "Uber and DiDi operate at Terminal 1. The pickup point is at door 4 of the arrivals hall in the parking area. Follow the ride-hailing app signage."
+        },
+        "cost": { "min": 150, "max": 300, "currency": "MXN" },
+        "duration": { "minutes": 30, "label": { "es": "25-40 min al centro", "en": "25-40 min to downtown" } }
+      }
+    ],
+    "tips": [
+      {
+        "es": "El Aerotrén conecta gratis las terminales 1 y 2 en 10 minutos. Opera de 5 AM a 11 PM. Fuera de ese horario usa el servicio de autobuses gratuitos.",
+        "en": "The Aerotrén connects Terminals 1 and 2 for free in 10 minutes. It operates from 5 AM to 11 PM. Outside those hours use the free bus service."
+      },
+      {
+        "es": "Cambia dinero en las casas de cambio del nivel de llegadas, no arriba en salidas donde las tasas son peores. Mejor aún, usa cajeros automáticos de bancos reconocidos.",
+        "en": "Exchange money at the currency exchange offices on the arrivals level, not upstairs in departures where rates are worse. Even better, use ATMs from recognized banks."
+      },
+      {
+        "es": "Llega con al menos 3 horas de anticipación para vuelos internacionales. Los filtros de seguridad pueden tener filas largas, especialmente en las mañanas.",
+        "en": "Arrive at least 3 hours early for international flights. Security checkpoints can have long lines, especially in the mornings."
+      }
+    ],
+    "facilities": ["wifi_gratuito", "casas_de_cambio", "cajeros_automaticos", "restaurantes", "tiendas_duty_free", "salas_vip", "farmacia", "renta_de_autos", "guardaequipaje", "capilla"]
+  },
+  {
+    "id": "aicm-t2",
+    "type": "airport",
+    "name": {
+      "es": "Aeropuerto Internacional de la Ciudad de México - Terminal 2",
+      "en": "Mexico City International Airport - Terminal 2"
+    },
+    "shortCode": "MEX-T2",
+    "cityId": "cdmx",
+    "address": {
+      "es": "Av. Fuerza Aérea Mexicana, Peñón de los Baños, Venustiano Carranza, 15620 Ciudad de México",
+      "en": "Av. Fuerza Aérea Mexicana, Peñón de los Baños, Venustiano Carranza, 15620 Mexico City"
+    },
+    "coordinates": { "lat": 19.4528, "lng": -99.0747 },
+    "howToGetThere": {
+      "es": "Se accede por el Circuito Interior o Boulevard Puerto Aéreo. No tiene estación de metro directa, pero el Aerotrén gratuito conecta con la Terminal 1 que sí tiene metro. El Metrobús Línea 4 también llega a esta terminal. Desde el centro, taxi o app toma 25-45 minutos.",
+      "en": "Accessed via Circuito Interior or Boulevard Puerto Aéreo. It does not have a direct metro station, but the free Aerotrén connects to Terminal 1 which has metro access. Metrobús Line 4 also reaches this terminal. From downtown, a taxi or app takes 25-45 minutes."
+    },
+    "transportOptions": [
+      {
+        "mode": "metrobus",
+        "description": {
+          "es": "Metrobús Línea 4 tiene parada en la Terminal 2. Conecta con San Lázaro, Buenavista y el Centro Histórico. Acepta tarjeta de movilidad integrada.",
+          "en": "Metrobús Line 4 has a stop at Terminal 2. Connects to San Lázaro, Buenavista, and the Historic Center. Accepts integrated mobility card."
+        },
+        "cost": { "min": 30, "max": 30, "currency": "MXN" },
+        "duration": { "minutes": 50, "label": { "es": "50 min al centro", "en": "50 min to downtown" } }
+      },
+      {
+        "mode": "taxi_autorizado",
+        "description": {
+          "es": "Compra el boleto de taxi autorizado en los módulos de la sala de llegadas. Tarifa fija según zona. No aceptes servicios de taxistas que se acerquen a ofrecerte.",
+          "en": "Buy the authorized taxi ticket at the arrival hall booths. Fixed fare by zone. Do not accept services from taxi drivers who approach you."
+        },
+        "cost": { "min": 200, "max": 350, "currency": "MXN" },
+        "duration": { "minutes": 30, "label": { "es": "25-45 min al centro", "en": "25-45 min to downtown" } }
+      },
+      {
+        "mode": "uber_didi",
+        "description": {
+          "es": "El punto de recolección de Uber y DiDi está claramente señalizado en el estacionamiento de la Terminal 2. Sigue las indicaciones hacia 'Transporte por aplicación'.",
+          "en": "The Uber and DiDi pickup point is clearly marked in the Terminal 2 parking area. Follow signs for 'App-based transport'."
+        },
+        "cost": { "min": 150, "max": 300, "currency": "MXN" },
+        "duration": { "minutes": 30, "label": { "es": "25-45 min al centro", "en": "25-45 min to downtown" } }
+      },
+      {
+        "mode": "aerotren",
+        "description": {
+          "es": "Tren gratuito que conecta con la Terminal 1 en 10 minutos. Desde T1 puedes tomar Metro Línea 5. Ideal si quieres la opción más económica.",
+          "en": "Free train connecting to Terminal 1 in 10 minutes. From T1 you can take Metro Line 5. Ideal if you want the most affordable option."
+        },
+        "cost": { "min": 0, "max": 0, "currency": "MXN" },
+        "duration": { "minutes": 10, "label": { "es": "10 min a Terminal 1", "en": "10 min to Terminal 1" } }
+      }
+    ],
+    "tips": [
+      {
+        "es": "La Terminal 2 es más nueva y menos congestionada que la T1. Aerolíneas como Aeroméxico operan principalmente desde aquí. Verifica tu terminal antes de llegar.",
+        "en": "Terminal 2 is newer and less congested than T1. Airlines like Aeroméxico mainly operate from here. Check your terminal before arriving."
+      },
+      {
+        "es": "Hay un hotel dentro de la terminal (Hilton Mexico City Airport) ideal para conexiones largas o llegadas nocturnas. También hay salas VIP de acceso con Priority Pass.",
+        "en": "There is a hotel inside the terminal (Hilton Mexico City Airport) ideal for long connections or late-night arrivals. There are also VIP lounges accessible with Priority Pass."
+      }
+    ],
+    "facilities": ["wifi_gratuito", "casas_de_cambio", "cajeros_automaticos", "restaurantes", "tiendas_duty_free", "salas_vip", "hotel", "farmacia", "renta_de_autos"]
+  },
+  {
+    "id": "tapo",
+    "type": "bus_terminal",
+    "name": {
+      "es": "Terminal de Autobuses de Pasajeros de Oriente (TAPO)",
+      "en": "Eastern Bus Terminal (TAPO)"
+    },
+    "shortCode": "TAPO",
+    "cityId": "cdmx",
+    "address": {
+      "es": "Calzada Ignacio Zaragoza 200, 10 de Mayo, Venustiano Carranza, 15010 Ciudad de México",
+      "en": "Calzada Ignacio Zaragoza 200, 10 de Mayo, Venustiano Carranza, 15010 Mexico City"
+    },
+    "coordinates": { "lat": 19.4226, "lng": -99.0964 },
+    "howToGetThere": {
+      "es": "Ubicada junto a la estación San Lázaro del Metro (Líneas 1 y B) y del Metrobús (Línea 4). Muy accesible desde cualquier punto de la ciudad por transporte público. En auto, se llega por Calzada Ignacio Zaragoza o Circuito Interior.",
+      "en": "Located next to the San Lázaro Metro station (Lines 1 and B) and Metrobús (Line 4). Very accessible from any point in the city by public transit. By car, access via Calzada Ignacio Zaragoza or Circuito Interior."
+    },
+    "transportOptions": [
+      {
+        "mode": "metro",
+        "description": {
+          "es": "Estación San Lázaro (Líneas 1 y B) tiene salida directa a la terminal. La Línea 1 (rosa) conecta con Chapultepec, Centro y Observatorio.",
+          "en": "San Lázaro station (Lines 1 and B) has a direct exit to the terminal. Line 1 (pink) connects to Chapultepec, Downtown, and Observatorio."
+        },
+        "cost": { "min": 5, "max": 5, "currency": "MXN" },
+        "duration": { "minutes": 25, "label": { "es": "25 min desde el centro", "en": "25 min from downtown" } }
+      },
+      {
+        "mode": "uber_didi",
+        "description": {
+          "es": "Uber y DiDi tienen punto de recolección en el estacionamiento de la terminal. Busca las señales al salir de la zona de andenes.",
+          "en": "Uber and DiDi have a pickup point in the terminal parking lot. Look for signs when exiting the platform area."
+        },
+        "cost": { "min": 80, "max": 200, "currency": "MXN" },
+        "duration": { "minutes": 25, "label": { "es": "20-35 min al centro", "en": "20-35 min to downtown" } }
+      }
+    ],
+    "tips": [
+      {
+        "es": "TAPO cubre destinos al oriente y sureste: Oaxaca, Puebla, Veracruz, Cancún y la Península de Yucatán. ADO es la línea principal con autobuses de primera clase y ADO GL de lujo.",
+        "en": "TAPO covers eastern and southeastern destinations: Oaxaca, Puebla, Veracruz, Cancún, and the Yucatán Peninsula. ADO is the main line with first-class buses and luxury ADO GL."
+      },
+      {
+        "es": "Compra boletos en línea en ado.com.mx para asegurar asientos y a veces obtener descuentos. Llega 30 minutos antes de la salida.",
+        "en": "Buy tickets online at ado.com.mx to secure seats and sometimes get discounts. Arrive 30 minutes before departure."
+      },
+      {
+        "es": "La terminal tiene guardaequipaje si necesitas dejar maletas mientras recorres la ciudad. Hay lockers automáticos y servicio de custodia manual.",
+        "en": "The terminal has luggage storage if you need to leave bags while exploring the city. There are automatic lockers and manual custody service."
+      }
+    ],
+    "facilities": ["guardaequipaje", "cajeros_automaticos", "restaurantes", "tiendas", "farmacia", "wifi_gratuito", "sala_de_espera", "baños"]
+  },
+  {
+    "id": "terminal-norte-cdmx",
+    "type": "bus_terminal",
+    "name": {
+      "es": "Terminal Central de Autobuses del Norte",
+      "en": "Northern Central Bus Terminal"
+    },
+    "shortCode": "TERMINAL NORTE",
+    "cityId": "cdmx",
+    "address": {
+      "es": "Eje Central Lázaro Cárdenas 4907, Magdalena de las Salinas, Gustavo A. Madero, 07760 Ciudad de México",
+      "en": "Eje Central Lázaro Cárdenas 4907, Magdalena de las Salinas, Gustavo A. Madero, 07760 Mexico City"
+    },
+    "coordinates": { "lat": 19.4848, "lng": -99.1447 },
+    "howToGetThere": {
+      "es": "Conectada con la estación Autobuses del Norte del Metro Línea 5 (amarilla). Acceso vehicular por Eje Central Lázaro Cárdenas o Av. de los Cien Metros. Es la terminal más grande de Latinoamérica.",
+      "en": "Connected to the Autobuses del Norte station on Metro Line 5 (yellow). Vehicle access via Eje Central Lázaro Cárdenas or Av. de los Cien Metros. It is Latin America's largest bus terminal."
+    },
+    "transportOptions": [
+      {
+        "mode": "metro",
+        "description": {
+          "es": "Metro Línea 5, estación Autobuses del Norte. Salida directa a la terminal. Conecta con Línea 3 en La Raza y Línea 6 en Instituto del Petróleo.",
+          "en": "Metro Line 5, Autobuses del Norte station. Direct exit to the terminal. Connects to Line 3 at La Raza and Line 6 at Instituto del Petróleo."
+        },
+        "cost": { "min": 5, "max": 5, "currency": "MXN" },
+        "duration": { "minutes": 35, "label": { "es": "35 min desde el centro", "en": "35 min from downtown" } }
+      },
+      {
+        "mode": "uber_didi",
+        "description": {
+          "es": "Las apps de transporte recogen en las áreas señalizadas del estacionamiento. La zona puede ser confusa; busca la señalización de 'Transporte por aplicación'.",
+          "en": "Ride-hailing apps pick up at marked areas in the parking lot. The area can be confusing; look for 'App-based transport' signage."
+        },
+        "cost": { "min": 100, "max": 250, "currency": "MXN" },
+        "duration": { "minutes": 30, "label": { "es": "25-40 min al centro", "en": "25-40 min to downtown" } }
+      }
+    ],
+    "tips": [
+      {
+        "es": "Cubre destinos al norte y occidente: Guadalajara, Monterrey, Querétaro, San Miguel de Allende, Guanajuato y la frontera norte. ETN, Primera Plus y Omnibus de México son líneas premium.",
+        "en": "Covers northern and western destinations: Guadalajara, Monterrey, Querétaro, San Miguel de Allende, Guanajuato, and the northern border. ETN, Primera Plus, and Omnibus de México are premium lines."
+      },
+      {
+        "es": "Es la terminal más grande de Latinoamérica con más de 60 andenes. Verifica el módulo de tu línea de autobús antes de buscar tu andén. Hay mapas en las entradas.",
+        "en": "It is Latin America's largest bus terminal with over 60 platforms. Check your bus line's module before looking for your platform. There are maps at the entrances."
+      }
+    ],
+    "facilities": ["guardaequipaje", "cajeros_automaticos", "restaurantes", "tiendas", "farmacia", "wifi_gratuito", "hotel_capsular", "baños", "casas_de_cambio"]
+  },
+  {
+    "id": "terminal-sur-cdmx",
+    "type": "bus_terminal",
+    "name": {
+      "es": "Terminal de Autobuses del Sur (Taxqueña)",
+      "en": "Southern Bus Terminal (Taxqueña)"
+    },
+    "shortCode": "TERMINAL SUR",
+    "cityId": "cdmx",
+    "address": {
+      "es": "Av. Taxqueña 1320, Campestre Churubusco, Coyoacán, 04200 Ciudad de México",
+      "en": "Av. Taxqueña 1320, Campestre Churubusco, Coyoacán, 04200 Mexico City"
+    },
+    "coordinates": { "lat": 19.3275, "lng": -99.142 },
+    "howToGetThere": {
+      "es": "Junto a la estación Taxqueña del Metro Línea 2 (azul) y la terminal del Tren Ligero hacia Xochimilco. Acceso vehicular por Av. Taxqueña o Calzada de Tlalpan. Está en la zona sur de la ciudad, cerca de Coyoacán.",
+      "en": "Next to the Taxqueña station on Metro Line 2 (blue) and the Light Rail terminal to Xochimilco. Vehicle access via Av. Taxqueña or Calzada de Tlalpan. Located in the southern part of the city, near Coyoacán."
+    },
+    "transportOptions": [
+      {
+        "mode": "metro",
+        "description": {
+          "es": "Metro Línea 2 (azul), estación Taxqueña. Terminal de la línea con salida directa a la central. La Línea 2 conecta con el Zócalo y Revolución.",
+          "en": "Metro Line 2 (blue), Taxqueña station. End of the line with direct exit to the terminal. Line 2 connects to the Zócalo and Revolución."
+        },
+        "cost": { "min": 5, "max": 5, "currency": "MXN" },
+        "duration": { "minutes": 30, "label": { "es": "30 min desde el centro", "en": "30 min from downtown" } }
+      },
+      {
+        "mode": "uber_didi",
+        "description": {
+          "es": "Uber y DiDi operan sin problemas en la Terminal Sur. El punto de recolección está en el estacionamiento principal.",
+          "en": "Uber and DiDi operate without issues at the Southern Terminal. The pickup point is at the main parking lot."
+        },
+        "cost": { "min": 80, "max": 200, "currency": "MXN" },
+        "duration": { "minutes": 25, "label": { "es": "20-30 min al centro", "en": "20-30 min to downtown" } }
+      }
+    ],
+    "tips": [
+      {
+        "es": "Cubre destinos al sur: Cuernavaca, Taxco, Acapulco e Ixtapa-Zihuatanejo. Pullman de Morelos y Estrella de Oro son las principales líneas. Es la terminal más pequeña y tranquila de la CDMX.",
+        "en": "Covers southern destinations: Cuernavaca, Taxco, Acapulco, and Ixtapa-Zihuatanejo. Pullman de Morelos and Estrella de Oro are the main lines. It is CDMX's smallest and most relaxed terminal."
+      },
+      {
+        "es": "Si vas a Cuernavaca, los autobuses Pullman de Morelos salen cada 15-20 minutos y el viaje toma solo 1.5 horas. No necesitas comprar con anticipación.",
+        "en": "If going to Cuernavaca, Pullman de Morelos buses depart every 15-20 minutes and the trip takes only 1.5 hours. No need to buy in advance."
+      }
+    ],
+    "facilities": ["cajeros_automaticos", "restaurantes", "tiendas", "wifi_gratuito", "baños", "sala_de_espera"]
+  },
+  {
+    "id": "aeropuerto-cancun",
+    "type": "airport",
+    "name": {
+      "es": "Aeropuerto Internacional de Cancún",
+      "en": "Cancún International Airport"
+    },
+    "shortCode": "CUN",
+    "cityId": "cancun",
+    "address": {
+      "es": "Carretera Cancún-Chetumal Km 22, 77565 Cancún, Quintana Roo",
+      "en": "Cancún-Chetumal Highway Km 22, 77565 Cancún, Quintana Roo"
+    },
+    "coordinates": { "lat": 21.0365, "lng": -86.8771 },
+    "howToGetThere": {
+      "es": "Ubicado a 20 km al sur de la Zona Hotelera y a 16 km del centro de Cancún. Se accede por la Carretera Federal 307 (Cancún-Chetumal). Tiene 4 terminales: T1 (vuelos domésticos), T2 y T3 (internacionales), T4 (bajo costo). Verifica tu terminal antes de llegar.",
+      "en": "Located 20 km south of the Hotel Zone and 16 km from downtown Cancún. Accessed via Federal Highway 307 (Cancún-Chetumal). It has 4 terminals: T1 (domestic flights), T2 and T3 (international), T4 (low-cost). Check your terminal before arriving."
+    },
+    "transportOptions": [
+      {
+        "mode": "autobus_ado",
+        "description": {
+          "es": "ADO opera autobuses directos del aeropuerto al centro de Cancún, Playa del Carmen y Tulum. Los boletos se compran en los módulos de ADO en la zona de llegadas o en línea.",
+          "en": "ADO operates direct buses from the airport to downtown Cancún, Playa del Carmen, and Tulum. Tickets can be purchased at ADO booths in the arrivals area or online."
+        },
+        "cost": { "min": 100, "max": 350, "currency": "MXN" },
+        "duration": { "minutes": 30, "label": { "es": "30 min al centro de Cancún", "en": "30 min to downtown Cancún" } }
+      },
+      {
+        "mode": "transfer_privado",
+        "description": {
+          "es": "Transfers privados y compartidos se reservan con anticipación. Empresas como Canada Transfers y USA Transfers son confiables. Te esperan en la sala de llegadas con tu nombre.",
+          "en": "Private and shared transfers are booked in advance. Companies like Canada Transfers and USA Transfers are reliable. They wait in the arrivals hall with your name."
+        },
+        "cost": { "min": 400, "max": 1200, "currency": "MXN" },
+        "duration": { "minutes": 25, "label": { "es": "20-30 min a la Zona Hotelera", "en": "20-30 min to the Hotel Zone" } }
+      },
+      {
+        "mode": "taxi_autorizado",
+        "description": {
+          "es": "Taxis autorizados con tarifa fija desde módulos en llegadas. Son significativamente más caros que otras opciones pero cómodos y directos.",
+          "en": "Authorized taxis with fixed fares from arrival hall booths. Significantly more expensive than other options but comfortable and direct."
+        },
+        "cost": { "min": 500, "max": 1000, "currency": "MXN" },
+        "duration": { "minutes": 25, "label": { "es": "20-30 min a la Zona Hotelera", "en": "20-30 min to the Hotel Zone" } }
+      }
+    ],
+    "tips": [
+      {
+        "es": "Uber no opera en el aeropuerto de Cancún debido a conflictos con taxistas. No intentes pedir Uber aquí. Los transfers reservados con anticipación son la mejor opción precio-comodidad.",
+        "en": "Uber does not operate at Cancún airport due to conflicts with taxi drivers. Do not try to request Uber here. Pre-booked transfers are the best price-comfort option."
+      },
+      {
+        "es": "Al salir de la terminal, ignora a los vendedores de tiempos compartidos que se disfrazan de personal del aeropuerto con gafetes. Dirígete directamente a tu transporte.",
+        "en": "When leaving the terminal, ignore timeshare sellers who disguise themselves as airport staff with badges. Head directly to your transport."
+      },
+      {
+        "es": "Las casas de cambio del aeropuerto tienen tasas muy malas. Usa un cajero automático de banco (HSBC o Santander) en la terminal para obtener mejor tipo de cambio.",
+        "en": "Airport currency exchange offices have very poor rates. Use a bank ATM (HSBC or Santander) in the terminal for a better exchange rate."
+      }
+    ],
+    "facilities": ["wifi_gratuito", "casas_de_cambio", "cajeros_automaticos", "restaurantes", "tiendas_duty_free", "salas_vip", "farmacia", "renta_de_autos", "guardaequipaje"]
+  },
+  {
+    "id": "ado-cancun",
+    "type": "bus_terminal",
+    "name": {
+      "es": "Terminal de Autobuses ADO Cancún",
+      "en": "ADO Bus Terminal Cancún"
+    },
+    "shortCode": "ADO-CUN",
+    "cityId": "cancun",
+    "address": {
+      "es": "Av. Tulum esquina con Av. Uxmal, Centro, 77500 Cancún, Quintana Roo",
+      "en": "Av. Tulum corner with Av. Uxmal, Downtown, 77500 Cancún, Quintana Roo"
+    },
+    "coordinates": { "lat": 21.1742, "lng": -86.8466 },
+    "howToGetThere": {
+      "es": "En el centro de Cancún sobre la Av. Tulum, la avenida principal de la ciudad. Accesible en autobús urbano R1 o R2 desde la Zona Hotelera. En taxi desde la Zona Hotelera cuesta $200-350 MXN. Está junto al Parque de las Palapas.",
+      "en": "In downtown Cancún on Av. Tulum, the city's main avenue. Accessible by R1 or R2 city bus from the Hotel Zone. A taxi from the Hotel Zone costs $200-350 MXN. It is next to Parque de las Palapas."
+    },
+    "transportOptions": [
+      {
+        "mode": "autobus_urbano",
+        "description": {
+          "es": "Autobuses R1 y R2 pasan por la Av. Tulum frente a la terminal, conectando con la Zona Hotelera. Frecuencia cada 5-10 minutos durante el día.",
+          "en": "R1 and R2 buses pass along Av. Tulum in front of the terminal, connecting to the Hotel Zone. Frequency every 5-10 minutes during the day."
+        },
+        "cost": { "min": 12, "max": 12, "currency": "MXN" },
+        "duration": { "minutes": 30, "label": { "es": "30 min a la Zona Hotelera", "en": "30 min to the Hotel Zone" } }
+      },
+      {
+        "mode": "taxi",
+        "description": {
+          "es": "Taxis disponibles frente a la terminal. Negocia la tarifa antes de subir o pide una referencia en la terminal. Son más baratos que los taxis del aeropuerto.",
+          "en": "Taxis available in front of the terminal. Negotiate the fare before getting in or ask for a reference at the terminal. They are cheaper than airport taxis."
+        },
+        "cost": { "min": 100, "max": 350, "currency": "MXN" },
+        "duration": { "minutes": 20, "label": { "es": "15-25 min a la Zona Hotelera", "en": "15-25 min to the Hotel Zone" } }
+      }
+    ],
+    "tips": [
+      {
+        "es": "ADO ofrece servicio directo a Playa del Carmen (1 hora), Tulum (2.5 horas), Mérida (4.5 horas) y Valladolid (2.5 horas). Los autobuses ADO GL y ADO Platino tienen asientos reclinables, pantallas y wifi.",
+        "en": "ADO offers direct service to Playa del Carmen (1 hour), Tulum (2.5 hours), Mérida (4.5 hours), and Valladolid (2.5 hours). ADO GL and ADO Platino buses have reclining seats, screens, and wifi."
+      },
+      {
+        "es": "Compra boletos con anticipación en ado.com.mx para rutas populares como Cancún-Playa del Carmen, especialmente en temporada alta (diciembre y Semana Santa).",
+        "en": "Buy tickets in advance at ado.com.mx for popular routes like Cancún-Playa del Carmen, especially during high season (December and Holy Week)."
+      }
+    ],
+    "facilities": ["cajeros_automaticos", "restaurantes", "tiendas", "wifi_gratuito", "baños", "guardaequipaje", "sala_de_espera"]
+  },
+  {
+    "id": "aeropuerto-oaxaca",
+    "type": "airport",
+    "name": {
+      "es": "Aeropuerto Internacional de Oaxaca Xoxocotlán",
+      "en": "Oaxaca Xoxocotlán International Airport"
+    },
+    "shortCode": "OAX",
+    "cityId": "oaxaca",
+    "address": {
+      "es": "Carretera a San Pablo Etla Km 8, 71232 Santa Cruz Xoxocotlán, Oaxaca",
+      "en": "Carretera a San Pablo Etla Km 8, 71232 Santa Cruz Xoxocotlán, Oaxaca"
+    },
+    "coordinates": { "lat": 16.9999, "lng": -96.7266 },
+    "howToGetThere": {
+      "es": "Ubicado a 8 km al sur del centro de Oaxaca en el municipio de Santa Cruz Xoxocotlán. Se accede por la carretera a Monte Albán/Xoxocotlán. Es un aeropuerto pequeño con una sola terminal.",
+      "en": "Located 8 km south of downtown Oaxaca in the municipality of Santa Cruz Xoxocotlán. Accessed via the Monte Albán/Xoxocotlán highway. It is a small airport with a single terminal."
+    },
+    "transportOptions": [
+      {
+        "mode": "taxi_autorizado",
+        "description": {
+          "es": "Taxis autorizados con tarifa fija en los módulos de llegadas. Es la opción más práctica ya que no hay transporte público directo al aeropuerto.",
+          "en": "Authorized taxis with fixed fares at the arrival booths. This is the most practical option as there is no direct public transit to the airport."
+        },
+        "cost": { "min": 120, "max": 200, "currency": "MXN" },
+        "duration": { "minutes": 20, "label": { "es": "15-25 min al centro", "en": "15-25 min to downtown" } }
+      },
+      {
+        "mode": "colectivo",
+        "description": {
+          "es": "Vans compartidas (colectivos) salen del aeropuerto cuando se llenan. Son más económicas que el taxi pero tardan más. Te dejan en puntos específicos del centro.",
+          "en": "Shared vans (colectivos) depart from the airport when full. Cheaper than taxis but take longer. They drop you at specific downtown points."
+        },
+        "cost": { "min": 50, "max": 80, "currency": "MXN" },
+        "duration": { "minutes": 30, "label": { "es": "25-35 min al centro", "en": "25-35 min to downtown" } }
+      }
+    ],
+    "tips": [
+      {
+        "es": "El aeropuerto de Oaxaca es pequeño y los vuelos son principalmente a CDMX, Monterrey, Guadalajara, Tijuana y Houston. Volaris, VivaAerobus y Aeroméxico Connect operan aquí.",
+        "en": "Oaxaca's airport is small and flights are mainly to CDMX, Monterrey, Guadalajara, Tijuana, and Houston. Volaris, VivaAerobus, and Aeroméxico Connect operate here."
+      },
+      {
+        "es": "No hay cajeros automáticos confiables en el aeropuerto. Lleva efectivo suficiente para el taxi o cambia en el centro de Oaxaca donde las tasas son mejores.",
+        "en": "There are no reliable ATMs at the airport. Carry enough cash for the taxi or exchange at downtown Oaxaca where rates are better."
+      }
+    ],
+    "facilities": ["restaurantes", "tiendas", "baños", "renta_de_autos", "wifi_gratuito"]
+  },
+  {
+    "id": "ado-oaxaca",
+    "type": "bus_terminal",
+    "name": {
+      "es": "Terminal de Autobuses ADO Oaxaca",
+      "en": "ADO Bus Terminal Oaxaca"
+    },
+    "shortCode": "ADO-OAX",
+    "cityId": "oaxaca",
+    "address": {
+      "es": "Calzada Héroes de Chapultepec 1036, Centro, 68000 Oaxaca de Juárez, Oaxaca",
+      "en": "Calzada Héroes de Chapultepec 1036, Downtown, 68000 Oaxaca de Juárez, Oaxaca"
+    },
+    "coordinates": { "lat": 17.0656, "lng": -96.7197 },
+    "howToGetThere": {
+      "es": "Ubicada a unas 10 cuadras al noreste del Zócalo, sobre la Calzada Héroes de Chapultepec. Caminable desde el centro en 15-20 minutos o en taxi por 40-50 MXN. Fácil de encontrar sobre una avenida principal.",
+      "en": "Located about 10 blocks northeast of the Zócalo, on Calzada Héroes de Chapultepec. Walkable from the center in 15-20 minutes or by taxi for 40-50 MXN. Easy to find on a main avenue."
+    },
+    "transportOptions": [
+      {
+        "mode": "taxi",
+        "description": {
+          "es": "Taxis disponibles frente a la terminal. La tarifa al centro es fija y económica. También puedes caminar al centro en 15-20 minutos por calles seguras.",
+          "en": "Taxis available in front of the terminal. The fare to the center is fixed and affordable. You can also walk to the center in 15-20 minutes on safe streets."
+        },
+        "cost": { "min": 40, "max": 60, "currency": "MXN" },
+        "duration": { "minutes": 10, "label": { "es": "10 min al centro", "en": "10 min to downtown" } }
+      },
+      {
+        "mode": "a_pie",
+        "description": {
+          "es": "Puedes caminar al Zócalo en 15-20 minutos por la Calzada Héroes de Chapultepec. El camino es seguro y plano, pasando por zonas comerciales.",
+          "en": "You can walk to the Zócalo in 15-20 minutes along Calzada Héroes de Chapultepec. The walk is safe and flat, passing through commercial areas."
+        },
+        "cost": { "min": 0, "max": 0, "currency": "MXN" },
+        "duration": { "minutes": 18, "label": { "es": "15-20 min al centro", "en": "15-20 min to downtown" } }
+      }
+    ],
+    "tips": [
+      {
+        "es": "ADO conecta Oaxaca con CDMX (6-7 horas) con salidas frecuentes. El autobús nocturno ADO GL es la mejor opción: asientos cama, llegas temprano y ahorras una noche de hotel.",
+        "en": "ADO connects Oaxaca with CDMX (6-7 hours) with frequent departures. The overnight ADO GL bus is the best option: sleeper seats, you arrive early, and save a night of hotel."
+      },
+      {
+        "es": "Para destinos dentro del estado como Puerto Escondido, Huatulco o la Sierra Norte, usa la terminal de segunda clase (Central de Abastos) o líneas como OCC y Eclipse 70.",
+        "en": "For destinations within the state like Puerto Escondido, Huatulco, or the Sierra Norte, use the second-class terminal (Central de Abastos) or lines like OCC and Eclipse 70."
+      }
+    ],
+    "facilities": ["cajeros_automaticos", "tiendas", "baños", "wifi_gratuito", "sala_de_espera", "guardaequipaje"]
+  },
+  {
+    "id": "aeropuerto-guadalajara",
+    "type": "airport",
+    "name": {
+      "es": "Aeropuerto Internacional de Guadalajara Miguel Hidalgo y Costilla",
+      "en": "Guadalajara Miguel Hidalgo y Costilla International Airport"
+    },
+    "shortCode": "GDL",
+    "cityId": "guadalajara",
+    "address": {
+      "es": "Carretera Guadalajara-Chapala Km 17.5, 45659 Tlajomulco de Zúñiga, Jalisco",
+      "en": "Guadalajara-Chapala Highway Km 17.5, 45659 Tlajomulco de Zúñiga, Jalisco"
+    },
+    "coordinates": { "lat": 20.5218, "lng": -103.3113 },
+    "howToGetThere": {
+      "es": "Ubicado a 16 km al sur del centro de Guadalajara, en la carretera a Chapala. Tiene dos terminales: T1 (aerolíneas tradicionales) y T2 (VivaAerobus y Volaris). El acceso vehicular es por la autopista Guadalajara-Chapala.",
+      "en": "Located 16 km south of downtown Guadalajara, on the highway to Chapala. It has two terminals: T1 (traditional airlines) and T2 (VivaAerobus and Volaris). Vehicle access is via the Guadalajara-Chapala highway."
+    },
+    "transportOptions": [
+      {
+        "mode": "autobus_provia",
+        "description": {
+          "es": "Autobuses Provia operan desde el aeropuerto a la antigua Central Camionera (Terminal Vieja) y zonas céntricas. Económico pero con paradas múltiples.",
+          "en": "Provia buses operate from the airport to the old bus terminal (Terminal Vieja) and central areas. Affordable but with multiple stops."
+        },
+        "cost": { "min": 40, "max": 40, "currency": "MXN" },
+        "duration": { "minutes": 45, "label": { "es": "40-50 min al centro", "en": "40-50 min to downtown" } }
+      },
+      {
+        "mode": "taxi_autorizado",
+        "description": {
+          "es": "Taxis autorizados con boleto de tarifa fija en los módulos de la sala de llegadas. Las tarifas varían según la zona de destino en la ciudad.",
+          "en": "Authorized taxis with fixed-fare tickets at arrival hall booths. Fares vary by destination zone in the city."
+        },
+        "cost": { "min": 250, "max": 450, "currency": "MXN" },
+        "duration": { "minutes": 30, "label": { "es": "25-35 min al centro", "en": "25-35 min to downtown" } }
+      },
+      {
+        "mode": "uber_didi",
+        "description": {
+          "es": "Uber y DiDi operan en el aeropuerto con punto de recolección designado en el estacionamiento. Sigue la señalización de apps de transporte al salir de llegadas.",
+          "en": "Uber and DiDi operate at the airport with a designated pickup point in the parking area. Follow ride-hailing app signage when leaving arrivals."
+        },
+        "cost": { "min": 180, "max": 350, "currency": "MXN" },
+        "duration": { "minutes": 30, "label": { "es": "25-35 min al centro", "en": "25-35 min to downtown" } }
+      }
+    ],
+    "tips": [
+      {
+        "es": "El aeropuerto de Guadalajara es el tercero más transitado de México. Las terminales están separadas; un autobús gratuito las conecta. Verifica tu terminal antes de llegar.",
+        "en": "Guadalajara's airport is Mexico's third busiest. The terminals are separated; a free bus connects them. Check your terminal before arriving."
+      },
+      {
+        "es": "Si vas directamente al Lago de Chapala o Ajijic, el aeropuerto está en camino. Taxis a Chapala cuestan alrededor de $350-500 MXN y toman 30 minutos.",
+        "en": "If heading directly to Lake Chapala or Ajijic, the airport is on the way. Taxis to Chapala cost around $350-500 MXN and take 30 minutes."
+      }
+    ],
+    "facilities": ["wifi_gratuito", "casas_de_cambio", "cajeros_automaticos", "restaurantes", "tiendas_duty_free", "salas_vip", "farmacia", "renta_de_autos", "guardaequipaje"]
+  },
+  {
+    "id": "terminal-vieja-gdl",
+    "type": "bus_terminal",
+    "name": {
+      "es": "Antigua Central Camionera de Guadalajara (Terminal Vieja)",
+      "en": "Old Guadalajara Bus Terminal (Terminal Vieja)"
+    },
+    "shortCode": "TERMINAL VIEJA",
+    "cityId": "guadalajara",
+    "address": {
+      "es": "Av. Dr. R. Michel 275, Las Conchas, 44460 Guadalajara, Jalisco",
+      "en": "Av. Dr. R. Michel 275, Las Conchas, 44460 Guadalajara, Jalisco"
+    },
+    "coordinates": { "lat": 20.6659, "lng": -103.3628 },
+    "howToGetThere": {
+      "es": "Ubicada en el centro de Guadalajara, a pocas cuadras del Mercado San Juan de Dios. Accesible a pie desde la Zona Centro o en transporte público. El Tren Ligero Línea 1 pasa cerca (estación San Juan de Dios).",
+      "en": "Located in downtown Guadalajara, a few blocks from Mercado San Juan de Dios. Walkable from the downtown area or by public transit. Light Rail Line 1 passes nearby (San Juan de Dios station)."
+    },
+    "transportOptions": [
+      {
+        "mode": "tren_ligero",
+        "description": {
+          "es": "Tren Ligero Línea 1, estación San Juan de Dios, a 5 minutos caminando. Conecta con zonas como Zapopan y el Periférico Sur.",
+          "en": "Light Rail Line 1, San Juan de Dios station, 5 minutes walking. Connects to areas like Zapopan and the southern Periférico."
+        },
+        "cost": { "min": 10, "max": 10, "currency": "MXN" },
+        "duration": { "minutes": 10, "label": { "es": "5 min caminando a la estación", "en": "5 min walk to the station" } }
+      },
+      {
+        "mode": "taxi_uber",
+        "description": {
+          "es": "Taxis y Uber disponibles frente a la terminal. Al estar en el centro, los trayectos a la mayoría de hoteles céntricos son cortos y económicos.",
+          "en": "Taxis and Uber available in front of the terminal. Being downtown, rides to most central hotels are short and affordable."
+        },
+        "cost": { "min": 50, "max": 150, "currency": "MXN" },
+        "duration": { "minutes": 15, "label": { "es": "10-20 min a hoteles del centro", "en": "10-20 min to downtown hotels" } }
+      }
+    ],
+    "tips": [
+      {
+        "es": "La Terminal Vieja maneja rutas cortas y regionales: Tequila, Chapala, Tapalpa, y ciudades cercanas de Jalisco. Para destinos de larga distancia usa la Terminal Nueva.",
+        "en": "The Old Terminal handles short and regional routes: Tequila, Chapala, Tapalpa, and nearby Jalisco cities. For long-distance destinations use the New Terminal."
+      },
+      {
+        "es": "Está en una zona comercial bulliciosa. Ten cuidado con tus pertenencias y no exhibas objetos de valor en los alrededores del mercado.",
+        "en": "It is in a busy commercial area. Watch your belongings and do not display valuables around the market area."
+      }
+    ],
+    "facilities": ["cajeros_automaticos", "tiendas", "restaurantes", "baños", "sala_de_espera"]
+  },
+  {
+    "id": "terminal-nueva-gdl",
+    "type": "bus_terminal",
+    "name": {
+      "es": "Nueva Central Camionera de Guadalajara (Terminal Nueva)",
+      "en": "New Guadalajara Bus Terminal (Terminal Nueva)"
+    },
+    "shortCode": "TERMINAL NUEVA",
+    "cityId": "guadalajara",
+    "address": {
+      "es": "Autopista Guadalajara-Zapotlanejo Km 17.5, Tonalá, 45400 Jalisco",
+      "en": "Guadalajara-Zapotlanejo Highway Km 17.5, Tonalá, 45400 Jalisco"
+    },
+    "coordinates": { "lat": 20.6262, "lng": -103.4028 },
+    "howToGetThere": {
+      "es": "Ubicada al sureste de la ciudad, en la carretera a Zapotlanejo. Se accede por la autopista a Zapotlanejo o por el periférico Sur. Está alejada del centro, por lo que taxi o app de transporte es la forma más práctica de llegar.",
+      "en": "Located southeast of the city, on the highway to Zapotlanejo. Accessed via the Zapotlanejo highway or the southern Periférico. It is far from downtown, so a taxi or ride-hailing app is the most practical way to get there."
+    },
+    "transportOptions": [
+      {
+        "mode": "autobus_urbano",
+        "description": {
+          "es": "Varias rutas de autobús urbano conectan la terminal con el centro de Guadalajara. La ruta 275 es una de las más directas. Puede tomar tiempo en hora pico.",
+          "en": "Several city bus routes connect the terminal to downtown Guadalajara. Route 275 is one of the most direct. It can take time during rush hour."
+        },
+        "cost": { "min": 10, "max": 10, "currency": "MXN" },
+        "duration": { "minutes": 50, "label": { "es": "40-60 min al centro", "en": "40-60 min to downtown" } }
+      },
+      {
+        "mode": "taxi_uber",
+        "description": {
+          "es": "Taxis autorizados y Uber/DiDi operan en la terminal. Los taxis tienen tarifa fija según zona. Uber suele ser más económico para trayectos al centro.",
+          "en": "Authorized taxis and Uber/DiDi operate at the terminal. Taxis have fixed fares by zone. Uber is usually cheaper for trips to the center."
+        },
+        "cost": { "min": 150, "max": 300, "currency": "MXN" },
+        "duration": { "minutes": 30, "label": { "es": "25-40 min al centro", "en": "25-40 min to downtown" } }
+      }
+    ],
+    "tips": [
+      {
+        "es": "La Terminal Nueva es la principal para rutas de larga distancia: CDMX, Monterrey, Aguascalientes, Manzanillo, Puerto Vallarta. Tiene 7 módulos organizados por línea de autobús. ETN y Primera Plus ofrecen servicio de lujo.",
+        "en": "The New Terminal is the main one for long-distance routes: CDMX, Monterrey, Aguascalientes, Manzanillo, Puerto Vallarta. It has 7 modules organized by bus line. ETN and Primera Plus offer luxury service."
+      },
+      {
+        "es": "La terminal está lejos del centro. Si llegas de noche, toma un taxi autorizado de la terminal, no salgas a buscar transporte en la calle.",
+        "en": "The terminal is far from downtown. If arriving at night, take an authorized taxi from the terminal, do not go outside to look for street transport."
+      }
+    ],
+    "facilities": ["guardaequipaje", "cajeros_automaticos", "restaurantes", "tiendas", "farmacia", "wifi_gratuito", "baños", "sala_de_espera", "casas_de_cambio"]
+  },
+  {
+    "id": "aeropuerto-monterrey",
+    "type": "airport",
+    "name": {
+      "es": "Aeropuerto Internacional de Monterrey General Mariano Escobedo",
+      "en": "Monterrey General Mariano Escobedo International Airport"
+    },
+    "shortCode": "MTY",
+    "cityId": "monterrey",
+    "address": {
+      "es": "Carretera Miguel Alemán Km 24, 66600 Apodaca, Nuevo León",
+      "en": "Carretera Miguel Alemán Km 24, 66600 Apodaca, Nuevo León"
+    },
+    "coordinates": { "lat": 25.7785, "lng": -100.1069 },
+    "howToGetThere": {
+      "es": "Ubicado a 24 km al noreste del centro de Monterrey, en el municipio de Apodaca. Se accede por la Carretera Miguel Alemán. Tiene dos terminales: Terminal A (aerolíneas nacionales e internacionales) y Terminal B (VivaAerobus). Un autobús gratuito conecta ambas terminales.",
+      "en": "Located 24 km northeast of downtown Monterrey, in the municipality of Apodaca. Accessed via Carretera Miguel Alemán. It has two terminals: Terminal A (national and international airlines) and Terminal B (VivaAerobus). A free bus connects both terminals."
+    },
+    "transportOptions": [
+      {
+        "mode": "taxi_autorizado",
+        "description": {
+          "es": "Taxis autorizados con boleto de tarifa fija en los módulos de la sala de llegadas. La tarifa al centro de Monterrey o San Pedro varía según la zona de destino.",
+          "en": "Authorized taxis with fixed-fare tickets at arrival hall booths. The fare to downtown Monterrey or San Pedro varies by destination zone."
+        },
+        "cost": { "min": 350, "max": 600, "currency": "MXN" },
+        "duration": { "minutes": 35, "label": { "es": "30-45 min al centro", "en": "30-45 min to downtown" } }
+      },
+      {
+        "mode": "uber_didi",
+        "description": {
+          "es": "Uber y DiDi operan con punto de recolección designado en el estacionamiento del aeropuerto. Generalmente más económico que los taxis autorizados.",
+          "en": "Uber and DiDi operate with a designated pickup point in the airport parking area. Generally cheaper than authorized taxis."
+        },
+        "cost": { "min": 250, "max": 450, "currency": "MXN" },
+        "duration": { "minutes": 35, "label": { "es": "30-45 min al centro", "en": "30-45 min to downtown" } }
+      },
+      {
+        "mode": "autobus",
+        "description": {
+          "es": "Autobuses del aeropuerto conectan con la Central de Autobuses de Monterrey y algunas zonas de la ciudad. Menos frecuentes pero muy económicos.",
+          "en": "Airport buses connect to the Monterrey Bus Terminal and some city areas. Less frequent but very affordable."
+        },
+        "cost": { "min": 50, "max": 80, "currency": "MXN" },
+        "duration": { "minutes": 50, "label": { "es": "45-60 min al centro", "en": "45-60 min to downtown" } }
+      }
+    ],
+    "tips": [
+      {
+        "es": "El aeropuerto de Monterrey es el segundo más importante del norte de México. Verifica si tu vuelo sale de Terminal A o B; están separadas y conectadas por shuttle gratuito.",
+        "en": "Monterrey's airport is the second most important in northern Mexico. Check if your flight departs from Terminal A or B; they are separate and connected by a free shuttle."
+      },
+      {
+        "es": "Si rentas auto, las principales casas de renta están en la terminal. La autopista al centro está bien señalizada. Ten cuidado con las casetas de peaje.",
+        "en": "If renting a car, the main rental agencies are at the terminal. The highway to downtown is well-marked. Watch out for toll booths."
+      },
+      {
+        "es": "La zona VIP de Terminal A (Sala Premier Aeroméxico) es excelente si tienes acceso. De lo contrario, hay varios restaurantes decentes después de seguridad.",
+        "en": "The VIP area in Terminal A (Aeroméxico Premier Lounge) is excellent if you have access. Otherwise, there are several decent restaurants after security."
+      }
+    ],
+    "facilities": ["wifi_gratuito", "casas_de_cambio", "cajeros_automaticos", "restaurantes", "tiendas_duty_free", "salas_vip", "farmacia", "renta_de_autos"]
+  },
+  {
+    "id": "terminal-monterrey",
+    "type": "bus_terminal",
+    "name": {
+      "es": "Central de Autobuses de Monterrey",
+      "en": "Monterrey Central Bus Terminal"
+    },
+    "shortCode": "CENTRAL MTY",
+    "cityId": "monterrey",
+    "address": {
+      "es": "Av. Colón S/N esquina con Av. Villagrán, Centro, 64000 Monterrey, Nuevo León",
+      "en": "Av. Colón S/N corner with Av. Villagrán, Downtown, 64000 Monterrey, Nuevo León"
+    },
+    "coordinates": { "lat": 25.6885, "lng": -100.3111 },
+    "howToGetThere": {
+      "es": "Ubicada en el centro de Monterrey, a pocas cuadras de la Macroplaza. Accesible en Metro Línea 1 (estación Cuauhtémoc, a 5 minutos caminando). Muy céntrica y conectada con las principales avenidas de la ciudad.",
+      "en": "Located in downtown Monterrey, a few blocks from the Macroplaza. Accessible via Metro Line 1 (Cuauhtémoc station, 5 minutes walking). Very central and connected to the city's main avenues."
+    },
+    "transportOptions": [
+      {
+        "mode": "metro",
+        "description": {
+          "es": "Metro Línea 1, estación Cuauhtémoc, a 5 minutos caminando de la terminal. Conecta con Macroplaza, Fundidora y zonas residenciales.",
+          "en": "Metro Line 1, Cuauhtémoc station, 5 minutes walking from the terminal. Connects to Macroplaza, Fundidora, and residential areas."
+        },
+        "cost": { "min": 6, "max": 6, "currency": "MXN" },
+        "duration": { "minutes": 8, "label": { "es": "5 min caminando a la estación", "en": "5 min walk to the station" } }
+      },
+      {
+        "mode": "uber_didi",
+        "description": {
+          "es": "Uber y DiDi son las opciones más prácticas desde la terminal. La recolección es en la zona de estacionamiento. Al estar en el centro, los viajes a la mayoría de destinos son cortos.",
+          "en": "Uber and DiDi are the most practical options from the terminal. Pickup is in the parking area. Being downtown, rides to most destinations are short."
+        },
+        "cost": { "min": 60, "max": 200, "currency": "MXN" },
+        "duration": { "minutes": 15, "label": { "es": "10-20 min a la mayoría de destinos", "en": "10-20 min to most destinations" } }
+      },
+      {
+        "mode": "taxi",
+        "description": {
+          "es": "Taxis disponibles frente a la terminal con tarifa fija según zona. Más caros que las apps pero inmediatos y sin espera.",
+          "en": "Taxis available in front of the terminal with fixed fares by zone. More expensive than apps but immediate and no waiting."
+        },
+        "cost": { "min": 80, "max": 250, "currency": "MXN" },
+        "duration": { "minutes": 15, "label": { "es": "10-20 min a la mayoría de destinos", "en": "10-20 min to most destinations" } }
+      }
+    ],
+    "tips": [
+      {
+        "es": "La terminal cubre destinos a todo el norte de México y al centro: CDMX (12 horas), Saltillo (1.5 horas), Guadalajara (9 horas) y ciudades fronterizas. ETN, Omnibus de México y Senda son las principales líneas.",
+        "en": "The terminal covers destinations throughout northern Mexico and the center: CDMX (12 hours), Saltillo (1.5 hours), Guadalajara (9 hours), and border cities. ETN, Omnibus de México, and Senda are the main lines."
+      },
+      {
+        "es": "Para viajes a Saltillo, los autobuses Senda salen cada 20-30 minutos y el viaje toma solo 1.5 horas. Es como un servicio de transporte suburbano por la frecuencia.",
+        "en": "For trips to Saltillo, Senda buses depart every 20-30 minutes and the trip takes only 1.5 hours. The frequency makes it feel like a suburban transit service."
+      },
+      {
+        "es": "La zona de la terminal puede estar concurrida. No dejes equipaje desatendido y usa las instalaciones internas de la terminal mientras esperas tu autobús.",
+        "en": "The terminal area can be busy. Do not leave luggage unattended and use the terminal's indoor facilities while waiting for your bus."
+      }
+    ],
+    "facilities": ["guardaequipaje", "cajeros_automaticos", "restaurantes", "tiendas", "farmacia", "wifi_gratuito", "baños", "sala_de_espera"]
+  }
+]

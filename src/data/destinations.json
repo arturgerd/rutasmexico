@@ -1,0 +1,1176 @@
+[
+  {
+    "id": "cdmx",
+    "slug": "ciudad-de-mexico",
+    "name": {
+      "es": "Ciudad de México",
+      "en": "Mexico City"
+    },
+    "shortName": "CDMX",
+    "coordinates": {
+      "lat": 19.4326,
+      "lng": -99.1332
+    },
+    "state": {
+      "es": "Ciudad de México",
+      "en": "Mexico City"
+    },
+    "region": "centro",
+    "description": {
+      "es": "La capital de México es una metrópoli vibrante con más de 150 museos, arquitectura colonial, ruinas prehispánicas y una de las escenas gastronómicas más reconocidas del mundo.",
+      "en": "Mexico's capital is a vibrant metropolis with over 150 museums, colonial architecture, pre-Hispanic ruins, and one of the world's most acclaimed food scenes."
+    },
+    "longDescription": {
+      "es": "La Ciudad de México, construida sobre las ruinas de la gran Tenochtitlán, es una de las ciudades más grandes y fascinantes del continente americano. Su Centro Histórico, declarado Patrimonio de la Humanidad por la UNESCO, alberga el Templo Mayor azteca junto a la imponente Catedral Metropolitana. Barrios como Coyoacán, Roma y Condesa ofrecen una mezcla única de cultura, arte y gastronomía. Desde los murales de Diego Rivera en el Palacio Nacional hasta los canales de Xochimilco, la ciudad ofrece experiencias inigualables para todo tipo de viajero.",
+      "en": "Mexico City, built upon the ruins of the great Tenochtitlan, is one of the largest and most fascinating cities in the Americas. Its Historic Center, a UNESCO World Heritage Site, houses the Aztec Templo Mayor alongside the imposing Metropolitan Cathedral. Neighborhoods like Coyoacán, Roma, and Condesa offer a unique blend of culture, art, and gastronomy. From Diego Rivera's murals at the National Palace to the canals of Xochimilco, the city offers unparalleled experiences for every type of traveler."
+    },
+    "heroImage": "/images/destinations/cdmx.jpg",
+    "highlights": [
+      {
+        "es": "Museo Nacional de Antropología, uno de los mejores museos del mundo con la Piedra del Sol y artefactos mayas",
+        "en": "National Museum of Anthropology, one of the world's finest museums featuring the Sun Stone and Mayan artifacts"
+      },
+      {
+        "es": "Paseo por los canales de Xochimilco en trajineras coloridas con música en vivo",
+        "en": "Boat ride through Xochimilco canals on colorful trajineras with live music"
+      },
+      {
+        "es": "Centro Histórico con el Zócalo, Palacio Nacional y Catedral Metropolitana",
+        "en": "Historic Center with the Zócalo, National Palace, and Metropolitan Cathedral"
+      },
+      {
+        "es": "Casa Azul de Frida Kahlo en Coyoacán y el mercado artesanal del barrio",
+        "en": "Frida Kahlo's Blue House in Coyoacán and the neighborhood's artisan market"
+      },
+      {
+        "es": "Visita a las pirámides de Teotihuacán, a solo 50 km de la ciudad",
+        "en": "Visit the Teotihuacán pyramids, just 50 km from the city"
+      }
+    ],
+    "gettingAround": {
+      "es": "El Metro de la CDMX es extenso y muy económico (5 MXN por viaje), cubriendo la mayoría de zonas turísticas. El Metrobús es ideal para recorrer Reforma e Insurgentes. Uber y DiDi funcionan muy bien y son seguros. Para distancias cortas en la Roma, Condesa y Coyoacán, caminar o usar Ecobici (sistema de bicicletas públicas) es la mejor opción. Evita el metro en hora pico (7-9 AM y 6-8 PM).",
+      "en": "CDMX's Metro is extensive and very affordable (5 MXN per ride), covering most tourist areas. The Metrobús is ideal for traveling along Reforma and Insurgentes avenues. Uber and DiDi work very well and are safe. For short distances in Roma, Condesa, and Coyoacán, walking or using Ecobici (public bike-sharing system) is the best option. Avoid the metro during rush hour (7-9 AM and 6-8 PM)."
+    },
+    "safetyTips": [
+      {
+        "es": "Usa solo taxis de sitio o aplicaciones como Uber y DiDi. Nunca tomes taxis de la calle, especialmente de noche.",
+        "en": "Only use authorized taxi stands or apps like Uber and DiDi. Never hail street taxis, especially at night."
+      },
+      {
+        "es": "Mantén tus pertenencias cerca en el metro y en zonas concurridas como el Centro Histórico y Tepito. Evita mostrar joyería o dispositivos costosos.",
+        "en": "Keep your belongings close on the metro and in crowded areas like the Historic Center and Tepito. Avoid displaying expensive jewelry or devices."
+      },
+      {
+        "es": "El agua de la llave no es potable. Bebe agua embotellada o purificada. Los puestos de comida callejera con mucha clientela local suelen ser seguros.",
+        "en": "Tap water is not safe to drink. Use bottled or purified water. Street food stalls with lots of local customers are generally safe to eat at."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Tacos al Pastor",
+        "description": {
+          "es": "Carne de cerdo marinada en adobo con achiote, cocinada en trompo vertical y servida con piña, cilantro y cebolla en tortilla de maíz. El platillo callejero más emblemático de la ciudad.",
+          "en": "Pork marinated in achiote adobo, cooked on a vertical spit and served with pineapple, cilantro, and onion on a corn tortilla. The city's most iconic street food."
+        },
+        "priceRange": {
+          "min": 15,
+          "max": 35,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "El Vilsito (Narvarte) - famosa taquería nocturna que de día es taller mecánico. Tacos Orinoco (Roma) también es excelente.",
+          "en": "El Vilsito (Narvarte) - famous late-night taquería that doubles as a mechanic shop by day. Tacos Orinoco (Roma) is also excellent."
+        }
+      },
+      {
+        "name": "Tlacoyos",
+        "description": {
+          "es": "Masa de maíz azul o blanco rellena de frijol, chicharrón prensado o requesón, cocinada en comal y cubierta con nopales, queso, crema y salsa verde o roja.",
+          "en": "Blue or white corn masa stuffed with beans, pressed pork rinds, or requesón cheese, cooked on a comal and topped with cactus, cheese, cream, and green or red salsa."
+        },
+        "priceRange": {
+          "min": 20,
+          "max": 40,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Mercado de Coyoacán o los puestos afuera del Museo de Antropología. También en el Mercado de Jamaica.",
+          "en": "Coyoacán Market or the stalls outside the Anthropology Museum. Also at Jamaica Market."
+        }
+      },
+      {
+        "name": "Chilaquiles",
+        "description": {
+          "es": "Totopos bañados en salsa verde o roja, con crema, queso fresco y cebolla. Se sirven con pollo, huevo o cecina. El desayuno clásico capitalino.",
+          "en": "Fried tortilla chips bathed in green or red salsa, with cream, fresh cheese, and onion. Served with chicken, egg, or dried beef. The classic Mexico City breakfast."
+        },
+        "priceRange": {
+          "min": 65,
+          "max": 150,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Café de Tacuba (Centro Histórico) o Los Chilaquiles (Condesa). Para una opción económica, cualquier fonda local.",
+          "en": "Café de Tacuba (Historic Center) or Los Chilaquiles (Condesa). For a budget option, any local fonda."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 800,
+      "max": 2500,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "De marzo a mayo, cuando el clima es cálido y seco con cielos despejados. Octubre y noviembre también son excelentes por el Día de Muertos y temperaturas agradables.",
+      "en": "March to May, when the weather is warm and dry with clear skies. October and November are also excellent for Day of the Dead celebrations and pleasant temperatures."
+    },
+    "airportIATA": "MEX"
+  },
+  {
+    "id": "cancun",
+    "slug": "cancun",
+    "name": {
+      "es": "Cancún",
+      "en": "Cancún"
+    },
+    "shortName": "CUN",
+    "coordinates": {
+      "lat": 21.1619,
+      "lng": -86.8515
+    },
+    "state": {
+      "es": "Quintana Roo",
+      "en": "Quintana Roo"
+    },
+    "region": "peninsula",
+    "description": {
+      "es": "Cancún combina playas de arena blanca y aguas turquesa del Caribe con acceso a ruinas mayas impresionantes y cenotes cristalinos en la selva.",
+      "en": "Cancún combines white-sand beaches and turquoise Caribbean waters with access to impressive Mayan ruins and crystalline cenotes in the jungle."
+    },
+    "longDescription": {
+      "es": "Cancún es el destino de playa más famoso de México, ubicado en la costa caribeña de la Península de Yucatán. Su Zona Hotelera, una franja de tierra en forma de 7, alberga resorts de clase mundial frente a aguas turquesa. Más allá de las playas, Cancún es la puerta de entrada a las ruinas mayas de Chichén Itzá, Tulum y Cobá, así como a cenotes subterráneos espectaculares. El centro de Cancún ofrece una experiencia más auténtica con mercados locales, taquerías y vida nocturna accesible. La barrera de coral mesoamericana, la segunda más grande del mundo, ofrece snorkel y buceo excepcionales.",
+      "en": "Cancún is Mexico's most famous beach destination, located on the Caribbean coast of the Yucatán Peninsula. Its Hotel Zone, a 7-shaped strip of land, hosts world-class resorts facing turquoise waters. Beyond the beaches, Cancún is the gateway to the Mayan ruins of Chichén Itzá, Tulum, and Cobá, as well as spectacular underground cenotes. Downtown Cancún offers a more authentic experience with local markets, taquerías, and accessible nightlife. The Mesoamerican Barrier Reef, the world's second largest, offers exceptional snorkeling and diving."
+    },
+    "heroImage": "/images/destinations/cancun.jpg",
+    "highlights": [
+      {
+        "es": "Playas de arena blanca como Playa Delfines y Playa Norte en Isla Mujeres",
+        "en": "White-sand beaches like Playa Delfines and Playa Norte on Isla Mujeres"
+      },
+      {
+        "es": "Snorkel en la barrera arrecifal mesoamericana y el Museo Subacuático de Arte (MUSA)",
+        "en": "Snorkeling at the Mesoamerican Barrier Reef and the Underwater Museum of Art (MUSA)"
+      },
+      {
+        "es": "Excursión a Chichén Itzá, una de las Nuevas Siete Maravillas del Mundo",
+        "en": "Day trip to Chichén Itzá, one of the New Seven Wonders of the World"
+      },
+      {
+        "es": "Nadar en cenotes como Cenote Ik Kil, Cenote Dos Ojos y Gran Cenote cerca de Tulum",
+        "en": "Swimming in cenotes like Cenote Ik Kil, Cenote Dos Ojos, and Gran Cenote near Tulum"
+      },
+      {
+        "es": "Recorrido por las ruinas mayas de Tulum con vista al mar Caribe",
+        "en": "Tour of the Tulum Mayan ruins overlooking the Caribbean Sea"
+      }
+    ],
+    "gettingAround": {
+      "es": "En la Zona Hotelera, los autobuses R1 y R2 recorren el Blvd. Kukulcán (12 MXN). Los taxis en la zona turística son caros; negocia la tarifa antes de subir. Uber funciona pero puede tener conflictos con taxistas. Para visitar cenotes y ruinas, renta un auto o contrata tours organizados. El ferry a Isla Mujeres sale de Puerto Juárez y Playa Tortugas.",
+      "en": "In the Hotel Zone, R1 and R2 buses run along Blvd. Kukulcán (12 MXN). Taxis in the tourist zone are expensive; negotiate the fare before getting in. Uber works but may face conflicts with taxi drivers. To visit cenotes and ruins, rent a car or book organized tours. The ferry to Isla Mujeres departs from Puerto Juárez and Playa Tortugas."
+    },
+    "safetyTips": [
+      {
+        "es": "Respeta las banderas de seguridad en las playas: roja significa no nadar. Las corrientes del Caribe pueden ser muy fuertes, especialmente en la cara este de la Zona Hotelera.",
+        "en": "Respect beach safety flags: red means no swimming. Caribbean currents can be very strong, especially on the eastern face of the Hotel Zone."
+      },
+      {
+        "es": "Ten cuidado con los vendedores que ofrecen tours y tiempos compartidos en la Zona Hotelera. Reserva tours solo con agencias establecidas y revisa reseñas antes.",
+        "en": "Be cautious of vendors offering tours and timeshares in the Hotel Zone. Book tours only with established agencies and check reviews beforehand."
+      },
+      {
+        "es": "Usa protector solar biodegradable al visitar cenotes y arrecifes. El protector solar regular daña los ecosistemas. Muchos cenotes lo exigen como requisito de entrada.",
+        "en": "Use biodegradable sunscreen when visiting cenotes and reefs. Regular sunscreen damages ecosystems. Many cenotes require it as an entry condition."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Cochinita Pibil",
+        "description": {
+          "es": "Cerdo marinado en achiote y jugo de naranja agria, envuelto en hoja de plátano y cocinado lentamente bajo tierra. Se sirve en tacos o tortas con cebolla morada encurtida y habanero.",
+          "en": "Pork marinated in achiote and sour orange juice, wrapped in banana leaf and slow-cooked underground. Served in tacos or tortas with pickled red onion and habanero."
+        },
+        "priceRange": {
+          "min": 25,
+          "max": 60,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Lonchería El Pocito (centro de Cancún) para la versión más auténtica. En la Zona Hotelera, La Habichuela Sunset.",
+          "en": "Lonchería El Pocito (downtown Cancún) for the most authentic version. In the Hotel Zone, try La Habichuela Sunset."
+        }
+      },
+      {
+        "name": "Ceviche de Camarón",
+        "description": {
+          "es": "Camarones frescos curados en limón con tomate, cebolla, cilantro, aguacate y chile habanero. Se acompaña con tostadas y salsa de habanero.",
+          "en": "Fresh shrimp cured in lime juice with tomato, onion, cilantro, avocado, and habanero chile. Served with tostadas and habanero salsa."
+        },
+        "priceRange": {
+          "min": 80,
+          "max": 200,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Mercado 28 en el centro de Cancún tiene varios puestos excelentes. También Pescaditos en la Zona Hotelera.",
+          "en": "Mercado 28 in downtown Cancún has several excellent stalls. Also Pescaditos in the Hotel Zone."
+        }
+      },
+      {
+        "name": "Salbutes y Panuchos",
+        "description": {
+          "es": "Salbutes son tortillas infladas cubiertas con pavo, lechuga, tomate y cebolla encurtida. Los panuchos llevan frijol negro dentro de la tortilla. Ambos son antojitos yucatecos esenciales.",
+          "en": "Salbutes are puffed tortillas topped with turkey, lettuce, tomato, and pickled onion. Panuchos have black bean inside the tortilla. Both are essential Yucatecan snacks."
+        },
+        "priceRange": {
+          "min": 15,
+          "max": 35,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "El Parque de las Palapas en el centro tiene varios puestos nocturnos auténticos. También Los de Pescado en Av. Tulum.",
+          "en": "Parque de las Palapas downtown has several authentic evening stalls. Also Los de Pescado on Av. Tulum."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 1200,
+      "max": 4000,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "De diciembre a abril, temporada seca con temperaturas agradables entre 24-30°C. Evita septiembre y octubre por la temporada de huracanes. Julio y agosto son calurosos pero buenos para ofertas.",
+      "en": "December to April, the dry season with pleasant temperatures between 24-30°C. Avoid September and October due to hurricane season. July and August are hot but good for deals."
+    },
+    "airportIATA": "CUN"
+  },
+  {
+    "id": "oaxaca",
+    "slug": "oaxaca",
+    "name": {
+      "es": "Oaxaca de Juárez",
+      "en": "Oaxaca City"
+    },
+    "shortName": "OAX",
+    "coordinates": {
+      "lat": 17.0732,
+      "lng": -96.7266
+    },
+    "state": {
+      "es": "Oaxaca",
+      "en": "Oaxaca"
+    },
+    "region": "sur",
+    "description": {
+      "es": "Oaxaca es la capital cultural y gastronómica de México, con tradiciones indígenas vivas, mezcal artesanal, textiles coloridos y una de las celebraciones de Día de Muertos más impresionantes del país.",
+      "en": "Oaxaca is Mexico's cultural and gastronomic capital, with living indigenous traditions, artisanal mezcal, colorful textiles, and one of the country's most impressive Day of the Dead celebrations."
+    },
+    "longDescription": {
+      "es": "Oaxaca de Juárez, enclavada en un valle rodeado de montañas en el sur de México, es una joya colonial donde convergen 16 grupos indígenas con tradiciones vivas. Su Centro Histórico, Patrimonio de la Humanidad, está lleno de templos barrocos, mercados bulliciosos y galerías de arte contemporáneo. La gastronomía oaxaqueña, considerada la más compleja de México, incluye siete variedades de mole, tlayudas, chapulines y mezcal artesanal. Las ruinas zapotecas de Monte Albán dominan el valle desde lo alto, mientras que los pueblos de los Valles Centrales mantienen vivas tradiciones de tejido, barro negro y alebrijes.",
+      "en": "Oaxaca de Juárez, nestled in a valley surrounded by mountains in southern Mexico, is a colonial gem where 16 indigenous groups converge with living traditions. Its Historic Center, a UNESCO World Heritage Site, is filled with baroque temples, bustling markets, and contemporary art galleries. Oaxacan cuisine, considered Mexico's most complex, includes seven varieties of mole, tlayudas, chapulines, and artisanal mezcal. The Zapotec ruins of Monte Albán dominate the valley from above, while the Central Valleys villages keep alive traditions of weaving, black clay pottery, and alebrijes."
+    },
+    "heroImage": "/images/destinations/oaxaca.jpg",
+    "highlights": [
+      {
+        "es": "Zona arqueológica de Monte Albán, antigua capital zapoteca con vistas panorámicas del valle",
+        "en": "Monte Albán archaeological site, ancient Zapotec capital with panoramic valley views"
+      },
+      {
+        "es": "Recorrido por mezcalerías y destilerías artesanales en Santiago Matatlán, la capital mundial del mezcal",
+        "en": "Tour of mezcalerías and artisanal distilleries in Santiago Matatlán, the world capital of mezcal"
+      },
+      {
+        "es": "Mercado de Benito Juárez y Mercado 20 de Noviembre para probar tasajo, quesillo y chocolate oaxaqueño",
+        "en": "Benito Juárez Market and 20 de Noviembre Market to try tasajo, quesillo cheese, and Oaxacan chocolate"
+      },
+      {
+        "es": "Hierve el Agua, cascadas petrificadas con pozas naturales y vistas espectaculares del cañón",
+        "en": "Hierve el Agua, petrified waterfalls with natural pools and spectacular canyon views"
+      }
+    ],
+    "gettingAround": {
+      "es": "El centro de Oaxaca es muy caminable. Para ir a Monte Albán, Hierve el Agua y los pueblos de los Valles Centrales, toma colectivos económicos desde la Central de Abastos o contrata tours. Los taxis en la ciudad cuestan entre 40-60 MXN para trayectos cortos. Uber funciona pero con disponibilidad limitada. Rentar bicicleta es excelente para recorrer el centro.",
+      "en": "Oaxaca's center is very walkable. To reach Monte Albán, Hierve el Agua, and the Central Valleys villages, take affordable colectivos from the Central de Abastos or hire tours. City taxis cost 40-60 MXN for short trips. Uber works but with limited availability. Renting a bicycle is excellent for exploring the center."
+    },
+    "safetyTips": [
+      {
+        "es": "Oaxaca es generalmente muy segura para turistas. Lleva efectivo ya que muchos negocios pequeños y mercados no aceptan tarjeta.",
+        "en": "Oaxaca is generally very safe for tourists. Carry cash as many small businesses and markets do not accept cards."
+      },
+      {
+        "es": "En temporada de lluvias (junio-septiembre), las carreteras hacia Hierve el Agua y pueblos remotos pueden ser complicadas. Verifica condiciones antes de viajar.",
+        "en": "During rainy season (June-September), roads to Hierve el Agua and remote villages can be difficult. Check conditions before traveling."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Tlayuda",
+        "description": {
+          "es": "Tortilla gigante de maíz crujiente untada con asiento (manteca de cerdo), frijoles negros, quesillo, tasajo o cecina, lechuga, aguacate y salsa. La pizza oaxaqueña.",
+          "en": "Giant crispy corn tortilla spread with asiento (pork lard), black beans, quesillo cheese, tasajo or cecina, lettuce, avocado, and salsa. The Oaxacan pizza."
+        },
+        "priceRange": {
+          "min": 60,
+          "max": 120,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Las tlayudas del Mercado 20 de Noviembre (pasillo de humo) son legendarias. También Tlayudas Libres en la calle Libres por la noche.",
+          "en": "The tlayudas at 20 de Noviembre Market (smoke aisle) are legendary. Also Tlayudas Libres on Calle Libres at night."
+        }
+      },
+      {
+        "name": "Mole Negro",
+        "description": {
+          "es": "El más complejo de los siete moles oaxaqueños, hecho con más de 30 ingredientes incluyendo chiles negros, chocolate, plátano macho y hierbas. Se sirve sobre pollo o cerdo con arroz.",
+          "en": "The most complex of the seven Oaxacan moles, made with over 30 ingredients including black chiles, chocolate, plantain, and herbs. Served over chicken or pork with rice."
+        },
+        "priceRange": {
+          "min": 90,
+          "max": 180,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Los Danzantes en el centro o Casa Oaxaca para versiones gourmet. Para algo más económico, Comedor Doña Elpidea en el mercado.",
+          "en": "Los Danzantes downtown or Casa Oaxaca for gourmet versions. For something more affordable, Comedor Doña Elpidea in the market."
+        }
+      },
+      {
+        "name": "Chapulines",
+        "description": {
+          "es": "Saltamontes tostados sazonados con ajo, limón, chile y sal. Un snack prehispánico crujiente y proteínico que se come solo, en tacos o sobre guacamole.",
+          "en": "Toasted grasshoppers seasoned with garlic, lime, chile, and salt. A crunchy, protein-rich pre-Hispanic snack eaten alone, in tacos, or on top of guacamole."
+        },
+        "priceRange": {
+          "min": 20,
+          "max": 50,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "En cualquier mercado oaxaqueño, especialmente en el Mercado de Benito Juárez. Pide que te los pongan en un taco con guacamole.",
+          "en": "At any Oaxacan market, especially at Benito Juárez Market. Ask for them in a taco with guacamole."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 600,
+      "max": 1800,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "Octubre a noviembre para la celebración de Día de Muertos y la Guelaguetza en julio. La temporada seca de noviembre a abril es ideal. Diciembre tiene las fiestas de la Noche de Rábanos.",
+      "en": "October to November for Day of the Dead celebrations and the Guelaguetza festival in July. The dry season from November to April is ideal. December features the Night of the Radishes festival."
+    },
+    "airportIATA": "OAX"
+  },
+  {
+    "id": "guadalajara",
+    "slug": "guadalajara",
+    "name": {
+      "es": "Guadalajara",
+      "en": "Guadalajara"
+    },
+    "shortName": "GDL",
+    "coordinates": {
+      "lat": 20.6597,
+      "lng": -103.3496
+    },
+    "state": {
+      "es": "Jalisco",
+      "en": "Jalisco"
+    },
+    "region": "pacifico",
+    "description": {
+      "es": "Guadalajara es la cuna del mariachi, el tequila y la charrería. La segunda ciudad más grande de México ofrece una mezcla de tradición jalisciense y modernidad cosmopolita.",
+      "en": "Guadalajara is the birthplace of mariachi, tequila, and charrería. Mexico's second-largest city offers a blend of Jalisco tradition and cosmopolitan modernity."
+    },
+    "longDescription": {
+      "es": "Guadalajara, la Perla de Occidente, es la capital del estado de Jalisco y el epicentro de la cultura mexicana más reconocida internacionalmente. Aquí nacieron el mariachi, el tequila y la charrería. Su Centro Histórico impresiona con la Catedral, el Teatro Degollado y el Instituto Cultural Cabañas, donde se encuentran los murales de Orozco. El barrio de Tlaquepaque ofrece artesanías y galerías de arte, mientras que Zapopan alberga la Basílica con la imagen más venerada de Jalisco. La ciudad es también un polo tecnológico conocido como el Silicon Valley mexicano y cuenta con una vibrante escena cultural y nocturna.",
+      "en": "Guadalajara, the Pearl of the West, is the capital of Jalisco state and the epicenter of Mexico's most internationally recognized culture. Mariachi, tequila, and charrería were born here. Its Historic Center impresses with the Cathedral, Teatro Degollado, and the Instituto Cultural Cabañas, housing Orozco's murals. The Tlaquepaque neighborhood offers crafts and art galleries, while Zapopan houses the Basilica with Jalisco's most venerated image. The city is also a tech hub known as Mexico's Silicon Valley and features a vibrant cultural and nightlife scene."
+    },
+    "heroImage": "/images/destinations/guadalajara.jpg",
+    "highlights": [
+      {
+        "es": "Instituto Cultural Cabañas con los impresionantes murales de José Clemente Orozco, Patrimonio de la Humanidad",
+        "en": "Instituto Cultural Cabañas with José Clemente Orozco's impressive murals, a UNESCO World Heritage Site"
+      },
+      {
+        "es": "Excursión a Tequila en el tren José Cuervo Express con degustación en destilerías históricas",
+        "en": "Day trip to Tequila on the José Cuervo Express train with tastings at historic distilleries"
+      },
+      {
+        "es": "Recorrido por Tlaquepaque, pueblo mágico de artesanías, galerías y restaurantes con mariachi en vivo",
+        "en": "Tour of Tlaquepaque, a magical town of crafts, galleries, and restaurants with live mariachi"
+      },
+      {
+        "es": "Lago de Chapala, el lago más grande de México, y el pintoresco pueblo de Ajijic",
+        "en": "Lake Chapala, Mexico's largest lake, and the picturesque town of Ajijic"
+      }
+    ],
+    "gettingAround": {
+      "es": "Guadalajara tiene dos líneas de tren ligero (Línea 1 y 2) y una línea de Macrobús que cruza la ciudad. Uber y DiDi son la opción más práctica. El centro es caminable entre sus principales atractivos. Para ir a Tlaquepaque o Zapopan, usa el tren ligero o transporte por app. El TapaBús turístico es ideal para un primer recorrido por la ciudad.",
+      "en": "Guadalajara has two light rail lines (Line 1 and 2) and a Macrobús line crossing the city. Uber and DiDi are the most practical option. The center is walkable between its main attractions. To reach Tlaquepaque or Zapopan, use the light rail or ride-hailing apps. The TapaBús tourist bus is ideal for a first tour of the city."
+    },
+    "safetyTips": [
+      {
+        "es": "Las zonas turísticas del centro, Tlaquepaque y Zapopan son muy seguras. Evita las colonias periféricas de noche y mantente en áreas iluminadas y concurridas.",
+        "en": "Tourist areas in the center, Tlaquepaque, and Zapopan are very safe. Avoid peripheral neighborhoods at night and stay in well-lit, busy areas."
+      },
+      {
+        "es": "El clima puede ser muy caluroso de marzo a mayo. Lleva agua, protector solar y sombrero. En temporada de lluvias (junio-septiembre) las tormentas son fuertes pero breves.",
+        "en": "The climate can be very hot from March to May. Carry water, sunscreen, and a hat. During rainy season (June-September), storms are strong but brief."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Torta Ahogada",
+        "description": {
+          "es": "Birote salado (pan crujiente exclusivo de Guadalajara) relleno de carnitas de cerdo y bañado en salsa de tomate picante. Se come con cebolla y limón. El platillo más emblemático de GDL.",
+          "en": "Birote (a crusty bread exclusive to Guadalajara) stuffed with pork carnitas and drenched in spicy tomato sauce. Eaten with onion and lime. GDL's most iconic dish."
+        },
+        "priceRange": {
+          "min": 50,
+          "max": 100,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Las Famosas del Centro en el Mercado San Juan de Dios, o Tortas Toño que tiene múltiples sucursales en la ciudad.",
+          "en": "Las Famosas del Centro at Mercado San Juan de Dios, or Tortas Toño which has multiple locations across the city."
+        }
+      },
+      {
+        "name": "Birria",
+        "description": {
+          "es": "Guiso de carne de res o chivo cocido lentamente en adobo de chiles y especias. Se sirve en plato hondo con consomé, cebolla, cilantro y limón, acompañado de tortillas.",
+          "en": "Beef or goat stew slow-cooked in a chile and spice adobo. Served in a deep bowl with consommé, onion, cilantro, and lime, accompanied by tortillas."
+        },
+        "priceRange": {
+          "min": 90,
+          "max": 180,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Birriería Las 9 Esquinas en el barrio del mismo nombre, o Birriería Chololo que es institución tapatía desde 1960.",
+          "en": "Birriería Las 9 Esquinas in the neighborhood of the same name, or Birriería Chololo, a Guadalajara institution since 1960."
+        }
+      },
+      {
+        "name": "Jericalla",
+        "description": {
+          "es": "Postre de flan horneado con canela y vainilla, originario de Guadalajara, con una capa quemada crujiente en la superficie. Cremoso y aromático.",
+          "en": "Baked custard dessert with cinnamon and vanilla, originating from Guadalajara, with a crispy burnt layer on top. Creamy and aromatic."
+        },
+        "priceRange": {
+          "min": 25,
+          "max": 50,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Mercado San Juan de Dios o cualquier mercado local. Las Jericallas de la Calle Garibaldi son muy populares.",
+          "en": "Mercado San Juan de Dios or any local market. The Jericallas on Calle Garibaldi are very popular."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 700,
+      "max": 2200,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "De octubre a mayo cuando el clima es seco y templado. Septiembre para las Fiestas Patrias y octubre para las fiestas de la Virgen de Zapopan con la Romería, la peregrinación más grande de México.",
+      "en": "October to May when the weather is dry and mild. September for Independence Day celebrations and October for the Virgin of Zapopan festivities with the Romería, Mexico's largest pilgrimage."
+    },
+    "airportIATA": "GDL"
+  },
+  {
+    "id": "puerto-vallarta",
+    "slug": "puerto-vallarta",
+    "name": {
+      "es": "Puerto Vallarta",
+      "en": "Puerto Vallarta"
+    },
+    "shortName": "PVR",
+    "coordinates": {
+      "lat": 20.6534,
+      "lng": -105.2253
+    },
+    "state": {
+      "es": "Jalisco",
+      "en": "Jalisco"
+    },
+    "region": "pacifico",
+    "description": {
+      "es": "Puerto Vallarta es un destino de playa con alma de pueblo, donde las montañas de la Sierra Madre se encuentran con el Pacífico en la Bahía de Banderas, una de las bahías más grandes del mundo.",
+      "en": "Puerto Vallarta is a beach destination with a small-town soul, where the Sierra Madre mountains meet the Pacific in Banderas Bay, one of the world's largest bays."
+    },
+    "longDescription": {
+      "es": "Puerto Vallarta, en la costa del Pacífico de Jalisco, combina playas doradas con un encantador centro histórico de calles empedradas y techos de teja roja. El Malecón, su icónico paseo costero lleno de esculturas y arte público, conecta el centro con la Zona Romántica, un barrio bohemio con galerías, restaurantes y vida nocturna. La Bahía de Banderas ofrece avistamiento de ballenas jorobadas en invierno, snorkel en las Islas Marietas y deportes acuáticos. Las montañas circundantes permiten tirolesas, paseos a caballo y excursiones a pueblos como San Sebastián del Oeste. La escena gastronómica rivaliza con la de grandes ciudades mexicanas.",
+      "en": "Puerto Vallarta, on Jalisco's Pacific coast, combines golden beaches with a charming historic center of cobblestone streets and red-tile roofs. The Malecón, its iconic seafront promenade full of sculptures and public art, connects the center to the Romantic Zone, a bohemian neighborhood with galleries, restaurants, and nightlife. Banderas Bay offers humpback whale watching in winter, snorkeling at the Marieta Islands, and water sports. The surrounding mountains allow zip-lining, horseback riding, and excursions to villages like San Sebastián del Oeste. The dining scene rivals that of major Mexican cities."
+    },
+    "heroImage": "/images/destinations/puerto-vallarta.jpg",
+    "highlights": [
+      {
+        "es": "Paseo por el Malecón al atardecer con sus esculturas, artistas callejeros y vista al mar",
+        "en": "Sunset stroll along the Malecón with its sculptures, street performers, and ocean views"
+      },
+      {
+        "es": "Avistamiento de ballenas jorobadas en la Bahía de Banderas de diciembre a marzo",
+        "en": "Humpback whale watching in Banderas Bay from December to March"
+      },
+      {
+        "es": "Excursión en barco a las Islas Marietas y su Playa Escondida (Playa del Amor)",
+        "en": "Boat trip to the Marieta Islands and their Hidden Beach (Playa del Amor)"
+      },
+      {
+        "es": "Zona Romántica con galerías de arte, restaurantes gourmet y la playa de Los Muertos",
+        "en": "Romantic Zone with art galleries, gourmet restaurants, and Los Muertos beach"
+      },
+      {
+        "es": "Recorrido por los pueblos de la Sierra Madre como San Sebastián del Oeste",
+        "en": "Tour of Sierra Madre villages like San Sebastián del Oeste"
+      }
+    ],
+    "gettingAround": {
+      "es": "Los autobuses urbanos recorren la ciudad a lo largo de la costa y son muy baratos (10 MXN). Los taxis son accesibles pero negocia la tarifa o pide que usen taxímetro. Uber funciona bien. El centro y la Zona Romántica son muy caminables. Para playas alejadas como Yelapa o Las Ánimas, toma lanchas desde el muelle de Los Muertos.",
+      "en": "City buses run along the coast and are very cheap (10 MXN). Taxis are accessible but negotiate the fare or ask them to use the meter. Uber works well. The center and Romantic Zone are very walkable. For remote beaches like Yelapa or Las Ánimas, take water taxis from the Los Muertos pier."
+    },
+    "safetyTips": [
+      {
+        "es": "Puerto Vallarta es uno de los destinos más seguros de México. Las corrientes del Pacífico pueden ser fuertes; respeta las indicaciones de los salvavidas en las playas.",
+        "en": "Puerto Vallarta is one of the safest destinations in Mexico. Pacific currents can be strong; follow lifeguard instructions at the beaches."
+      },
+      {
+        "es": "Protégete del sol con protector solar, sombrero y ropa ligera. El calor puede ser intenso, especialmente de mayo a octubre. Mantente hidratado.",
+        "en": "Protect yourself from the sun with sunscreen, a hat, and light clothing. The heat can be intense, especially from May to October. Stay hydrated."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Pescado Zarandeado",
+        "description": {
+          "es": "Huachinango o pargo marinado en adobo de chiles y especias, asado a las brasas sobre leña de mangle. Platillo costero del Pacífico por excelencia, servido con tortillas y salsa.",
+          "en": "Red snapper or sea bass marinated in chile and spice adobo, grilled over mangrove wood coals. The quintessential Pacific coast dish, served with tortillas and salsa."
+        },
+        "priceRange": {
+          "min": 150,
+          "max": 350,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "El Barracuda en Playa de los Muertos o Mariscos 8 Tostadas. Para una experiencia más local, los restaurantes de playa en Boca de Tomatlán.",
+          "en": "El Barracuda at Playa de los Muertos or Mariscos 8 Tostadas. For a more local experience, the beach restaurants at Boca de Tomatlán."
+        }
+      },
+      {
+        "name": "Aguachile",
+        "description": {
+          "es": "Camarones crudos marinados en jugo de limón con chile serrano o chiltepin, pepino, cebolla morada y cilantro. Picante, refrescante y perfecto para el clima costero.",
+          "en": "Raw shrimp marinated in lime juice with serrano or chiltepin chile, cucumber, red onion, and cilantro. Spicy, refreshing, and perfect for the coastal climate."
+        },
+        "priceRange": {
+          "min": 120,
+          "max": 250,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Mariscos Cisneros en la Zona Romántica o La Palapa junto a la playa para una experiencia con los pies en la arena.",
+          "en": "Mariscos Cisneros in the Romantic Zone or La Palapa by the beach for a toes-in-the-sand experience."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 900,
+      "max": 3000,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "De noviembre a mayo, temporada seca con temperaturas entre 22-30°C. Diciembre a marzo es ideal para avistamiento de ballenas. Evita agosto y septiembre por lluvias fuertes y humedad extrema.",
+      "en": "November to May, the dry season with temperatures between 22-30°C. December to March is ideal for whale watching. Avoid August and September for heavy rains and extreme humidity."
+    },
+    "airportIATA": "PVR"
+  },
+  {
+    "id": "los-cabos",
+    "slug": "los-cabos",
+    "name": {
+      "es": "Los Cabos",
+      "en": "Los Cabos"
+    },
+    "shortName": "SJD",
+    "coordinates": {
+      "lat": 22.8905,
+      "lng": -109.9167
+    },
+    "state": {
+      "es": "Baja California Sur",
+      "en": "Baja California Sur"
+    },
+    "region": "pacifico",
+    "description": {
+      "es": "Los Cabos, en el extremo sur de la Península de Baja California, ofrece paisajes desérticos dramáticos que se encuentran con el mar, resorts de lujo, pesca deportiva de clase mundial y el icónico Arco.",
+      "en": "Los Cabos, at the southern tip of the Baja California Peninsula, offers dramatic desert landscapes meeting the sea, luxury resorts, world-class sport fishing, and the iconic Arch."
+    },
+    "longDescription": {
+      "es": "Los Cabos abarca dos ciudades: San José del Cabo, un tranquilo pueblo colonial con galerías de arte y un estero natural, y Cabo San Lucas, conocido por su vida nocturna y el famoso Arco donde el Pacífico se encuentra con el Mar de Cortés. El Corredor Turístico que las conecta alberga resorts y campos de golf de talla mundial. Las aguas de Los Cabos son un santuario marino donde se avistan ballenas grises y jorobadas, mantarrayas gigantes y el tiburón ballena. La gastronomía de Baja fusiona ingredientes del mar con la tradición mexicana y técnicas internacionales, creando la reconocida cocina Baja Med.",
+      "en": "Los Cabos encompasses two cities: San José del Cabo, a quiet colonial town with art galleries and a natural estuary, and Cabo San Lucas, known for its nightlife and the famous Arch where the Pacific meets the Sea of Cortez. The Tourist Corridor connecting them houses world-class resorts and golf courses. Los Cabos' waters are a marine sanctuary where gray and humpback whales, giant manta rays, and whale sharks are spotted. The gastronomy of Baja fuses seafood ingredients with Mexican tradition and international techniques, creating the renowned Baja Med cuisine."
+    },
+    "heroImage": "/images/destinations/los-cabos.jpg",
+    "highlights": [
+      {
+        "es": "El Arco de Cabo San Lucas, la formación rocosa icónica donde se unen el Pacífico y el Mar de Cortés",
+        "en": "The Arch of Cabo San Lucas, the iconic rock formation where the Pacific and Sea of Cortez meet"
+      },
+      {
+        "es": "Snorkel y buceo en el Parque Marino Nacional Cabo Pulmo con el arrecife de coral más antiguo del Pacífico",
+        "en": "Snorkeling and diving at Cabo Pulmo National Marine Park with the Pacific's oldest coral reef"
+      },
+      {
+        "es": "Paseo en camello por las dunas del desierto con vista al océano al atardecer",
+        "en": "Camel ride through desert dunes with ocean views at sunset"
+      },
+      {
+        "es": "Art Walk en San José del Cabo los jueves por la noche de noviembre a junio",
+        "en": "Art Walk in San José del Cabo on Thursday evenings from November to June"
+      }
+    ],
+    "gettingAround": {
+      "es": "Los Cabos requiere auto rentado o transporte privado entre Cabo San Lucas y San José del Cabo (30 km). Los taxis son muy caros ($300-600 MXN por trayecto). Uber no opera oficialmente. Hay autobuses económicos que recorren el Corredor ($30 MXN). Dentro de Cabo San Lucas centro puedes caminar. Muchos resorts ofrecen shuttle.",
+      "en": "Los Cabos requires a rental car or private transport between Cabo San Lucas and San José del Cabo (30 km). Taxis are very expensive ($300-600 MXN per ride). Uber does not officially operate. There are affordable buses along the Corridor ($30 MXN). You can walk within Cabo San Lucas center. Many resorts offer shuttle service."
+    },
+    "safetyTips": [
+      {
+        "es": "Muchas playas en Los Cabos tienen corrientes extremadamente fuertes y oleaje peligroso. Playa del Amor y Playa Médano son de las pocas seguras para nadar. Siempre revisa las banderas.",
+        "en": "Many beaches in Los Cabos have extremely strong currents and dangerous surf. Playa del Amor and Playa Médano are among the few safe for swimming. Always check the flags."
+      },
+      {
+        "es": "El sol desértico es intenso todo el año. Usa protector solar SPF 50+, sombrero y mantente hidratado. Las temperaturas superan los 40°C en verano.",
+        "en": "The desert sun is intense year-round. Use SPF 50+ sunscreen, a hat, and stay hydrated. Temperatures exceed 40°C in summer."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Tacos de Pescado Baja",
+        "description": {
+          "es": "Pescado fresco empanizado y frito, servido en tortilla de maíz con col morada, crema de chipotle, pico de gallo y salsa de habanero. El taco del Pacífico por excelencia.",
+          "en": "Fresh battered and fried fish served on a corn tortilla with purple cabbage, chipotle cream, pico de gallo, and habanero salsa. The quintessential Pacific fish taco."
+        },
+        "priceRange": {
+          "min": 35,
+          "max": 70,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Tacos Gardenias en San José del Cabo o Los Tacos de Baja en Cabo San Lucas. Busca los puestos callejeros con cola de locales.",
+          "en": "Tacos Gardenias in San José del Cabo or Los Tacos de Baja in Cabo San Lucas. Look for street stalls with lines of locals."
+        }
+      },
+      {
+        "name": "Almeja Chocolata",
+        "description": {
+          "es": "Almejas nativas de Baja California Sur servidas frescas con limón, salsa Valentina, o gratinadas con queso. Un manjar local único de la región.",
+          "en": "Clams native to Baja California Sur served fresh with lime and Valentina hot sauce, or gratinated with cheese. A unique local delicacy."
+        },
+        "priceRange": {
+          "min": 150,
+          "max": 300,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Mariscos Las Palmas en San José o cualquier restaurante de mariscos en la Marina de Cabo San Lucas.",
+          "en": "Mariscos Las Palmas in San José or any seafood restaurant at the Cabo San Lucas Marina."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 1500,
+      "max": 5000,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "De octubre a mayo con clima perfecto entre 24-30°C. Enero a marzo es temporada de ballenas. Septiembre es el mes más caluroso y húmedo con riesgo de huracanes.",
+      "en": "October to May with perfect weather between 24-30°C. January to March is whale season. September is the hottest and most humid month with hurricane risk."
+    },
+    "airportIATA": "SJD"
+  },
+  {
+    "id": "merida",
+    "slug": "merida",
+    "name": {
+      "es": "Mérida",
+      "en": "Mérida"
+    },
+    "shortName": "MID",
+    "coordinates": {
+      "lat": 20.9674,
+      "lng": -89.5926
+    },
+    "state": {
+      "es": "Yucatán",
+      "en": "Yucatán"
+    },
+    "region": "peninsula",
+    "description": {
+      "es": "Mérida, la Ciudad Blanca, es la capital cultural de la Península de Yucatán con majestuosas casonas coloniales, gastronomía yucateca excepcional y acceso a los sitios mayas más importantes.",
+      "en": "Mérida, the White City, is the cultural capital of the Yucatán Peninsula with majestic colonial mansions, exceptional Yucatecan gastronomy, and access to the most important Mayan sites."
+    },
+    "longDescription": {
+      "es": "Mérida, fundada en 1542 sobre la ciudad maya de T'Hó, es una ciudad colonial elegante conocida como la Ciudad Blanca por sus edificios de piedra caliza. El Paseo de Montejo, inspirado en los Campos Elíseos, está flanqueado por mansiones del auge henequenero del siglo XIX. La ciudad es la puerta de entrada a Chichén Itzá, Uxmal y la Ruta Puuc de sitios mayas. La gastronomía yucateca, influenciada por la cocina maya y europea, es considerada una de las más distintivas de México. Cada noche hay eventos culturales gratuitos en diferentes plazas, desde vaquerías hasta serenatas y espectáculos de jarana yucateca.",
+      "en": "Mérida, founded in 1542 on the Mayan city of T'Hó, is an elegant colonial city known as the White City for its limestone buildings. The Paseo de Montejo, inspired by the Champs-Élysées, is flanked by mansions from the 19th-century henequen boom. The city is the gateway to Chichén Itzá, Uxmal, and the Puuc Route of Mayan sites. Yucatecan gastronomy, influenced by Mayan and European cuisine, is considered one of Mexico's most distinctive. Every evening there are free cultural events in different plazas, from vaquerías to serenades and Yucatecan jarana performances."
+    },
+    "heroImage": "/images/destinations/merida.jpg",
+    "highlights": [
+      {
+        "es": "Excursión a Chichén Itzá y el espectáculo de luz y sonido nocturno en la pirámide de Kukulcán",
+        "en": "Day trip to Chichén Itzá and the nighttime light and sound show at the Kukulcán pyramid"
+      },
+      {
+        "es": "Paseo de Montejo con sus mansiones porfirianas y el Museo Regional de Antropología en el Palacio Cantón",
+        "en": "Paseo de Montejo with its Porfirian mansions and the Regional Anthropology Museum at the Cantón Palace"
+      },
+      {
+        "es": "Cenotes cercanos como Cuzamá, Homún y Suytún para nadar en aguas cristalinas subterráneas",
+        "en": "Nearby cenotes like Cuzamá, Homún, and Suytún for swimming in underground crystalline waters"
+      },
+      {
+        "es": "Zona arqueológica de Uxmal y la Ruta Puuc con arquitectura maya en su máxima expresión",
+        "en": "Uxmal archaeological site and the Puuc Route with Mayan architecture at its finest"
+      },
+      {
+        "es": "Mercado Lucas de Gálvez para probar gastronomía yucateca auténtica a precios locales",
+        "en": "Lucas de Gálvez Market to try authentic Yucatecan food at local prices"
+      }
+    ],
+    "gettingAround": {
+      "es": "El centro de Mérida es muy caminable y plano. Los domingos cierran calles al tráfico para Bici-Ruta. Los autobuses urbanos cubren toda la ciudad (8 MXN). Taxis son económicos con tarifa fija según la zona. Uber funciona bien. Para cenotes y sitios arqueológicos, renta un auto o usa colectivos desde la terminal de autobuses.",
+      "en": "Mérida's center is very walkable and flat. Sundays they close streets to traffic for Bici-Ruta. City buses cover the whole city (8 MXN). Taxis are affordable with fixed fares by zone. Uber works well. For cenotes and archaeological sites, rent a car or use colectivos from the bus terminal."
+    },
+    "safetyTips": [
+      {
+        "es": "Mérida es consistentemente catalogada como una de las ciudades más seguras de México. El calor es extremo (35-40°C), especialmente de abril a agosto. Hidrátate constantemente y evita actividades al aire libre entre 12 y 3 PM.",
+        "en": "Mérida is consistently rated as one of Mexico's safest cities. The heat is extreme (35-40°C), especially from April to August. Hydrate constantly and avoid outdoor activities between noon and 3 PM."
+      },
+      {
+        "es": "Los mosquitos son abundantes, especialmente al atardecer y en cenotes. Usa repelente de insectos. Si visitas cenotes, usa repelente biodegradable.",
+        "en": "Mosquitoes are abundant, especially at dusk and at cenotes. Use insect repellent. If visiting cenotes, use biodegradable repellent."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Poc Chuc",
+        "description": {
+          "es": "Carne de cerdo marinada en naranja agria y asada al carbón, servida con cebolla morada curtida en habanero, frijoles negros colados y tortillas de maíz. Platillo yucateco esencial.",
+          "en": "Pork marinated in sour orange and charcoal-grilled, served with habanero-pickled red onion, strained black beans, and corn tortillas. An essential Yucatecan dish."
+        },
+        "priceRange": {
+          "min": 80,
+          "max": 160,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "La Chaya Maya en el centro, una institución yucateca. También Los Almendros que popularizó muchos platillos yucatecos.",
+          "en": "La Chaya Maya downtown, a Yucatecan institution. Also Los Almendros, which popularized many Yucatecan dishes."
+        }
+      },
+      {
+        "name": "Papadzules",
+        "description": {
+          "es": "Tortillas rellenas de huevo duro picado, bañadas en salsa de pepita de calabaza verde y decoradas con salsa de tomate y aceite de pepita. Un platillo de origen maya.",
+          "en": "Tortillas stuffed with chopped hard-boiled egg, bathed in green pumpkin seed sauce and decorated with tomato sauce and seed oil. A dish of Mayan origin."
+        },
+        "priceRange": {
+          "min": 70,
+          "max": 130,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Manjar Blanco en el centro o Kinich en el pueblo de Izamal, que vale el viaje de 1 hora.",
+          "en": "Manjar Blanco downtown or Kinich in the town of Izamal, which is worth the 1-hour trip."
+        }
+      },
+      {
+        "name": "Marquesitas",
+        "description": {
+          "es": "Crepa crujiente enrollada rellena de queso de bola (Edam) y mermelada, Nutella, cajeta o combinaciones dulces. El postre callejero nocturno favorito de Mérida.",
+          "en": "Crispy rolled crepe filled with Edam cheese ball and jam, Nutella, cajeta, or sweet combinations. Mérida's favorite nighttime street dessert."
+        },
+        "priceRange": {
+          "min": 25,
+          "max": 50,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Los carritos de marquesitas en el Parque de Santa Lucía y frente a la Catedral en la Plaza Grande, especialmente por la noche.",
+          "en": "Marquesita carts at Santa Lucía Park and in front of the Cathedral at the Plaza Grande, especially at night."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 600,
+      "max": 1800,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "De noviembre a febrero, cuando las temperaturas son más frescas (20-30°C). Evita abril y mayo por el calor extremo. Septiembre y octubre tienen riesgo de lluvias fuertes y huracanes.",
+      "en": "November to February, when temperatures are cooler (20-30°C). Avoid April and May due to extreme heat. September and October carry risk of heavy rains and hurricanes."
+    },
+    "airportIATA": "MID"
+  },
+  {
+    "id": "san-miguel",
+    "slug": "san-miguel-de-allende",
+    "name": {
+      "es": "San Miguel de Allende",
+      "en": "San Miguel de Allende"
+    },
+    "shortName": "SMA",
+    "coordinates": {
+      "lat": 20.9144,
+      "lng": -100.7452
+    },
+    "state": {
+      "es": "Guanajuato",
+      "en": "Guanajuato"
+    },
+    "region": "bajio",
+    "description": {
+      "es": "San Miguel de Allende es una joya colonial del Bajío mexicano, famosa mundialmente por su arquitectura barroca, su vibrante escena artística y su comunidad cosmopolita de artistas y expatriados.",
+      "en": "San Miguel de Allende is a colonial gem of Mexico's Bajío region, world-famous for its baroque architecture, vibrant art scene, and cosmopolitan community of artists and expatriates."
+    },
+    "longDescription": {
+      "es": "San Miguel de Allende, declarada Patrimonio de la Humanidad por la UNESCO, es una ciudad donde el tiempo parece haberse detenido en el siglo XVIII. Su icónica Parroquia de San Miguel Arcángel, con su fachada neogótica rosa, domina el horizonte. Las calles empedradas están llenas de galerías de arte, boutiques de diseño y restaurantes de alta cocina. La ciudad alberga una importante comunidad internacional de artistas y jubilados que han enriquecido su oferta cultural. Los viñedos cercanos de la región vinícola de Guanajuato, las aguas termales y los talleres de artesanías ofrecen experiencias únicas fuera del centro histórico.",
+      "en": "San Miguel de Allende, a UNESCO World Heritage Site, is a city where time seems to have stopped in the 18th century. Its iconic Parroquia de San Miguel Arcángel, with its pink neo-Gothic facade, dominates the skyline. The cobblestone streets are filled with art galleries, designer boutiques, and fine dining restaurants. The city hosts a significant international community of artists and retirees who have enriched its cultural offerings. The nearby vineyards of the Guanajuato wine region, hot springs, and craft workshops offer unique experiences outside the historic center."
+    },
+    "heroImage": "/images/destinations/san-miguel.jpg",
+    "highlights": [
+      {
+        "es": "La Parroquia de San Miguel Arcángel, la iglesia neogótica más fotografiada de México, especialmente al atardecer",
+        "en": "The Parroquia de San Miguel Arcángel, Mexico's most photographed neo-Gothic church, especially at sunset"
+      },
+      {
+        "es": "Ruta del vino en los viñedos de la región como Cuna de Tierra, Dos Búhos y San Lucas",
+        "en": "Wine route through regional vineyards like Cuna de Tierra, Dos Búhos, and San Lucas"
+      },
+      {
+        "es": "Santuario de Atotonilco, la Capilla Sixtina de México, con frescos barrocos impresionantes",
+        "en": "Atotonilco Sanctuary, the Sistine Chapel of Mexico, with impressive baroque frescoes"
+      },
+      {
+        "es": "Aguas termales naturales en La Gruta, Escondido Place y otros balnearios cercanos",
+        "en": "Natural hot springs at La Gruta, Escondido Place, and other nearby spas"
+      }
+    ],
+    "gettingAround": {
+      "es": "El centro histórico es completamente caminable, aunque las calles empedradas y las pendientes pueden ser retadoras. Usa zapatos cómodos. Los taxis locales tienen tarifas fijas razonables (30-50 MXN dentro del centro). No hay Uber. Para viñedos y aguas termales, contrata un tour o taxi por hora (200-300 MXN/hora).",
+      "en": "The historic center is entirely walkable, though the cobblestone streets and hills can be challenging. Wear comfortable shoes. Local taxis have reasonable fixed fares (30-50 MXN within the center). There is no Uber. For vineyards and hot springs, hire a tour or taxi by the hour (200-300 MXN/hour)."
+    },
+    "safetyTips": [
+      {
+        "es": "San Miguel de Allende es uno de los destinos más seguros de México. Las calles empedradas pueden ser resbalosas cuando llueve y las banquetas son estrechas; ten cuidado al caminar de noche.",
+        "en": "San Miguel de Allende is one of Mexico's safest destinations. Cobblestone streets can be slippery when wet and sidewalks are narrow; be careful walking at night."
+      },
+      {
+        "es": "La altitud de 1,900 metros puede causar malestar en los primeros días. Hidrátate bien y toma las cosas con calma el primer día. Las noches son frescas, lleva una chaqueta ligera.",
+        "en": "The altitude of 1,900 meters can cause discomfort in the first days. Hydrate well and take it easy on the first day. Evenings are cool, bring a light jacket."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Enchiladas Mineras",
+        "description": {
+          "es": "Tortillas rellenas de queso bañadas en salsa de chile guajillo, cubiertas con papas doradas, zanahoria, lechuga y queso fresco. El platillo emblemático de la región minera de Guanajuato.",
+          "en": "Cheese-filled tortillas bathed in guajillo chile sauce, topped with golden potatoes, carrot, lettuce, and fresh cheese. The signature dish of Guanajuato's mining region."
+        },
+        "priceRange": {
+          "min": 80,
+          "max": 150,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "El Correo o Lavanda, ambos en el centro. Para la versión más tradicional, el Mercado de San Juan de Dios.",
+          "en": "El Correo or Lavanda, both downtown. For the most traditional version, the San Juan de Dios Market."
+        }
+      },
+      {
+        "name": "Gorditas de Migajas",
+        "description": {
+          "es": "Masa de maíz mezclada con chicharrón prensado y manteca, rellena de guisos variados como rajas, frijoles o chicharrón en salsa verde. Antojito callejero típico del Bajío.",
+          "en": "Corn masa mixed with pressed pork rinds and lard, stuffed with various fillings like rajas, beans, or pork rinds in green salsa. A typical Bajío street snack."
+        },
+        "priceRange": {
+          "min": 20,
+          "max": 45,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Los puestos del Mercado de Artesanías o las gorditerías callejeras cerca del Jardín Principal por la mañana.",
+          "en": "The stalls at the Artisan Market or the street gordita vendors near the Jardín Principal in the morning."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 800,
+      "max": 3000,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "Todo el año es agradable gracias al clima templado. Septiembre para las Fiestas Patrias, noviembre para Día de Muertos y la Callejoneada, y abril para Semana Santa con alfombras de aserrín.",
+      "en": "Year-round is pleasant thanks to the mild climate. September for Independence Day, November for Day of the Dead and the Callejoneada, and April for Holy Week with sawdust carpets."
+    },
+    "airportIATA": "BJX"
+  },
+  {
+    "id": "guanajuato",
+    "slug": "guanajuato",
+    "name": {
+      "es": "Guanajuato",
+      "en": "Guanajuato City"
+    },
+    "shortName": "GTO",
+    "coordinates": {
+      "lat": 21.019,
+      "lng": -101.2574
+    },
+    "state": {
+      "es": "Guanajuato",
+      "en": "Guanajuato"
+    },
+    "region": "bajio",
+    "description": {
+      "es": "Guanajuato es una ciudad colonial colorida construida en un cañón, con túneles subterráneos, callejones románticos, el Festival Cervantino más importante de Latinoamérica y el famoso Callejón del Beso.",
+      "en": "Guanajuato is a colorful colonial city built in a canyon, with underground tunnels, romantic alleyways, Latin America's most important Cervantino Festival, and the famous Alley of the Kiss."
+    },
+    "longDescription": {
+      "es": "Guanajuato, Patrimonio de la Humanidad, es una ciudad única construida en un estrecho cañón donde las casas de colores se apilan en las laderas de las montañas. Sus calles subterráneas, antiguos túneles de ríos, forman un sistema vial que no existe en ninguna otra ciudad del mundo. El Teatro Juárez, la Basílica y la Universidad de Guanajuato enmarcan plazas llenas de vida. La ciudad es sede del Festival Internacional Cervantino, el evento artístico más importante de Latinoamérica. Las minas de plata que dieron origen a la ciudad se pueden visitar, y el Museo de las Momias es una atracción única, aunque peculiar. Las callejoneadas estudiantinas con música y vino son una tradición imperdible.",
+      "en": "Guanajuato, a UNESCO World Heritage Site, is a unique city built in a narrow canyon where colorful houses stack along the mountainsides. Its underground streets, former river tunnels, form a road system that exists nowhere else in the world. The Teatro Juárez, the Basilica, and the University of Guanajuato frame plazas full of life. The city hosts the International Cervantino Festival, Latin America's most important arts event. The silver mines that gave birth to the city can be visited, and the Mummy Museum is a unique, if peculiar, attraction. The estudiantina callejoneadas with music and wine are an unmissable tradition."
+    },
+    "heroImage": "/images/destinations/guanajuato.jpg",
+    "highlights": [
+      {
+        "es": "Callejoneada estudiantina nocturna con música, historias y vino por los callejones coloniales",
+        "en": "Nighttime estudiantina callejoneada with music, stories, and wine through colonial alleys"
+      },
+      {
+        "es": "Mirador del Pípila con la vista panorámica más espectacular de la ciudad colorida al atardecer",
+        "en": "El Pípila viewpoint with the most spectacular panoramic view of the colorful city at sunset"
+      },
+      {
+        "es": "Teatro Juárez, obra maestra neoclásica y morisca, sede del Festival Internacional Cervantino",
+        "en": "Teatro Juárez, a neoclassical and Moorish masterpiece, home of the International Cervantino Festival"
+      },
+      {
+        "es": "Callejón del Beso, el famoso callejón tan estrecho que los balcones casi se tocan",
+        "en": "Alley of the Kiss, the famous alleyway so narrow that the balconies nearly touch"
+      },
+      {
+        "es": "Minas de plata como la Mina de Valenciana y su iglesia barroca churrigueresca",
+        "en": "Silver mines like the Valenciana Mine and its churrigueresque baroque church"
+      }
+    ],
+    "gettingAround": {
+      "es": "La ciudad se recorre a pie por sus callejones y plazas; no hay otra forma de apreciarla. Los túneles subterráneos conectan diferentes zonas. El funicular sube al mirador del Pípila. Los autobuses urbanos cubren zonas periféricas como la Mina de Valenciana y el Museo de las Momias. Los taxis son económicos (40-60 MXN dentro de la ciudad).",
+      "en": "The city is explored on foot through its alleys and plazas; there is no other way to appreciate it. Underground tunnels connect different areas. The funicular goes up to the Pípila viewpoint. City buses cover peripheral areas like the Valenciana Mine and the Mummy Museum. Taxis are affordable (40-60 MXN within the city)."
+    },
+    "safetyTips": [
+      {
+        "es": "Guanajuato es muy seguro para turistas. Los callejones pueden ser empinados y las calles son de piedra irregular, usa zapatos cómodos con buen agarre. De noche los callejones alejados del centro pueden estar oscuros.",
+        "en": "Guanajuato is very safe for tourists. Alleys can be steep and streets are uneven stone, so wear comfortable shoes with good grip. At night, alleys far from the center can be dark."
+      },
+      {
+        "es": "Durante el Festival Cervantino (octubre) la ciudad se llena. Reserva hospedaje con meses de anticipación y espera multitudes en las plazas principales.",
+        "en": "During the Cervantino Festival (October) the city fills up. Book accommodation months in advance and expect crowds in the main plazas."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Enchiladas Mineras",
+        "description": {
+          "es": "Tortillas bañadas en salsa de chile guajillo rellenas de queso, acompañadas de papas, zanahoria y lechuga. Cada restaurante tiene su versión, pero todas llevan el sello de la cocina minera del Bajío.",
+          "en": "Tortillas bathed in guajillo chile sauce stuffed with cheese, accompanied by potatoes, carrots, and lettuce. Each restaurant has its version, but all carry the stamp of Bajío mining cuisine."
+        },
+        "priceRange": {
+          "min": 70,
+          "max": 140,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Casa Mercedes en el centro o Mestizo para una versión gourmet. El Mercado Hidalgo tiene opciones más económicas y auténticas.",
+          "en": "Casa Mercedes downtown or Mestizo for a gourmet version. Mercado Hidalgo has more affordable and authentic options."
+        }
+      },
+      {
+        "name": "Guacamayas",
+        "description": {
+          "es": "Torta de bolillo con chicharrón bañado en salsa roja picante, con aguacate y limón. El antojito callejero más popular de la ciudad, económico y satisfactorio.",
+          "en": "Bolillo bread roll with pork rinds bathed in spicy red salsa, with avocado and lime. The city's most popular street snack, affordable and satisfying."
+        },
+        "priceRange": {
+          "min": 25,
+          "max": 45,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Los puestos de guacamayas frente al Mercado Hidalgo son los más famosos. También hay vendedores ambulantes por toda la ciudad.",
+          "en": "The guacamaya stalls in front of Mercado Hidalgo are the most famous. There are also street vendors throughout the city."
+        }
+      },
+      {
+        "name": "Cajeta y Charamuscas",
+        "description": {
+          "es": "Cajeta es dulce de leche de cabra típico de la región. Las charamuscas son dulces artesanales en forma de momias o figuras, tradición de Guanajuato. Ambos se encuentran en el Mercado Hidalgo.",
+          "en": "Cajeta is goat's milk caramel typical of the region. Charamuscas are artisanal candies shaped like mummies or figures, a Guanajuato tradition. Both are found at Mercado Hidalgo."
+        },
+        "priceRange": {
+          "min": 15,
+          "max": 60,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "El Mercado Hidalgo en el nivel superior tiene los mejores dulces regionales. Las Charamuscas de la Abuela es muy recomendada.",
+          "en": "Mercado Hidalgo on the upper level has the best regional sweets. Las Charamuscas de la Abuela is highly recommended."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 500,
+      "max": 1600,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "Octubre para el Festival Internacional Cervantino. De noviembre a abril el clima es seco y agradable. Noviembre para Día de Muertos con la tradición de las momias y altares por toda la ciudad.",
+      "en": "October for the International Cervantino Festival. November to April the weather is dry and pleasant. November for Day of the Dead with the mummy tradition and altars throughout the city."
+    },
+    "airportIATA": "BJX"
+  },
+  {
+    "id": "monterrey",
+    "slug": "monterrey",
+    "name": {
+      "es": "Monterrey",
+      "en": "Monterrey"
+    },
+    "shortName": "MTY",
+    "coordinates": {
+      "lat": 25.6866,
+      "lng": -100.3161
+    },
+    "state": {
+      "es": "Nuevo León",
+      "en": "Nuevo León"
+    },
+    "region": "norte",
+    "description": {
+      "es": "Monterrey es la capital industrial de México, rodeada de montañas espectaculares como el Cerro de la Silla, con una creciente escena gastronómica, cultural y de aventura al aire libre.",
+      "en": "Monterrey is Mexico's industrial capital, surrounded by spectacular mountains like the Cerro de la Silla, with a growing gastronomic, cultural, and outdoor adventure scene."
+    },
+    "longDescription": {
+      "es": "Monterrey, la capital de Nuevo León, es una ciudad moderna y pujante enclavada entre montañas de la Sierra Madre Oriental. El Cerro de la Silla, su montaña emblema, domina el horizonte. La Macroplaza, una de las plazas más grandes del mundo, alberga el Museo de Historia Mexicana y el MARCO (Museo de Arte Contemporáneo). El Parque Fundidora, antigua fundidora de acero reconvertida en parque urbano, es el corazón recreativo de la ciudad. Los alrededores ofrecen aventura en el Parque Ecológico Chipinque, las Grutas de García y la impresionante Cascada Cola de Caballo. La tradición norteña de carne asada, cabrito y cerveza artesanal es parte esencial de la identidad regia.",
+      "en": "Monterrey, the capital of Nuevo León, is a modern and thriving city nestled among the mountains of the Sierra Madre Oriental. The Cerro de la Silla, its emblematic mountain, dominates the skyline. The Macroplaza, one of the world's largest plazas, houses the Mexican History Museum and MARCO (Museum of Contemporary Art). Parque Fundidora, a former steel foundry converted into an urban park, is the city's recreational heart. The surroundings offer adventure at Chipinque Ecological Park, the García Caves, and the impressive Cola de Caballo Waterfall. The northern tradition of grilled meat, cabrito, and craft beer is an essential part of Monterrey's identity."
+    },
+    "heroImage": "/images/destinations/monterrey.jpg",
+    "highlights": [
+      {
+        "es": "Parque Fundidora con museos, lago artificial, paseos en bicicleta y eventos culturales en un antiguo complejo industrial",
+        "en": "Parque Fundidora with museums, artificial lake, bike rides, and cultural events in a former industrial complex"
+      },
+      {
+        "es": "Senderismo en el Parque Ecológico Chipinque y el Cerro de la Silla con vistas panorámicas de la ciudad",
+        "en": "Hiking at Chipinque Ecological Park and Cerro de la Silla with panoramic city views"
+      },
+      {
+        "es": "MARCO, uno de los mejores museos de arte contemporáneo de Latinoamérica, con su icónica escultura de Botero",
+        "en": "MARCO, one of Latin America's finest contemporary art museums, with its iconic Botero sculpture"
+      },
+      {
+        "es": "Excursión a las Grutas de García, cuevas con formaciones de millones de años, accesibles por teleférico",
+        "en": "Trip to García Caves, caves with million-year-old formations, accessible by cable car"
+      }
+    ],
+    "gettingAround": {
+      "es": "Monterrey tiene un sistema de metro de dos líneas que conecta las zonas principales. Uber y DiDi son las formas más prácticas de moverse. El Ecovía (BRT) conecta el centro con zonas como Guadalupe. El centro y Barrio Antiguo son caminables. Para Chipinque, Grutas de García o Cola de Caballo necesitas auto o tour organizado.",
+      "en": "Monterrey has a two-line metro system connecting main areas. Uber and DiDi are the most practical ways to get around. The Ecovía (BRT) connects downtown with areas like Guadalupe. The center and Barrio Antiguo are walkable. For Chipinque, García Caves, or Cola de Caballo you need a car or organized tour."
+    },
+    "safetyTips": [
+      {
+        "es": "Las zonas turísticas como San Pedro Garza García, el centro y Barrio Antiguo son seguras. Evita zonas periféricas de noche. Usa transporte por aplicación en lugar de taxis de la calle.",
+        "en": "Tourist areas like San Pedro Garza García, downtown, and Barrio Antiguo are safe. Avoid peripheral areas at night. Use ride-hailing apps instead of street taxis."
+      },
+      {
+        "es": "El calor extremo en verano (hasta 45°C) es un riesgo real. Si haces senderismo, ve temprano por la mañana, lleva abundante agua y no subestimes la deshidratación.",
+        "en": "Extreme summer heat (up to 45°C) is a real risk. If hiking, go early in the morning, carry plenty of water, and do not underestimate dehydration."
+      },
+      {
+        "es": "En temporada de lluvias (agosto-octubre) pueden ocurrir inundaciones repentinas en zonas bajas de la ciudad. Mantente informado del clima.",
+        "en": "During rainy season (August-October) flash floods can occur in low-lying areas of the city. Stay informed about weather conditions."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Cabrito al Pastor",
+        "description": {
+          "es": "Cabrito lechal asado lentamente en las brasas, el platillo más emblemático de Monterrey. Se sirve con frijoles charros, guacamole, cebollitas asadas y tortillas de harina.",
+          "en": "Suckling goat slowly roasted over coals, Monterrey's most emblematic dish. Served with charro beans, guacamole, grilled spring onions, and flour tortillas."
+        },
+        "priceRange": {
+          "min": 200,
+          "max": 450,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "El Gran Pastor o El Rey del Cabrito, ambas instituciones regias. Reserva con anticipación los fines de semana.",
+          "en": "El Gran Pastor or El Rey del Cabrito, both Monterrey institutions. Make reservations for weekends."
+        }
+      },
+      {
+        "name": "Carne Asada Regia",
+        "description": {
+          "es": "Cortes de res como arrachera, diezmillo y aguja asados al carbón, acompañados de cebollitas, tortillas de harina, guacamole, frijoles charros y salsa molcajeteada. La tradición de fin de semana en Monterrey.",
+          "en": "Beef cuts like skirt steak, chuck, and short rib grilled over charcoal, accompanied by grilled spring onions, flour tortillas, guacamole, charro beans, and molcajete salsa. Monterrey's weekend tradition."
+        },
+        "priceRange": {
+          "min": 180,
+          "max": 400,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Sonora Grill para cortes premium, o las carnicerías con asador como La Nacional donde asan tu carne al momento.",
+          "en": "Sonora Grill for premium cuts, or butcher shops with grills like La Nacional where they grill your meat on the spot."
+        }
+      },
+      {
+        "name": "Machacado con Huevo",
+        "description": {
+          "es": "Carne seca deshebrada salteada con huevo, tomate, cebolla, chile serrano y especias. El desayuno norteño por excelencia, servido con tortillas de harina y frijoles refritos.",
+          "en": "Shredded dried beef sautéed with egg, tomato, onion, serrano chile, and spices. The quintessential northern breakfast, served with flour tortillas and refried beans."
+        },
+        "priceRange": {
+          "min": 80,
+          "max": 160,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Café San Ángel o cualquier restaurante local por la mañana. Los mercados como el Mercado Juárez tienen opciones económicas.",
+          "en": "Café San Ángel or any local restaurant in the morning. Markets like Mercado Juárez have affordable options."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 800,
+      "max": 2500,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "De octubre a abril cuando el clima es más fresco y agradable (15-25°C). Evita junio a agosto por temperaturas extremas que superan los 40°C. Diciembre es especial por las festividades navideñas en la Macroplaza.",
+      "en": "October to April when the weather is cooler and more pleasant (15-25°C). Avoid June to August due to extreme temperatures exceeding 40°C. December is special for Christmas festivities at the Macroplaza."
+    },
+    "airportIATA": "MTY"
+  }
+]
