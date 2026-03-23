@@ -45,6 +45,16 @@ export const AFFILIATE_CONFIG = {
     aid: "TU_AID_BOOKING",
     enabled: false,
   },
+
+  // 6. BUSBUD (Autobuses - ADO, ETN, Primera Plus, etc.)
+  // Regístrate en: https://www.busbud.com/affiliates
+  // O por Impact: https://app.impact.com → busca "Busbud"
+  // Comisión: hasta 5% por cada reserva de boleto de autobús
+  // Cubre TODAS las líneas mexicanas: ADO, ETN, Primera Plus, etc.
+  busbud: {
+    affiliateId: "TU_ID_BUSBUD",
+    enabled: true, // Funciona sin ID (tracking se activa al agregar ID)
+  },
 };
 
 // ============================================================
@@ -156,6 +166,160 @@ export function getBookingUrl(params: {
   const aid = AFFILIATE_CONFIG.booking.aid;
 
   return `https://www.booking.com/searchresults.${locale === "es" ? "es" : "en-gb"}.html?ss=${encodeURIComponent(cityName + ", Mexico")}&checkin=${checkIn}&checkout=${checkOut}&aid=${aid}&no_rooms=1&group_adults=2`;
+}
+
+// ============================================================
+// AUTOBUSES EN MÉXICO - LINKS DE BÚSQUEDA
+// ============================================================
+// Busbud compara TODAS las líneas de autobús mexicanas:
+// ADO, ETN, Primera Plus, Estrella Roja, Omnibus de México, etc.
+// Cuando el usuario compra un boleto, tú ganas comisión.
+// ============================================================
+
+export interface BusCompanyInfo {
+  id: string;
+  name: string;
+  color: string;
+  logo: string;
+  type: "premium" | "primera" | "ejecutivo" | "económico";
+  regions: string[];
+  website: string;
+  tagline: { es: string; en: string };
+}
+
+/**
+ * Líneas de autobús mexicanas incluidas en la comparación
+ */
+export const MEXICAN_BUS_COMPANIES: BusCompanyInfo[] = [
+  {
+    id: "ado",
+    name: "ADO",
+    color: "#1E3A5F",
+    logo: "🔵",
+    type: "primera",
+    regions: ["CDMX", "Cancún", "Oaxaca", "Veracruz", "Puebla", "Mérida", "Villahermosa"],
+    website: "ado.com.mx",
+    tagline: { es: "Sureste de México - Clase ejecutiva", en: "Southeast Mexico - Executive class" },
+  },
+  {
+    id: "etn",
+    name: "ETN Turistar",
+    color: "#8B0000",
+    logo: "🔴",
+    type: "premium",
+    regions: ["CDMX", "Guadalajara", "León", "Morelia", "Aguascalientes", "SLP"],
+    website: "etn.com.mx",
+    tagline: { es: "Servicio premium - Asientos reclinables 180°", en: "Premium service - 180° reclining seats" },
+  },
+  {
+    id: "primera-plus",
+    name: "Primera Plus",
+    color: "#FFD700",
+    logo: "🟡",
+    type: "primera",
+    regions: ["CDMX", "Guadalajara", "León", "Guanajuato", "Querétaro"],
+    website: "primeraplus.com.mx",
+    tagline: { es: "Centro de México - Primera clase", en: "Central Mexico - First class" },
+  },
+  {
+    id: "estrella-roja",
+    name: "Estrella Roja",
+    color: "#CC0000",
+    logo: "⭐",
+    type: "ejecutivo",
+    regions: ["CDMX", "Puebla", "Oaxaca", "Aeropuerto CDMX"],
+    website: "estrellaroja.com.mx",
+    tagline: { es: "CDMX-Puebla directo + shuttle al aeropuerto", en: "CDMX-Puebla direct + airport shuttle" },
+  },
+  {
+    id: "pullman",
+    name: "Pullman de Morelos",
+    color: "#006400",
+    logo: "🟢",
+    type: "ejecutivo",
+    regions: ["CDMX", "Cuernavaca", "Acapulco", "Taxco"],
+    website: "pullman.mx",
+    tagline: { es: "Ruta del sol - CDMX a Acapulco", en: "Sun route - CDMX to Acapulco" },
+  },
+  {
+    id: "odm",
+    name: "Ómnibus de México",
+    color: "#4169E1",
+    logo: "🚌",
+    type: "primera",
+    regions: ["CDMX", "Chihuahua", "Durango", "Zacatecas", "Aguascalientes"],
+    website: "odm.com.mx",
+    tagline: { es: "Norte de México - Rutas largas", en: "Northern Mexico - Long routes" },
+  },
+  {
+    id: "futura",
+    name: "Futura",
+    color: "#FF6600",
+    logo: "🟠",
+    type: "primera",
+    regions: ["CDMX", "Monterrey", "Saltillo", "Tampico", "Nuevo Laredo"],
+    website: "futura.com.mx",
+    tagline: { es: "Noreste de México", en: "Northeast Mexico" },
+  },
+  {
+    id: "estrella-de-oro",
+    name: "Estrella de Oro",
+    color: "#DAA520",
+    logo: "⭐",
+    type: "ejecutivo",
+    regions: ["CDMX", "Acapulco", "Taxco", "Ixtapa", "Chilpancingo"],
+    website: "autolineasunidas.com",
+    tagline: { es: "Costa del Pacífico - Guerrero", en: "Pacific coast - Guerrero" },
+  },
+];
+
+/**
+ * Genera link de búsqueda de autobuses en Busbud
+ * Busbud compara TODAS las líneas mexicanas y genera comisión por reserva.
+ */
+export function getBusSearchUrl(params: {
+  originCity: string; // nombre de la ciudad en inglés (slug-friendly)
+  destCity: string;
+  departDate?: string; // YYYY-MM-DD
+  locale?: "es" | "en";
+}): string {
+  const { originCity, destCity, departDate, locale = "es" } = params;
+  const affId = AFFILIATE_CONFIG.busbud.affiliateId;
+
+  // Busbud URL slug format
+  const slugify = (city: string) =>
+    city.toLowerCase()
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+      .replace(/\s+/g, "-")
+      .replace(/[^a-z0-9-]/g, "");
+
+  const lang = locale === "es" ? "es-mx" : "en";
+  const originSlug = slugify(originCity);
+  const destSlug = slugify(destCity);
+
+  let url = `https://www.busbud.com/${lang}/bus-${originSlug}-${destSlug}`;
+
+  if (departDate) {
+    url += `?outbound_date=${departDate}`;
+  }
+
+  // Add affiliate tracking
+  if (affId && affId !== "TU_ID_BUSBUD") {
+    url += `${departDate ? "&" : "?"}aff_id=${affId}`;
+  }
+
+  return url;
+}
+
+/**
+ * Genera link genérico de búsqueda de autobuses en Busbud México
+ */
+export function getBusSearchGenericUrl(params: {
+  locale?: "es" | "en";
+}): string {
+  const { locale = "es" } = params;
+  const lang = locale === "es" ? "es-mx" : "en";
+  return `https://www.busbud.com/${lang}/d/bus-tickets/mexico`;
 }
 
 // ============================================================

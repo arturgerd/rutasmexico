@@ -83,6 +83,8 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
     const searchPath = `${origin}${formatDate(dep)}${destination}${ret ? formatDate(ret) : ""}${passengers}`;
     const url = `https://www.aviasales.com/search/${searchPath}?marker=${marker}&locale=${locale}&currency=MXN`;
 
+    // Open in new tab (Aviasales blocks iframes)
+    window.open(url, "_blank", "noopener,noreferrer");
     setSearchUrl(url);
     setIsSearching(true);
   }, [origin, destination, departDate, returnDate, isOneWay, passengers, locale, marker, tomorrow, weekLater]);
@@ -238,82 +240,61 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
         </div>
       </div>
 
-      {/* Search Results - Aviasales iframe */}
+      {/* Search confirmation - after search opens in new tab */}
       {isSearching && searchUrl && (
-        <div className="bg-white rounded-2xl shadow-xl border border-arena-100 overflow-hidden">
-          <div className="bg-arena-50 px-6 py-4 border-b border-arena-200">
-            <div className="flex items-center justify-between">
-              <div>
-                <h3 className="font-display font-bold text-arena-900 flex items-center gap-2">
-                  ✈️ {locale === "es" ? "Resultados de vuelos" : "Flight results"}
-                </h3>
-                <p className="text-sm text-arena-500 mt-1">
-                  {originAirport && destAirport
-                    ? `${localize(originAirport.city, locale)} (${origin}) → ${localize(destAirport.city, locale)} (${destination})`
-                    : `${origin} → ${destination}`}
-                  {" • "}
-                  {passengers} {locale === "es" ? (passengers === 1 ? "pasajero" : "pasajeros") : (passengers === 1 ? "passenger" : "passengers")}
-                </p>
+        <div className="bg-white rounded-2xl shadow-xl border border-green-200 overflow-hidden">
+          <div className="bg-gradient-to-r from-green-50 to-emerald-50 px-6 py-5">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-2xl flex-shrink-0">
+                ✅
               </div>
-              <a
-                href={searchUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hidden sm:flex items-center gap-1 text-sm text-terracotta-500 hover:text-terracotta-600 font-medium"
-              >
-                {locale === "es" ? "Abrir en pantalla completa" : "Open fullscreen"}
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
-            </div>
-          </div>
+              <div className="flex-1">
+                <h3 className="font-display font-bold text-green-800 text-lg">
+                  {locale === "es" ? "¡Búsqueda abierta!" : "Search opened!"}
+                </h3>
+                <p className="text-sm text-green-700 mt-1">
+                  {originAirport && destAirport
+                    ? (locale === "es"
+                      ? `Comparando vuelos ${localize(originAirport.city, locale)} → ${localize(destAirport.city, locale)} en una nueva pestaña`
+                      : `Comparing flights ${localize(originAirport.city, locale)} → ${localize(destAirport.city, locale)} in a new tab`)
+                    : `${origin} → ${destination}`}
+                </p>
 
-          {/* Airlines being compared */}
-          <div className="px-6 py-3 bg-gradient-to-r from-arena-50 to-white border-b border-arena-100">
-            <div className="flex flex-wrap items-center gap-2 text-xs">
-              <span className="text-arena-400 font-medium">
-                {locale === "es" ? "Comparando:" : "Comparing:"}
-              </span>
-              {["Volaris", "VivaAerobus", "Aeroméxico", "TAR", "MagniCharters"].map((airline) => (
-                <span key={airline} className="px-2 py-0.5 bg-white rounded-full border border-arena-200 text-arena-600 font-medium">
-                  {airline}
-                </span>
-              ))}
-              <span className="text-arena-400">
-                {locale === "es" ? "+700 aerolíneas" : "+700 airlines"}
-              </span>
-            </div>
-          </div>
+                {/* Airlines being compared */}
+                <div className="flex flex-wrap items-center gap-2 mt-3 text-xs">
+                  <span className="text-green-600 font-medium">
+                    {locale === "es" ? "Comparando:" : "Comparing:"}
+                  </span>
+                  {["Volaris", "VivaAerobus", "Aeroméxico", "TAR", "MagniCharters"].map((airline) => (
+                    <span key={airline} className="px-2 py-0.5 bg-white rounded-full border border-green-200 text-green-700 font-medium">
+                      {airline}
+                    </span>
+                  ))}
+                  <span className="text-green-500">
+                    {locale === "es" ? "+700 aerolíneas" : "+700 airlines"}
+                  </span>
+                </div>
 
-          {/* Iframe with Aviasales results */}
-          <div className="relative">
-            <iframe
-              src={searchUrl}
-              className="w-full border-0"
-              style={{ height: "700px", minHeight: "500px" }}
-              title={locale === "es" ? "Resultados de vuelos" : "Flight results"}
-              sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-top-navigation"
-              loading="lazy"
-            />
-          </div>
-
-          {/* Bottom CTA */}
-          <div className="px-6 py-4 bg-gradient-to-r from-azul-50 to-terracotta-50 border-t border-arena-200">
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
-              <p className="text-sm text-arena-600">
-                {locale === "es"
-                  ? "💡 Los precios se actualizan en tiempo real desde todas las aerolíneas"
-                  : "💡 Prices are updated in real time from all airlines"}
-              </p>
-              <a
-                href={searchUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary px-6 py-2 text-sm whitespace-nowrap"
-              >
-                {locale === "es" ? "Ver todos los resultados →" : "View all results →"}
-              </a>
+                <div className="flex flex-wrap gap-3 mt-4">
+                  <a
+                    href={searchUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-xl text-sm font-semibold hover:bg-green-700 transition-colors"
+                  >
+                    {locale === "es" ? "Ver resultados →" : "View results →"}
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                  <button
+                    onClick={() => setIsSearching(false)}
+                    className="inline-flex items-center gap-2 bg-arena-100 text-arena-600 px-4 py-2 rounded-xl text-sm font-semibold hover:bg-arena-200 transition-colors"
+                  >
+                    {locale === "es" ? "Nueva búsqueda" : "New search"}
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -343,6 +324,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                   };
                   const searchPath = `${route.origin}${formatDate(dep)}${route.dest}${ret ? formatDate(ret) : ""}${passengers}`;
                   const url = `https://www.aviasales.com/search/${searchPath}?marker=${marker}&locale=${locale}&currency=MXN`;
+                  window.open(url, "_blank", "noopener,noreferrer");
                   setSearchUrl(url);
                   setIsSearching(true);
                 }}

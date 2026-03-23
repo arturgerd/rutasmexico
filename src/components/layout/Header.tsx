@@ -13,6 +13,8 @@ export default function Header() {
   const navLinks = [
     { href: `/${locale}`, label: t("siteName") === "RutasMéxico" ? "Inicio" : "Home" },
     { href: `/${locale}/vuelos`, label: locale === "es" ? "✈️ Vuelos" : "✈️ Flights" },
+    { href: `/${locale}/autobuses`, label: locale === "es" ? "🚌 Autobuses" : "🚌 Buses" },
+    { href: `/${locale}/hoteles`, label: locale === "es" ? "🏨 Hoteles" : "🏨 Hotels" },
     { href: `/${locale}/destinos`, label: t("allDestinations") },
     { href: `/${locale}/rutas`, label: t("popularRoutes") },
   ];
