@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Destination } from "@/types/destination";
 import { Route } from "@/types/route";
 import { Terminal } from "@/types/terminal";
@@ -9,6 +10,7 @@ import { Locale } from "@/types/common";
 import { localize, formatCurrency } from "@/lib/utils";
 import { TRAVEL_MODE_ICONS } from "@/lib/constants";
 import LocationPin from "@/components/map/LocationPin";
+import { getDestinationImage } from "@/lib/destination-images";
 
 interface DestinationDetailProps {
   destination: Destination;
@@ -19,37 +21,49 @@ interface DestinationDetailProps {
 
 export default function DestinationDetail({ destination, routes, terminals, locale }: DestinationDetailProps) {
   const [activeTab, setActiveTab] = useState<"highlights" | "transport" | "safety" | "food">("highlights");
+  const image = getDestinationImage(destination.id);
 
   const tabs = [
-    { id: "highlights" as const, label: locale === "es" ? "Qué ver y hacer" : "What to see & do", icon: "🏛️" },
-    { id: "transport" as const, label: locale === "es" ? "Cómo moverse" : "Getting around", icon: "🚌" },
+    { id: "highlights" as const, label: locale === "es" ? "Que ver y hacer" : "What to see & do", icon: "🏛️" },
+    { id: "transport" as const, label: locale === "es" ? "Como moverse" : "Getting around", icon: "🚌" },
     { id: "safety" as const, label: locale === "es" ? "Seguridad" : "Safety", icon: "🛡️" },
     { id: "food" as const, label: locale === "es" ? "Comida local" : "Local food", icon: "🍽️" },
   ];
 
   return (
     <div>
-      {/* Hero */}
-      <div className="gradient-hero relative">
-        <div className="gradient-hero-overlay absolute inset-0" />
-        <div className="container-custom relative z-10 py-16 md:py-24">
-          <Link href={`/${locale}/destinos`} className="text-white/70 hover:text-white text-sm mb-4 inline-block">
-            ← {locale === "es" ? "Todos los destinos" : "All destinations"}
+      {/* Hero with real image */}
+      <div className="relative min-h-[400px] md:min-h-[500px] flex items-end">
+        <Image
+          src={image.url}
+          alt={image.alt[locale]}
+          fill
+          className="object-cover"
+          priority
+          quality={85}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
+        <div className="container-custom relative z-10 pb-10 pt-20 md:pb-16">
+          <Link href={`/${locale}/destinos`} className="text-white/70 hover:text-white text-sm mb-4 inline-flex items-center gap-1 transition-colors">
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            {locale === "es" ? "Todos los destinos" : "All destinations"}
           </Link>
-          <h1 className="font-display text-4xl md:text-6xl font-bold text-white mb-3">
+          <h1 className="font-display text-4xl md:text-6xl font-bold text-white mb-3 drop-shadow-lg">
             {localize(destination.name, locale)}
           </h1>
-          <p className="text-white/80 text-lg max-w-2xl">
+          <p className="text-white/90 text-lg max-w-2xl drop-shadow">
             {localize(destination.longDescription, locale)}
           </p>
-          <div className="flex flex-wrap gap-4 mt-6">
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl px-4 py-2 text-white text-sm">
+          <div className="flex flex-wrap gap-3 mt-6">
+            <div className="bg-white/20 backdrop-blur-md rounded-xl px-4 py-2 text-white text-sm border border-white/10">
               📍 {localize(destination.state, locale)}
             </div>
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl px-4 py-2 text-white text-sm">
-              💰 {formatCurrency(destination.averageDailyBudget.min)}-{formatCurrency(destination.averageDailyBudget.max)}/{locale === "es" ? "día" : "day"}
+            <div className="bg-white/20 backdrop-blur-md rounded-xl px-4 py-2 text-white text-sm border border-white/10">
+              💰 {formatCurrency(destination.averageDailyBudget.min)}-{formatCurrency(destination.averageDailyBudget.max)}/{locale === "es" ? "dia" : "day"}
             </div>
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl px-4 py-2 text-white text-sm">
+            <div className="bg-white/20 backdrop-blur-md rounded-xl px-4 py-2 text-white text-sm border border-white/10">
               🌤️ {localize(destination.bestTimeToVisit, locale)}
             </div>
           </div>
@@ -81,7 +95,7 @@ export default function DestinationDetail({ destination, routes, terminals, loca
               {activeTab === "highlights" && (
                 <div>
                   <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">
-                    {locale === "es" ? "Qué ver y hacer" : "What to see & do"}
+                    {locale === "es" ? "Que ver y hacer" : "What to see & do"}
                   </h2>
                   <ul className="space-y-3">
                     {destination.highlights.map((h, i) => (
@@ -97,7 +111,7 @@ export default function DestinationDetail({ destination, routes, terminals, loca
               {activeTab === "transport" && (
                 <div>
                   <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">
-                    {locale === "es" ? "Cómo moverse" : "Getting around"}
+                    {locale === "es" ? "Como moverse" : "Getting around"}
                   </h2>
                   <p className="text-arena-700 leading-relaxed">{localize(destination.gettingAround, locale)}</p>
 
@@ -173,7 +187,7 @@ export default function DestinationDetail({ destination, routes, terminals, loca
             {/* Map */}
             <div className="bg-white rounded-2xl p-4 shadow-sm">
               <h3 className="font-display font-bold text-arena-900 mb-3">
-                {locale === "es" ? "Ubicación" : "Location"}
+                {locale === "es" ? "Ubicacion" : "Location"}
               </h3>
               <LocationPin
                 lat={destination.coordinates.lat}
@@ -183,11 +197,48 @@ export default function DestinationDetail({ destination, routes, terminals, loca
               />
             </div>
 
+            {/* Quick action buttons */}
+            <div className="bg-white rounded-2xl p-4 shadow-sm space-y-3">
+              <h3 className="font-display font-bold text-arena-900 mb-3">
+                {locale === "es" ? "Reserva ahora" : "Book now"}
+              </h3>
+              <Link
+                href={`/${locale}/vuelos`}
+                className="flex items-center gap-3 p-3 rounded-xl bg-terracotta-50 hover:bg-terracotta-100 transition-colors group"
+              >
+                <span className="text-xl">✈️</span>
+                <div>
+                  <p className="font-semibold text-sm text-arena-900 group-hover:text-terracotta-600">{locale === "es" ? "Buscar vuelos" : "Search flights"}</p>
+                  <p className="text-xs text-arena-400">{locale === "es" ? "Compara aerolíneas" : "Compare airlines"}</p>
+                </div>
+              </Link>
+              <Link
+                href={`/${locale}/hoteles`}
+                className="flex items-center gap-3 p-3 rounded-xl bg-amber-50 hover:bg-amber-100 transition-colors group"
+              >
+                <span className="text-xl">🏨</span>
+                <div>
+                  <p className="font-semibold text-sm text-arena-900 group-hover:text-amber-600">{locale === "es" ? "Buscar hoteles" : "Search hotels"}</p>
+                  <p className="text-xs text-arena-400">{locale === "es" ? "Mejores precios" : "Best prices"}</p>
+                </div>
+              </Link>
+              <Link
+                href={`/${locale}/autobuses`}
+                className="flex items-center gap-3 p-3 rounded-xl bg-blue-50 hover:bg-blue-100 transition-colors group"
+              >
+                <span className="text-xl">🚌</span>
+                <div>
+                  <p className="font-semibold text-sm text-arena-900 group-hover:text-blue-600">{locale === "es" ? "Buscar autobuses" : "Search buses"}</p>
+                  <p className="text-xs text-arena-400">{locale === "es" ? "ADO, ETN, Primera Plus" : "ADO, ETN, Primera Plus"}</p>
+                </div>
+              </Link>
+            </div>
+
             {/* Routes to this destination */}
             {routes.length > 0 && (
               <div className="bg-white rounded-2xl p-4 shadow-sm">
                 <h3 className="font-display font-bold text-arena-900 mb-3">
-                  {locale === "es" ? "Cómo llegar" : "How to get here"}
+                  {locale === "es" ? "Como llegar" : "How to get here"}
                 </h3>
                 <div className="space-y-2">
                   {routes.map((route) => {

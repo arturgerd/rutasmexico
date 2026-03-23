@@ -1,9 +1,11 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Image from "next/image";
 import { useLocale } from "next-intl";
 import { Locale } from "@/types/common";
 import { getHotelSearchUrl } from "@/lib/affiliate";
+import { getPopularDestinationImage } from "@/lib/destination-images";
 
 // Popular hotel destinations in Mexico
 const HOTEL_CITIES = [
@@ -237,29 +239,34 @@ export default function HotelSearchEmbed() {
         </div>
       )}
 
-      {/* Popular destinations */}
+      {/* Popular destinations with images */}
       {!searchDone && (
         <>
           {/* Beach destinations */}
-          <div className="bg-white rounded-2xl shadow-lg border border-arena-100 overflow-hidden">
-            <div className="px-6 py-4 border-b border-arena-200">
-              <h3 className="font-display font-bold text-arena-900">
-                {locale === "es" ? "🏖️ Hoteles en la playa" : "🏖️ Beach hotels"}
-              </h3>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0">
+          <div>
+            <h3 className="font-display font-bold text-arena-900 text-lg mb-4">
+              {locale === "es" ? "🏖️ Hoteles en la playa" : "🏖️ Beach hotels"}
+            </h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4">
               {beachCities.map((c) => (
                 <button
                   key={c.id}
                   onClick={() => handlePopularCity(c.id)}
-                  className="flex items-center gap-3 p-4 hover:bg-amber-50 transition-colors border-b border-r border-arena-100 group text-left"
+                  className="relative h-40 sm:h-48 rounded-2xl overflow-hidden group shadow-lg text-left"
                 >
-                  <span className="text-2xl">{c.emoji}</span>
-                  <div>
-                    <p className="font-semibold text-arena-900 text-sm group-hover:text-amber-700 transition-colors">
+                  <Image
+                    src={getPopularDestinationImage(c.id)}
+                    alt={c.name[locale]}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                  <div className="absolute bottom-3 left-3 right-3">
+                    <p className="font-display font-bold text-white text-sm sm:text-base drop-shadow-lg group-hover:text-amber-300 transition-colors">
                       {c.name[locale]}
                     </p>
-                    <p className="text-xs text-arena-400">
+                    <p className="text-white/80 text-xs mt-0.5">
                       {locale === "es" ? "Hoteles desde $800/noche" : "Hotels from $800/night"}
                     </p>
                   </div>
@@ -269,25 +276,30 @@ export default function HotelSearchEmbed() {
           </div>
 
           {/* City & culture destinations */}
-          <div className="bg-white rounded-2xl shadow-lg border border-arena-100 overflow-hidden">
-            <div className="px-6 py-4 border-b border-arena-200">
-              <h3 className="font-display font-bold text-arena-900">
-                {locale === "es" ? "🏛️ Hoteles en ciudades y pueblos mágicos" : "🏛️ City & magical town hotels"}
-              </h3>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0">
+          <div>
+            <h3 className="font-display font-bold text-arena-900 text-lg mb-4">
+              {locale === "es" ? "🏛️ Hoteles en ciudades y pueblos magicos" : "🏛️ City & magical town hotels"}
+            </h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4">
               {cultureCities.map((c) => (
                 <button
                   key={c.id}
                   onClick={() => handlePopularCity(c.id)}
-                  className="flex items-center gap-3 p-4 hover:bg-amber-50 transition-colors border-b border-r border-arena-100 group text-left"
+                  className="relative h-40 sm:h-48 rounded-2xl overflow-hidden group shadow-lg text-left"
                 >
-                  <span className="text-2xl">{c.emoji}</span>
-                  <div>
-                    <p className="font-semibold text-arena-900 text-sm group-hover:text-amber-700 transition-colors">
+                  <Image
+                    src={getPopularDestinationImage(c.id)}
+                    alt={c.name[locale]}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                  <div className="absolute bottom-3 left-3 right-3">
+                    <p className="font-display font-bold text-white text-sm sm:text-base drop-shadow-lg group-hover:text-amber-300 transition-colors">
                       {c.name[locale]}
                     </p>
-                    <p className="text-xs text-arena-400">
+                    <p className="text-white/80 text-xs mt-0.5">
                       {locale === "es" ? "Hoteles desde $600/noche" : "Hotels from $600/night"}
                     </p>
                   </div>
