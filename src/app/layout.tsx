@@ -26,11 +26,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             `,
           }}
         />
-        {/* Google AdSense - Replace ca-pub-XXXXXXXXXX with your real publisher ID */}
+        {/* Google AdSense */}
         <Script
           id="google-adsense"
           strategy="afterInteractive"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6589074911542620"
           crossOrigin="anonymous"
         />
       </head>

@@ -10,7 +10,7 @@ interface AdSenseBannerProps {
 }
 
 // Google AdSense component - will display ads once AdSense account is approved
-// To activate: Replace "ca-pub-XXXXXXXXXX" with your real AdSense publisher ID
+// To activate: Replace "ca-pub-6589074911542620" with your real AdSense publisher ID
 // in src/app/layout.tsx
 export default function AdSenseBanner({
   adSlot,
@@ -51,7 +51,7 @@ export default function AdSenseBanner({
       <ins
         className="adsbygoogle"
         style={formatMap[format] || formatMap.auto}
-        data-ad-client="ca-pub-XXXXXXXXXX"
+        data-ad-client="ca-pub-6589074911542620"
         data-ad-slot={adSlot}
         data-ad-format={format === "auto" ? "auto" : undefined}
         data-full-width-responsive={format === "auto" ? "true" : undefined}
