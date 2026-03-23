@@ -12,6 +12,7 @@ export default function Header() {
 
   const navLinks = [
     { href: `/${locale}`, label: t("siteName") === "RutasMéxico" ? "Inicio" : "Home" },
+    { href: `/${locale}/vuelos`, label: locale === "es" ? "✈️ Vuelos" : "✈️ Flights" },
     { href: `/${locale}/destinos`, label: t("allDestinations") },
     { href: `/${locale}/rutas`, label: t("popularRoutes") },
   ];
