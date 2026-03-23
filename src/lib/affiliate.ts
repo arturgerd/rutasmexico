@@ -71,9 +71,9 @@ export function getFlightSearchUrl(params: {
   departDate: string; // YYYY-MM-DD
   returnDate?: string; // YYYY-MM-DD (opcional, solo ida si no se pone)
   passengers?: number;
-  locale?: "es" | "en";
+  locale?: "es" | "en" | "fr";
 }): string {
-  const { originIATA, destIATA, departDate, returnDate, passengers = 1, locale = "es" } = params;
+  const { originIATA, destIATA, departDate, returnDate, passengers = 1 } = params;
   const marker = AFFILIATE_CONFIG.travelpayouts.marker;
 
   // Formato de fecha para Aviasales: DDMM
@@ -85,9 +85,9 @@ export function getFlightSearchUrl(params: {
   const depart = formatDate(departDate);
   const ret = returnDate ? formatDate(returnDate) : "";
 
-  // URL de Aviasales con marker de afiliado
+  // URL de Aviasales con marker de afiliado (sin locale prefix — Aviasales ya no lo soporta en /search/)
   const searchPath = `${originIATA}${depart}${destIATA}${ret}${passengers}`;
-  return `https://www.aviasales.com/search/${searchPath}?marker=${marker}&locale=${locale}&currency=MXN`;
+  return `https://www.aviasales.com/search/${searchPath}?marker=${marker}&currency=mxn`;
 }
 
 /**
@@ -97,16 +97,16 @@ export function getFlightSearchUrl(params: {
 export function getFlightSearchGenericUrl(params: {
   originIATA?: string;
   destIATA?: string;
-  locale?: "es" | "en";
+  locale?: "es" | "en" | "fr";
 }): string {
-  const { originIATA, destIATA, locale = "es" } = params;
+  const { originIATA, destIATA } = params;
   const marker = AFFILIATE_CONFIG.travelpayouts.marker;
 
   if (originIATA && destIATA) {
-    return `https://www.aviasales.com/${locale === "es" ? "es" : "en"}/flights/${originIATA}${destIATA}?marker=${marker}&currency=MXN`;
+    return `https://www.aviasales.com/flights/${originIATA}${destIATA}?marker=${marker}&currency=mxn`;
   }
 
-  return `https://www.aviasales.com/?marker=${marker}&locale=${locale}&currency=MXN`;
+  return `https://www.aviasales.com/?marker=${marker}&currency=mxn`;
 }
 
 /**
@@ -117,7 +117,7 @@ export function getHotelSearchUrl(params: {
   checkIn: string; // YYYY-MM-DD
   checkOut: string; // YYYY-MM-DD
   adults?: number;
-  locale?: "es" | "en";
+  locale?: "es" | "en" | "fr";
 }): string {
   const { cityName, checkIn, checkOut, adults = 2, locale = "es" } = params;
   const marker = AFFILIATE_CONFIG.travelpayouts.marker;
@@ -132,7 +132,7 @@ export function getCarRentalUrl(params: {
   pickupIATA: string;
   pickupDate: string; // YYYY-MM-DD
   returnDate: string; // YYYY-MM-DD
-  locale?: "es" | "en";
+  locale?: "es" | "en" | "fr";
 }): string {
   const { pickupIATA, pickupDate, returnDate, locale = "es" } = params;
   const code = AFFILIATE_CONFIG.discoverCars.affiliateCode;
@@ -145,12 +145,12 @@ export function getCarRentalUrl(params: {
  */
 export function getTourSearchUrl(params: {
   cityName: string;
-  locale?: "es" | "en";
+  locale?: "es" | "en" | "fr";
 }): string {
   const { cityName, locale = "es" } = params;
   const partnerId = AFFILIATE_CONFIG.getYourGuide.partnerId;
 
-  return `https://www.getyourguide.${locale === "es" ? "es" : "com"}/s/?q=${encodeURIComponent(cityName + " Mexico")}&partner_id=${partnerId}`;
+  return `https://www.getyourguide.${locale === "es" ? "es" : locale === "fr" ? "fr" : "com"}/s/?q=${encodeURIComponent(cityName + " Mexico")}&partner_id=${partnerId}`;
 }
 
 /**
@@ -160,12 +160,12 @@ export function getBookingUrl(params: {
   cityName: string;
   checkIn: string;
   checkOut: string;
-  locale?: "es" | "en";
+  locale?: "es" | "en" | "fr";
 }): string {
   const { cityName, checkIn, checkOut, locale = "es" } = params;
   const aid = AFFILIATE_CONFIG.booking.aid;
 
-  return `https://www.booking.com/searchresults.${locale === "es" ? "es" : "en-gb"}.html?ss=${encodeURIComponent(cityName + ", Mexico")}&checkin=${checkIn}&checkout=${checkOut}&aid=${aid}&no_rooms=1&group_adults=2`;
+  return `https://www.booking.com/searchresults.${locale === "es" ? "es" : locale === "fr" ? "fr" : "en-gb"}.html?ss=${encodeURIComponent(cityName + ", Mexico")}&checkin=${checkIn}&checkout=${checkOut}&aid=${aid}&no_rooms=1&group_adults=2`;
 }
 
 // ============================================================
@@ -405,7 +405,7 @@ export function getBusSearchUrl(params: {
   originCity: string; // nombre de la ciudad en inglés (slug-friendly)
   destCity: string;
   departDate?: string; // YYYY-MM-DD
-  locale?: "es" | "en";
+  locale?: "es" | "en" | "fr";
 }): string {
   const { originCity, destCity, departDate, locale = "es" } = params;
   const affId = AFFILIATE_CONFIG.busbud.affiliateId;
@@ -417,7 +417,7 @@ export function getBusSearchUrl(params: {
       .replace(/\s+/g, "-")
       .replace(/[^a-z0-9-]/g, "");
 
-  const lang = locale === "es" ? "es-mx" : "en";
+  const lang = locale === "es" ? "es-mx" : locale === "fr" ? "fr" : "en";
   const originSlug = slugify(originCity);
   const destSlug = slugify(destCity);
 
@@ -439,10 +439,10 @@ export function getBusSearchUrl(params: {
  * Genera link genérico de búsqueda de autobuses en Busbud México
  */
 export function getBusSearchGenericUrl(params: {
-  locale?: "es" | "en";
+  locale?: "es" | "en" | "fr";
 }): string {
   const { locale = "es" } = params;
-  const lang = locale === "es" ? "es-mx" : "en";
+  const lang = locale === "es" ? "es-mx" : locale === "fr" ? "fr" : "en";
   return `https://www.busbud.com/${lang}/d/bus-tickets/mexico`;
 }
 
@@ -487,9 +487,9 @@ export function getAirlineComparisonUrl(params: {
   departDate?: string;
   returnDate?: string;
   passengers?: number;
-  locale?: "es" | "en";
+  locale?: "es" | "en" | "fr";
 }): string {
-  const { originIATA, destIATA, departDate, returnDate, passengers = 1, locale = "es" } = params;
+  const { originIATA, destIATA, departDate, returnDate, passengers = 1 } = params;
   const marker = AFFILIATE_CONFIG.travelpayouts.marker;
 
   if (departDate) {
@@ -499,10 +499,9 @@ export function getAirlineComparisonUrl(params: {
       departDate,
       returnDate,
       passengers,
-      locale,
     });
   }
 
   // Generic comparison URL without dates
-  return `https://www.aviasales.com/${locale === "es" ? "es" : "en"}/flights/${originIATA}${destIATA}?marker=${marker}&currency=MXN`;
+  return `https://www.aviasales.com/flights/${originIATA}${destIATA}?marker=${marker}&currency=mxn`;
 }

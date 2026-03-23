@@ -4,7 +4,7 @@ import { useState, useMemo, useCallback } from "react";
 import { useLocale } from "next-intl";
 import { Airport } from "@/types/airport";
 import { Locale } from "@/types/common";
-import { localize } from "@/lib/utils";
+import { localize, t3, l } from "@/lib/utils";
 import { AFFILIATE_CONFIG } from "@/lib/affiliate";
 
 interface AviasalesEmbedProps {
@@ -64,11 +64,11 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
 
   const handleSearch = useCallback(() => {
     if (!origin || !destination) {
-      alert(locale === "es" ? "Selecciona origen y destino" : "Select origin and destination");
+      alert(t3(locale, "Selecciona origen y destino", "Select origin and destination", "Sélectionnez départ et destination"));
       return;
     }
     if (origin === destination) {
-      alert(locale === "es" ? "Origen y destino deben ser diferentes" : "Origin and destination must be different");
+      alert(t3(locale, "Origen y destino deben ser diferentes", "Origin and destination must be different", "Le départ et la destination doivent être différents"));
       return;
     }
 
@@ -81,7 +81,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
     };
 
     const searchPath = `${origin}${formatDate(dep)}${destination}${ret ? formatDate(ret) : ""}${passengers}`;
-    const url = `https://www.aviasales.com/search/${searchPath}?marker=${marker}&locale=${locale}&currency=MXN`;
+    const url = `https://www.aviasales.com/search/${searchPath}?marker=${marker}&currency=mxn`;
 
     // Open in new tab (Aviasales blocks iframes)
     window.open(url, "_blank", "noopener,noreferrer");
@@ -98,14 +98,10 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
       <div className="bg-white rounded-2xl shadow-xl border border-arena-100 overflow-hidden">
         <div className="bg-gradient-to-r from-azul-700 to-terracotta-500 px-6 py-4">
           <h2 className="font-display text-xl font-bold text-white flex items-center gap-2">
-            ✈️ {locale === "es"
-              ? "Busca vuelos baratos en todas las aerolíneas"
-              : "Search cheap flights across all airlines"}
+            ✈️ {t3(locale, "Busca vuelos baratos en todas las aerolíneas", "Search cheap flights across all airlines", "Recherchez des vols pas chers sur toutes les compagnies")}
           </h2>
           <p className="text-white/80 text-sm mt-1">
-            {locale === "es"
-              ? "Volaris • VivaAerobus • Aeroméxico • TAR • MagniCharters • y más"
-              : "Volaris • VivaAerobus • Aeromexico • TAR • MagniCharters • and more"}
+            {t3(locale, "Volaris • VivaAerobus • Aeroméxico • TAR • MagniCharters • y más", "Volaris • VivaAerobus • Aeromexico • TAR • MagniCharters • and more", "Volaris • VivaAerobus • Aeroméxico • TAR • MagniCharters • et plus")}
           </p>
         </div>
 
@@ -119,7 +115,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                 onChange={() => setIsOneWay(false)}
                 className="text-terracotta-500 focus:ring-terracotta-500"
               />
-              <span className="text-sm text-arena-700">{locale === "es" ? "Ida y vuelta" : "Round trip"}</span>
+              <span className="text-sm text-arena-700">{t3(locale, "Ida y vuelta", "Round trip", "Aller-retour")}</span>
             </label>
             <label className="flex items-center gap-2 cursor-pointer">
               <input
@@ -128,7 +124,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                 onChange={() => setIsOneWay(true)}
                 className="text-terracotta-500 focus:ring-terracotta-500"
               />
-              <span className="text-sm text-arena-700">{locale === "es" ? "Solo ida" : "One way"}</span>
+              <span className="text-sm text-arena-700">{t3(locale, "Solo ida", "One way", "Aller simple")}</span>
             </label>
           </div>
 
@@ -136,14 +132,14 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
           <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-3 items-end">
             <div>
               <label className="block text-xs font-semibold text-arena-500 mb-1">
-                {locale === "es" ? "Origen" : "Origin"}
+                {t3(locale, "Origen", "Origin", "Origine")}
               </label>
               <select
                 value={origin}
                 onChange={(e) => setOrigin(e.target.value)}
                 className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-terracotta-500/50 focus:border-terracotta-500"
               >
-                <option value="">{locale === "es" ? "✈️ Selecciona aeropuerto" : "✈️ Select airport"}</option>
+                <option value="">{t3(locale, "✈️ Selecciona aeropuerto", "✈️ Select airport", "✈️ Sélectionnez un aéroport")}</option>
                 {sortedAirports.map((a) => (
                   <option key={a.iata} value={a.iata}>
                     {a.iata} - {localize(a.city, locale)} ({localize(a.state, locale)})
@@ -155,7 +151,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
             <button
               onClick={swapAirports}
               className="hidden md:flex w-10 h-10 rounded-full bg-arena-100 hover:bg-terracotta-100 items-center justify-center transition-colors mb-0.5"
-              title={locale === "es" ? "Intercambiar" : "Swap"}
+              title={t3(locale, "Intercambiar", "Swap", "Échanger")}
             >
               <svg className="w-5 h-5 text-arena-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
@@ -164,14 +160,14 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
 
             <div>
               <label className="block text-xs font-semibold text-arena-500 mb-1">
-                {locale === "es" ? "Destino" : "Destination"}
+                {t3(locale, "Destino", "Destination", "Destination")}
               </label>
               <select
                 value={destination}
                 onChange={(e) => setDestination(e.target.value)}
                 className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-terracotta-500/50 focus:border-terracotta-500"
               >
-                <option value="">{locale === "es" ? "🛬 Selecciona aeropuerto" : "🛬 Select airport"}</option>
+                <option value="">{t3(locale, "🛬 Selecciona aeropuerto", "🛬 Select airport", "🛬 Sélectionnez un aéroport")}</option>
                 {sortedAirports.map((a) => (
                   <option key={a.iata} value={a.iata}>
                     {a.iata} - {localize(a.city, locale)} ({localize(a.state, locale)})
@@ -185,7 +181,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
             <div>
               <label className="block text-xs font-semibold text-arena-500 mb-1">
-                {locale === "es" ? "Fecha de ida" : "Departure date"}
+                {t3(locale, "Fecha de ida", "Departure date", "Date de départ")}
               </label>
               <input
                 type="date"
@@ -199,7 +195,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
             {!isOneWay && (
               <div>
                 <label className="block text-xs font-semibold text-arena-500 mb-1">
-                  {locale === "es" ? "Fecha de regreso" : "Return date"}
+                  {t3(locale, "Fecha de regreso", "Return date", "Date de retour")}
                 </label>
                 <input
                   type="date"
@@ -213,7 +209,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
 
             <div>
               <label className="block text-xs font-semibold text-arena-500 mb-1">
-                {locale === "es" ? "Pasajeros" : "Passengers"}
+                {t3(locale, "Pasajeros", "Passengers", "Passagers")}
               </label>
               <select
                 value={passengers}
@@ -222,7 +218,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
               >
                 {[1, 2, 3, 4, 5, 6].map((n) => (
                   <option key={n} value={n}>
-                    {n} {locale === "es" ? (n === 1 ? "pasajero" : "pasajeros") : (n === 1 ? "passenger" : "passengers")}
+                    {n} {locale === "es" ? (n === 1 ? "pasajero" : "pasajeros") : locale === "fr" ? (n === 1 ? "passager" : "passagers") : (n === 1 ? "passenger" : "passengers")}
                   </option>
                 ))}
               </select>
@@ -233,7 +229,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                 onClick={handleSearch}
                 className="w-full bg-gradient-to-r from-terracotta-500 to-terracotta-600 text-white py-3 rounded-xl text-base font-bold hover:from-terracotta-600 hover:to-terracotta-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
-                🔍 {locale === "es" ? "Buscar vuelos" : "Search flights"}
+                🔍 {t3(locale, "Buscar vuelos", "Search flights", "Rechercher des vols")}
               </button>
             </div>
           </div>
@@ -250,20 +246,21 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
               </div>
               <div className="flex-1">
                 <h3 className="font-display font-bold text-green-800 text-lg">
-                  {locale === "es" ? "¡Búsqueda abierta!" : "Search opened!"}
+                  {t3(locale, "¡Búsqueda abierta!", "Search opened!", "Recherche lancée !")}
                 </h3>
                 <p className="text-sm text-green-700 mt-1">
                   {originAirport && destAirport
-                    ? (locale === "es"
-                      ? `Comparando vuelos ${localize(originAirport.city, locale)} → ${localize(destAirport.city, locale)} en una nueva pestaña`
-                      : `Comparing flights ${localize(originAirport.city, locale)} → ${localize(destAirport.city, locale)} in a new tab`)
+                    ? t3(locale,
+                      `Comparando vuelos ${localize(originAirport.city, locale)} → ${localize(destAirport.city, locale)} en una nueva pestaña`,
+                      `Comparing flights ${localize(originAirport.city, locale)} → ${localize(destAirport.city, locale)} in a new tab`,
+                      `Comparaison des vols ${localize(originAirport.city, locale)} → ${localize(destAirport.city, locale)} dans un nouvel onglet`)
                     : `${origin} → ${destination}`}
                 </p>
 
                 {/* Airlines being compared */}
                 <div className="flex flex-wrap items-center gap-2 mt-3 text-xs">
                   <span className="text-green-600 font-medium">
-                    {locale === "es" ? "Comparando:" : "Comparing:"}
+                    {t3(locale, "Comparando:", "Comparing:", "Nous comparons :")}
                   </span>
                   {["Volaris", "VivaAerobus", "Aeroméxico", "TAR", "MagniCharters"].map((airline) => (
                     <span key={airline} className="px-2 py-0.5 bg-white rounded-full border border-green-200 text-green-700 font-medium">
@@ -271,7 +268,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                     </span>
                   ))}
                   <span className="text-green-500">
-                    {locale === "es" ? "+700 aerolíneas" : "+700 airlines"}
+                    {t3(locale, "+700 aerolíneas", "+700 airlines", "+700 compagnies")}
                   </span>
                 </div>
 
@@ -282,7 +279,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-xl text-sm font-semibold hover:bg-green-700 transition-colors"
                   >
-                    {locale === "es" ? "Ver resultados →" : "View results →"}
+                    {t3(locale, "Ver resultados →", "View results →", "Voir les résultats →")}
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
@@ -291,7 +288,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                     onClick={() => setIsSearching(false)}
                     className="inline-flex items-center gap-2 bg-arena-100 text-arena-600 px-4 py-2 rounded-xl text-sm font-semibold hover:bg-arena-200 transition-colors"
                   >
-                    {locale === "es" ? "Nueva búsqueda" : "New search"}
+                    {t3(locale, "Nueva búsqueda", "New search", "Nouvelle recherche")}
                   </button>
                 </div>
               </div>
@@ -305,7 +302,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
         <div className="bg-white rounded-2xl shadow-lg border border-arena-100 overflow-hidden">
           <div className="px-6 py-4 border-b border-arena-200">
             <h3 className="font-display font-bold text-arena-900">
-              {locale === "es" ? "🔥 Rutas populares" : "🔥 Popular routes"}
+              {t3(locale, "🔥 Rutas populares", "🔥 Popular routes", "🔥 Itinéraires populaires")}
             </h3>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0">
@@ -323,7 +320,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                     return `${parts[2]}${parts[1]}`;
                   };
                   const searchPath = `${route.origin}${formatDate(dep)}${route.dest}${ret ? formatDate(ret) : ""}${passengers}`;
-                  const url = `https://www.aviasales.com/search/${searchPath}?marker=${marker}&locale=${locale}&currency=MXN`;
+                  const url = `https://www.aviasales.com/search/${searchPath}?marker=${marker}&currency=mxn`;
                   window.open(url, "_blank", "noopener,noreferrer");
                   setSearchUrl(url);
                   setIsSearching(true);
@@ -336,11 +333,11 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                     <p className="font-semibold text-arena-900 text-sm group-hover:text-terracotta-600 transition-colors">
                       {route.origin} → {route.dest}
                     </p>
-                    <p className="text-xs text-arena-400">{route.label[locale]}</p>
+                    <p className="text-xs text-arena-400">{l(route.label, locale)}</p>
                   </div>
                 </div>
                 <span className="text-xs text-terracotta-500 font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
-                  {locale === "es" ? "Buscar →" : "Search →"}
+                  {t3(locale, "Buscar →", "Search →", "Rechercher →")}
                 </span>
               </button>
             ))}
