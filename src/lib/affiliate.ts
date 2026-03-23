@@ -157,3 +157,64 @@ export function getBookingUrl(params: {
 
   return `https://www.booking.com/searchresults.${locale === "es" ? "es" : "en-gb"}.html?ss=${encodeURIComponent(cityName + ", Mexico")}&checkin=${checkIn}&checkout=${checkOut}&aid=${aid}&no_rooms=1&group_adults=2`;
 }
+
+// ============================================================
+// AEROLÍNEAS MEXICANAS - LINKS DE COMPARACIÓN
+// ============================================================
+// Todas las búsquedas pasan por Aviasales/Travelpayouts.
+// Cuando el usuario compra un vuelo de CUALQUIER aerolínea
+// (Volaris, VivaAerobus, Aeroméxico, TAR, etc.), tú ganas comisión.
+// ============================================================
+
+export interface AirlineInfo {
+  id: string;
+  name: string;
+  iataCode: string;
+  color: string;
+  logo: string;
+  baseCity: string;
+  type: "low-cost" | "flag-carrier" | "regional" | "charter";
+}
+
+/**
+ * Aerolíneas mexicanas soportadas en la comparación
+ */
+export const MEXICAN_AIRLINES: AirlineInfo[] = [
+  { id: "volaris", name: "Volaris", iataCode: "Y4", color: "#6B21A8", logo: "🟣", baseCity: "GDL", type: "low-cost" },
+  { id: "vivaaerobus", name: "VivaAerobus", iataCode: "VB", color: "#EAB308", logo: "🟡", baseCity: "MTY", type: "low-cost" },
+  { id: "aeromexico", name: "Aeroméxico", iataCode: "AM", color: "#1D4ED8", logo: "🔵", baseCity: "MEX", type: "flag-carrier" },
+  { id: "aeroconnect", name: "Aeroméxico Connect", iataCode: "5D", color: "#2563EB", logo: "🔵", baseCity: "MEX", type: "regional" },
+  { id: "tar", name: "TAR Aerolíneas", iataCode: "YQ", color: "#16A34A", logo: "🟢", baseCity: "QRO", type: "regional" },
+  { id: "magnicharters", name: "MagniCharters", iataCode: "GMT", color: "#DC2626", logo: "🔴", baseCity: "MEX", type: "charter" },
+];
+
+/**
+ * Genera link de comparación de vuelos con filtro por aerolínea.
+ * Aviasales/Travelpayouts compara TODAS las aerolíneas automáticamente.
+ * La comisión se gana sin importar cuál aerolínea elija el usuario.
+ */
+export function getAirlineComparisonUrl(params: {
+  originIATA: string;
+  destIATA: string;
+  departDate?: string;
+  returnDate?: string;
+  passengers?: number;
+  locale?: "es" | "en";
+}): string {
+  const { originIATA, destIATA, departDate, returnDate, passengers = 1, locale = "es" } = params;
+  const marker = AFFILIATE_CONFIG.travelpayouts.marker;
+
+  if (departDate) {
+    return getFlightSearchUrl({
+      originIATA,
+      destIATA,
+      departDate,
+      returnDate,
+      passengers,
+      locale,
+    });
+  }
+
+  // Generic comparison URL without dates
+  return `https://www.aviasales.com/${locale === "es" ? "es" : "en"}/flights/${originIATA}${destIATA}?marker=${marker}&currency=MXN`;
+}

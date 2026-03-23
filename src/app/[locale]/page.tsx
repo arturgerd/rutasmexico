@@ -5,6 +5,7 @@ import HeroSection from "@/components/home/HeroSection";
 import FeaturedDestinations from "@/components/home/FeaturedDestinations";
 import HowItWorks from "@/components/home/HowItWorks";
 import MapSection from "@/components/home/MapSection";
+import AirlineComparisonSection from "@/components/home/AirlineComparisonSection";
 
 export default async function HomePage({ params: { locale } }: { params: { locale: string } }) {
   setRequestLocale(locale);
@@ -16,6 +17,7 @@ export default async function HomePage({ params: { locale } }: { params: { local
   return (
     <>
       <HeroSection airports={airports} />
+      <AirlineComparisonSection />
       <MapSection destinations={destinations} />
       <FeaturedDestinations destinations={destinations.slice(0, 6)} />
       <HowItWorks />

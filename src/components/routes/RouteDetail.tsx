@@ -13,6 +13,8 @@ import { getFlightSearchGenericUrl, getCarRentalUrl } from "@/lib/affiliate";
 import MapLoader from "@/components/map/MapLoader";
 import StepByStepGuide from "./StepByStepGuide";
 import FlightSearch from "@/components/widgets/FlightSearch";
+import AirlineGrid from "@/components/widgets/AirlineGrid";
+import TravelpayoutsWidget from "@/components/widgets/TravelpayoutsWidget";
 
 interface RouteDetailProps {
   route: Route;
@@ -114,6 +116,28 @@ export default function RouteDetail({ route, origin, destination, guidesMap, air
               airports={airports}
               defaultOrigin={origin.airportIATA}
               defaultDest={destination.airportIATA}
+              compact
+            />
+          </div>
+        )}
+
+        {/* Airline Price Comparison Widget */}
+        {origin.airportIATA && destination.airportIATA && (
+          <div className="mb-8">
+            <TravelpayoutsWidget
+              originIATA={origin.airportIATA}
+              destIATA={destination.airportIATA}
+              type="prices"
+            />
+          </div>
+        )}
+
+        {/* Airlines we compare (compact view) */}
+        {origin.airportIATA && destination.airportIATA && (
+          <div className="mb-8 bg-arena-50 rounded-2xl p-5 border border-arena-100">
+            <AirlineGrid
+              originIATA={origin.airportIATA}
+              destIATA={destination.airportIATA}
               compact
             />
           </div>
