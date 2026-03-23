@@ -46,9 +46,21 @@ export default function Footer() {
           <div>
             <h3 className="font-display font-semibold text-white mb-4">Legal</h3>
             <ul className="space-y-2 text-sm">
-              <li><span className="hover:text-terracotta-400 cursor-pointer transition-colors">{t("privacy")}</span></li>
-              <li><span className="hover:text-terracotta-400 cursor-pointer transition-colors">{t("terms")}</span></li>
-              <li><span className="hover:text-terracotta-400 cursor-pointer transition-colors">{t("contact")}</span></li>
+              <li>
+                <Link href={`/${locale}/privacidad`} className="hover:text-terracotta-400 transition-colors">
+                  {t("privacy")}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/terminos`} className="hover:text-terracotta-400 transition-colors">
+                  {t("terms")}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/contacto`} className="hover:text-terracotta-400 transition-colors">
+                  {t("contact")}
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
