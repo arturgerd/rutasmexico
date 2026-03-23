@@ -1,4 +1,5 @@
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata = {
   icons: {
@@ -9,6 +10,23 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html suppressHydrationWarning>
+      <head>
+        {/* Travelpayouts site verification */}
+        <Script
+          id="travelpayouts-verification"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function () {
+                var script = document.createElement("script");
+                script.async = 1;
+                script.src = 'https://emrldco.com/NTEwNjU0.js?t=510654';
+                document.head.appendChild(script);
+              })();
+            `,
+          }}
+        />
+      </head>
       <body className="min-h-screen flex flex-col">
         {children}
       </body>
