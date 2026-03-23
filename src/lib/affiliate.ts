@@ -85,9 +85,9 @@ export function getFlightSearchUrl(params: {
   const depart = formatDate(departDate);
   const ret = returnDate ? formatDate(returnDate) : "";
 
-  // URL de Aviasales con marker de afiliado (sin locale prefix — Aviasales ya no lo soporta en /search/)
+  // URL de Aviasales con marker de afiliado (sin locale prefix ni currency — Aviasales redirige currency=mxn)
   const searchPath = `${originIATA}${depart}${destIATA}${ret}${passengers}`;
-  return `https://www.aviasales.com/search/${searchPath}?marker=${marker}&currency=mxn`;
+  return `https://www.aviasales.com/search/${searchPath}?marker=${marker}`;
 }
 
 /**
@@ -103,10 +103,10 @@ export function getFlightSearchGenericUrl(params: {
   const marker = AFFILIATE_CONFIG.travelpayouts.marker;
 
   if (originIATA && destIATA) {
-    return `https://www.aviasales.com/flights/${originIATA}${destIATA}?marker=${marker}&currency=mxn`;
+    return `https://www.aviasales.com/flights/${originIATA}${destIATA}?marker=${marker}`;
   }
 
-  return `https://www.aviasales.com/?marker=${marker}&currency=mxn`;
+  return `https://www.aviasales.com/?marker=${marker}`;
 }
 
 /**
@@ -503,5 +503,5 @@ export function getAirlineComparisonUrl(params: {
   }
 
   // Generic comparison URL without dates
-  return `https://www.aviasales.com/flights/${originIATA}${destIATA}?marker=${marker}&currency=mxn`;
+  return `https://www.aviasales.com/flights/${originIATA}${destIATA}?marker=${marker}`;
 }

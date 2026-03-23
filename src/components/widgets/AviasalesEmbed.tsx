@@ -81,7 +81,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
     };
 
     const searchPath = `${origin}${formatDate(dep)}${destination}${ret ? formatDate(ret) : ""}${passengers}`;
-    const url = `https://www.aviasales.com/search/${searchPath}?marker=${marker}&currency=mxn`;
+    const url = `https://www.aviasales.com/search/${searchPath}?marker=${marker}`;
 
     // Open in new tab (Aviasales blocks iframes)
     window.open(url, "_blank", "noopener,noreferrer");
@@ -320,7 +320,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                     return `${parts[2]}${parts[1]}`;
                   };
                   const searchPath = `${route.origin}${formatDate(dep)}${route.dest}${ret ? formatDate(ret) : ""}${passengers}`;
-                  const url = `https://www.aviasales.com/search/${searchPath}?marker=${marker}&currency=mxn`;
+                  const url = `https://www.aviasales.com/search/${searchPath}?marker=${marker}`;
                   window.open(url, "_blank", "noopener,noreferrer");
                   setSearchUrl(url);
                   setIsSearching(true);
