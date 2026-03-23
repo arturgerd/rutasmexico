@@ -22,6 +22,7 @@
     "languages": "Idiomas",
     "spanish": "Español",
     "english": "English",
+    "french": "Français",
     "backToHome": "Volver al inicio",
     "learnMore": "Saber más",
     "bookNow": "Reservar ahora",
@@ -74,6 +75,20 @@
     "transitSegment": "Trayecto principal",
     "arrivalNav": "Llegada y traslado",
     "localTransport": "Transporte local"
+  },
+  "blog": {
+    "title": "Blog de Viajes",
+    "subtitle": "Guías, consejos y todo lo que necesitas para tu próximo viaje por México",
+    "allCategories": "Todas",
+    "guiaDestino": "Guías de destino",
+    "tipsViaje": "Tips de viaje",
+    "transporte": "Transporte",
+    "readMore": "Leer más",
+    "backToBlog": "Volver al blog",
+    "recentPosts": "Últimos artículos",
+    "minRead": "min de lectura",
+    "publishedOn": "Publicado el",
+    "updatedOn": "Actualizado el"
   },
   "footer": {
     "description": "Tu guía completa para viajar por México. Rutas, guías paso a paso y consejos prácticos para cada destino.",

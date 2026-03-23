@@ -10,13 +10,21 @@ export default function Header() {
   const t = useTranslations("common");
   const locale = useLocale();
 
+  const homeLabel = locale === "es" ? "Inicio" : locale === "fr" ? "Accueil" : "Home";
+  const flightLabel = locale === "es" ? "✈️ Vuelos" : locale === "fr" ? "✈️ Vols" : "✈️ Flights";
+  const busLabel = locale === "es" ? "🚌 Autobuses" : locale === "fr" ? "🚌 Bus" : "🚌 Buses";
+  const hotelLabel = locale === "es" ? "🏨 Hoteles" : locale === "fr" ? "🏨 Hôtels" : "🏨 Hotels";
+
+  const blogLabel = locale === "es" ? "📝 Blog" : locale === "fr" ? "📝 Blog" : "📝 Blog";
+
   const navLinks = [
-    { href: `/${locale}`, label: t("siteName") === "RutasMéxico" ? "Inicio" : "Home" },
-    { href: `/${locale}/vuelos`, label: locale === "es" ? "✈️ Vuelos" : "✈️ Flights" },
-    { href: `/${locale}/autobuses`, label: locale === "es" ? "🚌 Autobuses" : "🚌 Buses" },
-    { href: `/${locale}/hoteles`, label: locale === "es" ? "🏨 Hoteles" : "🏨 Hotels" },
+    { href: `/${locale}`, label: homeLabel },
+    { href: `/${locale}/vuelos`, label: flightLabel },
+    { href: `/${locale}/autobuses`, label: busLabel },
+    { href: `/${locale}/hoteles`, label: hotelLabel },
     { href: `/${locale}/destinos`, label: t("allDestinations") },
     { href: `/${locale}/rutas`, label: t("popularRoutes") },
+    { href: `/${locale}/blog`, label: blogLabel },
   ];
 
   return (

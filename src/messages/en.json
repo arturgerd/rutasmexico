@@ -22,6 +22,7 @@
     "languages": "Languages",
     "spanish": "Español",
     "english": "English",
+    "french": "Français",
     "backToHome": "Back to home",
     "learnMore": "Learn more",
     "bookNow": "Book now",
@@ -74,6 +75,20 @@
     "transitSegment": "Main journey",
     "arrivalNav": "Arrival & transfer",
     "localTransport": "Local transport"
+  },
+  "blog": {
+    "title": "Travel Blog",
+    "subtitle": "Guides, tips and everything you need for your next trip across Mexico",
+    "allCategories": "All",
+    "guiaDestino": "Destination Guides",
+    "tipsViaje": "Travel Tips",
+    "transporte": "Transportation",
+    "readMore": "Read more",
+    "backToBlog": "Back to blog",
+    "recentPosts": "Latest articles",
+    "minRead": "min read",
+    "publishedOn": "Published on",
+    "updatedOn": "Updated on"
   },
   "footer": {
     "description": "Your complete guide to traveling across Mexico. Routes, step-by-step guides and practical tips for every destination.",
