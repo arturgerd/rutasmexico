@@ -10,7 +10,7 @@ export const AFFILIATE_CONFIG = {
   // Regístrate en: https://www.travelpayouts.com
   // Tu marker aparece en: Dashboard → Profile → Partner ID
   travelpayouts: {
-    marker: "TU_MARKER_TRAVELPAYOUTS",
+    marker: "510654",
     enabled: true,
   },
 
