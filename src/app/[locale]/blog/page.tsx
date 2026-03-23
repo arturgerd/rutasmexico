@@ -1,6 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { getAllBlogPosts } from "@/lib/data/blog";
-import BlogCard from "@/components/blog/BlogCard";
+import BlogFilter from "@/components/blog/BlogFilter";
 import { t3 } from "@/lib/utils";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
@@ -18,13 +18,6 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 export default async function BlogPage({ params: { locale } }: { params: { locale: string } }) {
   setRequestLocale(locale);
   const posts = await getAllBlogPosts();
-
-  const categories = [
-    { id: "all", label: t3(locale, "Todos", "All", "Tous") },
-    { id: "guia-destino", label: t3(locale, "Guías de destino", "Destination Guides", "Guides de destination") },
-    { id: "tips-viaje", label: t3(locale, "Tips de viaje", "Travel Tips", "Conseils de voyage") },
-    { id: "transporte", label: t3(locale, "Transporte", "Transportation", "Transport") },
-  ];
 
   return (
     <div className="min-h-screen">
@@ -54,28 +47,7 @@ export default async function BlogPage({ params: { locale } }: { params: { local
 
       {/* Category filter + Grid */}
       <div className="container-custom py-12">
-        {/* Category Pills */}
-        <div className="flex flex-wrap gap-2 mb-10 justify-center">
-          {categories.map((cat) => (
-            <span
-              key={cat.id}
-              className={`px-4 py-2 rounded-full text-sm font-medium border transition-colors cursor-default ${
-                cat.id === "all"
-                  ? "bg-terracotta-500 text-white border-terracotta-500"
-                  : "bg-white text-arena-600 border-arena-200 hover:border-terracotta-300 hover:text-terracotta-600"
-              }`}
-            >
-              {cat.label}
-            </span>
-          ))}
-        </div>
-
-        {/* Blog Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {posts.map((post) => (
-            <BlogCard key={post.id} post={post} />
-          ))}
-        </div>
+        <BlogFilter posts={posts} />
       </div>
     </div>
   );
