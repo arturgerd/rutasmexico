@@ -1172,5 +1172,108 @@
       "en": "October to April when the weather is cooler and more pleasant (15-25°C). Avoid June to August due to extreme temperatures exceeding 40°C. December is special for Christmas festivities at the Macroplaza."
     },
     "airportIATA": "MTY"
+  },
+  {
+    "id": "huatulco",
+    "slug": "huatulco",
+    "name": {
+      "es": "Bahías de Huatulco",
+      "en": "Huatulco Bays"
+    },
+    "shortName": "HUX",
+    "coordinates": {
+      "lat": 15.7833,
+      "lng": -96.1333
+    },
+    "state": {
+      "es": "Oaxaca",
+      "en": "Oaxaca"
+    },
+    "region": "sur",
+    "description": {
+      "es": "Huatulco es un paraíso de 9 bahías y 36 playas en la costa oaxaqueña del Pacífico, con aguas cristalinas, arrecifes de coral y un Parque Nacional protegido. Combina playa virgen con la cultura y gastronomía de Oaxaca.",
+      "en": "Huatulco is a paradise of 9 bays and 36 beaches on Oaxaca's Pacific coast, with crystal-clear waters, coral reefs, and a protected National Park. It combines pristine beaches with Oaxacan culture and cuisine."
+    },
+    "longDescription": {
+      "es": "Las Bahías de Huatulco, en la costa sur de Oaxaca, son uno de los destinos de playa más auténticos de México. A diferencia de otros destinos turísticos masificados, Huatulco mantiene un desarrollo controlado que preserva sus ecosistemas naturales. El Parque Nacional Huatulco protege 11,890 hectáreas de selva baja y arrecifes de coral. Sus 9 bahías —Santa Cruz, Tangolunda, Chahué, Maguey, El Órgano, San Agustín, Cacaluta, Chachacual y Conejos— ofrecen desde playas urbanizadas con servicios hasta calas vírgenes accesibles solo por lancha. La zona combina aventura (snorkel, buceo, tirolesas, rafting en el río Copalita) con la extraordinaria gastronomía oaxaqueña: mariscos frescos con mole, mezcal artesanal y café de pluma del Pluma Hidalgo.",
+      "en": "The Bays of Huatulco, on Oaxaca's southern coast, are one of Mexico's most authentic beach destinations. Unlike other mass-tourism resorts, Huatulco maintains controlled development that preserves its natural ecosystems. Huatulco National Park protects 11,890 hectares of tropical dry forest and coral reefs. Its 9 bays —Santa Cruz, Tangolunda, Chahué, Maguey, El Órgano, San Agustín, Cacaluta, Chachacual, and Conejos— offer everything from urbanized beaches with full services to pristine coves accessible only by boat. The area combines adventure (snorkeling, diving, zip lines, rafting on the Copalita River) with extraordinary Oaxacan cuisine: fresh seafood with mole, artisanal mezcal, and Pluma Hidalgo shade-grown coffee."
+    },
+    "heroImage": "/images/destinations/huatulco.jpg",
+    "highlights": [
+      {
+        "es": "Tour de las 7 bahías en lancha para descubrir playas vírgenes como Cacaluta, Maguey y San Agustín con snorkel incluido",
+        "en": "7-bay boat tour to discover pristine beaches like Cacaluta, Maguey, and San Agustín with snorkeling included"
+      },
+      {
+        "es": "Snorkel y buceo en los arrecifes de coral del Parque Nacional Huatulco, con tortugas marinas, rayas y peces tropicales",
+        "en": "Snorkeling and diving in Huatulco National Park coral reefs, with sea turtles, rays, and tropical fish"
+      },
+      {
+        "es": "Cascadas de Llano Grande y Cascadas Mágicas de Copalitilla, pozas naturales rodeadas de selva tropical",
+        "en": "Llano Grande Waterfalls and Copalitilla Magic Waterfalls, natural pools surrounded by tropical jungle"
+      },
+      {
+        "es": "Visita a la finca cafetalera de Pluma Hidalgo en la sierra, uno de los mejores cafés de altura del mundo",
+        "en": "Visit to the Pluma Hidalgo coffee plantation in the mountains, one of the world's finest shade-grown coffees"
+      }
+    ],
+    "gettingAround": {
+      "es": "En La Crucecita (pueblo principal) todo es caminable. Para ir a las bahías cercanas como Santa Cruz o Tangolunda, hay taxis colectivos por $15-20 MXN y taxis regulares por $50-80 MXN. Para playas remotas como Cacaluta o San Agustín necesitas lancha desde Santa Cruz ($200-400 MXN por persona en tour grupal). Rentar auto es útil si quieres explorar las cascadas y comunidades rurales a tu ritmo.",
+      "en": "In La Crucecita (main town) everything is walkable. To reach nearby bays like Santa Cruz or Tangolunda, there are shared taxis for $15-20 MXN and regular taxis for $50-80 MXN. For remote beaches like Cacaluta or San Agustín you need a boat from Santa Cruz ($200-400 MXN per person on group tours). Renting a car is useful if you want to explore waterfalls and rural communities at your own pace."
+    },
+    "safetyTips": [
+      {
+        "es": "Huatulco es uno de los destinos más seguros de México. Usa protector solar biodegradable ya que las bahías son parque nacional protegido. Lleva efectivo porque muchos restaurantes de playa y lanchas no aceptan tarjeta.",
+        "en": "Huatulco is one of Mexico's safest destinations. Use biodegradable sunscreen as the bays are a protected national park. Carry cash because many beach restaurants and boats don't accept cards."
+      },
+      {
+        "es": "En temporada de lluvias (junio-octubre) puede haber oleaje fuerte en algunas bahías. Pregunta a los lugareños cuáles playas son seguras para nadar ese día. Bahía de Santa Cruz siempre es tranquila.",
+        "en": "During rainy season (June-October) some bays can have strong waves. Ask locals which beaches are safe for swimming that day. Santa Cruz Bay is always calm."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Mariscos con mole",
+        "description": {
+          "es": "La fusión perfecta de la costa y la sierra oaxaqueña: camarones, pulpo o pescado bañados en mole negro, amarillo o rojo. Una experiencia gastronómica única de Huatulco.",
+          "en": "The perfect fusion of Oaxaca's coast and highlands: shrimp, octopus, or fish bathed in black, yellow, or red mole. A unique Huatulco culinary experience."
+        },
+        "priceRange": {
+          "min": 120,
+          "max": 250,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Restaurante Terra-Cotta en La Crucecita o los restaurantes de playa en Bahía de Santa Cruz.",
+          "en": "Terra-Cotta Restaurant in La Crucecita or the beach restaurants in Santa Cruz Bay."
+        }
+      },
+      {
+        "name": "Ceviche de pescado fresco",
+        "description": {
+          "es": "Pescado del día cortado en cubitos, marinado en limón con cebolla, tomate, chile serrano, cilantro y aguacate. Servido con tostadas de maíz y salsa de la casa.",
+          "en": "Fresh catch of the day diced and marinated in lime juice with onion, tomato, serrano chili, cilantro, and avocado. Served with corn tostadas and house salsa."
+        },
+        "priceRange": {
+          "min": 80,
+          "max": 150,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "El Mercado 3 de Mayo en La Crucecita tiene los mejores ceviches a precios locales. En playa, prueba los puestos de Bahía de Maguey.",
+          "en": "The 3 de Mayo Market in La Crucecita has the best ceviches at local prices. At the beach, try the stalls at Maguey Bay."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 700,
+      "max": 2200,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "De noviembre a mayo es la mejor temporada, con clima seco y temperaturas de 25-32°C. Diciembre a marzo es temporada alta con más visitantes pero cielos despejados. Junio a octubre es temporada de lluvias con tardes lluviosas pero mañanas soleadas y precios más bajos.",
+      "en": "November to May is the best season, with dry weather and temperatures of 25-32°C. December to March is high season with more visitors but clear skies. June to October is rainy season with afternoon showers but sunny mornings and lower prices."
+    },
+    "airportIATA": "HUX"
   }
 ]

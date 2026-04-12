@@ -60,6 +60,11 @@ export const DESTINATION_IMAGES: Record<string, DestinationImage> = {
     alt: { es: "Cerro de la Silla, Monterrey", en: "Cerro de la Silla, Monterrey" },
     credit: "Unsplash",
   },
+  huatulco: {
+    url: "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=800&h=500&fit=crop&q=80",
+    alt: { es: "Bahías de Huatulco, costa del Pacífico", en: "Huatulco Bays, Pacific coast" },
+    credit: "Unsplash",
+  },
 };
 
 // Hero/background images for pages

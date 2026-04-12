@@ -4,14 +4,24 @@ import BlogFilter from "@/components/blog/BlogFilter";
 import { t3 } from "@/lib/utils";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+  const year = new Date().getFullYear();
+  const baseUrl = "https://rutasmexico.com.mx";
   return {
-    title: t3(locale, "Blog de Viajes | RutasMéxico", "Travel Blog | RutasMéxico", "Blog de Voyage | RutasMéxico"),
+    title: t3(locale,
+      `Blog de Viajes México ${year} | Guías, tips y rutas`,
+      `Mexico Travel Blog ${year} | Guides, tips & routes`,
+      `Blog de Voyage Mexique ${year} | Guides, conseils et routes`
+    ),
     description: t3(
       locale,
-      "Guías de viaje, tips y consejos para viajar por México. Destinos, transporte, seguridad y más.",
-      "Travel guides, tips and advice for traveling in Mexico. Destinations, transport, safety and more.",
-      "Guides de voyage, conseils et astuces pour voyager au Mexique. Destinations, transport, sécurité et plus."
+      `Guías de viaje, tips y consejos para viajar por México ${year}. Destinos, transporte, seguridad, precios y más.`,
+      `Travel guides, tips and advice for traveling in Mexico ${year}. Destinations, transport, safety, prices and more.`,
+      `Guides de voyage, conseils et astuces pour voyager au Mexique ${year}. Destinations, transport, sécurité et plus.`
     ),
+    alternates: {
+      canonical: `${baseUrl}/${locale}/blog`,
+      languages: { es: `${baseUrl}/es/blog`, en: `${baseUrl}/en/blog` },
+    },
   };
 }
 

@@ -1,0 +1,375 @@
+[
+  {
+    "id": "cancun",
+    "slug": "cancun",
+    "name": { "es": "Cancún", "en": "Cancún" },
+    "intro": {
+      "es": "Cancún y la Riviera Maya son el destino número uno en México para bodas de ensueño. Con playas de arena blanca, aguas turquesa del Caribe, hoteles de clase mundial y una infraestructura turística inigualable, es el escenario perfecto para celebrar el amor en todas sus formas. Cada año miles de parejas de todo el mundo eligen Cancún para su boda, despedida o celebración especial.",
+      "en": "Cancún and the Riviera Maya are Mexico's number one destination for dream weddings. With white sand beaches, turquoise Caribbean waters, world-class hotels, and unmatched tourism infrastructure, it's the perfect setting to celebrate love in all its forms. Every year thousands of couples from around the world choose Cancún for their wedding, bachelor/bachelorette party, or special celebration."
+    },
+    "venues": [
+      {
+        "id": "nizuc-resort",
+        "name": "Nizuc Resort & Spa",
+        "type": "hotel",
+        "description": {
+          "es": "Resort de ultra-lujo en Punta Nizuc con dos playas privadas, arrecife de coral y arquitectura que fusiona lo contemporáneo con la naturaleza. Ofrece ceremonias frente al mar con vista al Caribe y recepciones en jardines tropicales o terrazas con piscina infinity.",
+          "en": "Ultra-luxury resort at Punta Nizuc with two private beaches, coral reef, and architecture that fuses contemporary design with nature. Offers beachfront ceremonies with Caribbean views and receptions in tropical gardens or infinity pool terraces."
+        },
+        "capacity": { "min": 20, "max": 300 },
+        "priceRange": { "min": 150000, "max": 500000, "currency": "MXN" },
+        "highlights": [
+          { "es": "Dos playas privadas exclusivas", "en": "Two exclusive private beaches" },
+          { "es": "Spa de clase mundial para preparación nupcial", "en": "World-class spa for bridal preparation" },
+          { "es": "Chef ejecutivo con menú personalizable", "en": "Executive chef with customizable menu" }
+        ],
+        "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=600&h=400&fit=crop&q=80",
+        "lgbtqFriendly": true,
+        "accessibilityFeatures": ["wheelchair", "accessible-rooms", "accessible-bathrooms"]
+      },
+      {
+        "id": "xcaret-park",
+        "name": "Xcaret Park",
+        "type": "parque",
+        "description": {
+          "es": "Parque eco-arqueológico donde puedes celebrar tu boda en una caleta natural rodeada de selva, en cenotes sagrados o en la capilla de Guadalupe con arquitectura única. Xcaret Bodas es uno de los programas de bodas más reconocidos de México, con paquetes todo incluido.",
+          "en": "Eco-archaeological park where you can celebrate your wedding in a natural inlet surrounded by jungle, in sacred cenotes, or at the Guadalupe chapel with unique architecture. Xcaret Weddings is one of Mexico's most recognized wedding programs, with all-inclusive packages."
+        },
+        "capacity": { "min": 10, "max": 200 },
+        "priceRange": { "min": 80000, "max": 350000, "currency": "MXN" },
+        "highlights": [
+          { "es": "Ceremonias en cenotes y caletas naturales", "en": "Ceremonies in cenotes and natural inlets" },
+          { "es": "Capilla de Guadalupe con diseño arquitectónico único", "en": "Guadalupe Chapel with unique architectural design" },
+          { "es": "Paquetes todo incluido con coordinador de bodas", "en": "All-inclusive packages with wedding coordinator" }
+        ],
+        "image": "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?w=600&h=400&fit=crop&q=80",
+        "lgbtqFriendly": true,
+        "accessibilityFeatures": ["wheelchair", "accessible-bathrooms"]
+      },
+      {
+        "id": "dreams-riviera",
+        "name": "Dreams Riviera Cancún",
+        "type": "hotel",
+        "description": {
+          "es": "Resort todo incluido frente al mar con gazebo de bodas en la playa, salones elegantes y jardines tropicales. Su programa 'Unlimited Weddings' incluye coordinador, decoración, pastel, cena para los novios y descuentos para grupos de invitados hospedados.",
+          "en": "Beachfront all-inclusive resort with beach wedding gazebo, elegant ballrooms, and tropical gardens. Their 'Unlimited Weddings' program includes coordinator, décor, cake, dinner for the couple, and group discounts for hosted guests."
+        },
+        "capacity": { "min": 10, "max": 250 },
+        "priceRange": { "min": 60000, "max": 250000, "currency": "MXN" },
+        "highlights": [
+          { "es": "Gazebo de bodas frente al Caribe", "en": "Wedding gazebo facing the Caribbean" },
+          { "es": "Paquete todo incluido con hospedaje para invitados", "en": "All-inclusive package with guest accommodation" },
+          { "es": "Servicio de cena romántica en la playa", "en": "Romantic beach dinner service" }
+        ],
+        "image": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=600&h=400&fit=crop&q=80",
+        "lgbtqFriendly": true,
+        "accessibilityFeatures": ["wheelchair", "accessible-rooms", "accessible-bathrooms", "beach-wheelchair"]
+      },
+      {
+        "id": "moon-palace",
+        "name": "Moon Palace Cancún",
+        "type": "hotel",
+        "description": {
+          "es": "Mega-resort todo incluido con capacidad para grandes bodas. Cuenta con múltiples locaciones: playa privada, jardines, terrazas con vista al mar y salones de gran formato. Ideal para bodas con muchos invitados. Su programa de bodas incluye luna de miel con upgrade de habitación.",
+          "en": "All-inclusive mega-resort with capacity for large weddings. Features multiple locations: private beach, gardens, ocean-view terraces, and large-format ballrooms. Ideal for weddings with many guests. Their wedding program includes honeymoon with room upgrade."
+        },
+        "capacity": { "min": 30, "max": 500 },
+        "priceRange": { "min": 70000, "max": 400000, "currency": "MXN" },
+        "highlights": [
+          { "es": "Capacidad para bodas grandes (hasta 500 invitados)", "en": "Capacity for large weddings (up to 500 guests)" },
+          { "es": "Campo de golf de 27 hoyos para eventos", "en": "27-hole golf course for events" },
+          { "es": "Programa de luna de miel incluido", "en": "Honeymoon program included" }
+        ],
+        "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=400&fit=crop&q=80",
+        "lgbtqFriendly": true,
+        "accessibilityFeatures": ["wheelchair", "accessible-rooms", "accessible-bathrooms", "hearing-loop"]
+      },
+      {
+        "id": "hyatt-ziva",
+        "name": "Hyatt Ziva Cancún",
+        "type": "hotel",
+        "description": {
+          "es": "Resort todo incluido en Punta Cancún con ubicación privilegiada entre la laguna y el mar Caribe. Ofrece ceremonias en la playa, terraza con vista panorámica al mar o en su capilla frente al océano. Reconocido por su programa de bodas inclusivas que celebra a todas las parejas.",
+          "en": "All-inclusive resort at Punta Cancún with a privileged location between the lagoon and the Caribbean Sea. Offers beach ceremonies, panoramic ocean-view terrace, or their oceanfront chapel. Known for their inclusive wedding program that celebrates all couples."
+        },
+        "capacity": { "min": 10, "max": 200 },
+        "priceRange": { "min": 90000, "max": 350000, "currency": "MXN" },
+        "highlights": [
+          { "es": "Ubicación entre laguna y mar con vistas 360°", "en": "Location between lagoon and sea with 360° views" },
+          { "es": "Programa de bodas abiertamente inclusivo", "en": "Openly inclusive wedding program" },
+          { "es": "Capilla con vista al océano Caribe", "en": "Chapel overlooking the Caribbean ocean" }
+        ],
+        "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&h=400&fit=crop&q=80",
+        "lgbtqFriendly": true,
+        "accessibilityFeatures": ["wheelchair", "accessible-rooms", "accessible-bathrooms", "visual-aids"]
+      },
+      {
+        "id": "secrets-the-vine",
+        "name": "Secrets The Vine Cancún",
+        "type": "hotel",
+        "description": {
+          "es": "Resort solo adultos con diseño contemporáneo y elegante en la Zona Hotelera. Perfecto para bodas íntimas y sofisticadas. Cuenta con terraza en la azotea con vista al mar, playa semi-privada y restaurantes gourmet. Su ambiente exclusivo es ideal para celebraciones románticas.",
+          "en": "Adults-only resort with contemporary and elegant design in the Hotel Zone. Perfect for intimate, sophisticated weddings. Features a rooftop terrace with ocean views, semi-private beach, and gourmet restaurants. Its exclusive atmosphere is ideal for romantic celebrations."
+        },
+        "capacity": { "min": 10, "max": 150 },
+        "priceRange": { "min": 100000, "max": 300000, "currency": "MXN" },
+        "highlights": [
+          { "es": "Terraza en azotea con piscina infinity y vista al mar", "en": "Rooftop terrace with infinity pool and ocean view" },
+          { "es": "Ambiente exclusivo solo adultos", "en": "Exclusive adults-only atmosphere" },
+          { "es": "Restaurantes gourmet para cena de recepción", "en": "Gourmet restaurants for reception dinner" }
+        ],
+        "image": "https://images.unsplash.com/photo-1544124499-58912cbddaad?w=600&h=400&fit=crop&q=80",
+        "lgbtqFriendly": true,
+        "accessibilityFeatures": ["wheelchair", "accessible-rooms"]
+      }
+    ],
+    "bacheloretteIdeas": [
+      {
+        "id": "catamaran-party",
+        "name": { "es": "Fiesta en catamarán", "en": "Catamaran party" },
+        "description": {
+          "es": "Navega por el Caribe en un catamarán privado con barra libre, música y snorkel en el arrecife. Los tours de medio día incluyen parada en Isla Mujeres para nadar con tiburones ballena (temporada junio-septiembre) o snorkel en el Museo Subacuático MUSA.",
+          "en": "Sail the Caribbean on a private catamaran with open bar, music, and reef snorkeling. Half-day tours include stops at Isla Mujeres to swim with whale sharks (June-September season) or snorkeling at the MUSA Underwater Museum."
+        },
+        "priceRange": { "min": 1500, "max": 3500, "currency": "MXN" },
+        "duration": { "es": "4-6 horas", "en": "4-6 hours" },
+        "icon": "🚤"
+      },
+      {
+        "id": "spa-day",
+        "name": { "es": "Día de spa y temazcal", "en": "Spa day & temazcal" },
+        "description": {
+          "es": "Experiencia de relajación grupal con masajes, tratamientos faciales, baño de temazcal maya (sauna ceremonial prehispánica) y brunch con champagne. Los mejores spas incluyen Nizuc, Muluk Spa y el Spa at Grand Fiesta Americana.",
+          "en": "Group relaxation experience with massages, facials, Mayan temazcal bath (pre-Hispanic ceremonial sauna), and champagne brunch. Top spas include Nizuc, Muluk Spa, and the Spa at Grand Fiesta Americana."
+        },
+        "priceRange": { "min": 2000, "max": 5000, "currency": "MXN" },
+        "duration": { "es": "5-7 horas", "en": "5-7 hours" },
+        "icon": "💆"
+      },
+      {
+        "id": "isla-mujeres-trip",
+        "name": { "es": "Excursión a Isla Mujeres", "en": "Isla Mujeres trip" },
+        "description": {
+          "es": "Día completo en Isla Mujeres con ferry desde Puerto Juárez, recorrido en carrito de golf por la isla, playa Norte (una de las mejores del mundo), comida de mariscos y atardecer con cocteles en Punta Sur.",
+          "en": "Full day on Isla Mujeres with ferry from Puerto Juárez, golf cart tour around the island, Playa Norte (one of the world's best beaches), seafood lunch, and sunset cocktails at Punta Sur."
+        },
+        "priceRange": { "min": 800, "max": 2000, "currency": "MXN" },
+        "duration": { "es": "Día completo", "en": "Full day" },
+        "icon": "🏝️"
+      },
+      {
+        "id": "tequila-tasting",
+        "name": { "es": "Cata de tequila y mezcal", "en": "Tequila & mezcal tasting" },
+        "description": {
+          "es": "Experiencia de degustación guiada de tequilas premium y mezcales artesanales, maridada con comida mexicana gourmet. Disponible en restaurantes especializados de la Zona Hotelera o en haciendas recreadas.",
+          "en": "Guided tasting experience of premium tequilas and artisanal mezcals, paired with gourmet Mexican food. Available at specialized restaurants in the Hotel Zone or recreated haciendas."
+        },
+        "priceRange": { "min": 1000, "max": 2500, "currency": "MXN" },
+        "duration": { "es": "2-3 horas", "en": "2-3 hours" },
+        "icon": "🥃"
+      },
+      {
+        "id": "cenote-swim",
+        "name": { "es": "Circuito de cenotes", "en": "Cenote circuit" },
+        "description": {
+          "es": "Visita a 2-3 cenotes sagrados mayas con nado, snorkel y fotos increíbles. Los más populares cerca de Cancún son Cenote Ik Kil, Cenote Suytun y Gran Cenote en Tulum. Incluye transporte y guía.",
+          "en": "Visit to 2-3 sacred Mayan cenotes with swimming, snorkeling, and incredible photos. The most popular ones near Cancún are Cenote Ik Kil, Cenote Suytun, and Gran Cenote in Tulum. Includes transport and guide."
+        },
+        "priceRange": { "min": 1200, "max": 2500, "currency": "MXN" },
+        "duration": { "es": "6-8 horas", "en": "6-8 hours" },
+        "icon": "🏊"
+      }
+    ],
+    "bachelorIdeas": [
+      {
+        "id": "deep-sea-fishing",
+        "name": { "es": "Pesca deportiva en altamar", "en": "Deep sea fishing" },
+        "description": {
+          "es": "Salida en yate desde Marina Cancún para pesca de marlín, dorado, wahoo o atún. Incluye equipo profesional, capitán, carnada y bebidas. Los barcos privados salen temprano y regresan al mediodía con tu pesca del día que puedes preparar en un restaurante local.",
+          "en": "Yacht outing from Cancún Marina for marlin, mahi-mahi, wahoo, or tuna fishing. Includes professional gear, captain, bait, and drinks. Private boats depart early and return by noon with your catch of the day, which a local restaurant can prepare for you."
+        },
+        "priceRange": { "min": 3000, "max": 8000, "currency": "MXN" },
+        "duration": { "es": "4-6 horas", "en": "4-6 hours" },
+        "icon": "🎣"
+      },
+      {
+        "id": "atv-jungle",
+        "name": { "es": "Tour en ATV por la selva", "en": "Jungle ATV tour" },
+        "description": {
+          "es": "Recorrido en cuatrimotos por senderos de selva maya hasta llegar a un cenote escondido. Incluye equipo de seguridad, guía bilingüe y tiempo para nadar. Disponible en la Ruta de los Cenotes cerca de Puerto Morelos.",
+          "en": "ATV ride through Mayan jungle trails leading to a hidden cenote. Includes safety gear, bilingual guide, and swimming time. Available on the Cenote Route near Puerto Morelos."
+        },
+        "priceRange": { "min": 1500, "max": 3000, "currency": "MXN" },
+        "duration": { "es": "3-4 horas", "en": "3-4 hours" },
+        "icon": "🏎️"
+      },
+      {
+        "id": "party-boat",
+        "name": { "es": "Barco fiesta privado", "en": "Private party boat" },
+        "description": {
+          "es": "Renta un yate o barco con DJ, barra libre y snorkel por las aguas turquesa del Caribe. Rutas populares incluyen Isla Mujeres y la zona de arrecifes. Capacidad de 10 a 40 personas según el barco.",
+          "en": "Rent a yacht or boat with DJ, open bar, and snorkeling through turquoise Caribbean waters. Popular routes include Isla Mujeres and the reef zone. Capacity from 10 to 40 people depending on the boat."
+        },
+        "priceRange": { "min": 2000, "max": 5000, "currency": "MXN" },
+        "duration": { "es": "4-6 horas", "en": "4-6 hours" },
+        "icon": "🛥️"
+      },
+      {
+        "id": "golf-day",
+        "name": { "es": "Día de golf en campo de campeonato", "en": "Championship golf day" },
+        "description": {
+          "es": "Juega en campos diseñados por Jack Nicklaus, Greg Norman o Tom Fazio con vistas al Caribe. El Riviera Maya Golf Club y el Playa Mujeres Golf Course son de los mejores de Latinoamérica. Incluyen caddie, carrito y acceso al clubhouse.",
+          "en": "Play on courses designed by Jack Nicklaus, Greg Norman, or Tom Fazio with Caribbean views. The Riviera Maya Golf Club and Playa Mujeres Golf Course are among Latin America's finest. Includes caddie, cart, and clubhouse access."
+        },
+        "priceRange": { "min": 3000, "max": 6000, "currency": "MXN" },
+        "duration": { "es": "4-5 horas", "en": "4-5 hours" },
+        "icon": "⛳"
+      },
+      {
+        "id": "nightlife-crawl",
+        "name": { "es": "Recorrido por la vida nocturna", "en": "Nightlife crawl" },
+        "description": {
+          "es": "Tour guiado por los mejores clubs y bares de la Zona Hotelera: Coco Bongo (show + club), Mandala, The City Nightclub y La Vaquita. Los paquetes incluyen cover, barra libre en cada lugar y transporte seguro de regreso al hotel.",
+          "en": "Guided tour of the Hotel Zone's best clubs and bars: Coco Bongo (show + club), Mandala, The City Nightclub, and La Vaquita. Packages include cover, open bar at each venue, and safe return transport to your hotel."
+        },
+        "priceRange": { "min": 1500, "max": 4000, "currency": "MXN" },
+        "duration": { "es": "5-7 horas", "en": "5-7 hours" },
+        "icon": "🎉"
+      }
+    ],
+    "lgbtq": {
+      "legalStatus": {
+        "es": "México reconoce el matrimonio igualitario a nivel federal desde 2022. En Quintana Roo (estado de Cancún), el matrimonio entre personas del mismo sexo es legal desde 2012, siendo uno de los primeros estados en aprobarlo. Las parejas extranjeras también pueden casarse legalmente en Cancún, y el matrimonio es reconocido internacionalmente.",
+        "en": "Mexico recognizes same-sex marriage federally since 2022. In Quintana Roo (Cancún's state), same-sex marriage has been legal since 2012, making it one of the first states to approve it. Foreign couples can also legally marry in Cancún, and the marriage is internationally recognized."
+      },
+      "tips": [
+        {
+          "es": "La mayoría de los hoteles de cadenas internacionales en Cancún tienen políticas explícitas de inclusión y personal capacitado. Hyatt, Marriott, Hilton y AMResorts son especialmente reconocidos por su programa de bodas inclusivas.",
+          "en": "Most international chain hotels in Cancún have explicit inclusion policies and trained staff. Hyatt, Marriott, Hilton, and AMResorts are especially recognized for their inclusive wedding programs."
+        },
+        {
+          "es": "Cancún Pride se celebra cada junio en la Zona Hotelera con desfile, fiestas y eventos culturales. Si planeas tu boda cerca de estas fechas, la ciudad tiene un ambiente especialmente festivo y acogedor.",
+          "en": "Cancún Pride is celebrated every June in the Hotel Zone with a parade, parties, and cultural events. If you plan your wedding around these dates, the city has an especially festive and welcoming atmosphere."
+        },
+        {
+          "es": "Empresas de wedding planning como 'Cancún LGBTQ Weddings' y 'Love Cancún Weddings' se especializan en bodas de parejas del mismo sexo con experiencia en el proceso legal local.",
+          "en": "Wedding planning companies like 'Cancún LGBTQ Weddings' and 'Love Cancún Weddings' specialize in same-sex weddings with expertise in the local legal process."
+        }
+      ],
+      "friendlyVenueIds": ["nizuc-resort", "xcaret-park", "dreams-riviera", "moon-palace", "hyatt-ziva", "secrets-the-vine"],
+      "prideInfo": {
+        "es": "El Cancún Pride se realiza anualmente en junio, con actividades en la Zona Hotelera y el centro de Cancún. Incluye desfile por el Boulevard Kukulcán, fiestas en clubs de playa y eventos culturales. Cancún es reconocido como uno de los destinos más LGBTIQ+ friendly de México y Latinoamérica.",
+        "en": "Cancún Pride takes place annually in June, with activities in the Hotel Zone and downtown Cancún. It includes a parade along Boulevard Kukulcán, beach club parties, and cultural events. Cancún is recognized as one of Mexico's and Latin America's most LGBTIQ+-friendly destinations."
+      }
+    },
+    "accessibility": {
+      "overview": {
+        "es": "Cancún ha avanzado significativamente en accesibilidad turística. La Zona Hotelera cuenta con infraestructura moderna que facilita la movilidad, y muchos resorts han invertido en adaptaciones para personas con discapacidad motriz, visual y auditiva. México tiene la Ley General para la Inclusión de las Personas con Discapacidad, y Cancún como destino turístico principal cumple con estándares de accesibilidad en sus principales establecimientos.",
+        "en": "Cancún has made significant progress in tourism accessibility. The Hotel Zone features modern infrastructure that facilitates mobility, and many resorts have invested in adaptations for guests with motor, visual, and hearing disabilities. Mexico has the General Law for the Inclusion of People with Disabilities, and Cancún as a major tourist destination meets accessibility standards in its main establishments."
+      },
+      "accessibleVenueIds": ["nizuc-resort", "dreams-riviera", "moon-palace", "hyatt-ziva"],
+      "tips": [
+        {
+          "es": "Solicita una silla de ruedas de playa (silla anfibia) en tu hotel. Varios resorts las proporcionan sin costo para que todos disfruten del mar Caribe. Dreams Riviera Cancún y Moon Palace tienen este servicio.",
+          "en": "Request a beach wheelchair (amphibious chair) at your hotel. Several resorts provide them at no cost so everyone can enjoy the Caribbean sea. Dreams Riviera Cancún and Moon Palace offer this service."
+        },
+        {
+          "es": "El aeropuerto de Cancún (CUN) tiene servicio de asistencia para pasajeros con movilidad reducida. Solicítalo al reservar tu vuelo. El transporte adaptado desde el aeropuerto debe reservarse con anticipación a través de servicios como 'Cancún Accessible' o 'Wheelchair Cancún'.",
+          "en": "Cancún airport (CUN) offers assistance service for passengers with reduced mobility. Request it when booking your flight. Adapted transport from the airport should be booked in advance through services like 'Cancún Accessible' or 'Wheelchair Cancún'."
+        },
+        {
+          "es": "Para invitados con discapacidad auditiva, pregunta al hotel sobre disponibilidad de intérpretes de lengua de señas mexicana (LSM) o sistema de bucle magnético para la ceremonia.",
+          "en": "For guests with hearing disabilities, ask the hotel about availability of Mexican Sign Language (LSM) interpreters or hearing loop systems for the ceremony."
+        },
+        {
+          "es": "Muchos tours y actividades en Cancún ofrecen versiones adaptadas. Los tours de snorkel tienen opciones con chaleco flotador especial, y algunos cenotes como Cenote Azul tienen acceso adaptado.",
+          "en": "Many tours and activities in Cancún offer adapted versions. Snorkeling tours have options with special flotation vests, and some cenotes like Cenote Azul have adapted access."
+        }
+      ],
+      "accessibleTransport": {
+        "es": "El Aeropuerto de Cancún tiene rampas, elevadores y servicio de silla de ruedas. Para transporte terrestre, 'Cancún Accessible' y 'Wheelchair Cancún' ofrecen vans con rampa y espacio para sillas de ruedas. Los autobuses del ADO desde la terminal también cuentan con accesibilidad básica. Dentro de la Zona Hotelera, la mayoría de hoteles pueden coordinar transporte adaptado para sus huéspedes.",
+        "en": "Cancún Airport has ramps, elevators, and wheelchair service. For ground transport, 'Cancún Accessible' and 'Wheelchair Cancún' offer vans with ramps and wheelchair space. ADO buses from the terminal also have basic accessibility. Within the Hotel Zone, most hotels can coordinate adapted transport for their guests."
+      },
+      "accessibleBeaches": [
+        {
+          "name": "Playa Delfines",
+          "description": {
+            "es": "Playa pública con rampas de acceso, estacionamiento accesible, baños adaptados y servicio de silla anfibia proporcionado por el gobierno municipal. Es la playa más accesible de Cancún con el icónico letrero de 'CANCÚN' de fondo.",
+            "en": "Public beach with access ramps, accessible parking, adapted restrooms, and amphibious wheelchair service provided by the municipal government. It's Cancún's most accessible beach with the iconic 'CANCÚN' sign in the background."
+          },
+          "features": ["wheelchair-ramp", "accessible-restrooms", "beach-wheelchair", "accessible-parking"]
+        },
+        {
+          "name": "Playa Langosta",
+          "description": {
+            "es": "Playa pública familiar con acceso plano desde el estacionamiento, aguas tranquilas ideales para todos y zona de sombra. Cuenta con restaurantes accesibles cercanos y fácil acceso desde el Boulevard Kukulcán.",
+            "en": "Family-friendly public beach with flat access from parking, calm waters ideal for everyone, and shaded areas. Features nearby accessible restaurants and easy access from Boulevard Kukulcán."
+          },
+          "features": ["flat-access", "calm-waters", "nearby-accessible-restaurants"]
+        },
+        {
+          "name": "Playa Forum",
+          "description": {
+            "es": "Playa pública en el corazón de la Zona Hotelera con acceso directo desde la plaza comercial Forum By The Sea. Tiene rampas, baños accesibles y está junto a restaurantes y tiendas con accesibilidad.",
+            "en": "Public beach in the heart of the Hotel Zone with direct access from Forum By The Sea shopping plaza. Has ramps, accessible restrooms, and is next to accessible restaurants and shops."
+          },
+          "features": ["wheelchair-ramp", "accessible-restrooms", "shopping-access"]
+        }
+      ]
+    },
+    "legal": {
+      "documents": [
+        { "es": "Actas de nacimiento de ambos contrayentes (apostilladas si son extranjeros)", "en": "Birth certificates of both parties (apostilled if foreign)" },
+        { "es": "Identificación oficial vigente (pasaporte para extranjeros)", "en": "Valid official ID (passport for foreigners)" },
+        { "es": "Exámenes de sangre realizados en laboratorio autorizado en Quintana Roo (dentro de los 15 días previos)", "en": "Blood tests from an authorized lab in Quintana Roo (within 15 days prior)" },
+        { "es": "Cuatro testigos con identificación oficial (el juez puede proporcionar testigos si es necesario)", "en": "Four witnesses with official ID (the judge can provide witnesses if needed)" },
+        { "es": "Solicitud de matrimonio ante el Registro Civil de Benito Juárez", "en": "Marriage application at the Civil Registry of Benito Juárez" },
+        { "es": "Si alguno es divorciado: acta de divorcio. Si es viudo(a): acta de defunción del cónyuge anterior", "en": "If divorced: divorce certificate. If widowed: death certificate of previous spouse" }
+      ],
+      "process": {
+        "es": "El proceso de boda civil en Cancún toma aproximadamente 3-5 días hábiles desde la solicitud. Primero se presentan los documentos en el Registro Civil, luego se realizan los exámenes de sangre en un laboratorio autorizado, y finalmente se programa la ceremonia. Un juez del Registro Civil puede oficiar la ceremonia en el hotel o venue de tu elección por un costo adicional. Se recomienda contratar una wedding planner local que gestione todo el papeleo.",
+        "en": "The civil wedding process in Cancún takes approximately 3-5 business days from application. First, documents are submitted to the Civil Registry, then blood tests are done at an authorized lab, and finally the ceremony is scheduled. A Civil Registry judge can officiate the ceremony at your chosen hotel or venue for an additional fee. It's recommended to hire a local wedding planner to handle all the paperwork."
+      },
+      "foreigners": {
+        "es": "Las parejas extranjeras pueden casarse legalmente en Cancún. Los documentos emitidos fuera de México deben estar apostillados y traducidos al español por un traductor certificado. El matrimonio celebrado en México es reconocido internacionalmente. Muchas parejas optan por una boda simbólica (sin validez legal) que es más sencilla y complementan con la boda civil en su país de origen.",
+        "en": "Foreign couples can legally marry in Cancún. Documents issued outside Mexico must be apostilled and translated to Spanish by a certified translator. Marriage celebrated in Mexico is internationally recognized. Many couples opt for a symbolic wedding (without legal validity) which is simpler, and complement it with a civil wedding in their home country."
+      }
+    },
+    "budget": {
+      "economy": { "min": 50000, "max": 100000, "currency": "MXN" },
+      "mid": { "min": 100000, "max": 250000, "currency": "MXN" },
+      "luxury": { "min": 250000, "max": 800000, "currency": "MXN" },
+      "tips": [
+        { "es": "La temporada baja (mayo-junio, septiembre-noviembre) ofrece precios hasta 40% más bajos en venues y hoteles. El clima sigue siendo excelente.", "en": "Low season (May-June, September-November) offers prices up to 40% lower at venues and hotels. The weather is still excellent." },
+        { "es": "Los paquetes todo incluido de los resorts suelen ser más económicos que contratar servicios por separado. Incluyen venue, comida, bebida, decoración básica y coordinador.", "en": "Resort all-inclusive packages are usually more economical than hiring services separately. They include venue, food, drinks, basic décor, and coordinator." },
+        { "es": "Reserva con 12-18 meses de anticipación para obtener las mejores tarifas y disponibilidad en los venues más populares.", "en": "Book 12-18 months in advance for the best rates and availability at the most popular venues." }
+      ]
+    },
+    "bestSeason": {
+      "es": "La mejor época para bodas en Cancún es de noviembre a abril (temporada seca). Diciembre-marzo tiene clima perfecto (25-30°C) pero es temporada alta con precios más altos. Mayo-junio y septiembre-noviembre son excelentes opciones con precios más bajos y buen clima. Evita agosto-octubre por temporada de huracanes.",
+      "en": "The best time for weddings in Cancún is November to April (dry season). December-March has perfect weather (25-30°C/77-86°F) but is high season with higher prices. May-June and September-November are excellent options with lower prices and good weather. Avoid August-October due to hurricane season."
+    },
+    "faqs": [
+      {
+        "question": { "es": "¿Cuánto cuesta una boda en Cancún?", "en": "How much does a wedding in Cancún cost?" },
+        "answer": { "es": "El costo varía según el tipo de celebración: una boda económica cuesta entre $50,000 y $100,000 MXN, una boda de rango medio entre $100,000 y $250,000 MXN, y una boda de lujo desde $250,000 hasta $800,000 MXN o más. Los paquetes todo incluido de los resorts son la opción más accesible.", "en": "Costs vary by celebration type: an economy wedding costs $50,000-$100,000 MXN, mid-range $100,000-$250,000 MXN, and luxury from $250,000 to $800,000+ MXN. Resort all-inclusive packages are the most accessible option." }
+      },
+      {
+        "question": { "es": "¿Cuál es la mejor época para casarse en Cancún?", "en": "What is the best time to get married in Cancún?" },
+        "answer": { "es": "De noviembre a abril es la temporada ideal con clima seco y temperaturas de 25-30°C. Para precios más bajos, mayo-junio y septiembre-noviembre ofrecen buen clima con hasta 40% de descuento en venues.", "en": "November to April is the ideal season with dry weather and temperatures of 25-30°C (77-86°F). For lower prices, May-June and September-November offer good weather with up to 40% off venues." }
+      },
+      {
+        "question": { "es": "¿Se pueden celebrar bodas LGBTIQ+ en Cancún?", "en": "Can LGBTIQ+ weddings be celebrated in Cancún?" },
+        "answer": { "es": "Sí. El matrimonio igualitario es legal en Quintana Roo desde 2012 y en todo México desde 2022. Cancún es uno de los destinos más inclusivos de Latinoamérica, con múltiples venues y planificadores especializados en bodas de parejas del mismo sexo.", "en": "Yes. Same-sex marriage has been legal in Quintana Roo since 2012 and across all of Mexico since 2022. Cancún is one of Latin America's most inclusive destinations, with multiple venues and planners specializing in same-sex weddings." }
+      },
+      {
+        "question": { "es": "¿Qué venues en Cancún son accesibles para personas con discapacidad?", "en": "Which venues in Cancún are accessible for people with disabilities?" },
+        "answer": { "es": "Dreams Riviera Cancún, Moon Palace, Hyatt Ziva y Nizuc Resort cuentan con rampas, baños accesibles, habitaciones adaptadas y algunos ofrecen sillas de playa anfibias. Playa Delfines es la playa pública más accesible con rampas y sillas anfibias gratuitas.", "en": "Dreams Riviera Cancún, Moon Palace, Hyatt Ziva, and Nizuc Resort feature ramps, accessible bathrooms, adapted rooms, and some offer amphibious beach wheelchairs. Playa Delfines is the most accessible public beach with ramps and free amphibious chairs." }
+      },
+      {
+        "question": { "es": "¿Qué documentos necesito para casarme en Cancún?", "en": "What documents do I need to get married in Cancún?" },
+        "answer": { "es": "Necesitas actas de nacimiento, identificación oficial (pasaporte para extranjeros), exámenes de sangre de laboratorio autorizado en Quintana Roo, y cuatro testigos. Los documentos extranjeros deben estar apostillados y traducidos al español. El proceso toma 3-5 días hábiles.", "en": "You need birth certificates, official ID (passport for foreigners), blood tests from an authorized lab in Quintana Roo, and four witnesses. Foreign documents must be apostilled and translated to Spanish. The process takes 3-5 business days." }
+      }
+    ]
+  }
+]

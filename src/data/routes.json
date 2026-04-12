@@ -645,5 +645,82 @@
         "recommended": false
       }
     ]
+  },
+  {
+    "id": "cdmx-huatulco",
+    "slug": "cdmx-a-huatulco",
+    "originId": "cdmx",
+    "destinationId": "huatulco",
+    "options": [
+      {
+        "id": "cdmx-huatulco-flight",
+        "mode": "flight",
+        "provider": {
+          "es": "Volaris, VivaAerobus",
+          "en": "Volaris, VivaAerobus"
+        },
+        "duration": {
+          "minMinutes": 75,
+          "maxMinutes": 90,
+          "label": {
+            "es": "1h 15min - 1h 30min",
+            "en": "1h 15min - 1h 30min"
+          }
+        },
+        "priceRange": { "min": 1000, "max": 3000, "currency": "MXN" },
+        "guideId": "cdmx-huatulco-flight-guide",
+        "frequency": {
+          "es": "2-4 vuelos diarios, más frecuentes en temporada alta",
+          "en": "2-4 daily flights, more frequent in high season"
+        },
+        "recommended": true
+      },
+      {
+        "id": "cdmx-huatulco-bus",
+        "mode": "bus",
+        "provider": {
+          "es": "OCC / ADO",
+          "en": "OCC / ADO"
+        },
+        "duration": {
+          "minMinutes": 660,
+          "maxMinutes": 780,
+          "label": {
+            "es": "11 - 13 horas",
+            "en": "11 - 13 hours"
+          }
+        },
+        "priceRange": { "min": 800, "max": 1400, "currency": "MXN" },
+        "guideId": "cdmx-huatulco-bus-guide",
+        "frequency": {
+          "es": "3-5 salidas diarias desde TAPO, principalmente nocturnas",
+          "en": "3-5 daily departures from TAPO, mostly overnight"
+        },
+        "recommended": false
+      },
+      {
+        "id": "cdmx-huatulco-car",
+        "mode": "car",
+        "provider": {
+          "es": "Vehículo propio / Auto rentado",
+          "en": "Own vehicle / Rental car"
+        },
+        "duration": {
+          "minMinutes": 540,
+          "maxMinutes": 660,
+          "label": {
+            "es": "9 - 11 horas",
+            "en": "9 - 11 hours"
+          }
+        },
+        "priceRange": { "min": 2000, "max": 3500, "currency": "MXN" },
+        "guideId": "cdmx-huatulco-car-guide",
+        "frequency": {
+          "es": "Vía Oaxaca por autopista 135D y carretera costera 200",
+          "en": "Via Oaxaca on highway 135D and coastal road 200"
+        },
+        "recommended": false
+      }
+    ]
   }
 ]

@@ -17,11 +17,14 @@ export default function Header() {
 
   const blogLabel = locale === "es" ? "📝 Blog" : locale === "fr" ? "📝 Blog" : "📝 Blog";
 
+  const weddingLabel = locale === "es" ? "💍 Bodas" : locale === "fr" ? "💍 Mariages" : "💍 Weddings";
+
   const navLinks = [
     { href: `/${locale}`, label: homeLabel },
     { href: `/${locale}/vuelos`, label: flightLabel },
     { href: `/${locale}/autobuses`, label: busLabel },
     { href: `/${locale}/hoteles`, label: hotelLabel },
+    { href: `/${locale}/bodas`, label: weddingLabel },
     { href: `/${locale}/destinos`, label: t("allDestinations") },
     { href: `/${locale}/rutas`, label: t("popularRoutes") },
     { href: `/${locale}/blog`, label: blogLabel },

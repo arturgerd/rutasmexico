@@ -18,9 +18,49 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params: { locale, slug } }: { params: { locale: string; slug: string } }) {
   const destination = await getDestinationBySlug(slug);
   if (!destination) return {};
+  const name = localize(destination.name, locale as Locale);
+  const state = localize(destination.state, locale as Locale);
+  const year = new Date().getFullYear();
+  const baseUrl = "https://rutasmexico.com.mx";
+  const canonicalPath = `/${locale}/destinos/${slug}`;
+
+  if (locale === "es") {
+    return {
+      title: `${name}, ${state}: Guía de viaje y cómo llegar ${year}`,
+      description: `Guía completa de ${name}: qué hacer, cómo llegar, dónde comer y mejores épocas para visitar. ${localize(destination.description, locale as Locale)}`,
+      alternates: {
+        canonical: `${baseUrl}${canonicalPath}`,
+        languages: {
+          es: `${baseUrl}/es/destinos/${slug}`,
+          en: `${baseUrl}/en/destinos/${slug}`,
+        },
+      },
+      openGraph: {
+        title: `${name}: Guía de viaje ${year}`,
+        description: localize(destination.description, locale as Locale),
+        url: `${baseUrl}${canonicalPath}`,
+        type: "article",
+        ...(destination.heroImage && { images: [{ url: destination.heroImage.startsWith("/") ? `${baseUrl}${destination.heroImage}` : destination.heroImage }] }),
+      },
+    };
+  }
   return {
-    title: localize(destination.name, locale as Locale),
-    description: localize(destination.description, locale as Locale),
+    title: `${name}, ${state}: Travel guide & how to get there ${year}`,
+    description: `Complete guide to ${name}: things to do, how to get there, where to eat and best times to visit. ${localize(destination.description, locale as Locale)}`,
+    alternates: {
+      canonical: `${baseUrl}${canonicalPath}`,
+      languages: {
+        es: `${baseUrl}/es/destinos/${slug}`,
+        en: `${baseUrl}/en/destinos/${slug}`,
+      },
+    },
+    openGraph: {
+      title: `${name}: Travel guide ${year}`,
+      description: localize(destination.description, locale as Locale),
+      url: `${baseUrl}${canonicalPath}`,
+      type: "article",
+      ...(destination.heroImage && { images: [{ url: destination.heroImage.startsWith("/") ? `${baseUrl}${destination.heroImage}` : destination.heroImage }] }),
+    },
   };
 }
 
