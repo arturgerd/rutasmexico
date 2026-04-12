@@ -1,10 +1,11 @@
 import { LocalizedString, Locale } from "@/types/common";
 
-export function localize(text: LocalizedString, locale: Locale): string {
+export function localize(text: LocalizedString, locale: Locale | string): string {
   if (locale === "fr") {
-    return text.fr || text.en || text.es;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return (text as any).fr || text.en || text.es;
   }
-  return text[locale] || text.es;
+  return text[locale as Locale] || text.es;
 }
 
 export function formatCurrency(amount: number): string {

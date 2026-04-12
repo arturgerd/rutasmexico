@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useLocale } from "next-intl";
 import { BlogPost, BlogCategory } from "@/types/blog";
-import { Locale } from "@/types/common";
 import { l, t3 } from "@/lib/utils";
 
 const CATEGORY_LABELS: Record<BlogCategory, { es: string; en: string; fr: string; color: string }> = {
@@ -13,7 +12,7 @@ const CATEGORY_LABELS: Record<BlogCategory, { es: string; en: string; fr: string
   "transporte": { es: "Transporte", en: "Transportation", fr: "Transport", color: "bg-oro-100 text-oro-700 border-oro-200" },
 };
 
-export function getCategoryLabel(category: BlogCategory, locale: Locale): string {
+export function getCategoryLabel(category: BlogCategory, locale: string): string {
   const labels = CATEGORY_LABELS[category];
   return locale === "es" ? labels.es : locale === "fr" ? labels.fr : labels.en;
 }
@@ -23,7 +22,7 @@ export function getCategoryColor(category: BlogCategory): string {
 }
 
 export default function BlogCard({ post }: { post: BlogPost }) {
-  const locale = useLocale() as Locale;
+  const locale = useLocale();
 
   const formatDate = (dateStr: string) => {
     const date = new Date(dateStr + "T12:00:00");

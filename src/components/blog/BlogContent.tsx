@@ -4,12 +4,11 @@ import { useLocale } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { BlogPost } from "@/types/blog";
-import { Locale } from "@/types/common";
 import { l, t3 } from "@/lib/utils";
 import { getCategoryLabel, getCategoryColor } from "./BlogCard";
 
 export default function BlogContent({ post }: { post: BlogPost }) {
-  const locale = useLocale() as Locale;
+  const locale = useLocale();
 
   const formatDate = (dateStr: string) => {
     const date = new Date(dateStr + "T12:00:00");

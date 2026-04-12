@@ -1011,5 +1011,373 @@
         "en": "If the flight is expensive for your date, check the overnight ADO bus as an alternative. It's 6-7 hours but you arrive rested if you choose GL or Platino service."
       }
     ]
+  },
+  {
+    "id": "cdmx-huatulco-flight-guide",
+    "routeOptionId": "cdmx-huatulco-flight",
+    "title": {
+      "es": "Cómo volar de CDMX a Huatulco: Guía paso a paso",
+      "en": "How to fly from Mexico City to Huatulco: Step-by-step guide"
+    },
+    "overview": {
+      "es": "El vuelo directo de Ciudad de México a Huatulco es la forma más rápida de llegar a estas bahías paradisíacas. Con 2-4 vuelos diarios operados por Volaris y VivaAerobus, encontrarás tarifas desde $1,000 MXN reservando con anticipación. El vuelo dura apenas 1 hora 15 minutos a 1 hora 30 minutos. Esta guía te lleva paso a paso desde el aeropuerto de CDMX hasta las playas de Huatulco.",
+      "en": "The direct flight from Mexico City to Huatulco is the fastest way to reach these paradise bays. With 2-4 daily flights operated by Volaris and VivaAerobus, you'll find fares starting at $1,000 MXN when booking in advance. The flight takes just 1 hour 15 minutes to 1 hour 30 minutes. This guide takes you step by step from Mexico City airport to Huatulco's beaches."
+    },
+    "steps": [
+      {
+        "order": 1,
+        "type": "departure_preparation",
+        "title": {
+          "es": "Llegar al AICM - Terminal 1",
+          "en": "Getting to AICM - Terminal 1"
+        },
+        "description": {
+          "es": "Los vuelos a Huatulco salen de la Terminal 1 del AICM (Volaris y VivaAerobus operan desde aquí). Llega al menos 2 horas antes de tu vuelo. Desde el Centro Histórico o Zona Rosa, un Uber cuesta $80-150 MXN. La opción más económica es el Metro Línea 5 (amarilla) hasta la estación Terminal Aérea, que te deja en la puerta de T1. Haz check-in online 24 horas antes para evitar cargos extra de $300-500 en el aeropuerto.",
+          "en": "Flights to Huatulco depart from Terminal 1 at AICM (Volaris and VivaAerobus operate from here). Arrive at least 2 hours before your flight. From the Historic Center or Zona Rosa, an Uber costs $80-150 MXN. The cheapest option is Metro Line 5 (yellow) to Terminal Aérea station, which drops you at T1's door. Check in online 24 hours before to avoid extra charges of $300-500 at the airport."
+        },
+        "location": {
+          "name": {
+            "es": "AICM Terminal 1",
+            "en": "AICM Terminal 1"
+          },
+          "address": {
+            "es": "Av. Capitán Carlos León S/N, Venustiano Carranza, 15620 CDMX",
+            "en": "Av. Capitán Carlos León S/N, Venustiano Carranza, 15620 CDMX"
+          },
+          "coordinates": { "lat": 19.4361, "lng": -99.0719 }
+        },
+        "duration": {
+          "minutes": 120,
+          "label": { "es": "Llegar 2 horas antes", "en": "Arrive 2 hours before" }
+        },
+        "cost": { "min": 5, "max": 150, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "Los vuelos a Huatulco suelen salir temprano por la mañana. Si tu vuelo es antes de las 7 AM, considera hospedarte cerca del aeropuerto la noche anterior.",
+            "en": "Flights to Huatulco often depart early morning. If your flight is before 7 AM, consider staying near the airport the night before."
+          }
+        ]
+      },
+      {
+        "order": 2,
+        "type": "transit_segment",
+        "title": {
+          "es": "Vuelo directo CDMX → Huatulco",
+          "en": "Direct flight CDMX → Huatulco"
+        },
+        "description": {
+          "es": "El vuelo directo dura entre 1 hora 15 minutos y 1 hora 30 minutos. Volaris y VivaAerobus son las principales aerolíneas en esta ruta, con tarifas desde $1,000 MXN solo con equipaje de mano. La maleta documentada cuesta $400-700 extra si la agregas en línea. Para los mejores precios, reserva con 3-4 semanas de anticipación entre martes y jueves. En temporada alta (diciembre-marzo), los precios suben significativamente, así que anticipa tu compra.",
+          "en": "The direct flight takes 1 hour 15 minutes to 1 hour 30 minutes. Volaris and VivaAerobus are the main airlines on this route, with fares starting at $1,000 MXN with carry-on only. A checked bag costs $400-700 extra if added online. For the best prices, book 3-4 weeks in advance on Tuesday through Thursday. During high season (December-March), prices rise significantly, so book early."
+        },
+        "duration": {
+          "minutes": 85,
+          "label": { "es": "1h 15min - 1h 30min de vuelo", "en": "1h 15min - 1h 30min flight" }
+        },
+        "cost": { "min": 1000, "max": 3000, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "Pide ventanilla del lado izquierdo para ver la costa del Pacífico oaxaqueño al aterrizar. La vista de las bahías es impresionante.",
+            "en": "Request a left-side window seat to see the Oaxacan Pacific coast on landing. The view of the bays is stunning."
+          }
+        ]
+      },
+      {
+        "order": 3,
+        "type": "arrival_navigation",
+        "title": {
+          "es": "Llegar al Aeropuerto Internacional de Huatulco (HUX)",
+          "en": "Arriving at Huatulco International Airport (HUX)"
+        },
+        "description": {
+          "es": "El Aeropuerto Internacional de Bahías de Huatulco (HUX) es pequeño y eficiente. Recogerás tu equipaje rápidamente. A la salida encontrarás taxis autorizados del aeropuerto. El trayecto al centro de La Crucecita (pueblo principal) toma 15-20 minutos y cuesta $250-350 MXN en taxi privado. También hay servicio de transporte colectivo por $100-150 MXN por persona. Si reservaste hotel en la zona de Tangolunda, el taxi cuesta $300-400 MXN (20-25 minutos). No hay Uber en Huatulco.",
+          "en": "Bahías de Huatulco International Airport (HUX) is small and efficient. You'll collect your luggage quickly. Outside you'll find authorized airport taxis. The ride to La Crucecita center (main town) takes 15-20 minutes and costs $250-350 MXN by private taxi. There's also shared transport for $100-150 MXN per person. If you booked a hotel in the Tangolunda area, the taxi costs $300-400 MXN (20-25 minutes). There's no Uber in Huatulco."
+        },
+        "location": {
+          "name": {
+            "es": "Aeropuerto Internacional de Bahías de Huatulco (HUX)",
+            "en": "Bahías de Huatulco International Airport (HUX)"
+          },
+          "address": {
+            "es": "Carretera Costera del Pacífico Km 237, 70989 San Pedro Huamelula, Oaxaca",
+            "en": "Carretera Costera del Pacífico Km 237, 70989 San Pedro Huamelula, Oaxaca"
+          },
+          "coordinates": { "lat": 15.7753, "lng": -96.2626 }
+        },
+        "duration": {
+          "minutes": 20,
+          "label": { "es": "15-20 min al centro", "en": "15-20 min to center" }
+        },
+        "cost": { "min": 100, "max": 400, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "Muchos hoteles ofrecen servicio de transporte gratuito desde el aeropuerto. Confirma con tu hotel antes de viajar para ahorrar en taxi.",
+            "en": "Many hotels offer free airport transfer service. Confirm with your hotel before traveling to save on taxi fare."
+          }
+        ]
+      },
+      {
+        "order": 4,
+        "type": "local_transport",
+        "title": {
+          "es": "Explorar las bahías de Huatulco",
+          "en": "Exploring Huatulco's bays"
+        },
+        "description": {
+          "es": "La Crucecita es el pueblo donde están los restaurantes, mercados y vida nocturna. Es totalmente caminable. Bahía de Santa Cruz está a 5 minutos en taxi ($30-40 MXN) y es donde salen las lanchas para el tour de las bahías ($200-400 MXN por persona, 5-6 horas). Tangolunda es la zona hotelera de lujo, a 10 minutos en taxi ($50-80 MXN). Para playas vírgenes como Cacaluta (donde filmaron Y Tu Mamá También), necesitas ir en lancha o caminando 30 minutos desde la carretera.",
+          "en": "La Crucecita is the town with restaurants, markets, and nightlife. It's fully walkable. Santa Cruz Bay is 5 minutes by taxi ($30-40 MXN) and is where boats depart for the bay tour ($200-400 MXN per person, 5-6 hours). Tangolunda is the luxury hotel zone, 10 minutes by taxi ($50-80 MXN). For pristine beaches like Cacaluta (where Y Tu Mamá También was filmed), you need to go by boat or walk 30 minutes from the road."
+        },
+        "duration": {
+          "minutes": 15,
+          "label": { "es": "5-15 min entre zonas", "en": "5-15 min between areas" }
+        },
+        "cost": { "min": 30, "max": 400, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "El tour de las 7 bahías en lancha es la actividad imperdible. Reserva en Santa Cruz temprano por la mañana para tener el mar más tranquilo y mejor visibilidad para snorkel.",
+            "en": "The 7-bay boat tour is the must-do activity. Book at Santa Cruz early morning for calmer seas and better snorkeling visibility."
+          },
+          {
+            "es": "Lleva efectivo para las lanchas y restaurantes de playa. Pocos aceptan tarjeta fuera de La Crucecita y los hoteles grandes.",
+            "en": "Carry cash for boats and beach restaurants. Few accept cards outside La Crucecita and large hotels."
+          }
+        ]
+      }
+    ],
+    "tips": [
+      {
+        "es": "La mejor época para visitar Huatulco es de noviembre a mayo. Diciembre-marzo es temporada alta con precios más altos pero clima perfecto.",
+        "en": "The best time to visit Huatulco is November to May. December-March is high season with higher prices but perfect weather."
+      },
+      {
+        "es": "Usa protector solar biodegradable obligatoriamente. Las bahías son parque nacional protegido y los arrecifes de coral son sensibles a los químicos del bloqueador convencional.",
+        "en": "Use biodegradable sunscreen — it's mandatory. The bays are a protected national park and the coral reefs are sensitive to chemicals in conventional sunscreen."
+      }
+    ]
+  },
+  {
+    "id": "cdmx-huatulco-bus-guide",
+    "routeOptionId": "cdmx-huatulco-bus",
+    "title": {
+      "es": "Cómo ir de CDMX a Huatulco en autobús: Guía completa",
+      "en": "How to get from Mexico City to Huatulco by bus: Complete guide"
+    },
+    "overview": {
+      "es": "El autobús de Ciudad de México a Huatulco es una opción económica, especialmente en servicio nocturno. OCC y ADO operan 3-5 salidas diarias desde la Terminal TAPO, con tarifas desde $800 MXN. El viaje dura entre 11 y 13 horas, pasando por Oaxaca ciudad y la Sierra Madre del Sur. Los autobuses nocturnos son ideales: duermes en el camino y amaneces en la playa.",
+      "en": "The bus from Mexico City to Huatulco is an economical option, especially the overnight service. OCC and ADO operate 3-5 daily departures from TAPO Terminal, with fares starting at $800 MXN. The trip takes 11-13 hours, passing through Oaxaca city and the Sierra Madre del Sur. Overnight buses are ideal: you sleep on the way and wake up at the beach."
+    },
+    "steps": [
+      {
+        "order": 1,
+        "type": "departure_preparation",
+        "title": {
+          "es": "Llegar a la Terminal TAPO",
+          "en": "Getting to TAPO Terminal"
+        },
+        "description": {
+          "es": "La Terminal de Autobuses de Pasajeros de Oriente (TAPO) es donde salen los autobuses a Huatulco. Está en Calzada Ignacio Zaragoza 200, Venustiano Carranza. La forma más fácil de llegar es en Metro: toma la Línea 1 (rosa) o Línea B (verde/gris) hasta la estación San Lázaro, que conecta directamente con TAPO. En Uber cuesta $60-120 MXN desde el centro. Llega 30-45 minutos antes para comprar tu boleto o recogerlo si compraste en línea.",
+          "en": "The TAPO bus terminal is where buses to Huatulco depart. It's at Calzada Ignacio Zaragoza 200, Venustiano Carranza. The easiest way to get there is by Metro: take Line 1 (pink) or Line B (green/gray) to San Lázaro station, which connects directly to TAPO. An Uber costs $60-120 MXN from downtown. Arrive 30-45 minutes early to buy your ticket or pick it up if you purchased online."
+        },
+        "location": {
+          "name": {
+            "es": "Terminal TAPO",
+            "en": "TAPO Terminal"
+          },
+          "address": {
+            "es": "Calzada Ignacio Zaragoza 200, Venustiano Carranza, 15010 CDMX",
+            "en": "Calzada Ignacio Zaragoza 200, Venustiano Carranza, 15010 CDMX"
+          },
+          "coordinates": { "lat": 19.4226, "lng": -99.0964 }
+        },
+        "duration": {
+          "minutes": 45,
+          "label": { "es": "30-45 min antes de la salida", "en": "30-45 min before departure" }
+        },
+        "cost": { "min": 5, "max": 120, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "Los autobuses nocturnos (salidas entre 8 PM y 11 PM) son los más recomendados. Llegas a Huatulco entre 7 y 10 AM, listo para la playa.",
+            "en": "Overnight buses (departures between 8 PM and 11 PM) are most recommended. You arrive in Huatulco between 7 and 10 AM, ready for the beach."
+          },
+          {
+            "es": "Compra tu boleto en línea en la página de ADO o OCC con al menos 3 días de anticipación para mejores precios y asegurar asiento.",
+            "en": "Buy your ticket online on the ADO or OCC website at least 3 days in advance for better prices and to secure a seat."
+          }
+        ]
+      },
+      {
+        "order": 2,
+        "type": "transit_segment",
+        "title": {
+          "es": "El viaje en autobús CDMX → Huatulco",
+          "en": "The bus journey CDMX → Huatulco"
+        },
+        "description": {
+          "es": "El viaje dura entre 11 y 13 horas. La ruta pasa por la autopista México-Puebla, luego la 135D a Oaxaca, y finalmente la carretera costera 200 hasta Huatulco. Algunos autobuses hacen parada en Oaxaca ciudad (6-7 horas desde CDMX). OCC opera los servicios más frecuentes en esta ruta. Los autobuses tipo Primera Clase incluyen aire acondicionado, asientos reclinables, baño y pantallas. El servicio GL es más cómodo con asientos más amplios y menos paradas. Los precios van de $800 a $1,400 MXN dependiendo del servicio y la antelación de compra.",
+          "en": "The journey takes 11-13 hours. The route goes via the Mexico-Puebla highway, then the 135D to Oaxaca, and finally coastal road 200 to Huatulco. Some buses stop in Oaxaca city (6-7 hours from CDMX). OCC operates the most frequent services on this route. First Class buses include air conditioning, reclining seats, restroom, and screens. GL service is more comfortable with wider seats and fewer stops. Prices range from $800 to $1,400 MXN depending on service class and advance purchase."
+        },
+        "duration": {
+          "minutes": 720,
+          "label": { "es": "11-13 horas de viaje", "en": "11-13 hours travel" }
+        },
+        "cost": { "min": 800, "max": 1400, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "Lleva una cobija o suéter: el aire acondicionado del autobús puede ser muy frío, especialmente en viajes nocturnos.",
+            "en": "Bring a blanket or sweater: the bus air conditioning can be very cold, especially on overnight trips."
+          },
+          {
+            "es": "Carga snacks y agua. La parada en Oaxaca es corta y no siempre hay tiempo de comprar comida.",
+            "en": "Pack snacks and water. The Oaxaca stop is short and there's not always time to buy food."
+          }
+        ]
+      },
+      {
+        "order": 3,
+        "type": "arrival_navigation",
+        "title": {
+          "es": "Llegada a La Crucecita, Huatulco",
+          "en": "Arriving in La Crucecita, Huatulco"
+        },
+        "description": {
+          "es": "El autobús llega a la terminal de autobuses de La Crucecita, el pueblo principal de Huatulco. La terminal está a solo 5 minutos caminando del centro de La Crucecita y el zócalo. Desde ahí puedes tomar un taxi a tu hotel en Tangolunda ($50-80 MXN, 10 min) o Bahía de Santa Cruz ($30-40 MXN, 5 min). Si tu hotel está en La Crucecita, probablemente puedes caminar.",
+          "en": "The bus arrives at La Crucecita bus terminal, Huatulco's main town. The terminal is just a 5-minute walk from La Crucecita center and the main square. From there you can take a taxi to your hotel in Tangolunda ($50-80 MXN, 10 min) or Santa Cruz Bay ($30-40 MXN, 5 min). If your hotel is in La Crucecita, you can probably walk."
+        },
+        "location": {
+          "name": {
+            "es": "Terminal de autobuses La Crucecita",
+            "en": "La Crucecita Bus Terminal"
+          },
+          "address": {
+            "es": "Blvd. Chahué, La Crucecita, 70989 Huatulco, Oaxaca",
+            "en": "Blvd. Chahué, La Crucecita, 70989 Huatulco, Oaxaca"
+          },
+          "coordinates": { "lat": 15.7701, "lng": -96.1342 }
+        },
+        "duration": {
+          "minutes": 10,
+          "label": { "es": "5-10 min al hotel", "en": "5-10 min to hotel" }
+        },
+        "cost": { "min": 0, "max": 80, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "Si llegas en la mañana después de un viaje nocturno, ve directo a desayunar al Mercado 3 de Mayo en La Crucecita. Desayunos completos por $60-80 MXN.",
+            "en": "If you arrive in the morning after an overnight trip, head straight to breakfast at the 3 de Mayo Market in La Crucecita. Full breakfasts for $60-80 MXN."
+          }
+        ]
+      }
+    ],
+    "tips": [
+      {
+        "es": "El autobús nocturno es la mejor relación precio-calidad para llegar a Huatulco. Ahorras una noche de hotel y llegas listo para disfrutar.",
+        "en": "The overnight bus is the best value option to reach Huatulco. You save a night's hotel cost and arrive ready to enjoy."
+      },
+      {
+        "es": "Si prefieres hacer el viaje en dos etapas, puedes tomar un autobús CDMX-Oaxaca (6-7h), pasar 1-2 días en Oaxaca, y luego otro autobús Oaxaca-Huatulco (5-6h).",
+        "en": "If you prefer a two-stage trip, you can take a CDMX-Oaxaca bus (6-7h), spend 1-2 days in Oaxaca, then another Oaxaca-Huatulco bus (5-6h)."
+      }
+    ]
+  },
+  {
+    "id": "cdmx-huatulco-car-guide",
+    "routeOptionId": "cdmx-huatulco-car",
+    "title": {
+      "es": "Cómo llegar de CDMX a Huatulco en auto: Ruta y consejos",
+      "en": "How to drive from Mexico City to Huatulco: Route and tips"
+    },
+    "overview": {
+      "es": "El viaje en auto de Ciudad de México a Huatulco toma 9-11 horas (aproximadamente 600 km). La ruta más segura es por la autopista 135D hasta Oaxaca ciudad (5h) y luego la carretera 175 o la costera 200 hasta Huatulco (4-5h más). Es un viaje largo pero la carretera costera final tiene paisajes espectaculares. Se recomienda dividirlo en dos días haciendo parada en Oaxaca.",
+      "en": "The drive from Mexico City to Huatulco takes 9-11 hours (approximately 600 km). The safest route is via highway 135D to Oaxaca city (5h) and then road 175 or coastal road 200 to Huatulco (4-5h more). It's a long drive but the final coastal road has spectacular scenery. It's recommended to split it into two days with a stop in Oaxaca."
+    },
+    "steps": [
+      {
+        "order": 1,
+        "type": "departure_preparation",
+        "title": {
+          "es": "Salir de CDMX por la autopista 150D",
+          "en": "Leave CDMX via highway 150D"
+        },
+        "description": {
+          "es": "Sal temprano (antes de las 6 AM) para evitar el tráfico de la ciudad. Toma la Calzada Ignacio Zaragoza hacia el oriente hasta conectar con la autopista México-Puebla (150D). Llenarás el tanque antes de salir. La autopista 150D es de cuota y bien mantenida. El primer tramo CDMX-Puebla toma aproximadamente 1 hora 30 minutos. En Puebla, continúa por la 150D que se conecta con la 135D dirección Oaxaca. Las casetas de peaje en este tramo cuestan aproximadamente $300-400 MXN.",
+          "en": "Leave early (before 6 AM) to avoid city traffic. Take Calzada Ignacio Zaragoza eastbound to connect with the Mexico-Puebla highway (150D). Fill up the tank before leaving. Highway 150D is a toll road and well maintained. The first CDMX-Puebla stretch takes about 1 hour 30 minutes. In Puebla, continue on 150D which connects to 135D toward Oaxaca. Toll booths on this stretch cost approximately $300-400 MXN."
+        },
+        "location": {
+          "name": { "es": "Salida CDMX oriente", "en": "CDMX east exit" },
+          "address": { "es": "Calzada Ignacio Zaragoza, CDMX", "en": "Calzada Ignacio Zaragoza, CDMX" },
+          "coordinates": { "lat": 19.4226, "lng": -99.0964 }
+        },
+        "duration": {
+          "minutes": 300,
+          "label": { "es": "5 horas hasta Oaxaca", "en": "5 hours to Oaxaca" }
+        },
+        "cost": { "min": 300, "max": 500, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "Se recomienda dividir el viaje en dos días, pasando una noche en Oaxaca ciudad. Así disfrutas la gastronomía oaxaqueña y llegas descansado a Huatulco.",
+            "en": "It's recommended to split the trip over two days, spending a night in Oaxaca city. This way you enjoy Oaxacan cuisine and arrive rested in Huatulco."
+          }
+        ]
+      },
+      {
+        "order": 2,
+        "type": "transit_segment",
+        "title": {
+          "es": "Oaxaca a Huatulco por la sierra y la costa",
+          "en": "Oaxaca to Huatulco via mountains and coast"
+        },
+        "description": {
+          "es": "Desde Oaxaca ciudad hay dos rutas principales a Huatulco. La más directa es la carretera 175 que cruza la Sierra Madre del Sur (4-5 horas, 257 km). Es sinuosa pero con paisajes impresionantes de bosques de niebla y comunidades zapotecas. La alternativa es tomar la 131 hacia Puerto Escondido y luego la costera 200 hacia el este hasta Huatulco. Esta es más larga pero con carretera más amplia. En ambas opciones, gastarás aproximadamente $800-1,200 MXN en gasolina. No hay casetas de peaje en este tramo. Llena el tanque en Oaxaca porque las gasolineras son escasas en la sierra.",
+          "en": "From Oaxaca city there are two main routes to Huatulco. The most direct is highway 175 crossing the Sierra Madre del Sur (4-5 hours, 257 km). It's winding but with stunning cloud forest scenery and Zapotec communities. The alternative is to take 131 toward Puerto Escondido and then coastal road 200 east to Huatulco. This is longer but with wider roads. Either way, you'll spend approximately $800-1,200 MXN on gas. There are no toll booths on this stretch. Fill up in Oaxaca because gas stations are scarce in the mountains."
+        },
+        "duration": {
+          "minutes": 270,
+          "label": { "es": "4-5 horas Oaxaca a Huatulco", "en": "4-5 hours Oaxaca to Huatulco" }
+        },
+        "cost": { "min": 800, "max": 1200, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "La carretera 175 tiene curvas muy cerradas y neblina frecuente. Maneja con precaución, usa luces encendidas siempre y no intentes rebasar en curvas. No es recomendable de noche.",
+            "en": "Highway 175 has very sharp curves and frequent fog. Drive carefully, keep lights on at all times, and don't try to pass on curves. Not recommended at night."
+          }
+        ]
+      },
+      {
+        "order": 3,
+        "type": "arrival_navigation",
+        "title": {
+          "es": "Llegada a Huatulco",
+          "en": "Arriving in Huatulco"
+        },
+        "description": {
+          "es": "Al llegar a la zona de Huatulco, la carretera te lleva directamente a La Crucecita, el pueblo principal. Los hoteles en Tangolunda están señalizados a la derecha por el boulevard principal. Hay estacionamiento gratuito en la mayoría de hoteles y restaurantes. Si exploras las bahías por cuenta propia, puedes estacionarte en Bahía de Santa Cruz o en los accesos públicos a las playas. Tener auto en Huatulco es muy conveniente para visitar las cascadas, la finca de café de Pluma Hidalgo y playas remotas.",
+          "en": "Arriving at the Huatulco area, the road takes you directly to La Crucecita, the main town. Hotels in Tangolunda are signposted to the right on the main boulevard. There's free parking at most hotels and restaurants. If you explore the bays on your own, you can park at Santa Cruz Bay or at the public beach access points. Having a car in Huatulco is very convenient for visiting waterfalls, Pluma Hidalgo coffee plantation, and remote beaches."
+        },
+        "location": {
+          "name": { "es": "La Crucecita, Huatulco", "en": "La Crucecita, Huatulco" },
+          "address": { "es": "La Crucecita, 70989 Huatulco, Oaxaca", "en": "La Crucecita, 70989 Huatulco, Oaxaca" },
+          "coordinates": { "lat": 15.7701, "lng": -96.1342 }
+        },
+        "duration": {
+          "minutes": 10,
+          "label": { "es": "Llegada directa", "en": "Direct arrival" }
+        },
+        "cost": { "min": 0, "max": 0, "currency": "MXN" },
+        "tips": [
+          {
+            "es": "Con auto puedes hacer una ruta combinada Oaxaca-Puerto Escondido-Huatulco a lo largo de la costa del Pacífico, una de las más bonitas de México.",
+            "en": "With a car you can do a combined Oaxaca-Puerto Escondido-Huatulco route along the Pacific coast, one of Mexico's most beautiful."
+          }
+        ]
+      }
+    ],
+    "tips": [
+      {
+        "es": "Renta un auto en Oaxaca si no quieres manejar desde CDMX. Es más económico y evitas el tráfico de la capital.",
+        "en": "Rent a car in Oaxaca if you don't want to drive from CDMX. It's cheaper and you avoid the capital's traffic."
+      },
+      {
+        "es": "Si rentas auto, contrata seguro completo. Las carreteras de la sierra oaxaqueña son seguras pero estrechas, y los topes (speed bumps) son frecuentes y a veces no están señalizados.",
+        "en": "If renting a car, get full insurance coverage. The Oaxacan mountain roads are safe but narrow, and speed bumps (topes) are frequent and sometimes unmarked."
+      }
+    ]
   }
 ]

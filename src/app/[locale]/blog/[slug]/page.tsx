@@ -17,15 +17,30 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params: { locale, slug } }: { params: { locale: string; slug: string } }) {
   const post = await getBlogPostBySlug(slug);
   if (!post) return {};
+  const title = localize(post.title, locale as Locale);
+  const description = localize(post.excerpt, locale as Locale);
+  const baseUrl = "https://rutasmexico.com.mx";
+  const canonicalPath = `/${locale}/blog/${slug}`;
+
   return {
-    title: `${localize(post.title, locale as Locale)} | RutasMéxico`,
-    description: localize(post.excerpt, locale as Locale),
+    title,
+    description,
+    alternates: {
+      canonical: `${baseUrl}${canonicalPath}`,
+      languages: {
+        es: `${baseUrl}/es/blog/${slug}`,
+        en: `${baseUrl}/en/blog/${slug}`,
+      },
+    },
     openGraph: {
-      title: localize(post.title, locale as Locale),
-      description: localize(post.excerpt, locale as Locale),
+      title,
+      description,
       images: [{ url: post.featuredImage, width: 800, height: 500 }],
       type: "article",
       publishedTime: post.publishedDate,
+      ...(post.updatedDate && { modifiedTime: post.updatedDate }),
+      url: `${baseUrl}${canonicalPath}`,
+      authors: [post.author],
     },
   };
 }
@@ -39,11 +54,42 @@ export default async function BlogPostPage({
   const post = await getBlogPostBySlug(slug);
   if (!post) notFound();
 
+  const title = localize(post.title, locale as Locale);
+  const description = localize(post.excerpt, locale as Locale);
+  const baseUrl = "https://rutasmexico.com.mx";
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description,
+    image: post.featuredImage,
+    author: { "@type": "Organization", name: post.author, url: baseUrl },
+    publisher: { "@type": "Organization", name: "RutasMéxico", url: baseUrl },
+    datePublished: post.publishedDate,
+    ...(post.updatedDate && { dateModified: post.updatedDate }),
+    mainEntityOfPage: `${baseUrl}/${locale}/blog/${slug}`,
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: locale === "es" ? "Inicio" : "Home", item: `${baseUrl}/${locale}` },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${baseUrl}/${locale}/blog` },
+      { "@type": "ListItem", position: 3, name: title },
+    ],
+  };
+
   return (
-    <div className="min-h-screen bg-white">
-      <div className="container-custom py-10">
-        <BlogContent post={post} />
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <div className="min-h-screen bg-white">
+        <div className="container-custom py-10">
+          <BlogContent post={post} />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

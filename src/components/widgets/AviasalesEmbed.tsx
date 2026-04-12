@@ -3,7 +3,6 @@
 import { useState, useMemo, useCallback } from "react";
 import { useLocale } from "next-intl";
 import { Airport } from "@/types/airport";
-import { Locale } from "@/types/common";
 import { localize, t3, l } from "@/lib/utils";
 import { AFFILIATE_CONFIG } from "@/lib/affiliate";
 
@@ -19,7 +18,7 @@ interface AviasalesEmbedProps {
  * Commission is earned on every booking through marker 510654.
  */
 export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDest = "" }: AviasalesEmbedProps) {
-  const locale = useLocale() as Locale;
+  const locale = useLocale();
   const marker = AFFILIATE_CONFIG.travelpayouts.marker;
 
   const [origin, setOrigin] = useState(defaultOrigin);
