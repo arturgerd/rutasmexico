@@ -21,6 +21,8 @@ interface MapLoaderProps {
   center?: { lat: number; lng: number };
   zoom?: number;
   height?: string;
+  focusedDestinationId?: string;
+  hideLegend?: boolean;
 }
 
 export default function MapLoader(props: MapLoaderProps) {

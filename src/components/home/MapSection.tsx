@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import MapLoader from "@/components/map/MapLoader";
+import InteractiveMapExplorer from "@/components/map/InteractiveMapExplorer";
 import { Destination } from "@/types/destination";
 
 interface MapSectionProps {
@@ -22,7 +22,7 @@ export default function MapSection({ destinations }: MapSectionProps) {
             {t("mapSubtitle")}
           </p>
         </div>
-        <MapLoader destinations={destinations} height="500px" />
+        <InteractiveMapExplorer destinations={destinations} />
       </div>
     </section>
   );

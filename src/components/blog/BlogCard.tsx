@@ -10,6 +10,8 @@ const CATEGORY_LABELS: Record<BlogCategory, { es: string; en: string; fr: string
   "guia-destino": { es: "Guía de destino", en: "Destination Guide", fr: "Guide de destination", color: "bg-azul-100 text-azul-700 border-azul-200" },
   "tips-viaje": { es: "Tips de viaje", en: "Travel Tips", fr: "Conseils de voyage", color: "bg-jade-100 text-jade-700 border-jade-200" },
   "transporte": { es: "Transporte", en: "Transportation", fr: "Transport", color: "bg-oro-100 text-oro-700 border-oro-200" },
+  "gastronomia": { es: "Gastronomía", en: "Food & Drink", fr: "Gastronomie", color: "bg-terracotta-100 text-terracotta-700 border-terracotta-200" },
+  "cultura": { es: "Cultura", en: "Culture", fr: "Culture", color: "bg-arena-200 text-arena-800 border-arena-300" },
 };
 
 export function getCategoryLabel(category: BlogCategory, locale: string): string {

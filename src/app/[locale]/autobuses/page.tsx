@@ -2,6 +2,7 @@ import Image from "next/image";
 import { setRequestLocale } from "next-intl/server";
 import BusSearchEmbed from "@/components/widgets/BusSearchEmbed";
 import BusCompanyGrid from "@/components/widgets/BusCompanyGrid";
+import BusesGuide from "@/components/editorial/BusesGuide";
 import { PAGE_HERO_IMAGES } from "@/lib/destination-images";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
@@ -57,6 +58,9 @@ export default async function AutobusesPage({ params: { locale } }: { params: { 
         <div className="container-custom -mt-8 relative z-20">
           {/* Bus search */}
           <BusSearchEmbed />
+
+          {/* Editorial guide - main content for AdSense compliance */}
+          <BusesGuide locale={locale} />
 
           {/* Bus company grid */}
           <div className="mt-12">

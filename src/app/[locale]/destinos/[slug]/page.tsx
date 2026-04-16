@@ -76,5 +76,75 @@ export default async function DestinationPage({
   const routes = await getRoutesByDestination(destination.id);
   const terminals = await getTerminalsByCity(destination.id);
 
-  return <DestinationDetail destination={destination} routes={routes} terminals={terminals} locale={locale as Locale} />;
+  const baseUrl = "https://rutasmexico.com.mx";
+  const name = localize(destination.name, locale as Locale);
+  const state = localize(destination.state, locale as Locale);
+  const description = localize(destination.description, locale as Locale);
+  const canonicalUrl = `${baseUrl}/${locale}/destinos/${slug}`;
+  const imageUrl = destination.heroImage?.startsWith("/")
+    ? `${baseUrl}${destination.heroImage}`
+    : destination.heroImage;
+
+  // TouristAttraction / Place schema — helps Google understand this page is about a destination
+  const placeSchema = {
+    "@context": "https://schema.org",
+    "@type": "TouristDestination",
+    name,
+    description,
+    url: canonicalUrl,
+    image: imageUrl,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: name,
+      addressRegion: state,
+      addressCountry: "MX",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: destination.coordinates.lat,
+      longitude: destination.coordinates.lng,
+    },
+    touristType: locale === "es"
+      ? ["Turismo cultural", "Turismo gastronomico", "Turismo de playa"]
+      : ["Cultural tourism", "Food tourism", "Beach tourism"],
+  };
+
+  // Breadcrumb schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: locale === "es" ? "Inicio" : "Home",
+        item: `${baseUrl}/${locale}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: locale === "es" ? "Destinos" : "Destinations",
+        item: `${baseUrl}/${locale}/destinos`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name,
+      },
+    ],
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(placeSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <DestinationDetail destination={destination} routes={routes} terminals={terminals} locale={locale as Locale} />
+    </>
+  );
 }

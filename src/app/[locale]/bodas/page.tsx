@@ -4,6 +4,7 @@ import { setRequestLocale } from "next-intl/server";
 import { getAllWeddingDestinations } from "@/lib/data/bodas";
 import { localize } from "@/lib/utils";
 import { Locale } from "@/types/common";
+import WeddingsGuide from "@/components/editorial/WeddingsGuide";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const year = new Date().getFullYear();
@@ -50,7 +51,7 @@ export default async function BodasPage({ params: { locale } }: { params: { loca
       </div>
 
       <div className="container-custom max-w-5xl py-12">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-4">
           {destinations.map((dest) => (
             <Link
               key={dest.id}
@@ -91,6 +92,8 @@ export default async function BodasPage({ params: { locale } }: { params: { loca
             </Link>
           ))}
         </div>
+
+        <WeddingsGuide locale={locale} />
       </div>
     </div>
   );

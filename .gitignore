@@ -31,6 +31,12 @@ yarn-error.log*
 # vercel
 .vercel
 
+# Claude Code local state
+.claude/
+
+# Accidental stray file (Windows 'nul' created by stray shell redirects)
+/nul
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

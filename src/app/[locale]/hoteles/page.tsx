@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { setRequestLocale } from "next-intl/server";
 import HotelSearchEmbed from "@/components/widgets/HotelSearchEmbed";
+import HotelsGuide from "@/components/editorial/HotelsGuide";
 import { PAGE_HERO_IMAGES } from "@/lib/destination-images";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
@@ -56,6 +57,9 @@ export default async function HotelesPage({ params: { locale } }: { params: { lo
         <div className="container-custom -mt-8 relative z-20">
           {/* Hotel search */}
           <HotelSearchEmbed />
+
+          {/* Editorial guide - main content for AdSense compliance */}
+          <HotelsGuide locale={locale} />
 
           {/* How it works */}
           <div className="mt-12 bg-white rounded-2xl shadow-lg border border-arena-100 p-6 md:p-8">

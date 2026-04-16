@@ -371,5 +371,467 @@
         "answer": { "es": "Necesitas actas de nacimiento, identificación oficial (pasaporte para extranjeros), exámenes de sangre de laboratorio autorizado en Quintana Roo, y cuatro testigos. Los documentos extranjeros deben estar apostillados y traducidos al español. El proceso toma 3-5 días hábiles.", "en": "You need birth certificates, official ID (passport for foreigners), blood tests from an authorized lab in Quintana Roo, and four witnesses. Foreign documents must be apostilled and translated to Spanish. The process takes 3-5 business days." }
       }
     ]
+  },
+  {
+    "id": "los-cabos",
+    "slug": "los-cabos",
+    "name": { "es": "Los Cabos", "en": "Los Cabos" },
+    "intro": {
+      "es": "Los Cabos, en la punta de la Península de Baja California, se ha consolidado como uno de los destinos de boda más lujosos de México. El encuentro del Mar de Cortés y el Océano Pacífico, los paisajes desérticos, resorts de clase mundial con campos de golf diseñados por Jack Nicklaus y Tiger Woods, y el icónico Arco de Cabo San Lucas lo convierten en escenario de celebraciones inolvidables. Muchas celebridades y parejas de alto perfil eligen Los Cabos por su privacidad, exclusividad y atardeceres que parecen pintura.",
+      "en": "Los Cabos, at the tip of the Baja California Peninsula, has established itself as one of Mexico's most luxurious wedding destinations. The meeting of the Sea of Cortez and the Pacific Ocean, desert landscapes, world-class resorts with golf courses designed by Jack Nicklaus and Tiger Woods, and the iconic Cabo San Lucas Arch make it the setting for unforgettable celebrations. Many celebrities and high-profile couples choose Los Cabos for its privacy, exclusivity and painting-like sunsets."
+    },
+    "venues": [
+      {
+        "id": "one-and-only-palmilla",
+        "name": "One&Only Palmilla",
+        "type": "hotel",
+        "description": {
+          "es": "El resort más icónico de Los Cabos, con más de 65 años de historia recibiendo celebridades. Capilla blanca frente al mar, jardines mediterráneos y playa privada de aguas tranquilas. Ofrece bodas de ultra-lujo con coordinador exclusivo y menús diseñados por chef ejecutivo.",
+          "en": "Los Cabos' most iconic resort, with over 65 years of history hosting celebrities. White chapel overlooking the sea, Mediterranean gardens and private beach with calm waters. Offers ultra-luxury weddings with dedicated coordinator and menus designed by executive chef."
+        },
+        "capacity": { "min": 20, "max": 200 },
+        "priceRange": { "min": 350000, "max": 1500000, "currency": "MXN" },
+        "highlights": [
+          { "es": "Capilla blanca icónica frente al mar", "en": "Iconic white chapel facing the ocean" },
+          { "es": "Playa privada con aguas tranquilas, ideal para nadar", "en": "Private beach with calm waters, safe for swimming" },
+          { "es": "Servicio 5 estrellas personalizado para novios y familias", "en": "Personalized 5-star service for couples and families" }
+        ],
+        "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&h=400&fit=crop&q=80",
+        "lgbtqFriendly": true,
+        "accessibilityFeatures": ["wheelchair", "accessible-rooms", "accessible-bathrooms"]
+      },
+      {
+        "id": "esperanza-auberge",
+        "name": "Esperanza, An Auberge Resort",
+        "type": "hotel",
+        "description": {
+          "es": "Resort boutique en el Corredor Turístico entre San José y Cabo San Lucas. Enclavado en un acantilado con tres playas privadas. Su terraza de bodas ofrece vistas panorámicas del océano Pacífico y atardeceres espectaculares. Excelente gastronomía orgánica.",
+          "en": "Boutique resort on the Tourist Corridor between San José and Cabo San Lucas. Perched on a cliff with three private beaches. Its wedding terrace offers panoramic Pacific Ocean views and spectacular sunsets. Excellent organic cuisine."
+        },
+        "capacity": { "min": 10, "max": 150 },
+        "priceRange": { "min": 250000, "max": 900000, "currency": "MXN" },
+        "highlights": [
+          { "es": "Tres playas privadas exclusivas", "en": "Three exclusive private beaches" },
+          { "es": "Atardeceres al Pacífico desde la terraza", "en": "Pacific sunsets from the terrace" },
+          { "es": "Spa y menús de cocina de autor", "en": "Spa and signature cuisine menus" }
+        ],
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop&q=80",
+        "lgbtqFriendly": true,
+        "accessibilityFeatures": ["wheelchair", "accessible-rooms"]
+      },
+      {
+        "id": "hyatt-ziva-cabo",
+        "name": "Hyatt Ziva Los Cabos",
+        "type": "hotel",
+        "description": {
+          "es": "Resort todo incluido en la punta de Cabo San Lucas con vista al Arco. Paquetes de bodas completos con gazebo frente al mar, jardines tropicales y salones para recepción. Ideal para parejas que quieren una boda tipo resort con presupuesto más accesible.",
+          "en": "All-inclusive resort at the tip of Cabo San Lucas with views of the Arch. Complete wedding packages with beachfront gazebo, tropical gardens and reception ballrooms. Ideal for couples wanting a resort-style wedding with more accessible budget."
+        },
+        "capacity": { "min": 20, "max": 200 },
+        "priceRange": { "min": 100000, "max": 400000, "currency": "MXN" },
+        "highlights": [
+          { "es": "Vista al icónico Arco de Cabo San Lucas", "en": "View of the iconic Cabo San Lucas Arch" },
+          { "es": "Paquete todo incluido con coordinador", "en": "All-inclusive package with coordinator" },
+          { "es": "Múltiples ubicaciones dentro del resort", "en": "Multiple venues within the resort" }
+        ],
+        "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=400&fit=crop&q=80",
+        "lgbtqFriendly": true,
+        "accessibilityFeatures": ["wheelchair", "accessible-rooms", "accessible-bathrooms", "beach-wheelchair"]
+      },
+      {
+        "id": "flora-farm",
+        "name": "Flora Farms",
+        "type": "restaurante",
+        "description": {
+          "es": "Granja orgánica y restaurante en la Sierra de la Laguna, una experiencia única para bodas al aire libre. Ambiente rústico-chic entre huertos, pérgolas con flores y mesas de madera. Los ingredientes de la cena se cosechan el mismo día en la granja.",
+          "en": "Organic farm and restaurant in the Sierra de la Laguna, a unique experience for outdoor weddings. Rustic-chic atmosphere among orchards, flower pergolas and wooden tables. Dinner ingredients are harvested the same day on the farm."
+        },
+        "capacity": { "min": 20, "max": 180 },
+        "priceRange": { "min": 180000, "max": 600000, "currency": "MXN" },
+        "highlights": [
+          { "es": "Concepto farm-to-table auténtico", "en": "Authentic farm-to-table concept" },
+          { "es": "Ambiente rústico entre huertos orgánicos", "en": "Rustic atmosphere among organic orchards" },
+          { "es": "Mezcalería y pizzería en leña", "en": "Mezcal bar and wood-fired pizza oven" }
+        ],
+        "image": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&h=400&fit=crop&q=80",
+        "lgbtqFriendly": true,
+        "accessibilityFeatures": ["accessible-bathrooms"]
+      }
+    ],
+    "bacheloretteIdeas": [
+      {
+        "id": "yate-atardecer",
+        "name": { "es": "Catamarán al atardecer", "en": "Sunset Catamaran" },
+        "description": { "es": "Navegación privada en catamarán frente al Arco con barra libre, música y cena. Ideal para grupos de 8-20 personas.", "en": "Private catamaran cruise by the Arch with open bar, music and dinner. Ideal for groups of 8-20 people." },
+        "priceRange": { "min": 15000, "max": 60000, "currency": "MXN" },
+        "duration": { "es": "3-4 horas", "en": "3-4 hours" },
+        "icon": "⛵"
+      },
+      {
+        "id": "spa-day-cabo",
+        "name": { "es": "Día de spa en resort", "en": "Resort spa day" },
+        "description": { "es": "Experiencia completa de spa (masaje, facial, baño de vapor) en un resort 5 estrellas, con brunch y piscina privada.", "en": "Full spa experience (massage, facial, steam bath) at a 5-star resort, with brunch and private pool." },
+        "priceRange": { "min": 6000, "max": 18000, "currency": "MXN" },
+        "duration": { "es": "6-8 horas", "en": "6-8 hours" },
+        "icon": "💆"
+      },
+      {
+        "id": "cabalgata-playa",
+        "name": { "es": "Cabalgata en la playa", "en": "Beach horseback riding" },
+        "description": { "es": "Paseo a caballo por las playas del Pacífico con guía, seguido de cóctel al atardecer. Fotógrafa opcional.", "en": "Horseback ride along Pacific beaches with guide, followed by sunset cocktail. Optional photographer." },
+        "priceRange": { "min": 2500, "max": 8000, "currency": "MXN" },
+        "duration": { "es": "2-3 horas", "en": "2-3 hours" },
+        "icon": "🐴"
+      }
+    ],
+    "bachelorIdeas": [
+      {
+        "id": "pesca-deportiva",
+        "name": { "es": "Pesca deportiva", "en": "Sport fishing" },
+        "description": { "es": "Salida de pesca en el Mar de Cortés (apodado 'el acuario del mundo' por Cousteau) en busca de marlín, dorado y atún. Barco privado con tripulación y equipo.", "en": "Fishing trip in the Sea of Cortez (Cousteau called it 'the aquarium of the world') for marlin, mahi-mahi and tuna. Private boat with crew and equipment." },
+        "priceRange": { "min": 15000, "max": 50000, "currency": "MXN" },
+        "duration": { "es": "6-8 horas", "en": "6-8 hours" },
+        "icon": "🎣"
+      },
+      {
+        "id": "golf-cabo",
+        "name": { "es": "Ronda de golf premium", "en": "Premium golf round" },
+        "description": { "es": "18 hoyos en campos diseñados por Jack Nicklaus, Tiger Woods o Tom Fazio. Con caddies, carros de golf y vista al mar en cada tiro.", "en": "18 holes on courses designed by Jack Nicklaus, Tiger Woods or Tom Fazio. With caddies, golf carts and ocean views on every shot." },
+        "priceRange": { "min": 6000, "max": 25000, "currency": "MXN" },
+        "duration": { "es": "5-6 horas", "en": "5-6 hours" },
+        "icon": "⛳"
+      },
+      {
+        "id": "mezcal-tasting",
+        "name": { "es": "Cata de mezcal y tequila", "en": "Mezcal and tequila tasting" },
+        "description": { "es": "Cata guiada en mezcalería local con 8-12 variedades, maridaje con botanas mexicanas y lecciones de historia del destilado.", "en": "Guided tasting at a local mezcaleria with 8-12 varieties, paired with Mexican snacks and distillate history lessons." },
+        "priceRange": { "min": 2000, "max": 5000, "currency": "MXN" },
+        "duration": { "es": "2-3 horas", "en": "2-3 hours" },
+        "icon": "🥃"
+      }
+    ],
+    "lgbtq": {
+      "legalStatus": {
+        "es": "El matrimonio igualitario es legal en Baja California Sur desde 2019 y en todo México desde 2022. Los Cabos es un destino muy acogedor con parejas del mismo sexo y tiene múltiples resorts certificados como LGBTIQ+ friendly.",
+        "en": "Same-sex marriage is legal in Baja California Sur since 2019 and throughout Mexico since 2022. Los Cabos is very welcoming to same-sex couples and has multiple resorts certified as LGBTIQ+ friendly."
+      },
+      "tips": [
+        { "es": "Busca resorts con programa 'Unity' o 'Love Is Love' que ofrecen paquetes diseñados para parejas LGBTIQ+.", "en": "Look for resorts with 'Unity' or 'Love Is Love' programs offering packages designed for LGBTIQ+ couples." },
+        { "es": "Las parejas del mismo sexo pueden casarse civilmente en Los Cabos siguiendo el mismo proceso que las parejas heterosexuales.", "en": "Same-sex couples can marry civilly in Los Cabos following the same process as heterosexual couples." }
+      ],
+      "friendlyVenueIds": ["one-and-only-palmilla", "esperanza-auberge", "hyatt-ziva-cabo", "flora-farm"],
+      "prideInfo": {
+        "es": "Los Cabos celebra su Gay Pride en junio, con fiestas en bares, resorts y la marina de Cabo San Lucas.",
+        "en": "Los Cabos celebrates Gay Pride in June, with parties at bars, resorts and the Cabo San Lucas marina."
+      }
+    },
+    "accessibility": {
+      "overview": {
+        "es": "Los Cabos se ha modernizado mucho en accesibilidad: la mayoría de resorts 5 estrellas tienen habitaciones accesibles, rampas y baños adaptados. El aeropuerto tiene servicio completo de asistencia. Las playas privadas de los resorts suelen tener sillas anfibias y senderos accesibles hasta la arena.",
+        "en": "Los Cabos has modernized considerably in accessibility: most 5-star resorts have accessible rooms, ramps and adapted bathrooms. The airport has full assistance service. Private resort beaches usually have amphibious chairs and accessible paths to the sand."
+      },
+      "accessibleVenueIds": ["one-and-only-palmilla", "esperanza-auberge", "hyatt-ziva-cabo"],
+      "tips": [
+        { "es": "Hyatt Ziva ofrece sillas anfibias gratuitas para huéspedes y acceso a través de rampa hasta el mar.", "en": "Hyatt Ziva offers free amphibious beach wheelchairs for guests and ramp access to the sea." }
+      ],
+      "accessibleTransport": {
+        "es": "Aeropuerto SJD tiene servicio de asistencia, elevadores y baños adaptados. Para traslados, 'Cabo Accessible' ofrece vans con rampa. Uber también opera con vehículos estándar; para accesibilidad, solicita van adaptada con el hotel.",
+        "en": "SJD Airport has assistance service, elevators and adapted bathrooms. For transfers, 'Cabo Accessible' offers vans with ramps. Uber also operates with standard vehicles; for accessibility, request an adapted van through your hotel."
+      },
+      "accessibleBeaches": [
+        {
+          "name": "Playa El Médano",
+          "description": {
+            "es": "La playa principal de Cabo San Lucas, con acceso pavimentado, restaurantes con rampas y servicio de sillas de playa anfibias en algunos clubes. Mar tranquilo seguro para todos.",
+            "en": "Cabo San Lucas' main beach, with paved access, restaurants with ramps and amphibious beach wheelchair service at some clubs. Calm sea safe for everyone."
+          },
+          "features": ["wheelchair-ramp", "accessible-restaurants", "beach-wheelchair", "calm-waters"]
+        },
+        {
+          "name": "Playa Palmilla",
+          "description": {
+            "es": "Playa con acceso accesible desde el estacionamiento, ideal para nadar (aguas tranquilas del Mar de Cortés). Frente al One&Only Palmilla que presta sillas anfibias.",
+            "en": "Beach with accessible parking access, ideal for swimming (calm Sea of Cortez waters). In front of One&Only Palmilla which lends amphibious chairs."
+          },
+          "features": ["flat-access", "calm-waters", "beach-wheelchair"]
+        }
+      ]
+    },
+    "legal": {
+      "documents": [
+        { "es": "Actas de nacimiento apostilladas y traducidas al español", "en": "Apostilled birth certificates translated to Spanish" },
+        { "es": "Pasaportes vigentes de ambos contrayentes", "en": "Valid passports of both parties" },
+        { "es": "Exámenes de sangre en laboratorio autorizado en Baja California Sur (máx. 15 días antes)", "en": "Blood tests from authorized lab in Baja California Sur (max 15 days prior)" },
+        { "es": "Cuatro testigos con identificación oficial", "en": "Four witnesses with official ID" },
+        { "es": "Solicitud ante el Registro Civil de Los Cabos", "en": "Application at Los Cabos Civil Registry" }
+      ],
+      "process": {
+        "es": "El proceso en Los Cabos toma aproximadamente 5-7 días hábiles. Muchos resorts tienen wedding planners certificados que manejan todo el papeleo. La ceremonia legal puede oficiarse en el venue de elección pagando un extra al Registro Civil para que envíen un juez.",
+        "en": "The process in Los Cabos takes approximately 5-7 business days. Many resorts have certified wedding planners who handle all paperwork. The legal ceremony can be officiated at your chosen venue by paying an extra fee to the Civil Registry to send a judge."
+      },
+      "foreigners": {
+        "es": "Parejas extranjeras se casan fácilmente en Los Cabos. Todos los documentos extranjeros deben estar apostillados y traducidos por traductor certificado en México. El matrimonio es legalmente reconocido internacionalmente.",
+        "en": "Foreign couples easily marry in Los Cabos. All foreign documents must be apostilled and translated by a certified translator in Mexico. The marriage is internationally recognized legally."
+      }
+    },
+    "budget": {
+      "economy": { "min": 80000, "max": 180000, "currency": "MXN" },
+      "mid": { "min": 180000, "max": 400000, "currency": "MXN" },
+      "luxury": { "min": 400000, "max": 2000000, "currency": "MXN" },
+      "tips": [
+        { "es": "Los Cabos es más caro que Cancún (hasta 40% más en venues de lujo). Reserva con 12-18 meses de anticipación.", "en": "Los Cabos is pricier than Cancun (up to 40% more at luxury venues). Book 12-18 months ahead." },
+        { "es": "La temporada baja (agosto-octubre) tiene precios 30-50% más bajos pero con riesgo de calor extremo y tormentas tropicales esporádicas.", "en": "Low season (August-October) has 30-50% lower prices but with extreme heat and occasional tropical storm risk." },
+        { "es": "Los paquetes 'weddings wonder' o 'ultimate love' de los resorts incluyen mucho más que sumar servicios por separado.", "en": "Resort 'wedding wonder' or 'ultimate love' packages include much more than adding services separately." }
+      ]
+    },
+    "bestSeason": {
+      "es": "La mejor época para bodas en Los Cabos es de noviembre a mayo: clima seco, temperaturas agradables (20-28°C), atardeceres espectaculares y cero riesgo de lluvias. Evita julio-septiembre por calor extremo (hasta 40°C) y posibles tormentas. Junio y octubre son buenas opciones de temporada media.",
+      "en": "Best time for Los Cabos weddings is November to May: dry weather, pleasant temperatures (20-28°C/68-82°F), spectacular sunsets and zero rain risk. Avoid July-September due to extreme heat (up to 40°C/104°F) and possible storms. June and October are good shoulder-season options."
+    },
+    "faqs": [
+      {
+        "question": { "es": "¿Cuánto cuesta una boda en Los Cabos?", "en": "How much does a wedding in Los Cabos cost?" },
+        "answer": { "es": "Económica desde $80,000-180,000 MXN, rango medio $180,000-400,000 MXN, lujo desde $400,000 hasta $2,000,000 MXN o más. Los Cabos es conocido por bodas de alto presupuesto.", "en": "Economy from $80,000-180,000 MXN, mid-range $180,000-400,000 MXN, luxury from $400,000 to $2,000,000+ MXN. Los Cabos is known for higher-budget weddings." }
+      },
+      {
+        "question": { "es": "¿Cuál es la mejor época para casarse en Los Cabos?", "en": "What is the best time to get married in Los Cabos?" },
+        "answer": { "es": "Noviembre a mayo es ideal: clima seco, sin lluvias y atardeceres espectaculares. Marzo-abril es el pico de demanda.", "en": "November to May is ideal: dry weather, no rain and spectacular sunsets. March-April is peak demand." }
+      },
+      {
+        "question": { "es": "¿Puedo casarme en el Arco de Cabo San Lucas?", "en": "Can I get married at the Cabo San Lucas Arch?" },
+        "answer": { "es": "No es posible una ceremonia física en el Arco (formación rocosa frágil y mar abierto), pero puedes hacer tu ceremonia en Playa del Amor o Playa del Divorcio frente al Arco, o hacer una sesión de fotos en barco alrededor.", "en": "A physical ceremony at the Arch isn't possible (fragile rock formation and open sea), but you can have your ceremony at Playa del Amor or Playa del Divorcio facing the Arch, or do a photo session on a boat around it." }
+      }
+    ]
+  },
+  {
+    "id": "puerto-vallarta",
+    "slug": "puerto-vallarta",
+    "name": { "es": "Puerto Vallarta y Riviera Nayarit", "en": "Puerto Vallarta and Riviera Nayarit" },
+    "intro": {
+      "es": "Puerto Vallarta y la Riviera Nayarit forman uno de los destinos de boda más románticos y accesibles de México. Con la Sierra Madre al fondo, playas del Pacífico con atardeceres inolvidables, el encanto colonial del centro histórico con sus empedrados y la famosa inclusión LGBTIQ+ de Vallarta (considerado uno de los destinos más gay-friendly del mundo), es el lugar perfecto para celebrar el amor de cualquier pareja. La Riviera Nayarit al norte ofrece desde el pueblo bohemio de Sayulita hasta los resorts ultra-lujo de Punta Mita.",
+      "en": "Puerto Vallarta and the Riviera Nayarit form one of Mexico's most romantic and accessible wedding destinations. With the Sierra Madre backdrop, Pacific beaches with unforgettable sunsets, the colonial charm of the historic center with cobblestones and Vallarta's famous LGBTIQ+ inclusion (considered one of the world's most gay-friendly destinations), it's the perfect place to celebrate any couple's love. The Riviera Nayarit to the north offers everything from bohemian Sayulita to ultra-luxury Punta Mita resorts."
+    },
+    "venues": [
+      {
+        "id": "grand-velas-riviera-nayarit",
+        "name": "Grand Velas Riviera Nayarit",
+        "type": "hotel",
+        "description": {
+          "es": "Resort todo incluido AAA Five Diamond con ceremonias en playa privada, jardines tropicales o la Gran Capilla con diseño contemporáneo. Servicio butler personalizado, 10 restaurantes gourmet y uno de los mejores spas de México.",
+          "en": "AAA Five Diamond all-inclusive resort with ceremonies on private beach, tropical gardens or the Grand Chapel with contemporary design. Personalized butler service, 10 gourmet restaurants and one of Mexico's best spas."
+        },
+        "capacity": { "min": 20, "max": 300 },
+        "priceRange": { "min": 200000, "max": 800000, "currency": "MXN" },
+        "highlights": [
+          { "es": "AAA Five Diamond: el más alto reconocimiento hotelero", "en": "AAA Five Diamond: the highest hospitality recognition" },
+          { "es": "10 restaurantes y 10 bares incluidos", "en": "10 restaurants and 10 bars included" },
+          { "es": "Gran Capilla con arquitectura contemporánea", "en": "Grand Chapel with contemporary architecture" }
+        ],
+        "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&h=400&fit=crop&q=80",
+        "lgbtqFriendly": true,
+        "accessibilityFeatures": ["wheelchair", "accessible-rooms", "accessible-bathrooms"]
+      },
+      {
+        "id": "st-regis-punta-mita",
+        "name": "St. Regis Punta Mita",
+        "type": "hotel",
+        "description": {
+          "es": "Resort de ultra-lujo en la península de Punta Mita con 3 playas privadas y dos campos de golf Jack Nicklaus. Ceremonias en el Salón Altamira con vista a 180° del Pacífico o en gazebo frente al mar. Servicio butler 24 horas.",
+          "en": "Ultra-luxury resort on the Punta Mita peninsula with 3 private beaches and two Jack Nicklaus golf courses. Ceremonies in the Altamira Ballroom with 180° Pacific views or in the beachfront gazebo. 24-hour butler service."
+        },
+        "capacity": { "min": 10, "max": 250 },
+        "priceRange": { "min": 300000, "max": 1200000, "currency": "MXN" },
+        "highlights": [
+          { "es": "Península exclusiva con 3 playas privadas", "en": "Exclusive peninsula with 3 private beaches" },
+          { "es": "Campos de golf Jack Nicklaus Signature", "en": "Jack Nicklaus Signature golf courses" },
+          { "es": "Servicio butler 24 horas", "en": "24-hour butler service" }
+        ],
+        "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=400&fit=crop&q=80",
+        "lgbtqFriendly": true,
+        "accessibilityFeatures": ["wheelchair", "accessible-rooms", "accessible-bathrooms"]
+      },
+      {
+        "id": "hacienda-san-angel",
+        "name": "Hacienda San Ángel",
+        "type": "hotel",
+        "description": {
+          "es": "Hotel boutique en el centro histórico de Puerto Vallarta, antigua casa de Richard Burton. Terrazas con vista a la bahía y la icónica Parroquia de Guadalupe. Ambiente íntimo y romántico para bodas de 20-80 invitados.",
+          "en": "Boutique hotel in downtown Puerto Vallarta, former home of Richard Burton. Terraces with views of the bay and the iconic Guadalupe Church. Intimate, romantic atmosphere for weddings of 20-80 guests."
+        },
+        "capacity": { "min": 10, "max": 80 },
+        "priceRange": { "min": 120000, "max": 400000, "currency": "MXN" },
+        "highlights": [
+          { "es": "Vista panorámica a la Bahía de Banderas", "en": "Panoramic views of Banderas Bay" },
+          { "es": "Arquitectura colonial auténtica", "en": "Authentic colonial architecture" },
+          { "es": "A pasos del malecón y la Zona Romántica", "en": "Steps from the malecón and Romantic Zone" }
+        ],
+        "image": "https://images.unsplash.com/photo-1586611292717-f828b167408c?w=600&h=400&fit=crop&q=80",
+        "lgbtqFriendly": true,
+        "accessibilityFeatures": ["accessible-bathrooms"]
+      },
+      {
+        "id": "sayulita-beach-venues",
+        "name": "Hoteles boutique de Sayulita",
+        "type": "hotel",
+        "description": {
+          "es": "Para parejas que buscan una boda bohemia y relajada, Sayulita ofrece casas privadas y hoteles boutique frente al mar. Ceremonias en la playa con decoración natural (flores tropicales, madera recuperada, conchas). Ideal para bodas de 30-100 personas con ambiente hippie-chic.",
+          "en": "For couples seeking a bohemian, relaxed wedding, Sayulita offers private villas and beachfront boutique hotels. Beach ceremonies with natural decor (tropical flowers, reclaimed wood, shells). Ideal for 30-100 person weddings with hippie-chic vibe."
+        },
+        "capacity": { "min": 20, "max": 100 },
+        "priceRange": { "min": 80000, "max": 300000, "currency": "MXN" },
+        "highlights": [
+          { "es": "Ambiente bohemio y relajado", "en": "Bohemian and relaxed atmosphere" },
+          { "es": "Casas privadas frente al mar", "en": "Private beachfront villas" },
+          { "es": "Conexión cultural con comunidades huicholes", "en": "Cultural connection with Huichol communities" }
+        ],
+        "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&h=400&fit=crop&q=80",
+        "lgbtqFriendly": true,
+        "accessibilityFeatures": []
+      }
+    ],
+    "bacheloretteIdeas": [
+      {
+        "id": "islas-marietas",
+        "name": { "es": "Tour a Islas Marietas", "en": "Marietas Islands tour" },
+        "description": { "es": "Barco privado a las Islas Marietas con snorkel, visita a la famosa Playa del Amor (Hidden Beach) y comida a bordo.", "en": "Private boat to Marietas Islands with snorkeling, visit to the famous Hidden Beach (Playa del Amor), and onboard lunch." },
+        "priceRange": { "min": 12000, "max": 50000, "currency": "MXN" },
+        "duration": { "es": "6-8 horas", "en": "6-8 hours" },
+        "icon": "🏝️"
+      },
+      {
+        "id": "clase-surf",
+        "name": { "es": "Clase de surf en Sayulita", "en": "Surf lesson in Sayulita" },
+        "description": { "es": "Aprende a surfear con instructoras en las olas ideales para principiantes de Sayulita. Incluye tabla, traje y fotos.", "en": "Learn to surf with instructors on Sayulita's ideal beginner waves. Includes board, wetsuit and photos." },
+        "priceRange": { "min": 2500, "max": 8000, "currency": "MXN" },
+        "duration": { "es": "2-3 horas", "en": "2-3 hours" },
+        "icon": "🏄‍♀️"
+      },
+      {
+        "id": "dia-spa-vallarta",
+        "name": { "es": "Spa day con vista al mar", "en": "Spa day with ocean views" },
+        "description": { "es": "Experiencia completa de spa en un resort de lujo con masaje, facial, baños termales y almuerzo saludable frente al Pacífico.", "en": "Complete spa experience at a luxury resort with massage, facial, thermal baths and healthy lunch facing the Pacific." },
+        "priceRange": { "min": 5000, "max": 18000, "currency": "MXN" },
+        "duration": { "es": "4-6 horas", "en": "4-6 hours" },
+        "icon": "💆"
+      }
+    ],
+    "bachelorIdeas": [
+      {
+        "id": "ziplining-selva",
+        "name": { "es": "Canopy en la selva", "en": "Jungle zipline canopy" },
+        "description": { "es": "Aventura de tirolesas sobre el dosel de la selva tropical con plataformas, puentes colgantes y descenso en rappel. Incluye transporte y almuerzo.", "en": "Zipline adventure over tropical jungle canopy with platforms, hanging bridges and rappel descent. Includes transport and lunch." },
+        "priceRange": { "min": 2000, "max": 5000, "currency": "MXN" },
+        "duration": { "es": "5-6 horas", "en": "5-6 hours" },
+        "icon": "🪢"
+      },
+      {
+        "id": "pesca-pacifico",
+        "name": { "es": "Pesca deportiva en Pacífico", "en": "Pacific sport fishing" },
+        "description": { "es": "Salida en yate de pesca privado en búsqueda de marlín, pez vela y dorado. Tripulación experimentada y equipo premium.", "en": "Private fishing yacht trip for marlin, sailfish and mahi-mahi. Experienced crew and premium equipment." },
+        "priceRange": { "min": 15000, "max": 45000, "currency": "MXN" },
+        "duration": { "es": "6-8 horas", "en": "6-8 hours" },
+        "icon": "🎣"
+      },
+      {
+        "id": "raicilla-tasting",
+        "name": { "es": "Cata de raicilla", "en": "Raicilla tasting" },
+        "description": { "es": "La 'raicilla' es el destilado autóctono de Jalisco, precursor del tequila. Cata en destilería artesanal con 8-12 variedades y botana local.", "en": "'Raicilla' is Jalisco's native distillate, predecessor of tequila. Tasting at artisanal distillery with 8-12 varieties and local snacks." },
+        "priceRange": { "min": 1500, "max": 4000, "currency": "MXN" },
+        "duration": { "es": "2-3 horas", "en": "2-3 hours" },
+        "icon": "🥃"
+      }
+    ],
+    "lgbtq": {
+      "legalStatus": {
+        "es": "El matrimonio igualitario es legal en Jalisco desde 2016 y en Nayarit desde 2019, y en todo México desde 2022. Puerto Vallarta es considerado uno de los destinos más gay-friendly del mundo, con una gran comunidad LGBTIQ+ establecida y múltiples resorts certificados.",
+        "en": "Same-sex marriage is legal in Jalisco since 2016, in Nayarit since 2019, and throughout Mexico since 2022. Puerto Vallarta is considered one of the world's most gay-friendly destinations, with a large established LGBTIQ+ community and multiple certified resorts."
+      },
+      "tips": [
+        { "es": "La Zona Romántica de Vallarta es el corazón gay del destino, con bares, restaurantes y hoteles LGBTIQ+ friendly. Es donde muchas parejas celebran la despedida de soltero antes de la boda.", "en": "Vallarta's Zona Romantica is the gay heart of the destination, with LGBTIQ+ friendly bars, restaurants and hotels. Many couples hold their bachelor parties here before the wedding." },
+        { "es": "Puerto Vallarta tiene el Pride más grande de la costa pacífica mexicana, cada mayo.", "en": "Puerto Vallarta holds the largest Pride on Mexico's Pacific coast, every May." }
+      ],
+      "friendlyVenueIds": ["grand-velas-riviera-nayarit", "st-regis-punta-mita", "hacienda-san-angel", "sayulita-beach-venues"],
+      "prideInfo": {
+        "es": "Vallarta Pride se celebra cada año en mayo con desfiles, fiestas, cenas benéficas y conferencias. Una de las celebraciones de orgullo más reconocidas de América Latina.",
+        "en": "Vallarta Pride is celebrated every May with parades, parties, charity dinners and conferences. One of Latin America's most recognized Pride celebrations."
+      }
+    },
+    "accessibility": {
+      "overview": {
+        "es": "Puerto Vallarta ha mejorado significativamente en accesibilidad. El malecón está pavimentado y tiene rampas en toda su extensión. Los resorts de la Riviera Nayarit suelen tener habitaciones accesibles, aunque la Zona Romántica con sus calles empedradas sigue siendo difícil para sillas de ruedas.",
+        "en": "Puerto Vallarta has significantly improved in accessibility. The malecón is paved with ramps throughout. Riviera Nayarit resorts usually have accessible rooms, though the Romantic Zone with its cobblestones remains challenging for wheelchairs."
+      },
+      "accessibleVenueIds": ["grand-velas-riviera-nayarit", "st-regis-punta-mita"],
+      "tips": [
+        { "es": "Grand Velas y St. Regis tienen sillas anfibias y rampas a la playa. Verifica disponibilidad al reservar.", "en": "Grand Velas and St. Regis have amphibious chairs and beach ramps. Check availability when booking." }
+      ],
+      "accessibleTransport": {
+        "es": "Aeropuerto PVR con servicio de asistencia completo. Para traslados, 'Vallarta Accesible' ofrece vans con rampa. Muchos hoteles coordinan transporte adaptado.",
+        "en": "PVR Airport with full assistance service. For transfers, 'Vallarta Accesible' offers vans with ramps. Many hotels coordinate adapted transport."
+      },
+      "accessibleBeaches": [
+        {
+          "name": "Playa Los Muertos",
+          "description": {
+            "es": "Playa principal de la Zona Romántica con acceso por rampa desde el pier, silla anfibia disponible y restaurantes de playa accesibles.",
+            "en": "Main beach in the Zona Romantica with ramp access from the pier, amphibious chair available and accessible beach restaurants."
+          },
+          "features": ["wheelchair-ramp", "beach-wheelchair", "accessible-restaurants"]
+        },
+        {
+          "name": "Playa Camarones",
+          "description": {
+            "es": "Al norte del malecón, con sombrillas, sillas y servicio de bebida hasta la orilla. Acceso plano desde el paseo.",
+            "en": "North of the malecón, with umbrellas, chairs and drink service at the shoreline. Flat access from the boardwalk."
+          },
+          "features": ["flat-access", "beach-service"]
+        }
+      ]
+    },
+    "legal": {
+      "documents": [
+        { "es": "Actas de nacimiento apostilladas y traducidas", "en": "Apostilled and translated birth certificates" },
+        { "es": "Pasaportes vigentes", "en": "Valid passports" },
+        { "es": "Exámenes de sangre en laboratorio autorizado en Jalisco o Nayarit", "en": "Blood tests from authorized Jalisco or Nayarit lab" },
+        { "es": "Cuatro testigos con identificación oficial", "en": "Four witnesses with official ID" },
+        { "es": "Solicitud ante el Registro Civil local", "en": "Application at local Civil Registry" }
+      ],
+      "process": {
+        "es": "El proceso en Puerto Vallarta toma 5-7 días hábiles. Hay wedding planners especializadas en manejar el papeleo para parejas extranjeras. El juez puede desplazarse al venue por un extra. En la Riviera Nayarit el proceso es similar.",
+        "en": "The process in Puerto Vallarta takes 5-7 business days. There are specialized wedding planners who handle paperwork for foreign couples. The judge can travel to your venue for an extra fee. The process is similar in Riviera Nayarit."
+      },
+      "foreigners": {
+        "es": "Puerto Vallarta tiene mucha experiencia con bodas de parejas extranjeras, especialmente de Estados Unidos y Canadá. Los wedding planners locales manejan toda la apostilla, traducción y trámites.",
+        "en": "Puerto Vallarta has extensive experience with foreign couple weddings, especially from the US and Canada. Local wedding planners handle all apostille, translation and paperwork."
+      }
+    },
+    "budget": {
+      "economy": { "min": 60000, "max": 150000, "currency": "MXN" },
+      "mid": { "min": 150000, "max": 350000, "currency": "MXN" },
+      "luxury": { "min": 350000, "max": 1500000, "currency": "MXN" },
+      "tips": [
+        { "es": "Sayulita ofrece bodas boho más económicas (30-50% menos) que Punta Mita o Puerto Vallarta centro.", "en": "Sayulita offers more affordable boho weddings (30-50% less) than Punta Mita or downtown Puerto Vallarta." },
+        { "es": "Los resorts con programa 'Unlimited Weddings' incluyen la ceremonia gratis si hospedas 5+ habitaciones.", "en": "Resorts with 'Unlimited Weddings' programs include the ceremony free if you book 5+ rooms." },
+        { "es": "Temporada alta: diciembre-abril. Temporada baja con precios 35-50% más bajos: septiembre-octubre.", "en": "High season: December-April. Low season with 35-50% lower prices: September-October." }
+      ]
+    },
+    "bestSeason": {
+      "es": "Mejor época: noviembre a mayo (temporada seca, 22-30°C). Diciembre-abril es temporada alta con el clima más fresco. Mayo y noviembre son excelentes con buen clima y menos precios. Evita julio-octubre por lluvias y humedad alta, aunque las tardes aún son fotogénicas.",
+      "en": "Best time: November to May (dry season, 22-30°C/72-86°F). December-April is peak season with coolest weather. May and November are excellent with good weather and lower prices. Avoid July-October due to rain and high humidity, though afternoons are still photogenic."
+    },
+    "faqs": [
+      {
+        "question": { "es": "¿Cuánto cuesta una boda en Puerto Vallarta?", "en": "How much does a wedding in Puerto Vallarta cost?" },
+        "answer": { "es": "Económica $60,000-150,000 MXN, media $150,000-350,000 MXN, lujo $350,000-1,500,000 MXN. Sayulita es la opción más económica, Punta Mita la más lujosa.", "en": "Economy $60,000-150,000 MXN, mid $150,000-350,000 MXN, luxury $350,000-1,500,000 MXN. Sayulita is the most affordable option, Punta Mita the most luxurious." }
+      },
+      {
+        "question": { "es": "¿Puerto Vallarta es seguro para bodas LGBTIQ+?", "en": "Is Puerto Vallarta safe for LGBTIQ+ weddings?" },
+        "answer": { "es": "Totalmente. Puerto Vallarta es uno de los destinos más gay-friendly del mundo, con matrimonio igualitario legal desde 2016 en Jalisco. Cientos de bodas LGBTIQ+ se celebran aquí cada año.", "en": "Absolutely. Puerto Vallarta is one of the world's most gay-friendly destinations, with same-sex marriage legal since 2016 in Jalisco. Hundreds of LGBTIQ+ weddings are celebrated here each year." }
+      },
+      {
+        "question": { "es": "¿Conviene más Puerto Vallarta centro o la Riviera Nayarit?", "en": "Is Puerto Vallarta downtown or Riviera Nayarit better?" },
+        "answer": { "es": "Depende del estilo: Vallarta centro tiene encanto colonial y vida nocturna; Riviera Nayarit tiene playas más exclusivas y privadas. Punta Mita para ultra-lujo, Sayulita para ambiente bohemio.", "en": "Depends on the style: Vallarta downtown has colonial charm and nightlife; Riviera Nayarit has more exclusive, private beaches. Punta Mita for ultra-luxury, Sayulita for bohemian vibe." }
+      }
+    ]
   }
 ]

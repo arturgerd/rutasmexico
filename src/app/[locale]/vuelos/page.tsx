@@ -3,6 +3,7 @@ import { setRequestLocale } from "next-intl/server";
 import { getAllAirports } from "@/lib/data/airports";
 import AviasalesEmbed from "@/components/widgets/AviasalesEmbed";
 import AirlineGrid from "@/components/widgets/AirlineGrid";
+import FlightsGuide from "@/components/editorial/FlightsGuide";
 import { PAGE_HERO_IMAGES } from "@/lib/destination-images";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
@@ -59,6 +60,9 @@ export default async function VuelosPage({ params: { locale } }: { params: { loc
         <div className="container-custom -mt-8 relative z-20">
           {/* Main search embed */}
           <AviasalesEmbed airports={airports} />
+
+          {/* Editorial guide - main content for AdSense compliance */}
+          <FlightsGuide locale={locale} />
 
           {/* Airline grid section */}
           <div className="mt-12">

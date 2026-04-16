@@ -1,6 +1,6 @@
 import { LocalizedString } from "./common";
 
-export type BlogCategory = "guia-destino" | "tips-viaje" | "transporte";
+export type BlogCategory = "guia-destino" | "tips-viaje" | "transporte" | "gastronomia" | "cultura";
 
 export interface BlogPost {
   id: string;

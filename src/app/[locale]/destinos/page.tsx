@@ -2,6 +2,7 @@ import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getAllDestinations } from "@/lib/data/destinations";
 import DestinationGrid from "@/components/destinations/DestinationGrid";
+import DestinationsGuide from "@/components/editorial/DestinationsGuide";
 import { PAGE_HERO_IMAGES } from "@/lib/destination-images";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
@@ -51,6 +52,7 @@ export default async function DestinosPage({ params: { locale } }: { params: { l
       <div className="bg-arena-50 pb-12">
         <div className="container-custom -mt-4 relative z-20">
           <DestinationGrid destinations={destinations} />
+          <DestinationsGuide locale={locale} />
         </div>
       </div>
     </div>

@@ -39,6 +39,11 @@ export default function Footer() {
                   {tc("popularRoutes")}
                 </Link>
               </li>
+              <li>
+                <Link href={`/${locale}/nosotros`} className="hover:text-terracotta-400 transition-colors">
+                  {t("aboutUs")}
+                </Link>
+              </li>
             </ul>
           </div>
 

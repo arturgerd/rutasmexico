@@ -8,6 +8,7 @@ import HowItWorks from "@/components/home/HowItWorks";
 import MapSection from "@/components/home/MapSection";
 import AirlineComparisonSection from "@/components/home/AirlineComparisonSection";
 import RecentBlogPosts from "@/components/home/RecentBlogPosts";
+import WhyMexicoSection from "@/components/editorial/WhyMexicoSection";
 
 export default async function HomePage({ params: { locale } }: { params: { locale: string } }) {
   setRequestLocale(locale);
@@ -20,6 +21,7 @@ export default async function HomePage({ params: { locale } }: { params: { local
   return (
     <>
       <HeroSection airports={airports} />
+      <WhyMexicoSection locale={locale} />
       <AirlineComparisonSection />
       <MapSection destinations={destinations} />
       <FeaturedDestinations destinations={destinations.slice(0, 6)} />

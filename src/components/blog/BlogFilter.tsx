@@ -16,6 +16,8 @@ const CATEGORIES: { id: "all" | BlogCategory; labelEs: string; labelEn: string; 
   { id: "guia-destino", labelEs: "Guías de destino", labelEn: "Destination Guides", labelFr: "Guides de destination", emoji: "🗺️" },
   { id: "tips-viaje", labelEs: "Tips de viaje", labelEn: "Travel Tips", labelFr: "Conseils de voyage", emoji: "💡" },
   { id: "transporte", labelEs: "Transporte", labelEn: "Transportation", labelFr: "Transport", emoji: "🚌" },
+  { id: "gastronomia", labelEs: "Gastronomía", labelEn: "Food & Drink", labelFr: "Gastronomie", emoji: "🌮" },
+  { id: "cultura", labelEs: "Cultura", labelEn: "Culture", labelFr: "Culture", emoji: "🎭" },
 ];
 
 export default function BlogFilter({ posts }: BlogFilterProps) {

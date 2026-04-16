@@ -19,6 +19,8 @@ export default function Header() {
 
   const weddingLabel = locale === "es" ? "💍 Bodas" : locale === "fr" ? "💍 Mariages" : "💍 Weddings";
 
+  const aboutLabel = locale === "es" ? "Nosotros" : locale === "fr" ? "À propos" : "About";
+
   const navLinks = [
     { href: `/${locale}`, label: homeLabel },
     { href: `/${locale}/vuelos`, label: flightLabel },
@@ -28,6 +30,7 @@ export default function Header() {
     { href: `/${locale}/destinos`, label: t("allDestinations") },
     { href: `/${locale}/rutas`, label: t("popularRoutes") },
     { href: `/${locale}/blog`, label: blogLabel },
+    { href: `/${locale}/nosotros`, label: aboutLabel },
   ];
 
   return (
