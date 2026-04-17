@@ -24,7 +24,7 @@
       "es": "La Ciudad de México, construida sobre las ruinas de la gran Tenochtitlán, es una de las ciudades más grandes y fascinantes del continente americano. Su Centro Histórico, declarado Patrimonio de la Humanidad por la UNESCO, alberga el Templo Mayor azteca junto a la imponente Catedral Metropolitana. Barrios como Coyoacán, Roma y Condesa ofrecen una mezcla única de cultura, arte y gastronomía. Desde los murales de Diego Rivera en el Palacio Nacional hasta los canales de Xochimilco, la ciudad ofrece experiencias inigualables para todo tipo de viajero.",
       "en": "Mexico City, built upon the ruins of the great Tenochtitlan, is one of the largest and most fascinating cities in the Americas. Its Historic Center, a UNESCO World Heritage Site, houses the Aztec Templo Mayor alongside the imposing Metropolitan Cathedral. Neighborhoods like Coyoacán, Roma, and Condesa offer a unique blend of culture, art, and gastronomy. From Diego Rivera's murals at the National Palace to the canals of Xochimilco, the city offers unparalleled experiences for every type of traveler."
     },
-    "heroImage": "/images/destinations/cdmx.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1585464231875-d9ef1f5ad396?w=800&h=500&fit=crop&q=80",
     "highlights": [
       {
         "es": "Museo Nacional de Antropología, uno de los mejores museos del mundo con la Piedra del Sol y artefactos mayas",
@@ -151,7 +151,7 @@
       "es": "Cancún es el destino de playa más famoso de México, ubicado en la costa caribeña de la Península de Yucatán. Su Zona Hotelera, una franja de tierra en forma de 7, alberga resorts de clase mundial frente a aguas turquesa. Más allá de las playas, Cancún es la puerta de entrada a las ruinas mayas de Chichén Itzá, Tulum y Cobá, así como a cenotes subterráneos espectaculares. El centro de Cancún ofrece una experiencia más auténtica con mercados locales, taquerías y vida nocturna accesible. La barrera de coral mesoamericana, la segunda más grande del mundo, ofrece snorkel y buceo excepcionales.",
       "en": "Cancún is Mexico's most famous beach destination, located on the Caribbean coast of the Yucatán Peninsula. Its Hotel Zone, a 7-shaped strip of land, hosts world-class resorts facing turquoise waters. Beyond the beaches, Cancún is the gateway to the Mayan ruins of Chichén Itzá, Tulum, and Cobá, as well as spectacular underground cenotes. Downtown Cancún offers a more authentic experience with local markets, taquerías, and accessible nightlife. The Mesoamerican Barrier Reef, the world's second largest, offers exceptional snorkeling and diving."
     },
-    "heroImage": "/images/destinations/cancun.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1510097467424-192d713fd8b2?w=800&h=500&fit=crop&q=80",
     "highlights": [
       {
         "es": "Playas de arena blanca como Playa Delfines y Playa Norte en Isla Mujeres",
@@ -278,7 +278,7 @@
       "es": "Oaxaca de Juárez, enclavada en un valle rodeado de montañas en el sur de México, es una joya colonial donde convergen 16 grupos indígenas con tradiciones vivas. Su Centro Histórico, Patrimonio de la Humanidad, está lleno de templos barrocos, mercados bulliciosos y galerías de arte contemporáneo. La gastronomía oaxaqueña, considerada la más compleja de México, incluye siete variedades de mole, tlayudas, chapulines y mezcal artesanal. Las ruinas zapotecas de Monte Albán dominan el valle desde lo alto, mientras que los pueblos de los Valles Centrales mantienen vivas tradiciones de tejido, barro negro y alebrijes.",
       "en": "Oaxaca de Juárez, nestled in a valley surrounded by mountains in southern Mexico, is a colonial gem where 16 indigenous groups converge with living traditions. Its Historic Center, a UNESCO World Heritage Site, is filled with baroque temples, bustling markets, and contemporary art galleries. Oaxacan cuisine, considered Mexico's most complex, includes seven varieties of mole, tlayudas, chapulines, and artisanal mezcal. The Zapotec ruins of Monte Albán dominate the valley from above, while the Central Valleys villages keep alive traditions of weaving, black clay pottery, and alebrijes."
     },
-    "heroImage": "/images/destinations/oaxaca.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800&h=500&fit=crop&q=80",
     "highlights": [
       {
         "es": "Zona arqueológica de Monte Albán, antigua capital zapoteca con vistas panorámicas del valle",
@@ -397,7 +397,7 @@
       "es": "Guadalajara, la Perla de Occidente, es la capital del estado de Jalisco y el epicentro de la cultura mexicana más reconocida internacionalmente. Aquí nacieron el mariachi, el tequila y la charrería. Su Centro Histórico impresiona con la Catedral, el Teatro Degollado y el Instituto Cultural Cabañas, donde se encuentran los murales de Orozco. El barrio de Tlaquepaque ofrece artesanías y galerías de arte, mientras que Zapopan alberga la Basílica con la imagen más venerada de Jalisco. La ciudad es también un polo tecnológico conocido como el Silicon Valley mexicano y cuenta con una vibrante escena cultural y nocturna.",
       "en": "Guadalajara, the Pearl of the West, is the capital of Jalisco state and the epicenter of Mexico's most internationally recognized culture. Mariachi, tequila, and charrería were born here. Its Historic Center impresses with the Cathedral, Teatro Degollado, and the Instituto Cultural Cabañas, housing Orozco's murals. The Tlaquepaque neighborhood offers crafts and art galleries, while Zapopan houses the Basilica with Jalisco's most venerated image. The city is also a tech hub known as Mexico's Silicon Valley and features a vibrant cultural and nightlife scene."
     },
-    "heroImage": "/images/destinations/guadalajara.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1566438480900-0609be27a4be?w=800&h=500&fit=crop&q=80",
     "highlights": [
       {
         "es": "Instituto Cultural Cabañas con los impresionantes murales de José Clemente Orozco, Patrimonio de la Humanidad",
@@ -516,7 +516,7 @@
       "es": "Puerto Vallarta, en la costa del Pacífico de Jalisco, combina playas doradas con un encantador centro histórico de calles empedradas y techos de teja roja. El Malecón, su icónico paseo costero lleno de esculturas y arte público, conecta el centro con la Zona Romántica, un barrio bohemio con galerías, restaurantes y vida nocturna. La Bahía de Banderas ofrece avistamiento de ballenas jorobadas en invierno, snorkel en las Islas Marietas y deportes acuáticos. Las montañas circundantes permiten tirolesas, paseos a caballo y excursiones a pueblos como San Sebastián del Oeste. La escena gastronómica rivaliza con la de grandes ciudades mexicanas.",
       "en": "Puerto Vallarta, on Jalisco's Pacific coast, combines golden beaches with a charming historic center of cobblestone streets and red-tile roofs. The Malecón, its iconic seafront promenade full of sculptures and public art, connects the center to the Romantic Zone, a bohemian neighborhood with galleries, restaurants, and nightlife. Banderas Bay offers humpback whale watching in winter, snorkeling at the Marieta Islands, and water sports. The surrounding mountains allow zip-lining, horseback riding, and excursions to villages like San Sebastián del Oeste. The dining scene rivals that of major Mexican cities."
     },
-    "heroImage": "/images/destinations/puerto-vallarta.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1578469550956-0e16b69c6a3d?w=800&h=500&fit=crop&q=80",
     "highlights": [
       {
         "es": "Paseo por el Malecón al atardecer con sus esculturas, artistas callejeros y vista al mar",
@@ -623,7 +623,7 @@
       "es": "Los Cabos abarca dos ciudades: San José del Cabo, un tranquilo pueblo colonial con galerías de arte y un estero natural, y Cabo San Lucas, conocido por su vida nocturna y el famoso Arco donde el Pacífico se encuentra con el Mar de Cortés. El Corredor Turístico que las conecta alberga resorts y campos de golf de talla mundial. Las aguas de Los Cabos son un santuario marino donde se avistan ballenas grises y jorobadas, mantarrayas gigantes y el tiburón ballena. La gastronomía de Baja fusiona ingredientes del mar con la tradición mexicana y técnicas internacionales, creando la reconocida cocina Baja Med.",
       "en": "Los Cabos encompasses two cities: San José del Cabo, a quiet colonial town with art galleries and a natural estuary, and Cabo San Lucas, known for its nightlife and the famous Arch where the Pacific meets the Sea of Cortez. The Tourist Corridor connecting them houses world-class resorts and golf courses. Los Cabos' waters are a marine sanctuary where gray and humpback whales, giant manta rays, and whale sharks are spotted. The gastronomy of Baja fuses seafood ingredients with Mexican tradition and international techniques, creating the renowned Baja Med cuisine."
     },
-    "heroImage": "/images/destinations/los-cabos.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&h=500&fit=crop&q=80",
     "highlights": [
       {
         "es": "El Arco de Cabo San Lucas, la formación rocosa icónica donde se unen el Pacífico y el Mar de Cortés",
@@ -726,7 +726,7 @@
       "es": "Mérida, fundada en 1542 sobre la ciudad maya de T'Hó, es una ciudad colonial elegante conocida como la Ciudad Blanca por sus edificios de piedra caliza. El Paseo de Montejo, inspirado en los Campos Elíseos, está flanqueado por mansiones del auge henequenero del siglo XIX. La ciudad es la puerta de entrada a Chichén Itzá, Uxmal y la Ruta Puuc de sitios mayas. La gastronomía yucateca, influenciada por la cocina maya y europea, es considerada una de las más distintivas de México. Cada noche hay eventos culturales gratuitos en diferentes plazas, desde vaquerías hasta serenatas y espectáculos de jarana yucateca.",
       "en": "Mérida, founded in 1542 on the Mayan city of T'Hó, is an elegant colonial city known as the White City for its limestone buildings. The Paseo de Montejo, inspired by the Champs-Élysées, is flanked by mansions from the 19th-century henequen boom. The city is the gateway to Chichén Itzá, Uxmal, and the Puuc Route of Mayan sites. Yucatecan gastronomy, influenced by Mayan and European cuisine, is considered one of Mexico's most distinctive. Every evening there are free cultural events in different plazas, from vaquerías to serenades and Yucatecan jarana performances."
     },
-    "heroImage": "/images/destinations/merida.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=800&h=500&fit=crop&q=80",
     "highlights": [
       {
         "es": "Excursión a Chichén Itzá y el espectáculo de luz y sonido nocturno en la pirámide de Kukulcán",
@@ -849,7 +849,7 @@
       "es": "San Miguel de Allende, declarada Patrimonio de la Humanidad por la UNESCO, es una ciudad donde el tiempo parece haberse detenido en el siglo XVIII. Su icónica Parroquia de San Miguel Arcángel, con su fachada neogótica rosa, domina el horizonte. Las calles empedradas están llenas de galerías de arte, boutiques de diseño y restaurantes de alta cocina. La ciudad alberga una importante comunidad internacional de artistas y jubilados que han enriquecido su oferta cultural. Los viñedos cercanos de la región vinícola de Guanajuato, las aguas termales y los talleres de artesanías ofrecen experiencias únicas fuera del centro histórico.",
       "en": "San Miguel de Allende, a UNESCO World Heritage Site, is a city where time seems to have stopped in the 18th century. Its iconic Parroquia de San Miguel Arcángel, with its pink neo-Gothic facade, dominates the skyline. The cobblestone streets are filled with art galleries, designer boutiques, and fine dining restaurants. The city hosts a significant international community of artists and retirees who have enriched its cultural offerings. The nearby vineyards of the Guanajuato wine region, hot springs, and craft workshops offer unique experiences outside the historic center."
     },
-    "heroImage": "/images/destinations/san-miguel.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1549439602-43ebca2327af?w=800&h=500&fit=crop&q=80",
     "highlights": [
       {
         "es": "La Parroquia de San Miguel Arcángel, la iglesia neogótica más fotografiada de México, especialmente al atardecer",
@@ -952,7 +952,7 @@
       "es": "Guanajuato, Patrimonio de la Humanidad, es una ciudad única construida en un estrecho cañón donde las casas de colores se apilan en las laderas de las montañas. Sus calles subterráneas, antiguos túneles de ríos, forman un sistema vial que no existe en ninguna otra ciudad del mundo. El Teatro Juárez, la Basílica y la Universidad de Guanajuato enmarcan plazas llenas de vida. La ciudad es sede del Festival Internacional Cervantino, el evento artístico más importante de Latinoamérica. Las minas de plata que dieron origen a la ciudad se pueden visitar, y el Museo de las Momias es una atracción única, aunque peculiar. Las callejoneadas estudiantinas con música y vino son una tradición imperdible.",
       "en": "Guanajuato, a UNESCO World Heritage Site, is a unique city built in a narrow canyon where colorful houses stack along the mountainsides. Its underground streets, former river tunnels, form a road system that exists nowhere else in the world. The Teatro Juárez, the Basilica, and the University of Guanajuato frame plazas full of life. The city hosts the International Cervantino Festival, Latin America's most important arts event. The silver mines that gave birth to the city can be visited, and the Mummy Museum is a unique, if peculiar, attraction. The estudiantina callejoneadas with music and wine are an unmissable tradition."
     },
-    "heroImage": "/images/destinations/guanajuato.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1568402102990-bc541580b59f?w=800&h=500&fit=crop&q=80",
     "highlights": [
       {
         "es": "Callejoneada estudiantina nocturna con música, historias y vino por los callejones coloniales",
@@ -1075,7 +1075,7 @@
       "es": "Monterrey, la capital de Nuevo León, es una ciudad moderna y pujante enclavada entre montañas de la Sierra Madre Oriental. El Cerro de la Silla, su montaña emblema, domina el horizonte. La Macroplaza, una de las plazas más grandes del mundo, alberga el Museo de Historia Mexicana y el MARCO (Museo de Arte Contemporáneo). El Parque Fundidora, antigua fundidora de acero reconvertida en parque urbano, es el corazón recreativo de la ciudad. Los alrededores ofrecen aventura en el Parque Ecológico Chipinque, las Grutas de García y la impresionante Cascada Cola de Caballo. La tradición norteña de carne asada, cabrito y cerveza artesanal es parte esencial de la identidad regia.",
       "en": "Monterrey, the capital of Nuevo León, is a modern and thriving city nestled among the mountains of the Sierra Madre Oriental. The Cerro de la Silla, its emblematic mountain, dominates the skyline. The Macroplaza, one of the world's largest plazas, houses the Mexican History Museum and MARCO (Museum of Contemporary Art). Parque Fundidora, a former steel foundry converted into an urban park, is the city's recreational heart. The surroundings offer adventure at Chipinque Ecological Park, the García Caves, and the impressive Cola de Caballo Waterfall. The northern tradition of grilled meat, cabrito, and craft beer is an essential part of Monterrey's identity."
     },
-    "heroImage": "/images/destinations/monterrey.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1500759285222-a95626b934cb?w=800&h=500&fit=crop&q=80",
     "highlights": [
       {
         "es": "Parque Fundidora con museos, lago artificial, paseos en bicicleta y eventos culturales en un antiguo complejo industrial",
@@ -1198,7 +1198,7 @@
       "es": "Las Bahías de Huatulco, en la costa sur de Oaxaca, son uno de los destinos de playa más auténticos de México. A diferencia de otros destinos turísticos masificados, Huatulco mantiene un desarrollo controlado que preserva sus ecosistemas naturales. El Parque Nacional Huatulco protege 11,890 hectáreas de selva baja y arrecifes de coral. Sus 9 bahías —Santa Cruz, Tangolunda, Chahué, Maguey, El Órgano, San Agustín, Cacaluta, Chachacual y Conejos— ofrecen desde playas urbanizadas con servicios hasta calas vírgenes accesibles solo por lancha. La zona combina aventura (snorkel, buceo, tirolesas, rafting en el río Copalita) con la extraordinaria gastronomía oaxaqueña: mariscos frescos con mole, mezcal artesanal y café de pluma del Pluma Hidalgo.",
       "en": "The Bays of Huatulco, on Oaxaca's southern coast, are one of Mexico's most authentic beach destinations. Unlike other mass-tourism resorts, Huatulco maintains controlled development that preserves its natural ecosystems. Huatulco National Park protects 11,890 hectares of tropical dry forest and coral reefs. Its 9 bays —Santa Cruz, Tangolunda, Chahué, Maguey, El Órgano, San Agustín, Cacaluta, Chachacual, and Conejos— offer everything from urbanized beaches with full services to pristine coves accessible only by boat. The area combines adventure (snorkeling, diving, zip lines, rafting on the Copalita River) with extraordinary Oaxacan cuisine: fresh seafood with mole, artisanal mezcal, and Pluma Hidalgo shade-grown coffee."
     },
-    "heroImage": "/images/destinations/huatulco.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=800&h=500&fit=crop&q=80",
     "highlights": [
       {
         "es": "Tour de las 7 bahías en lancha para descubrir playas vírgenes como Cacaluta, Maguey y San Agustín con snorkel incluido",
