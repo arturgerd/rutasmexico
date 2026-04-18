@@ -8,8 +8,9 @@ export function localize(text: LocalizedString, locale: Locale | string): string
   return text[locale as Locale] || text.es;
 }
 
-export function formatCurrency(amount: number, currency: "MXN" | "USD" = "MXN"): string {
-  return new Intl.NumberFormat(currency === "USD" ? "en-US" : "es-MX", {
+export function formatCurrency(amount: number, currency: "MXN" | "USD" | "CAD" = "MXN"): string {
+  const locale = currency === "USD" ? "en-US" : currency === "CAD" ? "en-CA" : "es-MX";
+  return new Intl.NumberFormat(locale, {
     style: "currency",
     currency,
     minimumFractionDigits: 0,

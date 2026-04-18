@@ -36,6 +36,7 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
   const allMexicoGames = venues.flatMap(v => v.matches.filter(m => m.isMexicoGame)).sort((a, b) => a.date.localeCompare(b.date));
   const mxVenues = venues.filter(v => (v.country ?? "MX") === "MX");
   const usVenues = venues.filter(v => v.country === "US");
+  const caVenues = venues.filter(v => v.country === "CA");
 
   return (
     <div className="min-h-screen">
@@ -48,13 +49,13 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
               <span className="text-white text-sm font-bold tracking-wide">FIFA WORLD CUP 2026™</span>
             </div>
             <h1 className="font-display text-4xl md:text-6xl font-bold text-white mb-4">
-              {t3(locale, "Mundial 2026: México + EUA", "World Cup 2026: Mexico + USA", "Coupe du Monde 2026 : Mexique + USA")}
+              {t3(locale, "Mundial 2026: 16 sedes en 3 países", "World Cup 2026: 16 venues across 3 countries", "Coupe du Monde 2026 : 16 stades dans 3 pays")}
             </h1>
             <p className="text-arena-300 text-lg max-w-3xl mx-auto mb-8">
               {t3(locale,
-                "3 sedes en México + 11 en Estados Unidos. Partido inaugural en CDMX, final en Nueva York. Tu guía completa para cada ciudad sede: cómo llegar, transporte, zonas seguras, cambio y lugares cerca.",
-                "3 venues in Mexico + 11 in the United States. Opening match in Mexico City, final in New York. Your complete guide for every host city: how to get there, transport, safe zones, currency and nearby places.",
-                "3 stades au Mexique + 11 aux États-Unis. Match d'ouverture à Mexico, finale à New York. Ton guide complet pour chaque ville hôte."
+                "3 sedes en México 🇲🇽 + 11 en EE.UU. 🇺🇸 + 2 en Canadá 🇨🇦. Partido inaugural en CDMX, final en Nueva York. Tu guía completa para cada ciudad sede: cómo llegar, transporte, zonas seguras, cambio y lugares cerca.",
+                "3 venues in Mexico 🇲🇽 + 11 in USA 🇺🇸 + 2 in Canada 🇨🇦. Opening match in Mexico City, final in New York. Your complete guide for every host city: how to get there, transport, safe zones, currency and nearby places.",
+                "3 stades au Mexique 🇲🇽 + 11 aux USA 🇺🇸 + 2 au Canada 🇨🇦. Match d'ouverture à Mexico, finale à New York. Ton guide complet pour chaque ville hôte."
               )}
             </p>
 
@@ -149,6 +150,25 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
           <MundialVenueGrid venues={usVenues} />
         </div>
       </div>
+
+      {/* Sedes en Canadá */}
+      {caVenues.length > 0 && (
+        <div className="bg-arena-50 py-12 border-t border-arena-200">
+          <div className="container-custom">
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-arena-800 mb-2 text-center">
+              🇨🇦 {t3(locale, "Las 2 sedes en Canadá", "The 2 venues in Canada", "Les 2 stades au Canada")}
+            </h2>
+            <p className="text-arena-500 text-center mb-8 max-w-2xl mx-auto">
+              {t3(locale,
+                "Toronto (BMO Field) y Vancouver (BC Place). Fase de grupos y octavos en Vancouver. SIN visa física para mexicanos — solo eTA ($7 CAD en línea).",
+                "Toronto (BMO Field) and Vancouver (BC Place). Group stage and R16 in Vancouver. NO physical visa for Mexicans — only eTA ($7 CAD online).",
+                "Toronto (BMO Field) et Vancouver (BC Place). Phase de groupes et 8es à Vancouver. PAS de visa physique pour les Mexicains — seulement eTA (7 CAD en ligne)."
+              )}
+            </p>
+            <MundialVenueGrid venues={caVenues} />
+          </div>
+        </div>
+      )}
 
       {/* Guia rapida: Como llegar a Mexico */}
       <div className="bg-white py-12">

@@ -25,17 +25,17 @@ export default function MundialBanner({ locale }: { locale: string }) {
             <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-3 drop-shadow-lg">
               {t3(
                 locale,
-                "México sede del Mundial 2026",
-                "Mexico hosts the 2026 World Cup",
-                "Le Mexique accueille la Coupe du Monde 2026"
+                "Mundial 2026: 16 sedes en 3 países",
+                "World Cup 2026: 16 venues across 3 countries",
+                "Coupe du Monde 2026 : 16 stades dans 3 pays"
               )}
             </h2>
             <p className="text-white/85 text-base md:text-lg max-w-2xl leading-relaxed">
               {t3(
                 locale,
-                "3 sedes, 13 partidos, el inaugural en CDMX. Tu guía completa: aeropuertos, transporte seguro, casas de cambio, zonas turísticas y qué evitar — por cada ciudad.",
-                "3 venues, 13 matches, opening match in Mexico City. Your complete guide: airports, safe transport, currency exchange, tourist zones and what to avoid — for each city.",
-                "3 stades, 13 matchs, le match d'ouverture à Mexico. Ton guide complet : aéroports, transport sûr, bureaux de change, zones touristiques et quoi éviter — par ville."
+                "🇲🇽 3 sedes en México + 🇺🇸 11 en EE.UU. + 🇨🇦 2 en Canadá. Inaugural en CDMX, final en Nueva York. Guía completa por ciudad: vuelos desde México, transporte seguro, casas de cambio y zonas turísticas.",
+                "🇲🇽 3 venues in Mexico + 🇺🇸 11 in USA + 🇨🇦 2 in Canada. Opening in Mexico City, final in New York. Complete city guide: flights from Mexico, safe transport, currency exchange and tourist zones.",
+                "🇲🇽 3 stades au Mexique + 🇺🇸 11 aux USA + 🇨🇦 2 au Canada. Ouverture à Mexico, finale à New York. Guide complet par ville : vols depuis le Mexique, transport sûr, change et zones touristiques."
               )}
             </p>
           </div>
@@ -60,29 +60,29 @@ export default function MundialBanner({ locale }: { locale: string }) {
           </div>
         </div>
 
-        {/* Venue cards */}
+        {/* Venue cards — 3 iconic stops (opening, final, and regional flavor) */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-8">
           {[
             {
               slug: "ciudad-de-mexico",
-              flag: "🏙️",
-              city: { es: "Ciudad de México", en: "Mexico City", fr: "Mexico" },
-              stadium: "Estadio Azteca",
+              flag: "🇲🇽",
+              city: { es: "CDMX · Estadio Azteca", en: "Mexico City · Estadio Azteca", fr: "Mexico · Estadio Azteca" },
+              stadium: { es: "Sede en México", en: "Mexico venue", fr: "Stade au Mexique" },
               highlight: { es: "🎉 Partido inaugural", en: "🎉 Opening match", fr: "🎉 Match d'ouverture" },
             },
             {
-              slug: "monterrey",
-              flag: "🏔️",
-              city: { es: "Monterrey", en: "Monterrey", fr: "Monterrey" },
-              stadium: "Estadio BBVA",
-              highlight: { es: "🌡️ Calor extremo", en: "🌡️ Extreme heat", fr: "🌡️ Chaleur extrême" },
+              slug: "nueva-york-nueva-jersey",
+              flag: "🇺🇸",
+              city: { es: "NY/NJ · MetLife Stadium", en: "NY/NJ · MetLife Stadium", fr: "NY/NJ · MetLife Stadium" },
+              stadium: { es: "Sede en EE.UU.", en: "USA venue", fr: "Stade aux USA" },
+              highlight: { es: "🏆 FINAL · 19 julio", en: "🏆 FINAL · July 19", fr: "🏆 FINALE · 19 juillet" },
             },
             {
-              slug: "guadalajara",
-              flag: "🎺",
-              city: { es: "Guadalajara", en: "Guadalajara", fr: "Guadalajara" },
-              stadium: "Estadio Akron",
-              highlight: { es: "🥃 Tequila + Chivas", en: "🥃 Tequila + Chivas", fr: "🥃 Tequila + Chivas" },
+              slug: "vancouver",
+              flag: "🇨🇦",
+              city: { es: "Vancouver · BC Place", en: "Vancouver · BC Place", fr: "Vancouver · BC Place" },
+              stadium: { es: "Sede en Canadá", en: "Canada venue", fr: "Stade au Canada" },
+              highlight: { es: "🍁 Octavos de final", en: "🍁 Round of 16", fr: "🍁 8es de finale" },
             },
           ].map((v) => (
             <Link
@@ -94,7 +94,7 @@ export default function MundialBanner({ locale }: { locale: string }) {
                 <span className="text-3xl">{v.flag}</span>
                 <div className="flex-1 min-w-0">
                   <div className="font-bold text-white truncate">{t3(locale, v.city.es, v.city.en, v.city.fr)}</div>
-                  <div className="text-xs text-white/70 truncate">{v.stadium}</div>
+                  <div className="text-xs text-white/70 truncate">{t3(locale, v.stadium.es, v.stadium.en, v.stadium.fr)}</div>
                 </div>
                 <span className="text-white/60 group-hover:text-white transition-colors">→</span>
               </div>
