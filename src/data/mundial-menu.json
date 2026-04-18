@@ -1,0 +1,702 @@
+{
+  "drinks": [
+    {
+      "id": "agua-jamaica",
+      "emoji": "🌺",
+      "category": "agua-fresca",
+      "name": { "es": "Agua de Jamaica", "en": "Hibiscus Water (Jamaica)", "fr": "Eau de Jamaïque (Hibiscus)" },
+      "description": {
+        "es": "Infusión fría de flor de jamaica seca. Roja vibrante, ácida, ligeramente dulce — la reina de las aguas frescas.",
+        "en": "Cold infusion of dried hibiscus flower. Vibrant red, tart, lightly sweet — the queen of Mexican aguas frescas.",
+        "fr": "Infusion froide de fleur d'hibiscus séchée. Rouge vif, acidulée, légèrement sucrée — la reine des aguas frescas."
+      },
+      "ingredients": {
+        "es": "Flor de jamaica seca, agua, azúcar, hielo. A veces con canela.",
+        "en": "Dried hibiscus flowers, water, sugar, ice. Sometimes with cinnamon.",
+        "fr": "Fleurs d'hibiscus séchées, eau, sucre, glaçons. Parfois avec cannelle."
+      },
+      "servingTip": {
+        "es": "Sírvela MUY fría, en jarra de barro. Ideal para el calor de junio.",
+        "en": "Serve VERY cold, in a clay pitcher. Ideal for June heat.",
+        "fr": "Sers très froide, dans un pichet en terre cuite. Idéale pour la chaleur de juin."
+      },
+      "funFact": {
+        "es": "Es diurética y ayuda a bajar la presión. Las abuelas mexicanas la recetan como remedio.",
+        "en": "It's a natural diuretic and helps lower blood pressure. Mexican grandmas prescribe it as medicine.",
+        "fr": "Diurétique naturel, aide à baisser la tension. Les grand-mères mexicaines la prescrivent comme remède."
+      },
+      "orderPhrase": {
+        "es": "Una de jamaica bien fría, ¡por favor!",
+        "pronEn": "OO-nah deh hah-MY-kah byen FREE-ah, por fah-VOR",
+        "pronFr": "OU-na dé ha-MAÏ-ka byèn FRI-a, por fa-VOR"
+      },
+      "variants": {
+        "es": "Sin azúcar, con chía, con piña, en mezcla con limón ('jamonada').",
+        "en": "No sugar, with chia seeds, with pineapple, mixed with lime ('jamonada').",
+        "fr": "Sans sucre, avec graines de chia, avec ananas, mélangée au citron ('jamonada')."
+      },
+      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&h=400&fit=crop&q=80",
+      "gradient": "from-rose-500 via-red-600 to-rose-700",
+      "mlSearch": "flor de jamaica seca"
+    },
+    {
+      "id": "agua-horchata",
+      "emoji": "🥛",
+      "category": "agua-fresca",
+      "name": { "es": "Agua de Horchata", "en": "Horchata (Rice Water)", "fr": "Horchata (eau de riz)" },
+      "description": {
+        "es": "Bebida cremosa de arroz molido con canela y vainilla. Dulce, espesa y refrescante.",
+        "en": "Creamy drink of ground rice with cinnamon and vanilla. Sweet, thick and refreshing.",
+        "fr": "Boisson crémeuse à base de riz moulu avec cannelle et vanille. Sucrée, épaisse et rafraîchissante."
+      },
+      "ingredients": {
+        "es": "Arroz, canela, vainilla, leche o agua, azúcar, hielo.",
+        "en": "Rice, cinnamon, vanilla, milk or water, sugar, ice.",
+        "fr": "Riz, cannelle, vanille, lait ou eau, sucre, glaçons."
+      },
+      "servingTip": {
+        "es": "Pídela espolvoreada con canela en polvo. Combina perfecto con comida picante.",
+        "en": "Order it sprinkled with cinnamon powder. Pairs perfectly with spicy food.",
+        "fr": "Demande-la saupoudrée de cannelle. Se marie parfaitement avec la nourriture épicée."
+      },
+      "funFact": {
+        "es": "Aunque es ícono mexicano, llegó de España (donde se hace con chufa). Aquí el arroz le dio personalidad.",
+        "en": "Though a Mexican icon, it came from Spain (originally with tiger nuts). Mexico gave it rice instead.",
+        "fr": "Bien qu'icône mexicaine, elle vient d'Espagne (à l'origine avec souchet). Le Mexique l'a faite avec du riz."
+      },
+      "orderPhrase": {
+        "es": "Una horchata con harta canela",
+        "pronEn": "OO-nah or-CHA-tah kohn AR-tah kah-NEH-lah",
+        "pronFr": "OU-na or-TCHA-ta kone AR-ta ka-NÉ-la"
+      },
+      "variants": {
+        "es": "Con coco rallado, con almendra, con fresa licuada, sin azúcar.",
+        "en": "With shredded coconut, with almond, with strawberry blended in, no sugar.",
+        "fr": "Avec noix de coco râpée, avec amande, avec fraise mixée, sans sucre."
+      },
+      "image": null,
+      "gradient": "from-amber-100 via-orange-200 to-amber-300",
+      "mlSearch": "canela molida horchata"
+    },
+    {
+      "id": "agua-tamarindo",
+      "emoji": "🍯",
+      "category": "agua-fresca",
+      "name": { "es": "Agua de Tamarindo", "en": "Tamarind Water", "fr": "Eau de tamarin" },
+      "description": {
+        "es": "Pulpa de tamarindo hervida y endulzada. Color caramelo, sabor agridulce que despierta los sentidos.",
+        "en": "Boiled tamarind pulp, sweetened. Caramel-colored, sweet-sour flavor that wakes up your taste buds.",
+        "fr": "Pulpe de tamarin bouillie et sucrée. Couleur caramel, saveur aigre-douce qui réveille les papilles."
+      },
+      "ingredients": {
+        "es": "Vainas de tamarindo, agua, piloncillo o azúcar, hielo.",
+        "en": "Tamarind pods, water, piloncillo (raw sugar) or sugar, ice.",
+        "fr": "Gousses de tamarin, eau, piloncillo (sucre brut) ou sucre, glaçons."
+      },
+      "servingTip": {
+        "es": "Sírvela con un toque de chile en polvo en el borde del vaso (sí, suena raro, está delicioso).",
+        "en": "Serve with chili powder rim on the glass (sounds weird, tastes amazing).",
+        "fr": "Sers avec une bordure de piment en poudre sur le verre (ça paraît bizarre, c'est délicieux)."
+      },
+      "funFact": {
+        "es": "El tamarindo es originario de África, llegó a México con los esclavos y se naturalizó. Hoy está en dulces, salsas y aguas.",
+        "en": "Tamarind originated in Africa, arrived in Mexico with the slave trade and became native. Today it's in candies, sauces and drinks.",
+        "fr": "Le tamarin vient d'Afrique, arrivé au Mexique avec la traite et devenu local. Aujourd'hui dans bonbons, sauces et boissons."
+      },
+      "orderPhrase": {
+        "es": "Una de tamarindo, no muy dulce",
+        "pronEn": "OO-nah deh tah-mah-REEN-doh, no MOO-ee DOOL-seh",
+        "pronFr": "OU-na dé ta-ma-RIN-do, no MOU-i DOUL-cé"
+      },
+      "variants": {
+        "es": "Con chile en polvo, con chamoy, con limón, sin azúcar.",
+        "en": "With chili powder, with chamoy sauce, with lime, no sugar.",
+        "fr": "Avec piment en poudre, avec sauce chamoy, avec citron, sans sucre."
+      },
+      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&h=400&fit=crop&q=80",
+      "gradient": "from-amber-700 via-orange-700 to-yellow-800",
+      "mlSearch": "tamarindo natural"
+    },
+    {
+      "id": "agua-sandia",
+      "emoji": "🍉",
+      "category": "agua-fresca",
+      "name": { "es": "Agua de Sandía", "en": "Watermelon Water", "fr": "Eau de pastèque" },
+      "description": {
+        "es": "Sandía fresca licuada con agua, azúcar y hielo. La más hidratante para el calor extremo.",
+        "en": "Fresh watermelon blended with water, sugar and ice. The most hydrating for extreme heat.",
+        "fr": "Pastèque fraîche mixée avec eau, sucre et glace. La plus hydratante pour la chaleur extrême."
+      },
+      "ingredients": {
+        "es": "Sandía sin semillas, agua, jugo de limón, azúcar al gusto, hielo.",
+        "en": "Seedless watermelon, water, lime juice, sugar to taste, ice.",
+        "fr": "Pastèque épépinée, eau, jus de citron, sucre au goût, glaçons."
+      },
+      "servingTip": {
+        "es": "Pídela sin azúcar — la sandía ya es dulce. Lleva limón aparte si quieres acidez.",
+        "en": "Ask for it without sugar — watermelon is already sweet. Add lime separately for tartness.",
+        "fr": "Demande-la sans sucre — la pastèque est déjà sucrée. Ajoute du citron à part pour l'acidité."
+      },
+      "funFact": {
+        "es": "Es 92% agua. En Monterrey con 40°C es prácticamente medicina líquida.",
+        "en": "It's 92% water. In Monterrey at 40°C, it's practically liquid medicine.",
+        "fr": "92 % d'eau. À Monterrey avec 40°C, c'est pratiquement un médicament liquide."
+      },
+      "orderPhrase": {
+        "es": "Una de sandía, sin azúcar y con limón",
+        "pronEn": "OO-nah deh sahn-DEE-ah, seen ah-SOO-kar ee kohn lee-MOHN",
+        "pronFr": "OU-na dé san-DI-a, sin a-ZOU-kar é kone li-MONE"
+      },
+      "variants": {
+        "es": "Con menta, con jengibre, con piña, con tequila (no recomendado para el partido).",
+        "en": "With mint, with ginger, with pineapple, with tequila (not recommended before the match).",
+        "fr": "Avec menthe, avec gingembre, avec ananas, avec tequila (déconseillée avant le match)."
+      },
+      "image": null,
+      "gradient": "from-pink-400 via-rose-400 to-green-400",
+      "mlSearch": "exprimidor jugos"
+    },
+    {
+      "id": "tejate",
+      "emoji": "🍫",
+      "category": "agua-fresca",
+      "region": { "city": "Oaxaca", "flag": "🇲🇽" },
+      "name": { "es": "Tejate Oaxaqueño", "en": "Oaxacan Tejate", "fr": "Tejate d'Oaxaca" },
+      "description": {
+        "es": "Bebida prehispánica de maíz, cacao, hueso de mamey y flor de cacao. Espuma natural en la superficie.",
+        "en": "Pre-Hispanic drink of corn, cacao, mamey seed and cacao flower. Naturally foamy on top.",
+        "fr": "Boisson préhispanique à base de maïs, cacao, noyau de mamey et fleur de cacao. Mousse naturelle en surface."
+      },
+      "ingredients": {
+        "es": "Maíz nixtamalizado, cacao, hueso de mamey tostado, flor de cacao (rosita), agua, hielo.",
+        "en": "Nixtamalized corn, cacao, toasted mamey seed, cacao flower (rosita), water, ice.",
+        "fr": "Maïs nixtamalisé, cacao, noyau de mamey grillé, fleur de cacao (rosita), eau, glaçons."
+      },
+      "servingTip": {
+        "es": "Tradicionalmente se sirve en jícara (calabaza ahuecada). Se bebe la espuma primero.",
+        "en": "Traditionally served in a jícara (hollowed gourd). Drink the foam first.",
+        "fr": "Traditionnellement servi dans une jícara (calebasse évidée). Bois la mousse en premier."
+      },
+      "funFact": {
+        "es": "Bebida ritual de los aztecas y mixtecos. Solo se hace bien en Oaxaca — más de 3,000 años de historia.",
+        "en": "Ritual drink of the Aztecs and Mixtecs. Only done right in Oaxaca — over 3,000 years of history.",
+        "fr": "Boisson rituelle des Aztèques et Mixtèques. Seul Oaxaca le fait vraiment bien — plus de 3 000 ans d'histoire."
+      },
+      "orderPhrase": {
+        "es": "Un tejate, en jícara",
+        "pronEn": "OON teh-HAH-teh, en HEE-kah-rah",
+        "pronFr": "OUNE té-HA-té, èn HI-ka-ra"
+      },
+      "variants": {
+        "es": "Endulzado con piloncillo, sin endulzar, con leche.",
+        "en": "Sweetened with piloncillo (raw sugar), unsweetened, with milk.",
+        "fr": "Sucré au piloncillo (sucre brut), nature, avec du lait."
+      },
+      "image": null,
+      "gradient": "from-amber-800 via-stone-700 to-amber-900",
+      "mlSearch": "cacao oaxaca artesanal"
+    },
+    {
+      "id": "cafe-de-olla",
+      "emoji": "☕",
+      "category": "cafe",
+      "name": { "es": "Café de Olla", "en": "Café de Olla (Pot Coffee)", "fr": "Café de Olla (café à la marmite)" },
+      "description": {
+        "es": "Café tradicional preparado en olla de barro con canela y piloncillo. Aromático, dulce y con cuerpo.",
+        "en": "Traditional coffee brewed in a clay pot with cinnamon and piloncillo. Aromatic, sweet and full-bodied.",
+        "fr": "Café traditionnel préparé en marmite de terre avec cannelle et piloncillo. Aromatique, sucré et corsé."
+      },
+      "ingredients": {
+        "es": "Café molido (de Veracruz o Chiapas), canela, piloncillo, agua, olla de barro.",
+        "en": "Ground coffee (from Veracruz or Chiapas), cinnamon, piloncillo, water, clay pot.",
+        "fr": "Café moulu (Veracruz ou Chiapas), cannelle, piloncillo, eau, marmite en terre."
+      },
+      "servingTip": {
+        "es": "Se sirve en taza de barro. Caliente al amanecer o frío en las tardes calurosas.",
+        "en": "Served in a clay mug. Hot at sunrise or cold on hot afternoons.",
+        "fr": "Servi dans une tasse en terre. Chaud à l'aube ou froid les après-midis chauds."
+      },
+      "funFact": {
+        "es": "Inventado durante la Revolución Mexicana para mantener calientes a los soldados. La olla de barro le da un sabor único.",
+        "en": "Invented during the Mexican Revolution to keep soldiers warm. The clay pot gives it a unique flavor.",
+        "fr": "Inventé pendant la Révolution mexicaine pour réchauffer les soldats. La marmite en terre lui donne une saveur unique."
+      },
+      "orderPhrase": {
+        "es": "Un café de olla, por favor",
+        "pronEn": "OON kah-FEH deh OH-yah, por fah-VOR",
+        "pronFr": "OUNE ka-FÉ dé O-ya, por fa-VOR"
+      },
+      "variants": {
+        "es": "Con leche, con anís, con cardamomo, sin azúcar.",
+        "en": "With milk, with anise, with cardamom, no sugar.",
+        "fr": "Avec lait, avec anis, avec cardamome, sans sucre."
+      },
+      "image": null,
+      "gradient": "from-yellow-900 via-amber-900 to-stone-800",
+      "mlSearch": "olla de barro cafe"
+    }
+  ],
+  "foods": [
+    {
+      "id": "tacos-al-pastor",
+      "emoji": "🌮",
+      "category": "taco",
+      "region": { "city": "Ciudad de México", "flag": "🇲🇽" },
+      "name": { "es": "Tacos al Pastor", "en": "Tacos al Pastor", "fr": "Tacos al Pastor" },
+      "description": {
+        "es": "Carne de cerdo marinada con achiote y especias, cocinada en trompo vertical. El rey de los tacos chilangos.",
+        "en": "Pork marinated with achiote and spices, cooked on a vertical spit. King of Mexico City tacos.",
+        "fr": "Porc mariné à l'achiote et aux épices, cuit à la broche verticale. Le roi des tacos de Mexico."
+      },
+      "ingredients": {
+        "es": "Tortilla de maíz, carne al pastor, piña, cebolla picada, cilantro, salsa verde o roja, limón.",
+        "en": "Corn tortilla, pastor meat, pineapple, chopped onion, cilantro, green or red salsa, lime.",
+        "fr": "Tortilla de maïs, viande pastor, ananas, oignon haché, coriandre, salsa verte ou rouge, citron."
+      },
+      "servingTip": {
+        "es": "Pídelos 'con todo' (con piña, cebolla y cilantro). Una orden son 4-5 tacos.",
+        "en": "Order 'con todo' (with pineapple, onion and cilantro). One order = 4-5 tacos.",
+        "fr": "Demande 'con todo' (avec ananas, oignon et coriandre). Une portion = 4-5 tacos."
+      },
+      "funFact": {
+        "es": "Inspirados en el shawarma libanés que trajeron migrantes al puerto de Veracruz en los 1920s. Los mexicanos le agregaron piña.",
+        "en": "Inspired by Lebanese shawarma brought by migrants to Veracruz port in the 1920s. Mexicans added the pineapple.",
+        "fr": "Inspirés du shawarma libanais apporté par les migrants au port de Veracruz dans les années 1920. Les Mexicains y ont ajouté l'ananas."
+      },
+      "orderPhrase": {
+        "es": "Cinco al pastor con todo, ¡maestro!",
+        "pronEn": "SEEN-koh ahl pahs-TOR kohn TOH-doh, mah-EHS-troh",
+        "pronFr": "SIN-ko al pas-TOR kone TO-do, ma-ÈS-tro"
+      },
+      "variants": {
+        "es": "Suaves o dorados, con queso ('gringa'), en taco árabe (pan pita), en pastor de pollo.",
+        "en": "Soft or crispy, with cheese ('gringa'), Arabic-style (in pita bread), chicken pastor.",
+        "fr": "Souples ou croustillants, avec fromage ('gringa'), style arabe (en pita), pastor au poulet."
+      },
+      "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&h=400&fit=crop&q=80",
+      "gradient": "from-orange-600 via-red-600 to-yellow-600",
+      "mlSearch": "achiote pasta tacos pastor"
+    },
+    {
+      "id": "tacos-barbacoa",
+      "emoji": "🥩",
+      "category": "taco",
+      "region": { "city": "Centro de México", "flag": "🇲🇽" },
+      "name": { "es": "Tacos de Barbacoa", "en": "Barbacoa Tacos", "fr": "Tacos de Barbacoa" },
+      "description": {
+        "es": "Carne de borrego cocinada en horno bajo tierra envuelta en hojas de maguey. La comida dominical por excelencia.",
+        "en": "Lamb cooked in an underground oven wrapped in maguey leaves. The quintessential Sunday food.",
+        "fr": "Agneau cuit dans un four souterrain enveloppé de feuilles d'agave. La nourriture dominicale par excellence."
+      },
+      "ingredients": {
+        "es": "Tortilla de maíz, barbacoa de borrego, cebolla, cilantro, salsa borracha o verde, limón. Acompañada de consomé.",
+        "en": "Corn tortilla, lamb barbacoa, onion, cilantro, salsa borracha or green salsa, lime. Served with consomé broth.",
+        "fr": "Tortilla de maïs, agneau barbacoa, oignon, coriandre, salsa borracha ou verte, citron. Accompagné de consommé."
+      },
+      "servingTip": {
+        "es": "Pide 'maciza' (carne) o 'mixta' (carne con grasita). El consomé aparte es obligatorio.",
+        "en": "Ask for 'maciza' (just meat) or 'mixta' (meat with fat). The side broth is mandatory.",
+        "fr": "Demande 'maciza' (viande seule) ou 'mixta' (viande avec gras). Le bouillon à part est obligatoire."
+      },
+      "funFact": {
+        "es": "Es comida ceremonial prehispánica adaptada con borrego (animal traído por los españoles). Hidalgo y Tlaxcala son la cuna.",
+        "en": "Pre-Hispanic ceremonial food adapted with lamb (brought by Spanish). Hidalgo and Tlaxcala are its birthplace.",
+        "fr": "Nourriture cérémonielle préhispanique adaptée à l'agneau (apporté par les Espagnols). Hidalgo et Tlaxcala en sont le berceau."
+      },
+      "orderPhrase": {
+        "es": "Cuatro de barbacoa maciza, con su consomé",
+        "pronEn": "KWA-troh deh bar-bah-KOH-ah mah-SEE-sah, kohn soo kohn-soh-MEH",
+        "pronFr": "KOUA-tro dé bar-ba-KO-a ma-CI-sa, kone sou kone-so-MÉ"
+      },
+      "variants": {
+        "es": "Maciza, mixta, con costilla, con cachete, en quesadilla.",
+        "en": "Lean ('maciza'), mixed, with rib, with cheek, in a quesadilla.",
+        "fr": "Maigre ('maciza'), mixte, avec côte, avec joue, en quesadilla."
+      },
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&h=400&fit=crop&q=80",
+      "gradient": "from-stone-700 via-amber-800 to-red-900",
+      "mlSearch": "tortillas maiz comal"
+    },
+    {
+      "id": "tortas-ahogadas",
+      "emoji": "🥖",
+      "category": "regional",
+      "region": { "city": "Guadalajara", "flag": "🇲🇽" },
+      "name": { "es": "Tortas Ahogadas", "en": "Tortas Ahogadas (Drowned Sandwiches)", "fr": "Tortas Ahogadas (sandwichs noyés)" },
+      "description": {
+        "es": "Birote (pan crujiente único de Jalisco) relleno de carnitas, ahogado en salsa de jitomate picante. Comida emblema tapatía.",
+        "en": "Birote (crispy bread unique to Jalisco) filled with carnitas, drowned in spicy tomato sauce. Iconic Guadalajara food.",
+        "fr": "Birote (pain croustillant unique au Jalisco) farci de carnitas, noyé dans une sauce tomate épicée. Plat emblématique tapatío."
+      },
+      "ingredients": {
+        "es": "Birote salado, carnitas de cerdo, frijoles refritos, salsa de jitomate, salsa de chile de árbol, cebolla morada.",
+        "en": "Birote bread, pork carnitas, refried beans, tomato sauce, árbol chile sauce, red onion.",
+        "fr": "Pain birote, carnitas de porc, haricots frits, sauce tomate, sauce piment de árbol, oignon rouge."
+      },
+      "servingTip": {
+        "es": "'Ahogada' (toda en salsa) o 'media ahogada' (mitad). Cómela con tenedor — es imposible con la mano.",
+        "en": "'Ahogada' (fully drowned) or 'media ahogada' (half). Eat with a fork — impossible with hands.",
+        "fr": "'Ahogada' (totalement noyée) ou 'media ahogada' (moitié). Mange avec une fourchette — impossible à la main."
+      },
+      "funFact": {
+        "es": "Nació por accidente: un torta cayó en una cazuela de salsa y al cliente le encantó. Hoy 'La Mexicana' y 'Tortas Toño' son institución.",
+        "en": "Born by accident: a torta fell into a pot of sauce and the customer loved it. Today 'La Mexicana' and 'Tortas Toño' are institutions.",
+        "fr": "Née par accident : une torta est tombée dans une marmite de sauce et le client a adoré. Aujourd'hui 'La Mexicana' et 'Tortas Toño' sont des institutions."
+      },
+      "orderPhrase": {
+        "es": "Una ahogada con tres rebanadas de cebolla, picosita",
+        "pronEn": "OO-nah ah-oh-GAH-dah kohn trehs reh-bah-NAH-dahs deh seh-BOH-yah, pee-koh-SEE-tah",
+        "pronFr": "OU-na a-o-GA-da kone très ré-ba-NA-das dé cé-BO-ya, pi-ko-CI-ta"
+      },
+      "variants": {
+        "es": "Media ahogada (más suave), bañada en frijoles, con queso, sin chile.",
+        "en": "Half-drowned (milder), with beans, with cheese, without chili.",
+        "fr": "À moitié noyée (plus douce), aux haricots, avec fromage, sans piment."
+      },
+      "image": null,
+      "gradient": "from-red-700 via-orange-700 to-yellow-800",
+      "mlSearch": "salsa chile arbol"
+    },
+    {
+      "id": "cabrito",
+      "emoji": "🐐",
+      "category": "regional",
+      "region": { "city": "Monterrey", "flag": "🇲🇽" },
+      "name": { "es": "Cabrito al Pastor", "en": "Cabrito (Roasted Kid Goat)", "fr": "Cabrito (chevreau rôti)" },
+      "description": {
+        "es": "Cabrito de leche asado lentamente sobre brasas, en posición vertical. Carne rosada, jugosa, con corteza dorada.",
+        "en": "Milk-fed kid goat slow-roasted over coals, vertically. Pink, juicy meat with golden crust.",
+        "fr": "Chevreau de lait rôti lentement sur braises, à la verticale. Viande rose, juteuse, avec une croûte dorée."
+      },
+      "ingredients": {
+        "es": "Cabrito entero o por piezas (riñonada, paleta, costilla, pierna), salsa borracha, frijoles charros, tortillas de harina.",
+        "en": "Whole goat or by cuts (kidney, shoulder, rib, leg), salsa borracha, charro beans, flour tortillas.",
+        "fr": "Chevreau entier ou en morceaux (rognon, épaule, côte, gigot), salsa borracha, haricots charros, tortillas de farine."
+      },
+      "servingTip": {
+        "es": "Pide 'riñonada' (la pieza más sabrosa) o 'paleta'. Acompáñalo con frijoles charros y tortillas de harina.",
+        "en": "Ask for 'riñonada' (most flavorful cut) or 'paleta'. Pair with charro beans and flour tortillas.",
+        "fr": "Demande 'riñonada' (le morceau le plus savoureux) ou 'paleta'. Accompagne de haricots charros et tortillas de farine."
+      },
+      "funFact": {
+        "es": "Tradición regia desde el siglo XVI. El Rey del Cabrito (cerca del Centro) lleva más de 70 años haciéndolo igual.",
+        "en": "Regio tradition since the 16th century. El Rey del Cabrito (near downtown) has been doing it the same way for over 70 years.",
+        "fr": "Tradition régio depuis le XVIe siècle. El Rey del Cabrito (près du centre) le fait pareil depuis plus de 70 ans."
+      },
+      "orderPhrase": {
+        "es": "Una riñonada de cabrito y unos frijoles charros",
+        "pronEn": "OO-nah ree-nyoh-NAH-dah deh kah-BREE-toh ee OO-nohs free-HOH-lehs CHAR-rohs",
+        "pronFr": "OU-na ri-gno-NA-da dé ka-BRI-to é OU-nos fri-HO-lès TCHAR-ros"
+      },
+      "variants": {
+        "es": "Al pastor (asado), en fritada, en machito (entrañas), en mole de olla.",
+        "en": "Pastor-style (grilled), fritada (stewed), machito (offal), in mole de olla.",
+        "fr": "Style pastor (grillé), fritada (mijoté), machito (abats), en mole de olla."
+      },
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&h=400&fit=crop&q=80",
+      "gradient": "from-orange-700 via-amber-700 to-stone-800",
+      "mlSearch": "tortillas harina norte"
+    },
+    {
+      "id": "cochinita-pibil",
+      "emoji": "🌯",
+      "category": "regional",
+      "region": { "city": "Yucatán", "flag": "🇲🇽" },
+      "name": { "es": "Cochinita Pibil", "en": "Cochinita Pibil", "fr": "Cochinita Pibil" },
+      "description": {
+        "es": "Cerdo marinado en achiote y jugo de naranja agria, cocinado bajo tierra en hojas de plátano. Maya milenario.",
+        "en": "Pork marinated in achiote and bitter orange juice, cooked underground in banana leaves. Millennia-old Mayan dish.",
+        "fr": "Porc mariné à l'achiote et au jus d'orange amère, cuit sous terre dans des feuilles de bananier. Plat maya millénaire."
+      },
+      "ingredients": {
+        "es": "Cerdo, recado rojo (achiote), jugo de naranja agria, hojas de plátano, cebolla morada en escabeche, habanero, tortillas de maíz.",
+        "en": "Pork, recado rojo (achiote paste), bitter orange juice, banana leaves, pickled red onion, habanero, corn tortillas.",
+        "fr": "Porc, recado rojo (achiote), jus d'orange amère, feuilles de bananier, oignon rouge mariné, habanero, tortillas de maïs."
+      },
+      "servingTip": {
+        "es": "Sírvela en tacos con cebolla en escabeche y CUIDADO con la salsa de habanero — es brutal.",
+        "en": "Serve in tacos with pickled onion and CAREFUL with the habanero sauce — it's brutal.",
+        "fr": "Sers en tacos avec oignon mariné et ATTENTION à la sauce habanero — c'est brutal."
+      },
+      "funFact": {
+        "es": "'Pibil' significa 'enterrado' en maya. La técnica del horno de tierra (pib) tiene más de 2,000 años.",
+        "en": "'Pibil' means 'buried' in Maya. The earth-oven technique (pib) is over 2,000 years old.",
+        "fr": "'Pibil' signifie 'enterré' en maya. La technique du four en terre (pib) a plus de 2 000 ans."
+      },
+      "orderPhrase": {
+        "es": "Tres tacos de cochinita con cebollita y poco habanero",
+        "pronEn": "trehs TAH-kohs deh koh-chee-NEE-tah kohn seh-boh-YEE-tah ee POH-koh ah-bah-NEH-roh",
+        "pronFr": "très TA-kos dé ko-tchi-NI-ta kone cé-bo-YI-ta é PO-ko a-ba-NÉ-ro"
+      },
+      "variants": {
+        "es": "En tacos, en torta, en panucho (con frijol), en empanada.",
+        "en": "In tacos, in torta sandwich, in panucho (with beans), in empanada.",
+        "fr": "En tacos, en torta, en panucho (aux haricots), en empanada."
+      },
+      "image": null,
+      "gradient": "from-orange-800 via-red-700 to-yellow-700",
+      "mlSearch": "achiote pasta yucatan"
+    },
+    {
+      "id": "mole",
+      "emoji": "🥘",
+      "category": "guisado",
+      "region": { "city": "Puebla / Oaxaca", "flag": "🇲🇽" },
+      "name": { "es": "Mole Poblano u Oaxaqueño", "en": "Mole Poblano or Oaxacan", "fr": "Mole Poblano ou Oaxaqueño" },
+      "description": {
+        "es": "Salsa compleja con +20 ingredientes: chiles secos, especias, frutos secos y chocolate. Servida sobre pollo o pavo.",
+        "en": "Complex sauce with 20+ ingredients: dried chilies, spices, nuts and chocolate. Served over chicken or turkey.",
+        "fr": "Sauce complexe avec +20 ingrédients : piments séchés, épices, fruits secs et chocolat. Servie sur poulet ou dinde."
+      },
+      "ingredients": {
+        "es": "Chiles mulato, ancho, pasilla y chipotle, ajonjolí, almendras, pasas, plátano, chocolate, especias, pollo, arroz.",
+        "en": "Mulato, ancho, pasilla and chipotle chilies, sesame, almonds, raisins, plantain, chocolate, spices, chicken, rice.",
+        "fr": "Piments mulato, ancho, pasilla et chipotle, sésame, amandes, raisins secs, banane plantain, chocolat, épices, poulet, riz."
+      },
+      "servingTip": {
+        "es": "Pídelo con arroz blanco, tortillas calientitas y ajonjolí encima. El mole 'siete moles' de Oaxaca es lo más.",
+        "en": "Order with white rice, hot tortillas and sesame on top. Oaxaca's 'seven moles' tour is unmissable.",
+        "fr": "Commande avec du riz blanc, des tortillas chaudes et du sésame dessus. Le tour des 'sept moles' d'Oaxaca est incontournable."
+      },
+      "funFact": {
+        "es": "Leyenda dice que las monjas de Puebla lo inventaron por accidente en el siglo XVII al recibir al obispo. Hoy hay más de 50 variedades regionales.",
+        "en": "Legend says Puebla nuns invented it by accident in the 17th century when receiving the bishop. Today there are 50+ regional varieties.",
+        "fr": "La légende dit que les religieuses de Puebla l'ont inventé par accident au XVIIe siècle pour recevoir l'évêque. Plus de 50 variétés régionales aujourd'hui."
+      },
+      "orderPhrase": {
+        "es": "Una pieza de pollo en mole, con arroz",
+        "pronEn": "OO-nah PYEH-sah deh POH-yoh en MOH-leh, kohn ah-RROHS",
+        "pronFr": "OU-na PIÉ-sa dé PO-yo en MO-lé, kone a-ROS"
+      },
+      "variants": {
+        "es": "Poblano (rojo dulce), negro oaxaqueño, amarillo, verde, coloradito, almendrado.",
+        "en": "Poblano (sweet red), black Oaxacan, yellow, green, coloradito, almond.",
+        "fr": "Poblano (rouge sucré), negro oaxaqueño, jaune, vert, coloradito, aux amandes."
+      },
+      "image": null,
+      "gradient": "from-stone-800 via-red-900 to-amber-900",
+      "mlSearch": "mole poblano pasta"
+    },
+    {
+      "id": "elote-esquite",
+      "emoji": "🌽",
+      "category": "antojito",
+      "name": { "es": "Elote / Esquite", "en": "Elote / Esquite (Mexican Street Corn)", "fr": "Elote / Esquite (maïs de rue)" },
+      "description": {
+        "es": "Elote = mazorca con palito, untada de mayo, queso y chile. Esquite = los granos en vasito con caldo. La botana de fan zone.",
+        "en": "Elote = corn on a stick with mayo, cheese, chili. Esquite = the kernels in a cup with broth. The fan zone snack.",
+        "fr": "Elote = maïs sur bâton avec mayo, fromage, piment. Esquite = grains en gobelet avec bouillon. Le snack des fan zones."
+      },
+      "ingredients": {
+        "es": "Maíz tierno cocido, mayonesa, queso cotija o panela rallado, chile en polvo (Tajín), limón, mantequilla, epazote.",
+        "en": "Tender boiled corn, mayonnaise, grated cotija or panela cheese, chili powder (Tajín), lime, butter, epazote.",
+        "fr": "Maïs tendre bouilli, mayonnaise, fromage cotija ou panela râpé, piment en poudre (Tajín), citron, beurre, épazote."
+      },
+      "servingTip": {
+        "es": "Pide 'con todo' = mayo, queso, mantequilla, chile, limón. Esquite con chile piquín si te animas.",
+        "en": "Order 'con todo' = mayo, cheese, butter, chili, lime. Esquite with chile piquín if you dare.",
+        "fr": "Commande 'con todo' = mayo, fromage, beurre, piment, citron. Esquite avec chile piquín si tu oses."
+      },
+      "funFact": {
+        "es": "El maíz fue domesticado en México hace 9,000 años. Cada estado tiene su variedad. El esquite es de origen prehispánico.",
+        "en": "Corn was domesticated in Mexico 9,000 years ago. Each state has its variety. Esquite is pre-Hispanic.",
+        "fr": "Le maïs a été domestiqué au Mexique il y a 9 000 ans. Chaque État a sa variété. L'esquite est préhispanique."
+      },
+      "orderPhrase": {
+        "es": "Un esquite chico con todo, ¡pero no muy picante!",
+        "pronEn": "OON ehs-KEE-teh CHEE-koh kohn TOH-doh, PEH-roh no MOO-ee pee-KAHN-teh",
+        "pronFr": "OUNE ès-KI-té TCHI-ko kone TO-do, PÉ-ro no MOU-i pi-KAN-té"
+      },
+      "variants": {
+        "es": "Sin queso, sin mayo, con crema, con chicharrón encima, con cueritos.",
+        "en": "No cheese, no mayo, with crema, with chicharrón on top, with pork rinds.",
+        "fr": "Sans fromage, sans mayo, avec crema, avec chicharrón dessus, avec couennes de porc."
+      },
+      "image": null,
+      "gradient": "from-yellow-400 via-yellow-500 to-orange-500",
+      "mlSearch": "tajin sazonador chile"
+    },
+    {
+      "id": "quesadilla-flor",
+      "emoji": "🫓",
+      "category": "antojito",
+      "region": { "city": "Ciudad de México", "flag": "🇲🇽" },
+      "name": { "es": "Quesadilla de Flor de Calabaza", "en": "Squash-Blossom Quesadilla", "fr": "Quesadilla à la fleur de courge" },
+      "description": {
+        "es": "Tortilla doblada a la mitad rellena de queso oaxaca y flor de calabaza, hecha al comal. Pregunta clásica chilanga: ¿con queso o sin queso?",
+        "en": "Half-folded tortilla filled with Oaxaca cheese and squash blossoms, cooked on a comal. Classic Mexico City debate: with cheese or without?",
+        "fr": "Tortilla pliée en deux farcie de fromage Oaxaca et de fleurs de courge, cuite au comal. Débat classique de Mexico : avec ou sans fromage ?"
+      },
+      "ingredients": {
+        "es": "Tortilla de maíz azul o blanco, queso Oaxaca, flor de calabaza, epazote, salsa verde o roja.",
+        "en": "Blue or white corn tortilla, Oaxaca cheese, squash blossoms, epazote, green or red salsa.",
+        "fr": "Tortilla de maïs bleu ou blanc, fromage Oaxaca, fleurs de courge, épazote, salsa verte ou rouge."
+      },
+      "servingTip": {
+        "es": "Pídela 'al comal' (no frita). En CDMX di 'con queso' explícitamente — la 'quesadilla sin queso' es una guerra eterna.",
+        "en": "Ask for 'al comal' (not fried). In CDMX, say 'con queso' explicitly — 'quesadilla without cheese' is an eternal debate.",
+        "fr": "Demande-la 'al comal' (non frite). À Mexico, précise 'con queso' — la 'quesadilla sans fromage' est un débat éternel."
+      },
+      "funFact": {
+        "es": "En CDMX 'quesadilla sin queso' SÍ existe (lleva tinga, papa, hongos). En el resto del país eso es solo un 'taco'.",
+        "en": "In Mexico City 'quesadilla without cheese' EXISTS (has tinga, potato, mushrooms). In the rest of the country, that's just a 'taco'.",
+        "fr": "À Mexico, la 'quesadilla sans fromage' EXISTE (à la tinga, pommes de terre, champignons). Ailleurs, c'est juste un 'taco'."
+      },
+      "orderPhrase": {
+        "es": "Una de flor con queso, al comal",
+        "pronEn": "OO-nah deh flohr kohn KEH-soh, ahl koh-MAHL",
+        "pronFr": "OU-na dé flor kone KÉ-so, al ko-MAL"
+      },
+      "variants": {
+        "es": "De huitlacoche, de hongos, de chicharrón prensado, de papa, de tinga.",
+        "en": "With huitlacoche (corn fungus), mushrooms, pressed chicharrón, potato, tinga.",
+        "fr": "Au huitlacoche (champignon de maïs), aux champignons, chicharrón pressé, pomme de terre, tinga."
+      },
+      "image": null,
+      "gradient": "from-yellow-500 via-amber-500 to-orange-600",
+      "mlSearch": "queso oaxaca artesanal"
+    }
+  ],
+  "pairings": [
+    {
+      "drink": "agua-jamaica",
+      "food": "tacos-al-pastor",
+      "rating": 5,
+      "note": {
+        "es": "Combo CLÁSICO de fonda. La acidez de la jamaica corta la grasa del pastor — los chilangos lo piden así desde hace 80 años.",
+        "en": "CLASSIC fonda combo. Jamaica's acidity cuts pastor's fat — Mexico City locals have ordered it this way for 80 years.",
+        "fr": "Combo CLASSIQUE de fonda. L'acidité de la jamaïque coupe le gras du pastor — les Mexicains commandent ainsi depuis 80 ans."
+      }
+    },
+    {
+      "drink": "agua-horchata",
+      "food": "tacos-al-pastor",
+      "rating": 5,
+      "note": {
+        "es": "Maridaje perfecto. La horchata cremosa apaga el picor del pastor y la piña. Lo mejor para principiantes.",
+        "en": "Perfect pairing. Creamy horchata calms the heat from pastor and pineapple. Best for beginners.",
+        "fr": "Accord parfait. L'horchata crémeuse calme le piquant du pastor et de l'ananas. Idéal pour les débutants."
+      }
+    },
+    {
+      "drink": "agua-tamarindo",
+      "food": "cochinita-pibil",
+      "rating": 5,
+      "note": {
+        "es": "Yucatán × Yucatán. El agridulce del tamarindo amplifica el achiote. Y si te pasaste con el habanero, ayuda mucho.",
+        "en": "Yucatán × Yucatán. Tamarind's sweet-sour amplifies achiote. If you went too hard on habanero, it helps a lot.",
+        "fr": "Yucatán × Yucatán. L'aigre-doux du tamarin amplifie l'achiote. Si tu as forcé sur le habanero, ça aide beaucoup."
+      }
+    },
+    {
+      "drink": "agua-horchata",
+      "food": "cochinita-pibil",
+      "rating": 5,
+      "note": {
+        "es": "Si el habanero te ganó, la horchata es la única cura. Lácteo + dulce = anestesia natural.",
+        "en": "If habanero beat you, horchata is the only cure. Dairy + sweet = natural anesthesia.",
+        "fr": "Si le habanero t'a battu, l'horchata est le seul remède. Laitier + sucre = anesthésie naturelle."
+      }
+    },
+    {
+      "drink": "agua-sandia",
+      "food": "cabrito",
+      "rating": 5,
+      "note": {
+        "es": "Combinación regia perfecta. La sandía hidrata después del cabrito asado, especialmente con el calor de Monterrey.",
+        "en": "Perfect Monterrey combo. Watermelon rehydrates after the rich roasted goat, especially in Monterrey heat.",
+        "fr": "Combo régio parfait. La pastèque réhydrate après le chevreau rôti, surtout avec la chaleur de Monterrey."
+      }
+    },
+    {
+      "drink": "agua-jamaica",
+      "food": "tortas-ahogadas",
+      "rating": 5,
+      "note": {
+        "es": "Tradición tapatía. La acidez de la jamaica balancea la salsa picante. Pídela en cualquier 'La Mexicana' de Guadalajara.",
+        "en": "Tapatío tradition. Jamaica's tartness balances the spicy sauce. Order at any 'La Mexicana' in Guadalajara.",
+        "fr": "Tradition tapatía. L'acidité de la jamaïque équilibre la sauce piquante. Commande dans n'importe quel 'La Mexicana' à Guadalajara."
+      }
+    },
+    {
+      "drink": "tejate",
+      "food": "mole",
+      "rating": 5,
+      "note": {
+        "es": "Oaxaca × Oaxaca. Ambos llevan cacao y tienen complejidad ritual. Es prácticamente una ceremonia prehispánica.",
+        "en": "Oaxaca × Oaxaca. Both contain cacao and ritual complexity. Practically a pre-Hispanic ceremony.",
+        "fr": "Oaxaca × Oaxaca. Tous deux contiennent du cacao et une complexité rituelle. Une cérémonie préhispanique."
+      }
+    },
+    {
+      "drink": "cafe-de-olla",
+      "food": "mole",
+      "rating": 4,
+      "note": {
+        "es": "Bonito sobremesa. El café de olla con canela y piloncillo cierra perfecto un platillo de mole.",
+        "en": "Lovely after-meal. Cinnamon-piloncillo café de olla closes a mole meal perfectly.",
+        "fr": "Belle fin de repas. Le café de olla à la cannelle et piloncillo clôt parfaitement un plat de mole."
+      }
+    },
+    {
+      "drink": "agua-horchata",
+      "food": "elote-esquite",
+      "rating": 4,
+      "note": {
+        "es": "Doble carga de maíz, cremosa y dulce vs. salada y picante. Combinación de feria mexicana.",
+        "en": "Double dose of corn — creamy-sweet vs. savory-spicy. Mexican fair combo.",
+        "fr": "Double dose de maïs — crémeux-sucré vs salé-épicé. Combo de foire mexicaine."
+      }
+    },
+    {
+      "drink": "agua-jamaica",
+      "food": "elote-esquite",
+      "rating": 4,
+      "note": {
+        "es": "Refrescante para una tarde de partido. La jamaica corta el calor del chile en el esquite.",
+        "en": "Refreshing for a match afternoon. Jamaica cuts through esquite's chili heat.",
+        "fr": "Rafraîchissant pour une après-midi de match. La jamaïque coupe la chaleur du piment dans l'esquite."
+      }
+    },
+    {
+      "drink": "agua-tamarindo",
+      "food": "tacos-al-pastor",
+      "rating": 4,
+      "note": {
+        "es": "El agridulce del tamarindo juega bien con el achiote del pastor. Diferente al combo clásico, pero sabroso.",
+        "en": "Tamarind's sweet-sour plays well with pastor's achiote. Different from the classic combo, but delicious.",
+        "fr": "L'aigre-doux du tamarin se marie au achiote du pastor. Différent du classique, mais délicieux."
+      }
+    },
+    {
+      "drink": "agua-horchata",
+      "food": "quesadilla-flor",
+      "rating": 4,
+      "note": {
+        "es": "Suave y reconfortante. Buena para un brunch chilango antes del partido.",
+        "en": "Mild and comforting. Great for a Mexico City brunch before the match.",
+        "fr": "Doux et réconfortant. Parfait pour un brunch à Mexico avant le match."
+      }
+    },
+    {
+      "drink": "agua-sandia",
+      "food": "tacos-barbacoa",
+      "rating": 4,
+      "note": {
+        "es": "La sandía con limón balancea la grasa del borrego. Combo dominical que despierta.",
+        "en": "Watermelon with lime balances the lamb's richness. Wake-up Sunday combo.",
+        "fr": "La pastèque au citron équilibre le gras de l'agneau. Combo dominical qui réveille."
+      }
+    },
+    {
+      "drink": "cafe-de-olla",
+      "food": "tacos-barbacoa",
+      "rating": 4,
+      "note": {
+        "es": "Domingo de barbacoa con su café de olla = la felicidad mexicana. Tradición pueblerina.",
+        "en": "Sunday barbacoa with café de olla = Mexican happiness. Small-town tradition.",
+        "fr": "Dimanche barbacoa avec café de olla = bonheur mexicain. Tradition villageoise."
+      }
+    }
+  ]
+}

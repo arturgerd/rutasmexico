@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { setRequestLocale } from "next-intl/server";
 import { getAllMundialVenues } from "@/lib/data/mundial";
+import { getMundialMenu } from "@/lib/data/mundial-menu";
 import MundialVenueGrid from "@/components/mundial/MundialVenueGrid";
+import MenuBuilder from "@/components/mundial/MenuBuilder";
 import MercadoLibreBanner from "@/components/widgets/MercadoLibreBanner";
 import { t3, seoAlternates, seoOpenGraph } from "@/lib/utils";
 
@@ -27,6 +29,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 export default async function MundialPage({ params: { locale } }: { params: { locale: string } }) {
   setRequestLocale(locale);
   const venues = await getAllMundialVenues();
+  const menu = getMundialMenu();
 
   const totalMatches = venues.reduce((sum, v) => sum + v.matches.length, 0);
   const mexicoMatches = venues.reduce((sum, v) => sum + v.matches.filter(m => m.isMexicoGame).length, 0);
@@ -263,79 +266,7 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
             )}
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Cervezas */}
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <h3 className="font-display font-bold text-arena-800 text-lg mb-4">🍺 {t3(locale, "Cervezas para el partido", "Beers for the match", "Bières pour le match")}</h3>
-              <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">🟡</span>
-                  <div>
-                    <p className="font-bold text-arena-800 text-sm">Corona Extra</p>
-                    <p className="text-xs text-arena-500">{t3(locale, "LA cerveza mexicana por excelencia. Con limón y sal, es el ritual del fútbol mexicano. La más popular en estadios.", "THE Mexican beer. With lime and salt, it's the Mexican football ritual. Most popular in stadiums.", "LA bière mexicaine. Avec citron et sel, c'est le rituel.")}</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">🟤</span>
-                  <div>
-                    <p className="font-bold text-arena-800 text-sm">Victoria</p>
-                    <p className="text-xs text-arena-500">{t3(locale, "Cerveza ámbar suave, perfecta para el calor de Monterrey. Patrocinador histórico del fútbol mexicano.", "Smooth amber beer, perfect for Monterrey's heat. Historic Mexican football sponsor.", "Bière ambrée douce, parfaite pour la chaleur de Monterrey.")}</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">⚫</span>
-                  <div>
-                    <p className="font-bold text-arena-800 text-sm">Negra Modelo</p>
-                    <p className="text-xs text-arena-500">{t3(locale, "Cerveza oscura tipo vienna lager. Para el aficionado que quiere algo con más cuerpo. Ideal con botana.", "Dark vienna lager. For fans wanting something fuller. Ideal with snacks.", "Lager foncée type vienna. Pour les fans qui veulent plus de corps.")}</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">🟢</span>
-                  <div>
-                    <p className="font-bold text-arena-800 text-sm">Michelada</p>
-                    <p className="text-xs text-arena-500">{t3(locale, "Cerveza con limón, salsa, Clamato y chile. EL cóctel del estadio mexicano. Pídela con Modelo o Sol.", "Beer with lime, hot sauce, Clamato and chili. THE Mexican stadium cocktail. Order with Modelo or Sol.", "Bière avec citron, sauce, Clamato et piment. LE cocktail du stade mexicain.")}</p>
-                  </div>
-                </div>
-              </div>
-              <p className="text-xs text-arena-400 mt-3 bg-arena-50 rounded-lg p-2">💡 {t3(locale, "Precio en estadio: $120-180 MXN. Afuera: $30-60 MXN. Pro tip: toma en la fan zone antes de entrar.", "Stadium price: $120-180 MXN. Outside: $30-60 MXN. Pro tip: drink at the fan zone before entering.", "Prix stade: $120-180 MXN. Dehors: $30-60 MXN.")}</p>
-            </div>
-
-            {/* Comida y botana */}
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <h3 className="font-display font-bold text-arena-800 text-lg mb-4">🌮 {t3(locale, "Comida y botana mundialista", "World Cup food & snacks", "Nourriture et snacks")}</h3>
-              <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">🌮</span>
-                  <div>
-                    <p className="font-bold text-arena-800 text-sm">{t3(locale, "Tacos al pastor", "Tacos al pastor", "Tacos al pastor")}</p>
-                    <p className="text-xs text-arena-500">{t3(locale, "Los reyes de la comida callejera. Búscalos afuera del estadio, $15-25 MXN por taco. El mejor fuel pre-partido.", "Kings of street food. Find them outside the stadium, $15-25 MXN per taco. Best pre-match fuel.", "Rois de la street food. $15-25 MXN par taco.")}</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">🌽</span>
-                  <div>
-                    <p className="font-bold text-arena-800 text-sm">{t3(locale, "Elotes y esquites", "Corn on the cob & esquites", "Maïs et esquites")}</p>
-                    <p className="text-xs text-arena-500">{t3(locale, "Maíz con mayonesa, queso, chile y limón. La botana perfecta del estadio. $30-50 MXN en carritos callejeros.", "Corn with mayo, cheese, chili and lime. Perfect stadium snack. $30-50 MXN from street carts.", "Maïs avec mayo, fromage, piment et citron. $30-50 MXN.")}</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">🥑</span>
-                  <div>
-                    <p className="font-bold text-arena-800 text-sm">{t3(locale, "Guacamole con totopos", "Guacamole with chips", "Guacamole avec chips")}</p>
-                    <p className="text-xs text-arena-500">{t3(locale, "La botana clásica para ver el partido en grupo. Cómpralo en mercados locales o pide en restaurantes. Fresco y delicioso.", "Classic group snack. Buy at local markets or order at restaurants. Fresh and delicious.", "Le snack classique. Achetez au marché ou commandez au restaurant.")}</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">🫔</span>
-                  <div>
-                    <p className="font-bold text-arena-800 text-sm">{t3(locale, "Chicharrones preparados", "Prepared chicharrones", "Chicharrones préparés")}</p>
-                    <p className="text-xs text-arena-500">{t3(locale, "Chicharrón de harina con cueritos, clamato, valentina y limón. LA botana del estadio mexicano. $40-60 MXN.", "Flour chicharrón with pickled pork skin, clamato, hot sauce and lime. THE Mexican stadium snack. $40-60 MXN.", "Chicharrón avec cueritos, clamato, sauce piquante. LE snack du stade.")}</p>
-                  </div>
-                </div>
-              </div>
-              <p className="text-xs text-arena-400 mt-3 bg-arena-50 rounded-lg p-2">💡 {t3(locale, "En cada sede hay comida regional: CDMX=tacos, Monterrey=carne asada, Guadalajara=tortas ahogadas", "Each venue has regional food: CDMX=tacos, Monterrey=grilled meat, Guadalajara=tortas ahogadas", "Chaque ville a sa spécialité: CDMX=tacos, Monterrey=viande grillée, Guadalajara=tortas ahogadas")}</p>
-            </div>
-          </div>
+          <MenuBuilder menu={menu} locale={locale} />
 
           {/* Ambiente y tradiciones */}
           <div className="bg-white rounded-2xl p-6 shadow-sm mt-6">
