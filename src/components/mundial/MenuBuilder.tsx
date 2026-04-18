@@ -172,9 +172,9 @@ export default function MenuBuilder({ menu, locale }: Props) {
               🗣️ {t3(locale, "Cómo pedirlo en español", "How to order in Spanish", "Comment commander en espagnol")}
             </div>
             <p className="font-display text-lg md:text-xl text-white leading-snug">
-              <span className="text-oro-300">"</span>
+              <span className="text-oro-300">&ldquo;</span>
               {composedOrderEs}
-              <span className="text-oro-300">"</span>
+              <span className="text-oro-300">&rdquo;</span>
             </p>
             {locale !== "es" && (
               <div className="mt-3 pt-3 border-t border-arena-700">
