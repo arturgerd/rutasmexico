@@ -42,8 +42,7 @@ export default async function MundialVenuePage({
   const venue = await getMundialVenueBySlug(slug);
   if (!venue) notFound();
 
-  const destination = await getDestinationById(venue.destinationId);
-  if (!destination) notFound();
+  const destination = venue.destinationId ? await getDestinationById(venue.destinationId) : null;
 
   return <MundialVenueDetail venue={venue} destination={destination} />;
 }

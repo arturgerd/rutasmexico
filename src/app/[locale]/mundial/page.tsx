@@ -34,6 +34,8 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
   const totalMatches = venues.reduce((sum, v) => sum + v.matches.length, 0);
   const mexicoMatches = venues.reduce((sum, v) => sum + v.matches.filter(m => m.isMexicoGame).length, 0);
   const allMexicoGames = venues.flatMap(v => v.matches.filter(m => m.isMexicoGame)).sort((a, b) => a.date.localeCompare(b.date));
+  const mxVenues = venues.filter(v => (v.country ?? "MX") === "MX");
+  const usVenues = venues.filter(v => v.country === "US");
 
   return (
     <div className="min-h-screen">
@@ -46,13 +48,13 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
               <span className="text-white text-sm font-bold tracking-wide">FIFA WORLD CUP 2026™</span>
             </div>
             <h1 className="font-display text-4xl md:text-6xl font-bold text-white mb-4">
-              {t3(locale, "Mundial 2026 en México", "World Cup 2026 in Mexico", "Coupe du Monde 2026 au Mexique")}
+              {t3(locale, "Mundial 2026: México + EUA", "World Cup 2026: Mexico + USA", "Coupe du Monde 2026 : Mexique + USA")}
             </h1>
             <p className="text-arena-300 text-lg max-w-3xl mx-auto mb-8">
               {t3(locale,
-                "México será sede del partido inaugural y 13 partidos en 3 ciudades. Primera vez que un país es sede por tercera vez. Tu guía completa para vivir la fiesta del fútbol.",
-                "Mexico will host the opening match and 13 games in 3 cities. First time a country hosts for the third time. Your complete guide to experience the football festival.",
-                "Le Mexique accueillera le match d'ouverture et 13 matchs dans 3 villes. Votre guide complet."
+                "3 sedes en México + 11 en Estados Unidos. Partido inaugural en CDMX, final en Nueva York. Tu guía completa para cada ciudad sede: cómo llegar, transporte, zonas seguras, cambio y lugares cerca.",
+                "3 venues in Mexico + 11 in the United States. Opening match in Mexico City, final in New York. Your complete guide for every host city: how to get there, transport, safe zones, currency and nearby places.",
+                "3 stades au Mexique + 11 aux États-Unis. Match d'ouverture à Mexico, finale à New York. Ton guide complet pour chaque ville hôte."
               )}
             </p>
 
@@ -64,7 +66,7 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
               </div>
               <div className="bg-arena-800 rounded-xl p-4 border border-arena-700">
                 <div className="text-3xl font-bold text-oro-400">{totalMatches}</div>
-                <div className="text-xs text-arena-400 mt-1">{t3(locale, "Partidos en MX", "Matches in MX", "Matchs au MX")}</div>
+                <div className="text-xs text-arena-400 mt-1">{t3(locale, "Partidos totales", "Total matches", "Matchs au total")}</div>
               </div>
               <div className="bg-arena-800 rounded-xl p-4 border border-arena-700">
                 <div className="text-3xl font-bold text-jade-400">🇲🇽 {mexicoMatches}</div>
@@ -114,20 +116,37 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
         </div>
       </div>
 
-      {/* Sedes - Venue Grid */}
+      {/* Sedes en México */}
       <div className="bg-arena-50 py-12">
         <div className="container-custom">
-          <h2 className="font-display text-2xl font-bold text-arena-800 mb-2 text-center">
-            🏟️ {t3(locale, "Las 3 Sedes en México", "The 3 Venues in Mexico", "Les 3 Stades au Mexique")}
+          <h2 className="font-display text-2xl md:text-3xl font-bold text-arena-800 mb-2 text-center">
+            🇲🇽 {t3(locale, "Las 3 sedes en México", "The 3 venues in Mexico", "Les 3 stades au Mexique")}
           </h2>
           <p className="text-arena-500 text-center mb-8 max-w-xl mx-auto">
             {t3(locale,
-              "Haz clic en cada sede para ver partidos, cómo llegar, hoteles y tips",
-              "Click each venue to see matches, how to get there, hotels and tips",
-              "Cliquez sur chaque stade pour voir matchs, comment y arriver, hôtels et conseils"
+              "Fase de grupos + Ronda de 32 + Octavos. Partido inaugural en el Estadio Azteca.",
+              "Group stage + Round of 32 + Round of 16. Opening match at Estadio Azteca.",
+              "Phase de groupes + 32es + 8es. Match d'ouverture au Estadio Azteca."
             )}
           </p>
-          <MundialVenueGrid venues={venues} />
+          <MundialVenueGrid venues={mxVenues} />
+        </div>
+      </div>
+
+      {/* Sedes en EUA */}
+      <div className="bg-white py-12 border-t border-arena-200">
+        <div className="container-custom">
+          <h2 className="font-display text-2xl md:text-3xl font-bold text-arena-800 mb-2 text-center">
+            🇺🇸 {t3(locale, "Las 11 sedes en Estados Unidos", "The 11 venues in the United States", "Les 11 stades aux États-Unis")}
+          </h2>
+          <p className="text-arena-500 text-center mb-8 max-w-2xl mx-auto">
+            {t3(locale,
+              "Semifinales en Atlanta y Dallas, final en Nueva York (MetLife Stadium, 19 julio). Guía para cada sede: vuelos desde México, transporte local, zonas seguras y cambio USD.",
+              "Semifinals in Atlanta and Dallas, final in New York (MetLife Stadium, July 19). Guide for each venue: flights from Mexico, local transport, safe zones and USD exchange.",
+              "Demi-finales à Atlanta et Dallas, finale à New York (MetLife Stadium, 19 juillet). Guide pour chaque site : vols depuis le Mexique, transport local, zones sûres et change USD."
+            )}
+          </p>
+          <MundialVenueGrid venues={usVenues} />
         </div>
       </div>
 

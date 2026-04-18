@@ -57,10 +57,26 @@ export interface NearbyAttraction {
   mapsQuery?: string;
 }
 
+export interface FromMexicoFlight {
+  fromCity: "CDMX" | "MTY" | "GDL";
+  airlines: string;
+  duration: LocalizedString;
+  priceRangeMxn: LocalizedString;
+  direct: boolean;
+  note?: LocalizedString;
+}
+
+export interface FromMexico {
+  description: LocalizedString;
+  flights: FromMexicoFlight[];
+  tip?: LocalizedString;
+}
+
 export interface MundialVenue {
   id: string;
   slug: string;
-  destinationId: string;
+  destinationId?: string;
+  country?: "MX" | "US" | "CA";
   name: LocalizedString;
   stadium: {
     name: string;
@@ -86,4 +102,5 @@ export interface MundialVenue {
   };
   nearbyAttractions?: NearbyAttraction[];
   mapsEmbedSrc?: string;
+  fromMexico?: FromMexico;
 }

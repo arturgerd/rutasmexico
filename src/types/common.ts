@@ -14,5 +14,5 @@ export interface LocalizedString {
 export interface PriceRange {
   min: number;
   max: number;
-  currency: "MXN";
+  currency: "MXN" | "USD";
 }

@@ -11,8 +11,10 @@ import MercadoLibreBanner from "@/components/widgets/MercadoLibreBanner";
 
 interface MundialVenueDetailProps {
   venue: MundialVenue;
-  destination: Destination;
+  destination: Destination | null;
 }
+
+const fromCityLabels: Record<string, string> = { CDMX: "CDMX", MTY: "Monterrey", GDL: "Guadalajara" };
 
 const roundLabels: Record<string, Record<string, string>> = {
   group: { es: "Fase de Grupos", en: "Group Stage", fr: "Phase de Groupes", zh: "小组赛" },
@@ -82,9 +84,13 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
   const hasCurrency = !!venue.currency?.places?.length;
   const hasAttractions = !!venue.nearbyAttractions?.length;
   const hasMap = !!venue.mapsEmbedSrc;
+  const hasFromMexico = !!venue.fromMexico?.flights?.length;
+  const budgetCurrency = venue.avgMatchDayBudget.currency;
+  const isUS = venue.country === "US";
 
   const sections: { id: string; emoji: string; label: { es: string; en: string; fr: string } }[] = [
     { id: "partidos", emoji: "⚽", label: { es: "Partidos", en: "Matches", fr: "Matchs" } },
+    ...(hasFromMexico ? [{ id: "desde-mexico", emoji: "🇲🇽", label: { es: "Desde México", en: "From Mexico", fr: "Depuis le Mexique" } }] : []),
     ...(hasAirports ? [{ id: "llegada", emoji: "🛬", label: { es: "Llegada", en: "Arrival", fr: "Arrivée" } }] : []),
     ...(hasLocalTransport ? [{ id: "transporte", emoji: "🚗", label: { es: "Transporte", en: "Transport", fr: "Transport" } }] : []),
     ...(hasSafetyZones ? [{ id: "seguridad", emoji: "🗺️", label: { es: "Zonas", en: "Zones", fr: "Zones" } }] : []),
@@ -208,6 +214,71 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
             ))}
           </div>
         </section>
+
+        {/* From Mexico (US venues) */}
+        {hasFromMexico && venue.fromMexico && (
+          <section id="desde-mexico" className="mb-14 scroll-mt-20">
+            <SectionHeader
+              emoji="🇲🇽"
+              title={t3(locale, "Cómo llegar desde México", "How to get there from Mexico", "Depuis le Mexique")}
+              subtitle={t3(
+                locale,
+                "Opciones de vuelo desde las ciudades más grandes de México a la sede",
+                "Flight options from Mexico's biggest cities to the venue",
+                "Options de vol depuis les grandes villes du Mexique vers le stade"
+              )}
+            />
+            <div className="bg-jade-50 border border-jade-200 rounded-xl p-5 mb-5">
+              <p className="text-sm text-arena-700 leading-relaxed">{localize(venue.fromMexico.description, locale)}</p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-3">
+              {venue.fromMexico.flights.map((f, i) => (
+                <div
+                  key={i}
+                  className="bg-white rounded-2xl border-2 border-arena-200 p-4 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+                >
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="flex items-center gap-2">
+                      <span className="text-2xl">✈️</span>
+                      <div>
+                        <div className="font-bold text-arena-800 text-sm">{fromCityLabels[f.fromCity]} → {venue.stadium.name.split(" ")[0]}</div>
+                        <div className="text-xs text-arena-500">{f.airlines}</div>
+                      </div>
+                    </div>
+                    <span className={`text-[10px] font-bold rounded-full px-2 py-0.5 whitespace-nowrap ${f.direct ? "bg-emerald-500 text-white" : "bg-amber-500 text-white"}`}>
+                      {f.direct
+                        ? t3(locale, "Directo", "Direct", "Direct")
+                        : t3(locale, "Con escala", "Connecting", "Avec escale")}
+                    </span>
+                  </div>
+                  <div className="space-y-1.5 text-xs">
+                    <div className="flex items-center gap-2 text-arena-700">
+                      <span>⏱️</span>
+                      <span>{localize(f.duration, locale)}</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-arena-700 font-semibold">
+                      <span>💵</span>
+                      <span>{localize(f.priceRangeMxn, locale)}</span>
+                    </div>
+                  </div>
+                  {f.note && (
+                    <p className="text-xs text-arena-600 bg-arena-50 rounded-lg p-2 mt-3 leading-relaxed">
+                      💡 {localize(f.note, locale)}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+            {venue.fromMexico.tip && (
+              <div className="bg-gradient-to-r from-oro-50 to-amber-50 border border-oro-200 rounded-xl p-4 mt-5">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">💡</span>
+                  <p className="text-sm text-arena-700 leading-relaxed">{localize(venue.fromMexico.tip, locale)}</p>
+                </div>
+              </div>
+            )}
+          </section>
+        )}
 
         {/* Arrival by air */}
         {hasAirports && venue.airports && (
@@ -561,7 +632,7 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
               {t3(locale, "Presupuesto por día de partido", "Match day budget", "Budget par jour")}
             </h3>
             <p className="text-3xl font-bold text-terracotta-600">
-              {formatCurrency(venue.avgMatchDayBudget.min)} — {formatCurrency(venue.avgMatchDayBudget.max)}
+              {formatCurrency(venue.avgMatchDayBudget.min, budgetCurrency)} — {formatCurrency(venue.avgMatchDayBudget.max, budgetCurrency)}
             </p>
             <p className="text-xs text-arena-500 mt-2">
               {t3(locale, "Incluye transporte, comida y entrada", "Includes transport, food and ticket", "Transport, nourriture et billet inclus")}
@@ -574,18 +645,29 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
         {/* Link to destination */}
         <div className="bg-gradient-to-r from-jade-500 to-azul-500 rounded-2xl p-8 text-center mt-8 shadow-lg">
           <p className="text-white text-lg mb-4">
-            {t3(
-              locale,
-              `¿Quieres explorar más sobre ${localize(destination.name, locale)}?`,
-              `Want to explore more about ${localize(destination.name, locale)}?`,
-              `Vous voulez explorer ${localize(destination.name, locale)} ?`
-            )}
+            {destination
+              ? t3(
+                  locale,
+                  `¿Quieres explorar más sobre ${localize(destination.name, locale)}?`,
+                  `Want to explore more about ${localize(destination.name, locale)}?`,
+                  `Vous voulez explorer ${localize(destination.name, locale)} ?`
+                )
+              : isUS
+              ? t3(
+                  locale,
+                  `¿Vas a ${localize(venue.name, locale).split(" - ")[0]}? Planea tu viaje:`,
+                  `Heading to ${localize(venue.name, locale).split(" - ")[0]}? Plan your trip:`,
+                  `Tu vas à ${localize(venue.name, locale).split(" - ")[0]} ? Planifie ton voyage :`
+                )
+              : t3(locale, "Planea tu viaje a la sede", "Plan your trip to the venue", "Planifie ton voyage vers le stade")}
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            <Link href={`/${locale}/destinos/${destination.slug}`} className="bg-white text-arena-800 font-semibold py-3 px-6 rounded-xl hover:bg-arena-100 transition-colors">
-              {t3(locale, "Guía del destino", "Destination guide", "Guide destination")}
-            </Link>
-            <Link href={`/${locale}/vuelos`} className="bg-white/15 backdrop-blur border border-white/30 text-white font-semibold py-3 px-6 rounded-xl hover:bg-white/25 transition-colors">
+            {destination && (
+              <Link href={`/${locale}/destinos/${destination.slug}`} className="bg-white text-arena-800 font-semibold py-3 px-6 rounded-xl hover:bg-arena-100 transition-colors">
+                {t3(locale, "Guía del destino", "Destination guide", "Guide destination")}
+              </Link>
+            )}
+            <Link href={`/${locale}/vuelos`} className="bg-white text-arena-800 font-semibold py-3 px-6 rounded-xl hover:bg-arena-100 transition-colors">
               ✈️ {t3(locale, "Buscar vuelos", "Search flights", "Chercher des vols")}
             </Link>
             <Link href={`/${locale}/hoteles`} className="bg-white/15 backdrop-blur border border-white/30 text-white font-semibold py-3 px-6 rounded-xl hover:bg-white/25 transition-colors">
