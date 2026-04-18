@@ -3,6 +3,7 @@ import { getAllDestinations } from "@/lib/data/destinations";
 import { getAllAirports } from "@/lib/data/airports";
 import { getRecentBlogPosts } from "@/lib/data/blog";
 import HeroSection from "@/components/home/HeroSection";
+import MundialBanner from "@/components/home/MundialBanner";
 import FeaturedDestinations from "@/components/home/FeaturedDestinations";
 import HowItWorks from "@/components/home/HowItWorks";
 import MapSection from "@/components/home/MapSection";
@@ -21,6 +22,7 @@ export default async function HomePage({ params: { locale } }: { params: { local
   return (
     <>
       <HeroSection airports={airports} />
+      <MundialBanner locale={locale} />
       <WhyMexicoSection locale={locale} />
       <AirlineComparisonSection />
       <MapSection destinations={destinations} />

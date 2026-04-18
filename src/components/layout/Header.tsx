@@ -19,6 +19,8 @@ export default function Header() {
 
   const weddingLabel = locale === "es" ? "💍 Bodas" : locale === "fr" ? "💍 Mariages" : "💍 Weddings";
 
+  const mundialLabel = locale === "es" ? "Mundial 2026" : locale === "fr" ? "Coupe du Monde 2026" : "World Cup 2026";
+
   const aboutLabel = locale === "es" ? "Nosotros" : locale === "fr" ? "À propos" : "About";
 
   const navLinks = [
@@ -46,7 +48,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -56,6 +58,12 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+            <Link
+              href={`/${locale}/mundial`}
+              className="inline-flex items-center gap-1.5 bg-gradient-to-r from-jade-600 to-emerald-500 text-white text-sm font-bold py-1.5 px-3.5 rounded-full shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 whitespace-nowrap"
+            >
+              ⚽ {mundialLabel}
+            </Link>
             <LanguageSwitcher />
           </nav>
 
@@ -81,6 +89,13 @@ export default function Header() {
         {mobileMenuOpen && (
           <nav className="md:hidden pb-4 border-t border-arena-200 pt-4">
             <div className="flex flex-col gap-3">
+              <Link
+                href={`/${locale}/mundial`}
+                onClick={() => setMobileMenuOpen(false)}
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-jade-600 to-emerald-500 text-white font-bold py-2.5 px-4 rounded-xl shadow-md"
+              >
+                ⚽ {mundialLabel}
+              </Link>
               {navLinks.map((link) => (
                 <Link
                   key={link.href}

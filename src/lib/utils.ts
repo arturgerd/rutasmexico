@@ -53,3 +53,29 @@ export function slugify(text: string): string {
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/(^-|-$)/g, "");
 }
+
+const BASE_URL = "https://rutasmexico.com.mx";
+
+export function seoAlternates(locale: string, path: string = "") {
+  return {
+    canonical: `${BASE_URL}/${locale}${path}`,
+    languages: {
+      es: `${BASE_URL}/es${path}`,
+      en: `${BASE_URL}/en${path}`,
+      fr: `${BASE_URL}/fr${path}`,
+      "x-default": `${BASE_URL}/es${path}`,
+    },
+  };
+}
+
+export function seoOpenGraph(locale: string, title: string, description: string, path: string = "", image?: string) {
+  return {
+    title,
+    description,
+    url: `${BASE_URL}/${locale}${path}`,
+    siteName: "RutasMéxico",
+    locale: locale === "es" ? "es_MX" : locale === "fr" ? "fr_FR" : "en_US",
+    type: "website" as const,
+    ...(image ? { images: [{ url: image, width: 1200, height: 630 }] } : {}),
+  };
+}

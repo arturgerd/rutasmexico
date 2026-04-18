@@ -1,0 +1,1521 @@
+[
+  {
+    "id": "mundial-cdmx",
+    "slug": "ciudad-de-mexico",
+    "destinationId": "cdmx",
+    "name": {
+      "es": "Ciudad de México - Estadio Azteca",
+      "en": "Mexico City - Estadio Azteca",
+      "zh": "墨西哥城 - 阿兹特克体育场"
+    },
+    "stadium": {
+      "name": "Estadio Azteca",
+      "capacity": 87000,
+      "address": {
+        "es": "Calz. de Tlalpan 3465, Sta. Úrsula Coapa, Coyoacán, CDMX",
+        "en": "Calz. de Tlalpan 3465, Sta. Úrsula Coapa, Coyoacán, Mexico City",
+        "zh": "墨西哥城科约阿坎区圣乌尔苏拉科阿帕，特拉尔潘大道3465号"
+      },
+      "yearBuilt": 1966,
+      "description": {
+        "es": "Estadio histórico que albergó las finales de los Mundiales de 1970 y 1986. Aquí ocurrieron la 'Mano de Dios' y el 'Gol del Siglo' de Maradona. Es el único estadio en el mundo que será sede de tres Copas del Mundo. Con capacidad para 87,000 espectadores, el Azteca es un templo del fútbol mundial y un símbolo de la pasión mexicana por este deporte.",
+        "en": "Historic stadium that hosted the 1970 and 1986 World Cup finals. Maradona's famous 'Hand of God' and 'Goal of the Century' both happened here. It is the only stadium in the world to host three FIFA World Cups. With a capacity of 87,000 spectators, the Azteca is a temple of world football and a symbol of Mexico's passion for the beautiful game.",
+        "zh": "历史悠久的体育场，曾举办1970年和1986年世界杯决赛。马拉多纳著名的「上帝之手」和「世纪进球」都在这里诞生。这是世界上唯一一座将举办三届世界杯的体育场。可容纳87,000名观众的阿兹特克体育场是世界足球的殿堂，也是墨西哥足球热情的象征。"
+      }
+    },
+    "matches": [
+      {
+        "date": "2026-06-11",
+        "time": "13:00",
+        "teamA": { "es": "México", "en": "Mexico", "zh": "墨西哥" },
+        "teamB": { "es": "Sudáfrica", "en": "South Africa", "zh": "南非" },
+        "round": "group",
+        "group": "A",
+        "isMexicoGame": true
+      },
+      {
+        "date": "2026-06-12",
+        "time": "16:00",
+        "teamA": { "es": "Por definir (Grupo B)", "en": "TBD (Group B)", "zh": "待定（B组）" },
+        "teamB": { "es": "Por definir (Grupo B)", "en": "TBD (Group B)", "zh": "待定（B组）" },
+        "round": "group",
+        "group": "B",
+        "isMexicoGame": false
+      },
+      {
+        "date": "2026-06-24",
+        "time": "19:00",
+        "teamA": { "es": "Chequia", "en": "Czechia", "zh": "捷克" },
+        "teamB": { "es": "México", "en": "Mexico", "zh": "墨西哥" },
+        "round": "group",
+        "group": "A",
+        "isMexicoGame": true
+      },
+      {
+        "date": "2026-06-29",
+        "time": "16:00",
+        "teamA": { "es": "Por definir", "en": "TBD", "zh": "待定" },
+        "teamB": { "es": "Por definir", "en": "TBD", "zh": "待定" },
+        "round": "round-of-32",
+        "isMexicoGame": false
+      },
+      {
+        "date": "2026-07-02",
+        "time": "16:00",
+        "teamA": { "es": "Por definir", "en": "TBD", "zh": "待定" },
+        "teamB": { "es": "Por definir", "en": "TBD", "zh": "待定" },
+        "round": "round-of-16",
+        "isMexicoGame": false
+      }
+    ],
+    "howToGetThere": {
+      "es": "El Estadio Azteca se encuentra al sur de la Ciudad de México en la alcaldía Coyoacán. La forma más económica de llegar es tomar el Metro Línea 2 (azul) hasta la estación Tasqueña y de ahí tomar un autobús o taxi hacia el estadio (10 minutos). También puedes usar el Metrobús Línea 1 hasta la estación Estadio Azteca. Uber y DiDi cuestan entre $150 y $250 MXN desde las zonas Roma, Condesa o Centro Histórico. El estacionamiento es muy limitado los días de partido, así que se recomienda usar transporte público. Llega al menos 3 horas antes del partido para pasar los filtros de seguridad FIFA sin prisas.",
+      "en": "Estadio Azteca is located in southern Mexico City in the Coyoacán borough. The most affordable way to get there is taking Metro Line 2 (blue) to Tasqueña station and then a bus or taxi to the stadium (10 minutes). You can also use Metrobús Line 1 to the Estadio Azteca stop. Uber and DiDi cost between $150 and $250 MXN from the Roma, Condesa, or Centro Histórico areas. Parking is very limited on match days, so public transportation is strongly recommended. Arrive at least 3 hours before kickoff to get through FIFA security screenings without stress.",
+      "zh": "阿兹特克体育场位于墨西哥城南部的科约阿坎区。最经济的到达方式是乘坐地铁2号线（蓝色）到塔斯克尼亚站，然后乘公交或出租车前往体育场（10分钟）。也可以乘坐快速公交1号线到阿兹特克体育场站。从罗马区、孔德萨区或历史中心打Uber或DiDi费用在150至250墨西哥比索之间。比赛日停车位非常有限，强烈建议使用公共交通。请至少提前3小时到场，从容通过FIFA安检。"
+    },
+    "nearbyHotels": {
+      "es": "Las mejores zonas para hospedarse son: Zona Rosa (15 min al estadio, vida nocturna y restaurantes), Condesa/Roma (20 min, barrios de moda con cafés y galerías), Centro Histórico (25 min, monumentos y cultura), y Coyoacán (10 min, el barrio más cercano al estadio con ambiente bohemio). Se recomienda reservar con al menos 6 meses de anticipación, ya que los precios se dispararán durante el Mundial. Los hoteles en Coyoacán ofrecen la mejor relación distancia-precio.",
+      "en": "The best areas to stay are: Zona Rosa (15 min to the stadium, nightlife and restaurants), Condesa/Roma (20 min, trendy neighborhoods with cafés and galleries), Centro Histórico (25 min, monuments and culture), and Coyoacán (10 min, the closest neighborhood to the stadium with a bohemian vibe). Book at least 6 months in advance, as prices will skyrocket during the World Cup. Hotels in Coyoacán offer the best distance-to-price ratio.",
+      "zh": "最佳住宿区域：粉红区（距体育场15分钟，夜生活和餐饮丰富）、孔德萨/罗马区（20分钟，时尚街区，咖啡馆和画廊）、历史中心（25分钟，古迹和文化）和科约阿坎（10分钟，距体育场最近的波西米亚风格街区）。建议至少提前6个月预订，世界杯期间价格会飙升。科约阿坎的酒店性价比最高。"
+    },
+    "fanZones": {
+      "es": "La Fan Fest principal estará en el Zócalo de la Ciudad de México, con pantallas gigantes, música en vivo y comida. También habrá activaciones a lo largo del Paseo de la Reforma y en la zona del Ángel de la Independencia. Espera pantallas gigantes, DJs, puestos de comida mexicana e internacional, y mercancía oficial FIFA. La entrada es gratuita y el ambiente será espectacular con miles de aficionados de todo el mundo.",
+      "en": "The main Fan Fest will be at Mexico City's Zócalo square, featuring giant screens, live music, and food. There will also be activations along Paseo de la Reforma and around the Angel of Independence monument. Expect giant screens, DJs, Mexican and international food stalls, and official FIFA merchandise. Entry is free and the atmosphere will be spectacular with thousands of fans from around the world.",
+      "zh": "主球迷嘉年华将在墨西哥城宪法广场举行，设有巨型屏幕、现场音乐和美食。改革大道沿线和独立天使纪念碑周围也将有活动。预计将有巨型屏幕、DJ、墨西哥和国际美食摊位以及FIFA官方商品。入场免费，来自世界各地的数千名球迷将营造壮观的氛围。"
+    },
+    "tips": [
+      {
+        "title": { "es": "Estadio sin efectivo", "en": "Cashless stadium", "zh": "无现金体育场" },
+        "content": {
+          "es": "El Estadio Azteca será completamente cashless durante el Mundial. Trae tarjetas de crédito/débito o configura tu billetera digital (Apple Pay, Google Pay) antes de llegar. No se aceptará efectivo para comida, bebidas ni mercancía dentro del estadio.",
+          "en": "Estadio Azteca will be completely cashless during the World Cup. Bring credit/debit cards or set up your digital wallet (Apple Pay, Google Pay) before arriving. Cash will not be accepted for food, drinks, or merchandise inside the stadium.",
+          "zh": "世界杯期间阿兹特克体育场将完全无现金运营。请携带信用卡/借记卡或提前设置数字钱包（Apple Pay、Google Pay）。场内购买食品、饮料和商品不接受现金。"
+        }
+      },
+      {
+        "title": { "es": "Altitud de 2,240 metros", "en": "Altitude of 2,240 meters", "zh": "海拔2,240米" },
+        "content": {
+          "es": "La Ciudad de México está a 2,240 metros sobre el nivel del mar. Si vienes de una ciudad a nivel del mar, podrías sentir falta de aire, dolor de cabeza o mareos. Llega al menos 2 días antes para aclimatarte, bebe mucha agua y evita el alcohol excesivo los primeros días.",
+          "en": "Mexico City sits at 2,240 meters (7,350 feet) above sea level. If you're coming from a sea-level city, you may experience shortness of breath, headaches, or dizziness. Arrive at least 2 days early to acclimatize, drink plenty of water, and avoid excessive alcohol during your first days.",
+          "zh": "墨西哥城海拔2,240米。如果你来自海平面城市，可能会感到呼吸急促、头痛或头晕。至少提前2天到达以适应海拔，多喝水，最初几天避免过量饮酒。"
+        }
+      },
+      {
+        "title": { "es": "Temporada de lluvias", "en": "Rainy season", "zh": "雨季" },
+        "content": {
+          "es": "Junio es temporada de lluvias en la Ciudad de México. Las lluvias suelen caer por la tarde/noche y pueden ser intensas. Trae una chamarra impermeable ligera o poncho. Las mañanas suelen ser soleadas y agradables.",
+          "en": "June is rainy season in Mexico City. Rain usually falls in the afternoon/evening and can be intense. Bring a lightweight rain jacket or poncho. Mornings are usually sunny and pleasant.",
+          "zh": "6月是墨西哥城的雨季。降雨通常在下午/傍晚，可能很大。请带一件轻便防雨外套或雨披。早晨通常阳光明媚、气候宜人。"
+        }
+      },
+      {
+        "title": { "es": "Seguridad y acceso", "en": "Security and access", "zh": "安全与入场" },
+        "content": {
+          "es": "No se permiten mochilas ni bolsas grandes dentro del estadio. Llega al menos 3 horas antes del partido para pasar los filtros de seguridad FIFA. Solo se permiten bolsas transparentes pequeñas. Trae tu boleto digital cargado en tu teléfono con batería suficiente.",
+          "en": "Backpacks and large bags are not allowed inside the stadium. Arrive at least 3 hours before kickoff to get through FIFA security screenings. Only small clear bags are permitted. Bring your digital ticket loaded on your phone with sufficient battery.",
+          "zh": "体育场内不允许携带背包和大型包袋。请至少提前3小时到场通过FIFA安检。只允许携带小型透明包袋。请确保手机电量充足，加载好电子门票。"
+        }
+      },
+      {
+        "title": { "es": "Transporte de regreso", "en": "Return transportation", "zh": "赛后交通" },
+        "content": {
+          "es": "El Metro estará extremadamente lleno después de los partidos. Considera usar Uber o DiDi (programa tu viaje con anticipación ya que habrá tarifa dinámica) o caminar hasta la estación de Metrobús que suele estar menos saturada. Ten paciencia, la salida de 87,000 personas toma tiempo.",
+          "en": "The Metro will be extremely crowded after matches. Consider using Uber or DiDi (book ahead as surge pricing will apply) or walking to the Metrobús station which is usually less crowded. Be patient - getting 87,000 people out takes time.",
+          "zh": "赛后地铁将极其拥挤。考虑使用Uber或DiDi（提前预约，因为会有动态加价）或步行到通常较不拥挤的快速公交站。请耐心等待——87,000人散场需要时间。"
+        }
+      }
+    ],
+    "heroImage": "",
+    "avgMatchDayBudget": { "min": 3000, "max": 8000, "currency": "MXN" },
+    "mapsEmbedSrc": "https://www.google.com/maps?q=Estadio+Azteca,+Mexico+City&output=embed&z=14",
+    "airports": [
+      {
+        "code": "MEX",
+        "name": { "es": "Aeropuerto Benito Juárez (MEX)", "en": "Benito Juárez Airport (MEX)", "fr": "Aéroport Benito Juárez (MEX)" },
+        "distance": "18 km",
+        "description": {
+          "es": "El aeropuerto principal de CDMX, con vuelos de todo el mundo. Tiene dos terminales (T1 y T2) conectadas por un tren-peine gratuito.",
+          "en": "Mexico City's main airport, with flights from around the world. Two terminals (T1 and T2) connected by a free shuttle train.",
+          "fr": "L'aéroport principal de Mexico, avec des vols du monde entier. Deux terminaux (T1 et T2) reliés par un train-navette gratuit."
+        },
+        "options": [
+          {
+            "type": "metro",
+            "icon": "🚇",
+            "name": { "es": "Metro (L5 → L9 → L2 → Tren Ligero)", "en": "Metro (L5 → L9 → L2 → Light Rail)", "fr": "Métro (L5 → L9 → L2 → Tram)" },
+            "cost": { "es": "$10 MXN", "en": "$10 MXN", "fr": "10 MXN" },
+            "duration": { "es": "90 min", "en": "90 min", "fr": "90 min" },
+            "safetyLevel": "yellow",
+            "safetyNote": { "es": "Seguro de día, muy atestado. Evítalo con maletas grandes.", "en": "Safe by day, very crowded. Avoid with large luggage.", "fr": "Sûr en journée, très bondé. À éviter avec de gros bagages." },
+            "tips": { "es": "Desde T1 camina al Metro Terminal Aérea (L5). Transborda en Pantitlán (L9), luego Chabacano (L2 a Tasqueña) y Tren Ligero al Estadio Azteca.", "en": "From T1 walk to Metro Terminal Aérea (L5). Transfer at Pantitlán (L9), then Chabacano (L2 to Tasqueña), and take Light Rail to Estadio Azteca.", "fr": "Depuis T1, marche jusqu'au Metro Terminal Aérea (L5). Change à Pantitlán (L9), puis Chabacano (L2 jusqu'à Tasqueña), et prends le tram jusqu'au Estadio Azteca." }
+          },
+          {
+            "type": "metrobus",
+            "icon": "🚌",
+            "name": { "es": "Metrobús Línea 4", "en": "Metrobús Line 4", "fr": "Metrobús Ligne 4" },
+            "cost": { "es": "$30 MXN", "en": "$30 MXN", "fr": "30 MXN" },
+            "duration": { "es": "75 min", "en": "75 min", "fr": "75 min" },
+            "safetyLevel": "green",
+            "safetyNote": { "es": "Autobús articulado en carril confinado con A/C. Más cómodo que el metro para maletas.", "en": "Articulated bus in dedicated lane with A/C. More comfortable than metro for luggage.", "fr": "Bus articulé en voie réservée avec climatisation. Plus confortable que le métro pour les bagages." },
+            "tips": { "es": "Sale desde el mostrador Metrobús en ambas terminales. Compra tarjeta recargable ahí ($15 MXN + saldo).", "en": "Departs from the Metrobús counter at both terminals. Buy a rechargeable card there ($15 MXN + balance).", "fr": "Part du comptoir Metrobús dans les deux terminaux. Achète une carte rechargeable sur place (15 MXN + solde)." }
+          },
+          {
+            "type": "uber",
+            "icon": "🚗",
+            "name": { "es": "Uber / DiDi", "en": "Uber / DiDi", "fr": "Uber / DiDi" },
+            "cost": { "es": "$350 - $550 MXN", "en": "$350 - $550 MXN", "fr": "350 - 550 MXN" },
+            "duration": { "es": "45 - 70 min", "en": "45 - 70 min", "fr": "45 - 70 min" },
+            "safetyLevel": "green",
+            "safetyNote": { "es": "La opción más segura y cómoda. Viaje rastreado y pago digital.", "en": "Safest and most comfortable option. Tracked trip and digital payment.", "fr": "L'option la plus sûre et confortable. Trajet suivi et paiement numérique." },
+            "tips": { "es": "El aeropuerto tiene zonas oficiales de recogida Uber en cada terminal. No aceptes servicios fuera de esas zonas.", "en": "Airport has official Uber pickup zones in each terminal. Don't accept service outside those zones.", "fr": "L'aéroport a des zones officielles de prise en charge Uber dans chaque terminal. N'accepte pas de services en dehors de ces zones." }
+          },
+          {
+            "type": "airport-taxi",
+            "icon": "🚕",
+            "name": { "es": "Taxi autorizado del aeropuerto", "en": "Authorized airport taxi", "fr": "Taxi autorisé de l'aéroport" },
+            "cost": { "es": "$450 - $650 MXN", "en": "$450 - $650 MXN", "fr": "450 - 650 MXN" },
+            "duration": { "es": "45 min", "en": "45 min", "fr": "45 min" },
+            "safetyLevel": "green",
+            "safetyNote": { "es": "Sitio oficial con tarifa fija por zonas — pagas antes de subir.", "en": "Official taxi stand with fixed zone rates — pay before boarding.", "fr": "Station officielle avec tarif fixe par zone — paie avant de monter." },
+            "tips": { "es": "Busca los mostradores amarillos 'Taxi Autorizado' DENTRO de la terminal. NUNCA tomes taxis que te ofrezcan afuera.", "en": "Look for yellow 'Taxi Autorizado' counters INSIDE the terminal. NEVER take taxis offered to you outside.", "fr": "Cherche les comptoirs jaunes 'Taxi Autorizado' À L'INTÉRIEUR du terminal. Ne prends JAMAIS les taxis qu'on te propose dehors." }
+          }
+        ]
+      },
+      {
+        "code": "AIFA",
+        "name": { "es": "Aeropuerto Felipe Ángeles (AIFA)", "en": "Felipe Ángeles Airport (AIFA)", "fr": "Aéroport Felipe Ángeles (AIFA)" },
+        "distance": "55 km",
+        "description": {
+          "es": "Aeropuerto nuevo al norte de CDMX, en el Estado de México. Menos saturado pero mucho más lejos del Estadio Azteca.",
+          "en": "New airport north of Mexico City, in Estado de México. Less crowded but much farther from Estadio Azteca.",
+          "fr": "Nouvel aéroport au nord de Mexico, dans l'État de Mexico. Moins saturé mais beaucoup plus loin du Estadio Azteca."
+        },
+        "options": [
+          {
+            "type": "bus",
+            "icon": "🚆",
+            "name": { "es": "Tren Suburbano + Metro", "en": "Suburban Train + Metro", "fr": "Train de banlieue + Métro" },
+            "cost": { "es": "$50 MXN", "en": "$50 MXN", "fr": "50 MXN" },
+            "duration": { "es": "2 horas", "en": "2 hours", "fr": "2 heures" },
+            "safetyLevel": "green",
+            "safetyNote": { "es": "Tren nuevo y cómodo hasta Buenavista, luego Metro. Opción más económica.", "en": "New comfortable train to Buenavista, then Metro. Most affordable option.", "fr": "Train neuf et confortable jusqu'à Buenavista, puis métro. Option la plus économique." },
+            "tips": { "es": "Sale desde la terminal AIFA cada 30 min. Compra boleto en las máquinas de la estación.", "en": "Departs from AIFA terminal every 30 min. Buy ticket at station machines.", "fr": "Part du terminal AIFA toutes les 30 min. Achète ton billet aux machines de la station." }
+          },
+          {
+            "type": "uber",
+            "icon": "🚗",
+            "name": { "es": "Uber / DiDi", "en": "Uber / DiDi", "fr": "Uber / DiDi" },
+            "cost": { "es": "$700 - $1,100 MXN", "en": "$700 - $1,100 MXN", "fr": "700 - 1 100 MXN" },
+            "duration": { "es": "1h 30min - 2h", "en": "1h 30min - 2h", "fr": "1h 30 - 2h" },
+            "safetyLevel": "green",
+            "safetyNote": { "es": "Cómodo pero caro por la distancia. Tarifa dinámica los días de partido.", "en": "Comfortable but expensive due to distance. Surge pricing on match days.", "fr": "Confortable mais cher à cause de la distance. Tarif dynamique les jours de match." },
+            "tips": { "es": "Combina: Uber hasta Indios Verdes, luego Metro L3 a Tasqueña y Tren Ligero. Ahorras ~40%.", "en": "Combine: Uber to Indios Verdes, then Metro L3 to Tasqueña and Light Rail. Save ~40%.", "fr": "Combine : Uber jusqu'à Indios Verdes, puis Métro L3 jusqu'à Tasqueña et tram. Tu économises ~40 %." }
+          },
+          {
+            "type": "airport-taxi",
+            "icon": "🚕",
+            "name": { "es": "Taxi autorizado", "en": "Authorized taxi", "fr": "Taxi autorisé" },
+            "cost": { "es": "$1,100 - $1,600 MXN", "en": "$1,100 - $1,600 MXN", "fr": "1 100 - 1 600 MXN" },
+            "duration": { "es": "1h 30min", "en": "1h 30min", "fr": "1h 30" },
+            "safetyLevel": "green",
+            "safetyNote": { "es": "Opción más cara pero con tarifa fija, sin tarifa dinámica.", "en": "Most expensive but with fixed rate, no surge pricing.", "fr": "Option la plus chère mais tarif fixe, sans tarif dynamique." },
+            "tips": { "es": "Si viajas en grupo puede ser competitivo vs Uber con tarifa dinámica.", "en": "If traveling in a group, can compete with Uber during surge.", "fr": "En groupe, ça peut être compétitif face à Uber en tarif dynamique." }
+          }
+        ]
+      }
+    ],
+    "localTransport": [
+      {
+        "type": "uber",
+        "icon": "🚗",
+        "name": { "es": "Uber / DiDi", "en": "Uber / DiDi", "fr": "Uber / DiDi" },
+        "cost": { "es": "$50 - $250 MXN por viaje", "en": "$50 - $250 MXN per trip", "fr": "50 - 250 MXN par trajet" },
+        "duration": { "es": "Varía", "en": "Varies", "fr": "Variable" },
+        "safetyLevel": "green",
+        "safetyNote": { "es": "La opción más segura para extranjeros. Viaje rastreado, conductor identificado, pago digital.", "en": "Safest option for foreigners. Tracked ride, identified driver, digital payment.", "fr": "L'option la plus sûre pour les étrangers. Trajet suivi, chauffeur identifié, paiement numérique." },
+        "tips": { "es": "Confirma la placa antes de subir. Comparte tu viaje con alguien. En horas pico aplica tarifa dinámica.", "en": "Confirm the plate before boarding. Share your trip. Surge pricing applies at peak hours.", "fr": "Confirme la plaque avant de monter. Partage ton trajet avec quelqu'un. Tarif dynamique aux heures de pointe." }
+      },
+      {
+        "type": "metrobus",
+        "icon": "🚌",
+        "name": { "es": "Metrobús", "en": "Metrobús", "fr": "Metrobús" },
+        "cost": { "es": "$6 MXN", "en": "$6 MXN", "fr": "6 MXN" },
+        "duration": { "es": "Rápido (carril confinado)", "en": "Fast (dedicated lane)", "fr": "Rapide (voie réservée)" },
+        "safetyLevel": "green",
+        "safetyNote": { "es": "Autobús articulado en carril exclusivo. Más seguro y cómodo que peseros.", "en": "Articulated bus in exclusive lane. Safer and more comfortable than peseros.", "fr": "Bus articulé en voie exclusive. Plus sûr et confortable que les peseros." },
+        "tips": { "es": "7 líneas cubren todas las zonas turísticas. Necesitas tarjeta Movilidad Integrada (venta en estaciones).", "en": "7 lines cover all tourist zones. You need a Movilidad Integrada card (sold at stations).", "fr": "7 lignes couvrent toutes les zones touristiques. Il te faut une carte Movilidad Integrada (vendue en station)." }
+      },
+      {
+        "type": "metro",
+        "icon": "🚇",
+        "name": { "es": "Metro (STC)", "en": "Metro (STC)", "fr": "Métro (STC)" },
+        "cost": { "es": "$5 MXN", "en": "$5 MXN", "fr": "5 MXN" },
+        "duration": { "es": "Rápido en hora pico", "en": "Fast at rush hour", "fr": "Rapide aux heures de pointe" },
+        "safetyLevel": "yellow",
+        "safetyNote": { "es": "Barato y eficiente, pero MUY lleno y con carteristas. Los primeros vagones son exclusivos para mujeres y niños.", "en": "Cheap and efficient but VERY crowded with pickpockets. First cars reserved for women and children.", "fr": "Bon marché et efficace, mais TRÈS bondé et avec des pickpockets. Les premières voitures sont réservées aux femmes et aux enfants." },
+        "tips": { "es": "Evita horas pico (7-10am y 6-9pm). Lleva la mochila al frente. No saques el celular en andenes atestados.", "en": "Avoid rush hour (7-10am and 6-9pm). Wear backpack in front. Don't pull out your phone on crowded platforms.", "fr": "Évite les heures de pointe (7-10h et 18-21h). Porte ton sac à dos devant. Ne sors pas ton téléphone sur les quais bondés." }
+      },
+      {
+        "type": "tren-ligero",
+        "icon": "🚈",
+        "name": { "es": "Tren Ligero (al Estadio Azteca)", "en": "Light Rail (to Estadio Azteca)", "fr": "Tram (vers le Estadio Azteca)" },
+        "cost": { "es": "$3 MXN", "en": "$3 MXN", "fr": "3 MXN" },
+        "duration": { "es": "25 min desde Tasqueña", "en": "25 min from Tasqueña", "fr": "25 min depuis Tasqueña" },
+        "safetyLevel": "green",
+        "safetyNote": { "es": "Línea dedicada al sur de la ciudad. Termina justo frente al estadio.", "en": "Dedicated line in the south. Ends right in front of the stadium.", "fr": "Ligne dédiée au sud de la ville. S'arrête juste devant le stade." },
+        "tips": { "es": "La estación 'Estadio Azteca' es la última. Después del partido habrá mucha fila — sé paciente.", "en": "'Estadio Azteca' is the last station. After the match there will be long lines — be patient.", "fr": "La station 'Estadio Azteca' est la dernière. Après le match il y aura de longues files — sois patient." }
+      },
+      {
+        "type": "cablebus",
+        "icon": "🚡",
+        "name": { "es": "Cablebús", "en": "Cablebús", "fr": "Cablebús (téléphérique)" },
+        "cost": { "es": "$7 MXN", "en": "$7 MXN", "fr": "7 MXN" },
+        "duration": { "es": "30-45 min por línea", "en": "30-45 min per line", "fr": "30-45 min par ligne" },
+        "safetyLevel": "green",
+        "safetyNote": { "es": "Teleférico urbano con vistas espectaculares. Línea 1 (norte) y Línea 2 (oriente).", "en": "Urban cable car with spectacular views. Line 1 (north) and Line 2 (east).", "fr": "Téléphérique urbain avec vues spectaculaires. Ligne 1 (nord) et Ligne 2 (est)." },
+        "tips": { "es": "Más turístico que útil, pero vale la pena por las fotos. Usa tarjeta de Metrobús.", "en": "More touristy than useful, but worth it for the photos. Uses Metrobús card.", "fr": "Plus touristique qu'utile, mais ça vaut le coup pour les photos. Utilise la carte Metrobús." }
+      },
+      {
+        "type": "bus",
+        "icon": "🚐",
+        "name": { "es": "Pesero / Microbús", "en": "Pesero / Microbús", "fr": "Pesero / Microbús" },
+        "cost": { "es": "$5 - $8 MXN", "en": "$5 - $8 MXN", "fr": "5 - 8 MXN" },
+        "duration": { "es": "Lento", "en": "Slow", "fr": "Lent" },
+        "safetyLevel": "yellow",
+        "safetyNote": { "es": "Transporte local. Lleno, caótico, solo efectivo. Experiencia auténtica pero difícil sin español.", "en": "Local transit. Crowded, chaotic, cash only. Authentic experience but hard without Spanish.", "fr": "Transport local. Bondé, chaotique, espèces uniquement. Expérience authentique mais difficile sans espagnol." },
+        "tips": { "es": "Para rutas de superficie no cubiertas por Metrobús. Pide la parada con 'baja' o timbre.", "en": "For surface routes not covered by Metrobús. Call your stop by saying 'baja' or ringing the bell.", "fr": "Pour les itinéraires de surface non couverts par le Metrobús. Demande ton arrêt en disant 'baja' ou en sonnant." }
+      },
+      {
+        "type": "taxi",
+        "icon": "🛺",
+        "name": { "es": "Taxi de calle (libre)", "en": "Street taxi (regular)", "fr": "Taxi de rue (libre)" },
+        "cost": { "es": "Variable", "en": "Variable", "fr": "Variable" },
+        "duration": { "es": "Varía", "en": "Varies", "fr": "Variable" },
+        "safetyLevel": "red",
+        "safetyNote": { "es": "NO se recomienda. Riesgo de tarifas infladas y, de noche, 'secuestro exprés'. Usa Uber/DiDi.", "en": "NOT recommended. Risk of inflated fares and, at night, 'express kidnapping'. Use Uber/DiDi.", "fr": "NON recommandé. Risque de tarifs gonflés et, de nuit, d'« enlèvement express ». Utilise Uber/DiDi." },
+        "tips": { "es": "Si debes usar taxi, pide uno de sitio al hotel o restaurante. NUNCA subas a taxis que paran en la calle de noche.", "en": "If you must use a taxi, ask the hotel or restaurant for a licensed 'sitio' taxi. NEVER take taxis that stop for you on the street at night.", "fr": "Si tu dois prendre un taxi, demande un taxi 'sitio' agréé à l'hôtel ou au restaurant. Ne monte JAMAIS dans un taxi qui s'arrête pour toi dans la rue la nuit." }
+      },
+      {
+        "type": "walk",
+        "icon": "🚶",
+        "name": { "es": "Caminar", "en": "Walking", "fr": "À pied" },
+        "cost": { "es": "Gratis", "en": "Free", "fr": "Gratuit" },
+        "duration": { "es": "—", "en": "—", "fr": "—" },
+        "safetyLevel": "green",
+        "safetyNote": { "es": "Seguro y recomendado en zonas turísticas de día: Centro, Reforma, Roma, Condesa, Polanco, Coyoacán.", "en": "Safe and recommended in tourist areas by day: Centro, Reforma, Roma, Condesa, Polanco, Coyoacán.", "fr": "Sûr et recommandé dans les zones touristiques en journée : Centro, Reforma, Roma, Condesa, Polanco, Coyoacán." },
+        "tips": { "es": "Usa Google Maps. De noche, toma Uber aunque la distancia sea corta.", "en": "Use Google Maps. At night, take Uber even for short distances.", "fr": "Utilise Google Maps. La nuit, prends Uber même pour de courtes distances." }
+      }
+    ],
+    "safetyZones": [
+      {
+        "level": "green",
+        "name": { "es": "Roma, Condesa, Polanco, Coyoacán, Reforma", "en": "Roma, Condesa, Polanco, Coyoacán, Reforma", "fr": "Roma, Condesa, Polanco, Coyoacán, Reforma" },
+        "description": {
+          "es": "Zonas turísticas más seguras. Puedes caminar de día y de noche temprana (hasta 10pm). Cafés, restaurantes, bares y museos.",
+          "en": "Safest tourist areas. You can walk by day and early evening (until 10pm). Cafés, restaurants, bars and museums.",
+          "fr": "Les quartiers touristiques les plus sûrs. Tu peux marcher en journée et en début de soirée (jusqu'à 22h). Cafés, restaurants, bars et musées."
+        },
+        "tip": { "es": "Las mejores bases para hospedarte como extranjero.", "en": "The best bases to stay as a foreigner.", "fr": "Les meilleures bases pour se loger en tant qu'étranger." }
+      },
+      {
+        "level": "green",
+        "name": { "es": "Centro Histórico (de día)", "en": "Historic Center (by day)", "fr": "Centre historique (en journée)" },
+        "description": {
+          "es": "Zócalo, Templo Mayor, Catedral, Palacio de Bellas Artes. Mucha policía turística. Seguro hasta ~8pm.",
+          "en": "Zócalo, Templo Mayor, Cathedral, Palacio de Bellas Artes. Plenty of tourist police. Safe until ~8pm.",
+          "fr": "Zócalo, Templo Mayor, Cathédrale, Palais des Beaux-Arts. Beaucoup de police touristique. Sûr jusqu'à ~20h."
+        },
+        "tip": { "es": "De noche las calles alejadas del Zócalo se vacían — mejor toma Uber.", "en": "At night, streets away from the Zócalo empty out — better take Uber.", "fr": "La nuit, les rues éloignées du Zócalo se vident — mieux vaut prendre Uber." }
+      },
+      {
+        "level": "yellow",
+        "name": { "es": "Doctores, La Merced, Lagunilla", "en": "Doctores, La Merced, Lagunilla", "fr": "Doctores, La Merced, Lagunilla" },
+        "description": {
+          "es": "Colonias populares cerca del Centro. De día el Mercado de La Merced es visita popular, pero NO camines de noche.",
+          "en": "Working-class neighborhoods near Centro. By day, Mercado de La Merced is a popular visit — but DO NOT walk at night.",
+          "fr": "Quartiers populaires près du Centre. En journée le marché de La Merced est une visite populaire, mais NE marche PAS de nuit."
+        },
+        "tip": { "es": "Llega y sal en Uber. No exhibas joyería ni cámaras caras.", "en": "Arrive and leave by Uber. Don't flash jewelry or expensive cameras.", "fr": "Arrive et repars en Uber. N'exhibe pas de bijoux ou d'appareils photo chers." }
+      },
+      {
+        "level": "yellow",
+        "name": { "es": "Alrededores del Estadio Azteca", "en": "Around Estadio Azteca", "fr": "Autour du Estadio Azteca" },
+        "description": {
+          "es": "La zona inmediata (colonias Sta. Úrsula y Ajusco) es residencial. Durante el partido habrá seguridad reforzada; antes y después usa transporte.",
+          "en": "The immediate area (Sta. Úrsula and Ajusco neighborhoods) is residential. Enhanced security during the match; before and after, use transport.",
+          "fr": "La zone immédiate (quartiers Sta. Úrsula et Ajusco) est résidentielle. Sécurité renforcée pendant le match ; avant et après, utilise les transports."
+        },
+        "tip": { "es": "NO camines con tu jersey oficial de regreso al hotel por calles vacías. Ve en grupo o toma Uber.", "en": "DO NOT walk back to your hotel wearing your official jersey through empty streets. Go in a group or take Uber.", "fr": "NE rentre PAS à l'hôtel à pied avec ton maillot officiel par des rues vides. Va en groupe ou prends Uber." }
+      },
+      {
+        "level": "red",
+        "name": { "es": "Tepito", "en": "Tepito", "fr": "Tepito" },
+        "description": {
+          "es": "Famoso 'barrio bravo'. Mercado de productos falsificados con alta incidencia de delitos. Turistas: NO ENTRES.",
+          "en": "Infamous 'tough neighborhood'. Market for counterfeit goods with high crime rate. Tourists: DO NOT GO IN.",
+          "fr": "Célèbre « quartier dur ». Marché de produits contrefaits avec une forte criminalité. Touristes : N'Y VA PAS."
+        },
+        "tip": { "es": "Ni siquiera para 'aventurarte'. Hay mejores formas de vivir CDMX auténtica.", "en": "Not even to 'explore'. There are better ways to experience authentic CDMX.", "fr": "Même pas pour « l'aventure ». Il y a de meilleures façons de vivre le vrai Mexico." }
+      },
+      {
+        "level": "red",
+        "name": { "es": "Iztapalapa y Ecatepec de noche", "en": "Iztapalapa and Ecatepec at night", "fr": "Iztapalapa et Ecatepec la nuit" },
+        "description": {
+          "es": "Zonas populares alejadas del circuito turístico. Alto índice delictivo de noche. Sin razón para visitar como turista.",
+          "en": "Residential areas far from the tourist circuit. High crime rate at night. No reason to visit as a tourist.",
+          "fr": "Zones populaires éloignées du circuit touristique. Taux de criminalité élevé la nuit. Aucune raison d'y aller en tant que touriste."
+        }
+      }
+    ],
+    "currency": {
+      "tip": {
+        "es": "Mejor tipo de cambio: ATMs de bancos mexicanos (BBVA, Santander, Banorte) usando tu tarjeta internacional. Evita los cambios del aeropuerto (los peores) y los del hotel. Casas de cambio como Intercam y Monex tienen tasas competitivas.",
+        "en": "Best exchange rate: ATMs of Mexican banks (BBVA, Santander, Banorte) using your international card. Avoid airport exchanges (worst rates) and hotel exchanges. Exchange houses like Intercam and Monex have competitive rates.",
+        "fr": "Meilleur taux de change : les DAB des banques mexicaines (BBVA, Santander, Banorte) avec ta carte internationale. Évite les bureaux de change de l'aéroport (les pires) et ceux des hôtels. Les bureaux de change comme Intercam et Monex ont des taux compétitifs."
+      },
+      "places": [
+        {
+          "type": "bank",
+          "name": "BBVA / Santander / Banorte (ATMs)",
+          "area": { "es": "Sucursales y ATMs en toda la ciudad", "en": "Branches and ATMs throughout the city", "fr": "Agences et DAB dans toute la ville" },
+          "hours": "24/7",
+          "note": {
+            "es": "Usa ATMs DENTRO de sucursales bancarias para evitar fraudes. Cobran $30-50 MXN por retiro internacional.",
+            "en": "Use ATMs INSIDE bank branches to avoid skimmer fraud. They charge $30-50 MXN per international withdrawal.",
+            "fr": "Utilise les DAB À L'INTÉRIEUR des agences bancaires pour éviter les fraudes. Ils facturent 30-50 MXN par retrait international."
+          },
+          "rateQuality": "best"
+        },
+        {
+          "type": "casa-cambio",
+          "name": "Intercam",
+          "area": { "es": "Reforma, Polanco, Santa Fe, aeropuerto", "en": "Reforma, Polanco, Santa Fe, airport", "fr": "Reforma, Polanco, Santa Fe, aéroport" },
+          "hours": "Lun-Vie 9-18, Sáb 10-14",
+          "note": {
+            "es": "Casa de cambio confiable con tasas competitivas. Acepta USD, EUR, CAD, GBP. Sucursales en zonas turísticas.",
+            "en": "Reliable exchange house with competitive rates. Accepts USD, EUR, CAD, GBP. Branches in tourist areas.",
+            "fr": "Bureau de change fiable avec des taux compétitifs. Accepte USD, EUR, CAD, GBP. Agences dans les zones touristiques."
+          },
+          "rateQuality": "good"
+        },
+        {
+          "type": "casa-cambio",
+          "name": "Monex",
+          "area": { "es": "Centro Histórico, Reforma, Polanco", "en": "Historic Center, Reforma, Polanco", "fr": "Centre historique, Reforma, Polanco" },
+          "hours": "Lun-Vie 9-17",
+          "note": {
+            "es": "Una de las casas de cambio más grandes de México. Tasas buenas para cambios de más de $500 USD.",
+            "en": "One of the largest exchange houses in Mexico. Good rates for exchanges over $500 USD.",
+            "fr": "L'un des plus grands bureaux de change du Mexique. Bons taux pour les changes de plus de 500 USD."
+          },
+          "rateQuality": "good"
+        },
+        {
+          "type": "atm",
+          "name": "Citibanamex / HSBC (ATMs)",
+          "area": { "es": "En toda la ciudad", "en": "Throughout the city", "fr": "Dans toute la ville" },
+          "hours": "24/7",
+          "note": {
+            "es": "Bancos con presencia internacional. Si tu banco es aliado (Citi Global, HSBC), no te cobran comisión internacional.",
+            "en": "Banks with international presence. If your bank is an affiliate (Citi Global, HSBC), no international fee.",
+            "fr": "Banques à présence internationale. Si ta banque est partenaire (Citi Global, HSBC), pas de frais internationaux."
+          },
+          "rateQuality": "best"
+        },
+        {
+          "type": "airport",
+          "name": "Casas de cambio MEX / AIFA",
+          "area": { "es": "Terminales T1 y T2 MEX, terminal AIFA", "en": "MEX T1, T2 and AIFA terminal", "fr": "Terminaux T1 et T2 MEX, terminal AIFA" },
+          "hours": "24/7",
+          "note": {
+            "es": "PEORES tasas de la ciudad (hasta 15% menos). Úsalas solo para efectivo de emergencia ($50-100 USD máximo).",
+            "en": "WORST rates in the city (up to 15% less). Use only for emergency cash ($50-100 USD max).",
+            "fr": "PIRES taux de la ville (jusqu'à 15 % de moins). Utilise-les seulement pour du liquide d'urgence (50-100 USD max)."
+          },
+          "rateQuality": "worst"
+        }
+      ]
+    },
+    "nearbyAttractions": [
+      {
+        "emoji": "🛶",
+        "name": { "es": "Xochimilco (trajineras)", "en": "Xochimilco (colorful boats)", "fr": "Xochimilco (trajineras)" },
+        "category": { "es": "Cultural / Fiesta", "en": "Cultural / Party", "fr": "Culturel / Fête" },
+        "distance": "8 km",
+        "timeFromStadium": { "es": "20 min en Uber", "en": "20 min by Uber", "fr": "20 min en Uber" },
+        "description": {
+          "es": "Canales prehispánicos con trajineras coloridas, mariachis flotantes y tacos. La fiesta mexicana por excelencia. $500-800 MXN la trajinera para 10 personas por 2 horas.",
+          "en": "Pre-Hispanic canals with colorful boats, floating mariachis and tacos. The quintessential Mexican party. $500-800 MXN per boat for 10 people for 2 hours.",
+          "fr": "Canaux préhispaniques avec des barques colorées (trajineras), mariachis flottants et tacos. La fête mexicaine par excellence. 500-800 MXN la trajinera pour 10 personnes pendant 2 heures."
+        },
+        "mapsQuery": "Xochimilco+trajineras"
+      },
+      {
+        "emoji": "🎨",
+        "name": { "es": "Museo Frida Kahlo (Casa Azul)", "en": "Frida Kahlo Museum (Blue House)", "fr": "Musée Frida Kahlo (Maison Bleue)" },
+        "category": { "es": "Museo", "en": "Museum", "fr": "Musée" },
+        "distance": "7 km",
+        "timeFromStadium": { "es": "15 min en Uber", "en": "15 min by Uber", "fr": "15 min en Uber" },
+        "description": {
+          "es": "Casa donde vivió y pintó Frida Kahlo, en el corazón de Coyoacán. COMPRA BOLETOS EN LÍNEA — siempre se agotan.",
+          "en": "House where Frida Kahlo lived and painted, in the heart of Coyoacán. BUY TICKETS ONLINE — always sold out.",
+          "fr": "Maison où Frida Kahlo a vécu et peint, au cœur de Coyoacán. ACHÈTE TES BILLETS EN LIGNE — toujours complet."
+        },
+        "mapsQuery": "Museo+Frida+Kahlo"
+      },
+      {
+        "emoji": "🏛️",
+        "name": { "es": "Centro de Coyoacán", "en": "Coyoacán Center", "fr": "Centre de Coyoacán" },
+        "category": { "es": "Barrio cultural", "en": "Cultural neighborhood", "fr": "Quartier culturel" },
+        "distance": "6 km",
+        "timeFromStadium": { "es": "15 min en Uber", "en": "15 min by Uber", "fr": "15 min en Uber" },
+        "description": {
+          "es": "Plaza Hidalgo y Jardín Centenario con cafés, mercados de artesanía y los famosos churros. Ambiente bohemio.",
+          "en": "Plaza Hidalgo and Jardín Centenario with cafés, craft markets and famous churros. Bohemian atmosphere.",
+          "fr": "Plaza Hidalgo et Jardín Centenario avec cafés, marchés artisanaux et les fameux churros. Ambiance bohème."
+        },
+        "mapsQuery": "Centro+Coyoacan"
+      },
+      {
+        "emoji": "🎓",
+        "name": { "es": "Ciudad Universitaria (UNAM)", "en": "University City (UNAM)", "fr": "Cité Universitaire (UNAM)" },
+        "category": { "es": "Patrimonio UNESCO", "en": "UNESCO Heritage", "fr": "Patrimoine UNESCO" },
+        "distance": "6 km",
+        "timeFromStadium": { "es": "15 min en Uber", "en": "15 min by Uber", "fr": "15 min en Uber" },
+        "description": {
+          "es": "Campus universitario Patrimonio de la Humanidad. Mural de la Biblioteca Central y el Estadio Olímpico. Entrada libre.",
+          "en": "UNESCO World Heritage university campus. Central Library mural and Olympic Stadium. Free entry.",
+          "fr": "Campus universitaire classé au Patrimoine de l'UNESCO. Fresque de la Bibliothèque Centrale et Stade Olympique. Entrée libre."
+        },
+        "mapsQuery": "Ciudad+Universitaria+UNAM"
+      },
+      {
+        "emoji": "🎢",
+        "name": { "es": "Six Flags México", "en": "Six Flags Mexico", "fr": "Six Flags Mexico" },
+        "category": { "es": "Parque temático", "en": "Theme park", "fr": "Parc d'attractions" },
+        "distance": "4 km",
+        "timeFromStadium": { "es": "10 min en Uber", "en": "10 min by Uber", "fr": "10 min en Uber" },
+        "description": {
+          "es": "Parque temático con montañas rusas, a solo 10 minutos del Estadio Azteca. Ideal para familias con niños.",
+          "en": "Theme park with roller coasters, just 10 minutes from Estadio Azteca. Great for families with kids.",
+          "fr": "Parc d'attractions avec montagnes russes, à seulement 10 minutes du Estadio Azteca. Idéal pour les familles avec enfants."
+        },
+        "mapsQuery": "Six+Flags+Mexico"
+      },
+      {
+        "emoji": "🗿",
+        "name": { "es": "Museo Anahuacalli", "en": "Anahuacalli Museum", "fr": "Musée Anahuacalli" },
+        "category": { "es": "Museo", "en": "Museum", "fr": "Musée" },
+        "distance": "4 km",
+        "timeFromStadium": { "es": "10 min en Uber", "en": "10 min by Uber", "fr": "10 min en Uber" },
+        "description": {
+          "es": "Museo diseñado por Diego Rivera con su colección de arte prehispánico. Arquitectura impresionante inspirada en pirámides.",
+          "en": "Museum designed by Diego Rivera with his pre-Hispanic art collection. Impressive pyramid-inspired architecture.",
+          "fr": "Musée conçu par Diego Rivera avec sa collection d'art préhispanique. Architecture impressionnante inspirée des pyramides."
+        },
+        "mapsQuery": "Museo+Anahuacalli"
+      },
+      {
+        "emoji": "🌳",
+        "name": { "es": "Bosque de Chapultepec", "en": "Chapultepec Park", "fr": "Forêt de Chapultepec" },
+        "category": { "es": "Parque + museos", "en": "Park + museums", "fr": "Parc + musées" },
+        "distance": "14 km",
+        "timeFromStadium": { "es": "30 min en Uber", "en": "30 min by Uber", "fr": "30 min en Uber" },
+        "description": {
+          "es": "Parque urbano gigante con Museo Nacional de Antropología, Castillo de Chapultepec, lagos y zoológico. Fácilmente un día entero.",
+          "en": "Huge urban park with National Anthropology Museum, Chapultepec Castle, lakes and zoo. Easily a full day.",
+          "fr": "Immense parc urbain avec le Musée National d'Anthropologie, le Château de Chapultepec, des lacs et un zoo. Facilement une journée entière."
+        },
+        "mapsQuery": "Bosque+de+Chapultepec"
+      },
+      {
+        "emoji": "🏛️",
+        "name": { "es": "Zócalo y Templo Mayor", "en": "Zócalo and Templo Mayor", "fr": "Zócalo et Templo Mayor" },
+        "category": { "es": "Centro Histórico", "en": "Historic Center", "fr": "Centre historique" },
+        "distance": "18 km",
+        "timeFromStadium": { "es": "40 min en Uber", "en": "40 min by Uber", "fr": "40 min en Uber" },
+        "description": {
+          "es": "La plaza más grande de América Latina, con Catedral Metropolitana, Palacio Nacional (murales de Rivera) y las ruinas aztecas.",
+          "en": "Largest square in Latin America, with the Metropolitan Cathedral, National Palace (Rivera murals) and Aztec ruins.",
+          "fr": "La plus grande place d'Amérique latine, avec la Cathédrale Métropolitaine, le Palais National (fresques de Rivera) et les ruines aztèques."
+        },
+        "mapsQuery": "Zocalo+CDMX"
+      }
+    ]
+  },
+  {
+    "id": "mundial-monterrey",
+    "slug": "monterrey",
+    "destinationId": "monterrey",
+    "name": {
+      "es": "Monterrey - Estadio BBVA",
+      "en": "Monterrey - BBVA Stadium",
+      "zh": "蒙特雷 - BBVA体育场"
+    },
+    "stadium": {
+      "name": "Estadio BBVA",
+      "capacity": 53500,
+      "address": {
+        "es": "Av. Pablo Livas 2011, La Pastora, Guadalupe, Nuevo León",
+        "en": "Av. Pablo Livas 2011, La Pastora, Guadalupe, Nuevo León",
+        "zh": "新莱昂州瓜达卢佩市拉帕斯托拉，巴勃罗·利瓦斯大道2011号"
+      },
+      "yearBuilt": 2015,
+      "description": {
+        "es": "Estadio moderno inaugurado en 2015, hogar del CF Monterrey (Rayados). Destaca por su impresionante fachada de acero y sus excelentes instalaciones de primer nivel. Es uno de los estadios más nuevos de América Latina y cuenta con tecnología de punta, palcos de lujo y una experiencia de primer mundo para los aficionados.",
+        "en": "Modern stadium opened in 2015, home of CF Monterrey (Rayados). Known for its striking steel facade and excellent world-class facilities. It is one of the newest stadiums in Latin America, featuring cutting-edge technology, luxury suites, and a first-class experience for fans.",
+        "zh": "2015年启用的现代化体育场，蒙特雷足球俱乐部（光芒队）的主场。以其令人印象深刻的钢结构外墙和一流设施著称。这是拉丁美洲最新的体育场之一，配备尖端技术、豪华包厢，为球迷提供世界级体验。"
+      }
+    },
+    "matches": [
+      {
+        "date": "2026-06-14",
+        "time": "13:00",
+        "teamA": { "es": "Por definir (Grupo C)", "en": "TBD (Group C)", "zh": "待定（C组）" },
+        "teamB": { "es": "Por definir (Grupo C)", "en": "TBD (Group C)", "zh": "待定（C组）" },
+        "round": "group",
+        "group": "C",
+        "isMexicoGame": false
+      },
+      {
+        "date": "2026-06-20",
+        "time": "16:00",
+        "teamA": { "es": "Por definir (Grupo D)", "en": "TBD (Group D)", "zh": "待定（D组）" },
+        "teamB": { "es": "Por definir (Grupo D)", "en": "TBD (Group D)", "zh": "待定（D组）" },
+        "round": "group",
+        "group": "D",
+        "isMexicoGame": false
+      },
+      {
+        "date": "2026-06-26",
+        "time": "16:00",
+        "teamA": { "es": "Por definir", "en": "TBD", "zh": "待定" },
+        "teamB": { "es": "Por definir", "en": "TBD", "zh": "待定" },
+        "round": "group",
+        "isMexicoGame": false
+      },
+      {
+        "date": "2026-07-01",
+        "time": "19:00",
+        "teamA": { "es": "Por definir", "en": "TBD", "zh": "待定" },
+        "teamB": { "es": "Por definir", "en": "TBD", "zh": "待定" },
+        "round": "round-of-32",
+        "isMexicoGame": false
+      }
+    ],
+    "howToGetThere": {
+      "es": "El Estadio BBVA se ubica en el municipio de Guadalupe, a unos 20 minutos del centro de Monterrey. Puedes tomar el Metro hasta la estación Exposición y de ahí usar los shuttles oficiales FIFA que operarán los días de partido. Uber y DiDi cuestan entre $200 y $350 MXN desde el centro de Monterrey. También habrá estacionamiento disponible en plazas comerciales cercanas con servicio de transporte al estadio. Planea tu llegada con anticipación ya que las vialidades se congestionan mucho en días de partido.",
+      "en": "Estadio BBVA is located in the municipality of Guadalupe, about 20 minutes from downtown Monterrey. You can take the Metro to Exposición station and then use the official FIFA shuttles that will operate on match days. Uber and DiDi cost between $200 and $350 MXN from downtown Monterrey. Parking will also be available at nearby shopping malls with shuttle service to the stadium. Plan your arrival ahead of time as roads get very congested on match days.",
+      "zh": "BBVA体育场位于瓜达卢佩市，距蒙特雷市中心约20分钟。可以乘坐地铁到展览站，然后使用比赛日运营的FIFA官方班车。从蒙特雷市中心打Uber或DiDi费用在200至350墨西哥比索之间。附近购物中心也有停车位并提供到体育场的摆渡车服务。请提前规划到达时间，比赛日道路非常拥堵。"
+    },
+    "nearbyHotels": {
+      "es": "Las mejores zonas para hospedarse son: Barrio Antiguo en el centro (20 min al estadio, vida nocturna y restaurantes tradicionales), San Pedro Garza García (25 min, zona de lujo con hoteles premium y restaurantes gourmet), y Valle Oriente (15 min, zona de negocios con hoteles modernos). Los precios de hoteles subirán considerablemente durante el Mundial, así que reserva con la mayor anticipación posible.",
+      "en": "The best areas to stay are: Barrio Antiguo downtown (20 min to the stadium, nightlife and traditional restaurants), San Pedro Garza García (25 min, luxury area with premium hotels and gourmet restaurants), and Valle Oriente (15 min, business district with modern hotels). Hotel prices will increase considerably during the World Cup, so book as far in advance as possible.",
+      "zh": "最佳住宿区域：市中心老城区（距体育场20分钟，夜生活和传统餐厅）、圣佩德罗加尔萨加西亚（25分钟，豪华区域，高端酒店和美食餐厅）和东方谷（15分钟，商务区，现代酒店）。世界杯期间酒店价格将大幅上涨，请尽早预订。"
+    },
+    "fanZones": {
+      "es": "La Fan Fest principal de Monterrey estará en la Macroplaza, una de las plazas públicas más grandes del mundo. El Barrio Antiguo ofrecerá ambiente nocturno con bares y restaurantes temáticos. El Parque Fundidora también tendrá actividades y pantallas para ver los partidos. Monterrey es famoso por su escena gastronómica, así que aprovecha para probar la comida regia entre partidos.",
+      "en": "Monterrey's main Fan Fest will be at the Macroplaza, one of the largest public squares in the world. Barrio Antiguo will offer nightlife with themed bars and restaurants. Fundidora Park will also have activities and screens to watch matches. Monterrey is famous for its food scene, so take advantage and try the local cuisine between matches.",
+      "zh": "蒙特雷主球迷嘉年华将在宏伟广场举行，这是世界上最大的公共广场之一。老城区将提供主题酒吧和餐厅的夜间娱乐。丰迪多拉公园也将设有观赛活动和屏幕。蒙特雷以其美食场景闻名，趁比赛间隙品尝当地美食。"
+    },
+    "tips": [
+      {
+        "title": { "es": "Calor extremo", "en": "Extreme heat", "zh": "极端高温" },
+        "content": {
+          "es": "Junio en Monterrey alcanza temperaturas de 35-40°C con alta humedad. Es ESENCIAL traer protector solar de alto SPF, gorra o sombrero, y una botella de agua reutilizable. La hidratación constante es vital. Considera comprar un abanico portátil o toallas húmedas para refrescarte.",
+          "en": "June in Monterrey reaches temperatures of 35-40°C (95-104°F) with high humidity. It is ESSENTIAL to bring high-SPF sunscreen, a cap or hat, and a reusable water bottle. Constant hydration is vital. Consider buying a portable fan or wet towels to cool down.",
+          "zh": "蒙特雷6月气温可达35-40°C，湿度较高。必须携带高倍防晒霜、帽子和可重复使用的水瓶。持续补水至关重要。考虑购买便携风扇或湿毛巾降温。"
+        }
+      },
+      {
+        "title": { "es": "Secciones sin sombra", "en": "No shade in many sections", "zh": "许多区域没有遮阳" },
+        "content": {
+          "es": "Muchas secciones del Estadio BBVA no tienen techo ni sombra. Si tienes opción, elige asientos en zonas cubiertas o en la sombra del lado poniente del estadio para partidos vespertinos. Trae lentes de sol y protección para el cuello.",
+          "en": "Many sections of Estadio BBVA have no roof or shade. If you have the option, choose seats in covered areas or on the shaded west side of the stadium for afternoon matches. Bring sunglasses and neck protection.",
+          "zh": "BBVA体育场许多区域没有顶棚或遮阳。如有选择，下午比赛请选择有遮盖区域或体育场西侧阴凉处的座位。请带太阳镜和颈部防晒。"
+        }
+      },
+      {
+        "title": { "es": "Transporte y tarifas dinámicas", "en": "Transportation and surge pricing", "zh": "交通与动态加价" },
+        "content": {
+          "es": "Los días de partido, Uber y DiDi tendrán tarifa dinámica muy alta. Reserva tu transporte con anticipación o usa el Metro hasta la estación Exposición y los shuttles oficiales FIFA. Si manejas, llega muy temprano para asegurar estacionamiento en las plazas cercanas.",
+          "en": "On match days, Uber and DiDi will have very high surge pricing. Book your ride in advance or use the Metro to Exposición station and the official FIFA shuttles. If driving, arrive very early to secure parking at nearby shopping malls.",
+          "zh": "比赛日Uber和DiDi将大幅动态加价。提前预约出行或乘坐地铁到展览站并使用FIFA官方班车。如果自驾，请提早到达以确保在附近购物中心停车。"
+        }
+      },
+      {
+        "title": { "es": "Vistas espectaculares", "en": "Spectacular views", "zh": "壮观景色" },
+        "content": {
+          "es": "El Estadio BBVA ofrece vistas impresionantes del Cerro de la Silla y las montañas de la Sierra Madre. Lleva tu cámara o teléfono cargado para capturar fotos increíbles, especialmente al atardecer cuando la luz es perfecta sobre las montañas.",
+          "en": "Estadio BBVA offers stunning views of Cerro de la Silla and the Sierra Madre mountains. Bring your camera or charged phone to capture amazing photos, especially at sunset when the light is perfect on the mountains.",
+          "zh": "BBVA体育场可以欣赏鞍山和马德雷山脉的壮丽景色。带上相机或充满电的手机拍摄精彩照片，尤其是日落时分山脉上的光线最为完美。"
+        }
+      },
+      {
+        "title": { "es": "Gastronomía regia", "en": "Local cuisine", "zh": "当地美食" },
+        "content": {
+          "es": "No te pierdas la gastronomía de Monterrey antes o después del partido: cabrito al pastor (platillo emblema), machaca con huevo, carne asada norteña, y las famosas tortillas de harina. La zona de Barrio Antiguo y San Pedro tienen los mejores restaurantes.",
+          "en": "Don't miss Monterrey's cuisine before or after the match: cabrito al pastor (signature dish), machaca con huevo, northern-style carne asada, and the famous flour tortillas. The Barrio Antiguo and San Pedro areas have the best restaurants.",
+          "zh": "赛前赛后别错过蒙特雷美食：烤羊羔（招牌菜）、干牛肉炒蛋、北方风味烤肉和著名的面粉玉米饼。老城区和圣佩德罗区有最好的餐厅。"
+        }
+      }
+    ],
+    "heroImage": "",
+    "avgMatchDayBudget": { "min": 3500, "max": 9000, "currency": "MXN" },
+    "mapsEmbedSrc": "https://www.google.com/maps?q=Estadio+BBVA,+Guadalupe,+Nuevo+Leon&output=embed&z=14",
+    "airports": [
+      {
+        "code": "MTY",
+        "name": { "es": "Aeropuerto Internacional de Monterrey (MTY)", "en": "Monterrey International Airport (MTY)", "fr": "Aéroport International de Monterrey (MTY)" },
+        "distance": "24 km",
+        "description": {
+          "es": "El aeropuerto Mariano Escobedo, principal hub del norte de México. Está al noreste de la ciudad, a unos 24 km del Estadio BBVA (30-40 min en auto sin tráfico).",
+          "en": "Mariano Escobedo airport, main hub of northern Mexico. Located northeast of the city, about 24 km from Estadio BBVA (30-40 min by car without traffic).",
+          "fr": "L'aéroport Mariano Escobedo, principal hub du nord du Mexique. Situé au nord-est de la ville, à environ 24 km du Estadio BBVA (30-40 min en voiture sans trafic)."
+        },
+        "options": [
+          {
+            "type": "uber",
+            "icon": "🚗",
+            "name": { "es": "Uber / DiDi", "en": "Uber / DiDi", "fr": "Uber / DiDi" },
+            "cost": { "es": "$300 - $500 MXN", "en": "$300 - $500 MXN", "fr": "300 - 500 MXN" },
+            "duration": { "es": "35 - 50 min", "en": "35 - 50 min", "fr": "35 - 50 min" },
+            "safetyLevel": "green",
+            "safetyNote": { "es": "La forma más práctica de llegar desde el aeropuerto. Viaje rastreado, aire acondicionado (clave con 40°C).", "en": "The most practical way from the airport. Tracked ride, A/C (critical in 40°C heat).", "fr": "Le moyen le plus pratique depuis l'aéroport. Trajet suivi, climatisation (essentielle avec 40°C)." },
+            "tips": { "es": "Hay zonas oficiales Uber en la salida de la T1 y T2. Tarifa dinámica alta los días de partido — reserva con anticipación.", "en": "Official Uber zones at T1 and T2 exits. High surge pricing on match days — book ahead.", "fr": "Zones officielles Uber à la sortie des T1 et T2. Tarif dynamique élevé les jours de match — réserve à l'avance." }
+          },
+          {
+            "type": "airport-taxi",
+            "icon": "🚕",
+            "name": { "es": "Taxi autorizado del aeropuerto", "en": "Authorized airport taxi", "fr": "Taxi autorisé de l'aéroport" },
+            "cost": { "es": "$400 - $600 MXN", "en": "$400 - $600 MXN", "fr": "400 - 600 MXN" },
+            "duration": { "es": "35 min", "en": "35 min", "fr": "35 min" },
+            "safetyLevel": "green",
+            "safetyNote": { "es": "Sitio oficial con tarifa fija por zonas. Compras el boleto en mostrador antes de salir.", "en": "Official taxi stand with fixed zone rates. Buy your voucher at the counter before exiting.", "fr": "Station officielle avec tarif fixe par zone. Achète ton bon au comptoir avant de sortir." },
+            "tips": { "es": "Más caro que Uber normalmente, pero SIN tarifa dinámica en días de partido — puede salir mejor.", "en": "Usually pricier than Uber, but NO surge pricing on match days — can work out better.", "fr": "Généralement plus cher qu'Uber, mais SANS tarif dynamique les jours de match — peut être plus avantageux." }
+          },
+          {
+            "type": "bus",
+            "icon": "🚌",
+            "name": { "es": "Transmetro al Metro", "en": "Transmetro bus to Metro", "fr": "Bus Transmetro vers Métro" },
+            "cost": { "es": "$20 MXN + Metro $6", "en": "$20 MXN + Metro $6", "fr": "20 MXN + Métro 6" },
+            "duration": { "es": "1h 15min", "en": "1h 15min", "fr": "1h 15" },
+            "safetyLevel": "yellow",
+            "safetyNote": { "es": "Ruta de transporte público: autobús Transmetro hasta Metro Anáhuac (Línea 2), luego transbordas para acercarte al estadio.", "en": "Public transport route: Transmetro bus to Metro Anáhuac (Line 2), then transfer to get closer to the stadium.", "fr": "Itinéraire en transport public : bus Transmetro jusqu'au Métro Anáhuac (Ligne 2), puis correspondance pour t'approcher du stade." },
+            "tips": { "es": "Económico pero lento y sin aire acondicionado garantizado. Solo recomendado sin equipaje grande.", "en": "Cheap but slow and not always air-conditioned. Only recommended without large luggage.", "fr": "Économique mais lent et pas toujours climatisé. Recommandé seulement sans gros bagages." }
+          },
+          {
+            "type": "shuttle",
+            "icon": "🚐",
+            "name": { "es": "Shuttle FIFA / hotel", "en": "FIFA / hotel shuttle", "fr": "Navette FIFA / hôtel" },
+            "cost": { "es": "Gratis o $150-300 MXN", "en": "Free or $150-300 MXN", "fr": "Gratuit ou 150-300 MXN" },
+            "duration": { "es": "40 min", "en": "40 min", "fr": "40 min" },
+            "safetyLevel": "green",
+            "safetyNote": { "es": "Muchos hoteles de San Pedro y Valle Oriente ofrecen shuttle aeropuerto. FIFA operará shuttles oficiales los días de partido.", "en": "Many San Pedro and Valle Oriente hotels offer airport shuttles. FIFA will run official shuttles on match days.", "fr": "De nombreux hôtels de San Pedro et Valle Oriente offrent des navettes aéroport. La FIFA exploitera des navettes officielles les jours de match." },
+            "tips": { "es": "Pregunta al reservar si tu hotel ofrece shuttle — suele ser gratis. Shuttle FIFA se reservará en FIFA.com/tickets.", "en": "Ask at booking if your hotel offers a shuttle — usually free. FIFA shuttle bookable at FIFA.com/tickets.", "fr": "Demande à la réservation si ton hôtel propose une navette — souvent gratuit. Navette FIFA réservable sur FIFA.com/tickets." }
+          }
+        ]
+      }
+    ],
+    "localTransport": [
+      {
+        "type": "uber",
+        "icon": "🚗",
+        "name": { "es": "Uber / DiDi", "en": "Uber / DiDi", "fr": "Uber / DiDi" },
+        "cost": { "es": "$60 - $300 MXN por viaje", "en": "$60 - $300 MXN per trip", "fr": "60 - 300 MXN par trajet" },
+        "duration": { "es": "Varía", "en": "Varies", "fr": "Variable" },
+        "safetyLevel": "green",
+        "safetyNote": { "es": "El transporte más seguro y práctico en Monterrey. Aire acondicionado, viaje rastreado, pago digital.", "en": "Safest and most practical transport in Monterrey. A/C, tracked ride, digital payment.", "fr": "Le transport le plus sûr et pratique à Monterrey. Climatisation, trajet suivi, paiement numérique." },
+        "tips": { "es": "Con 40°C de calor es casi obligatorio usar transporte con A/C. Tarifa dinámica alta cerca del estadio los días de partido.", "en": "With 40°C heat, A/C transport is almost mandatory. High surge pricing near the stadium on match days.", "fr": "Avec 40°C, un transport climatisé est presque obligatoire. Tarif dynamique élevé près du stade les jours de match." }
+      },
+      {
+        "type": "metro",
+        "icon": "🚇",
+        "name": { "es": "Metro de Monterrey (Metrorrey)", "en": "Monterrey Metro (Metrorrey)", "fr": "Métro de Monterrey (Metrorrey)" },
+        "cost": { "es": "$5.50 MXN", "en": "$5.50 MXN", "fr": "5,50 MXN" },
+        "duration": { "es": "Rápido en líneas cubiertas", "en": "Fast on covered lines", "fr": "Rapide sur les lignes couvertes" },
+        "safetyLevel": "green",
+        "safetyNote": { "es": "Más limpio y menos atestado que el de CDMX. 3 líneas activas. Para el estadio, baja en 'Exposición' (L2) + shuttle FIFA.", "en": "Cleaner and less crowded than CDMX's. 3 active lines. For the stadium, exit at 'Exposición' (L2) + FIFA shuttle.", "fr": "Plus propre et moins bondé que celui de Mexico. 3 lignes actives. Pour le stade, descends à 'Exposición' (L2) + navette FIFA." },
+        "tips": { "es": "Compra tarjeta 'Feria' en cualquier estación ($10 MXN + saldo). Horarios: 5am-12am.", "en": "Buy a 'Feria' card at any station ($10 MXN + balance). Hours: 5am-midnight.", "fr": "Achète une carte 'Feria' dans n'importe quelle station (10 MXN + solde). Horaires : 5h-minuit." }
+      },
+      {
+        "type": "metrobus",
+        "icon": "🚌",
+        "name": { "es": "Ecovía (autobús verde)", "en": "Ecovía (green bus)", "fr": "Ecovía (bus vert)" },
+        "cost": { "es": "$12 MXN", "en": "$12 MXN", "fr": "12 MXN" },
+        "duration": { "es": "Medio", "en": "Medium", "fr": "Moyenne" },
+        "safetyLevel": "green",
+        "safetyNote": { "es": "Sistema BRT con carril confinado y A/C. Conecta Lincoln-Ruiz Cortines en el norte-sur de la ciudad.", "en": "BRT system with dedicated lane and A/C. Connects Lincoln-Ruiz Cortines north-south of the city.", "fr": "Système BRT avec voie réservée et climatisation. Relie Lincoln-Ruiz Cortines du nord au sud de la ville." },
+        "tips": { "es": "Usa la misma tarjeta 'Feria' del Metro. No llega directo al estadio pero conecta barrios útiles.", "en": "Uses the same 'Feria' card as Metro. Doesn't reach the stadium directly but connects useful areas.", "fr": "Utilise la même carte 'Feria' que le métro. N'atteint pas le stade directement mais dessert des quartiers utiles." }
+      },
+      {
+        "type": "taxi",
+        "icon": "🚖",
+        "name": { "es": "Taxi de sitio (amarillo)", "en": "Sitio taxi (yellow)", "fr": "Taxi sitio (jaune)" },
+        "cost": { "es": "$80 - $250 MXN", "en": "$80 - $250 MXN", "fr": "80 - 250 MXN" },
+        "duration": { "es": "Varía", "en": "Varies", "fr": "Variable" },
+        "safetyLevel": "yellow",
+        "safetyNote": { "es": "En Monterrey los taxis de sitio (no de calle) son relativamente seguros, pero negocia la tarifa antes de subir.", "en": "In Monterrey, sitio taxis (not street-hail) are relatively safe, but negotiate the fare before getting in.", "fr": "À Monterrey, les taxis de station (pas ceux de rue) sont relativement sûrs, mais négocie le tarif avant de monter." },
+        "tips": { "es": "Pide uno en tu hotel o restaurante. Los de la calle en zonas no turísticas son riesgosos — usa Uber si dudas.", "en": "Ask at your hotel or restaurant. Street taxis in non-tourist zones are risky — use Uber if in doubt.", "fr": "Demande à ton hôtel ou restaurant. Les taxis de rue dans les zones non touristiques sont risqués — utilise Uber en cas de doute." }
+      },
+      {
+        "type": "bus",
+        "icon": "🚐",
+        "name": { "es": "Autobuses urbanos (camiones)", "en": "Urban buses (camiones)", "fr": "Bus urbains (camiones)" },
+        "cost": { "es": "$12 MXN", "en": "$12 MXN", "fr": "12 MXN" },
+        "duration": { "es": "Lento", "en": "Slow", "fr": "Lent" },
+        "safetyLevel": "yellow",
+        "safetyNote": { "es": "Red extensa pero caótica. Muchos NO tienen aire acondicionado — difícil con 40°C. Solo efectivo.", "en": "Extensive but chaotic network. Many have NO A/C — tough in 40°C. Cash only.", "fr": "Réseau étendu mais chaotique. Beaucoup n'ont PAS de climatisation — dur avec 40°C. Espèces uniquement." },
+        "tips": { "es": "Solo para distancias cortas si vas con tiempo. Mejor Uber para moverse confortable.", "en": "Only for short trips if you have time. Uber is better for comfort.", "fr": "Seulement pour les courts trajets si tu as du temps. Uber est mieux pour le confort." }
+      },
+      {
+        "type": "walk",
+        "icon": "🚶",
+        "name": { "es": "Caminar", "en": "Walking", "fr": "À pied" },
+        "cost": { "es": "Gratis", "en": "Free", "fr": "Gratuit" },
+        "duration": { "es": "—", "en": "—", "fr": "—" },
+        "safetyLevel": "yellow",
+        "safetyNote": { "es": "Barrio Antiguo, Centro y Macroplaza son peatonales y seguras de día. Pero el calor de junio (40°C) hace caminar muy difícil.", "en": "Barrio Antiguo, Centro and Macroplaza are walkable and safe by day. BUT June heat (40°C) makes walking very tough.", "fr": "Barrio Antiguo, Centro et Macroplaza sont piétonniers et sûrs en journée. MAIS la chaleur de juin (40°C) rend la marche très difficile." },
+        "tips": { "es": "Camina muy temprano (antes de 10am) o al atardecer (después de 7pm). Lleva agua siempre.", "en": "Walk very early (before 10am) or at sunset (after 7pm). Always carry water.", "fr": "Marche très tôt (avant 10h) ou au coucher du soleil (après 19h). Apporte toujours de l'eau." }
+      }
+    ],
+    "safetyZones": [
+      {
+        "level": "green",
+        "name": { "es": "San Pedro Garza García", "en": "San Pedro Garza García", "fr": "San Pedro Garza García" },
+        "description": {
+          "es": "El municipio más seguro de México según cifras oficiales. Zona de lujo con hoteles premium, restaurantes gourmet y el centro comercial Fashion Drive. Seguro de día y de noche.",
+          "en": "The safest municipality in Mexico per official data. Upscale area with premium hotels, gourmet restaurants and Fashion Drive mall. Safe day and night.",
+          "fr": "La municipalité la plus sûre du Mexique selon les données officielles. Quartier haut de gamme avec hôtels premium, restaurants gastronomiques et le centre commercial Fashion Drive. Sûr jour et nuit."
+        },
+        "tip": { "es": "La mejor base para hospedarte como extranjero. 20-25 min al estadio.", "en": "The best base to stay as a foreigner. 20-25 min to the stadium.", "fr": "La meilleure base pour se loger en tant qu'étranger. 20-25 min du stade." }
+      },
+      {
+        "level": "green",
+        "name": { "es": "Valle Oriente", "en": "Valle Oriente", "fr": "Valle Oriente" },
+        "description": {
+          "es": "Zona de negocios con hoteles modernos (Fiesta Americana, Camino Real), centros comerciales y restaurantes. Muy segura, con buen acceso al estadio (15 min).",
+          "en": "Business district with modern hotels (Fiesta Americana, Camino Real), malls and restaurants. Very safe, with good stadium access (15 min).",
+          "fr": "Quartier d'affaires avec hôtels modernes (Fiesta Americana, Camino Real), centres commerciaux et restaurants. Très sûr, bon accès au stade (15 min)."
+        },
+        "tip": { "es": "Los hoteles aquí suelen ofrecer shuttle al estadio los días de partido.", "en": "Hotels here usually offer stadium shuttles on match days.", "fr": "Les hôtels ici proposent souvent des navettes vers le stade les jours de match." }
+      },
+      {
+        "level": "green",
+        "name": { "es": "Barrio Antiguo (de día)", "en": "Barrio Antiguo (by day)", "fr": "Barrio Antiguo (en journée)" },
+        "description": {
+          "es": "Casco histórico con calles empedradas, galerías, restaurantes y bares temáticos. Seguro de día y noches de fin de semana (patrullado). De madrugada, mejor tomar Uber.",
+          "en": "Historic quarter with cobblestone streets, galleries, restaurants and themed bars. Safe by day and weekend nights (patrolled). Late night, take Uber.",
+          "fr": "Quartier historique avec rues pavées, galeries, restaurants et bars thématiques. Sûr en journée et les nuits de week-end (patrouillé). Tard dans la nuit, prends Uber."
+        },
+        "tip": { "es": "La fan zone no oficial del Mundial estará aquí — prepárate para fiesta hasta las 3am los fines de semana.", "en": "The unofficial World Cup fan zone will be here — expect parties until 3am on weekends.", "fr": "La fan zone non officielle de la Coupe du Monde sera ici — attends-toi à des fêtes jusqu'à 3h les week-ends." }
+      },
+      {
+        "level": "yellow",
+        "name": { "es": "Centro de Monterrey", "en": "Downtown Monterrey", "fr": "Centre-ville de Monterrey" },
+        "description": {
+          "es": "Macroplaza, Catedral, MARCO y Parque Fundidora. Seguro de día con policía turística visible. De noche, las calles del centro se vacían rápido fuera del Barrio Antiguo.",
+          "en": "Macroplaza, Cathedral, MARCO museum and Parque Fundidora. Safe by day with visible tourist police. At night, downtown streets empty fast outside Barrio Antiguo.",
+          "fr": "Macroplaza, Cathédrale, musée MARCO et Parque Fundidora. Sûr en journée avec police touristique visible. La nuit, les rues du centre se vident rapidement hors du Barrio Antiguo."
+        },
+        "tip": { "es": "Visita la Macroplaza y MARCO de día. Cena en Barrio Antiguo. Toma Uber para moverte.", "en": "Visit Macroplaza and MARCO by day. Dinner in Barrio Antiguo. Take Uber to move around.", "fr": "Visite la Macroplaza et le MARCO en journée. Dîne dans le Barrio Antiguo. Prends Uber pour te déplacer." }
+      },
+      {
+        "level": "yellow",
+        "name": { "es": "Alrededores del Estadio BBVA", "en": "Around Estadio BBVA", "fr": "Autour du Estadio BBVA" },
+        "description": {
+          "es": "Guadalupe (municipio donde está el estadio) es mixto. El estadio mismo tendrá alta seguridad en partidos, pero los alrededores son residenciales e industriales — no zona para caminar.",
+          "en": "Guadalupe (municipality where the stadium is) is mixed. The stadium itself will have high security during matches, but surroundings are residential/industrial — not for walking.",
+          "fr": "Guadalupe (municipalité du stade) est mixte. Le stade lui-même aura une sécurité renforcée pendant les matchs, mais les environs sont résidentiels et industriels — pas pour marcher."
+        },
+        "tip": { "es": "Llega directo en Uber/shuttle. No salgas a 'explorar' el barrio del estadio — no hay nada turístico.", "en": "Arrive directly by Uber/shuttle. Don't 'explore' the stadium neighborhood — nothing touristy there.", "fr": "Arrive directement en Uber/navette. Ne pars pas 'explorer' le quartier du stade — rien de touristique." }
+      },
+      {
+        "level": "yellow",
+        "name": { "es": "Independencia y Topo Chico", "en": "Independencia and Topo Chico", "fr": "Independencia et Topo Chico" },
+        "description": {
+          "es": "Colonias populares en laderas del Cerro de la Silla e Independencia. De día es posible hacer tour guiado, de noche evita.",
+          "en": "Hillside working-class neighborhoods on Cerro de la Silla and Independencia slopes. Guided tours possible by day, avoid at night.",
+          "fr": "Quartiers populaires à flanc de colline sur le Cerro de la Silla et Independencia. Visites guidées possibles en journée, évite la nuit."
+        }
+      },
+      {
+        "level": "red",
+        "name": { "es": "Colonias de la periferia de noche", "en": "Peripheral neighborhoods at night", "fr": "Quartiers de la périphérie la nuit" },
+        "description": {
+          "es": "Zonas industriales en Apodaca, Escobedo, García — residenciales y fabriles. De noche son riesgosas y no tienen nada turístico. Sin razón para ir.",
+          "en": "Industrial areas in Apodaca, Escobedo, García — residential and factories. Risky at night with nothing touristy. No reason to visit.",
+          "fr": "Zones industrielles à Apodaca, Escobedo, García — résidentielles et usines. Risquées la nuit et rien de touristique. Aucune raison d'y aller."
+        }
+      }
+    ],
+    "currency": {
+      "tip": {
+        "es": "Banorte tiene su sede mundial en Monterrey — sus ATMs abundan y suelen tener buena tasa. BBVA también tiene sucursales en cada esquina. Evita cambiar en el aeropuerto o en el hotel. Las casas de cambio de San Pedro (Fashion Drive, Calzada del Valle) tienen tasas competitivas.",
+        "en": "Banorte is headquartered in Monterrey — its ATMs are everywhere and usually offer good rates. BBVA also has branches on every corner. Avoid exchanging at the airport or hotel. Exchange houses in San Pedro (Fashion Drive, Calzada del Valle) have competitive rates.",
+        "fr": "Banorte a son siège mondial à Monterrey — ses DAB sont partout et offrent généralement de bons taux. BBVA a aussi des agences à chaque coin. Évite de changer à l'aéroport ou à l'hôtel. Les bureaux de change de San Pedro (Fashion Drive, Calzada del Valle) ont des taux compétitifs."
+      },
+      "places": [
+        {
+          "type": "bank",
+          "name": "Banorte / BBVA (ATMs)",
+          "area": { "es": "Sucursales en toda la zona metropolitana", "en": "Branches throughout the metro area", "fr": "Agences dans toute l'agglomération" },
+          "hours": "24/7",
+          "note": {
+            "es": "Banorte es el banco del norte, con fuerte presencia local. Usa ATMs dentro de sucursales. Cobra $30-50 MXN por retiro internacional.",
+            "en": "Banorte is the northern bank with strong local presence. Use ATMs inside branches. $30-50 MXN fee per international withdrawal.",
+            "fr": "Banorte est la banque du nord, avec forte présence locale. Utilise les DAB à l'intérieur des agences. Frais de 30-50 MXN par retrait international."
+          },
+          "rateQuality": "best"
+        },
+        {
+          "type": "casa-cambio",
+          "name": "Intercam",
+          "area": { "es": "San Pedro, Valle Oriente, centro", "en": "San Pedro, Valle Oriente, downtown", "fr": "San Pedro, Valle Oriente, centre" },
+          "hours": "Lun-Vie 9-18, Sáb 10-14",
+          "note": {
+            "es": "Sucursal más grande en Fashion Drive (San Pedro). Acepta USD, EUR, CAD, GBP. Tasas mejores que los aeropuertos.",
+            "en": "Largest branch at Fashion Drive (San Pedro). Accepts USD, EUR, CAD, GBP. Better rates than airports.",
+            "fr": "Plus grande agence à Fashion Drive (San Pedro). Accepte USD, EUR, CAD, GBP. Meilleurs taux qu'à l'aéroport."
+          },
+          "rateQuality": "good"
+        },
+        {
+          "type": "casa-cambio",
+          "name": "CIBanco / Monex",
+          "area": { "es": "Centro de Monterrey, Valle Oriente", "en": "Downtown Monterrey, Valle Oriente", "fr": "Centre de Monterrey, Valle Oriente" },
+          "hours": "Lun-Vie 9-17",
+          "note": {
+            "es": "Casas de cambio establecidas. Buenas tasas especialmente para USD — por la cercanía con EE.UU. hay mucho volumen.",
+            "en": "Established exchange houses. Good rates especially for USD — lots of volume due to US proximity.",
+            "fr": "Bureaux de change établis. Bons taux surtout pour USD — gros volumes du fait de la proximité des USA."
+          },
+          "rateQuality": "good"
+        },
+        {
+          "type": "atm",
+          "name": "Citibanamex / HSBC (ATMs)",
+          "area": { "es": "En toda la ciudad", "en": "Throughout the city", "fr": "Dans toute la ville" },
+          "hours": "24/7",
+          "note": {
+            "es": "Bancos con presencia internacional. Ideal si tu banco tiene acuerdo con Citi Global o HSBC (sin comisión internacional).",
+            "en": "Banks with international presence. Ideal if your bank has a Citi Global or HSBC agreement (no international fee).",
+            "fr": "Banques à présence internationale. Idéal si ta banque a un accord avec Citi Global ou HSBC (sans frais internationaux)."
+          },
+          "rateQuality": "best"
+        },
+        {
+          "type": "airport",
+          "name": "Casas de cambio del aeropuerto MTY",
+          "area": { "es": "Terminal A y B", "en": "Terminal A and B", "fr": "Terminaux A et B" },
+          "hours": "24/7",
+          "note": {
+            "es": "PEORES tasas de la ciudad. Úsalas solo para efectivo de emergencia ($50-100 USD máximo). Espera 12-15% menos que en una casa de cambio de San Pedro.",
+            "en": "WORST rates in the city. Use only for emergency cash ($50-100 USD max). Expect 12-15% less than a San Pedro exchange.",
+            "fr": "PIRES taux de la ville. À utiliser seulement pour du liquide d'urgence (50-100 USD max). Attends-toi à 12-15 % de moins qu'à San Pedro."
+          },
+          "rateQuality": "worst"
+        }
+      ]
+    },
+    "nearbyAttractions": [
+      {
+        "emoji": "⛰️",
+        "name": { "es": "Cerro de la Silla", "en": "Cerro de la Silla (Saddle Hill)", "fr": "Cerro de la Silla (Mont Selle)" },
+        "category": { "es": "Ícono natural", "en": "Natural icon", "fr": "Icône naturelle" },
+        "distance": "5 km",
+        "timeFromStadium": { "es": "Vista desde el estadio", "en": "Visible from the stadium", "fr": "Visible depuis le stade" },
+        "description": {
+          "es": "El símbolo de Monterrey. Puedes hacer senderismo (4-6h ida y vuelta, difícil) o simplemente admirarlo desde cualquier punto de la ciudad. Mejor al atardecer.",
+          "en": "Monterrey's icon. You can hike it (4-6h round trip, difficult) or simply admire it from anywhere in the city. Best at sunset.",
+          "fr": "L'emblème de Monterrey. Tu peux le gravir (4-6h aller-retour, difficile) ou simplement l'admirer depuis n'importe quel point de la ville. Mieux au coucher du soleil."
+        },
+        "mapsQuery": "Cerro+de+la+Silla"
+      },
+      {
+        "emoji": "🏭",
+        "name": { "es": "Parque Fundidora", "en": "Fundidora Park", "fr": "Parc Fundidora" },
+        "category": { "es": "Parque urbano / Museo", "en": "Urban park / Museum", "fr": "Parc urbain / Musée" },
+        "distance": "12 km",
+        "timeFromStadium": { "es": "20 min en Uber", "en": "20 min by Uber", "fr": "20 min en Uber" },
+        "description": {
+          "es": "Antigua fundición convertida en parque de 114 hectáreas. Tiene el Horno 3 (museo del acero), jardines, lago, ciclopista y el Paseo Santa Lucía navegable. Ideal por la mañana.",
+          "en": "Former steel mill converted into a 114-hectare park. Has Horno 3 (steel museum), gardens, lake, bike path and the navigable Paseo Santa Lucía. Best in the morning.",
+          "fr": "Ancienne fonderie reconvertie en parc de 114 hectares. Abrite Horno 3 (musée de l'acier), jardins, lac, piste cyclable et le Paseo Santa Lucía navigable. Idéal le matin."
+        },
+        "mapsQuery": "Parque+Fundidora+Monterrey"
+      },
+      {
+        "emoji": "🛶",
+        "name": { "es": "Paseo Santa Lucía", "en": "Paseo Santa Lucía", "fr": "Paseo Santa Lucía" },
+        "category": { "es": "Paseo peatonal", "en": "Pedestrian walkway", "fr": "Promenade piétonne" },
+        "distance": "11 km",
+        "timeFromStadium": { "es": "20 min en Uber", "en": "20 min by Uber", "fr": "20 min en Uber" },
+        "description": {
+          "es": "Canal artificial de 2.5 km que conecta la Macroplaza con Parque Fundidora. Hermoso de noche con iluminación. Puedes caminarlo o navegarlo en lancha ($40 MXN).",
+          "en": "2.5 km artificial canal connecting Macroplaza with Parque Fundidora. Beautiful at night with lighting. You can walk it or ride a boat ($40 MXN).",
+          "fr": "Canal artificiel de 2,5 km reliant la Macroplaza au Parque Fundidora. Magnifique de nuit avec les illuminations. Tu peux le parcourir à pied ou en bateau (40 MXN)."
+        },
+        "mapsQuery": "Paseo+Santa+Lucia+Monterrey"
+      },
+      {
+        "emoji": "🏛️",
+        "name": { "es": "Macroplaza y MARCO", "en": "Macroplaza and MARCO", "fr": "Macroplaza et MARCO" },
+        "category": { "es": "Centro cívico / Museo", "en": "Civic center / Museum", "fr": "Centre civique / Musée" },
+        "distance": "13 km",
+        "timeFromStadium": { "es": "25 min en Uber", "en": "25 min by Uber", "fr": "25 min en Uber" },
+        "description": {
+          "es": "Una de las plazas más grandes del mundo, rodeada por la Catedral, el Palacio de Gobierno y el Museo MARCO (arte contemporáneo). Al atardecer sube el Faro del Comercio.",
+          "en": "One of the world's largest squares, surrounded by the Cathedral, Government Palace and MARCO (contemporary art museum). At sunset, go up the Faro del Comercio.",
+          "fr": "L'une des plus grandes places du monde, entourée de la Cathédrale, du Palais du Gouvernement et du MARCO (musée d'art contemporain). Au coucher du soleil, monte au Faro del Comercio."
+        },
+        "mapsQuery": "Macroplaza+Monterrey"
+      },
+      {
+        "emoji": "🌳",
+        "name": { "es": "Cola de Caballo (Santiago)", "en": "Cola de Caballo Waterfall (Santiago)", "fr": "Cascade Cola de Caballo (Santiago)" },
+        "category": { "es": "Naturaleza / Día completo", "en": "Nature / Full day", "fr": "Nature / Journée complète" },
+        "distance": "40 km",
+        "timeFromStadium": { "es": "1h en Uber / auto", "en": "1h by Uber / car", "fr": "1h en Uber / voiture" },
+        "description": {
+          "es": "Cascada de 25m en el Pueblo Mágico de Santiago. Combínala con lunch en el pueblo y visita a la Presa de la Boca. Perfecto para escapar del calor de la ciudad.",
+          "en": "25m waterfall in the Pueblo Mágico of Santiago. Combine with lunch in town and a visit to Presa de la Boca. Perfect to escape the city heat.",
+          "fr": "Cascade de 25 m dans le Pueblo Mágico de Santiago. Combine avec un déjeuner au village et une visite à la Presa de la Boca. Parfait pour échapper à la chaleur de la ville."
+        },
+        "mapsQuery": "Cola+de+Caballo+Santiago+NL"
+      },
+      {
+        "emoji": "🗻",
+        "name": { "es": "Grutas de García", "en": "García Caves", "fr": "Grottes de García" },
+        "category": { "es": "Aventura / Natural", "en": "Adventure / Nature", "fr": "Aventure / Nature" },
+        "distance": "40 km",
+        "timeFromStadium": { "es": "1h en auto", "en": "1h by car", "fr": "1h en voiture" },
+        "description": {
+          "es": "Cavernas de 50 millones de años con formaciones espectaculares. Subes en teleférico. Temperatura fresca (18°C) — un alivio del calor.",
+          "en": "50-million-year-old caverns with spectacular formations. Reach them by cable car. Cool temperature (18°C) — a relief from the heat.",
+          "fr": "Cavernes de 50 millions d'années avec des formations spectaculaires. Accès en téléphérique. Température fraîche (18°C) — un soulagement de la chaleur."
+        },
+        "mapsQuery": "Grutas+de+Garcia+Nuevo+Leon"
+      },
+      {
+        "emoji": "🎭",
+        "name": { "es": "Barrio Antiguo", "en": "Barrio Antiguo", "fr": "Barrio Antiguo" },
+        "category": { "es": "Vida nocturna", "en": "Nightlife", "fr": "Vie nocturne" },
+        "distance": "13 km",
+        "timeFromStadium": { "es": "25 min en Uber", "en": "25 min by Uber", "fr": "25 min en Uber" },
+        "description": {
+          "es": "Casco histórico con bares, antros, cafés, galerías y restaurantes. Los fines de semana la calle Padre Mier se cierra al tráfico y se convierte en fiesta abierta.",
+          "en": "Historic quarter with bars, clubs, cafés, galleries and restaurants. On weekends, Padre Mier street closes to traffic and becomes an open-air party.",
+          "fr": "Quartier historique avec bars, clubs, cafés, galeries et restaurants. Les week-ends, la rue Padre Mier ferme à la circulation et devient une fête à ciel ouvert."
+        },
+        "mapsQuery": "Barrio+Antiguo+Monterrey"
+      },
+      {
+        "emoji": "🥩",
+        "name": { "es": "Parrilla regia: El Gran Pastor / El Rey del Cabrito", "en": "Regia grill: El Gran Pastor / El Rey del Cabrito", "fr": "Grill régio : El Gran Pastor / El Rey del Cabrito" },
+        "category": { "es": "Gastronomía local", "en": "Local cuisine", "fr": "Gastronomie locale" },
+        "distance": "12 km",
+        "timeFromStadium": { "es": "20 min en Uber", "en": "20 min by Uber", "fr": "20 min en Uber" },
+        "description": {
+          "es": "Monterrey ES carne asada y cabrito. El Gran Pastor para tacos norteños y El Rey del Cabrito para la experiencia tradicional. No te vayas sin probarlo.",
+          "en": "Monterrey IS grilled meat and cabrito (roasted goat). El Gran Pastor for northern tacos and El Rey del Cabrito for the traditional experience. Don't leave without trying it.",
+          "fr": "Monterrey C'EST la viande grillée et le cabrito (chevreau rôti). El Gran Pastor pour les tacos du nord et El Rey del Cabrito pour l'expérience traditionnelle. Ne pars pas sans goûter."
+        },
+        "mapsQuery": "El+Rey+del+Cabrito+Monterrey"
+      }
+    ]
+  },
+  {
+    "id": "mundial-guadalajara",
+    "slug": "guadalajara",
+    "destinationId": "guadalajara",
+    "name": {
+      "es": "Guadalajara - Estadio Akron",
+      "en": "Guadalajara - Akron Stadium",
+      "zh": "瓜达拉哈拉 - 阿克龙体育场"
+    },
+    "stadium": {
+      "name": "Estadio Akron",
+      "capacity": 49850,
+      "address": {
+        "es": "Av. de las Rosas 3800, Jardines de Nuevo México, Zapopan, Jalisco",
+        "en": "Av. de las Rosas 3800, Jardines de Nuevo México, Zapopan, Jalisco",
+        "zh": "哈利斯科州萨波潘市新墨西哥花园，玫瑰大道3800号"
+      },
+      "yearBuilt": 2010,
+      "description": {
+        "es": "Hogar del CD Guadalajara (Chivas), el equipo más popular de México. Destaca por su icónico diseño en forma de volcán y su impresionante arquitectura. Ubicado en Zapopan, municipio metropolitano de Guadalajara. Fue sede de los Juegos Panamericanos 2011 y cuenta con excelentes instalaciones deportivas y de entretenimiento.",
+        "en": "Home of CD Guadalajara (Chivas), the most popular team in Mexico. Known for its iconic volcano-shaped design and impressive architecture. Located in Zapopan, a metropolitan municipality of Guadalajara. It hosted the 2011 Pan American Games and features excellent sports and entertainment facilities.",
+        "zh": "瓜达拉哈拉足球俱乐部（芝华士）的主场，墨西哥最受欢迎的球队。以其标志性的火山造型设计和令人印象深刻的建筑著称。位于瓜达拉哈拉都会区的萨波潘市。曾举办2011年泛美运动会，拥有出色的体育和娱乐设施。"
+      }
+    },
+    "matches": [
+      {
+        "date": "2026-06-13",
+        "time": "16:00",
+        "teamA": { "es": "Por definir (Grupo E)", "en": "TBD (Group E)", "zh": "待定（E组）" },
+        "teamB": { "es": "Por definir (Grupo E)", "en": "TBD (Group E)", "zh": "待定（E组）" },
+        "round": "group",
+        "group": "E",
+        "isMexicoGame": false
+      },
+      {
+        "date": "2026-06-18",
+        "time": "19:00",
+        "teamA": { "es": "México", "en": "Mexico", "zh": "墨西哥" },
+        "teamB": { "es": "Corea del Sur", "en": "South Korea", "zh": "韩国" },
+        "round": "group",
+        "group": "A",
+        "isMexicoGame": true
+      },
+      {
+        "date": "2026-06-25",
+        "time": "13:00",
+        "teamA": { "es": "Por definir", "en": "TBD", "zh": "待定" },
+        "teamB": { "es": "Por definir", "en": "TBD", "zh": "待定" },
+        "round": "group",
+        "isMexicoGame": false
+      },
+      {
+        "date": "2026-06-30",
+        "time": "16:00",
+        "teamA": { "es": "Por definir", "en": "TBD", "zh": "待定" },
+        "teamB": { "es": "Por definir", "en": "TBD", "zh": "待定" },
+        "round": "round-of-32",
+        "isMexicoGame": false
+      }
+    ],
+    "howToGetThere": {
+      "es": "El Estadio Akron está en Zapopan, a unos 30 minutos del centro de Guadalajara. Puedes tomar el Tren Ligero Línea 3 hasta la estación Periférico y de ahí usar los shuttles oficiales FIFA que operarán los días de partido. Uber y DiDi cuestan entre $250 y $400 MXN desde el centro. También habrá autobuses organizados para aficionados desde varios puntos de la ciudad. El estadio está en zona suburbana, así que planea tu transporte de ida y vuelta antes de salir.",
+      "en": "Estadio Akron is in Zapopan, about 30 minutes from downtown Guadalajara. You can take Tren Ligero Line 3 to Periférico station and then use the official FIFA shuttles that will operate on match days. Uber and DiDi cost between $250 and $400 MXN from downtown. There will also be organized fan buses from various points in the city. The stadium is in a suburban area, so plan your round-trip transportation before heading out.",
+      "zh": "阿克龙体育场位于萨波潘市，距瓜达拉哈拉市中心约30分钟。可以乘坐轻轨3号线到环城站，然后使用比赛日运营的FIFA官方班车。从市中心打Uber或DiDi费用在250至400墨西哥比索之间。城市各处也将有组织球迷巴士。体育场位于郊区，请提前规划往返交通。"
+    },
+    "nearbyHotels": {
+      "es": "Las mejores zonas para hospedarse son: Centro Histórico y Chapultepec (30 min al estadio, ambiente vibrante con bares, restaurantes y vida nocturna), Zona Expo/Minerva (20 min, hoteles de categoría superior y zona comercial elegante), y Zapopan centro (10 min, la opción más cercana al estadio con buena oferta hotelera). Reserva con anticipación ya que la demanda será altísima.",
+      "en": "The best areas to stay are: Centro Histórico and Chapultepec (30 min to the stadium, vibrant atmosphere with bars, restaurants, and nightlife), Zona Expo/Minerva (20 min, upscale hotels and elegant shopping area), and downtown Zapopan (10 min, the closest option to the stadium with good hotel selection). Book in advance as demand will be extremely high.",
+      "zh": "最佳住宿区域：历史中心和查普尔特佩克（距体育场30分钟，酒吧、餐厅和夜生活氛围热烈）、展览区/密涅瓦（20分钟，高端酒店和优雅购物区）和萨波潘市中心（10分钟，距体育场最近，酒店选择丰富）。需求极高，请提前预订。"
+    },
+    "fanZones": {
+      "es": "La Fan Fest principal estará en la Plaza de la Liberación en el centro de Guadalajara, con pantallas gigantes y entretenimiento. El barrio de Chapultepec será el epicentro de la vida nocturna con sus bares y restaurantes. La Av. Vallarta también tendrá activaciones y entretenimiento. Guadalajara es la tierra del tequila y el mariachi, así que espera degustaciones de tequila y música de mariachi por toda la ciudad.",
+      "en": "The main Fan Fest will be at Plaza de la Liberación in downtown Guadalajara, with giant screens and entertainment. The Chapultepec neighborhood will be the nightlife epicenter with its bars and restaurants. Av. Vallarta will also have activations and entertainment. Guadalajara is the land of tequila and mariachi, so expect tequila tastings and mariachi music throughout the city.",
+      "zh": "主球迷嘉年华将在瓜达拉哈拉市中心的解放广场举行，设有巨型屏幕和娱乐活动。查普尔特佩克街区将成为夜生活中心，酒吧和餐厅云集。巴亚尔塔大道也将有活动和娱乐。瓜达拉哈拉是龙舌兰酒和墨西哥流浪乐队的故乡，全城都将有龙舌兰品鉴和流浪乐队表演。"
+    },
+    "tips": [
+      {
+        "title": { "es": "Zona suburbana - planea tu regreso", "en": "Suburban location - plan your return", "zh": "郊区位置 - 提前规划返程" },
+        "content": {
+          "es": "El Estadio Akron está en una zona suburbana de Zapopan sin mucho transporte público nocturno. ANTES de ir al partido, asegúrate de tener un plan de regreso: reserva un Uber/DiDi con anticipación, coordina con tu grupo, o identifica las paradas de shuttles FIFA. Después del partido la zona se satura y conseguir transporte puede tomar más de una hora.",
+          "en": "Estadio Akron is in a suburban area of Zapopan without much late-night public transportation. BEFORE going to the match, make sure you have a return plan: book an Uber/DiDi in advance, coordinate with your group, or identify FIFA shuttle stops. After the match the area gets saturated and finding transportation can take over an hour.",
+          "zh": "阿克龙体育场位于萨波潘郊区，夜间公共交通不多。在去比赛之前，请确保有返程计划：提前预约Uber/DiDi、与同行者协调或确认FIFA班车站点。赛后该区域交通饱和，找到交通工具可能需要一个多小时。"
+        }
+      },
+      {
+        "title": { "es": "Clima agradable con lluvias ocasionales", "en": "Pleasant weather with occasional rain", "zh": "气候宜人偶有降雨" },
+        "content": {
+          "es": "El clima de Guadalajara en junio es cálido pero agradable (25-30°C), mucho más llevadero que Monterrey. Sin embargo, pueden caer lluvias repentinas por la tarde. Trae una chamarra ligera impermeable por si acaso, pero en general disfrutarás de un clima muy cómodo para el fútbol.",
+          "en": "Guadalajara's weather in June is warm but pleasant (25-30°C / 77-86°F), much more bearable than Monterrey. However, sudden afternoon rain showers can occur. Bring a light waterproof jacket just in case, but overall you'll enjoy very comfortable weather for football.",
+          "zh": "瓜达拉哈拉6月的天气温暖宜人（25-30°C），比蒙特雷舒适得多。不过下午可能会突然下雨。以防万一带一件轻便防水外套，但总体上你将享受非常舒适的观球天气。"
+        }
+      },
+      {
+        "title": { "es": "Tierra del tequila", "en": "Tequila country", "zh": "龙舌兰酒之乡" },
+        "content": {
+          "es": "Guadalajara es la puerta al pueblo mágico de Tequila, a solo 1 hora en auto. En días sin partido, visita las destilerías de tequila (José Cuervo, Herradura, Casa Noble) y disfruta de una experiencia única. También puedes tomar el Tren del Tequila, una experiencia turística con degustación incluida.",
+          "en": "Guadalajara is the gateway to the magical town of Tequila, just 1 hour away by car. On non-match days, visit the tequila distilleries (José Cuervo, Herradura, Casa Noble) and enjoy a unique experience. You can also take the Tequila Train, a tourist experience with tasting included.",
+          "zh": "瓜达拉哈拉是通往龙舌兰魔力小镇的门户，仅需1小时车程。在非比赛日，参观龙舌兰酒厂（何塞·库尔沃、赫拉杜拉、贵族之家）并享受独特体验。也可以乘坐龙舌兰列车，这是一项包含品酒的旅游体验。"
+        }
+      },
+      {
+        "title": { "es": "Vida nocturna en Chapultepec", "en": "Chapultepec nightlife", "zh": "查普尔特佩克夜生活" },
+        "content": {
+          "es": "El barrio de Chapultepec es la zona de vida nocturna más popular de Guadalajara y es completamente caminable. Encontrarás bares de craft beer, mezcalerías, restaurantes de autor y antros. Es el lugar perfecto para celebrar después de un partido de México. La Av. Chapultepec se llena de vida cada noche.",
+          "en": "The Chapultepec neighborhood is Guadalajara's most popular nightlife area and is completely walkable. You'll find craft beer bars, mezcalerías, upscale restaurants, and clubs. It's the perfect place to celebrate after a Mexico match. Av. Chapultepec comes alive every night.",
+          "zh": "查普尔特佩克街区是瓜达拉哈拉最受欢迎的夜生活区，完全适合步行。这里有精酿啤酒吧、梅斯卡尔酒吧、高档餐厅和夜店。是墨西哥队比赛后庆祝的完美场所。查普尔特佩克大道每晚都充满活力。"
+        }
+      },
+      {
+        "title": { "es": "Mercancía oficial vs. pirata", "en": "Official vs. counterfeit merchandise", "zh": "官方商品与仿冒品" },
+        "content": {
+          "es": "Compra mercancía oficial FIFA en las Fan Fest o tiendas autorizadas. Cerca del estadio abundan los vendedores de mercancía pirata de baja calidad. La mercancía oficial tiene hologramas de autenticidad y es de mejor calidad. Las Fan Fest suelen tener las mejores ofertas en productos oficiales.",
+          "en": "Buy official FIFA merchandise at Fan Fests or authorized stores. Near the stadium, there will be plenty of counterfeit low-quality merchandise vendors. Official merchandise has authenticity holograms and is better quality. Fan Fests usually have the best deals on official products.",
+          "zh": "在球迷嘉年华或授权店购买FIFA官方商品。体育场附近会有大量仿冒低质商品摊贩。官方商品带有防伪全息标志，品质更好。球迷嘉年华通常有官方产品的最佳优惠。"
+        }
+      }
+    ],
+    "heroImage": "",
+    "avgMatchDayBudget": { "min": 3000, "max": 8000, "currency": "MXN" },
+    "mapsEmbedSrc": "https://www.google.com/maps?q=Estadio+Akron,+Zapopan,+Jalisco&output=embed&z=14",
+    "airports": [
+      {
+        "code": "GDL",
+        "name": { "es": "Aeropuerto Internacional Miguel Hidalgo (GDL)", "en": "Miguel Hidalgo International Airport (GDL)", "fr": "Aéroport International Miguel Hidalgo (GDL)" },
+        "distance": "30 km",
+        "description": {
+          "es": "Al sureste de la ciudad, en Tlajomulco de Zúñiga. El Estadio Akron está al noroeste (en Zapopan), así que son puntos opuestos de la metrópoli — 40-60 min sin tráfico.",
+          "en": "Southeast of the city, in Tlajomulco de Zúñiga. Estadio Akron is northwest (in Zapopan), so opposite ends of the metro — 40-60 min without traffic.",
+          "fr": "Au sud-est de la ville, à Tlajomulco de Zúñiga. Le Estadio Akron est au nord-ouest (à Zapopan), donc aux extrémités opposées de la métropole — 40-60 min sans trafic."
+        },
+        "options": [
+          {
+            "type": "uber",
+            "icon": "🚗",
+            "name": { "es": "Uber / DiDi", "en": "Uber / DiDi", "fr": "Uber / DiDi" },
+            "cost": { "es": "$400 - $700 MXN", "en": "$400 - $700 MXN", "fr": "400 - 700 MXN" },
+            "duration": { "es": "45 - 75 min", "en": "45 - 75 min", "fr": "45 - 75 min" },
+            "safetyLevel": "green",
+            "safetyNote": { "es": "Lo más práctico — el trayecto GDL-Zapopan es largo y el transporte público poco directo. Viaje rastreado y pago digital.", "en": "Most practical — the GDL-Zapopan trip is long and public transit indirect. Tracked ride and digital payment.", "fr": "Le plus pratique — le trajet GDL-Zapopan est long et les transports publics peu directs. Trajet suivi et paiement numérique." },
+            "tips": { "es": "Zona oficial Uber a la salida de la terminal. Tarifa dinámica alta los días de partido. Reserva con 30+ min de anticipación.", "en": "Official Uber zone at terminal exit. High surge pricing on match days. Book 30+ min in advance.", "fr": "Zone officielle Uber à la sortie du terminal. Tarif dynamique élevé les jours de match. Réserve 30 min à l'avance." }
+          },
+          {
+            "type": "airport-taxi",
+            "icon": "🚕",
+            "name": { "es": "Taxi autorizado del aeropuerto", "en": "Authorized airport taxi", "fr": "Taxi autorisé de l'aéroport" },
+            "cost": { "es": "$450 - $800 MXN", "en": "$450 - $800 MXN", "fr": "450 - 800 MXN" },
+            "duration": { "es": "45 min", "en": "45 min", "fr": "45 min" },
+            "safetyLevel": "green",
+            "safetyNote": { "es": "Sitio oficial con tarifa fija por zonas. Pagas en mostrador antes de salir del área internacional.", "en": "Official taxi stand with fixed zone rates. Pay at counter before leaving the international area.", "fr": "Station officielle avec tarif fixe par zone. Paie au comptoir avant de quitter la zone internationale." },
+            "tips": { "es": "Busca el mostrador rojo 'Taxi Autorizado' DENTRO de la terminal. No aceptes a los que te ofrezcan servicio fuera.", "en": "Look for the red 'Taxi Autorizado' counter INSIDE the terminal. Don't accept offers from people outside.", "fr": "Cherche le comptoir rouge 'Taxi Autorizado' À L'INTÉRIEUR du terminal. N'accepte pas les offres à l'extérieur." }
+          },
+          {
+            "type": "bus",
+            "icon": "🚌",
+            "name": { "es": "Autobús ETN / Turibús al Centro", "en": "ETN / Turibús bus to downtown", "fr": "Bus ETN / Turibús vers le centre" },
+            "cost": { "es": "$70 - $120 MXN", "en": "$70 - $120 MXN", "fr": "70 - 120 MXN" },
+            "duration": { "es": "1h al Centro + 30 min al estadio", "en": "1h to downtown + 30 min to stadium", "fr": "1h vers le centre + 30 min au stade" },
+            "safetyLevel": "green",
+            "safetyNote": { "es": "Servicio cómodo con A/C desde la terminal al centro/Zapopan. Cada 30 min. Buena opción si no tienes prisa.", "en": "Comfortable A/C service from terminal to downtown/Zapopan. Every 30 min. Good if you're not in a hurry.", "fr": "Service confortable avec climatisation depuis le terminal vers le centre/Zapopan. Toutes les 30 min. Bonne option si tu n'es pas pressé." },
+            "tips": { "es": "Compra boleto en taquillas dentro del aeropuerto. Para el estadio necesitarás Uber desde el Centro/Zapopan.", "en": "Buy ticket at counters inside the airport. For the stadium you'll need Uber from downtown/Zapopan.", "fr": "Achète ton billet aux guichets dans l'aéroport. Pour le stade, il te faudra Uber depuis le centre/Zapopan." }
+          },
+          {
+            "type": "shuttle",
+            "icon": "🚐",
+            "name": { "es": "Shuttle FIFA / hotel", "en": "FIFA / hotel shuttle", "fr": "Navette FIFA / hôtel" },
+            "cost": { "es": "Gratis o $150-300 MXN", "en": "Free or $150-300 MXN", "fr": "Gratuit ou 150-300 MXN" },
+            "duration": { "es": "50 min", "en": "50 min", "fr": "50 min" },
+            "safetyLevel": "green",
+            "safetyNote": { "es": "Varios hoteles de Providencia, Zapopan y el Centro ofrecen shuttle gratuito al aeropuerto. FIFA operará shuttles oficiales los días de partido.", "en": "Several hotels in Providencia, Zapopan and downtown offer free airport shuttles. FIFA will run official shuttles on match days.", "fr": "Plusieurs hôtels de Providencia, Zapopan et du centre proposent des navettes aéroport gratuites. La FIFA exploitera des navettes officielles les jours de match." },
+            "tips": { "es": "Verifica al reservar si tu hotel lo incluye. El shuttle FIFA se reserva en FIFA.com/tickets.", "en": "Check at booking if your hotel includes it. FIFA shuttle bookable at FIFA.com/tickets.", "fr": "Vérifie à la réservation si ton hôtel l'inclut. Navette FIFA réservable sur FIFA.com/tickets." }
+          }
+        ]
+      }
+    ],
+    "localTransport": [
+      {
+        "type": "uber",
+        "icon": "🚗",
+        "name": { "es": "Uber / DiDi", "en": "Uber / DiDi", "fr": "Uber / DiDi" },
+        "cost": { "es": "$60 - $250 MXN por viaje", "en": "$60 - $250 MXN per trip", "fr": "60 - 250 MXN par trajet" },
+        "duration": { "es": "Varía", "en": "Varies", "fr": "Variable" },
+        "safetyLevel": "green",
+        "safetyNote": { "es": "La opción más segura y práctica para extranjeros. Aire acondicionado, viaje rastreado, pago digital. Ideal en junio con 30-35°C.", "en": "Safest and most practical option for foreigners. A/C, tracked ride, digital payment. Ideal in June with 30-35°C.", "fr": "L'option la plus sûre et pratique pour les étrangers. Climatisation, trajet suivi, paiement numérique. Idéal en juin avec 30-35°C." },
+        "tips": { "es": "Confirma placa antes de subir. Los domingos de partido hay tarifa dinámica alta cerca del estadio.", "en": "Confirm plate before boarding. On match Sundays there's high surge pricing near the stadium.", "fr": "Confirme la plaque avant de monter. Les dimanches de match, tarif dynamique élevé près du stade." }
+      },
+      {
+        "type": "metrobus",
+        "icon": "🚌",
+        "name": { "es": "Mi Macro (BRT articulado)", "en": "Mi Macro (articulated BRT)", "fr": "Mi Macro (BRT articulé)" },
+        "cost": { "es": "$9.50 MXN", "en": "$9.50 MXN", "fr": "9,50 MXN" },
+        "duration": { "es": "Rápido en carril confinado", "en": "Fast in dedicated lane", "fr": "Rapide en voie réservée" },
+        "safetyLevel": "green",
+        "safetyNote": { "es": "Dos líneas BRT: Mi Macro Calzada (sur-centro) y Mi Macro Periférico (anillo). Modernos, limpios y con A/C.", "en": "Two BRT lines: Mi Macro Calzada (south-center) and Mi Macro Periférico (ring). Modern, clean and with A/C.", "fr": "Deux lignes BRT : Mi Macro Calzada (sud-centre) et Mi Macro Periférico (rocade). Modernes, propres et climatisés." },
+        "tips": { "es": "Compra tarjeta 'Mi Movilidad' en estaciones ($15 MXN + saldo). Sirve también para tren ligero y MiBici.", "en": "Buy 'Mi Movilidad' card at stations ($15 MXN + balance). Works for light rail and MiBici too.", "fr": "Achète la carte 'Mi Movilidad' en station (15 MXN + solde). Fonctionne aussi pour le tram et MiBici." }
+      },
+      {
+        "type": "tren-ligero",
+        "icon": "🚈",
+        "name": { "es": "Tren Ligero (SITEUR)", "en": "Light Rail (SITEUR)", "fr": "Tram (SITEUR)" },
+        "cost": { "es": "$9.50 MXN", "en": "$9.50 MXN", "fr": "9,50 MXN" },
+        "duration": { "es": "Rápido", "en": "Fast", "fr": "Rapide" },
+        "safetyLevel": "green",
+        "safetyNote": { "es": "3 líneas que cubren zonas clave. La Línea 3 va hacia Zapopan y pasa cerca del estadio (estación 'Periférico Belenes').", "en": "3 lines covering key areas. Line 3 goes toward Zapopan, passing near the stadium ('Periférico Belenes' station).", "fr": "3 lignes couvrant les zones clés. La Ligne 3 va vers Zapopan, passe près du stade (station 'Periférico Belenes')." },
+        "tips": { "es": "Limpio y seguro de día. Desde Belenes es necesario shuttle FIFA o Uber corto al estadio.", "en": "Clean and safe by day. From Belenes you need FIFA shuttle or a short Uber to the stadium.", "fr": "Propre et sûr en journée. Depuis Belenes, navette FIFA ou Uber court jusqu'au stade nécessaire." }
+      },
+      {
+        "type": "bus",
+        "icon": "🚐",
+        "name": { "es": "MiBici (bicicletas públicas)", "en": "MiBici (public bikeshare)", "fr": "MiBici (vélos en libre-service)" },
+        "cost": { "es": "$365 MXN / 3 días turista", "en": "$365 MXN / 3-day tourist pass", "fr": "365 MXN / pass touriste 3 jours" },
+        "duration": { "es": "—", "en": "—", "fr": "—" },
+        "safetyLevel": "green",
+        "safetyNote": { "es": "Sistema de bici pública con 300+ estaciones en el área central. Guadalajara tiene ciclovías decentes en Chapultepec y Providencia.", "en": "Public bike system with 300+ stations in central area. Guadalajara has decent bike lanes in Chapultepec and Providencia.", "fr": "Système de vélos publics avec 300+ stations dans la zone centrale. Guadalajara a des pistes cyclables correctes à Chapultepec et Providencia." },
+        "tips": { "es": "Pase turístico de 3 días por $365 MXN. Ideal para Avenida Chapultepec o Providencia. No intentes llegar al estadio en bici.", "en": "3-day tourist pass $365 MXN. Great for Avenida Chapultepec or Providencia. Don't try to bike to the stadium.", "fr": "Pass touriste 3 jours 365 MXN. Parfait pour l'Avenida Chapultepec ou Providencia. N'essaie pas de rouler jusqu'au stade." }
+      },
+      {
+        "type": "taxi",
+        "icon": "🚖",
+        "name": { "es": "Taxi de sitio (amarillo-blanco)", "en": "Sitio taxi (yellow-white)", "fr": "Taxi sitio (jaune-blanc)" },
+        "cost": { "es": "$80 - $250 MXN", "en": "$80 - $250 MXN", "fr": "80 - 250 MXN" },
+        "duration": { "es": "Varía", "en": "Varies", "fr": "Variable" },
+        "safetyLevel": "yellow",
+        "safetyNote": { "es": "Los de sitio (con número visible) son aceptables. Los de calle son riesgosos. Exige taxímetro o negocia tarifa antes.", "en": "Sitio taxis (with visible number) are acceptable. Street taxis are risky. Demand the meter or negotiate fare beforehand.", "fr": "Les taxis de station (avec numéro visible) sont acceptables. Les taxis de rue sont risqués. Exige le taximètre ou négocie le tarif." },
+        "tips": { "es": "Pide uno al hotel o restaurante. Para el aeropuerto usa el taxi autorizado dentro de la terminal, no el de la calle.", "en": "Ask at your hotel or restaurant. For the airport, use the authorized taxi inside the terminal, not street ones.", "fr": "Demande à l'hôtel ou au restaurant. Pour l'aéroport, utilise le taxi autorisé dans le terminal, pas ceux de la rue." }
+      },
+      {
+        "type": "bus",
+        "icon": "🚐",
+        "name": { "es": "Camiones urbanos", "en": "Urban buses", "fr": "Bus urbains" },
+        "cost": { "es": "$9.50 MXN", "en": "$9.50 MXN", "fr": "9,50 MXN" },
+        "duration": { "es": "Lento", "en": "Slow", "fr": "Lent" },
+        "safetyLevel": "yellow",
+        "safetyNote": { "es": "Red extensa pero caótica; rutas difíciles de navegar sin español. Mayoría sin aire acondicionado.", "en": "Extensive but chaotic network; routes hard to navigate without Spanish. Most have no A/C.", "fr": "Réseau étendu mais chaotique ; itinéraires difficiles sans espagnol. La plupart n'ont pas de climatisation." },
+        "tips": { "es": "Úsalos solo para trayectos cortos muy bien referenciados. Para moverse con comodidad, Uber o Mi Macro.", "en": "Only use for short, well-referenced trips. For comfortable travel, Uber or Mi Macro.", "fr": "Utilise-les seulement pour des trajets courts bien repérés. Pour voyager confortablement, Uber ou Mi Macro." }
+      },
+      {
+        "type": "walk",
+        "icon": "🚶",
+        "name": { "es": "Caminar", "en": "Walking", "fr": "À pied" },
+        "cost": { "es": "Gratis", "en": "Free", "fr": "Gratuit" },
+        "duration": { "es": "—", "en": "—", "fr": "—" },
+        "safetyLevel": "green",
+        "safetyNote": { "es": "Centro Histórico, Chapultepec, Providencia, Americana y Tlaquepaque son muy caminables y seguros de día. Guadalajara es más templada que Monterrey.", "en": "Centro Histórico, Chapultepec, Providencia, Americana and Tlaquepaque are very walkable and safe by day. Guadalajara is more temperate than Monterrey.", "fr": "Centro Histórico, Chapultepec, Providencia, Americana et Tlaquepaque sont très piétonniers et sûrs en journée. Guadalajara est plus tempérée que Monterrey." },
+        "tips": { "es": "Temperaturas de 25-32°C en junio son manejables. Lleva sombrilla para la lluvia vespertina (temporada de lluvias).", "en": "June temps of 25-32°C are manageable. Carry an umbrella for afternoon rain (rainy season).", "fr": "Les 25-32°C en juin sont gérables. Apporte un parapluie pour la pluie d'après-midi (saison des pluies)." }
+      }
+    ],
+    "safetyZones": [
+      {
+        "level": "green",
+        "name": { "es": "Colonia Americana, Chapultepec, Providencia", "en": "Colonia Americana, Chapultepec, Providencia", "fr": "Colonia Americana, Chapultepec, Providencia" },
+        "description": {
+          "es": "Colonia Americana fue nombrada 'el barrio más cool del mundo' por Time Out en 2022. Avenida Chapultepec tiene los mejores bares y restaurantes. Zonas seguras de día y noche.",
+          "en": "Colonia Americana was named 'the coolest neighborhood in the world' by Time Out in 2022. Avenida Chapultepec has the best bars and restaurants. Safe day and night.",
+          "fr": "La Colonia Americana a été nommée « le quartier le plus cool du monde » par Time Out en 2022. L'Avenida Chapultepec a les meilleurs bars et restaurants. Sûr jour et nuit."
+        },
+        "tip": { "es": "La mejor base para hospedarte. 20-25 min al estadio en Uber.", "en": "The best base to stay. 20-25 min to the stadium by Uber.", "fr": "La meilleure base pour se loger. 20-25 min du stade en Uber." }
+      },
+      {
+        "level": "green",
+        "name": { "es": "Zapopan centro y Andares", "en": "Zapopan center and Andares", "fr": "Centre de Zapopan et Andares" },
+        "description": {
+          "es": "Zapopan es el municipio donde está el estadio. El Centro de Zapopan tiene la Basílica, plazas y restaurantes. Andares es la zona de lujo con hoteles, malls y vida nocturna.",
+          "en": "Zapopan is the municipality where the stadium is located. Zapopan Center has the Basilica, plazas and restaurants. Andares is the upscale area with hotels, malls and nightlife.",
+          "fr": "Zapopan est la municipalité du stade. Le Centre de Zapopan a la Basilique, des places et des restaurants. Andares est la zone haut de gamme avec hôtels, centres commerciaux et vie nocturne."
+        },
+        "tip": { "es": "Hospedarte en Andares te deja a 15 min del estadio, el más cercano de las opciones cómodas.", "en": "Staying in Andares puts you 15 min from the stadium, the closest comfortable option.", "fr": "Se loger à Andares te met à 15 min du stade, l'option confortable la plus proche." }
+      },
+      {
+        "level": "green",
+        "name": { "es": "Tlaquepaque (Pueblo Mágico)", "en": "Tlaquepaque (Pueblo Mágico)", "fr": "Tlaquepaque (Pueblo Mágico)" },
+        "description": {
+          "es": "Pueblo de artesanos dentro de la metrópoli. Centro peatonal con cerámica, cantinas tradicionales, mariachi en vivo. Muy turístico y muy seguro.",
+          "en": "Artisan town within the metro area. Pedestrian center with ceramics, traditional cantinas, live mariachi. Very touristy and very safe.",
+          "fr": "Village d'artisans dans la métropole. Centre piétonnier avec céramiques, cantinas traditionnelles, mariachi en direct. Très touristique et très sûr."
+        },
+        "tip": { "es": "Perfecto para una tarde entre partidos. Ve en Uber (25 min desde Providencia).", "en": "Perfect for an afternoon between matches. Go by Uber (25 min from Providencia).", "fr": "Parfait pour un après-midi entre deux matchs. Vas-y en Uber (25 min depuis Providencia)." }
+      },
+      {
+        "level": "yellow",
+        "name": { "es": "Centro Histórico (noche)", "en": "Historic Center (night)", "fr": "Centre historique (nuit)" },
+        "description": {
+          "es": "La zona de Catedral, Teatro Degollado y Rotonda es segura de día con mucha policía turística. De noche algunas calles alejadas se vacían — mejor quédate en zonas iluminadas.",
+          "en": "The Cathedral, Teatro Degollado and Rotonda area is safe by day with plenty of tourist police. At night some outlying streets empty out — stick to lit areas.",
+          "fr": "La zone Cathédrale, Teatro Degollado et Rotonda est sûre en journée avec beaucoup de police touristique. La nuit certaines rues excentrées se vident — reste dans les zones éclairées."
+        },
+        "tip": { "es": "Camina de día, cena en Plaza Tapatía o Av. Chapultepec y vuelve en Uber.", "en": "Walk by day, dine in Plaza Tapatía or Av. Chapultepec and return by Uber.", "fr": "Marche en journée, dîne à la Plaza Tapatía ou sur l'Av. Chapultepec et rentre en Uber." }
+      },
+      {
+        "level": "yellow",
+        "name": { "es": "Alrededores del Estadio Akron (Belenes)", "en": "Around Estadio Akron (Belenes)", "fr": "Autour du Estadio Akron (Belenes)" },
+        "description": {
+          "es": "Zona residencial de Zapopan con vialidades rápidas. Durante partidos tiene seguridad reforzada, fuera de partidos no es zona turística ni peatonal.",
+          "en": "Residential Zapopan area with fast roads. Heavy security during matches; off-match it isn't tourist or pedestrian territory.",
+          "fr": "Zone résidentielle de Zapopan avec voies rapides. Sécurité renforcée pendant les matchs ; hors match ce n'est pas une zone touristique ou piétonne."
+        },
+        "tip": { "es": "Llega directo en Uber/shuttle. Después del partido ten paciencia — 46,000 personas saliendo a la vez.", "en": "Arrive directly by Uber/shuttle. After the match be patient — 46,000 people leaving at once.", "fr": "Arrive directement en Uber/navette. Après le match, sois patient — 46 000 personnes sortent en même temps." }
+      },
+      {
+        "level": "yellow",
+        "name": { "es": "Mercado San Juan de Dios (Libertad)", "en": "San Juan de Dios Market (Libertad)", "fr": "Marché San Juan de Dios (Libertad)" },
+        "description": {
+          "es": "El mercado cubierto más grande de América Latina. De día es visita obligada para comida y artesanía, pero cuida tu mochila y billetera. De noche NO.",
+          "en": "The largest covered market in Latin America. By day it's a must-visit for food and crafts, but watch your bag and wallet. Not at night.",
+          "fr": "Le plus grand marché couvert d'Amérique latine. En journée c'est une visite incontournable pour la nourriture et l'artisanat, mais surveille ton sac et ton portefeuille. Pas la nuit."
+        },
+        "tip": { "es": "Ve temprano (9-12h), come en los puestos de arriba (birria, tortas ahogadas), y sal antes del atardecer.", "en": "Go early (9am-noon), eat at upstairs stalls (birria, tortas ahogadas), and leave before sunset.", "fr": "Vas-y tôt (9h-12h), mange aux stands à l'étage (birria, tortas ahogadas) et pars avant le coucher du soleil." }
+      },
+      {
+        "level": "red",
+        "name": { "es": "Oblatos y colonias del oriente de noche", "en": "Oblatos and eastern neighborhoods at night", "fr": "Oblatos et quartiers de l'est la nuit" },
+        "description": {
+          "es": "Colonias populares al oriente de la ciudad. Altos índices delictivos de noche, sin valor turístico. Evítalas como turista.",
+          "en": "Working-class neighborhoods east of the city. High crime rates at night, no tourist value. Avoid as a tourist.",
+          "fr": "Quartiers populaires à l'est de la ville. Taux de criminalité élevés la nuit, sans intérêt touristique. À éviter en tant que touriste."
+        }
+      }
+    ],
+    "currency": {
+      "tip": {
+        "es": "Guadalajara tiene bancos en cada esquina — ATMs de BBVA, Banorte, Santander y Citibanamex dan buena tasa. Las casas de cambio de Providencia y Chapultepec son competitivas. Evita los cambios del aeropuerto y de San Juan de Dios.",
+        "en": "Guadalajara has banks on every corner — BBVA, Banorte, Santander and Citibanamex ATMs offer good rates. Exchange houses in Providencia and Chapultepec are competitive. Avoid airport and San Juan de Dios market exchanges.",
+        "fr": "Guadalajara a des banques à chaque coin — les DAB BBVA, Banorte, Santander et Citibanamex offrent de bons taux. Les bureaux de change de Providencia et Chapultepec sont compétitifs. Évite les changes de l'aéroport et du marché San Juan de Dios."
+      },
+      "places": [
+        {
+          "type": "bank",
+          "name": "BBVA / Banorte / Santander (ATMs)",
+          "area": { "es": "Sucursales en todo el área metropolitana", "en": "Branches throughout the metro area", "fr": "Agences dans toute l'agglomération" },
+          "hours": "24/7",
+          "note": {
+            "es": "Usa ATMs DENTRO de sucursales. Comisión internacional $30-50 MXN. Mejor tasa garantizada.",
+            "en": "Use ATMs INSIDE branches. International fee $30-50 MXN. Best rate guaranteed.",
+            "fr": "Utilise les DAB À L'INTÉRIEUR des agences. Frais internationaux 30-50 MXN. Meilleur taux garanti."
+          },
+          "rateQuality": "best"
+        },
+        {
+          "type": "casa-cambio",
+          "name": "Intercam",
+          "area": { "es": "Providencia, Andares, Chapultepec", "en": "Providencia, Andares, Chapultepec", "fr": "Providencia, Andares, Chapultepec" },
+          "hours": "Lun-Vie 9-18, Sáb 10-14",
+          "note": {
+            "es": "Casa de cambio confiable. Acepta USD, EUR, CAD, GBP. Sucursales en las zonas donde probablemente te hospedes.",
+            "en": "Reliable exchange house. Accepts USD, EUR, CAD, GBP. Branches in the areas where you'll likely stay.",
+            "fr": "Bureau de change fiable. Accepte USD, EUR, CAD, GBP. Agences dans les zones où tu vas probablement loger."
+          },
+          "rateQuality": "good"
+        },
+        {
+          "type": "casa-cambio",
+          "name": "CIBanco",
+          "area": { "es": "Centro, Plaza del Sol, Andares", "en": "Centro, Plaza del Sol, Andares", "fr": "Centro, Plaza del Sol, Andares" },
+          "hours": "Lun-Vie 9-17",
+          "note": {
+            "es": "Amplia red de sucursales, buenas tasas. Servicio rápido para cambios medianos (de $200 USD en adelante).",
+            "en": "Wide branch network, good rates. Fast service for medium exchanges ($200 USD+).",
+            "fr": "Large réseau d'agences, bons taux. Service rapide pour les changes moyens (à partir de 200 USD)."
+          },
+          "rateQuality": "good"
+        },
+        {
+          "type": "atm",
+          "name": "Citibanamex / HSBC (ATMs)",
+          "area": { "es": "En toda la ciudad", "en": "Throughout the city", "fr": "Dans toute la ville" },
+          "hours": "24/7",
+          "note": {
+            "es": "Bancos con presencia internacional. Si tu banco es aliado (Citi Global, HSBC Premier), no te cobran comisión internacional.",
+            "en": "Banks with international presence. If your bank is an affiliate (Citi Global, HSBC Premier), no international fee.",
+            "fr": "Banques à présence internationale. Si ta banque est partenaire (Citi Global, HSBC Premier), pas de frais internationaux."
+          },
+          "rateQuality": "best"
+        },
+        {
+          "type": "airport",
+          "name": "Casas de cambio del aeropuerto GDL",
+          "area": { "es": "Llegadas nacionales e internacionales", "en": "Domestic and international arrivals", "fr": "Arrivées nationales et internationales" },
+          "hours": "24/7",
+          "note": {
+            "es": "PEORES tasas de la ciudad (hasta 15% menos). Úsalas solo para $50-100 USD de emergencia para pagar el transporte.",
+            "en": "WORST rates in the city (up to 15% less). Use only for $50-100 USD emergency cash for transport.",
+            "fr": "PIRES taux de la ville (jusqu'à 15 % de moins). À utiliser seulement pour 50-100 USD d'urgence pour le transport."
+          },
+          "rateQuality": "worst"
+        }
+      ]
+    },
+    "nearbyAttractions": [
+      {
+        "emoji": "🎨",
+        "name": { "es": "Tlaquepaque (Pueblo Mágico)", "en": "Tlaquepaque (Pueblo Mágico)", "fr": "Tlaquepaque (Pueblo Mágico)" },
+        "category": { "es": "Artesanía / Mariachi", "en": "Crafts / Mariachi", "fr": "Artisanat / Mariachi" },
+        "distance": "8 km",
+        "timeFromStadium": { "es": "25 min en Uber", "en": "25 min by Uber", "fr": "25 min en Uber" },
+        "description": {
+          "es": "Corazón artesanal de Jalisco. Calles peatonales con cerámica, vidrio soplado, talabartería y el Parián — patio de cantinas con mariachi en vivo todas las tardes.",
+          "en": "Artisan heart of Jalisco. Pedestrian streets with ceramics, blown glass, leatherwork and El Parián — a cantina courtyard with live mariachi every afternoon.",
+          "fr": "Cœur artisanal de Jalisco. Rues piétonnes avec céramiques, verre soufflé, maroquinerie et El Parián — cour de cantinas avec mariachi en direct tous les après-midis."
+        },
+        "mapsQuery": "Tlaquepaque+Jalisco"
+      },
+      {
+        "emoji": "🥃",
+        "name": { "es": "Tequila (Pueblo Mágico)", "en": "Tequila (Pueblo Mágico)", "fr": "Tequila (Pueblo Mágico)" },
+        "category": { "es": "Día completo / Destilerías", "en": "Full day / Distilleries", "fr": "Journée complète / Distilleries" },
+        "distance": "60 km",
+        "timeFromStadium": { "es": "1h 15 min en Uber / tour", "en": "1h 15 min by Uber / tour", "fr": "1h 15 en Uber / tour" },
+        "description": {
+          "es": "La cuna del tequila. Tours en destilerías (Jose Cuervo, Herradura, Sauza), paseo entre agaves, el Tren José Cuervo Express desde Guadalajara. Patrimonio UNESCO.",
+          "en": "The birthplace of tequila. Distillery tours (Jose Cuervo, Herradura, Sauza), agave field walks, the José Cuervo Express train from Guadalajara. UNESCO Heritage.",
+          "fr": "Le berceau de la tequila. Visites de distilleries (Jose Cuervo, Herradura, Sauza), balade dans les champs d'agave, le train José Cuervo Express depuis Guadalajara. Patrimoine UNESCO."
+        },
+        "mapsQuery": "Tequila+Jalisco"
+      },
+      {
+        "emoji": "⛪",
+        "name": { "es": "Centro Histórico: Catedral y Teatro Degollado", "en": "Historic Center: Cathedral and Teatro Degollado", "fr": "Centre historique : Cathédrale et Teatro Degollado" },
+        "category": { "es": "Arquitectura / Cultura", "en": "Architecture / Culture", "fr": "Architecture / Culture" },
+        "distance": "9 km",
+        "timeFromStadium": { "es": "20 min en Uber", "en": "20 min by Uber", "fr": "20 min en Uber" },
+        "description": {
+          "es": "La Catedral, el Teatro Degollado, la Rotonda de los Jaliscienses Ilustres y el Hospicio Cabañas (Patrimonio UNESCO con los murales de Orozco). Todo a caminar.",
+          "en": "The Cathedral, Teatro Degollado, Rotonda of Illustrious Jaliscans and Hospicio Cabañas (UNESCO Heritage with Orozco murals). All walkable.",
+          "fr": "La Cathédrale, le Teatro Degollado, la Rotonda des Jaliscains Illustres et l'Hospicio Cabañas (Patrimoine UNESCO avec les fresques d'Orozco). Tout est à pied."
+        },
+        "mapsQuery": "Catedral+de+Guadalajara"
+      },
+      {
+        "emoji": "🏞️",
+        "name": { "es": "Lago de Chapala y Ajijic", "en": "Lake Chapala and Ajijic", "fr": "Lac Chapala et Ajijic" },
+        "category": { "es": "Naturaleza / Día completo", "en": "Nature / Full day", "fr": "Nature / Journée complète" },
+        "distance": "50 km",
+        "timeFromStadium": { "es": "1h en Uber / auto", "en": "1h by Uber / car", "fr": "1h en Uber / voiture" },
+        "description": {
+          "es": "El lago más grande de México. El pueblo de Ajijic en su orilla es famoso por su comunidad de expatriados y su ambiente artístico. Ideal un domingo sin partido.",
+          "en": "Mexico's largest lake. The town of Ajijic on its shore is famous for its expat community and artistic vibe. Ideal on a Sunday without a match.",
+          "fr": "Le plus grand lac du Mexique. Le village d'Ajijic sur sa rive est célèbre pour sa communauté d'expatriés et son ambiance artistique. Idéal un dimanche sans match."
+        },
+        "mapsQuery": "Ajijic+Lake+Chapala"
+      },
+      {
+        "emoji": "🏛️",
+        "name": { "es": "Basílica de Zapopan", "en": "Basilica of Zapopan", "fr": "Basilique de Zapopan" },
+        "category": { "es": "Religioso / Cultural", "en": "Religious / Cultural", "fr": "Religieux / Culturel" },
+        "distance": "5 km",
+        "timeFromStadium": { "es": "15 min en Uber", "en": "15 min by Uber", "fr": "15 min en Uber" },
+        "description": {
+          "es": "Santuario de la Virgen de Zapopan. El Centro de Zapopan es peatonal, con cafés, restaurantes y ambiente de pueblo dentro de la metrópoli. Muy cerca del estadio.",
+          "en": "Sanctuary of the Virgin of Zapopan. Zapopan Center is pedestrian-friendly with cafés, restaurants and village vibe within the metro. Very close to the stadium.",
+          "fr": "Sanctuaire de la Vierge de Zapopan. Le Centre de Zapopan est piétonnier, avec cafés, restaurants et ambiance de village dans la métropole. Très près du stade."
+        },
+        "mapsQuery": "Basilica+de+Zapopan"
+      },
+      {
+        "emoji": "🌋",
+        "name": { "es": "Barranca de Huentitán", "en": "Huentitán Canyon", "fr": "Canyon de Huentitán" },
+        "category": { "es": "Naturaleza / Mirador", "en": "Nature / Viewpoint", "fr": "Nature / Belvédère" },
+        "distance": "14 km",
+        "timeFromStadium": { "es": "25 min en Uber", "en": "25 min by Uber", "fr": "25 min en Uber" },
+        "description": {
+          "es": "Barranca de 600 m de profundidad. Hay teleférico, senderismo y miradores espectaculares. Ideal para amanecer o atardecer.",
+          "en": "600m-deep canyon with cable car, hiking and spectacular viewpoints. Best at sunrise or sunset.",
+          "fr": "Canyon profond de 600 m avec téléphérique, randonnée et belvédères spectaculaires. Idéal au lever ou coucher du soleil."
+        },
+        "mapsQuery": "Barranca+de+Huentitan"
+      },
+      {
+        "emoji": "🎭",
+        "name": { "es": "Avenida Chapultepec (vida nocturna)", "en": "Avenida Chapultepec (nightlife)", "fr": "Avenida Chapultepec (vie nocturne)" },
+        "category": { "es": "Bares / Restaurantes", "en": "Bars / Restaurants", "fr": "Bars / Restaurants" },
+        "distance": "10 km",
+        "timeFromStadium": { "es": "20 min en Uber", "en": "20 min by Uber", "fr": "20 min en Uber" },
+        "description": {
+          "es": "El corazón de la vida nocturna tapatía. Bares, terrazas, comida de autor y fiestas al aire libre los fines de semana. La Colonia Americana rodea esta avenida.",
+          "en": "The heart of tapatío nightlife. Bars, rooftops, signature food and outdoor parties on weekends. Colonia Americana surrounds this avenue.",
+          "fr": "Le cœur de la vie nocturne tapatía. Bars, rooftops, cuisine d'auteur et fêtes en plein air les week-ends. La Colonia Americana entoure cette avenue."
+        },
+        "mapsQuery": "Avenida+Chapultepec+Guadalajara"
+      },
+      {
+        "emoji": "🌮",
+        "name": { "es": "Tortas ahogadas y birria (comida tapatía)", "en": "Tortas ahogadas and birria (tapatío food)", "fr": "Tortas ahogadas et birria (cuisine tapatía)" },
+        "category": { "es": "Gastronomía local", "en": "Local cuisine", "fr": "Gastronomie locale" },
+        "distance": "—",
+        "timeFromStadium": { "es": "En toda la ciudad", "en": "Citywide", "fr": "Dans toute la ville" },
+        "description": {
+          "es": "La torta ahogada (birote bañado en salsa de jitomate picante con carnitas) y la birria de res o chivo son imperdibles. Prueba 'La Mexicana', 'Tortas Toño' o las birrierías del Mercado Libertad.",
+          "en": "The torta ahogada (birote roll drowned in spicy tomato sauce with carnitas) and beef/goat birria are must-tries. Try 'La Mexicana', 'Tortas Toño' or birrierías at Mercado Libertad.",
+          "fr": "La torta ahogada (pain birote trempé dans une sauce tomate piquante avec carnitas) et la birria de bœuf/chevreau sont incontournables. Essaie 'La Mexicana', 'Tortas Toño' ou les birrierías du Mercado Libertad."
+        },
+        "mapsQuery": "Tortas+ahogadas+La+Mexicana+Guadalajara"
+      }
+    ]
+  }
+]

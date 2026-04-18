@@ -30,6 +30,14 @@ export default function Footer() {
             <h3 className="font-display font-semibold text-white mb-4">{t("quickLinks")}</h3>
             <ul className="space-y-2 text-sm">
               <li>
+                <Link
+                  href={`/${locale}/mundial`}
+                  className="inline-flex items-center gap-1.5 text-jade-300 hover:text-emerald-300 font-semibold transition-colors"
+                >
+                  ⚽ {locale === "es" ? "Mundial 2026" : locale === "fr" ? "Coupe du Monde 2026" : "World Cup 2026"}
+                </Link>
+              </li>
+              <li>
                 <Link href={`/${locale}/destinos`} className="hover:text-terracotta-400 transition-colors">
                   {tc("allDestinations")}
                 </Link>

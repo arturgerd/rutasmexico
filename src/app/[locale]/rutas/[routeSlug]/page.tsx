@@ -14,6 +14,7 @@ export async function generateStaticParams() {
   return routes.flatMap((r) => [
     { locale: "es", routeSlug: r.slug },
     { locale: "en", routeSlug: r.slug },
+    { locale: "fr", routeSlug: r.slug },
   ]);
 }
 
