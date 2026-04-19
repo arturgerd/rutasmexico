@@ -1275,5 +1275,211 @@
       "en": "November to May is the best season, with dry weather and temperatures of 25-32°C. December to March is high season with more visitors but clear skies. June to October is rainy season with afternoon showers but sunny mornings and lower prices."
     },
     "airportIATA": "HUX"
+  },
+  {
+    "id": "riviera-nayarit",
+    "slug": "riviera-nayarit",
+    "name": {
+      "es": "Riviera Nayarit",
+      "en": "Riviera Nayarit"
+    },
+    "shortName": "PVR",
+    "coordinates": {
+      "lat": 20.7333,
+      "lng": -105.3833
+    },
+    "state": {
+      "es": "Nayarit",
+      "en": "Nayarit"
+    },
+    "region": "occidente",
+    "description": {
+      "es": "Riviera Nayarit es un corredor costero de 320 km al norte de Puerto Vallarta con pueblos surfistas como Sayulita, paraísos escondidos como las Islas Marietas y lujo discreto en Punta de Mita. La playa bohemia mexicana por excelencia.",
+      "en": "Riviera Nayarit is a 320-km coastal corridor north of Puerto Vallarta with surf towns like Sayulita, hidden paradises like the Marietas Islands, and understated luxury at Punta de Mita. Mexico's quintessential bohemian beach."
+    },
+    "longDescription": {
+      "es": "La Riviera Nayarit, al norte de Puerto Vallarta, es uno de los destinos de playa más diversos y auténticos de México. Sayulita, declarado Pueblo Mágico, es la capital del surf y el estilo bohemio con sus calles coloridas, mercado artesanal y oleaje perfecto para principiantes. Unos minutos al sur, San Pancho ofrece una versión más tranquila y residencial. En el extremo sur, Punta de Mita concentra resorts de lujo como el St. Regis y el Four Seasons con vistas espectaculares. Las Islas Marietas, patrimonio de la UNESCO, esconden la famosa 'Playa del Amor' dentro de un cráter volcánico. Nuevo Vallarta y Bucerías combinan hoteles all-inclusive con gastronomía local. Al norte, Guayabitos y Rincón de Guayabitos mantienen el encanto de pueblo de pescadores. Es playa para todos los gustos en el mismo corredor.",
+      "en": "Riviera Nayarit, north of Puerto Vallarta, is one of Mexico's most diverse and authentic beach destinations. Sayulita, a designated Pueblo Mágico, is the capital of surf and bohemian style with colorful streets, artisan markets, and beginner-friendly waves. Just south, San Pancho offers a quieter, residential version. At the southern tip, Punta de Mita concentrates luxury resorts like St. Regis and Four Seasons with spectacular views. The Marietas Islands, a UNESCO site, hide the famous 'Playa del Amor' inside a volcanic crater. Nuevo Vallarta and Bucerías combine all-inclusive hotels with local cuisine. Farther north, Guayabitos keeps the fishing-village charm. It's every kind of beach in a single corridor."
+    },
+    "heroImage": "https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=800&h=500&fit=crop&q=80",
+    "highlights": [
+      {
+        "es": "Surf en Sayulita — clases para principiantes desde $500 MXN, olas consistentes todo el año y ambiente bohemio único",
+        "en": "Surfing in Sayulita — beginner lessons from $500 MXN, consistent waves year-round, and a unique bohemian vibe"
+      },
+      {
+        "es": "Tour a las Islas Marietas y la Playa del Amor, una playa escondida dentro de un cráter con acceso solo por nado",
+        "en": "Tour to the Marietas Islands and Playa del Amor, a hidden beach inside a crater accessible only by swimming"
+      },
+      {
+        "es": "Punta de Mita: avistamiento de ballenas jorobadas (diciembre-marzo) y snorkel en playas semi-privadas de resort",
+        "en": "Punta de Mita: humpback whale watching (December-March) and snorkeling at semi-private resort beaches"
+      },
+      {
+        "es": "San Pancho y Lo de Marcos — pueblos de pescadores con playas vírgenes, gastronomía local y atardeceres sin hoteles a la vista",
+        "en": "San Pancho and Lo de Marcos — fishing villages with pristine beaches, local cuisine, and sunsets free of hotel views"
+      }
+    ],
+    "gettingAround": {
+      "es": "El aeropuerto de Puerto Vallarta (PVR) sirve a toda la Riviera Nayarit. Desde el aeropuerto a Sayulita son 45 min en Uber ($400-600 MXN) o autobús Compostela ($80 MXN). Entre pueblos (Bucerías-Sayulita-San Pancho) hay autobuses locales cada 30 min por $30-50 MXN. Rentar auto es lo mejor si planeas explorar varios pueblos — hay agencias en el aeropuerto y en Nuevo Vallarta.",
+      "en": "Puerto Vallarta airport (PVR) serves all of Riviera Nayarit. From airport to Sayulita: 45 min by Uber ($400-600 MXN) or Compostela bus ($80 MXN). Between towns (Bucerías-Sayulita-San Pancho) local buses run every 30 min for $30-50 MXN. Renting a car is best if you plan to explore multiple towns — agencies at the airport and in Nuevo Vallarta."
+    },
+    "safetyTips": [
+      {
+        "es": "La Riviera Nayarit es muy segura, uno de los estados con menor crimen turístico. En Sayulita cuida tus pertenencias en la playa porque se llena mucho. No nades solo en Playa de los Muertos durante oleaje fuerte.",
+        "en": "Riviera Nayarit is very safe, one of the states with the lowest tourist crime. In Sayulita watch your belongings at the beach since it gets crowded. Don't swim alone at Playa de los Muertos during strong surf."
+      },
+      {
+        "es": "Los tours a Islas Marietas están limitados por el gobierno para proteger el ecosistema. Reserva con 2-3 días de anticipación especialmente en alta temporada (diciembre-abril).",
+        "en": "Marietas Islands tours are government-limited to protect the ecosystem. Book 2-3 days in advance especially during high season (December-April)."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Pescado zarandeado",
+        "description": {
+          "es": "Pescado entero (huachinango o pargo) marinado con adobo nayarita, abierto en mariposa y asado lentamente sobre leña. Servido con tortillas, limón y salsa de molcajete. Platillo emblema de Nayarit.",
+          "en": "Whole fish (red snapper) marinated in Nayarit adobo, butterflied and slow-grilled over wood. Served with tortillas, lime, and molcajete salsa. Nayarit's signature dish."
+        },
+        "priceRange": {
+          "min": 180,
+          "max": 450,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Mariscos El Coleguita en Bucerías o los palapas de playa en Sayulita y Lo de Marcos.",
+          "en": "Mariscos El Coleguita in Bucerías or beach palapas in Sayulita and Lo de Marcos."
+        }
+      },
+      {
+        "name": "Tacos de pescado estilo Ensenada",
+        "description": {
+          "es": "Pescado fresco (dorado o camarón) empanizado y frito, servido en tortilla de maíz con repollo, pico de gallo, salsa de yogurt y chile. Una versión surfer de los tacos clásicos.",
+          "en": "Fresh fish (mahi-mahi or shrimp) battered and fried, served in corn tortilla with cabbage, pico de gallo, yogurt sauce, and chili. A surfer version of classic tacos."
+        },
+        "priceRange": {
+          "min": 60,
+          "max": 130,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Tacos on the Street en Sayulita (abre solo de noche) o La Rustica en San Pancho.",
+          "en": "Tacos on the Street in Sayulita (opens only at night) or La Rustica in San Pancho."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 900,
+      "max": 3500,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "Noviembre a abril es la mejor temporada, con clima seco, 25-30°C y cielos despejados. Diciembre a marzo es temporada de ballenas jorobadas. Mayo a octubre es temporada de lluvias pero con menos turistas y mejores precios. Septiembre es el mes más lluvioso y con riesgo de huracanes.",
+      "en": "November to April is the best season, dry, 77-86°F, and clear skies. December to March is humpback whale season. May to October is rainy season but fewer tourists and better prices. September is the rainiest month with hurricane risk."
+    },
+    "airportIATA": "PVR"
+  },
+  {
+    "id": "mazatlan",
+    "slug": "mazatlan",
+    "name": {
+      "es": "Mazatlán",
+      "en": "Mazatlán"
+    },
+    "shortName": "MZT",
+    "coordinates": {
+      "lat": 23.2494,
+      "lng": -106.4111
+    },
+    "state": {
+      "es": "Sinaloa",
+      "en": "Sinaloa"
+    },
+    "region": "occidente",
+    "description": {
+      "es": "Mazatlán, 'La Perla del Pacífico', combina 20 km de playas con un Centro Histórico colonial reconocido como Pueblo Mágico. Sede del segundo Carnaval más grande de América Latina y cuna de la banda sinaloense.",
+      "en": "Mazatlán, 'The Pearl of the Pacific', combines 20 km of beaches with a colonial Historic Center designated as a Pueblo Mágico. Home to Latin America's second-largest Carnival and birthplace of banda sinaloense music."
+    },
+    "longDescription": {
+      "es": "Mazatlán, en la costa sur de Sinaloa, es uno de los destinos de playa más completos de México: combina el encanto de una ciudad histórica con la infraestructura de un resort moderno. El Centro Histórico, Pueblo Mágico desde 2016, es un tesoro de arquitectura colonial y neoclásica del siglo XIX, con la Catedral Basílica, el Teatro Ángela Peralta y plazas rodeadas de casonas restauradas. El Malecón de 21 km es uno de los más largos del mundo, perfecto para caminar o andar en bici al atardecer. La Zona Dorada concentra los hoteles de playa, restaurantes y vida nocturna. El Faro de Mazatlán (159 m) es el segundo más alto del mundo con vista espectacular. En febrero se celebra el Carnaval de Mazatlán, con desfiles, música de banda y fuegos artificiales. La gastronomía local destaca con aguachile, callo de hacha, cabrería y el clásico camarón zarandeado.",
+      "en": "Mazatlán, on Sinaloa's southern coast, is one of Mexico's most complete beach destinations: it combines the charm of a historic city with modern resort infrastructure. The Historic Center, a Pueblo Mágico since 2016, is a treasure of 19th-century colonial and neoclassical architecture, with the Cathedral Basilica, Ángela Peralta Theater, and squares surrounded by restored mansions. The 21-km Malecón is one of the world's longest, perfect for walking or biking at sunset. The Zona Dorada concentrates beach hotels, restaurants, and nightlife. El Faro de Mazatlán (159 m) is the world's second-tallest lighthouse with spectacular views. February brings Carnaval de Mazatlán, with parades, banda music, and fireworks. Local cuisine features aguachile, callo de hacha (pen shell scallops), cabrería, and the classic camarón zarandeado."
+    },
+    "heroImage": "https://images.unsplash.com/photo-1512813195386-6cf811ad3542?w=800&h=500&fit=crop&q=80",
+    "highlights": [
+      {
+        "es": "Centro Histórico y Plazuela Machado: arquitectura colonial restaurada, restaurantes al aire libre y el Teatro Ángela Peralta del siglo XIX",
+        "en": "Historic Center and Plazuela Machado: restored colonial architecture, open-air restaurants, and the 19th-century Ángela Peralta Theater"
+      },
+      {
+        "es": "Caminata al Faro de Mazatlán — segundo faro más alto del mundo (159 m) con vista de 360° de la bahía y el Pacífico",
+        "en": "Hike to Mazatlán Lighthouse — world's second-tallest (159 m) with 360° views of the bay and Pacific"
+      },
+      {
+        "es": "Tour a Isla de la Piedra — playa virgen de 16 km con palmeras, gastronomía fresca y ambiente tranquilo, a 10 min en lancha",
+        "en": "Tour to Stone Island — 16-km pristine beach with palm trees, fresh food, and relaxed atmosphere, 10 min by boat"
+      },
+      {
+        "es": "Carnaval de Mazatlán en febrero (segundo más grande de América Latina) con desfiles, banda sinaloense y fuegos artificiales sobre el Malecón",
+        "en": "Carnaval de Mazatlán in February (Latin America's 2nd largest) with parades, banda sinaloense, and fireworks over the Malecón"
+      }
+    ],
+    "gettingAround": {
+      "es": "Aeropuerto Internacional de Mazatlán (MZT) está a 20 min del Centro y Zona Dorada. Uber/DiDi funciona bien y es más barato que taxis ($150-200 MXN del aeropuerto). El famoso pulmonía (taxi abierto estilo carrito de golf) es ícono local: $60-120 MXN por trayecto corto. Los camiones (Sábalo Centro) conectan toda la ciudad por $12 MXN. Bici y caminar son ideales para el Centro y el Malecón.",
+      "en": "Mazatlán International Airport (MZT) is 20 min from the Center and Zona Dorada. Uber/DiDi work well and are cheaper than taxis ($150-200 MXN from airport). The famous pulmonía (open-air taxi, golf-cart style) is a local icon: $60-120 MXN for short trips. City buses (Sábalo Centro) connect the whole city for $12 MXN. Biking and walking are ideal for the Center and Malecón."
+    },
+    "safetyTips": [
+      {
+        "es": "Mazatlán es un destino turístico seguro. La Zona Dorada y el Centro Histórico tienen presencia policial constante. Evita zonas residenciales alejadas por la noche. Como en todo México, no ostentes joyería ni electrónica cara.",
+        "en": "Mazatlán is a safe tourist destination. Zona Dorada and Historic Center have constant police presence. Avoid distant residential areas at night. As everywhere in Mexico, don't flash jewelry or expensive electronics."
+      },
+      {
+        "es": "En temporada de huracanes (junio-noviembre) revisa el pronóstico antes de viajar. El oleaje puede ser fuerte en playa Olas Altas — usa las playas de Cerritos o Sábalo para nadar con calma.",
+        "en": "During hurricane season (June-November) check the forecast before traveling. Surf can be strong at Olas Altas beach — use Cerritos or Sábalo beaches for calmer swimming."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Aguachile sinaloense",
+        "description": {
+          "es": "Camarones crudos marinados en jugo de limón con chile serrano molido, pepino, cebolla morada y cilantro. Invención sinaloense. Picor vibrante y refrescante.",
+          "en": "Raw shrimp marinated in lime juice with ground serrano chili, cucumber, red onion, and cilantro. A Sinaloa invention. Vibrant, refreshing heat."
+        },
+        "priceRange": {
+          "min": 150,
+          "max": 280,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "El Cuchupetas en Villa Unión (vale el viaje de 20 min) o Mariscos El Toro en la Zona Dorada.",
+          "en": "El Cuchupetas in Villa Unión (worth the 20-min drive) or Mariscos El Toro in the Zona Dorada."
+        }
+      },
+      {
+        "name": "Camarón zarandeado",
+        "description": {
+          "es": "Camarones enteros marinados en adobo de chiles y especias, asados en parrilla sobre leña. Se comen con tortilla de harina, limón y salsa bandera. Platillo emblema de Sinaloa.",
+          "en": "Whole shrimp marinated in chili and spice adobo, grilled over wood. Eaten with flour tortillas, lime, and salsa bandera. Sinaloa's signature dish."
+        },
+        "priceRange": {
+          "min": 200,
+          "max": 400,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Mariscos Güero en Playa Sur o el Mercado Pino Suárez para la versión más tradicional y local.",
+          "en": "Mariscos Güero at Playa Sur or Pino Suárez Market for the most traditional local version."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 700,
+      "max": 2500,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "Noviembre a mayo es la mejor temporada, con clima seco de 22-30°C. Febrero es el Carnaval (muy popular — reserva con 6+ meses de anticipación). Junio a octubre es temporada de lluvias y huracanes; diciembre-enero es la temporada alta de turismo extranjero ('snowbirds' canadienses).",
+      "en": "November to May is the best season, dry and 72-86°F. February is Carnaval (very popular — book 6+ months ahead). June to October is rainy and hurricane season; December-January is high season for foreign tourism (Canadian 'snowbirds')."
+    },
+    "airportIATA": "MZT"
   }
 ]
