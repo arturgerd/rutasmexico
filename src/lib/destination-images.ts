@@ -214,9 +214,12 @@ export const DESTINATION_CAROUSEL_IMAGES: Record<string, string[]> = {
     "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=500&h=350&fit=crop&q=75",
   ],
   "riviera-nayarit": [
-    "https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=500&h=350&fit=crop&q=75",
-    "https://images.unsplash.com/photo-1499678329028-101435549a4e?w=500&h=350&fit=crop&q=75",
-    "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=500&h=350&fit=crop&q=75",
+    "https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=800&h=500&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&h=500&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?w=800&h=500&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=800&h=500&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1530053969600-caed2596d242?w=800&h=500&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=500&fit=crop&q=80",
   ],
   // === CIUDADES ===
   cdmx: [

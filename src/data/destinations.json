@@ -1298,26 +1298,34 @@
       "en": "Riviera Nayarit is a 320-km coastal corridor north of Puerto Vallarta with surf towns like Sayulita, hidden paradises like the Marietas Islands, and understated luxury at Punta de Mita. Mexico's quintessential bohemian beach."
     },
     "longDescription": {
-      "es": "La Riviera Nayarit, al norte de Puerto Vallarta, es uno de los destinos de playa más diversos y auténticos de México. Sayulita, declarado Pueblo Mágico, es la capital del surf y el estilo bohemio con sus calles coloridas, mercado artesanal y oleaje perfecto para principiantes. Unos minutos al sur, San Pancho ofrece una versión más tranquila y residencial. En el extremo sur, Punta de Mita concentra resorts de lujo como el St. Regis y el Four Seasons con vistas espectaculares. Las Islas Marietas, patrimonio de la UNESCO, esconden la famosa 'Playa del Amor' dentro de un cráter volcánico. Nuevo Vallarta y Bucerías combinan hoteles all-inclusive con gastronomía local. Al norte, Guayabitos y Rincón de Guayabitos mantienen el encanto de pueblo de pescadores. Es playa para todos los gustos en el mismo corredor.",
-      "en": "Riviera Nayarit, north of Puerto Vallarta, is one of Mexico's most diverse and authentic beach destinations. Sayulita, a designated Pueblo Mágico, is the capital of surf and bohemian style with colorful streets, artisan markets, and beginner-friendly waves. Just south, San Pancho offers a quieter, residential version. At the southern tip, Punta de Mita concentrates luxury resorts like St. Regis and Four Seasons with spectacular views. The Marietas Islands, a UNESCO site, hide the famous 'Playa del Amor' inside a volcanic crater. Nuevo Vallarta and Bucerías combine all-inclusive hotels with local cuisine. Farther north, Guayabitos keeps the fishing-village charm. It's every kind of beach in a single corridor."
+      "es": "La Riviera Nayarit, al norte de Puerto Vallarta, es uno de los destinos de playa más diversos y auténticos de México. Sayulita, declarado Pueblo Mágico, es la capital del surf y el estilo bohemio con sus calles coloridas, mercado artesanal y oleaje perfecto para principiantes. Unos minutos al sur, San Pancho ofrece una versión más tranquila y residencial. En el extremo sur, Punta de Mita concentra resorts de lujo como el St. Regis y el Four Seasons con vistas espectaculares. Las Islas Marietas, patrimonio de la UNESCO, esconden la famosa 'Playa del Amor' dentro de un cráter volcánico. En Nuevo Nayarit (antes Nuevo Vallarta), el complejo Vidanta concentra los resorts Grand Luxxe, Grand Mayan y The Grand Bliss, además del parque acuático Jungala y el teatro permanente del Cirque du Soleil JOYÀ — el más grande de México fuera de Las Vegas. Bucerías y La Cruz de Huanacaxtle combinan marina internacional con mercados dominicales. Al norte, Guayabitos y Rincón de Guayabitos mantienen el encanto de pueblo de pescadores con aguas tranquilas ideales para familias. Los 320 km de costa incluyen también el patrimonio huichol (wixárika) con arte artesanal único: chaquira, estambre y cuadros ceremoniales. Es playa para todos los gustos en el mismo corredor.",
+      "en": "Riviera Nayarit, north of Puerto Vallarta, is one of Mexico's most diverse and authentic beach destinations. Sayulita, a designated Pueblo Mágico, is the capital of surf and bohemian style with colorful streets, artisan markets, and beginner-friendly waves. Just south, San Pancho offers a quieter, residential version. At the southern tip, Punta de Mita concentrates luxury resorts like St. Regis and Four Seasons with spectacular views. The Marietas Islands, a UNESCO site, hide the famous 'Playa del Amor' inside a volcanic crater. In Nuevo Nayarit (formerly Nuevo Vallarta), the Vidanta complex concentrates Grand Luxxe, Grand Mayan and The Grand Bliss resorts, plus Jungala waterpark and the permanent Cirque du Soleil JOYÀ theater — Mexico's largest outside Las Vegas. Bucerías and La Cruz de Huanacaxtle combine an international marina with Sunday markets. Farther north, Guayabitos keeps the fishing-village charm with calm waters ideal for families. The 320 km of coastline also host Huichol (Wixárika) heritage with unique bead art, yarn paintings and ceremonial crafts. It's every kind of beach in a single corridor."
     },
     "heroImage": "https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=800&h=500&fit=crop&q=80",
     "highlights": [
       {
-        "es": "Surf en Sayulita — clases para principiantes desde $500 MXN, olas consistentes todo el año y ambiente bohemio único",
-        "en": "Surfing in Sayulita — beginner lessons from $500 MXN, consistent waves year-round, and a unique bohemian vibe"
+        "es": "Surf en Sayulita — clases para principiantes desde $500 MXN, olas consistentes todo el año y ambiente bohemio único en el Pueblo Mágico",
+        "en": "Surfing in Sayulita — beginner lessons from $500 MXN, consistent waves year-round, and a unique bohemian vibe in the Pueblo Mágico"
       },
       {
-        "es": "Tour a las Islas Marietas y la Playa del Amor, una playa escondida dentro de un cráter con acceso solo por nado",
-        "en": "Tour to the Marietas Islands and Playa del Amor, a hidden beach inside a crater accessible only by swimming"
+        "es": "Tour a las Islas Marietas y la Playa del Amor, una playa escondida dentro de un cráter volcánico con acceso solo por nado (reserva limitada por SEMARNAT)",
+        "en": "Tour to the Marietas Islands and Playa del Amor, a hidden beach inside a volcanic crater accessible only by swimming (SEMARNAT-limited reservations)"
       },
       {
-        "es": "Punta de Mita: avistamiento de ballenas jorobadas (diciembre-marzo) y snorkel en playas semi-privadas de resort",
-        "en": "Punta de Mita: humpback whale watching (December-March) and snorkeling at semi-private resort beaches"
+        "es": "Complejo Vidanta en Nuevo Nayarit: resorts Grand Luxxe y Grand Mayan, parque acuático Jungala (Flyboards, Fly Surf, cuerdas altas) y el show permanente Cirque du Soleil JOYÀ",
+        "en": "Vidanta complex in Nuevo Nayarit: Grand Luxxe and Grand Mayan resorts, Jungala water park (Flyboards, Fly Surf, tree-top courses), and permanent Cirque du Soleil JOYÀ show"
       },
       {
-        "es": "San Pancho y Lo de Marcos — pueblos de pescadores con playas vírgenes, gastronomía local y atardeceres sin hoteles a la vista",
-        "en": "San Pancho and Lo de Marcos — fishing villages with pristine beaches, local cuisine, and sunsets free of hotel views"
+        "es": "Punta de Mita: avistamiento de ballenas jorobadas (diciembre-marzo), snorkel en playas semi-privadas de resort y campos de golf con vista al Pacífico",
+        "en": "Punta de Mita: humpback whale watching (December-March), snorkeling at semi-private resort beaches, and golf courses with Pacific views"
+      },
+      {
+        "es": "San Pancho, Lo de Marcos y Guayabitos — pueblos de pescadores con playas vírgenes, gastronomía local y atardeceres sin hoteles a la vista",
+        "en": "San Pancho, Lo de Marcos and Guayabitos — fishing villages with pristine beaches, local cuisine, and sunsets free of hotel views"
+      },
+      {
+        "es": "Arte huichol (wixárika) auténtico en La Cruz de Huanacaxtle y Sayulita: cuadros de estambre, máscaras de chaquira y jícaras ceremoniales desde $300 MXN",
+        "en": "Authentic Huichol (Wixárika) art in La Cruz de Huanacaxtle and Sayulita: yarn paintings, beaded masks, and ceremonial gourds from $300 MXN"
       }
     ],
     "gettingAround": {
@@ -1330,8 +1338,16 @@
         "en": "Riviera Nayarit is very safe, one of the states with the lowest tourist crime. In Sayulita watch your belongings at the beach since it gets crowded. Don't swim alone at Playa de los Muertos during strong surf."
       },
       {
-        "es": "Los tours a Islas Marietas están limitados por el gobierno para proteger el ecosistema. Reserva con 2-3 días de anticipación especialmente en alta temporada (diciembre-abril).",
-        "en": "Marietas Islands tours are government-limited to protect the ecosystem. Book 2-3 days in advance especially during high season (December-April)."
+        "es": "Los tours a Islas Marietas están limitados por el gobierno (SEMARNAT) para proteger el ecosistema. Reserva con 2-3 días de anticipación en alta temporada (diciembre-abril). Solo operadores autorizados — verifica permiso antes de pagar.",
+        "en": "Marietas Islands tours are government-limited (SEMARNAT) to protect the ecosystem. Book 2-3 days in advance during high season (December-April). Only authorized operators — check permits before paying."
+      },
+      {
+        "es": "Sayulita no tiene cajero automático confiable — los que hay cobran hasta $100 MXN de comisión. Saca efectivo antes de llegar o usa el cajero de Scotiabank en Bucerías o La Cruz de Huanacaxtle.",
+        "en": "Sayulita has no reliable ATM — the ones available charge up to $100 MXN in fees. Withdraw cash before arriving or use Scotiabank ATMs in Bucerías or La Cruz de Huanacaxtle."
+      },
+      {
+        "es": "Las corrientes de resaca en playas abiertas (Sayulita, San Pancho) son serias. Las mejores playas para familias con niños son Destiladeras, Bucerías y Guayabitos — aguas tranquilas sin olas fuertes.",
+        "en": "Riptides at open beaches (Sayulita, San Pancho) are serious. The best family beaches are Destiladeras, Bucerías and Guayabitos — calm waters without strong waves."
       }
     ],
     "foodRecommendations": [
@@ -1365,6 +1381,22 @@
         "whereToTry": {
           "es": "Tacos on the Street en Sayulita (abre solo de noche) o La Rustica en San Pancho.",
           "en": "Tacos on the Street in Sayulita (opens only at night) or La Rustica in San Pancho."
+        }
+      },
+      {
+        "name": "Ostiones frescos de La Cruz",
+        "description": {
+          "es": "Ostiones del Pacífico abiertos al momento con limón, salsa Valentina, chile piquín y galleta saladita. Se comen en la marina de La Cruz de Huanacaxtle con vista al mar. También prueba el callo de hacha crudo con limón.",
+          "en": "Pacific oysters shucked on the spot with lime, Valentina hot sauce, chili powder and saltine crackers. Eaten at La Cruz de Huanacaxtle marina with sea views. Also try raw pen shell scallops with lime."
+        },
+        "priceRange": {
+          "min": 100,
+          "max": 250,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Mariscos Tino's en la marina de La Cruz de Huanacaxtle o el mercado dominical (Sunday Market) de La Cruz.",
+          "en": "Mariscos Tino's at La Cruz de Huanacaxtle marina or the Sunday Market in La Cruz."
         }
       }
     ],

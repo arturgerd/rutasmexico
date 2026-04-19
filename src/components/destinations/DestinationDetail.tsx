@@ -10,7 +10,7 @@ import { Locale } from "@/types/common";
 import { localize, formatCurrency } from "@/lib/utils";
 import { TRAVEL_MODE_ICONS } from "@/lib/constants";
 import LocationPin from "@/components/map/LocationPin";
-import { getDestinationImage } from "@/lib/destination-images";
+import { getDestinationImage, getDestinationCarouselImages } from "@/lib/destination-images";
 
 interface DestinationDetailProps {
   destination: Destination;
@@ -22,6 +22,8 @@ interface DestinationDetailProps {
 export default function DestinationDetail({ destination, routes, terminals, locale }: DestinationDetailProps) {
   const [activeTab, setActiveTab] = useState<"highlights" | "transport" | "safety" | "food">("highlights");
   const image = getDestinationImage(destination.id);
+  const galleryImages = getDestinationCarouselImages(destination.id);
+  const hasGallery = galleryImages.length > 1;
 
   const tabs = [
     { id: "highlights" as const, label: locale === "es" ? "Que ver y hacer" : "What to see & do", icon: "🏛️" },
@@ -180,6 +182,42 @@ export default function DestinationDetail({ destination, routes, terminals, loca
                 </div>
               )}
             </div>
+
+            {/* Gallery */}
+            {hasGallery && (
+              <div className="bg-white rounded-2xl p-6 shadow-sm mt-6">
+                <h3 className="font-display text-xl font-bold text-arena-900 mb-4">
+                  📸 {(locale as string) === "fr" ? "Galerie" : locale === "es" ? "Galería" : "Gallery"}
+                </h3>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                  {galleryImages.map((src, i) => (
+                    <a
+                      key={i}
+                      href={src}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group relative aspect-[4/3] overflow-hidden rounded-xl bg-arena-100 block"
+                    >
+                      <Image
+                        src={src}
+                        alt={`${localize(destination.name, locale)} ${i + 1}`}
+                        fill
+                        sizes="(max-width: 768px) 50vw, 33vw"
+                        className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
+                    </a>
+                  ))}
+                </div>
+                <p className="text-xs text-arena-400 mt-3 text-center">
+                  {(locale as string) === "fr"
+                    ? "Clique sur une image pour la voir en grand"
+                    : locale === "es"
+                    ? "Haz clic en cualquier imagen para verla en tamaño completo"
+                    : "Click any photo to open full size"}
+                </p>
+              </div>
+            )}
           </div>
 
           {/* Sidebar */}
