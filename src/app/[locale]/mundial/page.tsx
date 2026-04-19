@@ -4,6 +4,7 @@ import { getAllMundialVenues } from "@/lib/data/mundial";
 import { getMundialMenu } from "@/lib/data/mundial-menu";
 import MundialVenueGrid from "@/components/mundial/MundialVenueGrid";
 import MenuBuilder from "@/components/mundial/MenuBuilder";
+import TraditionsSection from "@/components/mundial/TraditionsSection";
 import MercadoLibreBanner from "@/components/widgets/MercadoLibreBanner";
 import { t3, seoAlternates, seoOpenGraph } from "@/lib/utils";
 
@@ -308,31 +309,7 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
           <MenuBuilder menu={menu} locale={locale} />
 
           {/* Ambiente y tradiciones */}
-          <div className="bg-white rounded-2xl p-6 shadow-sm mt-6">
-            <h3 className="font-display font-bold text-arena-800 text-lg mb-4">🎉 {t3(locale, "Tradiciones y ambiente en el estadio", "Stadium traditions & atmosphere", "Traditions et ambiance au stade")}</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="text-center p-3 bg-jade-50 rounded-xl">
-                <span className="text-3xl block mb-2">📣</span>
-                <p className="font-bold text-arena-800 text-sm">{t3(locale, "El Cielito Lindo", "Cielito Lindo chant", "Chant Cielito Lindo")}</p>
-                <p className="text-xs text-arena-500">{t3(locale, "Canta 'Ay ay ay ay, canta y no llores' con 80,000 personas. Piel de gallina garantizada.", "Sing with 80,000 people. Goosebumps guaranteed.", "Chantez avec 80 000 personnes.")}</p>
-              </div>
-              <div className="text-center p-3 bg-oro-50 rounded-xl">
-                <span className="text-3xl block mb-2">🪇</span>
-                <p className="font-bold text-arena-800 text-sm">{t3(locale, "La Ola mexicana", "The Mexican Wave", "La Ola mexicaine")}</p>
-                <p className="text-xs text-arena-500">{t3(locale, "Inventada en México 1986. Levántate cuando llegue a tu sección. Es tradición mundial.", "Invented in Mexico 1986. Stand up when it reaches your section.", "Inventée au Mexique en 1986. Levez-vous quand elle arrive.")}</p>
-              </div>
-              <div className="text-center p-3 bg-terracotta-50 rounded-xl">
-                <span className="text-3xl block mb-2">🎺</span>
-                <p className="font-bold text-arena-800 text-sm">{t3(locale, "Trompetas y matracas", "Trumpets & rattles", "Trompettes et crécelles")}</p>
-                <p className="text-xs text-arena-500">{t3(locale, "Compra una matraca o vuvuzela afuera del estadio ($50-100 MXN). El ruido es parte de la fiesta.", "Buy a rattle or vuvuzela outside ($50-100 MXN). The noise is part of the party.", "Achetez une crécelle dehors ($50-100 MXN). Le bruit fait partie de la fête.")}</p>
-              </div>
-              <div className="text-center p-3 bg-azul-50 rounded-xl">
-                <span className="text-3xl block mb-2">🇲🇽</span>
-                <p className="font-bold text-arena-800 text-sm">{t3(locale, "Pintarse la cara", "Face painting", "Peinture de visage")}</p>
-                <p className="text-xs text-arena-500">{t3(locale, "Verde, blanco y rojo en la cara. Hay artistas afuera del estadio desde $50 MXN. Los sombreros de charro también son clásicos.", "Green, white and red on your face. Artists outside from $50 MXN. Charro hats are classic too.", "Vert, blanc et rouge. Artistes dehors à partir de $50 MXN.")}</p>
-              </div>
-            </div>
-          </div>
+          <TraditionsSection locale={locale} />
         </div>
       </div>
 
