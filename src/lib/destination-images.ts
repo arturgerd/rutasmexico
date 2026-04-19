@@ -170,8 +170,12 @@ export const DESTINATION_CAROUSEL_IMAGES: Record<string, string[]> = {
     "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=500&h=350&fit=crop&q=75",
   ],
   mazatlan: [
-    "https://images.unsplash.com/photo-1512813195386-6cf811ad3542?w=500&h=350&fit=crop&q=75",
-    "https://images.unsplash.com/photo-1549144511-f099e773c147?w=500&h=350&fit=crop&q=75",
+    "https://images.unsplash.com/photo-1512813195386-6cf811ad3542?w=800&h=500&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1560850038-f95de6e715b3?w=800&h=500&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=500&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1471922694854-ff1b63b20054?w=800&h=500&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1593351415075-3bac9f45c877?w=800&h=500&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=800&h=500&fit=crop&q=80",
   ],
   "puerto-escondido": [
     "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=500&h=350&fit=crop&q=75",

@@ -1433,31 +1433,39 @@
       "en": "Mazatlán, 'The Pearl of the Pacific', combines 20 km of beaches with a colonial Historic Center designated as a Pueblo Mágico. Home to Latin America's second-largest Carnival and birthplace of banda sinaloense music."
     },
     "longDescription": {
-      "es": "Mazatlán, en la costa sur de Sinaloa, es uno de los destinos de playa más completos de México: combina el encanto de una ciudad histórica con la infraestructura de un resort moderno. El Centro Histórico, Pueblo Mágico desde 2016, es un tesoro de arquitectura colonial y neoclásica del siglo XIX, con la Catedral Basílica, el Teatro Ángela Peralta y plazas rodeadas de casonas restauradas. El Malecón de 21 km es uno de los más largos del mundo, perfecto para caminar o andar en bici al atardecer. La Zona Dorada concentra los hoteles de playa, restaurantes y vida nocturna. El Faro de Mazatlán (159 m) es el segundo más alto del mundo con vista espectacular. En febrero se celebra el Carnaval de Mazatlán, con desfiles, música de banda y fuegos artificiales. La gastronomía local destaca con aguachile, callo de hacha, cabrería y el clásico camarón zarandeado.",
-      "en": "Mazatlán, on Sinaloa's southern coast, is one of Mexico's most complete beach destinations: it combines the charm of a historic city with modern resort infrastructure. The Historic Center, a Pueblo Mágico since 2016, is a treasure of 19th-century colonial and neoclassical architecture, with the Cathedral Basilica, Ángela Peralta Theater, and squares surrounded by restored mansions. The 21-km Malecón is one of the world's longest, perfect for walking or biking at sunset. The Zona Dorada concentrates beach hotels, restaurants, and nightlife. El Faro de Mazatlán (159 m) is the world's second-tallest lighthouse with spectacular views. February brings Carnaval de Mazatlán, with parades, banda music, and fireworks. Local cuisine features aguachile, callo de hacha (pen shell scallops), cabrería, and the classic camarón zarandeado."
+      "es": "Mazatlán, en la costa sur de Sinaloa, es uno de los destinos de playa más completos de México: combina el encanto de una ciudad histórica con la infraestructura de un resort moderno. El Centro Histórico, Pueblo Mágico desde 2016, es un tesoro de arquitectura colonial y neoclásica del siglo XIX, con la Catedral Basílica, el Teatro Ángela Peralta (1874) y la Plazuela Machado rodeadas de casonas restauradas. El Malecón de 21 km es uno de los más largos del mundo, perfecto para caminar, andar en bici o correr al atardecer. La Zona Dorada concentra los hoteles de playa, restaurantes y vida nocturna. El Faro de Mazatlán (159 m) es el segundo natural más alto del mundo — la caminata al mirador toma 30 min y ofrece una vista de 360° de la bahía. Los clavadistas de Olas Altas saltan desde un risco de 15 m varias veces al día (propina $50-100 MXN). El Carnaval de Mazatlán cada febrero es el tercero más grande del mundo (después de Río y Nueva Orleans), con 7 días de desfiles, banda sinaloense, fuegos artificiales y la coronación de la Reina. A 10 minutos en lancha de pescadores, la Isla de la Piedra ofrece 16 km de playa virgen con palapas y cocos bajados del árbol. La gastronomía local destaca con aguachile, callo de hacha, cabrería, chilorio y el clásico camarón zarandeado.",
+      "en": "Mazatlán, on Sinaloa's southern coast, is one of Mexico's most complete beach destinations: it combines the charm of a historic city with modern resort infrastructure. The Historic Center, a Pueblo Mágico since 2016, is a treasure of 19th-century colonial and neoclassical architecture, with the Cathedral Basilica, Ángela Peralta Theater (1874), and Plazuela Machado surrounded by restored mansions. The 21-km Malecón is one of the world's longest, perfect for walking, biking, or running at sunset. The Zona Dorada concentrates beach hotels, restaurants, and nightlife. El Faro de Mazatlán (159 m) is the world's second-tallest natural lighthouse — the 30-min hike up rewards you with 360° bay views. Cliff divers at Olas Altas leap from a 15-m bluff several times a day (tip $50-100 MXN). Carnaval de Mazatlán every February is the world's third-largest (after Rio and New Orleans), with 7 days of parades, banda sinaloense music, fireworks, and the Queen's coronation. Just 10 min by fishing boat, Stone Island (Isla de la Piedra) offers 16 km of virgin beach with palapas and coconuts fresh off the tree. Local cuisine features aguachile, callo de hacha, cabrería, chilorio, and the classic camarón zarandeado."
     },
     "heroImage": "https://images.unsplash.com/photo-1512813195386-6cf811ad3542?w=800&h=500&fit=crop&q=80",
     "highlights": [
       {
-        "es": "Centro Histórico y Plazuela Machado: arquitectura colonial restaurada, restaurantes al aire libre y el Teatro Ángela Peralta del siglo XIX",
-        "en": "Historic Center and Plazuela Machado: restored colonial architecture, open-air restaurants, and the 19th-century Ángela Peralta Theater"
+        "es": "Centro Histórico y Plazuela Machado — arquitectura colonial restaurada, restaurantes al aire libre, Catedral Basílica y el Teatro Ángela Peralta (1874) con funciones nocturnas de ópera y danza",
+        "en": "Historic Center and Plazuela Machado — restored colonial architecture, open-air restaurants, Cathedral Basilica, and the Ángela Peralta Theater (1874) with nightly opera and dance performances"
       },
       {
-        "es": "Caminata al Faro de Mazatlán — segundo faro más alto del mundo (159 m) con vista de 360° de la bahía y el Pacífico",
-        "en": "Hike to Mazatlán Lighthouse — world's second-tallest (159 m) with 360° views of the bay and Pacific"
+        "es": "Caminata al Faro de Mazatlán — segundo faro natural más alto del mundo (159 m). 30 min cuesta arriba con mirador de 360° de la bahía. Ideal al atardecer (llega 1h antes de que cierre)",
+        "en": "Hike to Mazatlán Lighthouse — world's second-tallest natural lighthouse (159 m). 30-min uphill walk to a 360° viewpoint. Best at sunset (arrive 1h before closing)"
       },
       {
-        "es": "Tour a Isla de la Piedra — playa virgen de 16 km con palmeras, gastronomía fresca y ambiente tranquilo, a 10 min en lancha",
-        "en": "Tour to Stone Island — 16-km pristine beach with palm trees, fresh food, and relaxed atmosphere, 10 min by boat"
+        "es": "Clavadistas de El Mirador (Olas Altas) — muchachos saltan desde un risco de 15 m a las olas del Pacífico 4-5 veces al día. Show gratis con propina de $50-100 MXN",
+        "en": "El Mirador cliff divers (Olas Altas) — young divers leap from a 15-m cliff into the Pacific waves 4-5 times a day. Free show with a $50-100 MXN tip"
       },
       {
-        "es": "Carnaval de Mazatlán en febrero (segundo más grande de América Latina) con desfiles, banda sinaloense y fuegos artificiales sobre el Malecón",
-        "en": "Carnaval de Mazatlán in February (Latin America's 2nd largest) with parades, banda sinaloense, and fireworks over the Malecón"
+        "es": "Tour a Isla de la Piedra — 16 km de playa virgen a 10 min en lancha de pescadores ($40 MXN ida y vuelta). Palapas con pescado fresco, cocos del árbol y caballos para cabalgar en la arena",
+        "en": "Stone Island tour — 16 km of pristine beach 10 min by fishing boat ($40 MXN round-trip). Palapas with fresh fish, coconuts off the tree, and horses to ride on the sand"
+      },
+      {
+        "es": "Carnaval de Mazatlán (febrero) — tercer carnaval más grande del mundo (después de Río y Nueva Orleans). 7 días de desfiles, coronación de la Reina, conciertos gratis y fuegos artificiales",
+        "en": "Carnaval de Mazatlán (February) — world's third-largest carnival (after Rio and New Orleans). 7 days of parades, Queen's coronation, free concerts and fireworks"
+      },
+      {
+        "es": "Playas Cerritos y Brujas al norte de Zona Dorada — surf consistente, ambiente bohemio, restaurantes de playa y atardeceres sin la multitud de la Zona Dorada",
+        "en": "Cerritos and Brujas beaches north of Zona Dorada — consistent surf, bohemian vibe, beach restaurants, and sunsets without the Zona Dorada crowds"
       }
     ],
     "gettingAround": {
-      "es": "Aeropuerto Internacional de Mazatlán (MZT) está a 20 min del Centro y Zona Dorada. Uber/DiDi funciona bien y es más barato que taxis ($150-200 MXN del aeropuerto). El famoso pulmonía (taxi abierto estilo carrito de golf) es ícono local: $60-120 MXN por trayecto corto. Los camiones (Sábalo Centro) conectan toda la ciudad por $12 MXN. Bici y caminar son ideales para el Centro y el Malecón.",
-      "en": "Mazatlán International Airport (MZT) is 20 min from the Center and Zona Dorada. Uber/DiDi work well and are cheaper than taxis ($150-200 MXN from airport). The famous pulmonía (open-air taxi, golf-cart style) is a local icon: $60-120 MXN for short trips. City buses (Sábalo Centro) connect the whole city for $12 MXN. Biking and walking are ideal for the Center and Malecón."
+      "es": "Aeropuerto Internacional de Mazatlán (MZT) está a 20 min del Centro y Zona Dorada. Uber/DiDi funciona bien y es más barato que taxis ($150-200 MXN del aeropuerto). La pulmonía — icónico taxi abierto estilo carrito de golf, exclusivo de Mazatlán — cuesta $60-120 MXN por trayecto corto; negocia la tarifa antes de subir. La 'aurigas' (pulmonía más grande) cabe hasta 6 personas. Los camiones 'Sábalo Centro' conectan Zona Dorada con el Centro Histórico por $12 MXN cada 10-15 min. Bici y caminar son ideales para el Malecón (21 km) y el Centro Histórico.",
+      "en": "Mazatlán International Airport (MZT) is 20 min from the Center and Zona Dorada. Uber/DiDi work well and are cheaper than taxis ($150-200 MXN from airport). The pulmonía — Mazatlán's iconic open-air golf-cart-style taxi — costs $60-120 MXN for short trips; agree on the fare before boarding. An 'auriga' (larger pulmonía) fits up to 6 people. 'Sábalo Centro' city buses connect Zona Dorada to the Historic Center for $12 MXN every 10-15 min. Biking and walking are ideal for the Malecón (21 km) and the Historic Center."
     },
     "safetyTips": [
       {
@@ -1465,16 +1473,20 @@
         "en": "Mazatlán is a safe tourist destination. Zona Dorada and Historic Center have constant police presence. Avoid distant residential areas at night. As everywhere in Mexico, don't flash jewelry or expensive electronics."
       },
       {
-        "es": "En temporada de huracanes (junio-noviembre) revisa el pronóstico antes de viajar. El oleaje puede ser fuerte en playa Olas Altas — usa las playas de Cerritos o Sábalo para nadar con calma.",
-        "en": "During hurricane season (June-November) check the forecast before traveling. Surf can be strong at Olas Altas beach — use Cerritos or Sábalo beaches for calmer swimming."
+        "es": "En temporada de huracanes (junio-noviembre) revisa el pronóstico antes de viajar. El oleaje puede ser fuerte en playa Olas Altas — usa las playas de Cerritos o Sábalo para nadar con calma. Banderas rojas en la playa significan NO nadar.",
+        "en": "During hurricane season (June-November) check the forecast before traveling. Surf can be strong at Olas Altas beach — use Cerritos or Sábalo beaches for calm swimming. Red flags on the beach mean DO NOT swim."
+      },
+      {
+        "es": "Con pulmonías negocia siempre la tarifa ANTES de subir (no tienen taxímetro). Las tarifas oficiales Zona Dorada-Centro son $80-100 MXN. Evita pulmonías después de medianoche si andas solo — de noche toma Uber.",
+        "en": "With pulmonías always negotiate the fare BEFORE boarding (no meter). Official Zona Dorada-Centro rates are $80-100 MXN. Avoid pulmonías after midnight if traveling alone — take Uber at night instead."
       }
     ],
     "foodRecommendations": [
       {
         "name": "Aguachile sinaloense",
         "description": {
-          "es": "Camarones crudos marinados en jugo de limón con chile serrano molido, pepino, cebolla morada y cilantro. Invención sinaloense. Picor vibrante y refrescante.",
-          "en": "Raw shrimp marinated in lime juice with ground serrano chili, cucumber, red onion, and cilantro. A Sinaloa invention. Vibrant, refreshing heat."
+          "es": "Camarones crudos marinados en jugo de limón con chile serrano molido, pepino, cebolla morada y cilantro. Invención sinaloense. Picor vibrante y refrescante. Para valientes: el aguachile 'negro' con chile chiltepín.",
+          "en": "Raw shrimp marinated in lime juice with ground serrano chili, cucumber, red onion, and cilantro. A Sinaloa invention. Vibrant, refreshing heat. For the brave: 'black' aguachile with chiltepín chili."
         },
         "priceRange": {
           "min": 150,
@@ -1500,6 +1512,22 @@
         "whereToTry": {
           "es": "Mariscos Güero en Playa Sur o el Mercado Pino Suárez para la versión más tradicional y local.",
           "en": "Mariscos Güero at Playa Sur or Pino Suárez Market for the most traditional local version."
+        }
+      },
+      {
+        "name": "Chilorio sinaloense",
+        "description": {
+          "es": "Carne de cerdo deshebrada guisada con chile ancho, ajo, comino y vinagre, hasta que queda jugosa y ligeramente picante. Se come en tacos de tortilla de harina con frijoles refritos. Desayuno emblema de Sinaloa.",
+          "en": "Shredded pork stewed with ancho chili, garlic, cumin, and vinegar until juicy and slightly spicy. Eaten in flour tortilla tacos with refried beans. Sinaloa's signature breakfast."
+        },
+        "priceRange": {
+          "min": 80,
+          "max": 180,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Panamá Restaurante (Zona Dorada) o los puestos de desayuno del Mercado Pino Suárez.",
+          "en": "Panamá Restaurante (Zona Dorada) or breakfast stalls at Pino Suárez Market."
         }
       }
     ],
