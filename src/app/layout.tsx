@@ -6,6 +6,13 @@ export const metadata = {
   metadataBase: new URL("https://rutasmexico.com.mx"),
   icons: {
     icon: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
+  themeColor: "#C8553D",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default" as const,
+    title: "RutasMéxico",
   },
 };
 

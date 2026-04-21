@@ -29,7 +29,6 @@ export async function generateMetadata({ params: { locale, slug } }: { params: {
     openGraph: {
       title,
       description,
-      images: [{ url: post.featuredImage, width: 800, height: 500 }],
       type: "article",
       publishedTime: post.publishedDate,
       ...(post.updatedDate && { modifiedTime: post.updatedDate }),

@@ -23,4 +23,10 @@ export interface Destination {
   }[];
   averageDailyBudget: PriceRange;
   bestTimeToVisit: LocalizedString;
+  reviews?: {
+    author: string;
+    rating: number; // 1-5
+    date: string;   // ISO 8601
+    text: LocalizedString;
+  }[];
 }
