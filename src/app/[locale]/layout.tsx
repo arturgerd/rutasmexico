@@ -18,12 +18,12 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     },
     description,
     alternates: seoAlternates(locale, ""),
-    openGraph: seoOpenGraph(locale, title, description, "", "https://rutasmexico.com.mx/og-image.jpg"),
+    openGraph: seoOpenGraph(locale, title, description, "", "https://rutasmexico.com.mx/og-image.png"),
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["https://rutasmexico.com.mx/og-image.jpg"],
+      images: ["https://rutasmexico.com.mx/og-image.png"],
     },
   };
 }
