@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { getAllDestinations, getDestinationBySlug } from "@/lib/data/destinations";
 import { getRoutesByDestination } from "@/lib/data/routes";
 import { getTerminalsByCity } from "@/lib/data/terminals";
+import { getExpandedContent } from "@/lib/data/destination-content";
 import { localize, seoAlternates } from "@/lib/utils";
 import { Locale } from "@/types/common";
 import { setRequestLocale } from "next-intl/server";
@@ -62,6 +63,7 @@ export default async function DestinationPage({
 
   const routes = await getRoutesByDestination(destination.id);
   const terminals = await getTerminalsByCity(destination.id);
+  const expandedContent = getExpandedContent(slug);
 
   const baseUrl = "https://rutasmexico.com.mx";
   const name = localize(destination.name, locale as Locale);
@@ -144,6 +146,20 @@ export default async function DestinationPage({
     ],
   };
 
+  // FAQ schema from expanded content for SERP rich results
+  const faqSchema = expandedContent && expandedContent.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: expandedContent.faqs.map((faq) => ({
+      "@type": "Question",
+      name: localize(faq.question, locale as Locale),
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: localize(faq.answer, locale as Locale),
+      },
+    })),
+  } : null;
+
   return (
     <>
       <script
@@ -154,7 +170,19 @@ export default async function DestinationPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <DestinationDetail destination={destination} routes={routes} terminals={terminals} locale={locale as Locale} />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+      <DestinationDetail
+        destination={destination}
+        routes={routes}
+        terminals={terminals}
+        locale={locale as Locale}
+        expandedContent={expandedContent}
+      />
     </>
   );
 }

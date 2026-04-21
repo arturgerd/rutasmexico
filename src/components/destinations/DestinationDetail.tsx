@@ -7,7 +7,8 @@ import { Destination } from "@/types/destination";
 import { Route } from "@/types/route";
 import { Terminal } from "@/types/terminal";
 import { Locale } from "@/types/common";
-import { localize, formatCurrency } from "@/lib/utils";
+import { ExpandedContent } from "@/lib/data/destination-content";
+import { localize, formatCurrency, t3 } from "@/lib/utils";
 import { TRAVEL_MODE_ICONS } from "@/lib/constants";
 import LocationPin from "@/components/map/LocationPin";
 import { getDestinationImage, getDestinationCarouselImages } from "@/lib/destination-images";
@@ -17,9 +18,11 @@ interface DestinationDetailProps {
   routes: Route[];
   terminals: Terminal[];
   locale: Locale;
+  expandedContent?: ExpandedContent | null;
 }
 
-export default function DestinationDetail({ destination, routes, terminals, locale }: DestinationDetailProps) {
+export default function DestinationDetail({ destination, routes, terminals, locale, expandedContent }: DestinationDetailProps) {
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [activeTab, setActiveTab] = useState<"highlights" | "transport" | "safety" | "food">("highlights");
   const image = getDestinationImage(destination.id);
   const galleryImages = getDestinationCarouselImages(destination.id);
@@ -216,6 +219,83 @@ export default function DestinationDetail({ destination, routes, terminals, loca
                     ? "Haz clic en cualquier imagen para verla en tamaño completo"
                     : "Click any photo to open full size"}
                 </p>
+              </div>
+            )}
+
+            {/* Expanded SEO content — only renders when destinations-content.json has this slug */}
+            {expandedContent && (
+              <div className="mt-6 space-y-6">
+                <article className="bg-white rounded-2xl p-6 shadow-sm">
+                  <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">
+                    {t3(locale, `Cómo llegar a ${localize(destination.name, locale)}`, `How to get to ${localize(destination.name, locale)}`, `Comment se rendre à ${localize(destination.name, locale)}`)}
+                  </h2>
+                  <p className="text-arena-700 leading-relaxed whitespace-pre-line">{localize(expandedContent.howToGetThere, locale)}</p>
+                </article>
+
+                <article className="bg-white rounded-2xl p-6 shadow-sm">
+                  <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">
+                    {t3(locale, "Dónde hospedarse", "Where to stay", "Où loger")}
+                  </h2>
+                  <p className="text-arena-700 leading-relaxed whitespace-pre-line">{localize(expandedContent.whereToStay, locale)}</p>
+                </article>
+
+                <article className="bg-white rounded-2xl p-6 shadow-sm">
+                  <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">
+                    {t3(locale, "Cómo moverte en la ciudad", "Getting around", "Se déplacer dans la ville")}
+                  </h2>
+                  <p className="text-arena-700 leading-relaxed whitespace-pre-line">{localize(expandedContent.gettingAround, locale)}</p>
+                </article>
+
+                <article className="bg-white rounded-2xl p-6 shadow-sm">
+                  <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">
+                    {t3(locale, "Escena gastronómica", "Food scene", "Scène gastronomique")}
+                  </h2>
+                  <p className="text-arena-700 leading-relaxed whitespace-pre-line">{localize(expandedContent.foodScene, locale)}</p>
+                </article>
+
+                <article className="bg-white rounded-2xl p-6 shadow-sm">
+                  <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">
+                    {t3(locale, "Mejor época para visitar", "Best time to visit", "Meilleure période pour visiter")}
+                  </h2>
+                  <p className="text-arena-700 leading-relaxed whitespace-pre-line">{localize(expandedContent.bestTime, locale)}</p>
+                </article>
+
+                <article className="bg-white rounded-2xl p-6 shadow-sm">
+                  <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">
+                    {t3(locale, "Costos diarios estimados", "Estimated daily costs", "Coûts journaliers estimés")}
+                  </h2>
+                  <p className="text-arena-700 leading-relaxed whitespace-pre-line">{localize(expandedContent.dailyCost, locale)}</p>
+                </article>
+
+                {expandedContent.faqs.length > 0 && (
+                  <article className="bg-white rounded-2xl p-6 shadow-sm">
+                    <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">
+                      {t3(locale, "Preguntas frecuentes", "Frequently asked questions", "Questions fréquentes")}
+                    </h2>
+                    <div className="divide-y divide-arena-200">
+                      {expandedContent.faqs.map((faq, i) => {
+                        const isOpen = openFaq === i;
+                        return (
+                          <div key={i} className="py-3">
+                            <button
+                              onClick={() => setOpenFaq(isOpen ? null : i)}
+                              className="w-full flex justify-between items-start text-left gap-4 group"
+                              aria-expanded={isOpen}
+                            >
+                              <span className="font-semibold text-arena-900 group-hover:text-terracotta-600 transition-colors">
+                                {localize(faq.question, locale)}
+                              </span>
+                              <span className={`text-terracotta-500 text-xl transition-transform flex-shrink-0 ${isOpen ? "rotate-45" : ""}`}>+</span>
+                            </button>
+                            {isOpen && (
+                              <p className="mt-3 text-arena-700 leading-relaxed">{localize(faq.answer, locale)}</p>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </article>
+                )}
               </div>
             )}
           </div>
