@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import { getAllBlogSlugs, getBlogPostBySlug } from "@/lib/data/blog";
-import { localize } from "@/lib/utils";
+import { getAllBlogSlugs, getBlogPostBySlug, getBlogPostsByCategory } from "@/lib/data/blog";
+import { localize, seoAlternates } from "@/lib/utils";
 import { Locale } from "@/types/common";
 import { setRequestLocale } from "next-intl/server";
 import BlogContent from "@/components/blog/BlogContent";
@@ -25,13 +25,7 @@ export async function generateMetadata({ params: { locale, slug } }: { params: {
   return {
     title,
     description,
-    alternates: {
-      canonical: `${baseUrl}${canonicalPath}`,
-      languages: {
-        es: `${baseUrl}/es/blog/${slug}`,
-        en: `${baseUrl}/en/blog/${slug}`,
-      },
-    },
+    alternates: seoAlternates(locale, `/blog/${slug}`),
     openGraph: {
       title,
       description,
@@ -57,6 +51,16 @@ export default async function BlogPostPage({
   const title = localize(post.title, locale as Locale);
   const description = localize(post.excerpt, locale as Locale);
   const baseUrl = "https://rutasmexico.com.mx";
+
+  // Related posts: same category, excluding current, max 3
+  const sameCategory = await getBlogPostsByCategory(post.category);
+  const relatedPosts = sameCategory
+    .filter((p) => p.slug !== post.slug)
+    .slice(0, 3)
+    .map((p) => ({
+      slug: p.slug,
+      title: localize(p.title, locale as Locale),
+    }));
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -87,7 +91,7 @@ export default async function BlogPostPage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <div className="min-h-screen bg-white">
         <div className="container-custom py-10">
-          <BlogContent post={post} />
+          <BlogContent post={post} relatedPosts={relatedPosts} />
         </div>
       </div>
     </>

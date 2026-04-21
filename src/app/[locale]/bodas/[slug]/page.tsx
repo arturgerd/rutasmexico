@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { getAllWeddingDestinations, getWeddingDestinationBySlug } from "@/lib/data/bodas";
-import { localize } from "@/lib/utils";
+import { localize, seoAlternates } from "@/lib/utils";
 import { Locale } from "@/types/common";
 import { setRequestLocale } from "next-intl/server";
 import WeddingDestinationDetail from "@/components/bodas/WeddingDestinationDetail";
@@ -26,10 +26,7 @@ export async function generateMetadata({ params: { locale, slug } }: { params: {
     return {
       title: `Bodas en ${name} ${year} | Venues inclusivos, despedidas y guía LGBTIQ+`,
       description: `Planifica tu boda en ${name}: ${dest.venues.length} venues con precios, despedidas de soltera y soltero, bodas LGBTIQ+ legales, venues accesibles para personas con discapacidad. Guía completa ${year}.`,
-      alternates: {
-        canonical: `${baseUrl}${canonicalPath}`,
-        languages: { es: `${baseUrl}/es/bodas/${slug}`, en: `${baseUrl}/en/bodas/${slug}` },
-      },
+      alternates: seoAlternates(locale, `/bodas/${slug}`),
       openGraph: {
         title: `Bodas en ${name} ${year} | Guía completa inclusiva`,
         description: `${dest.venues.length} venues, despedidas, bodas LGBTIQ+ y celebraciones accesibles en ${name}.`,
@@ -41,10 +38,7 @@ export async function generateMetadata({ params: { locale, slug } }: { params: {
   return {
     title: `Weddings in ${name} ${year} | Inclusive venues, parties & LGBTIQ+ guide`,
     description: `Plan your wedding in ${name}: ${dest.venues.length} venues with prices, bachelor & bachelorette parties, legal LGBTIQ+ weddings, accessible venues for guests with disabilities. Complete guide ${year}.`,
-    alternates: {
-      canonical: `${baseUrl}${canonicalPath}`,
-      languages: { es: `${baseUrl}/es/bodas/${slug}`, en: `${baseUrl}/en/bodas/${slug}` },
-    },
+    alternates: seoAlternates(locale, `/bodas/${slug}`),
     openGraph: {
       title: `Weddings in ${name} ${year} | Complete inclusive guide`,
       description: `${dest.venues.length} venues, parties, LGBTIQ+ weddings & accessible celebrations in ${name}.`,

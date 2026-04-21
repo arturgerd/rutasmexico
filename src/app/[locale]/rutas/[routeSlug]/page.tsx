@@ -1,10 +1,10 @@
 import { notFound } from "next/navigation";
-import { getAllRoutes, getRouteBySlug } from "@/lib/data/routes";
+import { getAllRoutes, getRouteBySlug, getRoutesByOrigin, getRoutesByDestination } from "@/lib/data/routes";
 import { getDestinationById } from "@/lib/data/destinations";
 import { getAllAirports } from "@/lib/data/airports";
 import { getGuideById } from "@/lib/data/guides";
 import { Guide } from "@/types/guide";
-import { localize } from "@/lib/utils";
+import { localize, seoAlternates } from "@/lib/utils";
 import { Locale } from "@/types/common";
 import { setRequestLocale } from "next-intl/server";
 import RouteDetail from "@/components/routes/RouteDetail";
@@ -28,51 +28,32 @@ export async function generateMetadata({ params: { locale, routeSlug } }: { para
   const destName = localize(dest.name, locale as Locale);
   const year = new Date().getFullYear();
 
-  // Build price/duration summary from route options for rich description
-  const priceSummaries = route.options.map((opt) => {
-    const modeLabel =
-      locale === "es"
-        ? opt.mode === "flight" ? "Vuelo" : opt.mode === "bus" ? "Autobús" : "Auto"
-        : opt.mode === "flight" ? "Flight" : opt.mode === "bus" ? "Bus" : "Car";
-    const duration = localize(opt.duration.label, locale as Locale);
-    return `${modeLabel} ${duration} $${opt.priceRange.min.toLocaleString()}-$${opt.priceRange.max.toLocaleString()} ${opt.priceRange.currency}`;
-  });
+  // Cheapest option (used for compact meta description ≤155 chars)
+  const cheapest = [...route.options].sort((a, b) => a.priceRange.min - b.priceRange.min)[0];
+  const currency = cheapest?.priceRange.currency ?? "MXN";
+  const minPrice = cheapest ? `$${cheapest.priceRange.min.toLocaleString()}` : "";
 
   const baseUrl = "https://rutasmexico.com.mx";
   const canonicalPath = `/${locale}/rutas/${routeSlug}`;
 
-  if (locale === "es") {
-    return {
-      title: `Cómo llegar a ${destName} desde ${originName} ${year} | Vuelos, Autobús y Auto`,
-      description: `Cómo llegar a ${destName} desde ${originName}: ${priceSummaries.join(". ")}. Guía paso a paso con precios actualizados ${year}.`,
-      alternates: {
-        canonical: `${baseUrl}${canonicalPath}`,
-        languages: {
-          es: `${baseUrl}/es/rutas/${routeSlug}`,
-          en: `${baseUrl}/en/rutas/${routeSlug}`,
-        },
-      },
-      openGraph: {
-        title: `Cómo llegar a ${destName} desde ${originName} | Guía ${year}`,
-        description: `Guía completa para viajar de ${originName} a ${destName}. ${priceSummaries.join(". ")}.`,
-        url: `${baseUrl}${canonicalPath}`,
-        type: "article",
-      },
-    };
-  }
+  const titleEs = `Cómo viajar de ${originName} a ${destName} ${year}: vuelo, autobús y auto`;
+  const titleEn = `How to travel from ${originName} to ${destName} ${year}: flight, bus & car`;
+  const titleFr = `Comment voyager de ${originName} à ${destName} ${year} : avion, bus et voiture`;
+
+  const descEs = `Vuelo, autobús o auto de ${originName} a ${destName} desde ${minPrice} ${currency}. Guía con precios reales y rutas paso a paso ${year}.`;
+  const descEn = `Flight, bus or car from ${originName} to ${destName} from ${minPrice} ${currency}. Real prices and step-by-step routes ${year}.`;
+  const descFr = `Avion, bus ou voiture de ${originName} à ${destName} dès ${minPrice} ${currency}. Tarifs réels et itinéraires pas à pas ${year}.`;
+
+  const title = locale === "en" ? titleEn : locale === "fr" ? titleFr : titleEs;
+  const description = locale === "en" ? descEn : locale === "fr" ? descFr : descEs;
+
   return {
-    title: `How to get to ${destName} from ${originName} ${year} | Flights, Bus & Car`,
-    description: `How to get to ${destName} from ${originName}: ${priceSummaries.join(". ")}. Step-by-step guide with updated prices ${year}.`,
-    alternates: {
-      canonical: `${baseUrl}${canonicalPath}`,
-      languages: {
-        es: `${baseUrl}/es/rutas/${routeSlug}`,
-        en: `${baseUrl}/en/rutas/${routeSlug}`,
-      },
-    },
+    title,
+    description,
+    alternates: seoAlternates(locale, `/rutas/${routeSlug}`),
     openGraph: {
-      title: `How to get to ${destName} from ${originName} | Guide ${year}`,
-      description: `Complete guide to travel from ${originName} to ${destName}. ${priceSummaries.join(". ")}.`,
+      title,
+      description,
       url: `${baseUrl}${canonicalPath}`,
       type: "article",
     },
@@ -104,6 +85,29 @@ export default async function RouteDetailPage({
   }
 
   const airports = await getAllAirports();
+
+  // Related routes: same origin or same destination, excluding the current one (max 4)
+  const [sameOrigin, sameDest] = await Promise.all([
+    getRoutesByOrigin(route.originId),
+    getRoutesByDestination(route.destinationId),
+  ]);
+  const relatedRouteList = [...sameOrigin, ...sameDest]
+    .filter((r) => r.slug !== route.slug)
+    .filter((r, i, arr) => arr.findIndex((x) => x.slug === r.slug) === i)
+    .slice(0, 4);
+  const relatedRoutes = await Promise.all(
+    relatedRouteList.map(async (r) => {
+      const o = await getDestinationById(r.originId);
+      const d = await getDestinationById(r.destinationId);
+      if (!o || !d) return null;
+      return {
+        slug: r.slug,
+        originName: localize(o.name, locale as Locale),
+        destName: localize(d.name, locale as Locale),
+      };
+    })
+  );
+  const relatedRoutesFiltered = relatedRoutes.filter((r): r is { slug: string; originName: string; destName: string } => r !== null);
 
   const originName = localize(origin.name, locale as Locale);
   const destName = localize(dest.name, locale as Locale);
@@ -173,6 +177,8 @@ export default async function RouteDetailPage({
         guidesMap={guidesMap}
         airports={airports}
         locale={locale as Locale}
+        relatedRoutes={relatedRoutesFiltered}
+        destinationSlug={dest.slug}
       />
     </>
   );

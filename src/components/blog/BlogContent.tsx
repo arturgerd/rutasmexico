@@ -7,7 +7,12 @@ import { BlogPost } from "@/types/blog";
 import { l, t3 } from "@/lib/utils";
 import { getCategoryLabel, getCategoryColor } from "./BlogCard";
 
-export default function BlogContent({ post }: { post: BlogPost }) {
+interface RelatedPost {
+  slug: string;
+  title: string;
+}
+
+export default function BlogContent({ post, relatedPosts = [] }: { post: BlogPost; relatedPosts?: RelatedPost[] }) {
   const locale = useLocale();
 
   const formatDate = (dateStr: string) => {
@@ -58,11 +63,14 @@ export default function BlogContent({ post }: { post: BlogPost }) {
             ✍️ {post.author}
           </span>
           <span>•</span>
-          <span>{formatDate(post.publishedDate)}</span>
+          <time dateTime={post.publishedDate}>{formatDate(post.publishedDate)}</time>
           {post.updatedDate && (
             <>
               <span>•</span>
-              <span>{t3(locale, "Actualizado:", "Updated:", "Mis à jour :")} {formatDate(post.updatedDate)}</span>
+              <span>
+                {t3(locale, "Actualizado:", "Updated:", "Mis à jour :")}{" "}
+                <time dateTime={post.updatedDate}>{formatDate(post.updatedDate)}</time>
+              </span>
             </>
           )}
         </div>
@@ -111,6 +119,27 @@ export default function BlogContent({ post }: { post: BlogPost }) {
             ))}
           </div>
         </div>
+      )}
+
+      {/* Related posts */}
+      {relatedPosts.length > 0 && (
+        <section className="mt-12 pt-8 border-t border-arena-200">
+          <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">
+            {t3(locale, "Artículos relacionados", "Related articles", "Articles connexes")}
+          </h2>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {relatedPosts.map((rp) => (
+              <li key={rp.slug}>
+                <Link
+                  href={`/${locale}/blog/${rp.slug}`}
+                  className="block p-4 rounded-xl border border-arena-200 bg-white hover:border-terracotta-400 hover:shadow-md transition-all"
+                >
+                  <p className="font-semibold text-arena-900 leading-snug">{rp.title}</p>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
       )}
 
       {/* Back to blog */}

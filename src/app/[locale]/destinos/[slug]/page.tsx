@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { getAllDestinations, getDestinationBySlug } from "@/lib/data/destinations";
 import { getRoutesByDestination } from "@/lib/data/routes";
 import { getTerminalsByCity } from "@/lib/data/terminals";
-import { localize } from "@/lib/utils";
+import { localize, seoAlternates } from "@/lib/utils";
 import { Locale } from "@/types/common";
 import { setRequestLocale } from "next-intl/server";
 import DestinationDetail from "@/components/destinations/DestinationDetail";
@@ -29,13 +29,7 @@ export async function generateMetadata({ params: { locale, slug } }: { params: {
     return {
       title: `${name}, ${state}: Guía de viaje y cómo llegar ${year}`,
       description: `Guía completa de ${name}: qué hacer, cómo llegar, dónde comer y mejores épocas para visitar. ${localize(destination.description, locale as Locale)}`,
-      alternates: {
-        canonical: `${baseUrl}${canonicalPath}`,
-        languages: {
-          es: `${baseUrl}/es/destinos/${slug}`,
-          en: `${baseUrl}/en/destinos/${slug}`,
-        },
-      },
+      alternates: seoAlternates(locale, `/destinos/${slug}`),
       openGraph: {
         title: `${name}: Guía de viaje ${year}`,
         description: localize(destination.description, locale as Locale),
@@ -48,13 +42,7 @@ export async function generateMetadata({ params: { locale, slug } }: { params: {
   return {
     title: `${name}, ${state}: Travel guide & how to get there ${year}`,
     description: `Complete guide to ${name}: things to do, how to get there, where to eat and best times to visit. ${localize(destination.description, locale as Locale)}`,
-    alternates: {
-      canonical: `${baseUrl}${canonicalPath}`,
-      languages: {
-        es: `${baseUrl}/es/destinos/${slug}`,
-        en: `${baseUrl}/en/destinos/${slug}`,
-      },
-    },
+    alternates: seoAlternates(locale, `/destinos/${slug}`),
     openGraph: {
       title: `${name}: Travel guide ${year}`,
       description: localize(destination.description, locale as Locale),

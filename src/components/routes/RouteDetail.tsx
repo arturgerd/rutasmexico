@@ -7,7 +7,7 @@ import { Destination } from "@/types/destination";
 import { Guide } from "@/types/guide";
 import { Airport } from "@/types/airport";
 import { Locale } from "@/types/common";
-import { localize, formatCurrency } from "@/lib/utils";
+import { localize, formatCurrency, t3 } from "@/lib/utils";
 import { TRAVEL_MODE_ICONS } from "@/lib/constants";
 import { getFlightSearchGenericUrl, getCarRentalUrl } from "@/lib/affiliate";
 import MapLoader from "@/components/map/MapLoader";
@@ -16,6 +16,12 @@ import FlightSearch from "@/components/widgets/FlightSearch";
 import AirlineGrid from "@/components/widgets/AirlineGrid";
 import TravelpayoutsWidget from "@/components/widgets/TravelpayoutsWidget";
 
+interface RelatedRoute {
+  slug: string;
+  originName: string;
+  destName: string;
+}
+
 interface RouteDetailProps {
   route: Route;
   origin: Destination;
@@ -23,9 +29,11 @@ interface RouteDetailProps {
   guidesMap: Record<string, Guide>;
   airports: Airport[];
   locale: Locale;
+  relatedRoutes?: RelatedRoute[];
+  destinationSlug?: string;
 }
 
-export default function RouteDetail({ route, origin, destination, guidesMap, airports, locale }: RouteDetailProps) {
+export default function RouteDetail({ route, origin, destination, guidesMap, airports, locale, relatedRoutes = [], destinationSlug }: RouteDetailProps) {
   const [selectedOption, setSelectedOption] = useState<string>(
     route.options.find((o) => o.recommended)?.id || route.options[0]?.id || ""
   );
@@ -81,9 +89,12 @@ export default function RouteDetail({ route, origin, destination, guidesMap, air
           </Link>
           <div className="flex items-center gap-4">
             <h1 className="font-display text-3xl md:text-4xl font-bold text-arena-900">
-              {localize(origin.name, locale)}
-              <span className="text-terracotta-400 mx-3">→</span>
-              {localize(destination.name, locale)}
+              {t3(
+                locale,
+                `Cómo viajar de ${localize(origin.name, locale)} a ${localize(destination.name, locale)}: vuelo, autobús y auto`,
+                `How to travel from ${localize(origin.name, locale)} to ${localize(destination.name, locale)}: flight, bus & car`,
+                `Comment voyager de ${localize(origin.name, locale)} à ${localize(destination.name, locale)} : avion, bus et voiture`
+              )}
             </h1>
           </div>
         </div>
@@ -220,6 +231,52 @@ export default function RouteDetail({ route, origin, destination, guidesMap, air
                 : "The step-by-step guide for this option will be available soon."}
             </p>
           </div>
+        )}
+
+        {/* Internal links — destinations and related routes */}
+        {(relatedRoutes.length > 0 || destinationSlug) && (
+          <section className="mt-12 pt-8 border-t border-arena-200">
+            <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">
+              {t3(locale, "Continúa explorando", "Keep exploring", "Continuez à explorer")}
+            </h2>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {destinationSlug && (
+                <li>
+                  <Link
+                    href={`/${locale}/destinos/${destinationSlug}`}
+                    className="block p-4 rounded-xl border border-arena-200 bg-white hover:border-terracotta-400 hover:shadow-md transition-all"
+                  >
+                    <span className="text-xs uppercase tracking-wide text-terracotta-500 font-semibold">
+                      {t3(locale, "Guía del destino", "Destination guide", "Guide de la destination")}
+                    </span>
+                    <p className="mt-1 font-semibold text-arena-900">
+                      {t3(
+                        locale,
+                        `Guía completa de ${localize(destination.name, locale)}`,
+                        `Complete guide to ${localize(destination.name, locale)}`,
+                        `Guide complet de ${localize(destination.name, locale)}`
+                      )}
+                    </p>
+                  </Link>
+                </li>
+              )}
+              {relatedRoutes.map((r) => (
+                <li key={r.slug}>
+                  <Link
+                    href={`/${locale}/rutas/${r.slug}`}
+                    className="block p-4 rounded-xl border border-arena-200 bg-white hover:border-terracotta-400 hover:shadow-md transition-all"
+                  >
+                    <span className="text-xs uppercase tracking-wide text-azul-500 font-semibold">
+                      {t3(locale, "Ruta relacionada", "Related route", "Itinéraire associé")}
+                    </span>
+                    <p className="mt-1 font-semibold text-arena-900">
+                      {r.originName} → {r.destName}
+                    </p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
         )}
       </div>
     </div>
