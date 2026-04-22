@@ -7,6 +7,7 @@ import MenuBuilder from "@/components/mundial/MenuBuilder";
 import TraditionsSection from "@/components/mundial/TraditionsSection";
 import MercadoLibreBanner from "@/components/widgets/MercadoLibreBanner";
 import { t3, seoAlternates, seoOpenGraph } from "@/lib/utils";
+import { buildTournamentSchema, buildBreadcrumbList } from "@/lib/mundial-schema";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const title = t3(locale,
@@ -39,8 +40,25 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
   const usVenues = venues.filter(v => v.country === "US");
   const caVenues = venues.filter(v => v.country === "CA");
 
+  const tournamentSchema = buildTournamentSchema(venues, locale);
+  const breadcrumbs = buildBreadcrumbList(locale, [
+    {
+      name: t3(locale, "Inicio", "Home", "Accueil"),
+      url: `https://rutasmexico.com.mx/${locale}`,
+    },
+    { name: t3(locale, "Mundial 2026", "World Cup 2026", "Coupe du Monde 2026") },
+  ]);
+
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(tournamentSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
+      />
       {/* Hero - DARK SOLID BACKGROUND */}
       <div className="bg-arena-900 py-16 md:py-20">
         <div className="container-custom">

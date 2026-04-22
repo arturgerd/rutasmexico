@@ -5,6 +5,7 @@ import { localize, t3, seoAlternates, seoOpenGraph } from "@/lib/utils";
 import { Locale } from "@/types/common";
 import { setRequestLocale } from "next-intl/server";
 import MundialVenueDetail from "@/components/mundial/MundialVenueDetail";
+import { buildVenueMatchesSchema, buildBreadcrumbList } from "@/lib/mundial-schema";
 
 export async function generateStaticParams() {
   const venues = await getAllMundialVenues();
@@ -44,5 +45,34 @@ export default async function MundialVenuePage({
 
   const destination = venue.destinationId ? await getDestinationById(venue.destinationId) : null;
 
-  return <MundialVenueDetail venue={venue} destination={destination} />;
+  const matchEvents = buildVenueMatchesSchema(venue, locale);
+  const venueName = localize(venue.name, locale as Locale);
+  const breadcrumbs = buildBreadcrumbList(locale, [
+    {
+      name: t3(locale as Locale, "Inicio", "Home", "Accueil"),
+      url: `https://rutasmexico.com.mx/${locale}`,
+    },
+    {
+      name: t3(locale as Locale, "Mundial 2026", "World Cup 2026", "Coupe du Monde 2026"),
+      url: `https://rutasmexico.com.mx/${locale}/mundial`,
+    },
+    { name: venueName },
+  ]);
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
+      />
+      {matchEvents.map((evt, i) => (
+        <script
+          key={`match-${i}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(evt) }}
+        />
+      ))}
+      <MundialVenueDetail venue={venue} destination={destination} />
+    </>
+  );
 }
