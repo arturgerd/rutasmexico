@@ -4,6 +4,7 @@ import BusSearchEmbed from "@/components/widgets/BusSearchEmbed";
 import BusCompanyGrid from "@/components/widgets/BusCompanyGrid";
 import BusesGuide from "@/components/editorial/BusesGuide";
 import { PAGE_HERO_IMAGES } from "@/lib/destination-images";
+import { seoAlternates } from "@/lib/utils";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   return {
@@ -13,6 +14,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     description: locale === "es"
       ? "Compara precios de boletos de autobus de ADO, ETN, Primera Plus, Estrella Roja, Pullman y mas lineas en Mexico. Encuentra el autobus mas barato."
       : "Compare bus ticket prices from ADO, ETN, Primera Plus, Estrella Roja, Pullman and more lines in Mexico. Find the cheapest bus.",
+    alternates: seoAlternates(locale, "/autobuses"),
   };
 }
 

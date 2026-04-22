@@ -1,6 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import Link from "next/link";
-import { t3 } from "@/lib/utils";
+import { t3, seoAlternates } from "@/lib/utils";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   return {
@@ -10,6 +10,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       "Meet the team behind RutasMéxico, the most complete travel guide for exploring Mexico.",
       "Découvrez l'équipe derrière RutasMéxico, le guide de voyage le plus complet pour explorer le Mexique."
     ),
+    alternates: seoAlternates(locale, "/nosotros"),
   };
 }
 

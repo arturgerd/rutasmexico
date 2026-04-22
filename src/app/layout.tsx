@@ -25,7 +25,12 @@ const organizationJsonLd = {
   name: "RutasMéxico",
   alternateName: "RutasMexico",
   url: "https://rutasmexico.com.mx",
-  logo: "https://rutasmexico.com.mx/favicon.ico",
+  logo: {
+    "@type": "ImageObject",
+    url: "https://rutasmexico.com.mx/logo.png",
+    width: 512,
+    height: 512,
+  },
   description:
     "Guía completa para viajar por México. Rutas, destinos, vuelos, autobuses, hoteles y guías paso a paso.",
   address: {
@@ -39,7 +44,6 @@ const organizationJsonLd = {
     contactType: "customer support",
     availableLanguage: ["Spanish", "English", "French"],
   },
-  sameAs: [],
 };
 
 const websiteJsonLd = {

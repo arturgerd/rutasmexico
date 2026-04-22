@@ -1,6 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import Link from "next/link";
-import { t3 } from "@/lib/utils";
+import { t3, seoAlternates } from "@/lib/utils";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   return {
@@ -10,6 +10,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       "RutasMéxico privacy policy. How we collect, use and protect your information.",
       "Politique de confidentialité de RutasMéxico. Comment nous collectons, utilisons et protégeons vos informations."
     ),
+    alternates: seoAlternates(locale, "/privacidad"),
   };
 }
 

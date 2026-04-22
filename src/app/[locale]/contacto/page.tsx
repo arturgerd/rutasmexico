@@ -1,6 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import Link from "next/link";
-import { t3 } from "@/lib/utils";
+import { t3, seoAlternates } from "@/lib/utils";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   return {
@@ -10,6 +10,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       "Contact us for questions, suggestions or collaborations with RutasMéxico.",
       "Contactez-nous pour des questions, suggestions ou collaborations avec RutasMéxico."
     ),
+    alternates: seoAlternates(locale, "/contacto"),
   };
 }
 

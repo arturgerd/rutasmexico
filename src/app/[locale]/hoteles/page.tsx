@@ -3,6 +3,7 @@ import { setRequestLocale } from "next-intl/server";
 import HotelSearchEmbed from "@/components/widgets/HotelSearchEmbed";
 import HotelsGuide from "@/components/editorial/HotelsGuide";
 import { PAGE_HERO_IMAGES } from "@/lib/destination-images";
+import { seoAlternates } from "@/lib/utils";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   return {
@@ -12,6 +13,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     description: locale === "es"
       ? "Compara precios de hoteles en Cancun, CDMX, Playa del Carmen, Puerto Vallarta, Los Cabos y mas destinos en Mexico."
       : "Compare hotel prices in Cancun, Mexico City, Playa del Carmen, Puerto Vallarta, Los Cabos and more destinations in Mexico.",
+    alternates: seoAlternates(locale, "/hoteles"),
   };
 }
 

@@ -5,6 +5,7 @@ import AviasalesEmbed from "@/components/widgets/AviasalesEmbed";
 import AirlineGrid from "@/components/widgets/AirlineGrid";
 import FlightsGuide from "@/components/editorial/FlightsGuide";
 import { PAGE_HERO_IMAGES } from "@/lib/destination-images";
+import { seoAlternates } from "@/lib/utils";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   return {
@@ -14,6 +15,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     description: locale === "es"
       ? "Compara precios de vuelos de todas las aerolineas mexicanas: Volaris, VivaAerobus, Aeromexico, TAR y mas. Encuentra el vuelo mas barato."
       : "Compare flight prices from all Mexican airlines: Volaris, VivaAerobus, Aeromexico, TAR and more. Find the cheapest flight.",
+    alternates: seoAlternates(locale, "/vuelos"),
   };
 }
 
