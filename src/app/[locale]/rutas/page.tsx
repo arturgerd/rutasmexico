@@ -1,4 +1,4 @@
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 import { getAllDestinations } from "@/lib/data/destinations";
 import { getAllRoutes } from "@/lib/data/routes";
 import RouteSearch from "@/components/routes/RouteSearch";
@@ -6,7 +6,6 @@ import RoutesGuide from "@/components/editorial/RoutesGuide";
 import { seoAlternates } from "@/lib/utils";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
-  const t = await getTranslations({ locale, namespace: "routes" });
   return {
     title: locale === "es"
       ? "Rutas entre ciudades de Mexico - Vuelos, autobuses y distancias"
