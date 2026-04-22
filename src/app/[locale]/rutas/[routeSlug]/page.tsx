@@ -3,6 +3,7 @@ import { getAllRoutes, getRouteBySlug, getRoutesByOrigin, getRoutesByDestination
 import { getDestinationById } from "@/lib/data/destinations";
 import { getAllAirports } from "@/lib/data/airports";
 import { getGuideById } from "@/lib/data/guides";
+import { getRouteContent } from "@/lib/data/route-content";
 import { Guide } from "@/types/guide";
 import { localize, seoAlternates } from "@/lib/utils";
 import { Locale } from "@/types/common";
@@ -112,6 +113,8 @@ export default async function RouteDetailPage({
   const originName = localize(origin.name, locale as Locale);
   const destName = localize(dest.name, locale as Locale);
 
+  const editorialContent = getRouteContent(routeSlug);
+
   // Build FAQ structured data for rich results
   const faqItems = route.options.map((opt) => {
     const modeLabel =
@@ -143,6 +146,19 @@ export default async function RouteDetailPage({
       ? `El tiempo de viaje de ${originName} a ${destName} varía según el transporte: ${route.options.map((o) => `${o.mode === "flight" ? "avión" : o.mode === "bus" ? "autobús" : "auto"} ${localize(o.duration.label, locale as Locale)}`).join(", ")}. La opción más popular toma ${recDuration}.`
       : `Travel time from ${originName} to ${destName} varies by transport: ${route.options.map((o) => `${o.mode === "flight" ? "flight" : o.mode === "bus" ? "bus" : "car"} ${localize(o.duration.label, locale as Locale)}`).join(", ")}. The most popular option takes ${recDuration}.`;
   faqItems.push({ "@type": "Question", name: timeQuestion, acceptedAnswer: { "@type": "Answer", text: timeAnswer } });
+
+  // Merge editorial FAQs (hand-written, higher quality) into the schema
+  if (editorialContent?.faqs?.length) {
+    const pickLocale = (t: { es: string; en: string; fr: string }) =>
+      locale === "fr" ? t.fr || t.en || t.es : locale === "en" ? t.en || t.es : t.es;
+    for (const faq of editorialContent.faqs) {
+      faqItems.push({
+        "@type": "Question",
+        name: pickLocale(faq.question),
+        acceptedAnswer: { "@type": "Answer", text: pickLocale(faq.answer) },
+      });
+    }
+  }
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -179,6 +195,7 @@ export default async function RouteDetailPage({
         locale={locale as Locale}
         relatedRoutes={relatedRoutesFiltered}
         destinationSlug={dest.slug}
+        editorialContent={editorialContent}
       />
     </>
   );

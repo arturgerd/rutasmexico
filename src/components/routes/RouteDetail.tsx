@@ -12,9 +12,11 @@ import { TRAVEL_MODE_ICONS } from "@/lib/constants";
 import { getFlightSearchGenericUrl, getCarRentalUrl } from "@/lib/affiliate";
 import MapLoader from "@/components/map/MapLoader";
 import StepByStepGuide from "./StepByStepGuide";
+import RouteEditorial from "./RouteEditorial";
 import FlightSearch from "@/components/widgets/FlightSearch";
 import AirlineGrid from "@/components/widgets/AirlineGrid";
 import TravelpayoutsWidget from "@/components/widgets/TravelpayoutsWidget";
+import type { RouteContent } from "@/lib/data/route-content";
 
 interface RelatedRoute {
   slug: string;
@@ -31,9 +33,10 @@ interface RouteDetailProps {
   locale: Locale;
   relatedRoutes?: RelatedRoute[];
   destinationSlug?: string;
+  editorialContent?: RouteContent | null;
 }
 
-export default function RouteDetail({ route, origin, destination, guidesMap, airports, locale, relatedRoutes = [], destinationSlug }: RouteDetailProps) {
+export default function RouteDetail({ route, origin, destination, guidesMap, airports, locale, relatedRoutes = [], destinationSlug, editorialContent }: RouteDetailProps) {
   const [selectedOption, setSelectedOption] = useState<string>(
     route.options.find((o) => o.recommended)?.id || route.options[0]?.id || ""
   );
@@ -231,6 +234,16 @@ export default function RouteDetail({ route, origin, destination, guidesMap, air
                 : "The step-by-step guide for this option will be available soon."}
             </p>
           </div>
+        )}
+
+        {/* Editorial in-depth content for SEO */}
+        {editorialContent && (
+          <RouteEditorial
+            content={editorialContent}
+            locale={locale}
+            originName={localize(origin.name, locale)}
+            destName={localize(destination.name, locale)}
+          />
         )}
 
         {/* Internal links — destinations and related routes */}
