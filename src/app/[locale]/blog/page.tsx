@@ -1,11 +1,10 @@
 import { setRequestLocale } from "next-intl/server";
 import { getAllBlogPosts } from "@/lib/data/blog";
 import BlogFilter from "@/components/blog/BlogFilter";
-import { t3 } from "@/lib/utils";
+import { t3, seoAlternates } from "@/lib/utils";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const year = new Date().getFullYear();
-  const baseUrl = "https://rutasmexico.com.mx";
   return {
     title: t3(locale,
       `Blog de Viajes México ${year} | Guías, tips y rutas`,
@@ -18,10 +17,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       `Travel guides, tips and advice for traveling in Mexico ${year}. Destinations, transport, safety, prices and more.`,
       `Guides de voyage, conseils et astuces pour voyager au Mexique ${year}. Destinations, transport, sécurité et plus.`
     ),
-    alternates: {
-      canonical: `${baseUrl}/${locale}/blog`,
-      languages: { es: `${baseUrl}/es/blog`, en: `${baseUrl}/en/blog` },
-    },
+    alternates: seoAlternates(locale, "/blog"),
   };
 }
 

@@ -4,7 +4,7 @@ import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
 import Image from "next/image";
 import { Destination } from "@/types/destination";
-import { localize, formatCurrency } from "@/lib/utils";
+import { localize, formatCurrency, l } from "@/lib/utils";
 import { Locale } from "@/types/common";
 import { getDestinationImage } from "@/lib/destination-images";
 
@@ -52,7 +52,7 @@ export default function FeaturedDestinations({ destinations }: FeaturedDestinati
                 <div className={`${isLarge ? "h-64" : "h-52"} relative overflow-hidden`}>
                   <Image
                     src={image.url}
-                    alt={image.alt[locale]}
+                    alt={l(image.alt, locale)}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-700"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"

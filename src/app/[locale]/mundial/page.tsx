@@ -24,7 +24,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     title,
     description,
     alternates: seoAlternates(locale, "/mundial"),
-    openGraph: seoOpenGraph(locale, title, description, "/mundial"),
+    openGraph: seoOpenGraph(locale, title, description, "/mundial", "https://rutasmexico.com.mx/og-image.png"),
   };
 }
 

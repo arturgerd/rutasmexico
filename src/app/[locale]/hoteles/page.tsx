@@ -8,8 +8,8 @@ import { seoAlternates } from "@/lib/utils";
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   return {
     title: locale === "es"
-      ? "Hoteles baratos en Mexico - Compara Booking, Expedia, Hotels.com"
-      : "Cheap hotels in Mexico - Compare Booking, Expedia, Hotels.com",
+      ? "Hoteles baratos en México 2026 | Booking y más"
+      : "Cheap hotels in Mexico 2026 | Booking & more",
     description: locale === "es"
       ? "Compara precios de hoteles en Cancun, CDMX, Playa del Carmen, Puerto Vallarta, Los Cabos y mas destinos en Mexico."
       : "Compare hotel prices in Cancun, Mexico City, Playa del Carmen, Puerto Vallarta, Los Cabos and more destinations in Mexico.",

@@ -9,8 +9,8 @@ import { seoAlternates } from "@/lib/utils";
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   return {
     title: locale === "es"
-      ? "Boletos de autobus baratos - ADO, ETN, Primera Plus, Estrella Roja"
-      : "Cheap bus tickets - ADO, ETN, Primera Plus, Estrella Roja",
+      ? "Boletos de autobús baratos 2026 | ADO, ETN y más"
+      : "Cheap bus tickets in Mexico 2026 | ADO, ETN & more",
     description: locale === "es"
       ? "Compara precios de boletos de autobus de ADO, ETN, Primera Plus, Estrella Roja, Pullman y mas lineas en Mexico. Encuentra el autobus mas barato."
       : "Compare bus ticket prices from ADO, ETN, Primera Plus, Estrella Roja, Pullman and more lines in Mexico. Find the cheapest bus.",

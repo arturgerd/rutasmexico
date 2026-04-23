@@ -37,9 +37,9 @@ export async function generateMetadata({ params: { locale, routeSlug } }: { para
   const baseUrl = "https://rutasmexico.com.mx";
   const canonicalPath = `/${locale}/rutas/${routeSlug}`;
 
-  const titleEs = `Cómo viajar de ${originName} a ${destName} ${year}: vuelo, autobús y auto`;
-  const titleEn = `How to travel from ${originName} to ${destName} ${year}: flight, bus & car`;
-  const titleFr = `Comment voyager de ${originName} à ${destName} ${year} : avion, bus et voiture`;
+  const titleEs = `${originName} a ${destName} ${year}: vuelo, bus o auto`;
+  const titleEn = `${originName} to ${destName} ${year}: flight, bus or car`;
+  const titleFr = `${originName} à ${destName} ${year} : avion, bus, voiture`;
 
   const descEs = `Vuelo, autobús o auto de ${originName} a ${destName} desde ${minPrice} ${currency}. Guía con precios reales y rutas paso a paso ${year}.`;
   const descEn = `Flight, bus or car from ${originName} to ${destName} from ${minPrice} ${currency}. Real prices and step-by-step routes ${year}.`;

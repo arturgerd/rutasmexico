@@ -10,8 +10,8 @@ import { seoAlternates } from "@/lib/utils";
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   return {
     title: locale === "es"
-      ? "Vuelos baratos en Mexico - Compara Volaris, VivaAerobus, Aeromexico"
-      : "Cheap flights in Mexico - Compare Volaris, VivaAerobus, Aeromexico",
+      ? "Vuelos baratos en México 2026 | Volaris y más"
+      : "Cheap flights to Mexico 2026 | Volaris, Viva & more",
     description: locale === "es"
       ? "Compara precios de vuelos de todas las aerolineas mexicanas: Volaris, VivaAerobus, Aeromexico, TAR y mas. Encuentra el vuelo mas barato."
       : "Compare flight prices from all Mexican airlines: Volaris, VivaAerobus, Aeromexico, TAR and more. Find the cheapest flight.",

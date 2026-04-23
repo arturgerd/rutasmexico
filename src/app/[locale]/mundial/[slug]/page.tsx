@@ -19,18 +19,20 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params: { locale, slug } }: { params: { locale: string; slug: string } }) {
   const venue = await getMundialVenueBySlug(slug);
   if (!venue) return {};
-  const name = localize(venue.name, locale as Locale);
+  const fullName = localize(venue.name, locale as Locale);
+  // venue.name frequently already contains the stadium ("Ciudad de México - Estadio Azteca"); strip it so we don't duplicate.
+  const cityOnly = fullName.split(/\s*-\s*/)[0].trim();
   const title = t3(locale as Locale,
-    `Mundial 2026 en ${name} - ${venue.stadium.name}`,
-    `World Cup 2026 in ${name} - ${venue.stadium.name}`,
-    `Coupe du Monde 2026 à ${name} - ${venue.stadium.name}`
+    `Mundial 2026 en ${cityOnly} - ${venue.stadium.name}`,
+    `World Cup 2026 in ${cityOnly} - ${venue.stadium.name}`,
+    `Coupe du Monde 2026 à ${cityOnly} - ${venue.stadium.name}`
   );
   const description = localize(venue.stadium.description, locale as Locale);
   return {
     title,
     description,
     alternates: seoAlternates(locale, `/mundial/${slug}`),
-    openGraph: seoOpenGraph(locale, title, description, `/mundial/${slug}`),
+    openGraph: seoOpenGraph(locale, title, description, `/mundial/${slug}`, "https://rutasmexico.com.mx/og-image.png"),
   };
 }
 

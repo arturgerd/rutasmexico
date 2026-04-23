@@ -8,10 +8,10 @@ import { seoAlternates } from "@/lib/utils";
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   return {
     title: locale === "es"
-      ? "Rutas entre ciudades de Mexico - Vuelos, autobuses y distancias"
+      ? "Rutas entre ciudades de México | Vuelos y bus"
       : locale === "fr"
-        ? "Itineraires entre villes du Mexique - Vols, bus et distances"
-        : "Routes between Mexican cities - Flights, buses and distances",
+        ? "Itinéraires au Mexique | Vols et bus"
+        : "Routes in Mexico | Flights and buses",
     description: locale === "es"
       ? "Compara como viajar entre ciudades de Mexico: vuelos, autobuses, tiempos, distancias y precios. CDMX, Cancun, Guadalajara, Monterrey y mas de 50 rutas."
       : locale === "fr"
