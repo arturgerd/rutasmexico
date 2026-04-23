@@ -14,6 +14,9 @@ export const metadata = {
     statusBarStyle: "default" as const,
     title: "RutasMéxico",
   },
+  verification: {
+    google: "a588a56f7dc54021",
+  },
 };
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID; // e.g. "G-XXXXXXXXXX"
