@@ -4,11 +4,15 @@ import { t3, seoAlternates } from "@/lib/utils";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   return {
-    title: t3(locale, "Contacto", "Contact", "Contact"),
+    title: t3(locale,
+      "Contacto RutasMéxico | Preguntas y colaboraciones",
+      "Contact RutasMéxico | Questions & collaborations",
+      "Contact RutasMéxico | Questions et collaborations"
+    ),
     description: t3(locale,
-      "Contáctanos para preguntas, sugerencias o colaboraciones con RutasMéxico.",
-      "Contact us for questions, suggestions or collaborations with RutasMéxico.",
-      "Contactez-nous pour des questions, suggestions ou collaborations avec RutasMéxico."
+      "¿Preguntas sobre vuelos, autobuses, hoteles o rutas en México? Contáctanos para sugerencias, colaboraciones editoriales o reportar errores en RutasMéxico.",
+      "Questions about flights, buses, hotels or routes in Mexico? Contact us for suggestions, editorial collaborations or to report errors on RutasMéxico.",
+      "Questions sur les vols, bus, hôtels ou itinéraires au Mexique ? Contactez-nous pour suggestions, collaborations éditoriales ou signaler des erreurs."
     ),
     alternates: seoAlternates(locale, "/contacto"),
   };

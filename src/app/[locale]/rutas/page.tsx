@@ -1,9 +1,10 @@
 import { setRequestLocale } from "next-intl/server";
-import { getAllDestinations } from "@/lib/data/destinations";
+import { getAllDestinations, getDestinationById } from "@/lib/data/destinations";
 import { getAllRoutes } from "@/lib/data/routes";
 import RouteSearch from "@/components/routes/RouteSearch";
 import RoutesGuide from "@/components/editorial/RoutesGuide";
-import { seoAlternates } from "@/lib/utils";
+import { seoAlternates, localize } from "@/lib/utils";
+import { Locale } from "@/types/common";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   return {
@@ -26,8 +27,45 @@ export default async function RutasPage({ params: { locale } }: { params: { loca
   const destinations = await getAllDestinations();
   const routes = await getAllRoutes();
 
+  const baseUrl = "https://rutasmexico.com.mx";
+  const routeItems = await Promise.all(
+    routes.map(async (r, i) => {
+      const origin = await getDestinationById(r.originId);
+      const dest = await getDestinationById(r.destinationId);
+      const name = origin && dest
+        ? `${localize(origin.name, locale as Locale)} → ${localize(dest.name, locale as Locale)}`
+        : r.slug;
+      return {
+        "@type": "ListItem",
+        position: i + 1,
+        name,
+        url: `${baseUrl}/${locale}/rutas/${r.slug}`,
+      };
+    })
+  );
+
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: locale === "es"
+      ? "Rutas entre ciudades de México"
+      : locale === "fr" ? "Itinéraires au Mexique" : "Routes between Mexican cities",
+    itemListElement: routeItems,
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: locale === "es" ? "Inicio" : "Home", item: `${baseUrl}/${locale}` },
+      { "@type": "ListItem", position: 2, name: locale === "es" ? "Rutas" : "Routes" },
+    ],
+  };
+
   return (
     <div className="py-8 bg-arena-50">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <div className="container-custom">
         <RouteSearch destinations={destinations} routes={routes} />
         <RoutesGuide locale={locale} />

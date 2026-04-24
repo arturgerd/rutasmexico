@@ -4,11 +4,15 @@ import { t3, seoAlternates } from "@/lib/utils";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   return {
-    title: t3(locale, "Sobre Nosotros", "About Us", "À propos"),
+    title: t3(locale,
+      "Sobre RutasMéxico | Guía de viajes por México",
+      "About RutasMéxico | Mexico Travel Guide & Comparison",
+      "À propos de RutasMéxico | Guide de voyage au Mexique"
+    ),
     description: t3(locale,
-      "Conoce al equipo detrás de RutasMéxico, la guía de viajes más completa para explorar México.",
-      "Meet the team behind RutasMéxico, the most complete travel guide for exploring Mexico.",
-      "Découvrez l'équipe derrière RutasMéxico, le guide de voyage le plus complet pour explorer le Mexique."
+      "Conoce al equipo detrás de RutasMéxico: comparamos vuelos, autobuses, hoteles y rutas para que viajes por México al mejor precio, sin anuncios invasivos.",
+      "Meet the team behind RutasMéxico: we compare flights, buses, hotels and routes so you can travel Mexico at the best price, without invasive ads.",
+      "Découvrez l'équipe derrière RutasMéxico : nous comparons vols, bus, hôtels et itinéraires pour voyager au Mexique au meilleur prix, sans publicités intrusives."
     ),
     alternates: seoAlternates(locale, "/nosotros"),
   };
