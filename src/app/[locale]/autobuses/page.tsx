@@ -21,8 +21,64 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 export default async function AutobusesPage({ params: { locale } }: { params: { locale: string } }) {
   setRequestLocale(locale);
 
+  const isEs = locale === "es";
+
+  const faqs = [
+    {
+      q: isEs ? "¿Cuáles son las mejores líneas de autobuses en México?" : "What are the best bus lines in Mexico?",
+      a: isEs
+        ? "ADO (Grupo ADO) domina el sur y sureste; ETN y Primera Plus dominan el Bajío y occidente; Omnibus de México cubre el norte. En clases premium: ADO Platino, ETN Turistar Lujo y Primera Plus Select ofrecen asientos reclinables casi 180°, WiFi, pantallas individuales y sanitarios. Para viajes largos (más de 8 horas) siempre elige clase premium."
+        : "ADO (Grupo ADO) dominates the south and southeast; ETN and Primera Plus dominate the Bajío and west; Omnibus de México covers the north. In premium classes: ADO Platino, ETN Turistar Lujo and Primera Plus Select offer seats reclining nearly 180°, WiFi, individual screens and restrooms. For long trips (8+ hours) always choose premium class.",
+    },
+    {
+      q: isEs ? "¿Qué diferencia hay entre ADO, ETN y Primera Plus?" : "What's the difference between ADO, ETN and Primera Plus?",
+      a: isEs
+        ? "ADO opera rutas desde la Terminal TAPO (oriente de CDMX) principalmente al sureste (Puebla, Veracruz, Tabasco, Campeche, Yucatán). ETN y Primera Plus salen de Terminal Norte y cubren Bajío y occidente (Querétaro, Guanajuato, Guadalajara, Morelia). Los precios en clases equivalentes son muy similares entre ellas."
+        : "ADO operates from TAPO Terminal (east of CDMX) mainly to the southeast (Puebla, Veracruz, Tabasco, Campeche, Yucatán). ETN and Primera Plus depart from Terminal Norte and cover the Bajío and western Mexico (Querétaro, Guanajuato, Guadalajara, Morelia). Prices in equivalent classes are very similar between them.",
+    },
+    {
+      q: isEs ? "¿Es seguro viajar de noche en autobús?" : "Is it safe to travel by bus overnight?",
+      a: isEs
+        ? "Sí, los autobuses de clases premium (ADO Platino, ETN Turistar, Primera Plus Select) viajan por autopistas de cuota, son considerados seguros y llegan a terminales vigiladas. Evita líneas económicas en rutas muy largas de noche. Tips: mantén objetos de valor contigo en el porta-bulto superior, no en la bodega; lleva una sudadera porque el aire acondicionado es agresivo."
+        : "Yes, premium-class buses (ADO Platino, ETN Turistar, Primera Plus Select) travel on toll highways, are considered safe, and arrive at guarded terminals. Avoid economy lines on very long overnight routes. Tips: keep valuables with you in the overhead rack, not in the cargo hold; bring a hoodie because the AC runs aggressive.",
+    },
+    {
+      q: isEs ? "¿Desde qué terminal salen los autobuses en CDMX?" : "Which terminal in CDMX do buses leave from?",
+      a: isEs
+        ? "CDMX tiene cuatro terminales: Norte (al Bajío, occidente y frontera), Sur/Taxqueña (a Acapulco, Cuernavaca, Morelos), Oriente/TAPO (a Puebla, Veracruz, sureste) y Poniente (a Toluca y estado de México). Revisa siempre desde cuál sale tu corrida antes de salir porque están en puntos opuestos de la ciudad."
+        : "CDMX has four terminals: Norte (to the Bajío, west and border), Sur/Taxqueña (to Acapulco, Cuernavaca, Morelos), Oriente/TAPO (to Puebla, Veracruz, southeast) and Poniente (to Toluca and State of Mexico). Always check which terminal your bus leaves from before traveling — they're at opposite ends of the city.",
+    },
+    {
+      q: isEs ? "¿Cómo comprar boletos de autobús en línea?" : "How do I buy bus tickets online?",
+      a: isEs
+        ? "Los sitios oficiales de cada línea (ado.com.mx, etn.com.mx, primeraplus.com.mx) son los más confiables. También puedes usar agregadores como BusBud o ClickBus. Paga con tarjeta o Mercado Pago. Descarga el boleto en PDF o úsalo desde la app. Para viajar, lleva identificación oficial vigente; algunas líneas piden el mismo método de pago en mostrador."
+        : "Each line's official site (ado.com.mx, etn.com.mx, primeraplus.com.mx) is most reliable. You can also use aggregators like BusBud or ClickBus. Pay by card or Mercado Pago. Download the ticket as PDF or use it from the app. To travel, bring valid photo ID; some lines require the same payment card at the counter.",
+    },
+  ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: isEs ? "Inicio" : "Home", item: `https://rutasmexico.com.mx/${locale}` },
+      { "@type": "ListItem", position: 2, name: isEs ? "Autobuses" : "Buses" },
+    ],
+  };
+
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* Hero with background image */}
       <div className="relative py-16 md:py-20 overflow-hidden">
         <Image

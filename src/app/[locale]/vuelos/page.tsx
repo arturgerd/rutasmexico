@@ -23,8 +23,70 @@ export default async function VuelosPage({ params: { locale } }: { params: { loc
   setRequestLocale(locale);
   const airports = await getAllAirports();
 
+  const isEs = locale === "es";
+
+  const faqs = [
+    {
+      q: isEs ? "¿Cuál es la aerolínea más barata de México?" : "Which is the cheapest airline in Mexico?",
+      a: isEs
+        ? "Volaris y VivaAerobus son las aerolíneas de bajo costo más baratas en México, con tarifas básicas desde $600-900 MXN una vía en rutas domésticas. Aeroméxico es más cara pero incluye maleta documentada de 25 kg. Para vuelos con equipaje, compara el total: un low-cost con maleta extra pagada suele empatar o superar el precio de Aeroméxico."
+        : "Volaris and VivaAerobus are the cheapest low-cost airlines in Mexico, with basic fares from $600-900 MXN one way on domestic routes. Aeromexico is more expensive but includes a 25 kg checked bag. For trips with luggage, compare the total: a low-cost with extra baggage often ties or exceeds Aeromexico's price.",
+    },
+    {
+      q: isEs ? "¿Cuándo son los vuelos más baratos?" : "When are flights cheapest?",
+      a: isEs
+        ? "Las tarifas más bajas se consiguen reservando con 3 a 8 semanas de anticipación, evitando viernes, domingos y festivos. Septiembre, segunda mitad de octubre y primera mitad de noviembre son los meses más baratos. Los más caros: diciembre (Navidad), Semana Santa, julio-agosto y puentes largos. Activa alertas de precio en Google Flights para rutas específicas."
+        : "The lowest fares come from booking 3 to 8 weeks ahead and avoiding Fridays, Sundays and holidays. September, late October, and early November are the cheapest months. Most expensive: December (Christmas), Holy Week, July-August and Mexican long weekends. Set price alerts on Google Flights for specific routes.",
+    },
+    {
+      q: isEs ? "¿Qué diferencia hay entre MEX y AIFA en CDMX?" : "What's the difference between MEX and AIFA in Mexico City?",
+      a: isEs
+        ? "El Aeropuerto Benito Juárez (MEX) está a 13 km del Centro y concentra la mayoría de vuelos domésticos e internacionales. Felipe Ángeles (AIFA) está a 50 km en Santa Lucía y tiene vuelos más baratos de Volaris y VivaAerobus pero suma 1 hora extra de traslado. Si vives al norte de CDMX o Estado de México, AIFA conviene; desde el sur o centro, MEX casi siempre gana."
+        : "Benito Juárez International (MEX) is 13 km from downtown and handles most domestic and international flights. Felipe Ángeles (AIFA) is 50 km away in Santa Lucía with cheaper Volaris and VivaAerobus fares but adds an extra hour of transfer time. If you live north of CDMX, AIFA works; from south or central, MEX almost always wins.",
+    },
+    {
+      q: isEs ? "¿Qué aerolíneas comparan?" : "What airlines do you compare?",
+      a: isEs
+        ? "Comparamos todas las aerolíneas mexicanas (Volaris, VivaAerobus, Aeroméxico, TAR, Magnicharters, Aeromar) además de aerolíneas internacionales como American Airlines, United, Delta, JetBlue y más de 700 aerolíneas en total."
+        : "We compare all Mexican airlines (Volaris, VivaAerobus, Aeromexico, TAR, Magnicharters, Aeromar) plus international airlines like American Airlines, United, Delta, JetBlue and over 700 airlines total.",
+    },
+    {
+      q: isEs ? "¿Es gratis usar el buscador?" : "Is the search free?",
+      a: isEs
+        ? "Sí, buscar y comparar vuelos es completamente gratis. No cobramos ninguna comisión adicional; reservas directamente con la aerolínea al mismo precio."
+        : "Yes, searching and comparing flights is completely free. We don't charge any additional fees; you book directly with the airline at the same price.",
+    },
+    {
+      q: isEs ? "¿Los precios son en tiempo real?" : "Are prices in real time?",
+      a: isEs
+        ? "Sí, los precios se actualizan en tiempo real directamente desde los sistemas de las aerolíneas y agencias de viaje al momento de tu búsqueda."
+        : "Yes, prices are updated in real time directly from airline and travel agency systems at the moment of your search.",
+    },
+  ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: isEs ? "Inicio" : "Home", item: `https://rutasmexico.com.mx/${locale}` },
+      { "@type": "ListItem", position: 2, name: isEs ? "Vuelos" : "Flights" },
+    ],
+  };
+
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* Hero with background image */}
       <div className="relative py-16 md:py-20 overflow-hidden">
         <Image
