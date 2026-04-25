@@ -3,6 +3,7 @@
 import { useLocale } from "next-intl";
 import { Locale } from "@/types/common";
 import { MEXICAN_BUS_COMPANIES, getBusSearchGenericUrl } from "@/lib/affiliate";
+import { trackAffiliateClick } from "@/lib/analytics";
 
 interface BusCompanyGridProps {
   compact?: boolean;
@@ -11,8 +12,9 @@ interface BusCompanyGridProps {
 export default function BusCompanyGrid({ compact = false }: BusCompanyGridProps) {
   const locale = useLocale() as Locale;
 
-  const handleBusSearch = () => {
+  const handleBusSearch = (companyId?: string) => {
     const url = getBusSearchGenericUrl({ locale });
+    trackAffiliateClick({ product: "bus", network: "travelpayouts", partner: companyId });
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
@@ -88,7 +90,7 @@ export default function BusCompanyGrid({ compact = false }: BusCompanyGridProps)
             {group.companies.map((company) => (
               <button
                 key={company.id}
-                onClick={handleBusSearch}
+                onClick={() => handleBusSearch(company.id)}
                 className="group relative bg-white rounded-xl border border-arena-100 p-3.5 text-left transition-all hover:border-blue-300 hover:shadow-lg hover:-translate-y-0.5"
               >
                 <div className="flex items-center gap-3 mb-2">

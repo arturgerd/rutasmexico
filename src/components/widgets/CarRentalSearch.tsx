@@ -6,6 +6,7 @@ import { Airport } from "@/types/airport";
 import { Locale } from "@/types/common";
 import { localize } from "@/lib/utils";
 import { getCarRentalUrl } from "@/lib/affiliate";
+import { trackAffiliateClick } from "@/lib/analytics";
 
 interface CarRentalSearchProps {
   airports: Airport[];
@@ -55,6 +56,7 @@ export default function CarRentalSearch({ airports, defaultPickup = "", compact 
       locale,
     });
 
+    trackAffiliateClick({ product: "car", network: "travelpayouts", origin: pickup });
     window.open(url, "_blank", "noopener,noreferrer");
   };
 

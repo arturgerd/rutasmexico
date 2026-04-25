@@ -3,6 +3,7 @@
 import { useLocale } from "next-intl";
 import { Locale } from "@/types/common";
 import { getFlightSearchUrl, getFlightSearchGenericUrl } from "@/lib/affiliate";
+import { trackAffiliateClick } from "@/lib/analytics";
 
 // Mexican airlines data with brand colors
 const MEXICAN_AIRLINES = [
@@ -114,6 +115,14 @@ export default function AirlineGrid({ originIATA, destIATA, compact = false, sho
     } else {
       url = getFlightSearchGenericUrl({ locale });
     }
+
+    trackAffiliateClick({
+      product: "flight",
+      network: "travelpayouts",
+      partner: airlineId,
+      origin: originIATA,
+      destination: destIATA,
+    });
 
     window.open(url, "_blank", "noopener,noreferrer");
   };

@@ -6,6 +6,7 @@ import { Airport } from "@/types/airport";
 import { Locale } from "@/types/common";
 import { localize } from "@/lib/utils";
 import { getFlightSearchUrl } from "@/lib/affiliate";
+import { trackAffiliateClick } from "@/lib/analytics";
 
 interface FlightSearchProps {
   airports: Airport[];
@@ -53,6 +54,13 @@ export default function FlightSearch({ airports, defaultOrigin = "", defaultDest
       returnDate: isOneWay ? undefined : (returnDate || weekLater),
       passengers,
       locale,
+    });
+
+    trackAffiliateClick({
+      product: "flight",
+      network: "travelpayouts",
+      origin,
+      destination,
     });
 
     window.open(url, "_blank", "noopener,noreferrer");

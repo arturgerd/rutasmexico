@@ -6,6 +6,7 @@ import { Airport } from "@/types/airport";
 import { Locale } from "@/types/common";
 import { localize } from "@/lib/utils";
 import { getHotelSearchUrl } from "@/lib/affiliate";
+import { trackAffiliateClick } from "@/lib/analytics";
 
 interface HotelSearchProps {
   airports: Airport[]; // Usamos aeropuertos como lista de ciudades
@@ -52,12 +53,19 @@ export default function HotelSearch({ airports, defaultCity = "", compact = fals
     const selectedAirport = airports.find((a) => a.iata === city);
     if (!selectedAirport) return;
 
+    const cityNameEn = localize(selectedAirport.city, "en");
     const url = getHotelSearchUrl({
-      cityName: localize(selectedAirport.city, "en"), // English name for API
+      cityName: cityNameEn,
       checkIn: checkIn || tomorrow,
       checkOut: checkOut || threeDaysLater,
       adults,
       locale,
+    });
+
+    trackAffiliateClick({
+      product: "hotel",
+      network: "travelpayouts",
+      destination: cityNameEn,
     });
 
     window.open(url, "_blank", "noopener,noreferrer");

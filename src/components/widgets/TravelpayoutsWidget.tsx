@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useLocale } from "next-intl";
 import { Locale } from "@/types/common";
 import { AFFILIATE_CONFIG, getFlightSearchUrl } from "@/lib/affiliate";
+import { trackAffiliateClick } from "@/lib/analytics";
 
 interface TravelpayoutsWidgetProps {
   originIATA: string;
@@ -108,6 +109,12 @@ function FallbackPriceComparison({ originIATA, destIATA, locale }: { originIATA:
       departDate: tomorrowStr,
       returnDate: weekStr,
       locale,
+    });
+    trackAffiliateClick({
+      product: "flight",
+      network: "travelpayouts",
+      origin: originIATA,
+      destination: destIATA,
     });
     window.open(url, "_blank", "noopener,noreferrer");
   };

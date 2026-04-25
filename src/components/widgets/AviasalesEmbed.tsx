@@ -5,6 +5,7 @@ import { useLocale } from "next-intl";
 import { Airport } from "@/types/airport";
 import { localize, t3, l } from "@/lib/utils";
 import { AFFILIATE_CONFIG } from "@/lib/affiliate";
+import { trackAffiliateClick } from "@/lib/analytics";
 
 interface AviasalesEmbedProps {
   airports: Airport[];
@@ -81,6 +82,13 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
 
     const searchPath = `${origin}${formatDate(dep)}${destination}${ret ? formatDate(ret) : ""}${passengers}`;
     const url = `https://www.aviasales.com/search/${searchPath}?marker=${marker}`;
+
+    trackAffiliateClick({
+      product: "flight",
+      network: "aviasales",
+      origin,
+      destination,
+    });
 
     // Open in new tab (Aviasales blocks iframes)
     window.open(url, "_blank", "noopener,noreferrer");
@@ -320,6 +328,13 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                   };
                   const searchPath = `${route.origin}${formatDate(dep)}${route.dest}${ret ? formatDate(ret) : ""}${passengers}`;
                   const url = `https://www.aviasales.com/search/${searchPath}?marker=${marker}`;
+                  trackAffiliateClick({
+                    product: "flight",
+                    network: "aviasales",
+                    origin: route.origin,
+                    destination: route.dest,
+                    partner: "popular",
+                  });
                   window.open(url, "_blank", "noopener,noreferrer");
                   setSearchUrl(url);
                   setIsSearching(true);

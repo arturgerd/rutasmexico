@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import { useLocale } from "next-intl";
 import { Locale } from "@/types/common";
 import { getHotelSearchUrl } from "@/lib/affiliate";
+import { trackAffiliateClick } from "@/lib/analytics";
 import { getDestinationCarouselImages } from "@/lib/destination-images";
 import { t3, l } from "@/lib/utils";
 import ImageCarousel from "@/components/ui/ImageCarousel";
@@ -104,6 +105,7 @@ export default function HotelSearchEmbed() {
       locale,
     });
 
+    trackAffiliateClick({ product: "hotel", network: "travelpayouts", destination: cityName });
     window.open(url, "_blank", "noopener,noreferrer");
     setLastSearchUrl(url);
     setSearchDone(true);
@@ -113,14 +115,16 @@ export default function HotelSearchEmbed() {
     const selectedCity = HOTEL_CITIES.find(c => c.id === cityId);
     if (!selectedCity) return;
 
+    const cityName = selectedCity.name.en;
     const url = getHotelSearchUrl({
-      cityName: selectedCity.name.en,
+      cityName,
       checkIn: checkIn || tomorrow,
       checkOut: checkOut || threeDaysLater,
       adults: guests,
       locale,
     });
 
+    trackAffiliateClick({ product: "hotel", network: "travelpayouts", destination: cityName, partner: "popular" });
     window.open(url, "_blank", "noopener,noreferrer");
     setLastSearchUrl(url);
     setSearchDone(true);

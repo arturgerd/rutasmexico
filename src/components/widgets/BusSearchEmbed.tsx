@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import { useLocale } from "next-intl";
 import { Locale } from "@/types/common";
 import { getBusSearchUrl } from "@/lib/affiliate";
+import { trackAffiliateClick } from "@/lib/analytics";
 
 // Mexican cities with bus terminals
 const BUS_CITIES = [
@@ -125,6 +126,12 @@ export default function BusSearchEmbed() {
       locale,
     });
 
+    trackAffiliateClick({
+      product: "bus",
+      network: "travelpayouts",
+      origin: originCity.name.en,
+      destination: destCity.name.en,
+    });
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
@@ -140,6 +147,13 @@ export default function BusSearchEmbed() {
       locale,
     });
 
+    trackAffiliateClick({
+      product: "bus",
+      network: "travelpayouts",
+      origin: originCity.name.en,
+      destination: destCity.name.en,
+      partner: "popular",
+    });
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
