@@ -29,7 +29,10 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": `https://rutasmexico.com.mx/${locale}/nosotros#editor`,
-    name: "Gerardo Álvarez",
+    name: "Arturo García",
+    givenName: "Arturo Gerardo",
+    familyName: "García Álvarez",
+    alternateName: ["Arturo Gerardo García Álvarez", "Gerardo Álvarez"],
     jobTitle: locale === "es"
       ? "Fundador y editor de RutasMéxico"
       : locale === "fr"
@@ -39,8 +42,15 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
       ? "Viajero mexicano radicado en CDMX. Ha recorrido las 32 entidades federativas verificando rutas, terminales y precios de transporte. Verifica precios trimestralmente y confirma cada artículo contra fuentes oficiales (Volaris, VivaAerobus, Aeroméxico, ADO, ETN, Primera Plus)."
       : "Mexican traveler based in Mexico City. Has visited all 32 Mexican states verifying routes, terminals and transport prices. Reviews prices quarterly and confirms every article against official sources (Volaris, VivaAerobus, Aeromexico, ADO, ETN, Primera Plus).",
     url: `https://rutasmexico.com.mx/${locale}/nosotros`,
-    image: `https://rutasmexico.com.mx/logo.png`, // TODO: replace with real headshot when available
+    image: `https://rutasmexico.com.mx/logo.png`, // TODO: replace with /team/arturo.jpg when supplied
     email: "contacto@rutasmexico.com.mx",
+    sameAs: [
+      "https://www.linkedin.com/in/arturo-garcia-ia/",
+      "https://www.youtube.com/@arturog-IA",
+      "https://www.tiktok.com/@arturogga",
+      "https://www.instagram.com/arturogerardoga/",
+      "https://www.facebook.com/arturo.g.alvarez",
+    ],
     worksFor: { "@id": "https://rutasmexico.com.mx/#organization" },
     knowsAbout: [
       "Mexico travel",
@@ -125,14 +135,14 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
                 aria-hidden="true"
                 className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-gradient-to-br from-terracotta-500 to-terracotta-700 flex items-center justify-center font-display font-bold text-3xl text-white shadow-lg flex-shrink-0"
               >
-                GA
+                AG
               </div>
               <div className="flex-1">
                 <p className="text-xs uppercase tracking-wider text-terracotta-600 font-semibold mb-1">
                   {t3(locale, "Editor responsable", "Lead editor", "Éditeur responsable")}
                 </p>
                 <h2 className="font-display text-2xl font-bold text-arena-900 mb-1">
-                  Gerardo Álvarez
+                  Arturo García
                 </h2>
                 <p className="text-sm text-arena-700 mb-3">
                   {t3(locale,
@@ -148,6 +158,17 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
                     "Voyageur mexicain basé à Mexico. J'ai parcouru les 32 États du Mexique en vérifiant itinéraires, terminaux et tarifs. Chaque article de RutasMéxico n'est publié qu'après avoir confirmé personnellement les données clés ou les avoir vérifiées auprès des sources officielles."
                   )}
                 </p>
+                <div className="flex flex-wrap items-center gap-3 mb-4" aria-label={t3(locale, "Redes sociales del autor", "Author social profiles", "Profils sociaux de l'auteur")}>
+                  <a href="https://www.linkedin.com/in/arturo-garcia-ia/" target="_blank" rel="me noopener noreferrer" className="text-arena-700 hover:text-terracotta-600 text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 rounded">LinkedIn</a>
+                  <span className="text-arena-300" aria-hidden>·</span>
+                  <a href="https://www.youtube.com/@arturog-IA" target="_blank" rel="me noopener noreferrer" className="text-arena-700 hover:text-terracotta-600 text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 rounded">YouTube</a>
+                  <span className="text-arena-300" aria-hidden>·</span>
+                  <a href="https://www.instagram.com/arturogerardoga/" target="_blank" rel="me noopener noreferrer" className="text-arena-700 hover:text-terracotta-600 text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 rounded">Instagram</a>
+                  <span className="text-arena-300" aria-hidden>·</span>
+                  <a href="https://www.tiktok.com/@arturogga" target="_blank" rel="me noopener noreferrer" className="text-arena-700 hover:text-terracotta-600 text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 rounded">TikTok</a>
+                  <span className="text-arena-300" aria-hidden>·</span>
+                  <a href="https://www.facebook.com/arturo.g.alvarez" target="_blank" rel="me noopener noreferrer" className="text-arena-700 hover:text-terracotta-600 text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 rounded">Facebook</a>
+                </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
                   <div className="bg-white rounded-lg border border-arena-200 px-3 py-2">
                     <div className="font-semibold text-arena-900">
