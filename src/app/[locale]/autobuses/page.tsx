@@ -6,6 +6,8 @@ import BusesGuide from "@/components/editorial/BusesGuide";
 import { PAGE_HERO_IMAGES } from "@/lib/destination-images";
 import { seoAlternates, seoOpenGraph } from "@/lib/utils";
 
+export const revalidate = 3600;
+
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const title = locale === "es"
     ? "Boletos de autobús baratos 2026 | ADO, ETN y más"
@@ -13,17 +15,15 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const description = locale === "es"
     ? "Compara precios de boletos de autobus de ADO, ETN, Primera Plus, Estrella Roja, Pullman y mas lineas en Mexico. Encuentra el autobus mas barato."
     : "Compare bus ticket prices from ADO, ETN, Primera Plus, Estrella Roja, Pullman and more lines in Mexico. Find the cheapest bus.";
-  const ogImage = "https://rutasmexico.com.mx/og-image.png";
   return {
     title,
     description,
     alternates: seoAlternates(locale, "/autobuses"),
-    openGraph: seoOpenGraph(locale, title, description, "/autobuses", ogImage),
+    openGraph: seoOpenGraph(locale, title, description, "/autobuses"),
     twitter: {
       card: "summary_large_image" as const,
       title,
       description,
-      images: [ogImage],
     },
   };
 }
@@ -85,6 +85,22 @@ export default async function AutobusesPage({ params: { locale } }: { params: { 
     ],
   };
 
+  const reservationServiceSchema = {
+    "@context": "https://schema.org",
+    "@type": "ReservationService",
+    name: isEs ? "Búsqueda de boletos de autobús" : "Bus ticket search",
+    description: isEs
+      ? "Busca y compara boletos de autobús de ADO, ETN, Primera Plus, Estrella Roja y más líneas mexicanas."
+      : "Search and compare bus tickets from ADO, ETN, Primera Plus, Estrella Roja and more Mexican lines.",
+    url: `https://rutasmexico.com.mx/${locale}/autobuses`,
+    provider: { "@type": "Organization", name: "RutasMéxico", url: "https://rutasmexico.com.mx" },
+    areaServed: { "@type": "Country", name: "Mexico" },
+    serviceOutput: {
+      "@type": "BusReservation",
+      reservationFor: { "@type": "BusTrip" },
+    },
+  };
+
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -108,6 +124,7 @@ export default async function AutobusesPage({ params: { locale } }: { params: { 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reservationServiceSchema) }} />
       {/* Hero with background image */}
       <div className="relative py-16 md:py-20 overflow-hidden">
         <Image

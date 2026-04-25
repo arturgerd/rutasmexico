@@ -6,6 +6,8 @@ import { localize, seoAlternates, seoOpenGraph } from "@/lib/utils";
 import { Locale } from "@/types/common";
 import WeddingsGuide from "@/components/editorial/WeddingsGuide";
 
+export const revalidate = 86400;
+
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const year = new Date().getFullYear();
   const title = locale === "es"
@@ -18,17 +20,15 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     : locale === "fr"
       ? `Planifiez le mariage de vos rêves au Mexique. Lieux accessibles et inclusifs, enterrements de vie de garçon et de jeune fille, mariages LGBTIQ+ et guide complet avec prix ${year}.`
       : `Plan your dream wedding in Mexico. Accessible and inclusive venues, bachelor & bachelorette parties, LGBTIQ+ weddings, and complete guide with prices ${year}.`;
-  const ogImage = "https://rutasmexico.com.mx/og-image.png";
   return {
     title,
     description,
     alternates: seoAlternates(locale, "/bodas"),
-    openGraph: seoOpenGraph(locale, title, description, "/bodas", ogImage),
+    openGraph: seoOpenGraph(locale, title, description, "/bodas"),
     twitter: {
       card: "summary_large_image" as const,
       title,
       description,
-      images: [ogImage],
     },
   };
 }

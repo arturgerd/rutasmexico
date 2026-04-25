@@ -6,21 +6,21 @@ import DestinationsGuide from "@/components/editorial/DestinationsGuide";
 import { PAGE_HERO_IMAGES } from "@/lib/destination-images";
 import { seoAlternates, seoOpenGraph } from "@/lib/utils";
 
+export const revalidate = 86400;
+
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "destinations" });
   const title = t("title");
   const description = t("subtitle");
-  const ogImage = "https://rutasmexico.com.mx/og-image.png";
   return {
     title,
     description,
     alternates: seoAlternates(locale, "/destinos"),
-    openGraph: seoOpenGraph(locale, title, description, "/destinos", ogImage),
+    openGraph: seoOpenGraph(locale, title, description, "/destinos"),
     twitter: {
       card: "summary_large_image" as const,
       title,
       description,
-      images: [ogImage],
     },
   };
 }

@@ -5,6 +5,8 @@ import { Locale } from "@/types/common";
 import { setRequestLocale } from "next-intl/server";
 import BlogContent from "@/components/blog/BlogContent";
 
+export const revalidate = 604800;
+
 export async function generateStaticParams() {
   const slugs = await getAllBlogSlugs();
   return slugs.flatMap((slug) => [
@@ -72,7 +74,35 @@ export default async function BlogPostPage({
     datePublished: post.publishedDate,
     ...(post.updatedDate && { dateModified: post.updatedDate }),
     mainEntityOfPage: `${baseUrl}/${locale}/blog/${slug}`,
+    keywords: post.tags?.join(", "),
+    articleSection: post.category,
   };
+
+  const isHowTo = /^(como-|cuanto-cuesta|hoteles-|vuelos-|que-hacer)/.test(post.slug)
+    || post.tags?.some((t) => /como|paso|guia/.test(t));
+  const content = localize(post.content, locale as Locale);
+  const stepMatches: string[] = [];
+  const h3Re = /<h3[^>]*>([^<]+)<\/h3>/gi;
+  let m: RegExpExecArray | null;
+  while ((m = h3Re.exec(content)) !== null && stepMatches.length < 8) {
+    stepMatches.push(m[1].trim());
+  }
+  const howToSchema = isHowTo && stepMatches.length >= 3
+    ? {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        name: title,
+        description,
+        image: post.featuredImage,
+        totalTime: `PT${post.readingTime}M`,
+        step: stepMatches.map((stepName, i) => ({
+          "@type": "HowToStep",
+          position: i + 1,
+          name: stepName,
+          url: `${baseUrl}/${locale}/blog/${slug}#step-${i + 1}`,
+        })),
+      }
+    : null;
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -87,6 +117,9 @@ export default async function BlogPostPage({
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      {howToSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <div className="min-h-screen bg-white">
         <div className="container-custom py-10">

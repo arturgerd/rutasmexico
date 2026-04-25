@@ -7,6 +7,8 @@ import FlightsGuide from "@/components/editorial/FlightsGuide";
 import { PAGE_HERO_IMAGES } from "@/lib/destination-images";
 import { seoAlternates, seoOpenGraph } from "@/lib/utils";
 
+export const revalidate = 3600;
+
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const title = locale === "es"
     ? "Vuelos baratos en México 2026 | Volaris y más"
@@ -14,17 +16,15 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const description = locale === "es"
     ? "Compara precios de vuelos de todas las aerolineas mexicanas: Volaris, VivaAerobus, Aeromexico, TAR y mas. Encuentra el vuelo mas barato."
     : "Compare flight prices from all Mexican airlines: Volaris, VivaAerobus, Aeromexico, TAR and more. Find the cheapest flight.";
-  const ogImage = "https://rutasmexico.com.mx/og-image.png";
   return {
     title,
     description,
     alternates: seoAlternates(locale, "/vuelos"),
-    openGraph: seoOpenGraph(locale, title, description, "/vuelos", ogImage),
+    openGraph: seoOpenGraph(locale, title, description, "/vuelos"),
     twitter: {
       card: "summary_large_image" as const,
       title,
       description,
-      images: [ogImage],
     },
   };
 }
@@ -93,6 +93,22 @@ export default async function VuelosPage({ params: { locale } }: { params: { loc
     ],
   };
 
+  const reservationServiceSchema = {
+    "@context": "https://schema.org",
+    "@type": "ReservationService",
+    name: isEs ? "Búsqueda de vuelos a México" : "Mexico flight search",
+    description: isEs
+      ? "Buscador y comparador de vuelos en tiempo real con más de 700 aerolíneas para rutas a y dentro de México."
+      : "Real-time flight search and comparator with 700+ airlines for routes to and within Mexico.",
+    url: `https://rutasmexico.com.mx/${locale}/vuelos`,
+    provider: { "@type": "Organization", name: "RutasMéxico", url: "https://rutasmexico.com.mx" },
+    areaServed: { "@type": "Country", name: "Mexico" },
+    serviceOutput: {
+      "@type": "Reservation",
+      reservationFor: { "@type": "Flight" },
+    },
+  };
+
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -116,6 +132,7 @@ export default async function VuelosPage({ params: { locale } }: { params: { loc
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reservationServiceSchema) }} />
       {/* Hero with background image */}
       <div className="relative py-16 md:py-20 overflow-hidden">
         <Image

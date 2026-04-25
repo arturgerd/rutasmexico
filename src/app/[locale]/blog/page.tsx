@@ -3,6 +3,8 @@ import { getAllBlogPosts } from "@/lib/data/blog";
 import BlogFilter from "@/components/blog/BlogFilter";
 import { t3, seoAlternates } from "@/lib/utils";
 
+export const revalidate = 86400;
+
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const year = new Date().getFullYear();
   return {

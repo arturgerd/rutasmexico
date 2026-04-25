@@ -8,6 +8,8 @@ import TraditionsSection from "@/components/mundial/TraditionsSection";
 import MercadoLibreBanner from "@/components/widgets/MercadoLibreBanner";
 import { t3, seoAlternates, seoOpenGraph } from "@/lib/utils";
 import { buildTournamentSchema, buildBreadcrumbList } from "@/lib/mundial-schema";
+import { getAllBlogPosts } from "@/lib/data/blog";
+import BlogCard from "@/components/blog/BlogCard";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const title = t3(locale,
@@ -24,14 +26,20 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     title,
     description,
     alternates: seoAlternates(locale, "/mundial"),
-    openGraph: seoOpenGraph(locale, title, description, "/mundial", "https://rutasmexico.com.mx/og-image.png"),
+    openGraph: seoOpenGraph(locale, title, description, "/mundial"),
   };
 }
+
+export const revalidate = 3600;
 
 export default async function MundialPage({ params: { locale } }: { params: { locale: string } }) {
   setRequestLocale(locale);
   const venues = await getAllMundialVenues();
   const menu = getMundialMenu();
+  const allPosts = await getAllBlogPosts();
+  const mundialPosts = allPosts.filter((p) =>
+    p.slug.includes("mundial") || p.slug.includes("estadio-azteca") || p.slug.includes("estadio-bbva")
+  ).slice(0, 6);
 
   const totalMatches = venues.reduce((sum, v) => sum + v.matches.length, 0);
   const mexicoMatches = venues.reduce((sum, v) => sum + v.matches.filter(m => m.isMexicoGame).length, 0);
@@ -364,6 +372,33 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
           </div>
         </div>
       </div>
+
+      {/* Guías paso a paso del Mundial 2026 */}
+      {mundialPosts.length > 0 && (
+        <div className="bg-arena-50 py-12 border-t border-arena-200">
+          <div className="container-custom">
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-arena-800 mb-2 text-center">
+              📖 {t3(locale,
+                "Guías paso a paso del Mundial 2026",
+                "Step-by-step 2026 World Cup guides",
+                "Guides étape par étape de la Coupe du Monde 2026"
+              )}
+            </h2>
+            <p className="text-arena-500 text-center mb-8 max-w-2xl mx-auto">
+              {t3(locale,
+                "Cómo llegar al Estadio Azteca, hoteles cerca de cada sede, vuelos a Guadalajara, presupuesto desde tu país y comparativa entre México, USA y Canadá.",
+                "How to reach Estadio Azteca, hotels near each venue, flights to Guadalajara, budget by country, and Mexico vs USA vs Canada breakdown.",
+                "Comment rejoindre l'Estadio Azteca, hôtels près de chaque stade, vols pour Guadalajara, budget par pays."
+              )}
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {mundialPosts.map((post) => (
+                <BlogCard key={post.id} post={post} />
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Mercado Libre - productos mundialistas */}
       <div className="bg-arena-50 py-8">

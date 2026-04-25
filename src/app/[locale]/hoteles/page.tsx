@@ -5,6 +5,8 @@ import HotelsGuide from "@/components/editorial/HotelsGuide";
 import { PAGE_HERO_IMAGES } from "@/lib/destination-images";
 import { seoAlternates, seoOpenGraph } from "@/lib/utils";
 
+export const revalidate = 3600;
+
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const title = locale === "es"
     ? "Hoteles baratos en México 2026 | Booking y más"
@@ -12,17 +14,15 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const description = locale === "es"
     ? "Compara precios de hoteles en Cancun, CDMX, Playa del Carmen, Puerto Vallarta, Los Cabos y mas destinos en Mexico."
     : "Compare hotel prices in Cancun, Mexico City, Playa del Carmen, Puerto Vallarta, Los Cabos and more destinations in Mexico.";
-  const ogImage = "https://rutasmexico.com.mx/og-image.png";
   return {
     title,
     description,
     alternates: seoAlternates(locale, "/hoteles"),
-    openGraph: seoOpenGraph(locale, title, description, "/hoteles", ogImage),
+    openGraph: seoOpenGraph(locale, title, description, "/hoteles"),
     twitter: {
       card: "summary_large_image" as const,
       title,
       description,
-      images: [ogImage],
     },
   };
 }
@@ -84,6 +84,22 @@ export default async function HotelesPage({ params: { locale } }: { params: { lo
     ],
   };
 
+  const collectionPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: isEs ? "Hoteles en México" : "Hotels in Mexico",
+    url: `https://rutasmexico.com.mx/${locale}/hoteles`,
+    description: isEs
+      ? "Plataforma para comparar hoteles en Cancún, CDMX, Playa del Carmen, Puerto Vallarta, Los Cabos y más destinos de México."
+      : "Platform to compare hotels in Cancun, Mexico City, Playa del Carmen, Puerto Vallarta, Los Cabos and more Mexican destinations.",
+    isPartOf: { "@type": "WebSite", name: "RutasMéxico", url: "https://rutasmexico.com.mx" },
+    about: { "@type": "LodgingBusiness", name: isEs ? "Hoteles en México" : "Mexico Hotels" },
+    provider: [
+      { "@type": "Organization", name: "Booking.com", url: "https://www.booking.com" },
+      { "@type": "Organization", name: "Expedia", url: "https://www.expedia.com" },
+    ],
+  };
+
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -107,6 +123,7 @@ export default async function HotelesPage({ params: { locale } }: { params: { lo
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionPageSchema) }} />
       {/* Hero with background image */}
       <div className="relative py-16 md:py-20 overflow-hidden">
         <Image

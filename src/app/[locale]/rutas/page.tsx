@@ -6,6 +6,8 @@ import RoutesGuide from "@/components/editorial/RoutesGuide";
 import { seoAlternates, seoOpenGraph, localize } from "@/lib/utils";
 import { Locale } from "@/types/common";
 
+export const revalidate = 86400;
+
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const title = locale === "es"
     ? "Rutas entre ciudades de México | Vuelos y bus"
@@ -17,17 +19,15 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     : locale === "fr"
       ? "Comparez comment voyager entre les villes du Mexique: vols, bus, temps, distances et prix. Mexico, Cancun, Guadalajara, Monterrey et plus de 50 itineraires."
       : "Compare how to travel between Mexican cities: flights, buses, travel times, distances and prices. Mexico City, Cancun, Guadalajara, Monterrey and 50+ routes.";
-  const ogImage = "https://rutasmexico.com.mx/og-image.png";
   return {
     title,
     description,
     alternates: seoAlternates(locale, "/rutas"),
-    openGraph: seoOpenGraph(locale, title, description, "/rutas", ogImage),
+    openGraph: seoOpenGraph(locale, title, description, "/rutas"),
     twitter: {
       card: "summary_large_image" as const,
       title,
       description,
-      images: [ogImage],
     },
   };
 }
