@@ -40,3 +40,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Google Search Console service account key for scripts/request-indexing.mjs
+# Never commit — contains private RSA key
+/scripts/sc-service-account.json
