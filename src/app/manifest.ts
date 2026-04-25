@@ -2,17 +2,16 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "RutasMéxico — Tu guía para viajar por México",
-    short_name: "RutasMéxico",
+    name: "RutasMexico — Mexico Travel Guide",
+    short_name: "RutasMexico",
     description:
-      "Guía completa para viajar por México: vuelos, autobuses, hoteles, destinos y rutas paso a paso.",
-    start_url: "/es",
+      "Complete guide to travel in Mexico: flights, buses, hotels, destinations and step-by-step routes.",
+    start_url: "/",
     scope: "/",
     display: "standalone",
     orientation: "portrait",
     background_color: "#FFFFFF",
     theme_color: "#C8553D",
-    lang: "es-MX",
     categories: ["travel", "navigation", "lifestyle"],
     icons: [
       { src: "/favicon.ico", sizes: "any", type: "image/x-icon" },
@@ -20,22 +19,22 @@ export default function manifest(): MetadataRoute.Manifest {
     ],
     shortcuts: [
       {
-        name: "Destinos",
-        short_name: "Destinos",
-        description: "Explora destinos en México",
-        url: "/es/destinos",
+        name: "Destinations",
+        short_name: "Destinations",
+        description: "Explore destinations in Mexico",
+        url: "/",
       },
       {
-        name: "Rutas",
-        short_name: "Rutas",
-        description: "Guías de rutas entre ciudades",
-        url: "/es/rutas",
+        name: "Routes",
+        short_name: "Routes",
+        description: "City-to-city route guides",
+        url: "/",
       },
       {
-        name: "Mundial 2026",
-        short_name: "Mundial",
-        description: "Sedes del Mundial 2026",
-        url: "/es/mundial",
+        name: "World Cup 2026",
+        short_name: "World Cup",
+        description: "2026 World Cup host cities",
+        url: "/",
       },
     ],
   };

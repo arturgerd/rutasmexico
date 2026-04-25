@@ -5,17 +5,27 @@ import AviasalesEmbed from "@/components/widgets/AviasalesEmbed";
 import AirlineGrid from "@/components/widgets/AirlineGrid";
 import FlightsGuide from "@/components/editorial/FlightsGuide";
 import { PAGE_HERO_IMAGES } from "@/lib/destination-images";
-import { seoAlternates } from "@/lib/utils";
+import { seoAlternates, seoOpenGraph } from "@/lib/utils";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+  const title = locale === "es"
+    ? "Vuelos baratos en México 2026 | Volaris y más"
+    : "Cheap flights to Mexico 2026 | Volaris, Viva & more";
+  const description = locale === "es"
+    ? "Compara precios de vuelos de todas las aerolineas mexicanas: Volaris, VivaAerobus, Aeromexico, TAR y mas. Encuentra el vuelo mas barato."
+    : "Compare flight prices from all Mexican airlines: Volaris, VivaAerobus, Aeromexico, TAR and more. Find the cheapest flight.";
+  const ogImage = "https://rutasmexico.com.mx/og-image.png";
   return {
-    title: locale === "es"
-      ? "Vuelos baratos en México 2026 | Volaris y más"
-      : "Cheap flights to Mexico 2026 | Volaris, Viva & more",
-    description: locale === "es"
-      ? "Compara precios de vuelos de todas las aerolineas mexicanas: Volaris, VivaAerobus, Aeromexico, TAR y mas. Encuentra el vuelo mas barato."
-      : "Compare flight prices from all Mexican airlines: Volaris, VivaAerobus, Aeromexico, TAR and more. Find the cheapest flight.",
+    title,
+    description,
     alternates: seoAlternates(locale, "/vuelos"),
+    openGraph: seoOpenGraph(locale, title, description, "/vuelos", ogImage),
+    twitter: {
+      card: "summary_large_image" as const,
+      title,
+      description,
+      images: [ogImage],
+    },
   };
 }
 

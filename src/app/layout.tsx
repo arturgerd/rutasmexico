@@ -1,6 +1,7 @@
 import "./globals.css";
 import Script from "next/script";
 import ConsentManager from "@/components/layout/ConsentManager";
+import { inter, outfit } from "@/lib/fonts";
 
 export const metadata = {
   metadataBase: new URL("https://rutasmexico.com.mx"),
@@ -8,7 +9,6 @@ export const metadata = {
     icon: "/favicon.ico",
     apple: "/favicon.ico",
   },
-  themeColor: "#C8553D",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default" as const,
@@ -17,6 +17,12 @@ export const metadata = {
   verification: {
     google: "a588a56f7dc54021",
   },
+};
+
+export const viewport = {
+  themeColor: "#C8553D",
+  width: "device-width",
+  initialScale: 1,
 };
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID; // e.g. "G-XXXXXXXXXX"
@@ -64,8 +70,14 @@ const websiteJsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html suppressHydrationWarning>
+    <html lang="es" className={`${inter.variable} ${outfit.variable}`} suppressHydrationWarning>
       <head>
+        {/* Preconnect to third-party origins used by scripts below to shave TLS/DNS time off LCP */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://emrldco.com" />
+        <link rel="dns-prefetch" href="https://tp.media" />
+
         {/*
           Google Consent Mode v2 — default all consent to "denied" BEFORE any Google tag loads.
           ConsentManager (client component) updates this via gtag('consent','update',...) when the

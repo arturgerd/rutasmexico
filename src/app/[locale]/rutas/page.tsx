@@ -3,22 +3,32 @@ import { getAllDestinations, getDestinationById } from "@/lib/data/destinations"
 import { getAllRoutes } from "@/lib/data/routes";
 import RouteSearch from "@/components/routes/RouteSearch";
 import RoutesGuide from "@/components/editorial/RoutesGuide";
-import { seoAlternates, localize } from "@/lib/utils";
+import { seoAlternates, seoOpenGraph, localize } from "@/lib/utils";
 import { Locale } from "@/types/common";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+  const title = locale === "es"
+    ? "Rutas entre ciudades de México | Vuelos y bus"
+    : locale === "fr"
+      ? "Itinéraires au Mexique | Vols et bus"
+      : "Routes in Mexico | Flights and buses";
+  const description = locale === "es"
+    ? "Compara como viajar entre ciudades de Mexico: vuelos, autobuses, tiempos, distancias y precios. CDMX, Cancun, Guadalajara, Monterrey y mas de 50 rutas."
+    : locale === "fr"
+      ? "Comparez comment voyager entre les villes du Mexique: vols, bus, temps, distances et prix. Mexico, Cancun, Guadalajara, Monterrey et plus de 50 itineraires."
+      : "Compare how to travel between Mexican cities: flights, buses, travel times, distances and prices. Mexico City, Cancun, Guadalajara, Monterrey and 50+ routes.";
+  const ogImage = "https://rutasmexico.com.mx/og-image.png";
   return {
-    title: locale === "es"
-      ? "Rutas entre ciudades de México | Vuelos y bus"
-      : locale === "fr"
-        ? "Itinéraires au Mexique | Vols et bus"
-        : "Routes in Mexico | Flights and buses",
-    description: locale === "es"
-      ? "Compara como viajar entre ciudades de Mexico: vuelos, autobuses, tiempos, distancias y precios. CDMX, Cancun, Guadalajara, Monterrey y mas de 50 rutas."
-      : locale === "fr"
-        ? "Comparez comment voyager entre les villes du Mexique: vols, bus, temps, distances et prix. Mexico, Cancun, Guadalajara, Monterrey et plus de 50 itineraires."
-        : "Compare how to travel between Mexican cities: flights, buses, travel times, distances and prices. Mexico City, Cancun, Guadalajara, Monterrey and 50+ routes.",
+    title,
+    description,
     alternates: seoAlternates(locale, "/rutas"),
+    openGraph: seoOpenGraph(locale, title, description, "/rutas", ogImage),
+    twitter: {
+      card: "summary_large_image" as const,
+      title,
+      description,
+      images: [ogImage],
+    },
   };
 }
 

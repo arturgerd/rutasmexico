@@ -2,29 +2,33 @@ import Link from "next/link";
 import Image from "next/image";
 import { setRequestLocale } from "next-intl/server";
 import { getAllWeddingDestinations } from "@/lib/data/bodas";
-import { localize } from "@/lib/utils";
+import { localize, seoAlternates, seoOpenGraph } from "@/lib/utils";
 import { Locale } from "@/types/common";
 import WeddingsGuide from "@/components/editorial/WeddingsGuide";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const year = new Date().getFullYear();
-  const baseUrl = "https://rutasmexico.com.mx";
-  if (locale === "es") {
-    return {
-      title: `Bodas en México ${year} | Venues inclusivos, despedidas y guía LGBTIQ+`,
-      description: `Planifica tu boda soñada en México. Venues accesibles e inclusivos, despedidas de soltera y soltero, bodas LGBTIQ+ y guía completa con precios ${year}.`,
-      alternates: {
-        canonical: `${baseUrl}/es/bodas`,
-        languages: { es: `${baseUrl}/es/bodas`, en: `${baseUrl}/en/bodas` },
-      },
-    };
-  }
+  const title = locale === "es"
+    ? `Bodas en México ${year} | Venues inclusivos, despedidas y guía LGBTIQ+`
+    : locale === "fr"
+      ? `Mariages au Mexique ${year} | Lieux inclusifs, enterrements et guide LGBTIQ+`
+      : `Weddings in Mexico ${year} | Inclusive venues, parties & LGBTIQ+ guide`;
+  const description = locale === "es"
+    ? `Planifica tu boda soñada en México. Venues accesibles e inclusivos, despedidas de soltera y soltero, bodas LGBTIQ+ y guía completa con precios ${year}.`
+    : locale === "fr"
+      ? `Planifiez le mariage de vos rêves au Mexique. Lieux accessibles et inclusifs, enterrements de vie de garçon et de jeune fille, mariages LGBTIQ+ et guide complet avec prix ${year}.`
+      : `Plan your dream wedding in Mexico. Accessible and inclusive venues, bachelor & bachelorette parties, LGBTIQ+ weddings, and complete guide with prices ${year}.`;
+  const ogImage = "https://rutasmexico.com.mx/og-image.png";
   return {
-    title: `Weddings in Mexico ${year} | Inclusive venues, parties & LGBTIQ+ guide`,
-    description: `Plan your dream wedding in Mexico. Accessible and inclusive venues, bachelor & bachelorette parties, LGBTIQ+ weddings, and complete guide with prices ${year}.`,
-    alternates: {
-      canonical: `${baseUrl}/en/bodas`,
-      languages: { es: `${baseUrl}/es/bodas`, en: `${baseUrl}/en/bodas` },
+    title,
+    description,
+    alternates: seoAlternates(locale, "/bodas"),
+    openGraph: seoOpenGraph(locale, title, description, "/bodas", ogImage),
+    twitter: {
+      card: "summary_large_image" as const,
+      title,
+      description,
+      images: [ogImage],
     },
   };
 }

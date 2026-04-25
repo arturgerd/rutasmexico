@@ -4,17 +4,27 @@ import BusSearchEmbed from "@/components/widgets/BusSearchEmbed";
 import BusCompanyGrid from "@/components/widgets/BusCompanyGrid";
 import BusesGuide from "@/components/editorial/BusesGuide";
 import { PAGE_HERO_IMAGES } from "@/lib/destination-images";
-import { seoAlternates } from "@/lib/utils";
+import { seoAlternates, seoOpenGraph } from "@/lib/utils";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+  const title = locale === "es"
+    ? "Boletos de autobús baratos 2026 | ADO, ETN y más"
+    : "Cheap bus tickets in Mexico 2026 | ADO, ETN & more";
+  const description = locale === "es"
+    ? "Compara precios de boletos de autobus de ADO, ETN, Primera Plus, Estrella Roja, Pullman y mas lineas en Mexico. Encuentra el autobus mas barato."
+    : "Compare bus ticket prices from ADO, ETN, Primera Plus, Estrella Roja, Pullman and more lines in Mexico. Find the cheapest bus.";
+  const ogImage = "https://rutasmexico.com.mx/og-image.png";
   return {
-    title: locale === "es"
-      ? "Boletos de autobús baratos 2026 | ADO, ETN y más"
-      : "Cheap bus tickets in Mexico 2026 | ADO, ETN & more",
-    description: locale === "es"
-      ? "Compara precios de boletos de autobus de ADO, ETN, Primera Plus, Estrella Roja, Pullman y mas lineas en Mexico. Encuentra el autobus mas barato."
-      : "Compare bus ticket prices from ADO, ETN, Primera Plus, Estrella Roja, Pullman and more lines in Mexico. Find the cheapest bus.",
+    title,
+    description,
     alternates: seoAlternates(locale, "/autobuses"),
+    openGraph: seoOpenGraph(locale, title, description, "/autobuses", ogImage),
+    twitter: {
+      card: "summary_large_image" as const,
+      title,
+      description,
+      images: [ogImage],
+    },
   };
 }
 
