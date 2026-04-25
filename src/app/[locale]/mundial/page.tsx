@@ -42,12 +42,11 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
     p.slug.includes("mundial") || p.slug.includes("estadio-azteca") || p.slug.includes("estadio-bbva")
   ).slice(0, 6);
 
-  // FIFA-official totals for the 48-team format (https://www.fifa.com/.../canadamexicousa2026).
+  // FIFA-official total for the 48-team format (https://www.fifa.com/.../canadamexicousa2026).
   // The matches array in mundial-venues.json only stores a curated subset (≈62 of 104) for the
-  // city guides, so we display the official count in the hero stats and reserve `documentedMatches`
-  // for components that iterate over what we actually have authored content for.
+  // city guides; the hero stat block must show the official count, not what we happen to have
+  // authored. If/when we need to expose how many we cover, compute it inline at the use site.
   const TOURNAMENT_TOTAL_MATCHES = 104;
-  const documentedMatches = venues.reduce((sum, v) => sum + v.matches.length, 0);
   const mexicoMatches = venues.reduce((sum, v) => sum + v.matches.filter(m => m.isMexicoGame).length, 0);
   const allMexicoGames = venues.flatMap(v => v.matches.filter(m => m.isMexicoGame)).sort((a, b) => a.date.localeCompare(b.date));
   const mxVenues = venues.filter(v => (v.country ?? "MX") === "MX");
