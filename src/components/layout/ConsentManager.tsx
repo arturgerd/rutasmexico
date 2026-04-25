@@ -92,59 +92,44 @@ export default function ConsentManager() {
 
   return (
     <>
-      {/* Cookie banner - only show after mount and if no decision yet */}
+      {/* Cookie banner - slim bottom bar; only show after mount and if no decision yet */}
       {mounted && consent === null && (
         <div
-          role="dialog"
-          aria-labelledby="cookie-consent-title"
-          aria-describedby="cookie-consent-description"
-          className="fixed bottom-0 left-0 right-0 z-[100] bg-white border-t-2 border-arena-200 shadow-2xl"
+          role="region"
+          aria-label={t3(locale, "Consentimiento de cookies", "Cookie consent", "Consentement aux cookies")}
+          className="fixed bottom-0 left-0 right-0 z-[100] bg-white/95 backdrop-blur-md border-t border-arena-200 shadow-lg"
         >
-          <div className="container-custom py-4 md:py-5">
-            <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
-              <div className="flex-1">
-                <h2
-                  id="cookie-consent-title"
-                  className="font-display font-bold text-arena-900 text-base md:text-lg mb-1 flex items-center gap-2"
+          <div className="container-custom py-2.5 md:py-3">
+            <div className="flex flex-row items-center gap-3">
+              <span aria-hidden className="text-lg flex-shrink-0">🍪</span>
+              <p id="cookie-consent-description" className="flex-1 text-xs md:text-sm text-arena-700 leading-snug">
+                <span id="cookie-consent-title" className="font-semibold text-arena-900">
+                  {t3(locale, "Cookies. ", "Cookies. ", "Cookies. ")}
+                </span>
+                {t3(locale,
+                  "Usamos cookies para anuncios y analítica.",
+                  "We use cookies for ads and analytics.",
+                  "Nous utilisons des cookies pour les pubs et l'analyse."
+                )}{" "}
+                <Link
+                  href={`/${locale}/privacidad`}
+                  className="text-terracotta-600 hover:text-terracotta-700 underline font-medium hidden sm:inline"
                 >
-                  <span className="text-xl">🍪</span>
-                  {t3(locale,
-                    "Usamos cookies",
-                    "We use cookies",
-                    "Nous utilisons des cookies"
-                  )}
-                </h2>
-                <p id="cookie-consent-description" className="text-sm text-arena-600 leading-relaxed">
-                  {t3(locale,
-                    "Usamos cookies y tecnologías similares para mejorar tu experiencia, analizar el tráfico y mostrar publicidad personalizada (Google AdSense). Puedes aceptar todas las cookies o rechazar las opcionales. Consulta nuestra",
-                    "We use cookies and similar technologies to enhance your experience, analyze traffic, and show personalized ads (Google AdSense). You can accept all cookies or reject optional ones. See our",
-                    "Nous utilisons des cookies et des technologies similaires pour améliorer votre expérience, analyser le trafic et afficher des publicités personnalisées (Google AdSense). Vous pouvez accepter tous les cookies ou refuser ceux qui sont facultatifs. Consultez notre"
-                  )}{" "}
-                  <Link
-                    href={`/${locale}/privacidad`}
-                    className="text-terracotta-600 hover:text-terracotta-700 underline font-medium"
-                  >
-                    {t3(locale,
-                      "política de privacidad",
-                      "privacy policy",
-                      "politique de confidentialité"
-                    )}
-                  </Link>
-                  .
-                </p>
-              </div>
-              <div className="flex gap-2 w-full md:w-auto flex-shrink-0">
+                  {t3(locale, "Privacidad", "Privacy", "Confidentialité")}
+                </Link>
+              </p>
+              <div className="flex gap-2 flex-shrink-0">
                 <button
                   onClick={handleReject}
-                  className="flex-1 md:flex-initial px-4 py-2.5 text-sm font-medium text-arena-700 bg-arena-100 hover:bg-arena-200 rounded-xl transition-colors"
+                  className="px-3 py-2 min-h-[36px] text-xs md:text-sm font-medium text-arena-700 bg-arena-100 hover:bg-arena-200 rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500"
                 >
                   {t3(locale, "Rechazar", "Reject", "Refuser")}
                 </button>
                 <button
                   onClick={handleAccept}
-                  className="flex-1 md:flex-initial px-6 py-2.5 text-sm font-semibold text-white bg-terracotta-500 hover:bg-terracotta-600 rounded-xl transition-colors shadow-md"
+                  className="px-4 py-2 min-h-[36px] text-xs md:text-sm font-semibold text-white bg-terracotta-500 hover:bg-terracotta-600 rounded-lg transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-terracotta-500"
                 >
-                  {t3(locale, "Aceptar todas", "Accept all", "Tout accepter")}
+                  {t3(locale, "Aceptar", "Accept", "Accepter")}
                 </button>
               </div>
             </div>

@@ -57,7 +57,7 @@ export default async function LocaleLayout({
       <SetHtmlLang locale={locale} />
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:rounded focus:bg-terracotta-600 focus:text-white focus:shadow-lg"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[200] focus:px-4 focus:py-3 focus:rounded-lg focus:bg-terracotta-600 focus:text-white focus:font-semibold focus:shadow-2xl focus:outline-none focus:ring-2 focus:ring-white"
       >
         {skipLabel}
       </a>

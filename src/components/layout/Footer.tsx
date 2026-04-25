@@ -2,6 +2,8 @@
 
 import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
+import FlagMX from "@/components/ui/FlagMX";
+import Icon from "@/components/ui/Icon";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -15,12 +17,12 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-2xl">🇲🇽</span>
+              <FlagMX className="w-6 h-4" />
               <span className="font-display font-bold text-xl text-white">
                 Rutas<span className="text-terracotta-400">México</span>
               </span>
             </div>
-            <p className="text-sm text-arena-400 leading-relaxed">
+            <p className="text-sm text-arena-200 leading-relaxed">
               {t("description")}
             </p>
           </div>
@@ -34,7 +36,8 @@ export default function Footer() {
                   href={`/${locale}/mundial`}
                   className="inline-flex items-center gap-1.5 text-jade-300 hover:text-emerald-300 font-semibold transition-colors"
                 >
-                  ⚽ {locale === "es" ? "Mundial 2026" : locale === "fr" ? "Coupe du Monde 2026" : "World Cup 2026"}
+                  <Icon name="ball" className="w-4 h-4" />
+                  {locale === "es" ? "Mundial 2026" : locale === "fr" ? "Coupe du Monde 2026" : "World Cup 2026"}
                 </Link>
               </li>
               <li>

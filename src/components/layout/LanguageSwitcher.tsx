@@ -13,24 +13,29 @@ export default function LanguageSwitcher() {
     router.push(newPath);
   };
 
+  const baseBtn = "min-w-[44px] min-h-[36px] px-3 py-2 rounded-md text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500";
   return (
-    <div className="flex items-center gap-1 bg-arena-100 rounded-lg p-1">
+    <div role="group" aria-label="Language" className="flex items-center gap-1 bg-arena-100 rounded-lg p-1">
       <button
         onClick={() => switchLocale("es")}
-        className={`px-3 py-1 rounded-md text-sm font-medium transition-all ${
+        aria-pressed={locale === "es"}
+        aria-label="Cambiar idioma a español"
+        className={`${baseBtn} ${
           locale === "es"
             ? "bg-white text-terracotta-600 shadow-sm"
-            : "text-arena-500 hover:text-arena-700"
+            : "text-arena-700 hover:text-terracotta-600"
         }`}
       >
         ES
       </button>
       <button
         onClick={() => switchLocale("en")}
-        className={`px-3 py-1 rounded-md text-sm font-medium transition-all ${
+        aria-pressed={locale === "en"}
+        aria-label="Switch language to English"
+        className={`${baseBtn} ${
           locale === "en"
             ? "bg-white text-terracotta-600 shadow-sm"
-            : "text-arena-500 hover:text-arena-700"
+            : "text-arena-700 hover:text-terracotta-600"
         }`}
       >
         EN
