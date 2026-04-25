@@ -69,8 +69,23 @@ export default async function BlogPostPage({
     headline: title,
     description,
     image: post.featuredImage,
-    author: { "@type": "Organization", name: post.author, url: baseUrl },
-    publisher: { "@type": "Organization", name: "RutasMéxico", url: baseUrl },
+    author: {
+      "@type": "Person",
+      name: post.author,
+      url: `${baseUrl}/${locale}/nosotros`,
+      jobTitle: locale === "es"
+        ? "Fundador y editor de RutasMéxico"
+        : locale === "fr"
+          ? "Fondateur et éditeur de RutasMéxico"
+          : "Founder and editor of RutasMéxico",
+      worksFor: { "@type": "Organization", name: "RutasMéxico", url: baseUrl },
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "RutasMéxico",
+      url: baseUrl,
+      logo: { "@type": "ImageObject", url: `${baseUrl}/logo.png`, width: 512, height: 512 },
+    },
     datePublished: post.publishedDate,
     ...(post.updatedDate && { dateModified: post.updatedDate }),
     mainEntityOfPage: `${baseUrl}/${locale}/blog/${slug}`,
