@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useId } from "react";
 import { useLocale } from "next-intl";
 import { Airport } from "@/types/airport";
 import { Locale } from "@/types/common";
@@ -20,6 +20,11 @@ export default function HotelSearch({ airports, defaultCity = "", compact = fals
   const [checkIn, setCheckIn] = useState("");
   const [checkOut, setCheckOut] = useState("");
   const [adults, setAdults] = useState(2);
+  const idPrefix = useId();
+  const cityId = `${idPrefix}city`;
+  const inId = `${idPrefix}in`;
+  const outId = `${idPrefix}out`;
+  const guestsId = `${idPrefix}guests`;
 
   const tomorrow = useMemo(() => {
     const d = new Date();
@@ -100,10 +105,11 @@ export default function HotelSearch({ airports, defaultCity = "", compact = fals
     <div className="space-y-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
         <div>
-          <label className="block text-xs font-semibold text-arena-500 mb-1">
+          <label htmlFor={cityId} className="block text-xs font-semibold text-arena-500 mb-1">
             {locale === "es" ? "Ciudad" : "City"}
           </label>
           <select
+            id={cityId}
             value={city}
             onChange={(e) => setCity(e.target.value)}
             className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-terracotta-500/50 focus:border-terracotta-500"
@@ -118,10 +124,11 @@ export default function HotelSearch({ airports, defaultCity = "", compact = fals
         </div>
 
         <div>
-          <label className="block text-xs font-semibold text-arena-500 mb-1">
+          <label htmlFor={inId} className="block text-xs font-semibold text-arena-500 mb-1">
             {locale === "es" ? "Llegada" : "Check-in"}
           </label>
           <input
+            id={inId}
             type="date"
             value={checkIn || tomorrow}
             onChange={(e) => setCheckIn(e.target.value)}
@@ -131,10 +138,11 @@ export default function HotelSearch({ airports, defaultCity = "", compact = fals
         </div>
 
         <div>
-          <label className="block text-xs font-semibold text-arena-500 mb-1">
+          <label htmlFor={outId} className="block text-xs font-semibold text-arena-500 mb-1">
             {locale === "es" ? "Salida" : "Check-out"}
           </label>
           <input
+            id={outId}
             type="date"
             value={checkOut || threeDaysLater}
             onChange={(e) => setCheckOut(e.target.value)}
@@ -144,10 +152,11 @@ export default function HotelSearch({ airports, defaultCity = "", compact = fals
         </div>
 
         <div>
-          <label className="block text-xs font-semibold text-arena-500 mb-1">
+          <label htmlFor={guestsId} className="block text-xs font-semibold text-arena-500 mb-1">
             {locale === "es" ? "Huéspedes" : "Guests"}
           </label>
           <select
+            id={guestsId}
             value={adults}
             onChange={(e) => setAdults(Number(e.target.value))}
             className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-terracotta-500/50 focus:border-terracotta-500"

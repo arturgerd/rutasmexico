@@ -8,6 +8,10 @@ import mundialVenues from "@/data/mundial-venues.json";
 const BASE_URL = "https://rutasmexico.com.mx";
 const locales = ["es", "en", "fr"];
 
+// Stable build-time date so the sitemap doesn't tell Google "everything changed"
+// on every crawl. Bump this when doing a sweep update across many static pages.
+const BUILD_DATE = new Date("2026-04-24");
+
 function generateAlternates(path: string) {
   const languages: Record<string, string> = {};
   for (const locale of locales) {
@@ -41,7 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const locale of locales) {
       entries.push({
         url: `${BASE_URL}/${locale}${page.path}`,
-        lastModified: new Date(),
+        lastModified: BUILD_DATE,
         changeFrequency: page.changeFrequency,
         priority: page.priority,
         alternates: generateAlternates(page.path),
@@ -54,7 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const locale of locales) {
       entries.push({
         url: `${BASE_URL}/${locale}/destinos/${dest.slug}`,
-        lastModified: new Date(),
+        lastModified: BUILD_DATE,
         changeFrequency: "monthly",
         priority: 0.8,
         alternates: generateAlternates(`/destinos/${dest.slug}`),
@@ -62,15 +66,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  // Blog posts
+  // Blog posts — use real publishedDate / updatedDate so Google sees stable timestamps
   for (const post of blogPosts) {
     const postWithDates = post as typeof post & { updatedDate?: string };
+    const isMundialPost = post.slug.includes("mundial") || post.slug.includes("estadio-azteca") || post.slug.includes("estadio-bbva");
     for (const locale of locales) {
       entries.push({
         url: `${BASE_URL}/${locale}/blog/${post.slug}`,
         lastModified: new Date(postWithDates.updatedDate || post.publishedDate),
         changeFrequency: "monthly",
-        priority: 0.7,
+        priority: isMundialPost ? 0.9 : 0.7,
         alternates: generateAlternates(`/blog/${post.slug}`),
       });
     }
@@ -81,7 +86,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const locale of locales) {
       entries.push({
         url: `${BASE_URL}/${locale}/rutas/${route.slug}`,
-        lastModified: new Date(),
+        lastModified: BUILD_DATE,
         changeFrequency: "monthly",
         priority: 0.7,
         alternates: generateAlternates(`/rutas/${route.slug}`),
@@ -94,7 +99,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const locale of locales) {
       entries.push({
         url: `${BASE_URL}/${locale}/bodas/${boda.slug}`,
-        lastModified: new Date(),
+        lastModified: BUILD_DATE,
         changeFrequency: "monthly",
         priority: 0.6,
         alternates: generateAlternates(`/bodas/${boda.slug}`),
@@ -107,7 +112,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const locale of locales) {
       entries.push({
         url: `${BASE_URL}/${locale}/mundial/${venue.slug}`,
-        lastModified: new Date(),
+        lastModified: BUILD_DATE,
         changeFrequency: "weekly",
         priority: 0.9,
         alternates: generateAlternates(`/mundial/${venue.slug}`),

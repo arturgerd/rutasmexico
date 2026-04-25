@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useId } from "react";
 import { useLocale } from "next-intl";
 import { Locale } from "@/types/common";
 import { getBusSearchUrl } from "@/lib/affiliate";
@@ -92,6 +92,10 @@ export default function BusSearchEmbed() {
   const [origin, setOrigin] = useState("");
   const [destination, setDestination] = useState("");
   const [departDate, setDepartDate] = useState("");
+  const idPrefix = useId();
+  const originId = `${idPrefix}origin`;
+  const destId = `${idPrefix}dest`;
+  const departId = `${idPrefix}depart`;
 
   const tomorrow = useMemo(() => {
     const d = new Date();
@@ -183,10 +187,11 @@ export default function BusSearchEmbed() {
           {/* Cities */}
           <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-3 items-end">
             <div>
-              <label className="block text-xs font-semibold text-arena-500 mb-1">
+              <label htmlFor={originId} className="block text-xs font-semibold text-arena-500 mb-1">
                 {locale === "es" ? "Ciudad de origen" : "Origin city"}
               </label>
               <select
+                id={originId}
                 value={origin}
                 onChange={(e) => setOrigin(e.target.value)}
                 className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500"
@@ -201,7 +206,9 @@ export default function BusSearchEmbed() {
             </div>
 
             <button
+              type="button"
               onClick={swapCities}
+              aria-label={locale === "es" ? "Intercambiar origen y destino" : "Swap origin and destination"}
               className="hidden md:flex w-10 h-10 rounded-full bg-arena-100 hover:bg-blue-100 items-center justify-center transition-colors mb-0.5"
               title={locale === "es" ? "Intercambiar" : "Swap"}
             >
@@ -211,10 +218,11 @@ export default function BusSearchEmbed() {
             </button>
 
             <div>
-              <label className="block text-xs font-semibold text-arena-500 mb-1">
+              <label htmlFor={destId} className="block text-xs font-semibold text-arena-500 mb-1">
                 {locale === "es" ? "Ciudad de destino" : "Destination city"}
               </label>
               <select
+                id={destId}
                 value={destination}
                 onChange={(e) => setDestination(e.target.value)}
                 className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500"
@@ -232,10 +240,11 @@ export default function BusSearchEmbed() {
           {/* Date and Search */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div>
-              <label className="block text-xs font-semibold text-arena-500 mb-1">
+              <label htmlFor={departId} className="block text-xs font-semibold text-arena-500 mb-1">
                 {locale === "es" ? "Fecha de salida" : "Departure date"}
               </label>
               <input
+                id={departId}
                 type="date"
                 value={departDate || tomorrow}
                 onChange={(e) => setDepartDate(e.target.value)}

@@ -4,6 +4,7 @@ import { localize, t3 } from "@/lib/utils";
 import { Locale } from "@/types/common";
 
 export const runtime = "edge";
+export const revalidate = 3600;
 export const contentType = "image/png";
 export const size = { width: 1200, height: 630 };
 export const alt = "RutasMéxico — World Cup 2026 venue";

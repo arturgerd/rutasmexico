@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useCallback } from "react";
+import { useState, useMemo, useCallback, useId } from "react";
 import { useLocale } from "next-intl";
 import { Airport } from "@/types/airport";
 import { localize, t3, l } from "@/lib/utils";
@@ -30,6 +30,12 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
   const [isOneWay, setIsOneWay] = useState(false);
   const [searchUrl, setSearchUrl] = useState("");
   const [isSearching, setIsSearching] = useState(false);
+  const idPrefix = useId();
+  const originId = `${idPrefix}origin`;
+  const destId = `${idPrefix}dest`;
+  const departId = `${idPrefix}depart`;
+  const returnId = `${idPrefix}return`;
+  const paxId = `${idPrefix}pax`;
 
   const tomorrow = useMemo(() => {
     const d = new Date();
@@ -138,10 +144,11 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
           {/* Airports */}
           <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-3 items-end">
             <div>
-              <label className="block text-xs font-semibold text-arena-500 mb-1">
+              <label htmlFor={originId} className="block text-xs font-semibold text-arena-500 mb-1">
                 {t3(locale, "Origen", "Origin", "Origine")}
               </label>
               <select
+                id={originId}
                 value={origin}
                 onChange={(e) => setOrigin(e.target.value)}
                 className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-terracotta-500/50 focus:border-terracotta-500"
@@ -156,7 +163,9 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
             </div>
 
             <button
+              type="button"
               onClick={swapAirports}
+              aria-label={t3(locale, "Intercambiar origen y destino", "Swap origin and destination", "Échanger origine et destination")}
               className="hidden md:flex w-10 h-10 rounded-full bg-arena-100 hover:bg-terracotta-100 items-center justify-center transition-colors mb-0.5"
               title={t3(locale, "Intercambiar", "Swap", "Échanger")}
             >
@@ -166,10 +175,11 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
             </button>
 
             <div>
-              <label className="block text-xs font-semibold text-arena-500 mb-1">
+              <label htmlFor={destId} className="block text-xs font-semibold text-arena-500 mb-1">
                 {t3(locale, "Destino", "Destination", "Destination")}
               </label>
               <select
+                id={destId}
                 value={destination}
                 onChange={(e) => setDestination(e.target.value)}
                 className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-terracotta-500/50 focus:border-terracotta-500"
@@ -187,10 +197,11 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
           {/* Dates and passengers */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
             <div>
-              <label className="block text-xs font-semibold text-arena-500 mb-1">
+              <label htmlFor={departId} className="block text-xs font-semibold text-arena-500 mb-1">
                 {t3(locale, "Fecha de ida", "Departure date", "Date de départ")}
               </label>
               <input
+                id={departId}
                 type="date"
                 value={departDate || tomorrow}
                 onChange={(e) => setDepartDate(e.target.value)}
@@ -201,10 +212,11 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
 
             {!isOneWay && (
               <div>
-                <label className="block text-xs font-semibold text-arena-500 mb-1">
+                <label htmlFor={returnId} className="block text-xs font-semibold text-arena-500 mb-1">
                   {t3(locale, "Fecha de regreso", "Return date", "Date de retour")}
                 </label>
                 <input
+                  id={returnId}
                   type="date"
                   value={returnDate || weekLater}
                   onChange={(e) => setReturnDate(e.target.value)}
@@ -215,10 +227,11 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
             )}
 
             <div>
-              <label className="block text-xs font-semibold text-arena-500 mb-1">
+              <label htmlFor={paxId} className="block text-xs font-semibold text-arena-500 mb-1">
                 {t3(locale, "Pasajeros", "Passengers", "Passagers")}
               </label>
               <select
+                id={paxId}
                 value={passengers}
                 onChange={(e) => setPassengers(Number(e.target.value))}
                 className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-terracotta-500/50"

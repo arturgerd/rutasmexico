@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useId } from "react";
 import { useLocale } from "next-intl";
 import { Airport } from "@/types/airport";
 import { Locale } from "@/types/common";
@@ -23,6 +23,12 @@ export default function FlightSearch({ airports, defaultOrigin = "", defaultDest
   const [returnDate, setReturnDate] = useState("");
   const [passengers, setPassengers] = useState(1);
   const [isOneWay, setIsOneWay] = useState(false);
+  const idPrefix = useId();
+  const originId = `${idPrefix}origin`;
+  const destId = `${idPrefix}dest`;
+  const departId = `${idPrefix}depart`;
+  const returnId = `${idPrefix}return`;
+  const paxId = `${idPrefix}pax`;
 
   // Default dates: tomorrow + 7 days later
   const tomorrow = useMemo(() => {
@@ -88,7 +94,9 @@ export default function FlightSearch({ airports, defaultOrigin = "", defaultDest
   if (compact) {
     return (
       <div className="flex flex-col sm:flex-row gap-2">
+        <label htmlFor={originId} className="sr-only">{locale === "es" ? "Origen" : "Origin"}</label>
         <select
+          id={originId}
           value={origin}
           onChange={(e) => setOrigin(e.target.value)}
           className="flex-1 p-2 bg-white border border-arena-200 rounded-lg text-sm text-arena-800 focus:ring-2 focus:ring-terracotta-500/50"
@@ -100,7 +108,9 @@ export default function FlightSearch({ airports, defaultOrigin = "", defaultDest
             </option>
           ))}
         </select>
+        <label htmlFor={destId} className="sr-only">{locale === "es" ? "Destino" : "Destination"}</label>
         <select
+          id={destId}
           value={destination}
           onChange={(e) => setDestination(e.target.value)}
           className="flex-1 p-2 bg-white border border-arena-200 rounded-lg text-sm text-arena-800 focus:ring-2 focus:ring-terracotta-500/50"
@@ -149,10 +159,11 @@ export default function FlightSearch({ airports, defaultOrigin = "", defaultDest
       {/* Airport selectors */}
       <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-3 items-end">
         <div>
-          <label className="block text-xs font-semibold text-arena-500 mb-1">
+          <label htmlFor={originId} className="block text-xs font-semibold text-arena-500 mb-1">
             {locale === "es" ? "Origen" : "Origin"}
           </label>
           <select
+            id={originId}
             value={origin}
             onChange={(e) => setOrigin(e.target.value)}
             className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-terracotta-500/50 focus:border-terracotta-500"
@@ -167,7 +178,9 @@ export default function FlightSearch({ airports, defaultOrigin = "", defaultDest
         </div>
 
         <button
+          type="button"
           onClick={swapAirports}
+          aria-label={locale === "es" ? "Intercambiar origen y destino" : "Swap origin and destination"}
           className="hidden md:flex w-10 h-10 rounded-full bg-arena-100 hover:bg-terracotta-100 items-center justify-center transition-colors mb-0.5"
           title={locale === "es" ? "Intercambiar" : "Swap"}
         >
@@ -177,10 +190,11 @@ export default function FlightSearch({ airports, defaultOrigin = "", defaultDest
         </button>
 
         <div>
-          <label className="block text-xs font-semibold text-arena-500 mb-1">
+          <label htmlFor={destId} className="block text-xs font-semibold text-arena-500 mb-1">
             {locale === "es" ? "Destino" : "Destination"}
           </label>
           <select
+            id={destId}
             value={destination}
             onChange={(e) => setDestination(e.target.value)}
             className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-terracotta-500/50 focus:border-terracotta-500"
@@ -198,10 +212,11 @@ export default function FlightSearch({ airports, defaultOrigin = "", defaultDest
       {/* Dates and passengers */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
         <div>
-          <label className="block text-xs font-semibold text-arena-500 mb-1">
+          <label htmlFor={departId} className="block text-xs font-semibold text-arena-500 mb-1">
             {locale === "es" ? "Fecha de ida" : "Departure date"}
           </label>
           <input
+            id={departId}
             type="date"
             value={departDate || tomorrow}
             onChange={(e) => setDepartDate(e.target.value)}
@@ -212,10 +227,11 @@ export default function FlightSearch({ airports, defaultOrigin = "", defaultDest
 
         {!isOneWay && (
           <div>
-            <label className="block text-xs font-semibold text-arena-500 mb-1">
+            <label htmlFor={returnId} className="block text-xs font-semibold text-arena-500 mb-1">
               {locale === "es" ? "Fecha de regreso" : "Return date"}
             </label>
             <input
+              id={returnId}
               type="date"
               value={returnDate || weekLater}
               onChange={(e) => setReturnDate(e.target.value)}
@@ -226,10 +242,11 @@ export default function FlightSearch({ airports, defaultOrigin = "", defaultDest
         )}
 
         <div>
-          <label className="block text-xs font-semibold text-arena-500 mb-1">
+          <label htmlFor={paxId} className="block text-xs font-semibold text-arena-500 mb-1">
             {locale === "es" ? "Pasajeros" : "Passengers"}
           </label>
           <select
+            id={paxId}
             value={passengers}
             onChange={(e) => setPassengers(Number(e.target.value))}
             className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-terracotta-500/50 focus:border-terracotta-500"

@@ -1,6 +1,7 @@
 import { buildLandingOg, ogSize, ogContentType, ogText } from "@/lib/og-builder";
 
 export const runtime = "edge";
+export const revalidate = 3600;
 export const contentType = ogContentType;
 export const size = ogSize;
 export const alt = "RutasMéxico — Rutas entre ciudades";
