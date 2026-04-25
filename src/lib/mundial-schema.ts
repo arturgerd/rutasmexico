@@ -130,6 +130,7 @@ export function buildTournamentSchema(venues: MundialVenue[], locale: string) {
   return {
     "@context": "https://schema.org",
     "@type": "SportsEvent",
+    "@id": `${BASE_URL}/${locale}/mundial#tournament`,
     name: TOURNAMENT_NAME[locale] || TOURNAMENT_NAME.es,
     description:
       locale === "es"
@@ -140,6 +141,7 @@ export function buildTournamentSchema(venues: MundialVenue[], locale: string) {
     startDate: TOURNAMENT_START,
     endDate: TOURNAMENT_END,
     url: `${BASE_URL}/${locale}/mundial`,
+    isPartOf: { "@id": `${BASE_URL}/#website` },
     eventStatus: "https://schema.org/EventScheduled",
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     sport: "Soccer",

@@ -28,44 +28,57 @@ export const viewport = {
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID; // e.g. "G-XXXXXXXXXX"
 const ADSENSE_CLIENT = "ca-pub-6589074911542620";
 
-const organizationJsonLd = {
+// Site-wide schemas use @graph + @id so per-page Article/TouristDestination/Event schemas
+// can reference Organization/WebSite by id without re-declaring them.
+const SITE_GRAPH_JSONLD = {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "RutasMéxico",
-  alternateName: "RutasMexico",
-  url: "https://rutasmexico.com.mx",
-  logo: {
-    "@type": "ImageObject",
-    url: "https://rutasmexico.com.mx/logo.png",
-    width: 512,
-    height: 512,
-  },
-  description:
-    "Guía completa para viajar por México. Rutas, destinos, vuelos, autobuses, hoteles y guías paso a paso.",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Ciudad de México",
-    addressCountry: "MX",
-  },
-  contactPoint: {
-    "@type": "ContactPoint",
-    email: "contacto@rutasmexico.com.mx",
-    contactType: "customer support",
-    availableLanguage: ["Spanish", "English", "French"],
-  },
-};
-
-const websiteJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: "RutasMéxico",
-  url: "https://rutasmexico.com.mx",
-  inLanguage: ["es-MX", "en", "fr"],
-  potentialAction: {
-    "@type": "SearchAction",
-    target: "https://rutasmexico.com.mx/es/rutas?q={search_term_string}",
-    "query-input": "required name=search_term_string",
-  },
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://rutasmexico.com.mx/#organization",
+      name: "RutasMéxico",
+      alternateName: "RutasMexico",
+      url: "https://rutasmexico.com.mx",
+      logo: {
+        "@type": "ImageObject",
+        "@id": "https://rutasmexico.com.mx/#logo",
+        url: "https://rutasmexico.com.mx/logo.png",
+        width: 512,
+        height: 512,
+        caption: "RutasMéxico",
+      },
+      image: { "@id": "https://rutasmexico.com.mx/#logo" },
+      description:
+        "Guía completa para viajar por México. Rutas, destinos, vuelos, autobuses, hoteles y guías paso a paso.",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Ciudad de México",
+        addressCountry: "MX",
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        email: "contacto@rutasmexico.com.mx",
+        contactType: "customer support",
+        availableLanguage: ["Spanish", "English", "French"],
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://rutasmexico.com.mx/#website",
+      url: "https://rutasmexico.com.mx",
+      name: "RutasMéxico",
+      publisher: { "@id": "https://rutasmexico.com.mx/#organization" },
+      inLanguage: ["es-MX", "en"],
+      potentialAction: {
+        "@type": "SearchAction",
+        target: {
+          "@type": "EntryPoint",
+          urlTemplate: "https://rutasmexico.com.mx/es/rutas?q={search_term_string}",
+        },
+        "query-input": "required name=search_term_string",
+      },
+    },
+  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -127,16 +140,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           crossOrigin="anonymous"
         />
 
-        {/* JSON-LD structured data */}
+        {/* JSON-LD structured data — @graph linking lets per-page schemas reference these by @id */}
         <Script
-          id="organization-jsonld"
+          id="site-graph-jsonld"
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
-        />
-        <Script
-          id="website-jsonld"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(SITE_GRAPH_JSONLD) }}
         />
 
         {/* Travelpayouts site verification */}

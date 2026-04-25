@@ -9,6 +9,7 @@ import HowItWorks from "@/components/home/HowItWorks";
 import MapSection from "@/components/home/MapSection";
 import AirlineComparisonSection from "@/components/home/AirlineComparisonSection";
 import RecentBlogPosts from "@/components/home/RecentBlogPosts";
+import HubLinks from "@/components/home/HubLinks";
 import WhyMexicoSection from "@/components/editorial/WhyMexicoSection";
 import { seoAlternates, seoOpenGraph } from "@/lib/utils";
 
@@ -53,6 +54,7 @@ export default async function HomePage({ params: { locale } }: { params: { local
       <MapSection destinations={destinations} />
       <FeaturedDestinations destinations={destinations.slice(0, 6)} />
       <RecentBlogPosts posts={recentPosts} />
+      <HubLinks locale={locale} />
       <HowItWorks />
     </>
   );

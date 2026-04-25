@@ -6,6 +6,7 @@ import { Locale } from "@/types/common";
 import { setRequestLocale } from "next-intl/server";
 import MundialVenueDetail from "@/components/mundial/MundialVenueDetail";
 import { buildVenueMatchesSchema, buildBreadcrumbList, buildStadiumPlaceSchema } from "@/lib/mundial-schema";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 export async function generateStaticParams() {
   const venues = await getAllMundialVenues();
@@ -80,6 +81,15 @@ export default async function MundialVenuePage({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(evt) }}
         />
       ))}
+      <div className="container-custom pt-4">
+        <Breadcrumbs
+          items={[
+            { name: t3(locale as Locale, "Inicio", "Home", "Accueil"), href: `/${locale}` },
+            { name: t3(locale as Locale, "Mundial 2026", "World Cup 2026", "Coupe du Monde 2026"), href: `/${locale}/mundial` },
+            { name: venueName },
+          ]}
+        />
+      </div>
       <MundialVenueDetail venue={venue} destination={destination} />
     </>
   );

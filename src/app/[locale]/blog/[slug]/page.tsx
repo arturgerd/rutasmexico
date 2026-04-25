@@ -100,12 +100,7 @@ export default async function BlogPostPage({
           : "Founder and editor of RutasMéxico",
       worksFor: { "@type": "Organization", name: "RutasMéxico", url: baseUrl },
     },
-    publisher: {
-      "@type": "Organization",
-      name: "RutasMéxico",
-      url: baseUrl,
-      logo: { "@type": "ImageObject", url: `${baseUrl}/logo.png`, width: 512, height: 512 },
-    },
+    publisher: { "@id": `${baseUrl}/#organization` },
     datePublished: post.publishedDate,
     ...(post.updatedDate && { dateModified: post.updatedDate }),
     mainEntityOfPage: `${baseUrl}/${locale}/blog/${slug}`,

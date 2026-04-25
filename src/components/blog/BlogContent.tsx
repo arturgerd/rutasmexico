@@ -6,14 +6,30 @@ import Link from "next/link";
 import { BlogPost } from "@/types/blog";
 import { l, t3 } from "@/lib/utils";
 import { getCategoryLabel, getCategoryColor } from "./BlogCard";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 interface RelatedPost {
   slug: string;
   title: string;
 }
 
+// HowTo schemas reference #step-N anchors. Inject those ids into the first 8 H3s
+// of the post body so anchor links resolve and rich result step navigation works.
+function injectStepIds(html: string, isHowTo: boolean): string {
+  if (!isHowTo) return html;
+  let i = 0;
+  return html.replace(/<h3([^>]*)>/gi, (full, attrs) => {
+    if (i >= 8) return full;
+    if (/\bid\s*=/.test(attrs)) return full; // don't override an existing id
+    i += 1;
+    return `<h3${attrs} id="step-${i}">`;
+  });
+}
+
 export default function BlogContent({ post, relatedPosts = [] }: { post: BlogPost; relatedPosts?: RelatedPost[] }) {
   const locale = useLocale();
+  const isHowTo = /^(como-|cuanto-cuesta|hoteles-|vuelos-|que-hacer)/.test(post.slug)
+    || post.tags?.some((t) => /como|paso|guia/.test(t));
 
   const formatDate = (dateStr: string) => {
     const date = new Date(dateStr + "T12:00:00");
@@ -26,18 +42,14 @@ export default function BlogContent({ post, relatedPosts = [] }: { post: BlogPos
 
   return (
     <article className="max-w-4xl mx-auto">
-      {/* Breadcrumb */}
-      <nav className="text-sm text-arena-400 mb-6">
-        <Link href={`/${locale}`} className="hover:text-terracotta-500 transition-colors">
-          {t3(locale, "Inicio", "Home", "Accueil")}
-        </Link>
-        <span className="mx-2">/</span>
-        <Link href={`/${locale}/blog`} className="hover:text-terracotta-500 transition-colors">
-          Blog
-        </Link>
-        <span className="mx-2">/</span>
-        <span className="text-arena-600">{l(post.title, locale)}</span>
-      </nav>
+      <Breadcrumbs
+        className="mb-6"
+        items={[
+          { name: t3(locale, "Inicio", "Home", "Accueil"), href: `/${locale}` },
+          { name: "Blog", href: `/${locale}/blog` },
+          { name: l(post.title, locale) },
+        ]}
+      />
 
       {/* Header */}
       <header className="mb-8">
@@ -101,7 +113,7 @@ export default function BlogContent({ post, relatedPosts = [] }: { post: BlogPos
           prose-ul:my-4 prose-ol:my-4
           prose-img:rounded-xl
         "
-        dangerouslySetInnerHTML={{ __html: l(post.content, locale) }}
+        dangerouslySetInnerHTML={{ __html: injectStepIds(l(post.content, locale), isHowTo) }}
       />
 
       {/* Tags */}

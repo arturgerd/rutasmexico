@@ -7,6 +7,7 @@ import { localize, seoAlternates } from "@/lib/utils";
 import { Locale } from "@/types/common";
 import { setRequestLocale } from "next-intl/server";
 import DestinationDetail from "@/components/destinations/DestinationDetail";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 export async function generateStaticParams() {
   const destinations = await getAllDestinations();
@@ -99,10 +100,12 @@ export default async function DestinationPage({
   const placeSchema = {
     "@context": "https://schema.org",
     "@type": "TouristDestination",
+    "@id": `${canonicalUrl}#destination`,
     name,
     description,
     url: canonicalUrl,
     image: imageUrl,
+    isPartOf: { "@id": `${baseUrl}/#website` },
     address: {
       "@type": "PostalAddress",
       addressLocality: name,
@@ -197,6 +200,15 @@ export default async function DestinationPage({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       )}
+      <div className="container-custom pt-4">
+        <Breadcrumbs
+          items={[
+            { name: locale === "es" ? "Inicio" : locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
+            { name: locale === "es" ? "Destinos" : locale === "fr" ? "Destinations" : "Destinations", href: `/${locale}/destinos` },
+            { name },
+          ]}
+        />
+      </div>
       <DestinationDetail
         destination={destination}
         routes={routes}

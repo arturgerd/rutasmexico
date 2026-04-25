@@ -56,21 +56,30 @@ export default function DestinationGrid({ destinations }: DestinationGridProps) 
               </div>
             </div>
             <div className="p-4">
-              <p className="text-arena-500 text-sm line-clamp-2">
+              <p className="text-arena-700 text-sm line-clamp-2">
                 {localize(dest.description, locale)}
               </p>
               <div className="mt-3 flex items-center justify-between text-xs">
-                <span className="text-arena-400 flex items-center gap-1">
+                <span className="text-arena-700 font-medium flex items-center gap-1">
                   <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                   {dest.shortName}
                 </span>
-                <span className="font-semibold text-terracotta-600 bg-terracotta-50 px-2 py-0.5 rounded-full">
-                  {formatCurrency(dest.averageDailyBudget.min)}/{locale === "es" ? "día" : "day"}
+                <span className="font-semibold text-terracotta-700 bg-terracotta-50 px-2 py-0.5 rounded-full">
+                  {locale === "es" ? "Desde" : "From"} {formatCurrency(dest.averageDailyBudget.min)}/{locale === "es" ? "día" : "day"}
                 </span>
               </div>
+              {dest.bestTimeToVisit && (
+                <p className="mt-2 text-xs text-arena-700 line-clamp-1 flex items-start gap-1.5">
+                  <svg className="w-3.5 h-3.5 flex-shrink-0 mt-0.5 text-jade-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <rect x="3" y="4" width="18" height="18" rx="2" />
+                    <path strokeLinecap="round" d="M16 2v4M8 2v4M3 10h18" />
+                  </svg>
+                  <span><span className="font-medium">{locale === "es" ? "Mejor época: " : "Best time: "}</span>{localize(dest.bestTimeToVisit, locale)}</span>
+                </p>
+              )}
             </div>
           </Link>
         );

@@ -9,6 +9,7 @@ import { localize, seoAlternates } from "@/lib/utils";
 import { Locale } from "@/types/common";
 import { setRequestLocale } from "next-intl/server";
 import RouteDetail from "@/components/routes/RouteDetail";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 export async function generateStaticParams() {
   const routes = await getAllRoutes();
@@ -187,6 +188,15 @@ export default async function RouteDetailPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <div className="container-custom pt-4">
+        <Breadcrumbs
+          items={[
+            { name: locale === "es" ? "Inicio" : locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
+            { name: locale === "es" ? "Rutas" : locale === "fr" ? "Itinéraires" : "Routes", href: `/${locale}/rutas` },
+            { name: `${originName} → ${destName}` },
+          ]}
+        />
+      </div>
       <RouteDetail
         route={route}
         origin={origin}
