@@ -5,6 +5,8 @@ import { useTranslations } from "next-intl";
 import { Airport } from "@/types/airport";
 import TravelSearchTabs from "@/components/widgets/TravelSearchTabs";
 import { PAGE_HERO_IMAGES } from "@/lib/destination-images";
+import FlagMX from "@/components/ui/FlagMX";
+import Icon from "@/components/ui/Icon";
 
 interface HeroSectionProps {
   airports: Airport[];
@@ -39,7 +41,7 @@ export default function HeroSection({ airports }: HeroSectionProps) {
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm rounded-full px-4 py-2 mb-6 border border-white/20">
-            <span className="text-lg">🇲🇽</span>
+            <FlagMX className="w-5 h-3.5" />
             <span className="text-white text-sm font-medium">
               {t("heroTitle").includes("México") ? "La mejor guía de viaje por México" : "The best travel guide for Mexico"}
             </span>
@@ -57,13 +59,13 @@ export default function HeroSection({ airports }: HeroSectionProps) {
 
           {/* Trust badges */}
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            {[
-              { icon: "✈️", text: "700+ aerolíneas", textEn: "700+ airlines" },
-              { icon: "🏨", text: "2M+ hoteles", textEn: "2M+ hotels" },
-              { icon: "🚌", text: "30+ líneas de autobús", textEn: "30+ bus lines" },
-            ].map((badge) => (
+            {([
+              { icon: "plane", text: "700+ aerolíneas", textEn: "700+ airlines" },
+              { icon: "hotel", text: "2M+ hoteles", textEn: "2M+ hotels" },
+              { icon: "bus", text: "30+ líneas de autobús", textEn: "30+ bus lines" },
+            ] as const).map((badge) => (
               <div key={badge.icon} className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 border border-white/10">
-                <span>{badge.icon}</span>
+                <Icon name={badge.icon} className="w-4 h-4 text-white/90" />
                 <span className="text-white/90 text-xs font-medium">
                   {t("heroTitle").includes("México") ? badge.text : badge.textEn}
                 </span>

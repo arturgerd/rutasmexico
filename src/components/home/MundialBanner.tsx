@@ -8,7 +8,7 @@ export default function MundialBanner({ locale }: { locale: string }) {
   const daysUntil = Math.max(0, Math.ceil((OPENING_MATCH.getTime() - now.getTime()) / (1000 * 60 * 60 * 24)));
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-jade-600 via-emerald-700 to-arena-900 py-12 md:py-16">
+    <section className="relative overflow-hidden bg-gradient-to-br from-jade-600 via-jade-700 to-terracotta-900 py-12 md:py-16">
       <div
         className="absolute inset-0 opacity-10"
         style={{

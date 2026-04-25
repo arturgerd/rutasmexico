@@ -5,15 +5,15 @@ import { Locale } from "@/types/common";
 import { getFlightSearchUrl, getFlightSearchGenericUrl } from "@/lib/affiliate";
 import { trackAffiliateClick } from "@/lib/analytics";
 
-// Mexican airlines data with brand colors
+// Mexican airlines data — accent color used only for the logo badge and hub chips,
+// CTA buttons unified in brand terracotta to avoid visual chaos across the grid.
 const MEXICAN_AIRLINES = [
   {
     id: "volaris",
     name: "Volaris",
-    logo: "🟣",
-    color: "from-purple-600 to-purple-700",
+    initials: "V",
+    accent: "bg-purple-600",
     bgLight: "bg-purple-50",
-    borderColor: "border-purple-200",
     textColor: "text-purple-700",
     tagline: { es: "Ultra bajo costo", en: "Ultra low cost" },
     hubs: ["MEX", "GDL", "TIJ"],
@@ -22,10 +22,9 @@ const MEXICAN_AIRLINES = [
   {
     id: "vivaaerobus",
     name: "VivaAerobus",
-    logo: "🟡",
-    color: "from-yellow-500 to-yellow-600",
+    initials: "VA",
+    accent: "bg-yellow-500",
     bgLight: "bg-yellow-50",
-    borderColor: "border-yellow-200",
     textColor: "text-yellow-700",
     tagline: { es: "Bajo costo mexicana", en: "Mexican low cost" },
     hubs: ["MTY", "MEX", "CUN"],
@@ -34,10 +33,9 @@ const MEXICAN_AIRLINES = [
   {
     id: "aeromexico",
     name: "Aeroméxico",
-    logo: "🔵",
-    color: "from-blue-700 to-blue-800",
+    initials: "AM",
+    accent: "bg-blue-700",
     bgLight: "bg-blue-50",
-    borderColor: "border-blue-200",
     textColor: "text-blue-700",
     tagline: { es: "Aerolínea bandera de México", en: "Mexico's flag carrier" },
     hubs: ["MEX", "GDL", "MTY"],
@@ -46,10 +44,9 @@ const MEXICAN_AIRLINES = [
   {
     id: "tar",
     name: "TAR Aerolíneas",
-    logo: "🟢",
-    color: "from-green-600 to-green-700",
+    initials: "TAR",
+    accent: "bg-green-600",
     bgLight: "bg-green-50",
-    borderColor: "border-green-200",
     textColor: "text-green-700",
     tagline: { es: "Conectando ciudades medianas", en: "Connecting mid-size cities" },
     hubs: ["QRO", "AGU", "GDL"],
@@ -58,10 +55,9 @@ const MEXICAN_AIRLINES = [
   {
     id: "magnicharters",
     name: "MagniCharters",
-    logo: "🔴",
-    color: "from-red-600 to-red-700",
+    initials: "MC",
+    accent: "bg-red-600",
     bgLight: "bg-red-50",
-    borderColor: "border-red-200",
     textColor: "text-red-700",
     tagline: { es: "Vuelos chárter nacionales", en: "National charter flights" },
     hubs: ["MEX", "GDL"],
@@ -70,10 +66,9 @@ const MEXICAN_AIRLINES = [
   {
     id: "aeromar",
     name: "Aeromar / Aerus",
-    logo: "🟠",
-    color: "from-orange-500 to-orange-600",
+    initials: "AE",
+    accent: "bg-orange-500",
     bgLight: "bg-orange-50",
-    borderColor: "border-orange-200",
     textColor: "text-orange-700",
     tagline: { es: "Rutas regionales", en: "Regional routes" },
     hubs: ["MEX", "OAX", "MID"],
@@ -140,9 +135,9 @@ export default function AirlineGrid({ originIATA, destIATA, compact = false, sho
             <button
               key={airline.id}
               onClick={() => handleAirlineSearch(airline.id)}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border transition-all hover:shadow-md hover:scale-105 ${airline.bgLight} ${airline.borderColor} ${airline.textColor}`}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border border-arena-200 bg-white text-arena-700 transition-all hover:shadow-md hover:border-terracotta-300 hover:text-terracotta-700"
             >
-              <span>{airline.logo}</span>
+              <span className={`w-2 h-2 rounded-full ${airline.accent}`} aria-hidden />
               <span>{airline.name}</span>
             </button>
           ))}
@@ -160,7 +155,7 @@ export default function AirlineGrid({ originIATA, destIATA, compact = false, sho
               ? "Compara todas las aerolíneas mexicanas"
               : "Compare all Mexican airlines"}
           </h2>
-          <p className="text-arena-500 text-sm md:text-base max-w-2xl mx-auto">
+          <p className="text-arena-700 text-sm md:text-base max-w-2xl mx-auto">
             {locale === "es"
               ? "Encuentra el vuelo más barato comparando precios de Volaris, VivaAerobus, Aeroméxico, TAR y más aerolíneas en un solo lugar"
               : "Find the cheapest flight comparing prices from Volaris, VivaAerobus, Aeromexico, TAR and more airlines in one place"}
@@ -177,14 +172,14 @@ export default function AirlineGrid({ originIATA, destIATA, compact = false, sho
           >
             {/* Airline header */}
             <div className="flex items-center gap-3 mb-3">
-              <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${airline.color} flex items-center justify-center text-2xl shadow-lg`}>
-                {airline.logo}
+              <div className={`w-12 h-12 rounded-xl ${airline.accent} flex items-center justify-center text-white font-display font-bold text-base shadow-md`}>
+                {airline.initials}
               </div>
               <div>
                 <h3 className="font-display font-bold text-arena-900 group-hover:text-terracotta-600 transition-colors">
                   {airline.name}
                 </h3>
-                <p className="text-xs text-arena-400">
+                <p className="text-xs text-arena-700">
                   {airline.tagline[locale]}
                 </p>
               </div>
@@ -192,7 +187,7 @@ export default function AirlineGrid({ originIATA, destIATA, compact = false, sho
 
             {/* Hubs */}
             <div className="flex items-center gap-1 mb-3">
-              <span className="text-xs text-arena-400">
+              <span className="text-xs text-arena-700">
                 {locale === "es" ? "Hubs:" : "Hubs:"}
               </span>
               <div className="flex gap-1">
@@ -204,8 +199,8 @@ export default function AirlineGrid({ originIATA, destIATA, compact = false, sho
               </div>
             </div>
 
-            {/* CTA */}
-            <div className={`text-center py-2.5 rounded-xl text-sm font-semibold transition-all bg-gradient-to-r ${airline.color} text-white opacity-80 group-hover:opacity-100 shadow-md`}>
+            {/* CTA — unified terracotta brand color across all cards */}
+            <div className="text-center py-2.5 rounded-xl text-sm font-semibold transition-all bg-arena-100 text-arena-700 group-hover:bg-terracotta-500 group-hover:text-white">
               {locale === "es" ? "Comparar precios →" : "Compare prices →"}
             </div>
           </button>
@@ -213,7 +208,7 @@ export default function AirlineGrid({ originIATA, destIATA, compact = false, sho
       </div>
 
       {/* Trust badge */}
-      <div className="flex items-center justify-center gap-2 text-sm text-arena-400 bg-arena-50 rounded-xl py-3 px-4">
+      <div className="flex items-center justify-center gap-2 text-sm text-arena-700 bg-arena-50 rounded-xl py-3 px-4">
         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
         </svg>

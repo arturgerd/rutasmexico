@@ -1,4 +1,5 @@
 import { t3 } from "@/lib/utils";
+import Icon from "@/components/ui/Icon";
 
 interface Props {
   locale: string;
@@ -10,7 +11,9 @@ export default function WhyMexicoSection({ locale }: Props) {
       <div className="container-custom">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <span className="text-4xl mb-3 block">🌮</span>
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-terracotta-50 text-terracotta-600 mb-4">
+              <Icon name="compass" className="w-7 h-7" />
+            </div>
             <h2 className="font-display text-3xl md:text-5xl font-bold text-arena-900 mb-4">
               {t3(locale,
                 "Por que viajar por Mexico",
@@ -47,7 +50,9 @@ export default function WhyMexicoSection({ locale }: Props) {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
             <div className="p-6 bg-gradient-to-br from-terracotta-50 to-terracotta-100 rounded-2xl border border-terracotta-200">
-              <span className="text-3xl block mb-3">🏛️</span>
+              <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-white/70 text-terracotta-700 mb-3">
+                <Icon name="landmark" />
+              </div>
               <h3 className="font-display font-bold text-arena-900 text-xl mb-2">
                 {t3(locale, "Historia viva", "Living history", "Histoire vivante")}
               </h3>
@@ -61,7 +66,9 @@ export default function WhyMexicoSection({ locale }: Props) {
             </div>
 
             <div className="p-6 bg-gradient-to-br from-azul-50 to-azul-100 rounded-2xl border border-azul-200">
-              <span className="text-3xl block mb-3">🏖️</span>
+              <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-white/70 text-azul-700 mb-3">
+                <Icon name="waves" />
+              </div>
               <h3 className="font-display font-bold text-arena-900 text-xl mb-2">
                 {t3(locale, "Dos oceanos, miles de playas", "Two oceans, thousands of beaches", "Deux océans, des milliers de plages")}
               </h3>
@@ -75,7 +82,9 @@ export default function WhyMexicoSection({ locale }: Props) {
             </div>
 
             <div className="p-6 bg-gradient-to-br from-jade-50 to-jade-100 rounded-2xl border border-jade-200">
-              <span className="text-3xl block mb-3">🌮</span>
+              <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-white/70 text-jade-600 mb-3">
+                <Icon name="utensils" />
+              </div>
               <h3 className="font-display font-bold text-arena-900 text-xl mb-2">
                 {t3(locale, "Gastronomia Patrimonio UNESCO", "UNESCO Heritage cuisine", "Gastronomie UNESCO")}
               </h3>
@@ -89,7 +98,9 @@ export default function WhyMexicoSection({ locale }: Props) {
             </div>
 
             <div className="p-6 bg-gradient-to-br from-oro-50 to-oro-100 rounded-2xl border border-oro-200">
-              <span className="text-3xl block mb-3">💰</span>
+              <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-white/70 text-oro-700 mb-3">
+                <Icon name="wallet" />
+              </div>
               <h3 className="font-display font-bold text-arena-900 text-xl mb-2">
                 {t3(locale, "Destino accesible", "Affordable destination", "Destination abordable")}
               </h3>
