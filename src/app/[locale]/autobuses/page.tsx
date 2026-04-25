@@ -13,7 +13,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     ? "Boletos de autobús baratos 2026 | ADO, ETN y más"
     : "Cheap bus tickets in Mexico 2026 | ADO, ETN & more";
   const description = locale === "es"
-    ? "Compara precios de boletos de autobus de ADO, ETN, Primera Plus, Estrella Roja, Pullman y mas lineas en Mexico. Encuentra el autobus mas barato."
+    ? "Compara precios de boletos de autobús de ADO, ETN, Primera Plus, Estrella Roja, Pullman y más líneas en México. Encuentra el autobús más barato."
     : "Compare bus ticket prices from ADO, ETN, Primera Plus, Estrella Roja, Pullman and more lines in Mexico. Find the cheapest bus.";
   return {
     title,
@@ -129,7 +129,7 @@ export default async function AutobusesPage({ params: { locale } }: { params: { 
       <div className="relative py-16 md:py-20 overflow-hidden">
         <Image
           src={PAGE_HERO_IMAGES.buses}
-          alt={locale === "es" ? "Boletos de autobus en Mexico" : "Bus tickets in Mexico"}
+          alt={locale === "es" ? "Boletos de autobús en México: ADO, ETN, Primera Plus y más líneas" : "Bus tickets in Mexico: ADO, ETN, Primera Plus and more lines"}
           fill
           className="object-cover"
           priority
@@ -141,17 +141,17 @@ export default async function AutobusesPage({ params: { locale } }: { params: { 
             <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm rounded-full px-4 py-2 mb-4 border border-white/20">
               <span>🚌</span>
               <span className="text-white text-sm font-medium">
-                {locale === "es" ? "Compara 30+ lineas de autobus" : "Compare 30+ bus lines"}
+                {locale === "es" ? "Compara 30+ líneas de autobús" : "Compare 30+ bus lines"}
               </span>
             </div>
             <h1 className="font-display text-3xl md:text-5xl font-bold text-white mb-3 drop-shadow-lg">
               {locale === "es"
-                ? "Boletos de autobus baratos en Mexico"
+                ? "Boletos de autobús baratos en México"
                 : "Cheap bus tickets in Mexico"}
             </h1>
             <p className="text-white/90 text-lg max-w-2xl mx-auto drop-shadow">
               {locale === "es"
-                ? "Compara precios de ADO, ETN, Primera Plus, Estrella Roja y todas las lineas de autobus"
+                ? "Compara precios de ADO, ETN, Primera Plus, Estrella Roja y todas las líneas de autobús"
                 : "Compare prices from ADO, ETN, Primera Plus, Estrella Roja and all bus lines"}
             </p>
           </div>
@@ -174,7 +174,7 @@ export default async function AutobusesPage({ params: { locale } }: { params: { 
           {/* How it works */}
           <div className="mt-12 bg-white rounded-2xl shadow-lg border border-arena-100 p-6 md:p-8">
             <h2 className="font-display text-2xl font-bold text-arena-900 mb-6 text-center">
-              {locale === "es" ? "Como funciona?" : "How does it work?"}
+              {locale === "es" ? "¿Cómo funciona?" : "How does it work?"}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center">
@@ -186,7 +186,7 @@ export default async function AutobusesPage({ params: { locale } }: { params: { 
                 </h3>
                 <p className="text-sm text-arena-500">
                   {locale === "es"
-                    ? "Elige ciudad de origen, destino y fecha. Comparamos mas de 30 lineas de autobus."
+                    ? "Elige ciudad de origen, destino y fecha. Comparamos más de 30 líneas de autobús."
                     : "Choose origin city, destination and date. We compare over 30 bus lines."}
                 </p>
               </div>
@@ -199,7 +199,7 @@ export default async function AutobusesPage({ params: { locale } }: { params: { 
                 </h3>
                 <p className="text-sm text-arena-500">
                   {locale === "es"
-                    ? "Ve precios de ADO, ETN, Primera Plus, Pullman y todas las lineas de autobus lado a lado."
+                    ? "Ve precios de ADO, ETN, Primera Plus, Pullman y todas las líneas de autobús lado a lado."
                     : "See prices from ADO, ETN, Primera Plus, Pullman and all bus lines side by side."}
                 </p>
               </div>
@@ -212,7 +212,7 @@ export default async function AutobusesPage({ params: { locale } }: { params: { 
                 </h3>
                 <p className="text-sm text-arena-500">
                   {locale === "es"
-                    ? "Reserva en linea y recibe tu boleto electronico. Sin filas en la terminal."
+                    ? "Reserva en línea y recibe tu boleto electrónico. Sin filas en la terminal."
                     : "Book online and receive your e-ticket. No lines at the terminal."}
                 </p>
               </div>
@@ -222,14 +222,14 @@ export default async function AutobusesPage({ params: { locale } }: { params: { 
           {/* Tips section */}
           <div className="mt-8 bg-white rounded-2xl shadow-lg border border-arena-100 p-6 md:p-8">
             <h2 className="font-display text-xl font-bold text-arena-900 mb-4">
-              {locale === "es" ? "💡 Tips para viajar en autobus por Mexico" : "💡 Tips for bus travel in Mexico"}
+              {locale === "es" ? "💡 Tips para viajar en autobús por México" : "💡 Tips for bus travel in Mexico"}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex gap-3">
                 <span className="text-lg">🎫</span>
                 <div>
                   <h3 className="font-semibold text-arena-900 text-sm">
-                    {locale === "es" ? "Compra con anticipacion" : "Buy in advance"}
+                    {locale === "es" ? "Compra con anticipación" : "Buy in advance"}
                   </h3>
                   <p className="text-xs text-arena-500">
                     {locale === "es"
@@ -268,11 +268,11 @@ export default async function AutobusesPage({ params: { locale } }: { params: { 
                 <span className="text-lg">📱</span>
                 <div>
                   <h3 className="font-semibold text-arena-900 text-sm">
-                    {locale === "es" ? "Boleto electronico" : "E-ticket"}
+                    {locale === "es" ? "Boleto electrónico" : "E-ticket"}
                   </h3>
                   <p className="text-xs text-arena-500">
                     {locale === "es"
-                      ? "La mayoria acepta boleto en el celular. Llega 30 min antes para abordar."
+                      ? "La mayoría acepta boleto en el celular. Llega 30 min antes para abordar."
                       : "Most accept mobile tickets. Arrive 30 min early to board."}
                   </p>
                 </div>

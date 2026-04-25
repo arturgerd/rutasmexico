@@ -16,6 +16,14 @@ export const metadata = {
   },
   verification: {
     google: "a588a56f7dc54021",
+    other: {
+      // AdSense site ownership without loading the auto-ads script. The script was
+      // injecting "Publicidad" placeholder labels visible to reviewers (caught by
+      // an external SEO audit) which made the site read as ad-stuffed during the
+      // re-application window. Switch back to the script tag once AdSense approves
+      // and we wire explicit <ins class="adsbygoogle"> slots.
+      "google-adsense-account": "ca-pub-6589074911542620",
+    },
   },
 };
 
@@ -26,7 +34,9 @@ export const viewport = {
 };
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID; // e.g. "G-XXXXXXXXXX"
-const ADSENSE_CLIENT = "ca-pub-6589074911542620";
+// AdSense client kept here for reference; currently surfaced via the
+// google-adsense-account meta tag rather than the adsbygoogle.js script.
+// const ADSENSE_CLIENT = "ca-pub-6589074911542620";
 
 // Site-wide schemas use @graph + @id so per-page Article/TouristDestination/Event schemas
 // can reference Organization/WebSite by id without re-declaring them.
@@ -132,13 +142,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </>
         )}
 
-        {/* Google AdSense — loads always so Google can verify ownership; serving is gated by Consent Mode */}
-        <Script
-          id="google-adsense"
-          strategy="afterInteractive"
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
-          crossOrigin="anonymous"
-        />
+        {/* AdSense script intentionally NOT loaded during the re-application window —
+            ownership is now verified via the google-adsense-account meta tag (in metadata.verification),
+            so we avoid auto-ad placeholder labels that get inserted while the account is still gated.
+            Re-enable this Script tag once AdSense approves and we wire explicit ad slots. */}
 
         {/* JSON-LD structured data — @graph linking lets per-page schemas reference these by @id */}
         <Script

@@ -42,7 +42,12 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
     p.slug.includes("mundial") || p.slug.includes("estadio-azteca") || p.slug.includes("estadio-bbva")
   ).slice(0, 6);
 
-  const totalMatches = venues.reduce((sum, v) => sum + v.matches.length, 0);
+  // FIFA-official totals for the 48-team format (https://www.fifa.com/.../canadamexicousa2026).
+  // The matches array in mundial-venues.json only stores a curated subset (≈62 of 104) for the
+  // city guides, so we display the official count in the hero stats and reserve `documentedMatches`
+  // for components that iterate over what we actually have authored content for.
+  const TOURNAMENT_TOTAL_MATCHES = 104;
+  const documentedMatches = venues.reduce((sum, v) => sum + v.matches.length, 0);
   const mexicoMatches = venues.reduce((sum, v) => sum + v.matches.filter(m => m.isMexicoGame).length, 0);
   const allMexicoGames = venues.flatMap(v => v.matches.filter(m => m.isMexicoGame)).sort((a, b) => a.date.localeCompare(b.date));
   const mxVenues = venues.filter(v => (v.country ?? "MX") === "MX");
@@ -94,7 +99,7 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
                 <div className="text-xs text-arena-400 mt-1">{t3(locale, "Ciudades sede", "Host cities", "Villes hôtes")}</div>
               </div>
               <div className="bg-arena-800 rounded-xl p-4 border border-arena-700">
-                <div className="text-3xl font-bold text-oro-400">{totalMatches}</div>
+                <div className="text-3xl font-bold text-oro-400">{TOURNAMENT_TOTAL_MATCHES}</div>
                 <div className="text-xs text-arena-400 mt-1">{t3(locale, "Partidos totales", "Total matches", "Matchs au total")}</div>
               </div>
               <div className="bg-arena-800 rounded-xl p-4 border border-arena-700">

@@ -20,7 +20,7 @@ export default function HeroSection({ airports }: HeroSectionProps) {
       {/* Background image */}
       <Image
         src={PAGE_HERO_IMAGES.home}
-        alt="Mexico travel destinations"
+        alt="Vista panorámica de destinos turísticos en México: ciudades, playas y arquitectura"
         fill
         className="object-cover"
         priority
