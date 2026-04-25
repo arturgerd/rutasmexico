@@ -57,34 +57,56 @@ export default function BlogContent({ post, relatedPosts = [] }: { post: BlogPos
           <span className={`inline-block text-xs font-semibold px-3 py-1 rounded-full border ${getCategoryColor(post.category)}`}>
             {getCategoryLabel(post.category, locale)}
           </span>
-          <span className="text-sm text-arena-400">
-            {post.readingTime} {t3(locale, "min de lectura", "min read", "min de lecture")}
-          </span>
         </div>
 
         <h1 className="font-display text-3xl sm:text-4xl font-bold text-arena-900 leading-tight">
           {l(post.title, locale)}
         </h1>
 
-        <p className="text-lg text-arena-500 mt-4">
+        <p className="text-lg text-arena-700 mt-4">
           {l(post.excerpt, locale)}
         </p>
 
-        <div className="flex items-center gap-4 mt-6 text-sm text-arena-400">
-          <span className="flex items-center gap-1.5">
-            ✍️ {post.author}
-          </span>
-          <span>•</span>
-          <time dateTime={post.publishedDate}>{formatDate(post.publishedDate)}</time>
-          {post.updatedDate && (
-            <>
-              <span>•</span>
-              <span>
-                {t3(locale, "Actualizado:", "Updated:", "Mis à jour :")}{" "}
-                <time dateTime={post.updatedDate}>{formatDate(post.updatedDate)}</time>
+        {/* Author byline — visible E-E-A-T signal, links to the editor profile */}
+        <div className="flex items-center gap-3 mt-6 pb-6 border-b border-arena-200">
+          <Link
+            href={`/${locale}/nosotros`}
+            aria-label={`${t3(locale, "Sobre", "About", "À propos de")} ${post.author}`}
+            className="w-11 h-11 rounded-full bg-gradient-to-br from-terracotta-500 to-terracotta-700 flex items-center justify-center font-display font-bold text-sm text-white shadow-sm flex-shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 focus-visible:ring-offset-2"
+          >
+            {post.author.split(" ").map((n) => n[0]).slice(0, 2).join("")}
+          </Link>
+          <div className="text-sm">
+            <div className="text-arena-900">
+              <span className="text-arena-500">
+                {t3(locale, "Por ", "By ", "Par ")}
               </span>
-            </>
-          )}
+              <Link
+                href={`/${locale}/nosotros`}
+                className="font-semibold hover:text-terracotta-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 rounded"
+              >
+                {post.author}
+              </Link>
+              <span className="text-arena-700"> · </span>
+              <span className="text-arena-700">
+                {t3(locale, "Editor de RutasMéxico", "Editor at RutasMéxico", "Éditeur de RutasMéxico")}
+              </span>
+            </div>
+            <div className="text-arena-700 mt-0.5 flex flex-wrap items-center gap-x-1.5">
+              <time dateTime={post.publishedDate}>{formatDate(post.publishedDate)}</time>
+              {post.updatedDate && (
+                <>
+                  <span>·</span>
+                  <span>
+                    {t3(locale, "Actualizado", "Updated", "Mis à jour")}{" "}
+                    <time dateTime={post.updatedDate}>{formatDate(post.updatedDate)}</time>
+                  </span>
+                </>
+              )}
+              <span>·</span>
+              <span>{post.readingTime} {t3(locale, "min de lectura", "min read", "min de lecture")}</span>
+            </div>
+          </div>
         </div>
       </header>
 
