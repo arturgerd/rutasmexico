@@ -25,29 +25,50 @@ export async function generateMetadata({ params: { locale, slug } }: { params: {
   const year = new Date().getFullYear();
   const baseUrl = "https://rutasmexico.com.mx";
   const canonicalPath = `/${locale}/destinos/${slug}`;
+  const ogImage = destination.heroImage?.startsWith("/")
+    ? `${baseUrl}${destination.heroImage}`
+    : destination.heroImage;
 
   if (locale === "es") {
+    const title = `${name}, ${state}: Guía de viaje y cómo llegar ${year}`;
+    const description = `Guía completa de ${name}: qué hacer, cómo llegar, dónde comer y mejores épocas para visitar. ${localize(destination.description, locale as Locale)}`;
     return {
-      title: `${name}, ${state}: Guía de viaje y cómo llegar ${year}`,
-      description: `Guía completa de ${name}: qué hacer, cómo llegar, dónde comer y mejores épocas para visitar. ${localize(destination.description, locale as Locale)}`,
+      title,
+      description,
       alternates: seoAlternates(locale, `/destinos/${slug}`),
       openGraph: {
         title: `${name}: Guía de viaje ${year}`,
         description: localize(destination.description, locale as Locale),
         url: `${baseUrl}${canonicalPath}`,
         type: "article",
+        ...(ogImage ? { images: [{ url: ogImage, width: 1200, height: 630, alt: name }] } : {}),
+      },
+      twitter: {
+        card: "summary_large_image" as const,
+        title,
+        description,
+        ...(ogImage ? { images: [ogImage] } : {}),
       },
     };
   }
+  const title = `${name}, ${state}: Travel guide & how to get there ${year}`;
+  const description = `Complete guide to ${name}: things to do, how to get there, where to eat and best times to visit. ${localize(destination.description, locale as Locale)}`;
   return {
-    title: `${name}, ${state}: Travel guide & how to get there ${year}`,
-    description: `Complete guide to ${name}: things to do, how to get there, where to eat and best times to visit. ${localize(destination.description, locale as Locale)}`,
+    title,
+    description,
     alternates: seoAlternates(locale, `/destinos/${slug}`),
     openGraph: {
       title: `${name}: Travel guide ${year}`,
       description: localize(destination.description, locale as Locale),
       url: `${baseUrl}${canonicalPath}`,
       type: "article",
+      ...(ogImage ? { images: [{ url: ogImage, width: 1200, height: 630, alt: name }] } : {}),
+    },
+    twitter: {
+      card: "summary_large_image" as const,
+      title,
+      description,
+      ...(ogImage ? { images: [ogImage] } : {}),
     },
   };
 }

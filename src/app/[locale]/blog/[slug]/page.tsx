@@ -24,6 +24,10 @@ export async function generateMetadata({ params: { locale, slug } }: { params: {
   const baseUrl = "https://rutasmexico.com.mx";
   const canonicalPath = `/${locale}/blog/${slug}`;
 
+  const ogImage = post.featuredImage?.startsWith("/")
+    ? `${baseUrl}${post.featuredImage}`
+    : post.featuredImage;
+
   return {
     title,
     description,
@@ -36,6 +40,13 @@ export async function generateMetadata({ params: { locale, slug } }: { params: {
       ...(post.updatedDate && { modifiedTime: post.updatedDate }),
       url: `${baseUrl}${canonicalPath}`,
       authors: [post.author],
+      ...(ogImage ? { images: [{ url: ogImage, width: 1200, height: 630, alt: title }] } : {}),
+    },
+    twitter: {
+      card: "summary_large_image" as const,
+      title,
+      description,
+      ...(ogImage ? { images: [ogImage] } : {}),
     },
   };
 }

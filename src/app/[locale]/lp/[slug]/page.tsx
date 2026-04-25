@@ -42,6 +42,7 @@ export async function generateMetadata({ params: { locale, slug } }: { params: {
     description,
     alternates: seoAlternates(locale, `/lp/${slug}`),
     robots: { index: false, follow: false }, // landing pages should not compete with main destination pages in SERPs
+    twitter: { card: "summary_large_image" as const, title, description },
   };
 }
 

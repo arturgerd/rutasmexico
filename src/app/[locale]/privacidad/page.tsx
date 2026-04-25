@@ -1,16 +1,20 @@
 import { setRequestLocale } from "next-intl/server";
 import Link from "next/link";
-import { t3, seoAlternates } from "@/lib/utils";
+import { t3, seoAlternates, seoOpenGraph } from "@/lib/utils";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+  const title = t3(locale, "Política de Privacidad", "Privacy Policy", "Politique de Confidentialité");
+  const description = t3(locale,
+    "Política de privacidad de RutasMéxico. Cómo recopilamos, usamos y protegemos tu información.",
+    "RutasMéxico privacy policy. How we collect, use and protect your information.",
+    "Politique de confidentialité de RutasMéxico. Comment nous collectons, utilisons et protégeons vos informations."
+  );
   return {
-    title: t3(locale, "Política de Privacidad", "Privacy Policy", "Politique de Confidentialité"),
-    description: t3(locale,
-      "Política de privacidad de RutasMéxico. Cómo recopilamos, usamos y protegemos tu información.",
-      "RutasMéxico privacy policy. How we collect, use and protect your information.",
-      "Politique de confidentialité de RutasMéxico. Comment nous collectons, utilisons et protégeons vos informations."
-    ),
+    title,
+    description,
     alternates: seoAlternates(locale, "/privacidad"),
+    openGraph: seoOpenGraph(locale, title, description, "/privacidad"),
+    twitter: { card: "summary" as const, title, description },
   };
 }
 

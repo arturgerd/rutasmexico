@@ -58,12 +58,13 @@ export function slugify(text: string): string {
 const BASE_URL = "https://rutasmexico.com.mx";
 
 export function seoAlternates(locale: string, path: string = "") {
+  // FR intentionally omitted from hreflang map until translations reach parity —
+  // emitting hreflang to thin/Spanish FR pages causes duplicate-content signals.
   return {
     canonical: `${BASE_URL}/${locale}${path}`,
     languages: {
       es: `${BASE_URL}/es${path}`,
       en: `${BASE_URL}/en${path}`,
-      fr: `${BASE_URL}/fr${path}`,
       "x-default": `${BASE_URL}/es${path}`,
     },
   };

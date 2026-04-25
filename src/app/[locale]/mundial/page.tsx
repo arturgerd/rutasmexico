@@ -27,6 +27,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     description,
     alternates: seoAlternates(locale, "/mundial"),
     openGraph: seoOpenGraph(locale, title, description, "/mundial"),
+    twitter: { card: "summary_large_image" as const, title, description },
   };
 }
 

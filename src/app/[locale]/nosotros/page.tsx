@@ -1,20 +1,24 @@
 import { setRequestLocale } from "next-intl/server";
 import Link from "next/link";
-import { t3, seoAlternates } from "@/lib/utils";
+import { t3, seoAlternates, seoOpenGraph } from "@/lib/utils";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+  const title = t3(locale,
+    "Sobre RutasMéxico | Guía de viajes por México",
+    "About RutasMéxico | Mexico Travel Guide & Comparison",
+    "À propos de RutasMéxico | Guide de voyage au Mexique"
+  );
+  const description = t3(locale,
+    "Conoce al equipo detrás de RutasMéxico: comparamos vuelos, autobuses, hoteles y rutas para que viajes por México al mejor precio, sin anuncios invasivos.",
+    "Meet the team behind RutasMéxico: we compare flights, buses, hotels and routes so you can travel Mexico at the best price, without invasive ads.",
+    "Découvrez l'équipe derrière RutasMéxico : nous comparons vols, bus, hôtels et itinéraires pour voyager au Mexique au meilleur prix, sans publicités intrusives."
+  );
   return {
-    title: t3(locale,
-      "Sobre RutasMéxico | Guía de viajes por México",
-      "About RutasMéxico | Mexico Travel Guide & Comparison",
-      "À propos de RutasMéxico | Guide de voyage au Mexique"
-    ),
-    description: t3(locale,
-      "Conoce al equipo detrás de RutasMéxico: comparamos vuelos, autobuses, hoteles y rutas para que viajes por México al mejor precio, sin anuncios invasivos.",
-      "Meet the team behind RutasMéxico: we compare flights, buses, hotels and routes so you can travel Mexico at the best price, without invasive ads.",
-      "Découvrez l'équipe derrière RutasMéxico : nous comparons vols, bus, hôtels et itinéraires pour voyager au Mexique au meilleur prix, sans publicités intrusives."
-    ),
+    title,
+    description,
     alternates: seoAlternates(locale, "/nosotros"),
+    openGraph: seoOpenGraph(locale, title, description, "/nosotros"),
+    twitter: { card: "summary_large_image" as const, title, description },
   };
 }
 

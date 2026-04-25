@@ -1,20 +1,24 @@
 import { setRequestLocale } from "next-intl/server";
 import Link from "next/link";
-import { t3, seoAlternates } from "@/lib/utils";
+import { t3, seoAlternates, seoOpenGraph } from "@/lib/utils";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+  const title = t3(locale,
+    "Contacto RutasMéxico | Preguntas y colaboraciones",
+    "Contact RutasMéxico | Questions & collaborations",
+    "Contact RutasMéxico | Questions et collaborations"
+  );
+  const description = t3(locale,
+    "¿Preguntas sobre vuelos, autobuses, hoteles o rutas en México? Contáctanos para sugerencias, colaboraciones editoriales o reportar errores en RutasMéxico.",
+    "Questions about flights, buses, hotels or routes in Mexico? Contact us for suggestions, editorial collaborations or to report errors on RutasMéxico.",
+    "Questions sur les vols, bus, hôtels ou itinéraires au Mexique ? Contactez-nous pour suggestions, collaborations éditoriales ou signaler des erreurs."
+  );
   return {
-    title: t3(locale,
-      "Contacto RutasMéxico | Preguntas y colaboraciones",
-      "Contact RutasMéxico | Questions & collaborations",
-      "Contact RutasMéxico | Questions et collaborations"
-    ),
-    description: t3(locale,
-      "¿Preguntas sobre vuelos, autobuses, hoteles o rutas en México? Contáctanos para sugerencias, colaboraciones editoriales o reportar errores en RutasMéxico.",
-      "Questions about flights, buses, hotels or routes in Mexico? Contact us for suggestions, editorial collaborations or to report errors on RutasMéxico.",
-      "Questions sur les vols, bus, hôtels ou itinéraires au Mexique ? Contactez-nous pour suggestions, collaborations éditoriales ou signaler des erreurs."
-    ),
+    title,
+    description,
     alternates: seoAlternates(locale, "/contacto"),
+    openGraph: seoOpenGraph(locale, title, description, "/contacto"),
+    twitter: { card: "summary_large_image" as const, title, description },
   };
 }
 

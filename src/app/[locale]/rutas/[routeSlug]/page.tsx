@@ -58,6 +58,7 @@ export async function generateMetadata({ params: { locale, routeSlug } }: { para
       url: `${baseUrl}${canonicalPath}`,
       type: "article",
     },
+    twitter: { card: "summary_large_image" as const, title, description },
   };
 }
 

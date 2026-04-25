@@ -1,25 +1,29 @@
 import { setRequestLocale } from "next-intl/server";
 import { getAllBlogPosts } from "@/lib/data/blog";
 import BlogFilter from "@/components/blog/BlogFilter";
-import { t3, seoAlternates } from "@/lib/utils";
+import { t3, seoAlternates, seoOpenGraph } from "@/lib/utils";
 
 export const revalidate = 86400;
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const year = new Date().getFullYear();
+  const title = t3(locale,
+    `Blog de Viajes México ${year} | Guías, tips y rutas`,
+    `Mexico Travel Blog ${year} | Guides, tips & routes`,
+    `Blog de Voyage Mexique ${year} | Guides, conseils et routes`
+  );
+  const description = t3(
+    locale,
+    `Guías completas, comparativas de aerolíneas, tips de seguridad, rutas y consejos reales para viajar por México en ${year}. Ahorra tiempo y dinero en cada viaje.`,
+    `Complete guides, airline comparisons, safety tips, routes and real advice for traveling Mexico in ${year}. Save time and money on every trip.`,
+    `Guides complets, comparatifs de compagnies, conseils de sécurité, itinéraires et astuces pour voyager au Mexique en ${year}. Économisez sur chaque voyage.`
+  );
   return {
-    title: t3(locale,
-      `Blog de Viajes México ${year} | Guías, tips y rutas`,
-      `Mexico Travel Blog ${year} | Guides, tips & routes`,
-      `Blog de Voyage Mexique ${year} | Guides, conseils et routes`
-    ),
-    description: t3(
-      locale,
-      `Guías completas, comparativas de aerolíneas, tips de seguridad, rutas y consejos reales para viajar por México en ${year}. Ahorra tiempo y dinero en cada viaje.`,
-      `Complete guides, airline comparisons, safety tips, routes and real advice for traveling Mexico in ${year}. Save time and money on every trip.`,
-      `Guides complets, comparatifs de compagnies, conseils de sécurité, itinéraires et astuces pour voyager au Mexique en ${year}. Économisez sur chaque voyage.`
-    ),
+    title,
+    description,
     alternates: seoAlternates(locale, "/blog"),
+    openGraph: seoOpenGraph(locale, title, description, "/blog"),
+    twitter: { card: "summary_large_image" as const, title, description },
   };
 }
 

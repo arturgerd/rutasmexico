@@ -1,16 +1,20 @@
 import { setRequestLocale } from "next-intl/server";
 import Link from "next/link";
-import { t3, seoAlternates } from "@/lib/utils";
+import { t3, seoAlternates, seoOpenGraph } from "@/lib/utils";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+  const title = t3(locale, "Términos y Condiciones", "Terms of Service", "Conditions d'Utilisation");
+  const description = t3(locale,
+    "Términos y condiciones de uso de RutasMéxico.",
+    "RutasMéxico terms of service and conditions of use.",
+    "Conditions d'utilisation de RutasMéxico."
+  );
   return {
-    title: t3(locale, "Términos y Condiciones", "Terms of Service", "Conditions d'Utilisation"),
-    description: t3(locale,
-      "Términos y condiciones de uso de RutasMéxico.",
-      "RutasMéxico terms of service and conditions of use.",
-      "Conditions d'utilisation de RutasMéxico."
-    ),
+    title,
+    description,
     alternates: seoAlternates(locale, "/terminos"),
+    openGraph: seoOpenGraph(locale, title, description, "/terminos"),
+    twitter: { card: "summary" as const, title, description },
   };
 }
 

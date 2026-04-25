@@ -23,9 +23,11 @@ export async function generateMetadata({ params: { locale, slug } }: { params: {
   const canonicalPath = `/${locale}/bodas/${slug}`;
 
   if (locale === "es") {
+    const title = `Bodas en ${name} ${year} | Venues inclusivos, despedidas y guía LGBTIQ+`;
+    const description = `Planifica tu boda en ${name}: ${dest.venues.length} venues con precios, despedidas de soltera y soltero, bodas LGBTIQ+ legales, venues accesibles para personas con discapacidad. Guía completa ${year}.`;
     return {
-      title: `Bodas en ${name} ${year} | Venues inclusivos, despedidas y guía LGBTIQ+`,
-      description: `Planifica tu boda en ${name}: ${dest.venues.length} venues con precios, despedidas de soltera y soltero, bodas LGBTIQ+ legales, venues accesibles para personas con discapacidad. Guía completa ${year}.`,
+      title,
+      description,
       alternates: seoAlternates(locale, `/bodas/${slug}`),
       openGraph: {
         title: `Bodas en ${name} ${year} | Guía completa inclusiva`,
@@ -33,11 +35,14 @@ export async function generateMetadata({ params: { locale, slug } }: { params: {
         url: `${baseUrl}${canonicalPath}`,
         type: "article",
       },
+      twitter: { card: "summary_large_image" as const, title, description },
     };
   }
+  const title = `Weddings in ${name} ${year} | Inclusive venues, parties & LGBTIQ+ guide`;
+  const description = `Plan your wedding in ${name}: ${dest.venues.length} venues with prices, bachelor & bachelorette parties, legal LGBTIQ+ weddings, accessible venues for guests with disabilities. Complete guide ${year}.`;
   return {
-    title: `Weddings in ${name} ${year} | Inclusive venues, parties & LGBTIQ+ guide`,
-    description: `Plan your wedding in ${name}: ${dest.venues.length} venues with prices, bachelor & bachelorette parties, legal LGBTIQ+ weddings, accessible venues for guests with disabilities. Complete guide ${year}.`,
+    title,
+    description,
     alternates: seoAlternates(locale, `/bodas/${slug}`),
     openGraph: {
       title: `Weddings in ${name} ${year} | Complete inclusive guide`,
@@ -45,6 +50,7 @@ export async function generateMetadata({ params: { locale, slug } }: { params: {
       url: `${baseUrl}${canonicalPath}`,
       type: "article",
     },
+    twitter: { card: "summary_large_image" as const, title, description },
   };
 }
 

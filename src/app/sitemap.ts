@@ -6,18 +6,22 @@ import bodas from "@/data/bodas.json";
 import mundialVenues from "@/data/mundial-venues.json";
 
 const BASE_URL = "https://rutasmexico.com.mx";
-const locales = ["es", "en", "fr"];
+// FR omitted from sitemap until translations reach parity with es/en —
+// exposing FR URLs with mostly-Spanish content triggers Google duplicate-content penalties.
+// Routes still resolve at /fr/* via next-intl; we just don't advertise them to crawlers yet.
+const locales = ["es", "en"];
 
 // Stable build-time date so the sitemap doesn't tell Google "everything changed"
 // on every crawl. Bump this when doing a sweep update across many static pages.
 const BUILD_DATE = new Date("2026-04-24");
 
 function generateAlternates(path: string) {
-  const languages: Record<string, string> = {};
-  for (const locale of locales) {
-    languages[locale] = `${BASE_URL}/${locale}${path}`;
-  }
-  languages["x-default"] = `${BASE_URL}/es${path}`;
+  // Only es/en in hreflang map — same reason as the locales constant above.
+  const languages: Record<string, string> = {
+    es: `${BASE_URL}/es${path}`,
+    en: `${BASE_URL}/en${path}`,
+    "x-default": `${BASE_URL}/es${path}`,
+  };
   return { languages };
 }
 

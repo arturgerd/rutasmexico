@@ -275,7 +275,7 @@ export default function HotelSearchEmbed() {
               </div>
             </div>
             <div className="flex gap-3 mt-3">
-              <a href={lastSearchUrl} target="_blank" rel="noopener noreferrer"
+              <a href={lastSearchUrl} target="_blank" rel="sponsored noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-xl text-sm font-semibold hover:bg-green-700 transition-colors">
                 {t3(locale, "Ver resultados →", "View results →", "Voir les résultats →")}
               </a>
