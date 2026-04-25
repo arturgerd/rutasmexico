@@ -280,42 +280,23 @@ export default async function AutobusesPage({ params: { locale } }: { params: { 
             </div>
           </div>
 
-          {/* FAQ */}
+          {/* FAQ — HTML <details> mirrors the FAQPage schema above for SERP rich result eligibility */}
           <div className="mt-8 bg-white rounded-2xl shadow-lg border border-arena-100 p-6 md:p-8">
             <h2 className="font-display text-xl font-bold text-arena-900 mb-4">
               {locale === "es" ? "Preguntas frecuentes" : "FAQ"}
             </h2>
-            <div className="space-y-4">
-              <div>
-                <h3 className="font-semibold text-arena-900 text-sm">
-                  {locale === "es" ? "Que lineas de autobus comparan?" : "What bus lines do you compare?"}
-                </h3>
-                <p className="text-sm text-arena-500 mt-1">
-                  {locale === "es"
-                    ? "Comparamos ADO (y ADO GL, ADO Platino), ETN Turistar, Primera Plus, Estrella Roja, Pullman de Morelos, Omnibus de Mexico, Futura, Estrella de Oro, OCC, AU, Flecha Amarilla, Caminante y muchas mas."
-                    : "We compare ADO (and ADO GL, ADO Platino), ETN Turistar, Primera Plus, Estrella Roja, Pullman de Morelos, Omnibus de Mexico, Futura, Estrella de Oro, OCC, AU, Flecha Amarilla, Caminante and many more."}
-                </p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-arena-900 text-sm">
-                  {locale === "es" ? "Cuanto cuesta un boleto de autobus en Mexico?" : "How much does a bus ticket cost in Mexico?"}
-                </h3>
-                <p className="text-sm text-arena-500 mt-1">
-                  {locale === "es"
-                    ? "Los precios varian segun la ruta y la clase. Rutas cortas (2-3 horas): $150-400 MXN. Rutas medias (5-7 horas): $400-800 MXN. Rutas largas (+10 horas): $800-1,800 MXN."
-                    : "Prices vary by route and class. Short routes (2-3 hours): $150-400 MXN. Medium routes (5-7 hours): $400-800 MXN. Long routes (10+ hours): $800-1,800 MXN."}
-                </p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-arena-900 text-sm">
-                  {locale === "es" ? "Es seguro viajar en autobus en Mexico?" : "Is it safe to travel by bus in Mexico?"}
-                </h3>
-                <p className="text-sm text-arena-500 mt-1">
-                  {locale === "es"
-                    ? "Si, las lineas de primera clase y ejecutivo (ADO, ETN, Primera Plus) son muy seguras. Viajan por autopistas de cuota y ofrecen WiFi, enchufes y bano."
-                    : "Yes, first class and executive lines (ADO, ETN, Primera Plus) are very safe. They travel on toll highways and offer WiFi, power outlets and restroom."}
-                </p>
-              </div>
+            <div className="divide-y divide-arena-100">
+              {faqs.map((f, i) => (
+                <details key={i} className="group py-3" {...(i === 0 ? { open: true } : {})}>
+                  <summary className="cursor-pointer font-semibold text-arena-900 text-sm md:text-base list-none flex items-center justify-between gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 rounded">
+                    <span>{f.q}</span>
+                    <svg className="w-4 h-4 flex-shrink-0 text-arena-500 transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.06l3.71-3.83a.75.75 0 1 1 1.08 1.04l-4.24 4.39a.75.75 0 0 1-1.08 0L5.21 8.27a.75.75 0 0 1 .02-1.06z" clipRule="evenodd" />
+                    </svg>
+                  </summary>
+                  <p className="text-sm text-arena-700 mt-2 leading-relaxed">{f.a}</p>
+                </details>
+              ))}
             </div>
           </div>
         </div>

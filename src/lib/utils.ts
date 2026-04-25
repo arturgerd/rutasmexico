@@ -70,13 +70,21 @@ export function seoAlternates(locale: string, path: string = "") {
   };
 }
 
+// FR omitted from OG locales for the same reason as in seoAlternates: translations
+// haven't reached parity, so we don't advertise FR as an alternate language to crawlers/social yet.
+const OG_LOCALES_INDEX: Record<string, string> = { es: "es_MX", en: "en_US" };
+const OG_LOCALE_VALUES = Object.values(OG_LOCALES_INDEX);
+
 export function seoOpenGraph(locale: string, title: string, description: string, path: string = "", image?: string) {
+  const ogLocale = OG_LOCALES_INDEX[locale] || "es_MX";
+  const alternateLocale = OG_LOCALE_VALUES.filter((l) => l !== ogLocale);
   return {
     title,
     description,
     url: `${BASE_URL}/${locale}${path}`,
     siteName: "RutasMéxico",
-    locale: locale === "es" ? "es_MX" : locale === "fr" ? "fr_FR" : "en_US",
+    locale: ogLocale,
+    alternateLocale,
     type: "website" as const,
     ...(image ? { images: [{ url: image, width: 1200, height: 630 }] } : {}),
   };

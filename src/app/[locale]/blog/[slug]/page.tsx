@@ -74,6 +74,15 @@ export default async function BlogPostPage({
       title: localize(p.title, locale as Locale),
     }));
 
+  // wordCount: strip HTML tags, collapse whitespace, count whitespace-separated tokens.
+  const localizedContent = localize(post.content, locale as Locale);
+  const wordCount = localizedContent
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&[a-z]+;/gi, " ")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean).length;
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -102,15 +111,17 @@ export default async function BlogPostPage({
     mainEntityOfPage: `${baseUrl}/${locale}/blog/${slug}`,
     keywords: post.tags?.join(", "),
     articleSection: post.category,
+    wordCount,
+    timeRequired: `PT${post.readingTime}M`,
+    inLanguage: locale === "es" ? "es-MX" : locale === "fr" ? "fr-FR" : "en-US",
   };
 
   const isHowTo = /^(como-|cuanto-cuesta|hoteles-|vuelos-|que-hacer)/.test(post.slug)
     || post.tags?.some((t) => /como|paso|guia/.test(t));
-  const content = localize(post.content, locale as Locale);
   const stepMatches: string[] = [];
   const h3Re = /<h3[^>]*>([^<]+)<\/h3>/gi;
   let m: RegExpExecArray | null;
-  while ((m = h3Re.exec(content)) !== null && stepMatches.length < 8) {
+  while ((m = h3Re.exec(localizedContent)) !== null && stepMatches.length < 8) {
     stepMatches.push(m[1].trim());
   }
   const howToSchema = isHowTo && stepMatches.length >= 3

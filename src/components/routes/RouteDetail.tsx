@@ -34,9 +34,10 @@ interface RouteDetailProps {
   relatedRoutes?: RelatedRoute[];
   destinationSlug?: string;
   editorialContent?: RouteContent | null;
+  faqs?: { q: string; a: string }[];
 }
 
-export default function RouteDetail({ route, origin, destination, guidesMap, airports, locale, relatedRoutes = [], destinationSlug, editorialContent }: RouteDetailProps) {
+export default function RouteDetail({ route, origin, destination, guidesMap, airports, locale, relatedRoutes = [], destinationSlug, editorialContent, faqs = [] }: RouteDetailProps) {
   const [selectedOption, setSelectedOption] = useState<string>(
     route.options.find((o) => o.recommended)?.id || route.options[0]?.id || ""
   );
@@ -289,6 +290,28 @@ export default function RouteDetail({ route, origin, destination, guidesMap, air
                 </li>
               ))}
             </ul>
+          </section>
+        )}
+
+        {/* FAQ — HTML <details> mirrors the FAQPage schema for SERP rich result eligibility */}
+        {faqs.length > 0 && (
+          <section className="mt-12 bg-white rounded-2xl shadow-lg border border-arena-100 p-6 md:p-8">
+            <h2 className="font-display text-xl font-bold text-arena-900 mb-4">
+              {t3(locale, "Preguntas frecuentes", "Frequently asked questions", "Questions fréquentes")}
+            </h2>
+            <div className="divide-y divide-arena-100">
+              {faqs.map((f, i) => (
+                <details key={i} className="group py-3" {...(i === 0 ? { open: true } : {})}>
+                  <summary className="cursor-pointer font-semibold text-arena-900 text-sm md:text-base list-none flex items-center justify-between gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 rounded">
+                    <span>{f.q}</span>
+                    <svg className="w-4 h-4 flex-shrink-0 text-arena-500 transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.06l3.71-3.83a.75.75 0 1 1 1.08 1.04l-4.24 4.39a.75.75 0 0 1-1.08 0L5.21 8.27a.75.75 0 0 1 .02-1.06z" clipRule="evenodd" />
+                    </svg>
+                  </summary>
+                  <p className="text-sm text-arena-700 mt-2 leading-relaxed">{f.a}</p>
+                </details>
+              ))}
+            </div>
           </section>
         )}
       </div>

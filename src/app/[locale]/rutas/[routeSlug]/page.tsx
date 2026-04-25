@@ -197,6 +197,7 @@ export default async function RouteDetailPage({
         relatedRoutes={relatedRoutesFiltered}
         destinationSlug={dest.slug}
         editorialContent={editorialContent}
+        faqs={faqItems.map((f) => ({ q: f.name, a: f.acceptedAnswer.text }))}
       />
     </>
   );

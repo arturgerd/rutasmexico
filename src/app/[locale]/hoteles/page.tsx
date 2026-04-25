@@ -213,32 +213,23 @@ export default async function HotelesPage({ params: { locale } }: { params: { lo
             </div>
           </div>
 
-          {/* FAQ */}
+          {/* FAQ — HTML <details> mirrors the FAQPage schema above for SERP rich result eligibility */}
           <div className="mt-8 bg-white rounded-2xl shadow-lg border border-arena-100 p-6 md:p-8">
             <h2 className="font-display text-xl font-bold text-arena-900 mb-4">
               {locale === "es" ? "Preguntas frecuentes" : "FAQ"}
             </h2>
-            <div className="space-y-4">
-              <div>
-                <h3 className="font-semibold text-arena-900 text-sm">
-                  {locale === "es" ? "Que sitios comparan?" : "What sites do you compare?"}
-                </h3>
-                <p className="text-sm text-arena-500 mt-1">
-                  {locale === "es"
-                    ? "Comparamos Booking.com, Expedia, Hotels.com, Agoda, Hoteles.com, Trip.com y mas de 70 sitios de reserva de hoteles."
-                    : "We compare Booking.com, Expedia, Hotels.com, Agoda, Hoteles.com, Trip.com and over 70 hotel booking sites."}
-                </p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-arena-900 text-sm">
-                  {locale === "es" ? "Cuanto cuesta un hotel en Mexico?" : "How much does a hotel cost in Mexico?"}
-                </h3>
-                <p className="text-sm text-arena-500 mt-1">
-                  {locale === "es"
-                    ? "Varia por destino. Ciudades: $600-2,000 MXN/noche. Playas: $1,000-5,000 MXN/noche. All-inclusive: $2,500-8,000 MXN/noche por persona."
-                    : "Varies by destination. Cities: $600-2,000 MXN/night. Beaches: $1,000-5,000 MXN/night. All-inclusive: $2,500-8,000 MXN/night per person."}
-                </p>
-              </div>
+            <div className="divide-y divide-arena-100">
+              {faqs.map((f, i) => (
+                <details key={i} className="group py-3" {...(i === 0 ? { open: true } : {})}>
+                  <summary className="cursor-pointer font-semibold text-arena-900 text-sm md:text-base list-none flex items-center justify-between gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 rounded">
+                    <span>{f.q}</span>
+                    <svg className="w-4 h-4 flex-shrink-0 text-arena-500 transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.06l3.71-3.83a.75.75 0 1 1 1.08 1.04l-4.24 4.39a.75.75 0 0 1-1.08 0L5.21 8.27a.75.75 0 0 1 .02-1.06z" clipRule="evenodd" />
+                    </svg>
+                  </summary>
+                  <p className="text-sm text-arena-700 mt-2 leading-relaxed">{f.a}</p>
+                </details>
+              ))}
             </div>
           </div>
         </div>
