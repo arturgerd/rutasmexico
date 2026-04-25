@@ -43,11 +43,26 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
 
+  const skipLabel = locale === "fr" ? "Aller au contenu" : locale === "en" ? "Skip to content" : "Ir al contenido";
+  const rssTitle = locale === "fr" ? "RutasMexico — Blog RSS" : locale === "en" ? "RutasMexico — Blog RSS" : "RutasMéxico — Blog RSS";
+
   return (
     <NextIntlClientProvider messages={messages}>
+      <link
+        rel="alternate"
+        type="application/rss+xml"
+        title={rssTitle}
+        href={`https://rutasmexico.com.mx/${locale}/feed.xml`}
+      />
       <SetHtmlLang locale={locale} />
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:rounded focus:bg-terracotta-600 focus:text-white focus:shadow-lg"
+      >
+        {skipLabel}
+      </a>
       <Header />
-      <main className="flex-grow">{children}</main>
+      <main id="main-content" className="flex-grow">{children}</main>
       <Footer />
     </NextIntlClientProvider>
   );

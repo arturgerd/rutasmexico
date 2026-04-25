@@ -83,6 +83,44 @@ export function buildVenueMatchesSchema(venue: MundialVenue, locale: string) {
   return venue.matches.map((m) => buildMatchSportsEvent(venue, m, locale, venueUrl));
 }
 
+export function buildStadiumPlaceSchema(
+  venue: MundialVenue,
+  locale: string,
+  geo?: { lat: number; lng: number }
+) {
+  const venueUrl = `${BASE_URL}/${locale}/mundial/${venue.slug}`;
+  const address = localize(venue.stadium.address, locale as Locale);
+  const description = localize(venue.stadium.description, locale as Locale);
+  const imageUrl = venue.heroImage?.startsWith("http")
+    ? venue.heroImage
+    : `${BASE_URL}${venue.heroImage || "/og-image.png"}`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "StadiumOrArena",
+    name: venue.stadium.name,
+    description,
+    url: venueUrl,
+    image: imageUrl,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: address,
+      addressCountry: venue.country || "MX",
+    },
+    maximumAttendeeCapacity: venue.stadium.capacity,
+    ...(venue.stadium.yearBuilt ? { foundingDate: String(venue.stadium.yearBuilt) } : {}),
+    ...(geo
+      ? {
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: geo.lat,
+            longitude: geo.lng,
+          },
+        }
+      : {}),
+  };
+}
+
 export function buildTournamentSchema(venues: MundialVenue[], locale: string) {
   const subEvents = venues.flatMap((v) => {
     const venueUrl = `${BASE_URL}/${locale}/mundial/${v.slug}`;

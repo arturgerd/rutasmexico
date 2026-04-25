@@ -85,10 +85,29 @@ export default async function AutobusesPage({ params: { locale } }: { params: { 
     ],
   };
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: isEs ? "Comparador de boletos de autobús en México" : "Mexico bus ticket comparison",
+    serviceType: isEs ? "Búsqueda y comparación de autobuses" : "Bus search and comparison",
+    provider: {
+      "@type": "Organization",
+      name: "RutasMéxico",
+      url: "https://rutasmexico.com.mx",
+    },
+    areaServed: { "@type": "Country", name: "Mexico" },
+    url: `https://rutasmexico.com.mx/${locale}/autobuses`,
+    description: isEs
+      ? "Compara precios de boletos de autobús de ADO, ETN, Primera Plus, Estrella Roja y más líneas en México."
+      : "Compare bus ticket prices from ADO, ETN, Primera Plus, Estrella Roja and more Mexican bus lines.",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "MXN", availability: "https://schema.org/InStock" },
+  };
+
   return (
     <div className="min-h-screen">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {/* Hero with background image */}
       <div className="relative py-16 md:py-20 overflow-hidden">
         <Image

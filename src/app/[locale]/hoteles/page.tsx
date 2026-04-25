@@ -84,10 +84,29 @@ export default async function HotelesPage({ params: { locale } }: { params: { lo
     ],
   };
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: isEs ? "Comparador de hoteles en México" : "Mexico hotel comparison",
+    serviceType: isEs ? "Búsqueda y comparación de hoteles" : "Hotel search and comparison",
+    provider: {
+      "@type": "Organization",
+      name: "RutasMéxico",
+      url: "https://rutasmexico.com.mx",
+    },
+    areaServed: { "@type": "Country", name: "Mexico" },
+    url: `https://rutasmexico.com.mx/${locale}/hoteles`,
+    description: isEs
+      ? "Compara precios de hoteles en Cancún, CDMX, Playa del Carmen, Puerto Vallarta, Los Cabos y más destinos de México."
+      : "Compare hotel prices in Cancun, Mexico City, Playa del Carmen, Puerto Vallarta, Los Cabos and more Mexican destinations.",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "MXN", availability: "https://schema.org/InStock" },
+  };
+
   return (
     <div className="min-h-screen">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {/* Hero with background image */}
       <div className="relative py-16 md:py-20 overflow-hidden">
         <Image

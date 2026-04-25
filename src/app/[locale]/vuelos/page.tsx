@@ -93,10 +93,29 @@ export default async function VuelosPage({ params: { locale } }: { params: { loc
     ],
   };
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: isEs ? "Comparador de vuelos en México" : "Mexico flight comparison",
+    serviceType: isEs ? "Búsqueda y comparación de vuelos" : "Flight search and comparison",
+    provider: {
+      "@type": "Organization",
+      name: "RutasMéxico",
+      url: "https://rutasmexico.com.mx",
+    },
+    areaServed: { "@type": "Country", name: "Mexico" },
+    url: `https://rutasmexico.com.mx/${locale}/vuelos`,
+    description: isEs
+      ? "Compara precios de vuelos de Volaris, VivaAerobus, Aeroméxico, TAR y más de 700 aerolíneas en tiempo real."
+      : "Compare flight prices from Volaris, VivaAerobus, Aeromexico, TAR and 700+ airlines in real time.",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "MXN", availability: "https://schema.org/InStock" },
+  };
+
   return (
     <div className="min-h-screen">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {/* Hero with background image */}
       <div className="relative py-16 md:py-20 overflow-hidden">
         <Image

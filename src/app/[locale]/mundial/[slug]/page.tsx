@@ -5,7 +5,7 @@ import { localize, t3, seoAlternates, seoOpenGraph } from "@/lib/utils";
 import { Locale } from "@/types/common";
 import { setRequestLocale } from "next-intl/server";
 import MundialVenueDetail from "@/components/mundial/MundialVenueDetail";
-import { buildVenueMatchesSchema, buildBreadcrumbList } from "@/lib/mundial-schema";
+import { buildVenueMatchesSchema, buildBreadcrumbList, buildStadiumPlaceSchema } from "@/lib/mundial-schema";
 
 export async function generateStaticParams() {
   const venues = await getAllMundialVenues();
@@ -48,6 +48,7 @@ export default async function MundialVenuePage({
   const destination = venue.destinationId ? await getDestinationById(venue.destinationId) : null;
 
   const matchEvents = buildVenueMatchesSchema(venue, locale);
+  const stadiumPlace = buildStadiumPlaceSchema(venue, locale, destination?.coordinates);
   const venueName = localize(venue.name, locale as Locale);
   const breadcrumbs = buildBreadcrumbList(locale, [
     {
@@ -66,6 +67,10 @@ export default async function MundialVenuePage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(stadiumPlace) }}
       />
       {matchEvents.map((evt, i) => (
         <script
