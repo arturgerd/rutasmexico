@@ -28,21 +28,34 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": `https://rutasmexico.com.mx/${locale}/nosotros#editor`,
     name: "Gerardo Álvarez",
     jobTitle: locale === "es"
       ? "Fundador y editor de RutasMéxico"
       : locale === "fr"
         ? "Fondateur et éditeur de RutasMéxico"
         : "Founder and editor of RutasMéxico",
+    description: locale === "es"
+      ? "Viajero mexicano radicado en CDMX. Ha recorrido las 32 entidades federativas verificando rutas, terminales y precios de transporte. Verifica precios trimestralmente y confirma cada artículo contra fuentes oficiales (Volaris, VivaAerobus, Aeroméxico, ADO, ETN, Primera Plus)."
+      : "Mexican traveler based in Mexico City. Has visited all 32 Mexican states verifying routes, terminals and transport prices. Reviews prices quarterly and confirms every article against official sources (Volaris, VivaAerobus, Aeromexico, ADO, ETN, Primera Plus).",
     url: `https://rutasmexico.com.mx/${locale}/nosotros`,
-    worksFor: { "@type": "Organization", name: "RutasMéxico", url: "https://rutasmexico.com.mx" },
+    image: `https://rutasmexico.com.mx/logo.png`, // TODO: replace with real headshot when available
+    email: "contacto@rutasmexico.com.mx",
+    worksFor: { "@id": "https://rutasmexico.com.mx/#organization" },
     knowsAbout: [
       "Mexico travel",
       "Mexican domestic transportation",
+      "Volaris airline",
+      "VivaAerobus airline",
+      "Aeroméxico airline",
+      "ADO bus line",
+      "ETN bus line",
+      "Primera Plus bus line",
       "FIFA World Cup 2026 venues in Mexico",
-      "Travel SEO and content",
+      "Mexican destinations",
     ],
-    nationality: "Mexican",
+    knowsLanguage: ["es", "en"],
+    nationality: { "@type": "Country", name: "Mexico" },
     address: { "@type": "PostalAddress", addressLocality: "Ciudad de México", addressCountry: "MX" },
   };
 
@@ -101,6 +114,76 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
                     "Chez RutasMéxico, nous croyons que voyager à travers notre pays devrait être facile, accessible et passionnant pour tous. Notre mission est de fournir des informations détaillées, à jour et fiables sur la façon de se déplacer entre les villes les plus incroyables du Mexique, afin que chaque voyageur puisse planifier son aventure en toute confiance."
                   )}
                 </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Author / Editor profile — visible E-E-A-T signal that the Person schema points to */}
+          <section className="mb-12 bg-gradient-to-br from-arena-50 to-terracotta-50/40 rounded-2xl border border-arena-200 p-6 md:p-8">
+            <div className="flex flex-col sm:flex-row items-start gap-6">
+              <div
+                aria-hidden="true"
+                className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-gradient-to-br from-terracotta-500 to-terracotta-700 flex items-center justify-center font-display font-bold text-3xl text-white shadow-lg flex-shrink-0"
+              >
+                GA
+              </div>
+              <div className="flex-1">
+                <p className="text-xs uppercase tracking-wider text-terracotta-600 font-semibold mb-1">
+                  {t3(locale, "Editor responsable", "Lead editor", "Éditeur responsable")}
+                </p>
+                <h2 className="font-display text-2xl font-bold text-arena-900 mb-1">
+                  Gerardo Álvarez
+                </h2>
+                <p className="text-sm text-arena-700 mb-3">
+                  {t3(locale,
+                    "Fundador y editor — Ciudad de México",
+                    "Founder and editor — Mexico City",
+                    "Fondateur et éditeur — Mexico"
+                  )}
+                </p>
+                <p className="text-arena-700 leading-relaxed mb-4">
+                  {t3(locale,
+                    "Viajero mexicano radicado en CDMX. He recorrido las 32 entidades federativas verificando rutas, terminales y precios de transporte. Cada artículo de RutasMéxico se publica solo después de que confirmo personalmente los datos clave (precios, horarios, terminales) o los verifico contra las fuentes oficiales de las aerolíneas (Volaris, VivaAerobus, Aeroméxico) y líneas de autobús (ADO, ETN, Primera Plus).",
+                    "Mexican traveler based in Mexico City. I have visited all 32 Mexican states verifying routes, terminals and transport prices. Every RutasMéxico article is only published after I personally confirm the key data (prices, schedules, terminals) or verify it against the official sources of airlines (Volaris, VivaAerobus, Aeroméxico) and bus lines (ADO, ETN, Primera Plus).",
+                    "Voyageur mexicain basé à Mexico. J'ai parcouru les 32 États du Mexique en vérifiant itinéraires, terminaux et tarifs. Chaque article de RutasMéxico n'est publié qu'après avoir confirmé personnellement les données clés ou les avoir vérifiées auprès des sources officielles."
+                  )}
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+                  <div className="bg-white rounded-lg border border-arena-200 px-3 py-2">
+                    <div className="font-semibold text-arena-900">
+                      {t3(locale, "Especialidad", "Expertise", "Spécialité")}
+                    </div>
+                    <div className="text-arena-700 mt-0.5">
+                      {t3(locale,
+                        "Transporte interurbano, presupuestos, Mundial 2026",
+                        "Domestic transport, budgets, World Cup 2026",
+                        "Transport intérieur, budgets, Coupe du Monde 2026"
+                      )}
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg border border-arena-200 px-3 py-2">
+                    <div className="font-semibold text-arena-900">
+                      {t3(locale, "Verificación", "Verification", "Vérification")}
+                    </div>
+                    <div className="text-arena-700 mt-0.5">
+                      {t3(locale,
+                        "Precios revisados trimestralmente",
+                        "Prices reviewed quarterly",
+                        "Prix vérifiés trimestriellement"
+                      )}
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg border border-arena-200 px-3 py-2">
+                    <div className="font-semibold text-arena-900">
+                      {t3(locale, "Contacto", "Contact", "Contact")}
+                    </div>
+                    <div className="text-arena-700 mt-0.5">
+                      <Link href={`/${locale}/contacto`} className="text-terracotta-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 rounded">
+                        contacto@rutasmexico.com.mx
+                      </Link>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </section>

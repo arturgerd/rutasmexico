@@ -57,6 +57,15 @@ export default function HeroSection({ airports }: HeroSectionProps) {
           {/* Real search with tabs */}
           <TravelSearchTabs airports={airports} />
 
+          {/* Affiliate disclosure — visible directly under the search widget so reviewers and
+              users see immediately that we are an editorial guide that earns commission, not
+              a doorway/agg site. Required by FTC + AdSense "Inventario Valioso" policy. */}
+          <p className="mt-3 text-xs text-white/80 max-w-2xl mx-auto leading-relaxed drop-shadow">
+            {t("heroTitle").includes("México")
+              ? "Comparamos precios de socios verificados (Travelpayouts, Aviasales). Recibimos comisión si reservas, pero las recomendaciones editoriales son independientes y nuestros precios reflejan datos públicos en tiempo real."
+              : "We compare prices from verified partners (Travelpayouts, Aviasales). We earn a commission if you book, but our editorial recommendations are independent and prices reflect public real-time data."}
+          </p>
+
           {/* Trust badges */}
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             {([
