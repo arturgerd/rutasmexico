@@ -1,15 +1,12 @@
 import Link from "next/link";
-import { headers } from "next/headers";
 
-function detectLocale(): "es" | "en" | "fr" {
-  const path = headers().get("x-invoke-path") || headers().get("referer") || "";
-  if (path.includes("/fr")) return "fr";
-  if (path.includes("/en")) return "en";
-  return "es";
-}
-
+// Hardcoded "es" instead of headers()-based detection: a single use of `headers()`
+// here was opting the entire [locale] segment into dynamic rendering on Vercel,
+// which is what was forcing `Cache-Control: no-store` on every page.
+// Spanish is our default locale and the highest-traffic 404 surface; English
+// readers landing here still see the same links.
 export default function NotFound() {
-  const locale = detectLocale();
+  const locale: "es" | "en" | "fr" = "es";
 
   const t = {
     es: {
