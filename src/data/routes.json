@@ -20,7 +20,11 @@
             "en": "2h 15min - 2h 45min"
           }
         },
-        "priceRange": { "min": 1200, "max": 3500, "currency": "MXN" },
+        "priceRange": {
+          "min": 1200,
+          "max": 3500,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-cancun-flight-guide",
         "frequency": {
           "es": "Más de 30 vuelos diarios entre todas las aerolíneas",
@@ -43,7 +47,11 @@
             "en": "24 - 26 hours"
           }
         },
-        "priceRange": { "min": 1500, "max": 2200, "currency": "MXN" },
+        "priceRange": {
+          "min": 1500,
+          "max": 2200,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-cancun-bus-guide",
         "frequency": {
           "es": "3-4 salidas diarias desde TAPO, principalmente nocturnas",
@@ -66,7 +74,11 @@
             "en": "18 - 20 hours"
           }
         },
-        "priceRange": { "min": 3000, "max": 4500, "currency": "MXN" },
+        "priceRange": {
+          "min": 3000,
+          "max": 4500,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-cancun-car-guide",
         "frequency": {
           "es": "Ruta por autopista vía Villahermosa y Campeche",
@@ -74,7 +86,8 @@
         },
         "recommended": false
       }
-    ]
+    ],
+    "lastModified": "2026-04-15"
   },
   {
     "id": "cdmx-oaxaca",
@@ -97,7 +110,11 @@
             "en": "Approx. 1 hour"
           }
         },
-        "priceRange": { "min": 900, "max": 2500, "currency": "MXN" },
+        "priceRange": {
+          "min": 900,
+          "max": 2500,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-oaxaca-flight-guide",
         "frequency": {
           "es": "8-12 vuelos diarios entre todas las aerolíneas",
@@ -120,7 +137,11 @@
             "en": "6 - 7 hours"
           }
         },
-        "priceRange": { "min": 600, "max": 950, "currency": "MXN" },
+        "priceRange": {
+          "min": 600,
+          "max": 950,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-oaxaca-bus-guide",
         "frequency": {
           "es": "Salidas cada 1-2 horas desde TAPO, desde las 6:00 hasta las 23:30",
@@ -143,7 +164,11 @@
             "en": "5 - 6 hours"
           }
         },
-        "priceRange": { "min": 1200, "max": 1800, "currency": "MXN" },
+        "priceRange": {
+          "min": 1200,
+          "max": 1800,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-oaxaca-car-guide",
         "frequency": {
           "es": "Autopista 135D vía Cuacnopalan-Oaxaca (cuota ~$600)",
@@ -151,7 +176,8 @@
         },
         "recommended": false
       }
-    ]
+    ],
+    "lastModified": "2026-04-15"
   },
   {
     "id": "cdmx-guadalajara",
@@ -174,7 +200,11 @@
             "en": "1h 10min - 1h 20min"
           }
         },
-        "priceRange": { "min": 800, "max": 2200, "currency": "MXN" },
+        "priceRange": {
+          "min": 800,
+          "max": 2200,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-guadalajara-flight-guide",
         "frequency": {
           "es": "Más de 25 vuelos diarios, es una de las rutas más operadas del país",
@@ -197,7 +227,11 @@
             "en": "6 - 7 hours"
           }
         },
-        "priceRange": { "min": 700, "max": 1100, "currency": "MXN" },
+        "priceRange": {
+          "min": 700,
+          "max": 1100,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-guadalajara-bus-guide",
         "frequency": {
           "es": "Salidas cada 30-60 minutos desde Terminal Norte, todo el día",
@@ -220,7 +254,11 @@
             "en": "5.5 - 6.5 hours"
           }
         },
-        "priceRange": { "min": 1500, "max": 2200, "currency": "MXN" },
+        "priceRange": {
+          "min": 1500,
+          "max": 2200,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-guadalajara-car-guide",
         "frequency": {
           "es": "Autopista México-Guadalajara (57D/45D) vía Querétaro e Irapuato",
@@ -228,7 +266,8 @@
         },
         "recommended": false
       }
-    ]
+    ],
+    "lastModified": "2026-04-15"
   },
   {
     "id": "cdmx-puerto-vallarta",
@@ -251,7 +290,11 @@
             "en": "1h 25min - 1h 35min"
           }
         },
-        "priceRange": { "min": 1000, "max": 3000, "currency": "MXN" },
+        "priceRange": {
+          "min": 1000,
+          "max": 3000,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-puerto-vallarta-flight-guide",
         "frequency": {
           "es": "10-15 vuelos diarios entre todas las aerolíneas",
@@ -274,7 +317,11 @@
             "en": "10 - 12 hours"
           }
         },
-        "priceRange": { "min": 1000, "max": 1500, "currency": "MXN" },
+        "priceRange": {
+          "min": 1000,
+          "max": 1500,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-puerto-vallarta-bus-guide",
         "frequency": {
           "es": "3-5 salidas diarias desde Terminal Norte, varias nocturnas",
@@ -297,7 +344,11 @@
             "en": "9 - 10 hours"
           }
         },
-        "priceRange": { "min": 2000, "max": 3000, "currency": "MXN" },
+        "priceRange": {
+          "min": 2000,
+          "max": 3000,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-puerto-vallarta-car-guide",
         "frequency": {
           "es": "Autopista vía Guadalajara, luego carretera a la costa por Tepic o Chapala",
@@ -305,7 +356,8 @@
         },
         "recommended": false
       }
-    ]
+    ],
+    "lastModified": "2026-04-15"
   },
   {
     "id": "cdmx-los-cabos",
@@ -328,7 +380,11 @@
             "en": "Approx. 2h 30min"
           }
         },
-        "priceRange": { "min": 1500, "max": 4000, "currency": "MXN" },
+        "priceRange": {
+          "min": 1500,
+          "max": 4000,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-los-cabos-flight-guide",
         "frequency": {
           "es": "10-14 vuelos diarios entre todas las aerolíneas",
@@ -351,7 +407,11 @@
             "en": "20+ hours (includes La Paz-Mazatlán ferry or detour via Sonora)"
           }
         },
-        "priceRange": { "min": 4000, "max": 6000, "currency": "MXN" },
+        "priceRange": {
+          "min": 4000,
+          "max": 6000,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-los-cabos-car-guide",
         "frequency": {
           "es": "Ruta larga vía Mazatlán + ferry Baja Ferries a La Paz, o vía Nogales/Tijuana por la península",
@@ -359,7 +419,8 @@
         },
         "recommended": false
       }
-    ]
+    ],
+    "lastModified": "2026-04-15"
   },
   {
     "id": "cdmx-merida",
@@ -382,7 +443,11 @@
             "en": "Approx. 2 hours"
           }
         },
-        "priceRange": { "min": 1100, "max": 3000, "currency": "MXN" },
+        "priceRange": {
+          "min": 1100,
+          "max": 3000,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-merida-flight-guide",
         "frequency": {
           "es": "12-18 vuelos diarios entre todas las aerolíneas",
@@ -405,7 +470,11 @@
             "en": "18 - 20 hours"
           }
         },
-        "priceRange": { "min": 1400, "max": 2000, "currency": "MXN" },
+        "priceRange": {
+          "min": 1400,
+          "max": 2000,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-merida-bus-guide",
         "frequency": {
           "es": "4-6 salidas diarias desde TAPO, la mayoría nocturnas",
@@ -428,7 +497,11 @@
             "en": "14 - 16 hours"
           }
         },
-        "priceRange": { "min": 3000, "max": 4500, "currency": "MXN" },
+        "priceRange": {
+          "min": 3000,
+          "max": 4500,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-merida-car-guide",
         "frequency": {
           "es": "Autopista vía Puebla, Veracruz, Villahermosa y Campeche",
@@ -436,7 +509,8 @@
         },
         "recommended": false
       }
-    ]
+    ],
+    "lastModified": "2026-04-15"
   },
   {
     "id": "cdmx-san-miguel-de-allende",
@@ -459,7 +533,11 @@
             "en": "3.5 - 4 hours"
           }
         },
-        "priceRange": { "min": 500, "max": 800, "currency": "MXN" },
+        "priceRange": {
+          "min": 500,
+          "max": 800,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-san-miguel-bus-guide",
         "frequency": {
           "es": "6-10 salidas diarias desde Terminal Norte (ETN y Primera Plus)",
@@ -482,7 +560,11 @@
             "en": "3 - 3.5 hours"
           }
         },
-        "priceRange": { "min": 800, "max": 1200, "currency": "MXN" },
+        "priceRange": {
+          "min": 800,
+          "max": 1200,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-san-miguel-car-guide",
         "frequency": {
           "es": "Autopista 57D México-Querétaro, luego desviación a San Miguel por la 111",
@@ -490,7 +572,8 @@
         },
         "recommended": false
       }
-    ]
+    ],
+    "lastModified": "2026-04-15"
   },
   {
     "id": "cdmx-guanajuato",
@@ -513,7 +596,11 @@
             "en": "Approx. 1 hour"
           }
         },
-        "priceRange": { "min": 900, "max": 2200, "currency": "MXN" },
+        "priceRange": {
+          "min": 900,
+          "max": 2200,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-guanajuato-flight-guide",
         "frequency": {
           "es": "5-8 vuelos diarios al Aeropuerto del Bajío (BJX), a 30 min de Guanajuato",
@@ -536,7 +623,11 @@
             "en": "4.5 - 5 hours"
           }
         },
-        "priceRange": { "min": 600, "max": 900, "currency": "MXN" },
+        "priceRange": {
+          "min": 600,
+          "max": 900,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-guanajuato-bus-guide",
         "frequency": {
           "es": "8-12 salidas diarias desde Terminal Norte, servicio directo ETN y Primera Plus",
@@ -559,7 +650,11 @@
             "en": "4 - 4.5 hours"
           }
         },
-        "priceRange": { "min": 900, "max": 1400, "currency": "MXN" },
+        "priceRange": {
+          "min": 900,
+          "max": 1400,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-guanajuato-car-guide",
         "frequency": {
           "es": "Autopista 57D vía Querétaro, luego 45D hacia Silao y desviación a Guanajuato",
@@ -567,7 +662,8 @@
         },
         "recommended": false
       }
-    ]
+    ],
+    "lastModified": "2026-04-15"
   },
   {
     "id": "cdmx-monterrey",
@@ -590,7 +686,11 @@
             "en": "1h 25min - 1h 35min"
           }
         },
-        "priceRange": { "min": 900, "max": 2500, "currency": "MXN" },
+        "priceRange": {
+          "min": 900,
+          "max": 2500,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-monterrey-flight-guide",
         "frequency": {
           "es": "Más de 30 vuelos diarios, ruta de altísima demanda",
@@ -613,7 +713,11 @@
             "en": "10 - 12 hours"
           }
         },
-        "priceRange": { "min": 1000, "max": 1500, "currency": "MXN" },
+        "priceRange": {
+          "min": 1000,
+          "max": 1500,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-monterrey-bus-guide",
         "frequency": {
           "es": "6-10 salidas diarias desde Terminal Norte, muchas nocturnas",
@@ -636,7 +740,11 @@
             "en": "9 - 10 hours"
           }
         },
-        "priceRange": { "min": 2500, "max": 3500, "currency": "MXN" },
+        "priceRange": {
+          "min": 2500,
+          "max": 3500,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-monterrey-car-guide",
         "frequency": {
           "es": "Autopista 57D norte vía San Luis Potosí y Saltillo",
@@ -644,7 +752,8 @@
         },
         "recommended": false
       }
-    ]
+    ],
+    "lastModified": "2026-04-15"
   },
   {
     "id": "cdmx-huatulco",
@@ -667,7 +776,11 @@
             "en": "1h 15min - 1h 30min"
           }
         },
-        "priceRange": { "min": 1000, "max": 3000, "currency": "MXN" },
+        "priceRange": {
+          "min": 1000,
+          "max": 3000,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-huatulco-flight-guide",
         "frequency": {
           "es": "2-4 vuelos diarios, más frecuentes en temporada alta",
@@ -690,7 +803,11 @@
             "en": "11 - 13 hours"
           }
         },
-        "priceRange": { "min": 800, "max": 1400, "currency": "MXN" },
+        "priceRange": {
+          "min": 800,
+          "max": 1400,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-huatulco-bus-guide",
         "frequency": {
           "es": "3-5 salidas diarias desde TAPO, principalmente nocturnas",
@@ -713,7 +830,11 @@
             "en": "9 - 11 hours"
           }
         },
-        "priceRange": { "min": 2000, "max": 3500, "currency": "MXN" },
+        "priceRange": {
+          "min": 2000,
+          "max": 3500,
+          "currency": "MXN"
+        },
         "guideId": "cdmx-huatulco-car-guide",
         "frequency": {
           "es": "Vía Oaxaca por autopista 135D y carretera costera 200",
@@ -721,6 +842,7 @@
         },
         "recommended": false
       }
-    ]
+    ],
+    "lastModified": "2026-04-15"
   }
 ]

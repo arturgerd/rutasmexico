@@ -101,8 +101,14 @@ export default async function BlogPostPage({
     inLanguage: locale === "es" ? "es-MX" : locale === "fr" ? "fr-FR" : "en-US",
   };
 
+  // Detect listicle / step-by-step posts so we can emit HowTo schema. Catches:
+  //   - explicit prefixes (como-/cuanto-cuesta/hoteles-/vuelos-/que-hacer)
+  //   - slugs containing itinerario or guia-completa (multi-day plans)
+  //   - "N-dias" patterns (3-dias, 5-dias, 10-dias)
+  //   - relevant tag hints (como, paso, guia, itinerario)
   const isHowTo = /^(como-|cuanto-cuesta|hoteles-|vuelos-|que-hacer)/.test(post.slug)
-    || post.tags?.some((t) => /como|paso|guia/.test(t));
+    || /(itinerario|guia-completa|-\d+-dias)/.test(post.slug)
+    || post.tags?.some((t) => /como|paso|guia|itinerario/.test(t));
   const stepMatches: string[] = [];
   const h3Re = /<h3[^>]*>([^<]+)<\/h3>/gi;
   let m: RegExpExecArray | null;

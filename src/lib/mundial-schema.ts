@@ -28,14 +28,12 @@ function teamName(team: LocalizedString, locale: string): string {
   return team[l] || team.es;
 }
 
-function tournamentSuperEvent(locale: string) {
-  return {
-    "@type": "SportsEvent",
-    name: TOURNAMENT_NAME[locale] || TOURNAMENT_NAME.es,
-    startDate: TOURNAMENT_START,
-    endDate: TOURNAMENT_END,
-    organizer: { "@type": "SportsOrganization", name: "FIFA", url: "https://www.fifa.com" },
-  };
+// Soccer match scheduled length: 90 min + halftime + stoppage; 2h is the
+// industry-standard endDate offset Google asks for in SportsEvent.
+function addHours(isoStart: string, hours: number): string {
+  const d = new Date(isoStart);
+  d.setUTCHours(d.getUTCHours() + hours);
+  return d.toISOString().replace(/\.\d{3}Z$/, "Z");
 }
 
 export function buildMatchSportsEvent(
@@ -56,15 +54,26 @@ export function buildMatchSportsEvent(
 
   const address = localize(venue.stadium.address, locale as Locale);
 
+  // Build absolute URL for the venue hero so Google has a usable image for the
+  // match's rich result preview. Falls back to a generic Mundial OG image.
+  const matchImage = venue.heroImage?.startsWith("http")
+    ? venue.heroImage
+    : `${BASE_URL}${venue.heroImage || "/og-image.png"}`;
+
+  const startDate = `${match.date}T${match.time}:00-06:00`;
+
   return {
     "@context": "https://schema.org",
     "@type": "SportsEvent",
+    "@id": `${venueUrl}#match-${match.date.replace(/-/g, "")}-${match.time.replace(":", "")}`,
     name,
     description: `${round} — ${venue.stadium.name}, ${venueName}`,
-    startDate: `${match.date}T${match.time}:00`,
+    startDate,
+    endDate: addHours(startDate, 2),
     eventStatus: "https://schema.org/EventScheduled",
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     sport: "Soccer",
+    image: matchImage,
     location: {
       "@type": "StadiumOrArena",
       name: venue.stadium.name,
@@ -72,8 +81,16 @@ export function buildMatchSportsEvent(
       url: venueUrl,
       maximumAttendeeCapacity: venue.stadium.capacity,
     },
-    ...(competitors.length > 0 && { competitor: competitors }),
-    superEvent: tournamentSuperEvent(locale),
+    ...(competitors.length > 0 && {
+      // Schema.org SportsEvent uses competitor; older Google guidelines parsed
+      // performer for events. Emit both so we satisfy both validators.
+      competitor: competitors,
+      performer: competitors,
+    }),
+    // Reference the tournament by @id rather than inlining a partial SportsEvent
+    // (the inline version was missing location + eventStatus + image, which is
+    // exactly what Search Console flagged for 62 elements).
+    superEvent: { "@id": `${BASE_URL}/${locale}/mundial#tournament` },
     organizer: { "@type": "SportsOrganization", name: "FIFA", url: "https://www.fifa.com" },
   };
 }
@@ -145,6 +162,7 @@ export function buildTournamentSchema(venues: MundialVenue[], locale: string) {
     eventStatus: "https://schema.org/EventScheduled",
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     sport: "Soccer",
+    image: `${BASE_URL}/og-image.png`,
     organizer: { "@type": "SportsOrganization", name: "FIFA", url: "https://www.fifa.com" },
     location: venues.map((v) => ({
       "@type": "StadiumOrArena",
