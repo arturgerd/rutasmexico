@@ -40,6 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/bodas", changeFrequency: "monthly" as const, priority: 0.7 },
     { path: "/mundial", changeFrequency: "weekly" as const, priority: 0.95 },
     { path: "/nosotros", changeFrequency: "monthly" as const, priority: 0.5 },
+    { path: "/metodologia", changeFrequency: "monthly" as const, priority: 0.5 },
     { path: "/contacto", changeFrequency: "monthly" as const, priority: 0.4 },
     { path: "/privacidad", changeFrequency: "yearly" as const, priority: 0.3 },
     { path: "/terminos", changeFrequency: "yearly" as const, priority: 0.3 },

@@ -77,6 +77,11 @@ export default function Footer() {
                   {t("contact")}
                 </Link>
               </li>
+              <li>
+                <Link href={`/${locale}/metodologia`} className="hover:text-terracotta-400 transition-colors">
+                  {locale === "es" ? "Metodología" : locale === "fr" ? "Méthodologie" : "Methodology"}
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

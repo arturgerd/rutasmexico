@@ -187,11 +187,13 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
                       {t3(locale, "Verificación", "Verification", "Vérification")}
                     </div>
                     <div className="text-arena-700 mt-0.5">
-                      {t3(locale,
-                        "Precios revisados trimestralmente",
-                        "Prices reviewed quarterly",
-                        "Prix vérifiés trimestriellement"
-                      )}
+                      <Link href={`/${locale}/metodologia`} className="text-terracotta-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 rounded">
+                        {t3(locale,
+                          "Ver metodología editorial",
+                          "See editorial methodology",
+                          "Voir méthodologie"
+                        )}
+                      </Link>
                     </div>
                   </div>
                   <div className="bg-white rounded-lg border border-arena-200 px-3 py-2">
