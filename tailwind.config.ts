@@ -57,9 +57,21 @@ const config: Config = {
           800: "#72564a",
           900: "#5e4840",
         },
+        // Full jade scale — earlier sprints used jade-50..900 across the codebase
+        // (Mundial pill, jade tinted cards, focus rings) but only 500/600 were defined,
+        // so any class outside that range silently produced no CSS and rendered as
+        // transparent (e.g. the "Mundial 2026" header pill turning invisible-on-white).
         jade: {
+          50: "#e6f7f0",
+          100: "#c2ebd9",
+          200: "#9bdec0",
+          300: "#6cd0a3",
+          400: "#39bf85",
           500: "#0d9668",
           600: "#087f57",
+          700: "#066948",
+          800: "#04553a",
+          900: "#03442e",
         },
       },
       fontFamily: {
