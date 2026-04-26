@@ -32,7 +32,7 @@ const nextConfig = {
       "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://pagead2.googlesyndication.com https://*.googlesyndication.com https://tp.media https://emrldco.com https://*.tp.media",
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       "font-src 'self' https://fonts.gstatic.com data:",
-      "img-src 'self' data: blob: https://images.unsplash.com https://www.googletagmanager.com https://*.googlesyndication.com https://*.google.com https://*.doubleclick.net https://tp.media",
+      "img-src 'self' data: blob: https://images.unsplash.com https://www.googletagmanager.com https://*.googlesyndication.com https://*.google.com https://*.doubleclick.net https://tp.media https://*.tile.openstreetmap.org https://tile.openstreetmap.org",
       "connect-src 'self' https://www.google-analytics.com https://*.googletagmanager.com https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://tp.media https://emrldco.com",
       "frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://tp.media",
       "object-src 'none'",
