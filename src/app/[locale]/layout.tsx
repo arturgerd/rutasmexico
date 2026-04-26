@@ -7,6 +7,15 @@ import Footer from "@/components/layout/Footer";
 import SetHtmlLang from "@/components/layout/SetHtmlLang";
 import { seoAlternates, seoOpenGraph } from "@/lib/utils";
 
+// Without generateStaticParams Next.js can't pre-render the locale layout, so every
+// request is rendered on demand and Vercel emits Cache-Control: no-store. We only
+// pre-render es/en — fr translations are incomplete (~80% missing) and break the build
+// when a translator falls back to undefined; fr URLs still work, just dynamically.
+const STATIC_LOCALES = ["es", "en"] as const;
+export function generateStaticParams() {
+  return STATIC_LOCALES.map((locale) => ({ locale }));
+}
+
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "common" });
   const title = `${t("siteName")} - ${t("tagline")}`;

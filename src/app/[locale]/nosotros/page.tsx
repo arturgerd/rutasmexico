@@ -3,10 +3,12 @@ import Link from "next/link";
 import { t3, seoAlternates, seoOpenGraph } from "@/lib/utils";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+  // The locale layout already wraps page titles with `template: '%s | RutasMéxico'`,
+  // so we drop "RutasMéxico" from this string to avoid the duplicated suffix.
   const title = t3(locale,
-    "Sobre RutasMéxico | Guía de viajes por México",
-    "About RutasMéxico | Mexico Travel Guide & Comparison",
-    "À propos de RutasMéxico | Guide de voyage au Mexique"
+    "Sobre nosotros — Guía de viajes por México",
+    "About us — Mexico Travel Guide & Comparison",
+    "À propos — Guide de voyage au Mexique"
   );
   const description = t3(locale,
     "Conoce al equipo detrás de RutasMéxico: comparamos vuelos, autobuses, hoteles y rutas para que viajes por México al mejor precio, sin anuncios invasivos.",

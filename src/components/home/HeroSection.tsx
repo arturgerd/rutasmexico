@@ -24,7 +24,6 @@ export default function HeroSection({ airports }: HeroSectionProps) {
         fill
         className="object-cover"
         priority
-        fetchPriority="high"
         sizes="100vw"
         quality={85}
       />

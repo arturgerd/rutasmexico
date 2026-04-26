@@ -5,10 +5,13 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Icon from "@/components/ui/Icon";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+  // The locale layout already wraps page titles with `template: '%s | RutasMéxico'`,
+  // so the page-level title MUST NOT include "RutasMéxico" itself or it ends up duplicated
+  // (e.g. "Metodología editorial | RutasMéxico | RutasMéxico" — caught by external SEO audit).
   const title = t3(locale,
-    "Metodología editorial | RutasMéxico",
-    "Editorial methodology | RutasMéxico",
-    "Méthodologie éditoriale | RutasMéxico"
+    "Metodología editorial",
+    "Editorial methodology",
+    "Méthodologie éditoriale"
   );
   const description = t3(locale,
     "Cómo verificamos precios, fuentes oficiales que consultamos, frecuencia de actualización y política de afiliados de RutasMéxico. Transparencia editorial completa.",

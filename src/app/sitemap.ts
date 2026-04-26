@@ -13,7 +13,18 @@ const locales = ["es", "en"];
 
 // Stable build-time date so the sitemap doesn't tell Google "everything changed"
 // on every crawl. Bump this when doing a sweep update across many static pages.
-const BUILD_DATE = new Date("2026-04-24");
+const BUILD_DATE = new Date("2026-04-26");
+
+// Per-entry lastModified resolver: if a data file entry exposes its own lastModified
+// (yyyy-mm-dd or ISO), use it; otherwise fall back to BUILD_DATE. This lets us refresh
+// individual destinos/rutas/bodas without bumping every URL in the sitemap.
+function resolveLastModified(entry: { lastModified?: string }): Date {
+  if (entry.lastModified) {
+    const d = new Date(entry.lastModified);
+    if (!Number.isNaN(d.getTime())) return d;
+  }
+  return BUILD_DATE;
+}
 
 function generateAlternates(path: string) {
   // Only es/en in hreflang map — same reason as the locales constant above.
@@ -60,10 +71,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Destination pages
   for (const dest of destinations) {
+    const lm = resolveLastModified(dest as { lastModified?: string });
     for (const locale of locales) {
       entries.push({
         url: `${BASE_URL}/${locale}/destinos/${dest.slug}`,
-        lastModified: BUILD_DATE,
+        lastModified: lm,
         changeFrequency: "monthly",
         priority: 0.8,
         alternates: generateAlternates(`/destinos/${dest.slug}`),
@@ -88,10 +100,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Route pages
   for (const route of routes) {
+    const lm = resolveLastModified(route as { lastModified?: string });
     for (const locale of locales) {
       entries.push({
         url: `${BASE_URL}/${locale}/rutas/${route.slug}`,
-        lastModified: BUILD_DATE,
+        lastModified: lm,
         changeFrequency: "monthly",
         priority: 0.7,
         alternates: generateAlternates(`/rutas/${route.slug}`),
@@ -101,10 +114,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Bodas (wedding) pages
   for (const boda of bodas) {
+    const lm = resolveLastModified(boda as { lastModified?: string });
     for (const locale of locales) {
       entries.push({
         url: `${BASE_URL}/${locale}/bodas/${boda.slug}`,
-        lastModified: BUILD_DATE,
+        lastModified: lm,
         changeFrequency: "monthly",
         priority: 0.6,
         alternates: generateAlternates(`/bodas/${boda.slug}`),
@@ -112,12 +126,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  // Mundial 2026 venue pages (16 venues × 3 locales = 48 URLs)
+  // Mundial 2026 venue pages (16 venues × 2 locales = 32 URLs)
   for (const venue of mundialVenues) {
+    const lm = resolveLastModified(venue as { lastModified?: string });
     for (const locale of locales) {
       entries.push({
         url: `${BASE_URL}/${locale}/mundial/${venue.slug}`,
-        lastModified: BUILD_DATE,
+        lastModified: lm,
         changeFrequency: "weekly",
         priority: 0.9,
         alternates: generateAlternates(`/mundial/${venue.slug}`),
