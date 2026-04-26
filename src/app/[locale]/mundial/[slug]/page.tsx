@@ -28,7 +28,13 @@ export async function generateMetadata({ params: { locale, slug } }: { params: {
     `World Cup 2026 in ${cityOnly} - ${venue.stadium.name}`,
     `Coupe du Monde 2026 à ${cityOnly} - ${venue.stadium.name}`
   );
-  const description = localize(venue.stadium.description, locale as Locale);
+  // Truncate the venue description to ~155 chars so SERP snippet doesn't get cut
+  // mid-word; the full prose still renders inside the page body. Cut on a word
+  // boundary close to 152 to leave room for the ellipsis.
+  const fullDescription = localize(venue.stadium.description, locale as Locale);
+  const description = fullDescription.length <= 155
+    ? fullDescription
+    : fullDescription.slice(0, 152).replace(/\s+\S*$/, "") + "…";
   return {
     title,
     description,

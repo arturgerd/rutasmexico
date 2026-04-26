@@ -20,6 +20,8 @@ const nextConfig = {
         destination: "/es",
         permanent: true,
       },
+      // /fr/* redirects are handled in middleware.ts (308 before next-intl resolves)
+      // because next-intl middleware would otherwise intercept first.
     ];
   },
   async headers() {

@@ -130,8 +130,10 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
             </div>
           </section>
 
-          {/* Author / Editor profile — visible E-E-A-T signal that the Person schema points to */}
-          <section className="mb-12 bg-gradient-to-br from-arena-50 to-terracotta-50/40 rounded-2xl border border-arena-200 p-6 md:p-8">
+          {/* Author / Editor profile — visible E-E-A-T signal that the Person schema points to.
+              The id="editor" anchor matches the Person schema's @id (.../nosotros#editor) so
+              Article.author.@id references resolve to a real DOM element when crawlers parse it. */}
+          <section id="editor" className="mb-12 bg-gradient-to-br from-arena-50 to-terracotta-50/40 rounded-2xl border border-arena-200 p-6 md:p-8">
             <div className="flex flex-col sm:flex-row items-start gap-6">
               <div
                 aria-hidden="true"
