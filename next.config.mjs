@@ -26,6 +26,14 @@ const nextConfig = {
       // in Search Console. Keep these BEFORE the /fr/* catch-all so we redirect
       // in one hop instead of two.
       {
+        // Old un-prefixed URL Google had indexed; the post itself never existed
+        // in the current data set, so 301 to the blog index instead of leaving
+        // it as a 404 in Search Console.
+        source: "/blog/semana-santa-mexico",
+        destination: "/es/blog",
+        permanent: true,
+      },
+      {
         source: "/:locale(es|en)/blog/mejores-hoteles-playa-mexico",
         destination: "/:locale/blog/riviera-maya-vs-nayarit",
         permanent: true,
