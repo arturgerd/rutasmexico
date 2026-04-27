@@ -12,7 +12,6 @@ export async function generateStaticParams() {
   return slugs.flatMap((slug) => [
     { locale: "es", slug },
     { locale: "en", slug },
-    { locale: "fr", slug },
   ]);
 }
 

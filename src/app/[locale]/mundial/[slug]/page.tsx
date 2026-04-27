@@ -13,7 +13,6 @@ export async function generateStaticParams() {
   return venues.flatMap((v) => [
     { locale: "es", slug: v.slug },
     { locale: "en", slug: v.slug },
-    { locale: "fr", slug: v.slug },
   ]);
 }
 

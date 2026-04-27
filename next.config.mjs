@@ -20,8 +20,49 @@ const nextConfig = {
         destination: "/es",
         permanent: true,
       },
-      // /fr/* redirects are handled in middleware.ts (308 before next-intl resolves)
-      // because next-intl middleware would otherwise intercept first.
+      // Removed/renamed blog posts → closest live equivalent. These specific
+      // slugs were indexed by Google but the underlying entries were deleted,
+      // so the URLs were 404'ing and showing up as duplicates without canonical
+      // in Search Console. Keep these BEFORE the /fr/* catch-all so we redirect
+      // in one hop instead of two.
+      {
+        source: "/:locale(es|en)/blog/mejores-hoteles-playa-mexico",
+        destination: "/:locale/blog/riviera-maya-vs-nayarit",
+        permanent: true,
+      },
+      {
+        source: "/fr/blog/mejores-hoteles-playa-mexico",
+        destination: "/es/blog/riviera-maya-vs-nayarit",
+        permanent: true,
+      },
+      {
+        source: "/:locale(es|en)/blog/autobuses-playas-mexico",
+        destination: "/:locale/blog/autobuses-mexico",
+        permanent: true,
+      },
+      {
+        source: "/fr/blog/autobuses-playas-mexico",
+        destination: "/es/blog/autobuses-mexico",
+        permanent: true,
+      },
+      // /fr/* → /es/*. FR was never beyond ~20% translation parity, so every
+      // /fr URL rendered Spanish copy under <html lang="es"> — duplicate content
+      // in Google's eyes. We tried this in middleware.ts first (kept as fallback)
+      // but Vercel serves the statically pre-rendered /fr HTML from edge cache
+      // BEFORE middleware fires, so the redirect never ran. redirects() in
+      // next.config.mjs runs at the Vercel edge layer ahead of both static
+      // serving and middleware, so it actually fires. Reverse this when FR
+      // translations reach parity.
+      {
+        source: "/fr",
+        destination: "/es",
+        permanent: true,
+      },
+      {
+        source: "/fr/:path*",
+        destination: "/es/:path*",
+        permanent: true,
+      },
     ];
   },
   async headers() {
