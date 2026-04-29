@@ -50,6 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/blog", changeFrequency: "daily" as const, priority: 0.8 },
     { path: "/bodas", changeFrequency: "monthly" as const, priority: 0.7 },
     { path: "/mundial", changeFrequency: "weekly" as const, priority: 0.95 },
+    { path: "/mundial/calendario", changeFrequency: "weekly" as const, priority: 0.92 },
     { path: "/nosotros", changeFrequency: "monthly" as const, priority: 0.5 },
     { path: "/metodologia", changeFrequency: "monthly" as const, priority: 0.5 },
     { path: "/contacto", changeFrequency: "monthly" as const, priority: 0.4 },

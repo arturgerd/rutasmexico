@@ -22,6 +22,7 @@ const roundLabels: Record<string, Record<string, string>> = {
   "round-of-16": { es: "Octavos de Final", en: "Round of 16", fr: "Huitièmes de finale", zh: "16强" },
   quarter: { es: "Cuartos de Final", en: "Quarter Finals", fr: "Quarts de finale", zh: "四分之一决赛" },
   semi: { es: "Semifinal", en: "Semi Final", fr: "Demi-finale", zh: "半决赛" },
+  "third-place": { es: "Tercer Lugar", en: "Third Place", fr: "Troisième place", zh: "季军赛" },
   final: { es: "Final", en: "Final", fr: "Finale", zh: "决赛" },
 };
 

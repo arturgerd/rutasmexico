@@ -18,6 +18,7 @@ function roundLabel(round: MundialMatch["round"], locale: string): string {
     "round-of-16": { es: "Octavos de final", en: "Round of 16", fr: "8es de finale" },
     quarter: { es: "Cuartos de final", en: "Quarterfinals", fr: "Quarts de finale" },
     semi: { es: "Semifinal", en: "Semifinal", fr: "Demi-finale" },
+    "third-place": { es: "Tercer lugar", en: "Third place", fr: "Troisième place" },
     final: { es: "Final", en: "Final", fr: "Finale" },
   };
   return labels[round]?.[locale] || labels[round]?.es || round;

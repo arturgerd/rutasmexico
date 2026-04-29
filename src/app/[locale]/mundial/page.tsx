@@ -114,6 +114,23 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
         </div>
       </div>
 
+      {/* CTA Calendario */}
+      <div className="bg-oro-500 py-4 border-b-4 border-oro-600">
+        <div className="container-custom flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
+          <div>
+            <h2 className="font-display text-lg md:text-xl font-bold text-arena-900">
+              📅 {t3(locale, "Calendario completo de los 104 partidos", "Complete calendar of 104 matches", "Calendrier complet des 104 matchs")}
+            </h2>
+            <p className="text-sm text-arena-800">
+              {t3(locale, "Filtra por fecha, equipo, ronda o sede", "Filter by date, team, round or venue", "Filtrez par date, équipe, tour ou stade")}
+            </p>
+          </div>
+          <Link href={`/${locale}/mundial/calendario`} className="bg-arena-900 text-white font-bold py-3 px-6 rounded-xl hover:bg-arena-800 whitespace-nowrap">
+            {t3(locale, "Ver calendario →", "See calendar →", "Voir calendrier →")}
+          </Link>
+        </div>
+      </div>
+
       {/* Mexico Group A - Partidos */}
       <div className="bg-jade-700 py-8">
         <div className="container-custom">

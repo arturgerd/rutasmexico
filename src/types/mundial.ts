@@ -5,7 +5,7 @@ export interface MundialMatch {
   time: string;
   teamA: LocalizedString;
   teamB: LocalizedString;
-  round: "group" | "round-of-32" | "round-of-16" | "quarter" | "semi" | "final";
+  round: "group" | "round-of-32" | "round-of-16" | "quarter" | "semi" | "third-place" | "final";
   group?: string;
   isMexicoGame: boolean;
 }
