@@ -85,7 +85,7 @@ const nextConfig = {
       "font-src 'self' https://fonts.gstatic.com data:",
       "img-src 'self' data: blob: https://images.unsplash.com https://www.googletagmanager.com https://*.googlesyndication.com https://*.google.com https://*.doubleclick.net https://tp.media https://*.tile.openstreetmap.org https://tile.openstreetmap.org",
       "connect-src 'self' https://www.google-analytics.com https://*.googletagmanager.com https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://tp.media https://emrldco.com",
-      "frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://tp.media",
+      "frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://tp.media https://www.google.com https://maps.google.com",
       "object-src 'none'",
       "base-uri 'self'",
       "form-action 'self'",
