@@ -19,8 +19,31 @@ const ROUND_LABELS: Record<string, { es: string; en: string; fr: string }> = {
 
 const COUNTRY_FLAG: Record<string, string> = { MX: "🇲🇽", US: "🇺🇸", CA: "🇨🇦" };
 
+const COUNTRY_STRIPE: Record<string, string> = {
+  MX: "from-jade-500 via-white to-terracotta-500",
+  US: "from-blue-700 via-white to-red-600",
+  CA: "from-red-600 via-white to-red-600",
+};
+
+const GROUP_COLOR: Record<string, string> = {
+  A: "bg-emerald-100 text-emerald-800",
+  B: "bg-sky-100 text-sky-800",
+  C: "bg-amber-100 text-amber-800",
+  D: "bg-rose-100 text-rose-800",
+  E: "bg-violet-100 text-violet-800",
+  F: "bg-orange-100 text-orange-800",
+  G: "bg-teal-100 text-teal-800",
+  H: "bg-indigo-100 text-indigo-800",
+  I: "bg-pink-100 text-pink-800",
+  J: "bg-lime-100 text-lime-800",
+  K: "bg-cyan-100 text-cyan-800",
+  L: "bg-fuchsia-100 text-fuchsia-800",
+};
+
 function teamFlag(name: string): string {
   const n = name.toLowerCase();
+  // TBD placeholders get a soccer ball instead of a white flag — feels less "missing data"
+  if (/^(por definir|tbd|à définir)/i.test(name)) return "⚽";
   if (n.includes("méxico") || n.includes("mexico")) return "🇲🇽";
   if (n.includes("argentina")) return "🇦🇷";
   if (n.includes("brasil") || n.includes("brazil")) return "🇧🇷";
@@ -199,10 +222,16 @@ export default function CalendarClient({ matches }: Props) {
         </div>
       )}
       <div className="space-y-6">
-        {grouped.map(([date, dayMatches]) => (
+        {grouped.map(([date, dayMatches]) => {
+          const dayCountries = Array.from(new Set(dayMatches.map((m) => m.country)));
+          return (
           <div key={date}>
-            <h3 className="font-display text-lg font-bold text-arena-800 mb-3 sticky top-0 bg-arena-50/95 backdrop-blur py-2 z-10 border-b border-arena-200">
-              📅 {fmtDate(date, locale)} <span className="text-arena-400 text-sm font-normal">({date})</span>
+            <h3 className="font-display text-lg font-bold text-arena-800 mb-3 sticky top-0 bg-arena-50/95 backdrop-blur py-2 z-10 border-b border-arena-200 flex items-center gap-2 flex-wrap">
+              <span>📅 {fmtDate(date, locale)}</span>
+              <span className="text-arena-400 text-sm font-normal">({date})</span>
+              <span className="ml-auto text-base flex items-center gap-1">
+                {dayCountries.map((c) => <span key={c} title={c}>{COUNTRY_FLAG[c]}</span>)}
+              </span>
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {dayMatches.map((m, i) => {
@@ -214,37 +243,50 @@ export default function CalendarClient({ matches }: Props) {
                   <Link
                     key={`${m.venueId}-${date}-${m.time}-${i}`}
                     href={`/${locale}/mundial/${m.venueSlug}`}
-                    className={`bg-white rounded-xl border ${m.isMexicoGame ? "border-jade-400 ring-2 ring-jade-200" : "border-arena-200"} p-4 hover:shadow-md transition-all`}
+                    className={`bg-white rounded-xl border ${m.isMexicoGame ? "border-jade-400 ring-2 ring-jade-200" : "border-arena-200"} overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all`}
                   >
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-xs font-bold uppercase text-arena-500">
-                        {m.isMexicoGame && "🇲🇽 "} {roundLabel}{m.group ? ` · ${t3(locale, "Grupo", "Group", "Groupe")} ${m.group}` : ""}
-                      </span>
-                      <span className="text-xs font-mono text-arena-700 bg-arena-100 rounded px-2 py-0.5">
-                        ⏰ {m.time}
-                      </span>
-                    </div>
-                    <div className="flex items-center justify-between gap-3 my-3">
-                      <div className="flex items-center gap-2 flex-1 min-w-0">
-                        <span className="text-2xl">{teamFlag(teamA)}</span>
-                        <span className="font-bold text-arena-800 truncate">{teamA}</span>
+                    <div className={`h-1.5 bg-gradient-to-r ${COUNTRY_STRIPE[m.country]}`} />
+                    <div className="p-4">
+                      <div className="flex items-center justify-between mb-2 gap-2">
+                        <div className="flex items-center gap-2 min-w-0">
+                          {m.isMexicoGame && <span className="text-xs">🇲🇽</span>}
+                          <span className="text-xs font-bold uppercase text-arena-500 truncate">{roundLabel}</span>
+                          {m.group && (
+                            <span className={`text-xs font-bold rounded px-1.5 py-0.5 ${GROUP_COLOR[m.group] || "bg-arena-100 text-arena-700"}`}>
+                              {m.group}
+                            </span>
+                          )}
+                        </div>
+                        <span className="text-xs font-mono text-arena-700 bg-arena-100 rounded px-2 py-0.5 whitespace-nowrap">
+                          ⏰ {m.time}
+                        </span>
                       </div>
-                      <span className="text-arena-400 font-bold">vs</span>
-                      <div className="flex items-center gap-2 flex-1 min-w-0 justify-end text-right">
-                        <span className="font-bold text-arena-800 truncate">{teamB}</span>
-                        <span className="text-2xl">{teamFlag(teamB)}</span>
+                      <div className="flex items-center justify-between gap-3 my-3">
+                        <div className="flex items-center gap-2 flex-1 min-w-0">
+                          <span className="text-3xl">{teamFlag(teamA)}</span>
+                          <span className="font-bold text-arena-800 truncate">{teamA}</span>
+                        </div>
+                        <span className="text-arena-400 font-bold text-sm">vs</span>
+                        <div className="flex items-center gap-2 flex-1 min-w-0 justify-end text-right">
+                          <span className="font-bold text-arena-800 truncate">{teamB}</span>
+                          <span className="text-3xl">{teamFlag(teamB)}</span>
+                        </div>
                       </div>
-                    </div>
-                    <div className="text-xs text-arena-500 flex items-center justify-between border-t border-arena-100 pt-2">
-                      <span>{COUNTRY_FLAG[m.country]} {m.stadiumName}</span>
-                      <span className="text-arena-400 truncate ml-2">{venueLabel.split(" - ")[0]}</span>
+                      <div className="text-xs text-arena-500 flex items-center justify-between border-t border-arena-100 pt-2">
+                        <span className="flex items-center gap-1">
+                          <span className="text-base">{COUNTRY_FLAG[m.country]}</span>
+                          <span className="truncate">{m.stadiumName}</span>
+                        </span>
+                        <span className="text-arena-400 truncate ml-2">{venueLabel.split(" - ")[0]}</span>
+                      </div>
                     </div>
                   </Link>
                 );
               })}
             </div>
           </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
