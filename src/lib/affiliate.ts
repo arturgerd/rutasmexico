@@ -195,6 +195,28 @@ export function getTiqetsAffiliateUrl(tiqetsUrl: string): string {
 }
 
 /**
+ * Appends the Travelpayouts → Kiwitaxi tracking params to a Kiwitaxi URL.
+ * Reward rate: 9-11%, cookie 30 days. Pattern verified against the live
+ * Travelpayouts redirector — Kiwitaxi just needs ?tpo=… on the URL.
+ */
+export function getKiwitaxiAffiliateUrl(kiwitaxiUrl: string): string {
+  const sep = kiwitaxiUrl.includes("?") ? "&" : "?";
+  return `${kiwitaxiUrl}${sep}tpo=0-${TP_SHMARKER}&utm_source=travelpayouts`;
+}
+
+/**
+ * Wraps an Airalo URL with the Travelpayouts → Impact → Airalo redirect.
+ * Reward rate: 12%, cookie 30 days. Airalo runs through Impact Radius,
+ * so the URL pattern is different from Klook (which uses its own affiliate
+ * domain). The numeric IDs (publisher 1209822, brand 1310283, program
+ * 15608) were captured from the live Travelpayouts link generator.
+ */
+export function getAiraloAffiliateUrl(airaloUrl: string): string {
+  const tag = `0-${TP_SHMARKER}`;
+  return `https://airalo.pxf.io/c/1209822/1310283/15608?sharedID=${TP_SHMARKER}_&subId1=${tag}&u=${encodeURIComponent(airaloUrl)}`;
+}
+
+/**
  * Genera link de hotel en Booking.com
  */
 export function getBookingUrl(params: {
