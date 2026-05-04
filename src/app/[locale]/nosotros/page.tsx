@@ -301,10 +301,10 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
             <div className="ml-16 bg-white border border-arena-200 rounded-2xl p-6 shadow-sm">
               <div className="flex flex-col sm:flex-row gap-6 items-start">
                 <div className="w-24 h-24 rounded-full bg-gradient-to-br from-terracotta-300 to-terracotta-600 flex items-center justify-center text-white text-3xl font-bold shadow-md flex-shrink-0">
-                  GA
+                  AG
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-display font-bold text-arena-900 text-xl mb-1">Gerardo Álvarez</h3>
+                  <h3 className="font-display font-bold text-arena-900 text-xl mb-1">Arturo García</h3>
                   <p className="text-sm text-terracotta-600 font-semibold mb-3">
                     {t3(locale,
                       "Fundador y editor — RutasMéxico",
@@ -314,9 +314,9 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
                   </p>
                   <p className="text-arena-600 leading-relaxed text-sm mb-3">
                     {t3(locale,
-                      "Gerardo es un viajero y editor mexicano radicado en la Ciudad de México. Ha recorrido las 32 entidades federativas, comparado precios de cada aerolínea y cadena de autobuses, y se ha hospedado desde hostales en Sayulita hasta resorts en Los Cabos. Cada artículo en RutasMéxico está escrito o revisado personalmente por él, con verificación de precios actualizados al menos una vez por trimestre.",
-                      "Gerardo is a Mexican traveler and editor based in Mexico City. He has visited all 32 Mexican states, compared prices from every airline and bus company, and stayed everywhere from Sayulita hostels to Los Cabos resorts. Every article on RutasMéxico is written or reviewed personally by him, with prices verified at least once per quarter.",
-                      "Gerardo est un voyageur et éditeur mexicain basé à Mexico. Il a parcouru les 32 États du Mexique, comparé les prix de chaque compagnie aérienne et de bus, et séjourné aussi bien dans des auberges de Sayulita que dans des resorts de Los Cabos. Chaque article sur RutasMéxico est écrit ou révisé personnellement par lui, avec des prix vérifiés au moins une fois par trimestre."
+                      "Arturo es un viajero y editor mexicano radicado en la Ciudad de México. Ha recorrido las 32 entidades federativas, comparado precios de cada aerolínea y cadena de autobuses, y se ha hospedado desde hostales en Sayulita hasta resorts en Los Cabos. Cada artículo en RutasMéxico está escrito o revisado personalmente por él, con verificación de precios actualizados al menos una vez por trimestre.",
+                      "Arturo is a Mexican traveler and editor based in Mexico City. He has visited all 32 Mexican states, compared prices from every airline and bus company, and stayed everywhere from Sayulita hostels to Los Cabos resorts. Every article on RutasMéxico is written or reviewed personally by him, with prices verified at least once per quarter.",
+                      "Arturo est un voyageur et éditeur mexicain basé à Mexico. Il a parcouru les 32 États du Mexique, comparé les prix de chaque compagnie aérienne et de bus, et séjourné aussi bien dans des auberges de Sayulita que dans des resorts de Los Cabos. Chaque article sur RutasMéxico est écrit ou révisé personnellement par lui, avec des prix vérifiés au moins une fois par trimestre."
                     )}
                   </p>
                   <p className="text-arena-500 text-sm leading-relaxed">
