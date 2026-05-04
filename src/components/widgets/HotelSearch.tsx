@@ -95,7 +95,7 @@ export default function HotelSearch({ airports, defaultCity = "", compact = fals
           onClick={handleSearch}
           className="bg-terracotta-500 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-terracotta-600 transition-colors whitespace-nowrap"
         >
-          {locale === "es" ? "Buscar hoteles" : "Search hotels"}
+          {locale === "es" ? "Encuentra hotel barato" : "Find cheapest hotel"}
         </button>
       </div>
     );
@@ -175,7 +175,7 @@ export default function HotelSearch({ airports, defaultCity = "", compact = fals
           onClick={handleSearch}
           className="w-full btn-primary py-3 text-base"
         >
-          🏨 {locale === "es" ? "Buscar hoteles" : "Search hotels"}
+          🏨 {locale === "es" ? "Encuentra el hotel más barato" : "Find the cheapest hotel"}
         </button>
       </div>
 

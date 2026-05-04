@@ -65,7 +65,7 @@ export default function HeroSection({ airports }: HeroSectionProps) {
               : "We compare prices from verified partners (Travelpayouts, Aviasales). We earn a commission if you book, but our editorial recommendations are independent and prices reflect public real-time data."}
           </p>
 
-          {/* Trust badges */}
+          {/* Inventory volume badges */}
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             {([
               { icon: "plane", text: "700+ aerolíneas", textEn: "700+ airlines" },
@@ -78,6 +78,26 @@ export default function HeroSection({ airports }: HeroSectionProps) {
                   {t("heroTitle").includes("México") ? badge.text : badge.textEn}
                 </span>
               </div>
+            ))}
+          </div>
+
+          {/* Editorial trust chips — E-E-A-T signals (matters for AdSense
+              re-application after the 2026-04-15 rejection): show that we
+              are a real editorial guide with verification cadence and an
+              honest affiliate disclosure, not just a thin affiliate landing. */}
+          <div className="flex flex-wrap justify-center gap-2 mt-4">
+            {([
+              { text: "Precios estimados en MXN", textEn: "Prices estimated in MXN" },
+              { text: "Información revisada trimestralmente", textEn: "Information reviewed quarterly" },
+              { text: "Enlaces de afiliado sin costo extra", textEn: "Affiliate links at no extra cost" },
+              { text: "Guías hechas para viajeros reales", textEn: "Guides made for real travelers" },
+            ] as const).map((chip) => (
+              <span
+                key={chip.textEn}
+                className="text-[11px] text-white/85 bg-white/5 backdrop-blur-sm rounded-full px-3 py-1 border border-white/10"
+              >
+                ✓ {t("heroTitle").includes("México") ? chip.text : chip.textEn}
+              </span>
             ))}
           </div>
         </div>

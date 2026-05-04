@@ -126,7 +126,7 @@ export default function FlightSearch({ airports, defaultOrigin = "", defaultDest
           onClick={handleSearch}
           className="bg-terracotta-500 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-terracotta-600 transition-colors whitespace-nowrap"
         >
-          {locale === "es" ? "Buscar vuelos" : "Search flights"}
+          {locale === "es" ? "Encuentra vuelo barato" : "Find cheapest flight"}
         </button>
       </div>
     );
@@ -264,7 +264,7 @@ export default function FlightSearch({ airports, defaultOrigin = "", defaultDest
             onClick={handleSearch}
             className="w-full btn-primary py-3 text-base"
           >
-            ✈️ {locale === "es" ? "Buscar vuelos" : "Search flights"}
+            ✈️ {locale === "es" ? "Encuentra el vuelo más barato" : "Find the cheapest flight"}
           </button>
         </div>
       </div>

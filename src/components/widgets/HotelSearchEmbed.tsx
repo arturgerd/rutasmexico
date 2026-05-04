@@ -242,7 +242,7 @@ export default function HotelSearchEmbed() {
             onClick={handleSearch}
             className="w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white py-3 rounded-xl text-base font-bold hover:from-amber-600 hover:to-orange-600 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
           >
-            🔍 {t3(locale, "Buscar hoteles", "Search hotels", "Rechercher des hôtels")}
+            🔍 {t3(locale, "Encuentra el hotel más barato", "Find the cheapest hotel", "Trouver l'hôtel le moins cher")}
           </button>
 
           {/* Comparison badge */}

@@ -249,7 +249,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                 onClick={handleSearch}
                 className="w-full bg-gradient-to-r from-terracotta-500 to-terracotta-600 text-white py-3 rounded-xl text-base font-bold hover:from-terracotta-600 hover:to-terracotta-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
-                🔍 {t3(locale, "Buscar vuelos", "Search flights", "Rechercher des vols")}
+                🔍 {t3(locale, "Encuentra el vuelo más barato", "Find the cheapest flight", "Trouver le vol le moins cher")}
               </button>
             </div>
           </div>

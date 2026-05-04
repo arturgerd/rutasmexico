@@ -257,7 +257,7 @@ export default function BusSearchEmbed() {
                 onClick={handleSearch}
                 className="w-full bg-gradient-to-r from-blue-700 to-blue-600 text-white py-3 rounded-xl text-base font-bold hover:from-blue-800 hover:to-blue-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
-                🚌 {locale === "es" ? "Buscar autobuses" : "Search buses"}
+                🚌 {locale === "es" ? "Encuentra el autobús más barato" : "Find the cheapest bus"}
               </button>
             </div>
           </div>
