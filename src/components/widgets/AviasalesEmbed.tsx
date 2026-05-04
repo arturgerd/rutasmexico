@@ -16,7 +16,8 @@ interface AviasalesEmbedProps {
 /**
  * Full embedded Aviasales flight search with results iframe.
  * Shows results from ALL airlines (Volaris, VivaAerobus, Aeroméxico, TAR, etc.)
- * Commission is earned on every booking through marker 510654.
+ * Commission is earned on every booking through the configured Travelpayouts
+ * marker (see AFFILIATE_CONFIG.travelpayouts.marker in src/lib/affiliate.ts).
  */
 export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDest = "" }: AviasalesEmbedProps) {
   const locale = useLocale();
