@@ -154,21 +154,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(SITE_GRAPH_JSONLD) }}
         />
 
-        {/* Travelpayouts site verification */}
-        <Script
-          id="travelpayouts-verification"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function () {
-                var script = document.createElement("script");
-                script.async = 1;
-                script.src = 'https://emrldco.com/NTEwNjU0.js?t=510654';
-                document.head.appendChild(script);
-              })();
-            `,
-          }}
-        />
+        {/* Travelpayouts Drive — marker 511361 (project: Rutasmexico).
+            The previous marker 510654 belonged to a different project
+            (Paginaweb-ruddy), so the verifier on the Rutasmexico project
+            kept reporting "Drive code not found" because the live script
+            was registering hits against the wrong project.
+            Rendered as a plain <script> tag (not next/script) so the URL
+            is present in the static HTML — the official Travelpayouts
+            snippet wraps this in an IIFE for WordPress compatibility,
+            but in a Next.js head a direct tag is cleaner and equivalent. */}
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script async src="https://emrldco.com/NTExMzYx.js?t=511361" />
       </head>
       <body className="min-h-screen flex flex-col">
         {children}
