@@ -7,6 +7,10 @@ interface TourPartnerLinks {
   tiqets?: string;
 }
 
+// Klook URLs use either a city/category page (when verified to exist) or
+// the public search endpoint, which accepts any keyword. Tiqets uses
+// city pages where verified, otherwise falls back to /en/search?q=.
+// Both URL families pass through the affiliate redirector unchanged.
 const PARTNER_LINKS: Record<string, TourPartnerLinks> = {
   cancun: {
     klook: "https://www.klook.com/en-US/coureg/89-cancun-things-to-do/",
@@ -15,6 +19,30 @@ const PARTNER_LINKS: Record<string, TourPartnerLinks> = {
   "ciudad-de-mexico": {
     klook: "https://www.klook.com/en-US/coureg/85-mexico-city-things-to-do/",
     tiqets: "https://www.tiqets.com/en/mexico-city-c75647/",
+  },
+  oaxaca: {
+    klook: "https://www.klook.com/en-US/search/?keyword=Oaxaca",
+    tiqets: "https://www.tiqets.com/en/search?q=Oaxaca",
+  },
+  merida: {
+    klook: "https://www.klook.com/en-US/search/?keyword=Merida+Yucatan",
+    tiqets: "https://www.tiqets.com/en/search?q=Merida",
+  },
+  "puerto-vallarta": {
+    klook: "https://www.klook.com/en-US/search/?keyword=Puerto+Vallarta",
+    tiqets: "https://www.tiqets.com/en/search?q=Puerto+Vallarta",
+  },
+  "los-cabos": {
+    klook: "https://www.klook.com/en-US/search/?keyword=Los+Cabos",
+    tiqets: "https://www.tiqets.com/en/search?q=Los+Cabos",
+  },
+  guadalajara: {
+    klook: "https://www.klook.com/en-US/search/?keyword=Guadalajara",
+    tiqets: "https://www.tiqets.com/en/search?q=Guadalajara",
+  },
+  "san-miguel-de-allende": {
+    klook: "https://www.klook.com/en-US/search/?keyword=San+Miguel+de+Allende",
+    tiqets: "https://www.tiqets.com/en/search?q=San+Miguel+de+Allende",
   },
 };
 
