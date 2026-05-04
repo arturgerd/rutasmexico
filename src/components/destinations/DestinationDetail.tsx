@@ -12,6 +12,7 @@ import { localize, formatCurrency, t3 } from "@/lib/utils";
 import { TRAVEL_MODE_ICONS } from "@/lib/constants";
 import LocationPin from "@/components/map/LocationPin";
 import { getDestinationImage, getDestinationCarouselImages } from "@/lib/destination-images";
+import ToursAndActivities from "./ToursAndActivities";
 
 interface DestinationDetailProps {
   destination: Destination;
@@ -245,6 +246,12 @@ export default function DestinationDetail({ destination, routes, terminals, loca
                   </h2>
                   <p className="text-arena-700 leading-relaxed whitespace-pre-line">{localize(expandedContent.gettingAround, locale)}</p>
                 </article>
+
+                <ToursAndActivities
+                  destinationSlug={destination.slug}
+                  cityName={localize(destination.name, locale)}
+                  locale={locale}
+                />
 
                 <article className="bg-white rounded-2xl p-6 shadow-sm">
                   <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">

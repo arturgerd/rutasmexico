@@ -157,6 +157,43 @@ export function getTourSearchUrl(params: {
   return `https://www.getyourguide.${locale === "es" ? "es" : locale === "fr" ? "fr" : "com"}/s/?q=${encodeURIComponent(cityName + " Mexico")}&partner_id=${partnerId}`;
 }
 
+// ============================================================
+// Klook & Tiqets — Travelpayouts indirect partners
+// ============================================================
+// Both link patterns were captured from the Travelpayouts link generator
+// (https://app.travelpayouts.com/tools/links/recent) and verified against
+// the live redirect targets.
+//   - Klook campaign id 13694 is global; only the shmarker (publisher id)
+//     and destination URL change per click.
+//   - Tiqets uses query-string params instead of a redirect endpoint, so
+//     we just append them to the destination URL.
+// shmarker 712936 is the publisher (gerardo.alvarezxz@gmail.com) ID,
+// which is different from the project marker (511361, see top of file).
+
+const TP_SHMARKER = "712936";
+const KLOOK_CAMPAIGN_ID = "13694";
+
+/**
+ * Wraps a Klook URL with the Travelpayouts → Klook affiliate redirect.
+ * Pass any klook.com URL (city page, category page, specific tour) and
+ * the click is credited to the Rutasmexico Travelpayouts account.
+ * Reward rate: 2-5%, cookie 7-30 days.
+ */
+export function getKlookAffiliateUrl(klookUrl: string): string {
+  const aid = `api|${KLOOK_CAMPAIGN_ID}|0-${TP_SHMARKER}|pid|${TP_SHMARKER}`;
+  return `https://affiliate.klook.com/redirect?aid=${encodeURIComponent(aid)}&k_site=${encodeURIComponent(klookUrl)}`;
+}
+
+/**
+ * Appends the Travelpayouts → Tiqets tracking params to a Tiqets URL.
+ * Reward rate: 3.5-8%, cookie 30 days.
+ */
+export function getTiqetsAffiliateUrl(tiqetsUrl: string): string {
+  const tag = `0-${TP_SHMARKER}`;
+  const sep = tiqetsUrl.includes("?") ? "&" : "?";
+  return `${tiqetsUrl}${sep}partner=travelpayouts.com&tq_campaign=${tag}&tq_click_id=${tag}`;
+}
+
 /**
  * Genera link de hotel en Booking.com
  */
