@@ -3,7 +3,10 @@ import { getBlogPostBySlug } from "@/lib/data/blog";
 import { localize } from "@/lib/utils";
 import { Locale } from "@/types/common";
 
-export const runtime = "edge";
+// nodejs runtime: blog-posts.json grew past the 1MB Edge bundle cap once we
+// scheduled 10 long-form route guides. Node has no bundle size limit and the
+// extra cold-start latency is hidden by `revalidate` caching the rendered PNG.
+export const runtime = "nodejs";
 export const revalidate = 3600;
 export const contentType = "image/png";
 export const size = { width: 1200, height: 630 };
