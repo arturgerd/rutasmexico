@@ -1,9 +1,15 @@
 import { BlogPost, BlogCategory } from "@/types/blog";
 import blogPostsData from "@/data/blog-posts.json";
 
-const blogPosts = (blogPostsData as BlogPost[]).sort(
-  (a, b) => new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime()
-);
+// Hide posts whose publishedDate is in the future. ISR (revalidate windows on
+// the blog list and post pages) reissues fresh data daily, so a scheduled post
+// surfaces within 24h of its date without manual intervention.
+const today = new Date().toISOString().slice(0, 10);
+const blogPosts = (blogPostsData as BlogPost[])
+  .filter((p) => p.publishedDate <= today)
+  .sort(
+    (a, b) => new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime()
+  );
 
 export async function getAllBlogPosts(): Promise<BlogPost[]> {
   return blogPosts;
