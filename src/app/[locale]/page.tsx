@@ -11,6 +11,7 @@ import AirlineComparisonSection from "@/components/home/AirlineComparisonSection
 import RecentBlogPosts from "@/components/home/RecentBlogPosts";
 import HubLinks from "@/components/home/HubLinks";
 import WhyMexicoSection from "@/components/editorial/WhyMexicoSection";
+import AffiliateDisclosure from "@/components/editorial/AffiliateDisclosure";
 import { seoAlternates, seoOpenGraph } from "@/lib/utils";
 
 // Hourly ISR — the home composes data from destinations.json + airports + recent blog
@@ -55,12 +56,13 @@ export default async function HomePage({ params: { locale } }: { params: { local
   return (
     <>
       <HeroSection airports={airports} />
+      <AffiliateDisclosure locale={locale} />
       <MundialBanner locale={locale} />
       <WhyMexicoSection locale={locale} />
-      <AirlineComparisonSection />
-      <MapSection destinations={destinations} />
-      <FeaturedDestinations destinations={destinations.slice(0, 6)} />
       <RecentBlogPosts posts={recentPosts} />
+      <FeaturedDestinations destinations={destinations.slice(0, 6)} />
+      <MapSection destinations={destinations} />
+      <AirlineComparisonSection />
       <HubLinks locale={locale} />
       <HowItWorks />
     </>

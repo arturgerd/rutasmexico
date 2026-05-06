@@ -1,6 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 import { t3, seoAlternates, seoOpenGraph } from "@/lib/utils";
+import ContactForm from "./ContactForm";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const title = t3(locale,
@@ -104,64 +105,12 @@ export default function ContactoPage({ params: { locale } }: { params: { locale:
               </div>
             </div>
 
-            {/* Topics */}
+            {/* Form */}
             <div>
               <h2 className="font-display text-xl font-bold text-arena-900 mb-6">
-                {t3(locale, "¿En qué podemos ayudarte?", "How can we help?", "Comment pouvons-nous vous aider ?")}
+                {t3(locale, "Envíanos un mensaje", "Send us a message", "Envoyez-nous un message")}
               </h2>
-              <div className="space-y-4">
-                <div className="p-4 bg-terracotta-50 rounded-xl border border-terracotta-100">
-                  <h3 className="font-semibold text-terracotta-700 text-sm mb-1">
-                    💬 {t3(locale, "Preguntas generales", "General questions", "Questions générales")}
-                  </h3>
-                  <p className="text-sm text-terracotta-600/80">
-                    {t3(locale,
-                      "Información sobre destinos, rutas y cómo usar el sitio.",
-                      "Information about destinations, routes and how to use the site.",
-                      "Informations sur les destinations, itinéraires et utilisation du site."
-                    )}
-                  </p>
-                </div>
-
-                <div className="p-4 bg-azul-50 rounded-xl border border-azul-100">
-                  <h3 className="font-semibold text-azul-700 text-sm mb-1">
-                    🤝 {t3(locale, "Colaboraciones", "Partnerships", "Collaborations")}
-                  </h3>
-                  <p className="text-sm text-azul-600/80">
-                    {t3(locale,
-                      "¿Tienes un negocio de turismo en México? Trabajemos juntos.",
-                      "Have a tourism business in Mexico? Let's work together.",
-                      "Vous avez une entreprise touristique au Mexique ? Travaillons ensemble."
-                    )}
-                  </p>
-                </div>
-
-                <div className="p-4 bg-jade-50 rounded-xl border border-jade-100">
-                  <h3 className="font-semibold text-jade-700 text-sm mb-1">
-                    📝 {t3(locale, "Sugerencias de contenido", "Content suggestions", "Suggestions de contenu")}
-                  </h3>
-                  <p className="text-sm text-jade-600/80">
-                    {t3(locale,
-                      "¿Quieres que agreguemos un destino o ruta? Cuéntanos.",
-                      "Want us to add a destination or route? Let us know.",
-                      "Vous souhaitez que nous ajoutions une destination ? Dites-le nous."
-                    )}
-                  </p>
-                </div>
-
-                <div className="p-4 bg-oro-50 rounded-xl border border-oro-100">
-                  <h3 className="font-semibold text-oro-700 text-sm mb-1">
-                    🐛 {t3(locale, "Reportar un error", "Report a bug", "Signaler un bug")}
-                  </h3>
-                  <p className="text-sm text-oro-600/80">
-                    {t3(locale,
-                      "¿Encontraste información incorrecta o un enlace roto? Avísanos.",
-                      "Found incorrect information or a broken link? Let us know.",
-                      "Vous avez trouvé une information incorrecte ou un lien cassé ? Prévenez-nous."
-                    )}
-                  </p>
-                </div>
-              </div>
+              <ContactForm locale={locale} />
             </div>
           </div>
         </div>
