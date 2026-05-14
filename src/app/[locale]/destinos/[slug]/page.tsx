@@ -1,5 +1,9 @@
 import { notFound } from "next/navigation";
-import { getAllDestinations, getDestinationBySlug } from "@/lib/data/destinations";
+import {
+  getAllDestinations,
+  getDestinationBySlug,
+  getNearbyDestinations,
+} from "@/lib/data/destinations";
 import { getRoutesByDestination } from "@/lib/data/routes";
 import { getTerminalsByCity } from "@/lib/data/terminals";
 import { getExpandedContent } from "@/lib/data/destination-content";
@@ -7,6 +11,7 @@ import { localize, seoAlternates } from "@/lib/utils";
 import { Locale } from "@/types/common";
 import { setRequestLocale } from "next-intl/server";
 import DestinationDetail from "@/components/destinations/DestinationDetail";
+import RelatedDestinations from "@/components/destinations/RelatedDestinations";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 // Tourist types tailored per Mexican region — Google uses these to match queries
@@ -122,8 +127,11 @@ export default async function DestinationPage({
   const destination = await getDestinationBySlug(slug);
   if (!destination) notFound();
 
-  const routes = await getRoutesByDestination(destination.id);
-  const terminals = await getTerminalsByCity(destination.id);
+  const [routes, terminals, nearby] = await Promise.all([
+    getRoutesByDestination(destination.id),
+    getTerminalsByCity(destination.id),
+    getNearbyDestinations(destination.id, 4),
+  ]);
   const expandedContent = getExpandedContent(slug);
 
   const baseUrl = "https://rutasmexico.com.mx";
@@ -273,6 +281,7 @@ export default async function DestinationPage({
         locale={locale as Locale}
         expandedContent={expandedContent}
       />
+      <RelatedDestinations destinations={nearby} locale={locale as Locale} />
     </>
   );
 }
