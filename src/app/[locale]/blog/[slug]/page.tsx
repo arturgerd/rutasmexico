@@ -141,11 +141,48 @@ export default async function BlogPostPage({
     ],
   };
 
+  // FAQPage schema — only when we're NOT already emitting HowTo (Google
+  // discourages stacking both schemas on the same page, since they signal
+  // different intents). Detect Q&A pairs by scanning H2/H3 headings that
+  // start with ¿ (Spanish question opener), end with ?, or start with an
+  // English question word, then capture the following content as the answer.
+  const faqs: { question: string; answer: string }[] = [];
+  if (!howToSchema) {
+    const sectionRe = /<(h2|h3)[^>]*>([\s\S]*?)<\/\1>([\s\S]*?)(?=<h[23][^>]*>|$)/gi;
+    let s: RegExpExecArray | null;
+    while ((s = sectionRe.exec(localizedContent)) !== null && faqs.length < 10) {
+      const heading = s[2].replace(/<[^>]+>/g, "").replace(/&[a-z]+;/gi, " ").trim();
+      const isQuestion = /^¿/.test(heading)
+        || /\?\s*$/.test(heading)
+        || /^(what|how|why|when|where|which|is|are|do|does|can)\b/i.test(heading);
+      if (!isQuestion) continue;
+      const answer = s[3].replace(/<[^>]+>/g, " ").replace(/&[a-z]+;/gi, " ").replace(/\s+/g, " ").trim();
+      // Skip too-short (likely just a paragraph stub) or too-long answers (whole
+      // section dumps confuse the FAQ pattern).
+      if (answer.length < 40 || answer.length > 900) continue;
+      faqs.push({ question: heading, answer });
+    }
+  }
+  const faqSchema = faqs.length >= 2
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqs.map((f) => ({
+          "@type": "Question",
+          name: f.question,
+          acceptedAnswer: { "@type": "Answer", text: f.answer },
+        })),
+      }
+    : null;
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {howToSchema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      )}
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <div className="min-h-screen bg-white">
