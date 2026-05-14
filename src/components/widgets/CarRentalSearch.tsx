@@ -93,7 +93,7 @@ export default function CarRentalSearch({ airports, defaultPickup = "", compact 
     <div className="space-y-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
         <div>
-          <label htmlFor={pickupLocId} className="block text-xs font-semibold text-arena-500 mb-1">
+          <label htmlFor={pickupLocId} className="block text-[11px] font-bold uppercase tracking-wider text-arena-500 mb-1.5">
             {locale === "es" ? "Lugar de recogida" : "Pick-up location"}
           </label>
           <select
@@ -112,7 +112,7 @@ export default function CarRentalSearch({ airports, defaultPickup = "", compact 
         </div>
 
         <div>
-          <label htmlFor={pickupDateId} className="block text-xs font-semibold text-arena-500 mb-1">
+          <label htmlFor={pickupDateId} className="block text-[11px] font-bold uppercase tracking-wider text-arena-500 mb-1.5">
             {locale === "es" ? "Fecha de recogida" : "Pick-up date"}
           </label>
           <input
@@ -126,7 +126,7 @@ export default function CarRentalSearch({ airports, defaultPickup = "", compact 
         </div>
 
         <div>
-          <label htmlFor={returnDateId} className="block text-xs font-semibold text-arena-500 mb-1">
+          <label htmlFor={returnDateId} className="block text-[11px] font-bold uppercase tracking-wider text-arena-500 mb-1.5">
             {locale === "es" ? "Fecha de devolución" : "Return date"}
           </label>
           <input

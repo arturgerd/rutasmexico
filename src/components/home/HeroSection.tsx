@@ -67,16 +67,18 @@ export default function HeroSection({ airports }: HeroSectionProps) {
               : "We compare prices from verified partners (Travelpayouts, Aviasales). We earn a commission if you book, but our editorial recommendations are independent and prices reflect public real-time data."}
           </p>
 
-          {/* Inventory volume badges */}
-          <div className="flex flex-wrap justify-center gap-4 mt-8">
+          {/* Inventory volume badges — solid white pills with colored icons so they
+              read clearly over the photo (previously translucent white-on-photo was
+              barely legible, and these badges are a load-bearing E-E-A-T signal). */}
+          <div className="flex flex-wrap justify-center gap-3 mt-8">
             {([
-              { icon: "plane", text: "700+ aerolíneas", textEn: "700+ airlines" },
-              { icon: "hotel", text: "2M+ hoteles", textEn: "2M+ hotels" },
-              { icon: "bus", text: "30+ líneas de autobús", textEn: "30+ bus lines" },
+              { icon: "plane", text: "700+ aerolíneas", textEn: "700+ airlines", iconColor: "text-terracotta-600" },
+              { icon: "hotel", text: "2M+ hoteles", textEn: "2M+ hotels", iconColor: "text-oro-600" },
+              { icon: "bus", text: "30+ líneas de autobús", textEn: "30+ bus lines", iconColor: "text-azul-700" },
             ] as const).map((badge) => (
-              <div key={badge.icon} className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 border border-white/10">
-                <Icon name={badge.icon} className="w-4 h-4 text-white/90" />
-                <span className="text-white/90 text-xs font-medium">
+              <div key={badge.icon} className="flex items-center gap-2 bg-white/95 rounded-full px-4 py-2 shadow-lg ring-1 ring-arena-200/50">
+                <Icon name={badge.icon} className={`w-4 h-4 ${badge.iconColor}`} />
+                <span className="text-arena-800 text-xs font-bold">
                   {t("heroTitle").includes("México") ? badge.text : badge.textEn}
                 </span>
               </div>
