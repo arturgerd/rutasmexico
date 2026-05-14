@@ -5,6 +5,9 @@ import { getMundialMenu } from "@/lib/data/mundial-menu";
 import MundialVenueGrid from "@/components/mundial/MundialVenueGrid";
 import MenuBuilder from "@/components/mundial/MenuBuilder";
 import TraditionsSection from "@/components/mundial/TraditionsSection";
+import CountdownHero from "@/components/mundial/CountdownHero";
+import HostCitiesBento from "@/components/mundial/HostCitiesBento";
+import FinalFeature from "@/components/mundial/FinalFeature";
 import MercadoLibreBanner from "@/components/widgets/MercadoLibreBanner";
 import { t3, seoAlternates, seoOpenGraph } from "@/lib/utils";
 import { buildTournamentSchema, buildBreadcrumbList } from "@/lib/mundial-schema";
@@ -114,6 +117,9 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
         </div>
       </div>
 
+      {/* Countdown to opening match */}
+      <CountdownHero locale={locale} />
+
       {/* CTA Calendario */}
       <div className="bg-oro-500 py-4 border-b-4 border-oro-600">
         <div className="container-custom flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
@@ -166,8 +172,16 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
         </div>
       </div>
 
+      {/* Host countries bento overview */}
+      <HostCitiesBento
+        locale={locale}
+        mxCount={mxVenues.length}
+        usCount={usVenues.length}
+        caCount={caVenues.length}
+      />
+
       {/* Sedes en México */}
-      <div className="bg-arena-50 py-12">
+      <div id="sedes-mexico" className="bg-arena-50 py-12 scroll-mt-20">
         <div className="container-custom">
           <h2 className="font-display text-2xl md:text-3xl font-bold text-arena-800 mb-2 text-center">
             🇲🇽 {t3(locale, "Las 3 sedes en México", "The 3 venues in Mexico", "Les 3 stades au Mexique")}
@@ -184,7 +198,7 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
       </div>
 
       {/* Sedes en EUA */}
-      <div className="bg-white py-12 border-t border-arena-200">
+      <div id="sedes-usa" className="bg-white py-12 border-t border-arena-200 scroll-mt-20">
         <div className="container-custom">
           <h2 className="font-display text-2xl md:text-3xl font-bold text-arena-800 mb-2 text-center">
             🇺🇸 {t3(locale, "Las 11 sedes en Estados Unidos", "The 11 venues in the United States", "Les 11 stades aux États-Unis")}
@@ -202,7 +216,7 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
 
       {/* Sedes en Canadá */}
       {caVenues.length > 0 && (
-        <div className="bg-arena-50 py-12 border-t border-arena-200">
+        <div id="sedes-canada" className="bg-arena-50 py-12 border-t border-arena-200 scroll-mt-20">
           <div className="container-custom">
             <h2 className="font-display text-2xl md:text-3xl font-bold text-arena-800 mb-2 text-center">
               🇨🇦 {t3(locale, "Las 2 sedes en Canadá", "The 2 venues in Canada", "Les 2 stades au Canada")}
@@ -218,6 +232,9 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
           </div>
         </div>
       )}
+
+      {/* Featured: the Final at MetLife */}
+      <FinalFeature locale={locale} />
 
       {/* Guia rapida: Como llegar a Mexico */}
       <div className="bg-white py-12">
