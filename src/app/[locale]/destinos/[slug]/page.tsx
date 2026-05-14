@@ -9,6 +9,46 @@ import { setRequestLocale } from "next-intl/server";
 import DestinationDetail from "@/components/destinations/DestinationDetail";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
+// Tourist types tailored per Mexican region — Google uses these to match queries
+// like "what to do in Yucatán" or "beach destinations in Mexico" against pages.
+// A generic ["Turismo cultural"] (the previous hardcoded value) doesn't help
+// because every destination read the same, so Google had no signal that Cancún
+// is a beach destination vs CDMX which is urban.
+const TOURIST_TYPES_BY_REGION: Record<string, { es: string[]; en: string[] }> = {
+  peninsula: {
+    es: ["Turismo de playa", "Turismo arqueológico", "Cenotes y buceo", "Gastronomía yucateca"],
+    en: ["Beach tourism", "Archaeological tourism", "Cenotes and diving", "Yucatecan cuisine"],
+  },
+  pacifico: {
+    es: ["Turismo de playa", "Surf", "Avistamiento de ballenas", "Gastronomía costera"],
+    en: ["Beach tourism", "Surfing", "Whale watching", "Coastal cuisine"],
+  },
+  centro: {
+    es: ["Turismo urbano", "Turismo cultural", "Museos y arte", "Gastronomía mexicana"],
+    en: ["Urban tourism", "Cultural tourism", "Museums and art", "Mexican cuisine"],
+  },
+  bajio: {
+    es: ["Pueblos Mágicos", "Patrimonio colonial", "Ruta del vino", "Turismo cultural"],
+    en: ["Magical Towns", "Colonial heritage", "Wine route", "Cultural tourism"],
+  },
+  norte: {
+    es: ["Aventura y desierto", "Turismo de playa", "Naturaleza", "Vida nocturna"],
+    en: ["Adventure and desert", "Beach tourism", "Nature", "Nightlife"],
+  },
+  sur: {
+    es: ["Turismo cultural", "Gastronomía oaxaqueña", "Patrimonio indígena", "Mezcal"],
+    en: ["Cultural tourism", "Oaxacan cuisine", "Indigenous heritage", "Mezcal"],
+  },
+  occidente: {
+    es: ["Turismo de playa", "Ruta del tequila", "Mariachi", "Gastronomía jalisciense"],
+    en: ["Beach tourism", "Tequila route", "Mariachi", "Jalisco cuisine"],
+  },
+  golfo: {
+    es: ["Turismo de playa", "Música tropical", "Historia colonial", "Gastronomía veracruzana"],
+    en: ["Beach tourism", "Tropical music", "Colonial history", "Veracruz cuisine"],
+  },
+};
+
 export async function generateStaticParams() {
   const destinations = await getAllDestinations();
   return destinations.flatMap((d) => [
@@ -96,6 +136,12 @@ export default async function DestinationPage({
     : destination.heroImage;
 
   // TouristAttraction / Place schema — helps Google understand this page is about a destination
+  const touristTypes =
+    TOURIST_TYPES_BY_REGION[destination.region]?.[locale === "es" ? "es" : "en"]
+    ?? (locale === "es"
+      ? ["Turismo cultural", "Gastronomía mexicana"]
+      : ["Cultural tourism", "Mexican cuisine"]);
+
   const placeSchema = {
     "@context": "https://schema.org",
     "@type": "TouristDestination",
@@ -105,6 +151,11 @@ export default async function DestinationPage({
     url: canonicalUrl,
     image: imageUrl,
     isPartOf: { "@id": `${baseUrl}/#website` },
+    containedInPlace: {
+      "@type": "Country",
+      name: locale === "es" ? "México" : "Mexico",
+      sameAs: "https://www.wikidata.org/wiki/Q96",
+    },
     address: {
       "@type": "PostalAddress",
       addressLocality: name,
@@ -116,9 +167,16 @@ export default async function DestinationPage({
       latitude: destination.coordinates.lat,
       longitude: destination.coordinates.lng,
     },
-    touristType: locale === "es"
-      ? ["Turismo cultural", "Turismo gastronomico", "Turismo de playa"]
-      : ["Cultural tourism", "Food tourism", "Beach tourism"],
+    touristType: touristTypes,
+    // Top 5 highlights as proper TouristAttraction entities — Google uses nested
+    // attractions for "things to do in X" rich results.
+    includesAttraction: destination.highlights.slice(0, 5).map((h) => ({
+      "@type": "TouristAttraction",
+      name: localize(h, locale as Locale),
+    })),
+    publicAccess: true,
+    isAccessibleForFree: true,
+    currenciesAccepted: "MXN",
     ...(destination.reviews && destination.reviews.length > 0 && {
       aggregateRating: {
         "@type": "AggregateRating",
