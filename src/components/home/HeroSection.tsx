@@ -27,10 +27,12 @@ export default function HeroSection({ airports }: HeroSectionProps) {
         sizes="100vw"
         quality={85}
       />
-      {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70" />
-      {/* Color overlay for brand feel */}
-      <div className="absolute inset-0 bg-gradient-to-br from-terracotta-600/30 to-azul-900/40" />
+      {/* Readability overlay — kept light so the Chichén Itzá photo behind stays
+          visible. The text on top is white with drop-shadow which carries enough
+          contrast at this opacity range. */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/15 to-black/55" />
+      {/* Subtle brand tint — just enough warmth, was previously a heavy 0.3+0.4 stack */}
+      <div className="absolute inset-0 bg-gradient-to-br from-terracotta-600/10 to-azul-900/20" />
 
       {/* Decorative blur elements */}
       <div className="absolute top-10 left-10 w-64 h-64 bg-white/5 rounded-full blur-3xl" />
