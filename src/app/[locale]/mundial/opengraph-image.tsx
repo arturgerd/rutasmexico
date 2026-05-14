@@ -19,7 +19,7 @@ export default async function Image({ params: { locale } }: { params: { locale: 
       "16 venues · 104 matches · Opens June 11 at Estadio Azteca",
       "16 stades · 104 matchs · Ouverture 11 juin au Estadio Azteca"
     ),
-    background: "linear-gradient(135deg, #C8553D 0%, #1d3ad7 100%)",
+    background: "linear-gradient(135deg, #da4b1a 0%, #1d3ad7 100%)",
     badgeText: ogText(locale, "Guía completa", "Complete guide", "Guide complet"),
   });
 }
