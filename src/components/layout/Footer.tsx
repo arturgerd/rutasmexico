@@ -37,7 +37,7 @@ export default function Footer() {
                   className="inline-flex items-center gap-1.5 text-jade-300 hover:text-emerald-300 font-semibold transition-colors"
                 >
                   <Icon name="ball" className="w-4 h-4" />
-                  {locale === "es" ? "Mundial 2026" : locale === "fr" ? "Coupe du Monde 2026" : "World Cup 2026"}
+                  {locale === "es" ? "Mundial 2026" : "World Cup 2026"}
                 </Link>
               </li>
               <li>
@@ -84,14 +84,31 @@ export default function Footer() {
               </li>
               <li>
                 <Link href={`/${locale}/metodologia`} className="hover:text-terracotta-400 transition-colors">
-                  {locale === "es" ? "Metodología" : locale === "fr" ? "Méthodologie" : "Methodology"}
+                  {locale === "es" ? "Metodología" : "Methodology"}
                 </Link>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-arena-800 mt-8 pt-8 text-center text-sm text-arena-500">
+        {/* Site-wide affiliate + advertising disclosure — required by FTC and AdSense
+            "Inventario Valioso" policy. Surfaces the same disclosure that appears in
+            individual articles, so it's visible regardless of which page the user lands on. */}
+        <div className="border-t border-arena-800 mt-8 pt-6">
+          <p className="text-xs text-arena-400 leading-relaxed max-w-3xl mx-auto text-center">
+            <span className="font-semibold text-arena-300">
+              {locale === "es" ? "Aviso de afiliados y publicidad. " : "Affiliate & advertising disclosure. "}
+            </span>
+            {locale === "es"
+              ? "Esta página contiene enlaces de afiliado (Travelpayouts, Aviasales y otros) y muestra anuncios servidos por Google AdSense. Recibimos una comisión si reservas a través de estos enlaces, sin costo adicional para ti. Nuestras recomendaciones editoriales son independientes. "
+              : "This site contains affiliate links (Travelpayouts, Aviasales and others) and displays ads served by Google AdSense. We earn a commission if you book through these links, at no extra cost to you. Our editorial recommendations are independent. "}
+            <Link href={`/${locale}/privacidad`} className="underline hover:text-arena-200">
+              {locale === "es" ? "Política de privacidad" : "Privacy policy"}
+            </Link>
+          </p>
+        </div>
+
+        <div className="border-t border-arena-800 mt-6 pt-6 text-center text-sm text-arena-500">
           <p>{t("madeWith")} ❤️ {t("inMexico")} &copy; {new Date().getFullYear()} RutasMéxico</p>
         </div>
       </div>

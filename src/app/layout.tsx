@@ -2,6 +2,7 @@ import "./globals.css";
 import Script from "next/script";
 import ConsentManager from "@/components/layout/ConsentManager";
 import { inter, outfit } from "@/lib/fonts";
+import { clientEnv } from "@/lib/env";
 
 export const metadata = {
   metadataBase: new URL("https://rutasmexico.com.mx"),
@@ -17,11 +18,8 @@ export const metadata = {
   verification: {
     google: "a588a56f7dc54021",
     other: {
-      // AdSense site ownership without loading the auto-ads script. The script was
-      // injecting "Publicidad" placeholder labels visible to reviewers (caught by
-      // an external SEO audit) which made the site read as ad-stuffed during the
-      // re-application window. Switch back to the script tag once AdSense approves
-      // and we wire explicit <ins class="adsbygoogle"> slots.
+      // AdSense ownership tag — kept alongside the adsbygoogle.js script below so
+      // both signals are present for the crawler.
       "google-adsense-account": "ca-pub-6589074911542620",
     },
   },
@@ -33,10 +31,8 @@ export const viewport = {
   initialScale: 1,
 };
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID; // e.g. "G-XXXXXXXXXX"
-// AdSense client kept here for reference; currently surfaced via the
-// google-adsense-account meta tag rather than the adsbygoogle.js script.
-// const ADSENSE_CLIENT = "ca-pub-6589074911542620";
+const GA_ID = clientEnv.NEXT_PUBLIC_GA_ID; // validated by src/lib/env.ts
+const ADSENSE_CLIENT = "ca-pub-6589074911542620";
 
 // Site-wide schemas use @graph + @id so per-page Article/TouristDestination/Event schemas
 // can reference Organization/WebSite by id without re-declaring them.
@@ -69,7 +65,7 @@ const SITE_GRAPH_JSONLD = {
         "@type": "ContactPoint",
         email: "contacto@rutasmexico.com.mx",
         contactType: "customer support",
-        availableLanguage: ["Spanish", "English", "French"],
+        availableLanguage: ["Spanish", "English"],
       },
     },
     {
@@ -142,10 +138,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </>
         )}
 
-        {/* AdSense script intentionally NOT loaded during the re-application window —
-            ownership is now verified via the google-adsense-account meta tag (in metadata.verification),
-            so we avoid auto-ad placeholder labels that get inserted while the account is still gated.
-            Re-enable this Script tag once AdSense approves and we wire explicit ad slots. */}
+        {/* AdSense script — gated by Google Consent Mode v2 (see gtag-consent-default above
+            and ConsentManager). Personalization waits for the user to accept; if they reject,
+            Consent Mode keeps ad_storage="denied" and AdSense serves only non-personalized ads.
+            Ads render in explicit <ins class="adsbygoogle"> slots placed by editorial code —
+            we do NOT enable auto-ads, which previously injected unlabeled "Publicidad"
+            placeholders and contributed to the 2026-04-15 rejection. */}
+        <Script
+          id="adsense-script"
+          strategy="afterInteractive"
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+          crossOrigin="anonymous"
+        />
+        <meta name="google-adsense-account" content={ADSENSE_CLIENT} />
+
 
         {/* JSON-LD structured data — @graph linking lets per-page schemas reference these by @id */}
         <Script

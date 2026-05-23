@@ -12,18 +12,18 @@ export default function Header() {
   const t = useTranslations("common");
   const locale = useLocale();
 
-  const homeLabel = locale === "es" ? "Inicio" : locale === "fr" ? "Accueil" : "Home";
-  const flightLabel = locale === "es" ? "Vuelos" : locale === "fr" ? "Vols" : "Flights";
-  const busLabel = locale === "es" ? "Autobuses" : locale === "fr" ? "Bus" : "Buses";
-  const hotelLabel = locale === "es" ? "Hoteles" : locale === "fr" ? "Hôtels" : "Hotels";
+  const homeLabel = locale === "es" ? "Inicio" : "Home";
+  const flightLabel = locale === "es" ? "Vuelos" : "Flights";
+  const busLabel = locale === "es" ? "Autobuses" : "Buses";
+  const hotelLabel = locale === "es" ? "Hoteles" : "Hotels";
 
   const blogLabel = "Blog";
 
-  const weddingLabel = locale === "es" ? "Bodas" : locale === "fr" ? "Mariages" : "Weddings";
+  const weddingLabel = locale === "es" ? "Bodas" : "Weddings";
 
-  const mundialLabel = locale === "es" ? "Mundial 2026" : locale === "fr" ? "Coupe du Monde 2026" : "World Cup 2026";
+  const mundialLabel = locale === "es" ? "Mundial 2026" : "World Cup 2026";
 
-  const aboutLabel = locale === "es" ? "Nosotros" : locale === "fr" ? "À propos" : "About";
+  const aboutLabel = locale === "es" ? "Nosotros" : "About";
 
   type NavLink = { href: string; label: string; icon?: "plane" | "bus" | "hotel" | "ring" | "pen" };
 

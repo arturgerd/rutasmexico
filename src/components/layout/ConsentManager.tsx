@@ -18,7 +18,7 @@ declare global {
 }
 
 function getLocaleFromPath(pathname: string): string {
-  const match = pathname.match(/^\/(es|en|fr)(\/|$)/);
+  const match = pathname.match(/^\/(es|en)(\/|$)/);
   return match ? match[1] : "es";
 }
 
@@ -96,7 +96,7 @@ export default function ConsentManager() {
       {mounted && consent === null && (
         <div
           role="region"
-          aria-label={t3(locale, "Consentimiento de cookies", "Cookie consent", "Consentement aux cookies")}
+          aria-label={t3(locale, "Consentimiento de cookies", "Cookie consent")}
           className="fixed bottom-0 left-0 right-0 z-[100] bg-white/95 backdrop-blur-md border-t border-arena-200 shadow-lg"
         >
           <div className="container-custom py-2.5 md:py-3">
@@ -104,18 +104,17 @@ export default function ConsentManager() {
               <span aria-hidden className="text-lg flex-shrink-0">🍪</span>
               <p id="cookie-consent-description" className="flex-1 text-xs md:text-sm text-arena-700 leading-snug">
                 <span id="cookie-consent-title" className="font-semibold text-arena-900">
-                  {t3(locale, "Cookies. ", "Cookies. ", "Cookies. ")}
+                  {t3(locale, "Cookies. ", "Cookies. ")}
                 </span>
                 {t3(locale,
                   "Usamos cookies para anuncios y analítica.",
-                  "We use cookies for ads and analytics.",
-                  "Nous utilisons des cookies pour les pubs et l'analyse."
+                  "We use cookies for ads and analytics."
                 )}{" "}
                 <Link
                   href={`/${locale}/privacidad`}
                   className="text-terracotta-600 hover:text-terracotta-700 underline font-medium hidden sm:inline"
                 >
-                  {t3(locale, "Privacidad", "Privacy", "Confidentialité")}
+                  {t3(locale, "Privacidad", "Privacy")}
                 </Link>
               </p>
               <div className="flex gap-2 flex-shrink-0">
@@ -123,13 +122,13 @@ export default function ConsentManager() {
                   onClick={handleReject}
                   className="px-3 py-2 min-h-[36px] text-xs md:text-sm font-medium text-arena-700 bg-arena-100 hover:bg-arena-200 rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500"
                 >
-                  {t3(locale, "Rechazar", "Reject", "Refuser")}
+                  {t3(locale, "Rechazar", "Reject")}
                 </button>
                 <button
                   onClick={handleAccept}
                   className="px-4 py-2 min-h-[36px] text-xs md:text-sm font-semibold text-white bg-terracotta-500 hover:bg-terracotta-600 rounded-lg transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-terracotta-500"
                 >
-                  {t3(locale, "Aceptar", "Accept", "Accepter")}
+                  {t3(locale, "Aceptar", "Accept")}
                 </button>
               </div>
             </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Airport } from "@/types/airport";
 import TravelSearchTabs from "@/components/widgets/TravelSearchTabs";
 import { PAGE_HERO_IMAGES } from "@/lib/destination-images";
@@ -14,13 +14,18 @@ interface HeroSectionProps {
 
 export default function HeroSection({ airports }: HeroSectionProps) {
   const t = useTranslations("home");
+  const locale = useLocale();
+  const heroAlt =
+    locale === "es"
+      ? "Vista panorámica de destinos turísticos en México: ciudades, playas y arquitectura"
+      : "Panoramic view of travel destinations in Mexico: cities, beaches and architecture";
 
   return (
     <section className="relative overflow-hidden min-h-[600px] md:min-h-[650px] flex items-center">
       {/* Background image */}
       <Image
         src={PAGE_HERO_IMAGES.home}
-        alt="Vista panorámica de destinos turísticos en México: ciudades, playas y arquitectura"
+        alt={heroAlt}
         fill
         className="object-cover"
         priority

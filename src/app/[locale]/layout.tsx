@@ -7,13 +7,11 @@ import Footer from "@/components/layout/Footer";
 import SetHtmlLang from "@/components/layout/SetHtmlLang";
 import { seoAlternates, seoOpenGraph } from "@/lib/utils";
 
-// Without generateStaticParams Next.js can't pre-render the locale layout, so every
-// request is rendered on demand and Vercel emits Cache-Control: no-store. We only
-// pre-render es/en — fr translations are incomplete (~80% missing) and break the build
-// when a translator falls back to undefined; fr URLs still work, just dynamically.
-const STATIC_LOCALES = ["es", "en"] as const;
+// Pre-render the supported locales (es/en). /fr/* is permanently redirected to /es/*
+// at the Vercel edge (see next.config.mjs redirects) — French is no longer a supported
+// locale, but the redirect catches any /fr URLs Google still has indexed.
 export function generateStaticParams() {
-  return STATIC_LOCALES.map((locale) => ({ locale }));
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
@@ -52,8 +50,8 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
 
-  const skipLabel = locale === "fr" ? "Aller au contenu" : locale === "en" ? "Skip to content" : "Ir al contenido";
-  const rssTitle = locale === "fr" ? "RutasMexico — Blog RSS" : locale === "en" ? "RutasMexico — Blog RSS" : "RutasMéxico — Blog RSS";
+  const skipLabel = locale === "en" ? "Skip to content" : "Ir al contenido";
+  const rssTitle = locale === "en" ? "RutasMexico — Blog RSS" : "RutasMéxico — Blog RSS";
 
   return (
     <NextIntlClientProvider messages={messages}>
