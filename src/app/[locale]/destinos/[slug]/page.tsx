@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import { getAllDestinations, getDestinationBySlug } from "@/lib/data/destinations";
 import { getRoutesByDestination } from "@/lib/data/routes";
 import { getTerminalsByCity } from "@/lib/data/terminals";
+import { getBlogPostsForDestination } from "@/lib/data/blog";
+import { getWeddingDestinationBySlug } from "@/lib/data/bodas";
 import { getExpandedContent } from "@/lib/data/destination-content";
 import { localize, seoAlternates } from "@/lib/utils";
 import { Locale } from "@/types/common";
@@ -85,6 +87,12 @@ export default async function DestinationPage({
   const routes = await getRoutesByDestination(destination.id);
   const terminals = await getTerminalsByCity(destination.id);
   const expandedContent = getExpandedContent(slug);
+  const relatedBlog = (await getBlogPostsForDestination(destination, 4)).map((p) => ({
+    slug: p.slug,
+    title: localize(p.title, locale as Locale),
+  }));
+  // Surface the wedding guide on destinos that have one (slugs mirror each other).
+  const hasWeddingGuide = Boolean(await getWeddingDestinationBySlug(slug));
 
   const baseUrl = "https://rutasmexico.com.mx";
   const name = localize(destination.name, locale as Locale);
@@ -214,6 +222,8 @@ export default async function DestinationPage({
         terminals={terminals}
         locale={locale as Locale}
         expandedContent={expandedContent}
+        relatedBlog={relatedBlog}
+        hasWeddingGuide={hasWeddingGuide}
       />
     </>
   );

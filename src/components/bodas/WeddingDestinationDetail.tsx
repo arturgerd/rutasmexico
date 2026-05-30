@@ -1,17 +1,24 @@
 "use client";
 
+import Link from "next/link";
 import { WeddingDestination } from "@/types/boda";
 import { Locale } from "@/types/common";
 import { localize, formatCurrency } from "@/lib/utils";
 import VenueCard from "./VenueCard";
 import CelebrationCard from "./CelebrationCard";
 
+export interface RelatedLink {
+  href: string;
+  title: string;
+}
+
 interface Props {
   destination: WeddingDestination;
   locale: Locale;
+  relatedLinks?: RelatedLink[];
 }
 
-export default function WeddingDestinationDetail({ destination, locale }: Props) {
+export default function WeddingDestinationDetail({ destination, locale, relatedLinks = [] }: Props) {
   const t = (es: string, en: string) => (locale === "es" ? es : en);
 
   return (
@@ -284,6 +291,27 @@ export default function WeddingDestinationDetail({ destination, locale }: Props)
             ))}
           </div>
         </section>
+
+        {/* Related guides — boda→destino/blog internal linking */}
+        {relatedLinks.length > 0 && (
+          <section>
+            <h2 className="font-display text-2xl font-bold text-arena-900 mb-6">
+              {t("Sigue planeando tu viaje", "Keep planning your trip")}
+            </h2>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {relatedLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="block p-4 rounded-xl border border-arena-200 hover:border-terracotta-400 hover:shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500"
+                  >
+                    <span className="font-semibold text-arena-900 leading-snug">{link.title}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
       </div>
     </div>
   );

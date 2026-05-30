@@ -1,9 +1,11 @@
 import { notFound } from "next/navigation";
 import { getAllWeddingDestinations, getWeddingDestinationBySlug } from "@/lib/data/bodas";
+import { getDestinationBySlug } from "@/lib/data/destinations";
+import { getBlogPostsForDestination } from "@/lib/data/blog";
 import { localize, seoAlternates } from "@/lib/utils";
 import { Locale } from "@/types/common";
 import { setRequestLocale } from "next-intl/server";
-import WeddingDestinationDetail from "@/components/bodas/WeddingDestinationDetail";
+import WeddingDestinationDetail, { RelatedLink } from "@/components/bodas/WeddingDestinationDetail";
 
 export async function generateStaticParams() {
   const destinations = await getAllWeddingDestinations();
@@ -64,6 +66,28 @@ export default async function WeddingDestinationPage({
 
   const name = localize(destination.name, locale as Locale);
 
+  // Internal links out of the (otherwise isolated) wedding page: the destination
+  // travel guide (wedding slugs mirror destino slugs) plus related blog guides.
+  const travelGuide = await getDestinationBySlug(slug);
+  const relatedBlog = await getBlogPostsForDestination(
+    { slug, shortName: travelGuide?.shortName },
+    3
+  );
+  const relatedLinks: RelatedLink[] = [
+    ...(travelGuide
+      ? [{
+          href: `/${locale}/destinos/${slug}`,
+          title: locale === "es"
+            ? `Guía de viaje de ${name}`
+            : `${name} travel guide`,
+        }]
+      : []),
+    ...relatedBlog.map((p) => ({
+      href: `/${locale}/blog/${p.slug}`,
+      title: localize(p.title, locale as Locale),
+    })),
+  ];
+
   // FAQPage schema
   const faqSchema = {
     "@context": "https://schema.org",
@@ -92,7 +116,7 @@ export default async function WeddingDestinationPage({
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <WeddingDestinationDetail destination={destination} locale={locale as Locale} />
+      <WeddingDestinationDetail destination={destination} locale={locale as Locale} relatedLinks={relatedLinks} />
     </>
   );
 }

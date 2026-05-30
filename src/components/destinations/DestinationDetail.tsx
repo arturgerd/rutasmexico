@@ -14,15 +14,22 @@ import LocationPin from "@/components/map/LocationPin";
 import { getDestinationImage, getDestinationCarouselImages } from "@/lib/destination-images";
 import ToursAndActivities from "./ToursAndActivities";
 
+interface RelatedBlogLink {
+  slug: string;
+  title: string;
+}
+
 interface DestinationDetailProps {
   destination: Destination;
   routes: Route[];
   terminals: Terminal[];
   locale: Locale;
   expandedContent?: ExpandedContent | null;
+  relatedBlog?: RelatedBlogLink[];
+  hasWeddingGuide?: boolean;
 }
 
-export default function DestinationDetail({ destination, routes, terminals, locale, expandedContent }: DestinationDetailProps) {
+export default function DestinationDetail({ destination, routes, terminals, locale, expandedContent, relatedBlog = [], hasWeddingGuide = false }: DestinationDetailProps) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [activeTab, setActiveTab] = useState<"highlights" | "transport" | "safety" | "food">("highlights");
   const image = getDestinationImage(destination.id);
@@ -305,6 +312,27 @@ export default function DestinationDetail({ destination, routes, terminals, loca
                 )}
               </div>
             )}
+
+            {/* Related blog guides — destino→blog internal linking + topical cluster */}
+            {relatedBlog.length > 0 && (
+              <section className="mt-8 bg-white rounded-2xl p-6 shadow-sm">
+                <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">
+                  {t3(locale, "Guías relacionadas", "Related guides", "Guides connexes")}
+                </h2>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {relatedBlog.map((post) => (
+                    <li key={post.slug}>
+                      <Link
+                        href={`/${locale}/blog/${post.slug}`}
+                        className="block p-4 rounded-xl border border-arena-200 hover:border-terracotta-400 hover:shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500"
+                      >
+                        <span className="font-semibold text-arena-900 leading-snug">{post.title}</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
           </div>
 
           {/* Sidebar */}
@@ -358,6 +386,24 @@ export default function DestinationDetail({ destination, routes, terminals, loca
                 </div>
               </Link>
             </div>
+
+            {/* Wedding guide CTA — destino→boda internal link (only where a guide exists) */}
+            {hasWeddingGuide && (
+              <Link
+                href={`/${locale}/bodas/${destination.slug}`}
+                className="flex items-center gap-3 p-4 rounded-2xl bg-white shadow-sm hover:shadow-md border border-transparent hover:border-terracotta-300 transition-all group"
+              >
+                <span className="text-xl">💍</span>
+                <div>
+                  <p className="font-semibold text-sm text-arena-900 group-hover:text-terracotta-600">
+                    {t3(locale, "Casarte aquí", "Get married here", "Se marier ici")}
+                  </p>
+                  <p className="text-xs text-arena-400">
+                    {t3(locale, "Guía de bodas y venues", "Wedding & venue guide", "Guide mariages et lieux")}
+                  </p>
+                </div>
+              </Link>
+            )}
 
             {/* Routes to this destination */}
             {routes.length > 0 && (
