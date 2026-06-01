@@ -45,3 +45,4 @@ next-env.d.ts
 # Never commit — contains private RSA key
 /scripts/sc-service-account.json
 /.audit/
+/.tmp/

@@ -42,7 +42,7 @@ export default async function Image({ params }: { params: { locale: string; rout
           display: "flex",
           flexDirection: "column",
           padding: 70,
-          background: "linear-gradient(135deg, #1E3A5F 0%, #2C5784 60%, #C8553D 100%)",
+          background: "linear-gradient(135deg, #1E3A5F 0%, #2C5784 60%, #da4b1a 100%)",
           color: "white",
           position: "relative",
         }}

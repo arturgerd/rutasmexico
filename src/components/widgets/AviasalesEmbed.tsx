@@ -145,7 +145,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
           {/* Airports */}
           <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-3 items-end">
             <div>
-              <label htmlFor={originId} className="block text-xs font-semibold text-arena-500 mb-1">
+              <label htmlFor={originId} className="block text-[11px] font-bold uppercase tracking-wider text-arena-500 mb-1.5">
                 {t3(locale, "Origen", "Origin", "Origine")}
               </label>
               <select
@@ -176,7 +176,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
             </button>
 
             <div>
-              <label htmlFor={destId} className="block text-xs font-semibold text-arena-500 mb-1">
+              <label htmlFor={destId} className="block text-[11px] font-bold uppercase tracking-wider text-arena-500 mb-1.5">
                 {t3(locale, "Destino", "Destination", "Destination")}
               </label>
               <select
@@ -198,7 +198,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
           {/* Dates and passengers */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
             <div>
-              <label htmlFor={departId} className="block text-xs font-semibold text-arena-500 mb-1">
+              <label htmlFor={departId} className="block text-[11px] font-bold uppercase tracking-wider text-arena-500 mb-1.5">
                 {t3(locale, "Fecha de ida", "Departure date", "Date de départ")}
               </label>
               <input
@@ -213,7 +213,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
 
             {!isOneWay && (
               <div>
-                <label htmlFor={returnId} className="block text-xs font-semibold text-arena-500 mb-1">
+                <label htmlFor={returnId} className="block text-[11px] font-bold uppercase tracking-wider text-arena-500 mb-1.5">
                   {t3(locale, "Fecha de regreso", "Return date", "Date de retour")}
                 </label>
                 <input
@@ -228,7 +228,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
             )}
 
             <div>
-              <label htmlFor={paxId} className="block text-xs font-semibold text-arena-500 mb-1">
+              <label htmlFor={paxId} className="block text-[11px] font-bold uppercase tracking-wider text-arena-500 mb-1.5">
                 {t3(locale, "Pasajeros", "Passengers", "Passagers")}
               </label>
               <select

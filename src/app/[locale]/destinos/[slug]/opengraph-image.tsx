@@ -84,7 +84,7 @@ export default async function Image({ params }: { params: { locale: string; slug
                 fontWeight: 600,
               }}
             >
-              <div style={{ background: "#C8553D", padding: "10px 24px", borderRadius: 999, display: "flex" }}>
+              <div style={{ background: "#da4b1a", padding: "10px 24px", borderRadius: 999, display: "flex" }}>
                 Guía de viaje
               </div>
               <div style={{ background: "rgba(255,255,255,0.18)", padding: "10px 24px", borderRadius: 999, display: "flex" }}>

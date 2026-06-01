@@ -32,10 +32,12 @@ export default function HeroSection({ airports }: HeroSectionProps) {
         sizes="100vw"
         quality={85}
       />
-      {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70" />
-      {/* Color overlay for brand feel */}
-      <div className="absolute inset-0 bg-gradient-to-br from-terracotta-600/30 to-azul-900/40" />
+      {/* Readability overlay — kept light so the Chichén Itzá photo behind stays
+          visible. The text on top is white with drop-shadow which carries enough
+          contrast at this opacity range. */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/15 to-black/55" />
+      {/* Subtle brand tint — just enough warmth, was previously a heavy 0.3+0.4 stack */}
+      <div className="absolute inset-0 bg-gradient-to-br from-terracotta-600/10 to-azul-900/20" />
 
       {/* Decorative blur elements */}
       <div className="absolute top-10 left-10 w-64 h-64 bg-white/5 rounded-full blur-3xl" />
@@ -70,16 +72,18 @@ export default function HeroSection({ airports }: HeroSectionProps) {
               : "We compare prices from verified partners (Travelpayouts, Aviasales). We earn a commission if you book, but our editorial recommendations are independent and prices reflect public real-time data."}
           </p>
 
-          {/* Inventory volume badges */}
-          <div className="flex flex-wrap justify-center gap-4 mt-8">
+          {/* Inventory volume badges — solid white pills with colored icons so they
+              read clearly over the photo (previously translucent white-on-photo was
+              barely legible, and these badges are a load-bearing E-E-A-T signal). */}
+          <div className="flex flex-wrap justify-center gap-3 mt-8">
             {([
-              { icon: "plane", text: "700+ aerolíneas", textEn: "700+ airlines" },
-              { icon: "hotel", text: "2M+ hoteles", textEn: "2M+ hotels" },
-              { icon: "bus", text: "30+ líneas de autobús", textEn: "30+ bus lines" },
+              { icon: "plane", text: "700+ aerolíneas", textEn: "700+ airlines", iconColor: "text-terracotta-600" },
+              { icon: "hotel", text: "2M+ hoteles", textEn: "2M+ hotels", iconColor: "text-oro-600" },
+              { icon: "bus", text: "30+ líneas de autobús", textEn: "30+ bus lines", iconColor: "text-azul-700" },
             ] as const).map((badge) => (
-              <div key={badge.icon} className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 border border-white/10">
-                <Icon name={badge.icon} className="w-4 h-4 text-white/90" />
-                <span className="text-white/90 text-xs font-medium">
+              <div key={badge.icon} className="flex items-center gap-2 bg-white/95 rounded-full px-4 py-2 shadow-lg ring-1 ring-arena-200/50">
+                <Icon name={badge.icon} className={`w-4 h-4 ${badge.iconColor}`} />
+                <span className="text-arena-800 text-xs font-bold">
                   {t("heroTitle").includes("México") ? badge.text : badge.textEn}
                 </span>
               </div>

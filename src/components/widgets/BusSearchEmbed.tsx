@@ -187,7 +187,7 @@ export default function BusSearchEmbed() {
           {/* Cities */}
           <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-3 items-end">
             <div>
-              <label htmlFor={originId} className="block text-xs font-semibold text-arena-500 mb-1">
+              <label htmlFor={originId} className="block text-[11px] font-bold uppercase tracking-wider text-arena-500 mb-1.5">
                 {locale === "es" ? "Ciudad de origen" : "Origin city"}
               </label>
               <select
@@ -218,7 +218,7 @@ export default function BusSearchEmbed() {
             </button>
 
             <div>
-              <label htmlFor={destId} className="block text-xs font-semibold text-arena-500 mb-1">
+              <label htmlFor={destId} className="block text-[11px] font-bold uppercase tracking-wider text-arena-500 mb-1.5">
                 {locale === "es" ? "Ciudad de destino" : "Destination city"}
               </label>
               <select
@@ -240,7 +240,7 @@ export default function BusSearchEmbed() {
           {/* Date and Search */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div>
-              <label htmlFor={departId} className="block text-xs font-semibold text-arena-500 mb-1">
+              <label htmlFor={departId} className="block text-[11px] font-bold uppercase tracking-wider text-arena-500 mb-1.5">
                 {locale === "es" ? "Fecha de salida" : "Departure date"}
               </label>
               <input

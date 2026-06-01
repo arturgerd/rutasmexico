@@ -105,7 +105,7 @@ export default function HotelSearch({ airports, defaultCity = "", compact = fals
     <div className="space-y-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
         <div>
-          <label htmlFor={cityId} className="block text-xs font-semibold text-arena-500 mb-1">
+          <label htmlFor={cityId} className="block text-[11px] font-bold uppercase tracking-wider text-arena-500 mb-1.5">
             {locale === "es" ? "Ciudad" : "City"}
           </label>
           <select
@@ -124,7 +124,7 @@ export default function HotelSearch({ airports, defaultCity = "", compact = fals
         </div>
 
         <div>
-          <label htmlFor={inId} className="block text-xs font-semibold text-arena-500 mb-1">
+          <label htmlFor={inId} className="block text-[11px] font-bold uppercase tracking-wider text-arena-500 mb-1.5">
             {locale === "es" ? "Llegada" : "Check-in"}
           </label>
           <input
@@ -138,7 +138,7 @@ export default function HotelSearch({ airports, defaultCity = "", compact = fals
         </div>
 
         <div>
-          <label htmlFor={outId} className="block text-xs font-semibold text-arena-500 mb-1">
+          <label htmlFor={outId} className="block text-[11px] font-bold uppercase tracking-wider text-arena-500 mb-1.5">
             {locale === "es" ? "Salida" : "Check-out"}
           </label>
           <input
@@ -152,7 +152,7 @@ export default function HotelSearch({ airports, defaultCity = "", compact = fals
         </div>
 
         <div>
-          <label htmlFor={guestsId} className="block text-xs font-semibold text-arena-500 mb-1">
+          <label htmlFor={guestsId} className="block text-[11px] font-bold uppercase tracking-wider text-arena-500 mb-1.5">
             {locale === "es" ? "Huéspedes" : "Guests"}
           </label>
           <select

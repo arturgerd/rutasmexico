@@ -68,7 +68,7 @@ export default async function Image({ params }: { params: { locale: string; slug
           <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
             <div
               style={{
-                background: "#C8553D",
+                background: "#da4b1a",
                 color: "white",
                 padding: "8px 22px",
                 borderRadius: 999,

@@ -157,7 +157,7 @@ export default function HotelSearchEmbed() {
         <div className="p-5 space-y-4">
           {/* City selector with optgroups */}
           <div>
-            <label htmlFor={cityId} className="block text-xs font-semibold text-arena-500 mb-1">
+            <label htmlFor={cityId} className="block text-[11px] font-bold uppercase tracking-wider text-arena-500 mb-1.5">
               {t3(locale, "Destino", "Destination", "Destination")}
             </label>
             <select
@@ -194,7 +194,7 @@ export default function HotelSearchEmbed() {
           {/* Dates and guests */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <div>
-              <label htmlFor={inId} className="block text-xs font-semibold text-arena-500 mb-1">
+              <label htmlFor={inId} className="block text-[11px] font-bold uppercase tracking-wider text-arena-500 mb-1.5">
                 {t3(locale, "Fecha de entrada", "Check-in", "Date d'arrivée")}
               </label>
               <input
@@ -207,7 +207,7 @@ export default function HotelSearchEmbed() {
               />
             </div>
             <div>
-              <label htmlFor={outId} className="block text-xs font-semibold text-arena-500 mb-1">
+              <label htmlFor={outId} className="block text-[11px] font-bold uppercase tracking-wider text-arena-500 mb-1.5">
                 {t3(locale, "Fecha de salida", "Check-out", "Date de départ")}
               </label>
               <input
@@ -220,7 +220,7 @@ export default function HotelSearchEmbed() {
               />
             </div>
             <div>
-              <label htmlFor={roomsId} className="block text-xs font-semibold text-arena-500 mb-1">
+              <label htmlFor={roomsId} className="block text-[11px] font-bold uppercase tracking-wider text-arena-500 mb-1.5">
                 {t3(locale, "Habitaciones", "Rooms", "Chambres")}
               </label>
               <select
