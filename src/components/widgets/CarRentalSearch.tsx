@@ -19,6 +19,7 @@ export default function CarRentalSearch({ airports, defaultPickup = "", compact 
   const [pickup, setPickup] = useState(defaultPickup);
   const [pickupDate, setPickupDate] = useState("");
   const [returnDate, setReturnDate] = useState("");
+  const [error, setError] = useState<string | null>(null);
   const idPrefix = useId();
   const pickupLocId = `${idPrefix}pickupLoc`;
   const pickupDateId = `${idPrefix}pickupDate`;
@@ -49,9 +50,10 @@ export default function CarRentalSearch({ airports, defaultPickup = "", compact 
 
   const handleSearch = () => {
     if (!pickup) {
-      alert(locale === "es" ? "Selecciona lugar de recogida" : "Select pickup location");
+      setError(locale === "es" ? "Selecciona lugar de recogida" : "Select pickup location");
       return;
     }
+    setError(null);
 
     const url = getCarRentalUrl({
       pickupIATA: pickup,
@@ -66,8 +68,11 @@ export default function CarRentalSearch({ airports, defaultPickup = "", compact 
 
   if (compact) {
     return (
-      <div className="flex flex-col sm:flex-row gap-2">
+      <div className="space-y-2">
+        <div className="flex flex-col sm:flex-row gap-2">
+        <label htmlFor={pickupLocId} className="sr-only">{locale === "es" ? "Lugar de recogida" : "Pick-up location"}</label>
         <select
+          id={pickupLocId}
           value={pickup}
           onChange={(e) => setPickup(e.target.value)}
           className="flex-1 p-2 bg-white border border-arena-200 rounded-lg text-sm text-arena-800 focus:ring-2 focus:ring-terracotta-500/50"
@@ -85,6 +90,10 @@ export default function CarRentalSearch({ airports, defaultPickup = "", compact 
         >
           {locale === "es" ? "Buscar autos" : "Search cars"}
         </button>
+        </div>
+        {error && (
+          <p role="alert" className="text-sm font-medium text-red-600">{error}</p>
+        )}
       </div>
     );
   }
@@ -148,6 +157,10 @@ export default function CarRentalSearch({ airports, defaultPickup = "", compact 
           </button>
         </div>
       </div>
+
+      {error && (
+        <p role="alert" className="text-sm font-medium text-red-600">{error}</p>
+      )}
 
       <p className="text-xs text-arena-700 text-center">
         {locale === "es"

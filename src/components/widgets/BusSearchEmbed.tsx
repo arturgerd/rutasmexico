@@ -92,6 +92,7 @@ export default function BusSearchEmbed() {
   const [origin, setOrigin] = useState("");
   const [destination, setDestination] = useState("");
   const [departDate, setDepartDate] = useState("");
+  const [error, setError] = useState<string | null>(null);
   const idPrefix = useId();
   const originId = `${idPrefix}origin`;
   const destId = `${idPrefix}dest`;
@@ -111,13 +112,14 @@ export default function BusSearchEmbed() {
 
   const handleSearch = () => {
     if (!origin || !destination) {
-      alert(locale === "es" ? "Selecciona origen y destino" : "Select origin and destination");
+      setError(locale === "es" ? "Selecciona origen y destino" : "Select origin and destination");
       return;
     }
     if (origin === destination) {
-      alert(locale === "es" ? "Origen y destino deben ser diferentes" : "Origin and destination must be different");
+      setError(locale === "es" ? "Origen y destino deben ser diferentes" : "Origin and destination must be different");
       return;
     }
+    setError(null);
 
     const originCity = BUS_CITIES.find(c => c.id === origin);
     const destCity = BUS_CITIES.find(c => c.id === destination);
@@ -261,6 +263,10 @@ export default function BusSearchEmbed() {
               </button>
             </div>
           </div>
+
+          {error && (
+            <p role="alert" className="text-sm font-medium text-red-600">{error}</p>
+          )}
 
           {/* Bus lines badge */}
           <div className="flex flex-wrap items-center gap-2 text-xs">

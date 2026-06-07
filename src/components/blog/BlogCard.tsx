@@ -3,25 +3,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useLocale } from "next-intl";
-import { BlogPost, BlogCategory } from "@/types/blog";
+import { BlogPost } from "@/types/blog";
 import { l, t3 } from "@/lib/utils";
-
-const CATEGORY_LABELS: Record<BlogCategory, { es: string; en: string; fr: string; color: string }> = {
-  "guia-destino": { es: "Guía de destino", en: "Destination Guide", fr: "Guide de destination", color: "bg-azul-100 text-azul-700 border-azul-200" },
-  "tips-viaje": { es: "Tips de viaje", en: "Travel Tips", fr: "Conseils de voyage", color: "bg-jade-100 text-jade-700 border-jade-200" },
-  "transporte": { es: "Transporte", en: "Transportation", fr: "Transport", color: "bg-oro-100 text-oro-700 border-oro-200" },
-  "gastronomia": { es: "Gastronomía", en: "Food & Drink", fr: "Gastronomie", color: "bg-terracotta-100 text-terracotta-700 border-terracotta-200" },
-  "cultura": { es: "Cultura", en: "Culture", fr: "Culture", color: "bg-arena-200 text-arena-800 border-arena-300" },
-};
-
-export function getCategoryLabel(category: BlogCategory, locale: string): string {
-  const labels = CATEGORY_LABELS[category];
-  return locale === "es" ? labels.es : locale === "fr" ? labels.fr : labels.en;
-}
-
-export function getCategoryColor(category: BlogCategory): string {
-  return CATEGORY_LABELS[category].color;
-}
+import { getCategoryLabel, getCategoryColor } from "@/lib/blog-category";
 
 export default function BlogCard({ post }: { post: BlogPost }) {
   const locale = useLocale();

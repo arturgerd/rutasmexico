@@ -1,18 +1,16 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
-import { useLocale } from "next-intl";
+import { getLocale } from "next-intl/server";
 import { BlogPost } from "@/types/blog";
 import { l, t3 } from "@/lib/utils";
-import { getCategoryLabel, getCategoryColor } from "@/components/blog/BlogCard";
+import { getCategoryLabel, getCategoryColor } from "@/lib/blog-category";
 
 interface RecentBlogPostsProps {
   posts: BlogPost[];
 }
 
-export default function RecentBlogPosts({ posts }: RecentBlogPostsProps) {
-  const locale = useLocale();
+export default async function RecentBlogPosts({ posts }: RecentBlogPostsProps) {
+  const locale = await getLocale();
 
   const formatDate = (dateStr: string) => {
     const date = new Date(dateStr + "T12:00:00");

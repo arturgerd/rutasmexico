@@ -1,9 +1,7 @@
-"use client";
+import { getTranslations } from "next-intl/server";
 
-import { useTranslations } from "next-intl";
-
-export default function HowItWorks() {
-  const t = useTranslations("home");
+export default async function HowItWorks() {
+  const t = await getTranslations("home");
 
   const steps = [
     { icon: "🗺️", title: t("step1Title"), desc: t("step1Desc") },

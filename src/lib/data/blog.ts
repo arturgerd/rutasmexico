@@ -1,11 +1,18 @@
 import { BlogPost, BlogCategory } from "@/types/blog";
 import blogPostsData from "@/data/blog-posts.json";
+import { blogPostSchema, validateData } from "./schemas";
+
+const validatedPosts = validateData(
+  blogPostSchema.array(),
+  blogPostsData as BlogPost[],
+  "blog-posts.json"
+);
 
 // Hide posts whose publishedDate is in the future. ISR (revalidate windows on
 // the blog list and post pages) reissues fresh data daily, so a scheduled post
 // surfaces within 24h of its date without manual intervention.
 const today = new Date().toISOString().slice(0, 10);
-const blogPosts = (blogPostsData as BlogPost[])
+const blogPosts = validatedPosts
   .filter((p) => p.publishedDate <= today)
   .sort(
     (a, b) => new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime()

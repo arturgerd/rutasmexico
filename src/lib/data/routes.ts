@@ -1,7 +1,8 @@
 import routesData from "@/data/routes.json";
 import { Route } from "@/types/route";
+import { routeSchema, validateData } from "./schemas";
 
-const routes = routesData as Route[];
+const routes = validateData(routeSchema.array(), routesData as Route[], "routes.json");
 
 export async function getAllRoutes(): Promise<Route[]> {
   return routes;

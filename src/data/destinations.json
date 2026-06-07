@@ -1794,5 +1794,365 @@
     },
     "airportIATA": "PBC",
     "lastModified": "2026-06-06"
+  },
+  {
+    "id": "queretaro",
+    "slug": "queretaro",
+    "name": {
+      "es": "Querétaro",
+      "en": "Querétaro"
+    },
+    "shortName": "QRO",
+    "coordinates": {
+      "lat": 20.5888,
+      "lng": -100.3899
+    },
+    "state": {
+      "es": "Querétaro",
+      "en": "Querétaro"
+    },
+    "region": "bajio",
+    "description": {
+      "es": "Querétaro es una elegante ciudad colonial del Bajío, Patrimonio de la Humanidad, famosa por su acueducto de 74 arcos, su ruta del vino y queso y la cercana peña de Bernal.",
+      "en": "Querétaro is an elegant colonial Bajío city and UNESCO World Heritage Site, famous for its 74-arch aqueduct, its wine-and-cheese route, and the nearby Peña de Bernal monolith."
+    },
+    "longDescription": {
+      "es": "Santiago de Querétaro, a 2.5 horas de la Ciudad de México, es una de las ciudades coloniales más bonitas y mejor conservadas del país, incluida en la lista del New York Times de lugares para visitar en 2026. Su Centro Histórico, Patrimonio de la Humanidad, combina andadores peatonales, plazas arboladas, conventos barrocos y un ambiente tranquilo y seguro. El símbolo de la ciudad es su acueducto del siglo XVIII, con 74 arcos que alcanzan 23 metros de altura. Alrededor se extiende una de las regiones vinícolas más dinámicas de México (Tequisquiapan y Ezequiel Montes) y pueblos mágicos como Bernal, dominado por uno de los monolitos más grandes del mundo. Es un destino más auténtico y económico que el vecino San Miguel de Allende.",
+      "en": "Santiago de Querétaro, 2.5 hours from Mexico City, is one of the prettiest and best-preserved colonial cities in the country, included on the New York Times list of places to visit in 2026. Its UNESCO-listed Historic Center blends pedestrian walkways, leafy plazas, Baroque convents, and a calm, safe atmosphere. The city's symbol is its 18th-century aqueduct, with 74 arches reaching 23 meters high. Around it lies one of Mexico's most dynamic wine regions (Tequisquiapan and Ezequiel Montes) and magic towns like Bernal, crowned by one of the largest monoliths in the world. It's a more authentic and affordable destination than neighboring San Miguel de Allende."
+    },
+    "heroImage": "https://images.unsplash.com/photo-1512442827816-8e5a088619c9?w=1200&h=630&fit=crop&q=80",
+    "highlights": [
+      {
+        "es": "Acueducto de Querétaro, con 74 arcos de hasta 23 metros (siglo XVIII)",
+        "en": "Querétaro Aqueduct, with 74 arches up to 23 meters high (18th century)"
+      },
+      {
+        "es": "Centro Histórico Patrimonio de la Humanidad: andadores, plazas y el Templo de Santa Rosa de Viterbo",
+        "en": "UNESCO World Heritage Historic Center: walkways, plazas, and the Temple of Santa Rosa de Viterbo"
+      },
+      {
+        "es": "Excursión a Peña de Bernal, uno de los monolitos más grandes del mundo, y a los pueblos del queso y el vino",
+        "en": "Day trip to Peña de Bernal, one of the world's largest monoliths, and the cheese-and-wine towns"
+      },
+      {
+        "es": "Ruta del vino y el queso en Tequisquiapan y Ezequiel Montes",
+        "en": "Wine and cheese route in Tequisquiapan and Ezequiel Montes"
+      }
+    ],
+    "gettingAround": {
+      "es": "El Centro Histórico es peatonal y se recorre a pie. Uber y Didi funcionan muy bien y son baratos para distancias mayores o para llegar a la central de autobuses. Para Bernal y la ruta del vino conviene rentar auto o tomar un tour, ya que el transporte público es limitado.",
+      "en": "The Historic Center is pedestrian and easily walkable. Uber and Didi work very well and are cheap for longer distances or reaching the bus station. For Bernal and the wine route it's best to rent a car or take a tour, since public transport is limited."
+    },
+    "safetyTips": [
+      {
+        "es": "Querétaro es de las ciudades más seguras de México. Aplica las precauciones normales y disfruta el centro caminando, incluso de noche en las zonas concurridas.",
+        "en": "Querétaro is one of Mexico's safest cities. Take normal precautions and enjoy walking the center, even at night in busy areas."
+      },
+      {
+        "es": "Si rentas auto para la ruta del vino, no manejes de noche por carreteras rurales y respeta los límites en las casetas de la 57.",
+        "en": "If you rent a car for the wine route, avoid driving rural roads at night and mind the limits at the Highway 57 toll booths."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Enchiladas queretanas",
+        "description": {
+          "es": "Tortillas pasadas por salsa de chile guajillo, rellenas y acompañadas de papas y zanahorias doradas, pollo y queso. El antojito clásico de la ciudad.",
+          "en": "Tortillas dipped in guajillo chile sauce, filled and served with sautéed potatoes and carrots, chicken, and cheese. The city's classic dish."
+        },
+        "priceRange": {
+          "min": 60,
+          "max": 130,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Fondas del Centro Histórico y mercados como La Cruz para la versión más tradicional.",
+          "en": "Historic Center fondas and markets like La Cruz for the most traditional version."
+        }
+      },
+      {
+        "name": "Vinos y quesos del Bajío",
+        "description": {
+          "es": "Querétaro es de las principales regiones vinícolas de México. Tablas de quesos artesanales maridados con vino tinto y espumoso local.",
+          "en": "Querétaro is one of Mexico's leading wine regions. Boards of artisanal cheeses paired with local red and sparkling wine."
+        },
+        "priceRange": {
+          "min": 250,
+          "max": 700,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Viñedos como Freixenet y La Redonda en Ezequiel Montes, o bares de vino en el centro.",
+          "en": "Vineyards like Freixenet and La Redonda in Ezequiel Montes, or wine bars downtown."
+        }
+      },
+      {
+        "name": "Gorditas de migajas",
+        "description": {
+          "es": "Gorditas de maíz rellenas de migajas de chicharrón en salsa, un antojo callejero económico y muy queretano.",
+          "en": "Corn gorditas filled with chicharrón crumbs in salsa, a cheap, very Queretaro street snack."
+        },
+        "priceRange": {
+          "min": 15,
+          "max": 40,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Puestos del centro y mercados por la mañana.",
+          "en": "Downtown stalls and markets in the morning."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 450,
+      "max": 1500,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "De septiembre a junio, con clima templado y seco. Evita las multitudes y los precios altos de Semana Santa y los puentes (fines de semana largos). El otoño y la primavera son ideales para la ruta del vino.",
+      "en": "September to June, with mild, dry weather. Avoid the crowds and high prices of Holy Week and Mexican long weekends. Fall and spring are ideal for the wine route."
+    },
+    "airportIATA": "QRO",
+    "lastModified": "2026-06-06"
+  },
+  {
+    "id": "san-cristobal-de-las-casas",
+    "slug": "san-cristobal-de-las-casas",
+    "name": {
+      "es": "San Cristóbal de las Casas",
+      "en": "San Cristóbal de las Casas"
+    },
+    "shortName": "SCLC",
+    "coordinates": {
+      "lat": 16.737,
+      "lng": -92.6376
+    },
+    "state": {
+      "es": "Chiapas",
+      "en": "Chiapas"
+    },
+    "region": "sur",
+    "description": {
+      "es": "San Cristóbal de las Casas es un pueblo mágico de montaña en Chiapas, con calles coloniales, fuerte cultura indígena maya, artesanías, café y acceso al Cañón del Sumidero.",
+      "en": "San Cristóbal de las Casas is a magical mountain town in Chiapas, with colonial streets, strong Maya indigenous culture, handicrafts, coffee, and access to the Sumidero Canyon."
+    },
+    "longDescription": {
+      "es": "San Cristóbal de las Casas, a más de 2,200 metros de altitud en los Altos de Chiapas, es uno de los pueblos mágicos más cautivadores de México. Sus calles empedradas, casas de colores y andadores peatonales conviven con una intensa cultura indígena tzotzil y tzeltal que llena los mercados de textiles, ámbar y artesanías —la ciudad es Ciudad Creativa de la UNESCO—. Es base para excursiones imperdibles: el Cañón del Sumidero, los pueblos indígenas de San Juan Chamula y Zinacantán, las cascadas de El Chiflón y los lagos de Montebello. Su escena gastronómica sorprende por su variedad, con cafés de altura, cocina chiapaneca y una notable oferta vegana e internacional. El clima fresco de montaña pide suéter por las noches.",
+      "en": "San Cristóbal de las Casas, at over 2,200 meters in the Chiapas highlands, is one of Mexico's most captivating magic towns. Its cobbled streets, colorful houses, and pedestrian walkways coexist with an intense Tzotzil and Tzeltal indigenous culture that fills the markets with textiles, amber, and crafts —the city is a UNESCO Creative City. It's a base for unmissable excursions: the Sumidero Canyon, the indigenous towns of San Juan Chamula and Zinacantán, the El Chiflón waterfalls, and the Montebello lakes. Its food scene surprises with its variety, from high-altitude coffee to Chiapanecan cuisine and a notable vegan and international offering. The cool mountain climate calls for a sweater at night."
+    },
+    "heroImage": "https://images.unsplash.com/photo-1593374419603-bf046ae3a497?w=1200&h=630&fit=crop&q=80",
+    "highlights": [
+      {
+        "es": "Andador Eclesiástico y el Templo de Santo Domingo con su mercado de artesanías",
+        "en": "Andador Eclesiástico walkway and the Santo Domingo church with its handicraft market"
+      },
+      {
+        "es": "Excursión en lancha por el Cañón del Sumidero, con paredes de hasta 1,000 metros",
+        "en": "Boat trip through the Sumidero Canyon, with walls up to 1,000 meters high"
+      },
+      {
+        "es": "Visita a los pueblos indígenas de San Juan Chamula y Zinacantán",
+        "en": "Visit to the indigenous towns of San Juan Chamula and Zinacantán"
+      },
+      {
+        "es": "Cascadas de El Chiflón y lagos de Montebello como excursiones de día",
+        "en": "El Chiflón waterfalls and Montebello lakes as day trips"
+      }
+    ],
+    "gettingAround": {
+      "es": "El centro de San Cristóbal es compacto y peatonal: casi todo se hace caminando por los andadores. Para excursiones (Sumidero, Chamula, El Chiflón, Montebello) la opción más cómoda y económica son los tours en colectivo que salen del centro. Hay taxis baratos para distancias cortas. Lleva calzado cómodo: las calles son empedradas y la altitud se siente al subir cuestas.",
+      "en": "San Cristóbal's center is compact and pedestrian: almost everything is done on foot along the walkways. For excursions (Sumidero, Chamula, El Chiflón, Montebello), the most comfortable and affordable option is the shared-van tours that leave from downtown. There are cheap taxis for short distances. Wear comfortable shoes: the streets are cobbled and the altitude is noticeable on the uphills."
+    },
+    "safetyTips": [
+      {
+        "es": "San Cristóbal es tranquilo y seguro para turistas. En San Juan Chamula respeta las reglas: no se permite fotografiar el interior de la iglesia ni a las personas sin permiso.",
+        "en": "San Cristóbal is calm and safe for tourists. In San Juan Chamula respect the rules: photographing the church interior or people without permission is not allowed."
+      },
+      {
+        "es": "Por la altitud y el clima fresco, lleva ropa abrigadora para la noche. Bebe agua embotellada y date un día para aclimatarte.",
+        "en": "Due to the altitude and cool climate, bring warm clothes for the evening. Drink bottled water and give yourself a day to acclimatize."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Cochito horneado",
+        "description": {
+          "es": "Cerdo marinado en adobo de chiles y especias, horneado hasta quedar suave. Platillo festivo típico de los Altos de Chiapas.",
+          "en": "Pork marinated in a chile-and-spice adobo and roasted until tender. A festive dish typical of the Chiapas highlands."
+        },
+        "priceRange": {
+          "min": 70,
+          "max": 150,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "El Mercado de Santo Domingo y fondas tradicionales del centro.",
+          "en": "The Santo Domingo market and traditional downtown fondas."
+        }
+      },
+      {
+        "name": "Café chiapaneco",
+        "description": {
+          "es": "Chiapas produce algunos de los mejores cafés de altura de México. San Cristóbal tiene una cultura cafetera excepcional con tostadores locales.",
+          "en": "Chiapas produces some of Mexico's best high-altitude coffee. San Cristóbal has an exceptional coffee culture with local roasters."
+        },
+        "priceRange": {
+          "min": 35,
+          "max": 90,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Cafeterías de especialidad del centro como Frontera Artisan Café o Carajillo.",
+          "en": "Specialty cafés downtown like Frontera Artisan Café or Carajillo."
+        }
+      },
+      {
+        "name": "Tamales y sopa de pan",
+        "description": {
+          "es": "Tamales chiapanecos (de chipilín, de bola) y la sopa de pan, un guiso tradicional de los Altos con pan, caldo y verduras.",
+          "en": "Chiapanecan tamales (chipilín, bola) and sopa de pan, a traditional highlands stew with bread, broth, and vegetables."
+        },
+        "priceRange": {
+          "min": 25,
+          "max": 90,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Mercados locales y restaurantes de cocina chiapaneca del centro.",
+          "en": "Local markets and Chiapanecan restaurants downtown."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 400,
+      "max": 1400,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "De noviembre a abril, la temporada seca, con días soleados y noches frías. Marzo a mayo ofrece el mejor clima. La temporada de lluvias (junio a octubre) tiene tardes húmedas pero menos turistas y precios más bajos.",
+      "en": "November to April, the dry season, with sunny days and cold nights. March to May offers the best weather. The rainy season (June to October) has wet afternoons but fewer tourists and lower prices."
+    },
+    "airportIATA": "TGZ",
+    "lastModified": "2026-06-06"
+  },
+  {
+    "id": "playa-del-carmen",
+    "slug": "playa-del-carmen",
+    "name": {
+      "es": "Playa del Carmen",
+      "en": "Playa del Carmen"
+    },
+    "shortName": "PDC",
+    "coordinates": {
+      "lat": 20.6296,
+      "lng": -87.0739
+    },
+    "state": {
+      "es": "Quintana Roo",
+      "en": "Quintana Roo"
+    },
+    "region": "peninsula",
+    "description": {
+      "es": "Playa del Carmen es el corazón de la Riviera Maya: playas caribeñas, la animada Quinta Avenida peatonal, cenotes cercanos y el ferry a Cozumel.",
+      "en": "Playa del Carmen is the heart of the Riviera Maya: Caribbean beaches, the lively pedestrian Quinta Avenida, nearby cenotes, and the ferry to Cozumel."
+    },
+    "longDescription": {
+      "es": "Playa del Carmen, a una hora al sur de Cancún, es la ciudad más cosmopolita de la Riviera Maya. Su columna vertebral es la Quinta Avenida, un andador peatonal de 5 km paralelo a la playa, repleto de restaurantes, tiendas, mercados de artesanías y vida nocturna. Combina el ambiente de playa caribeña con una escena gastronómica internacional y una ubicación inmejorable: desde aquí salen los ferris a Cozumel (paraíso del buceo), está a un paso de Akumal y sus tortugas, de Tulum y de un corredor de cenotes espectaculares hacia el interior de la selva. Es una base práctica y bien conectada para explorar toda la Riviera Maya, con opciones para todos los presupuestos.",
+      "en": "Playa del Carmen, an hour south of Cancún, is the Riviera Maya's most cosmopolitan town. Its backbone is the Quinta Avenida, a 5 km pedestrian street parallel to the beach, packed with restaurants, shops, craft markets, and nightlife. It blends a Caribbean beach vibe with an international food scene and an unbeatable location: ferries to Cozumel (a diving paradise) leave from here, and it's a short hop from Akumal and its turtles, from Tulum, and from a corridor of spectacular cenotes inland in the jungle. It's a practical, well-connected base for exploring the whole Riviera Maya, with options for every budget."
+    },
+    "heroImage": "https://images.unsplash.com/photo-1509233725247-49e657c54213?w=1200&h=630&fit=crop&q=80",
+    "highlights": [
+      {
+        "es": "La Quinta Avenida, andador peatonal de 5 km con restaurantes, tiendas y vida nocturna",
+        "en": "La Quinta Avenida, a 5 km pedestrian street with restaurants, shops, and nightlife"
+      },
+      {
+        "es": "Ferry a Cozumel (35-45 min) para bucear y esnórquel en arrecifes de clase mundial",
+        "en": "Ferry to Cozumel (35-45 min) for world-class reef diving and snorkeling"
+      },
+      {
+        "es": "Cenotes cercanos como Chaak-Tun, Cristalino y Dos Ojos para nadar y bucear",
+        "en": "Nearby cenotes like Chaak-Tun, Cristalino, and Dos Ojos for swimming and diving"
+      },
+      {
+        "es": "Excursiones a Akumal (tortugas), Tulum y los parques Xcaret y Xplor",
+        "en": "Trips to Akumal (turtles), Tulum, and the Xcaret and Xplor parks"
+      }
+    ],
+    "gettingAround": {
+      "es": "El centro y la Quinta Avenida se recorren a pie. Para distancias mayores hay taxis (sin taxímetro: acuerda el precio antes) y colectivos económicos sobre la carretera 307 que conectan con Tulum y Cancún. El ferry a Cozumel sale del muelle frente a la Quinta Avenida cada 30-60 minutos (redondo 250-350 MXN). Para cenotes y parques conviene rentar auto o tomar tours.",
+      "en": "Downtown and the Quinta Avenida are walkable. For longer distances there are taxis (no meter: agree the fare first) and cheap colectivos along Highway 307 connecting to Tulum and Cancún. The ferry to Cozumel leaves from the pier by the Quinta Avenida every 30-60 minutes (round trip 250-350 MXN). For cenotes and parks it's best to rent a car or take tours."
+    },
+    "safetyTips": [
+      {
+        "es": "Las zonas turísticas son seguras de día y de noche en la Quinta Avenida, muy transitada. Usa taxis de sitio de noche y acuerda siempre la tarifa antes de subir.",
+        "en": "The tourist areas are safe day and night on the busy Quinta Avenida. Use registered taxis at night and always agree on the fare before getting in."
+      },
+      {
+        "es": "Cuida tus cosas en la playa y revisa las condiciones del sargazo (abril-octubre) antes de elegir fechas si buscas playa impecable.",
+        "en": "Watch your belongings on the beach and check sargassum conditions (April-October) before choosing dates if you want a pristine beach."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Tacos al pastor",
+        "description": {
+          "es": "Tacos de cerdo marinado al trompo con piña, cilantro y cebolla. Imprescindibles en las taquerías fuera de la zona turística, donde son más auténticos y baratos.",
+          "en": "Spit-roasted marinated pork tacos with pineapple, cilantro, and onion. A must at taquerías away from the tourist zone, where they're more authentic and cheaper."
+        },
+        "priceRange": {
+          "min": 15,
+          "max": 40,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Taquerías locales en las calles del centro, lejos de la Quinta Avenida.",
+          "en": "Local taquerías on downtown streets, away from the Quinta Avenida."
+        }
+      },
+      {
+        "name": "Marisco caribeño",
+        "description": {
+          "es": "Ceviche, aguachile, pescado a la talla y cócteles de camarón frescos del Caribe, ideales con una cerveza fría.",
+          "en": "Ceviche, aguachile, grilled fish, and shrimp cocktails fresh from the Caribbean, ideal with a cold beer."
+        },
+        "priceRange": {
+          "min": 90,
+          "max": 280,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Marisquerías locales y mercados; en la Quinta Avenida hay versiones más caras frente al paseo.",
+          "en": "Local seafood spots and markets; the Quinta Avenida has pricier versions along the promenade."
+        }
+      },
+      {
+        "name": "Marquesitas",
+        "description": {
+          "es": "Crepa crujiente enrollada rellena de queso de bola y dulce, el postre callejero clásico de la península de Yucatán.",
+          "en": "A crispy rolled crepe filled with Edam cheese and something sweet, the classic street dessert of the Yucatán Peninsula."
+        },
+        "priceRange": {
+          "min": 35,
+          "max": 70,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Puestos ambulantes en el Parque Fundadores y la Quinta Avenida por la noche.",
+          "en": "Street carts at Parque Fundadores and the Quinta Avenida at night."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 800,
+      "max": 3500,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "Noviembre y diciembre son ideales: el sargazo disminuye desde finales de octubre, el clima es perfecto y las multitudes aún no llegan a su pico (Navidad y spring break). De abril a octubre el sargazo puede afectar las playas; los cenotes nunca se ven afectados.",
+      "en": "November and December are ideal: sargassum eases from late October, the weather is perfect, and crowds haven't peaked yet (Christmas and spring break). From April to October sargassum can affect the beaches; cenotes are never affected."
+    },
+    "airportIATA": "CUN",
+    "lastModified": "2026-06-06"
   }
 ]

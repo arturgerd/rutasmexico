@@ -65,6 +65,7 @@ export default function HotelSearchEmbed() {
   const [guests, setGuests] = useState(2);
   const [searchDone, setSearchDone] = useState(false);
   const [lastSearchUrl, setLastSearchUrl] = useState("");
+  const [error, setError] = useState<string | null>(null);
   const idPrefix = useId();
   const cityId = `${idPrefix}city`;
   const inId = `${idPrefix}in`;
@@ -91,9 +92,10 @@ export default function HotelSearchEmbed() {
 
   const handleSearch = () => {
     if (!city) {
-      alert(t3(locale, "Selecciona un destino", "Select a destination", "Sélectionnez une destination"));
+      setError(t3(locale, "Selecciona un destino", "Select a destination"));
       return;
     }
+    setError(null);
 
     const selectedCity = HOTEL_CITIES.find(c => c.id === city);
     if (!selectedCity) return;
@@ -244,6 +246,10 @@ export default function HotelSearchEmbed() {
           >
             🔍 {t3(locale, "Encuentra el hotel más barato", "Find the cheapest hotel", "Trouver l'hôtel le moins cher")}
           </button>
+
+          {error && (
+            <p role="alert" className="text-sm font-medium text-red-600">{error}</p>
+          )}
 
           {/* Comparison badge */}
           <div className="flex flex-wrap items-center gap-2 text-xs">
