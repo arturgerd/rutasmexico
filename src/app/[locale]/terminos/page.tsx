@@ -27,7 +27,7 @@ export default function TerminosPage({ params: { locale } }: { params: { locale:
     <div className="min-h-screen bg-arena-50">
       <div className="container-custom py-12 max-w-4xl">
         {/* Breadcrumb */}
-        <nav className="text-sm text-arena-400 mb-8">
+        <nav className="text-sm text-arena-700 mb-8">
           <Link href={`/${locale}`} className="hover:text-terracotta-500 transition-colors">
             {t3(locale, "Inicio", "Home", "Accueil")}
           </Link>
@@ -41,7 +41,7 @@ export default function TerminosPage({ params: { locale } }: { params: { locale:
           <h1 className="font-display text-3xl md:text-4xl font-bold text-arena-900 mb-2">
             {t3(locale, "Términos y Condiciones", "Terms of Service", "Conditions d'Utilisation")}
           </h1>
-          <p className="text-arena-400 text-sm mb-8">
+          <p className="text-arena-700 text-sm mb-8">
             {t3(locale, `Última actualización: ${lastUpdated}`, `Last updated: March 23, 2026`, `Dernière mise à jour : 23 mars 2026`)}
           </p>
 

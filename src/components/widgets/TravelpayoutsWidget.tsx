@@ -73,7 +73,7 @@ export default function TravelpayoutsWidget({ originIATA, destIATA, type = "cale
       {isLoading && (
         <div className="flex items-center justify-center py-8">
           <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-terracotta-500" />
-          <span className="ml-3 text-arena-400 text-sm">
+          <span className="ml-3 text-arena-700 text-sm">
             {locale === "es" ? "Cargando precios en tiempo real..." : "Loading real-time prices..."}
           </span>
         </div>
@@ -140,7 +140,7 @@ function FallbackPriceComparison({ originIATA, destIATA, locale }: { originIATA:
               <span className="text-xl">{airline.icon}</span>
               <div>
                 <p className="font-semibold text-arena-900 text-sm">{airline.name}</p>
-                <p className="text-xs text-arena-400">
+                <p className="text-xs text-arena-700">
                   {locale === "es" ? "Precio estimado" : "Estimated price"}
                 </p>
               </div>
@@ -166,7 +166,7 @@ function FallbackPriceComparison({ originIATA, destIATA, locale }: { originIATA:
             ? "Comparar TODAS las aerolíneas"
             : "Compare ALL airlines"}
         </button>
-        <p className="text-center text-xs text-arena-400 mt-2">
+        <p className="text-center text-xs text-arena-700 mt-2">
           {locale === "es"
             ? "Precios actualizados en tiempo real • Volaris, VivaAerobus, Aeroméxico, TAR y +10 aerolíneas"
             : "Real-time updated prices • Volaris, VivaAerobus, Aeromexico, TAR and 10+ airlines"}

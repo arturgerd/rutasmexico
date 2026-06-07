@@ -95,7 +95,7 @@ export default function Footer() {
             "Inventario Valioso" policy. Surfaces the same disclosure that appears in
             individual articles, so it's visible regardless of which page the user lands on. */}
         <div className="border-t border-arena-800 mt-8 pt-6">
-          <p className="text-xs text-arena-400 leading-relaxed max-w-3xl mx-auto text-center">
+          <p className="text-xs text-arena-300 leading-relaxed max-w-3xl mx-auto text-center">
             <span className="font-semibold text-arena-300">
               {locale === "es" ? "Aviso de afiliados y publicidad. " : "Affiliate & advertising disclosure. "}
             </span>

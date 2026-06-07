@@ -149,7 +149,7 @@ export default function CarRentalSearch({ airports, defaultPickup = "", compact 
         </div>
       </div>
 
-      <p className="text-xs text-arena-400 text-center">
+      <p className="text-xs text-arena-700 text-center">
         {locale === "es"
           ? "Compara 500+ empresas: Hertz, Avis, National, Budget y más. 70% descuentos"
           : "Compare 500+ companies: Hertz, Avis, National, Budget and more. Up to 70% off"}

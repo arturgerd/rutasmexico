@@ -215,7 +215,7 @@ export default function WeddingDestinationDetail({ destination, locale, relatedL
               <ul className="space-y-1">
                 {destination.legal.documents.map((doc, i) => (
                   <li key={i} className="text-arena-600 text-xs flex items-start gap-1.5">
-                    <span className="text-arena-400">•</span>
+                    <span className="text-arena-700">•</span>
                     {localize(doc, locale)}
                   </li>
                 ))}
@@ -282,7 +282,7 @@ export default function WeddingDestinationDetail({ destination, locale, relatedL
               <details key={i} className="bg-white rounded-xl border border-arena-200 overflow-hidden group">
                 <summary className="px-6 py-4 cursor-pointer font-semibold text-arena-800 hover:text-terracotta-600 transition-colors list-none flex justify-between items-center">
                   {localize(faq.question, locale)}
-                  <span className="text-arena-400 group-open:rotate-180 transition-transform">▼</span>
+                  <span className="text-arena-700 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <div className="px-6 pb-4 text-arena-600 text-sm">
                   {localize(faq.answer, locale)}

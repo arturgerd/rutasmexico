@@ -88,7 +88,7 @@ export default function RouteDetail({ route, origin, destination, guidesMap, air
       {/* Header */}
       <div className="bg-white border-b border-arena-200">
         <div className="container-custom py-6">
-          <Link href={`/${locale}/rutas`} className="text-arena-400 hover:text-terracotta-500 text-sm mb-3 inline-block">
+          <Link href={`/${locale}/rutas`} className="text-arena-700 hover:text-terracotta-500 text-sm mb-3 inline-block">
             ← {locale === "es" ? "Todas las rutas" : "All routes"}
           </Link>
           <div className="flex items-center gap-4">
@@ -190,17 +190,17 @@ export default function RouteDetail({ route, origin, destination, guidesMap, air
               <p className="text-sm text-arena-500 mb-3">{localize(option.provider, locale)}</p>
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-xs text-arena-400">{locale === "es" ? "Precio" : "Price"}</p>
+                  <p className="text-xs text-arena-700">{locale === "es" ? "Precio" : "Price"}</p>
                   <p className="font-bold text-terracotta-600">
                     {formatCurrency(option.priceRange.min)}-{formatCurrency(option.priceRange.max)}
                   </p>
                 </div>
                 <div className="text-right">
-                  <p className="text-xs text-arena-400">{locale === "es" ? "Duración" : "Duration"}</p>
+                  <p className="text-xs text-arena-700">{locale === "es" ? "Duración" : "Duration"}</p>
                   <p className="font-semibold text-arena-800">{localize(option.duration.label, locale)}</p>
                 </div>
               </div>
-              <p className="text-xs text-arena-400 mt-2">{localize(option.frequency, locale)}</p>
+              <p className="text-xs text-arena-700 mt-2">{localize(option.frequency, locale)}</p>
 
               {/* Real affiliate booking button */}
               <div
@@ -229,7 +229,7 @@ export default function RouteDetail({ route, origin, destination, guidesMap, air
           <StepByStepGuide guide={currentGuide} locale={locale} />
         ) : (
           <div className="bg-arena-100 rounded-2xl p-8 text-center">
-            <p className="text-arena-400">
+            <p className="text-arena-700">
               {locale === "es"
                 ? "La guía paso a paso para esta opción estará disponible pronto."
                 : "The step-by-step guide for this option will be available soon."}

@@ -1554,5 +1554,245 @@
     },
     "airportIATA": "MZT",
     "lastModified": "2026-02-15"
+  },
+  {
+    "id": "tulum",
+    "slug": "tulum",
+    "name": {
+      "es": "Tulum",
+      "en": "Tulum"
+    },
+    "shortName": "TQO",
+    "coordinates": {
+      "lat": 20.2114,
+      "lng": -87.4654
+    },
+    "state": {
+      "es": "Quintana Roo",
+      "en": "Quintana Roo"
+    },
+    "region": "peninsula",
+    "description": {
+      "es": "Tulum combina las únicas ruinas mayas frente al mar Caribe con cenotes cristalinos, playas de arena blanca y un ambiente boho-chic en la Riviera Maya.",
+      "en": "Tulum combines the only Mayan ruins overlooking the Caribbean Sea with crystal-clear cenotes, white-sand beaches, and a boho-chic vibe on the Riviera Maya."
+    },
+    "longDescription": {
+      "es": "Tulum, en la costa sur de la Riviera Maya, es famoso por su zona arqueológica encaramada sobre un acantilado frente al mar turquesa: la única ciudad amurallada maya construida junto al Caribe. Más allá de las ruinas, Tulum se divide en dos mundos: el Pueblo, hacia el interior, con hoteles económicos, taquerías y la terminal de autobuses ADO; y la Zona Hotelera, una carretera junto a la playa llena de hoteles boutique eco-chic, beach clubs y restaurantes de autor. Alrededor, la selva esconde algunos de los cenotes más espectaculares de México —Gran Cenote, Dos Ojos, Cenote Calavera— ideales para nadar, esnórquel y buceo. Tulum es también puerta de entrada a la Reserva de la Biósfera de Sian Ka'an, Patrimonio de la Humanidad. Desde diciembre de 2023 cuenta con aeropuerto internacional propio (Felipe Carrillo Puerto, TQO).",
+      "en": "Tulum, on the southern Riviera Maya coast, is famous for its archaeological site perched on a cliff above the turquoise sea: the only walled Mayan city built beside the Caribbean. Beyond the ruins, Tulum is two worlds: the Pueblo (town) inland, with budget hotels, taquerías, and the ADO bus station; and the Hotel Zone, a beachfront road lined with eco-chic boutique hotels, beach clubs, and chef-driven restaurants. Around it, the jungle hides some of Mexico's most spectacular cenotes —Gran Cenote, Dos Ojos, Cenote Calavera— perfect for swimming, snorkeling, and diving. Tulum is also the gateway to the Sian Ka'an Biosphere Reserve, a UNESCO World Heritage Site. Since December 2023 it has its own international airport (Felipe Carrillo Puerto, TQO)."
+    },
+    "heroImage": "https://images.unsplash.com/photo-1622870129889-f7e0ba2603a1?w=1200&h=630&fit=crop&q=80",
+    "highlights": [
+      {
+        "es": "Zona arqueológica de Tulum, la única ciudad maya amurallada frente al mar Caribe (entrada ~515 MXN)",
+        "en": "Tulum archaeological site, the only walled Mayan city facing the Caribbean Sea (entry ~515 MXN)"
+      },
+      {
+        "es": "Nadar en cenotes de la selva como Gran Cenote, Dos Ojos y Cenote Calavera",
+        "en": "Swim in jungle cenotes like Gran Cenote, Dos Ojos, and Cenote Calavera"
+      },
+      {
+        "es": "Playas de arena blanca como Playa Paraíso y Playa Ruinas en la Zona Hotelera",
+        "en": "White-sand beaches like Playa Paraíso and Playa Ruinas in the Hotel Zone"
+      },
+      {
+        "es": "Excursión a la Reserva de la Biósfera de Sian Ka'an, Patrimonio de la Humanidad",
+        "en": "Day trip to the Sian Ka'an Biosphere Reserve, a UNESCO World Heritage Site"
+      }
+    ],
+    "gettingAround": {
+      "es": "El Pueblo de Tulum es caminable, pero la playa (Zona Hotelera) está a 4-5 km: la forma más popular de recorrerla es en bicicleta (renta ~150-200 MXN/día) o taxi. Los taxis no usan taxímetro y son caros, así que acuerda el precio antes de subir (un trayecto Pueblo-playa ronda 150-250 MXN). Para cenotes y Sian Ka'an conviene rentar auto o tomar tours. Los colectivos (vans) conectan Tulum con Playa del Carmen y otros puntos de la Riviera Maya de forma económica.",
+      "en": "Tulum Pueblo is walkable, but the beach (Hotel Zone) is 4-5 km away: the most popular way to get around is by bicycle (rental ~150-200 MXN/day) or taxi. Taxis don't use meters and are expensive, so agree on the fare before getting in (a Pueblo-beach trip runs about 150-250 MXN). For cenotes and Sian Ka'an it's best to rent a car or take tours. Colectivos (vans) connect Tulum with Playa del Carmen and other Riviera Maya points affordably."
+    },
+    "safetyTips": [
+      {
+        "es": "Tulum es turístico y generalmente seguro de día. Evita zonas poco iluminadas de noche y usa taxis de sitio o apps al regresar de la playa.",
+        "en": "Tulum is touristy and generally safe by day. Avoid poorly lit areas at night and use registered taxis or apps when returning from the beach."
+      },
+      {
+        "es": "Lleva efectivo: muchos beach clubs y cenotes cobran en efectivo y el cajero más cercano puede estar lejos. Confirma el precio del taxi antes de subir.",
+        "en": "Carry cash: many beach clubs and cenotes charge in cash and the nearest ATM may be far. Confirm the taxi fare before getting in."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Cochinita pibil",
+        "description": {
+          "es": "Cerdo marinado en achiote y naranja agria, envuelto en hoja de plátano y cocido bajo tierra. Se sirve en tacos o tortas con cebolla morada encurtida y habanero.",
+          "en": "Pork marinated in achiote and sour orange, wrapped in banana leaf and cooked underground. Served in tacos or tortas with pickled red onion and habanero."
+        },
+        "priceRange": {
+          "min": 40,
+          "max": 120,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Las taquerías del Pueblo de Tulum, especialmente las de la avenida Tulum por la mañana, sirven cochinita auténtica a buen precio.",
+          "en": "The taquerías in Tulum Pueblo, especially those on Avenida Tulum in the morning, serve authentic, affordable cochinita."
+        }
+      },
+      {
+        "name": "Tacos de pescado y marisco",
+        "description": {
+          "es": "Tacos de pescado fresco a la plancha o capeado, camarón y pulpo, con salsas caribeñas. Reflejan la cocina costera de Quintana Roo.",
+          "en": "Tacos of fresh grilled or battered fish, shrimp, and octopus, with Caribbean salsas. They reflect the coastal cooking of Quintana Roo."
+        },
+        "priceRange": {
+          "min": 35,
+          "max": 90,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Marisquerías y loncherías del Pueblo. En la Zona Hotelera los beach clubs ofrecen versiones más caras frente al mar.",
+          "en": "Seafood spots and loncherías in the Pueblo. In the Hotel Zone, beach clubs offer pricier beachfront versions."
+        }
+      },
+      {
+        "name": "Marquesita",
+        "description": {
+          "es": "Antojito yucateco: una crepa crujiente enrollada y rellena de queso de bola con cajeta, Nutella o mermelada. El postre callejero típico de la región.",
+          "en": "A Yucatecan treat: a crispy rolled crepe filled with Edam cheese and cajeta, Nutella, or jam. The region's classic street dessert."
+        },
+        "priceRange": {
+          "min": 35,
+          "max": 70,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Puestos ambulantes en el parque central del Pueblo de Tulum por la noche.",
+          "en": "Street carts in the central park of Tulum Pueblo at night."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 700,
+      "max": 3500,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "Noviembre a abril ofrece clima seco, cielos despejados y menos sargazo. Evita septiembre-octubre (pico de huracanes) y los meses de mayo a agosto, cuando el sargazo puede cubrir las playas. La temporada alta (diciembre-marzo) es la más cara.",
+      "en": "November to April offers dry weather, clear skies, and less sargassum. Avoid September-October (peak hurricane season) and the May-August months, when sargassum can cover the beaches. High season (December-March) is the most expensive."
+    },
+    "airportIATA": "TQO",
+    "lastModified": "2026-06-06"
+  },
+  {
+    "id": "puebla",
+    "slug": "puebla",
+    "name": {
+      "es": "Puebla",
+      "en": "Puebla"
+    },
+    "shortName": "PBC",
+    "coordinates": {
+      "lat": 19.0414,
+      "lng": -98.2063
+    },
+    "state": {
+      "es": "Puebla",
+      "en": "Puebla"
+    },
+    "region": "centro",
+    "description": {
+      "es": "Puebla es una joya colonial Patrimonio de la Humanidad, cuna del mole poblano y los chiles en nogada, con talavera, iglesias barrocas y la pirámide de Cholula a un paso.",
+      "en": "Puebla is a UNESCO World Heritage colonial gem, birthplace of mole poblano and chiles en nogada, with Talavera pottery, Baroque churches, and the Cholula pyramid nearby."
+    },
+    "longDescription": {
+      "es": "Puebla de Zaragoza, a solo dos horas de la Ciudad de México, es una de las ciudades coloniales mejor conservadas del país y Patrimonio de la Humanidad desde 1987. Su Centro Histórico deslumbra con fachadas de talavera, más de 70 iglesias y joyas barrocas como la Capilla del Rosario y la Biblioteca Palafoxiana, la primera biblioteca pública de América. Es, además, una capital gastronómica: aquí nacieron el mole poblano, los chiles en nogada y las cemitas. A pocos kilómetros está Cholula, con la pirámide más grande del mundo por volumen, coronada por una iglesia. Puebla también es escenario de la Batalla del 5 de mayo de 1862, que se conmemora en los fuertes de Loreto y Guadalupe. Todo a precios notablemente más bajos que en la capital.",
+      "en": "Puebla de Zaragoza, just two hours from Mexico City, is one of the country's best-preserved colonial cities and a UNESCO World Heritage Site since 1987. Its Historic Center dazzles with Talavera-tiled facades, more than 70 churches, and Baroque jewels like the Rosary Chapel and the Palafoxiana Library, the first public library in the Americas. It's also a culinary capital: mole poblano, chiles en nogada, and cemitas were all born here. A few kilometers away is Cholula, home to the largest pyramid in the world by volume, crowned by a church. Puebla is also the setting of the Battle of May 5, 1862, commemorated at the Loreto and Guadalupe forts. All at prices noticeably lower than the capital."
+    },
+    "heroImage": "https://images.unsplash.com/photo-1653661279002-692227e35f0f?w=1200&h=630&fit=crop&q=80",
+    "highlights": [
+      {
+        "es": "Centro Histórico Patrimonio de la Humanidad: Catedral, zócalo y casas de talavera",
+        "en": "UNESCO World Heritage Historic Center: Cathedral, main square, and Talavera-tiled houses"
+      },
+      {
+        "es": "Capilla del Rosario en el Templo de Santo Domingo, obra cumbre del barroco novohispano",
+        "en": "The Rosary Chapel in Santo Domingo church, a masterpiece of New Spanish Baroque"
+      },
+      {
+        "es": "Gran Pirámide de Cholula (la más grande del mundo por volumen) con iglesia en la cima (entrada ~85 MXN)",
+        "en": "Great Pyramid of Cholula (the world's largest by volume) topped by a church (entry ~85 MXN)"
+      },
+      {
+        "es": "Probar mole poblano, cemitas y, en temporada, chiles en nogada en el Callejón de los Sapos y mercados",
+        "en": "Taste mole poblano, cemitas, and, in season, chiles en nogada in Callejón de los Sapos and markets"
+      }
+    ],
+    "gettingAround": {
+      "es": "El Centro Histórico de Puebla es compacto y muy caminable: la mayoría de los atractivos están a poca distancia del zócalo. Para Cholula (unos 15 km), hay colectivos y autobuses económicos, además de Uber y Didi, que funcionan muy bien en toda la ciudad y son baratos. Los taxis de sitio son seguros. El Turibús turístico recorre los principales puntos. Para los fuertes de Loreto y Guadalupe conviene tomar un Uber por la subida.",
+      "en": "Puebla's Historic Center is compact and very walkable: most sights are a short distance from the main square. For Cholula (about 15 km), there are affordable colectivos and buses, plus Uber and Didi, which work very well across the city and are cheap. Registered taxis are safe. The tourist Turibús covers the main sights. For the Loreto and Guadalupe forts it's worth taking an Uber up the hill."
+    },
+    "safetyTips": [
+      {
+        "es": "El Centro Histórico y Cholula son seguros y muy transitados por turistas. Aplica las precauciones normales de ciudad y cuida tus pertenencias en mercados llenos.",
+        "en": "The Historic Center and Cholula are safe and heavily visited by tourists. Take normal city precautions and watch your belongings in crowded markets."
+      },
+      {
+        "es": "Usa Uber/Didi o taxis de sitio por la noche. La carretera México-Puebla puede tener neblina en la madrugada si conduces.",
+        "en": "Use Uber/Didi or registered taxis at night. The Mexico City-Puebla highway can be foggy in the early morning if you're driving."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Mole poblano",
+        "description": {
+          "es": "El platillo más emblemático de Puebla: una salsa espesa de más de 20 ingredientes —varios chiles, chocolate, especias y semillas— servida sobre pollo o guajolote con arroz y tortillas.",
+          "en": "Puebla's most emblematic dish: a thick sauce of over 20 ingredients —several chiles, chocolate, spices, and seeds— served over chicken or turkey with rice and tortillas."
+        },
+        "priceRange": {
+          "min": 90,
+          "max": 200,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Fondas del centro y restaurantes tradicionales como El Mural de los Poblanos o La Casita Poblana; también en el mercado El Carmen.",
+          "en": "Downtown fondas and traditional restaurants like El Mural de los Poblanos or La Casita Poblana; also at the El Carmen market."
+        }
+      },
+      {
+        "name": "Chiles en nogada",
+        "description": {
+          "es": "Chile poblano relleno de picadillo de carne con fruta, bañado en crema de nuez (nogada) y granada. Platillo de temporada con los colores de la bandera mexicana.",
+          "en": "Poblano chile stuffed with meat-and-fruit picadillo, bathed in walnut cream (nogada) and pomegranate. A seasonal dish in the colors of the Mexican flag."
+        },
+        "priceRange": {
+          "min": 180,
+          "max": 350,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Solo de agosto a mediados de septiembre, cuando la nuez y la granada están en temporada. Restaurantes tradicionales del centro lo ofrecen recién hecho.",
+          "en": "Only from August to mid-September, when walnut and pomegranate are in season. Traditional downtown restaurants serve it freshly made."
+        }
+      },
+      {
+        "name": "Cemita poblana",
+        "description": {
+          "es": "Torta servida en pan de ajonjolí, rellena de milanesa o carne, con quesillo de Oaxaca, aguacate, papalo y chipotle. La reina de la comida callejera poblana.",
+          "en": "A sandwich on sesame-seed bread, filled with milanesa or meat, with Oaxaca string cheese, avocado, papalo herb, and chipotle. The queen of Puebla street food."
+        },
+        "priceRange": {
+          "min": 50,
+          "max": 110,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "El Mercado del Carmen y los puestos de cemitas del centro. Las del mercado son las más auténticas y económicas.",
+          "en": "The El Carmen market and downtown cemita stalls. The market ones are the most authentic and affordable."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 500,
+      "max": 1800,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "Puebla tiene clima templado todo el año. La temporada seca de noviembre a abril es la más cómoda. Agosto y principios de septiembre son ideales para probar chiles en nogada en temporada. El 5 de mayo la ciudad celebra el aniversario de la Batalla de Puebla con desfile.",
+      "en": "Puebla has a mild climate year-round. The dry season from November to April is the most comfortable. August and early September are ideal for tasting chiles en nogada in season. On May 5, the city celebrates the anniversary of the Battle of Puebla with a parade."
+    },
+    "airportIATA": "PBC",
+    "lastModified": "2026-06-06"
   }
 ]

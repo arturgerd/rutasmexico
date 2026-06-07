@@ -64,7 +64,7 @@ export default function BlogCard({ post }: { post: BlogPost }) {
         <p className="text-arena-500 text-sm mt-2 line-clamp-3">
           {l(post.excerpt, locale)}
         </p>
-        <div className="flex items-center justify-between mt-4 text-xs text-arena-400">
+        <div className="flex items-center justify-between mt-4 text-xs text-arena-700">
           <span>{formatDate(post.publishedDate)}</span>
           <span>{post.readingTime} {t3(locale, "min de lectura", "min read", "min de lecture")}</span>
         </div>

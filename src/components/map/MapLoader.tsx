@@ -9,7 +9,7 @@ const MexicoMapDynamic = dynamic(() => import("./MexicoMap"), {
     <div className="w-full rounded-2xl bg-arena-100 animate-pulse flex items-center justify-center" style={{ height: "500px" }}>
       <div className="text-center">
         <div className="text-4xl mb-2">🗺️</div>
-        <p className="text-arena-400 text-sm">Cargando mapa...</p>
+        <p className="text-arena-700 text-sm">Cargando mapa...</p>
       </div>
     </div>
   ),

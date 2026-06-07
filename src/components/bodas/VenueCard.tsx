@@ -52,7 +52,7 @@ export default function VenueCard({ venue, locale }: VenueCardProps) {
         </p>
         <div className="flex items-center justify-between mt-3 pt-3 border-t border-arena-100">
           <div>
-            <p className="text-xs text-arena-400">
+            <p className="text-xs text-arena-700">
               {locale === "es" ? "Capacidad" : "Capacity"}
             </p>
             <p className="text-sm font-semibold text-arena-700">
@@ -60,7 +60,7 @@ export default function VenueCard({ venue, locale }: VenueCardProps) {
             </p>
           </div>
           <div className="text-right">
-            <p className="text-xs text-arena-400">
+            <p className="text-xs text-arena-700">
               {locale === "es" ? "Desde" : "From"}
             </p>
             <p className="text-sm font-bold text-terracotta-600">

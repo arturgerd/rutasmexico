@@ -247,7 +247,7 @@ export default function HotelSearchEmbed() {
 
           {/* Comparison badge */}
           <div className="flex flex-wrap items-center gap-2 text-xs">
-            <span className="text-arena-400 font-medium">
+            <span className="text-arena-700 font-medium">
               {t3(locale, "Comparamos:", "We compare:", "Nous comparons :")}
             </span>
             {["Booking.com", "Expedia", "Hotels.com", "Agoda", "Hoteles.com"].map((site) => (

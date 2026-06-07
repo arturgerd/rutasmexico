@@ -73,7 +73,7 @@ export default function StepByStepGuide({ guide, locale }: StepByStepGuideProps)
                       {style.icon} {typeLabel}
                     </span>
                     {step.duration && (
-                      <span className="text-xs text-arena-400">
+                      <span className="text-xs text-arena-700">
                         ⏱️ {localize(step.duration.label, locale)}
                       </span>
                     )}
@@ -88,7 +88,7 @@ export default function StepByStepGuide({ guide, locale }: StepByStepGuideProps)
                   </h3>
                 </div>
                 <svg
-                  className={`w-5 h-5 text-arena-400 transition-transform flex-shrink-0 mt-1 ${isExpanded ? "rotate-180" : ""}`}
+                  className={`w-5 h-5 text-arena-700 transition-transform flex-shrink-0 mt-1 ${isExpanded ? "rotate-180" : ""}`}
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

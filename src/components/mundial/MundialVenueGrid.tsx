@@ -52,7 +52,7 @@ export default function MundialVenueGrid({ venues }: MundialVenueGridProps) {
               )}
 
               {/* Stats */}
-              <div className="flex items-center justify-between text-xs text-arena-400 mt-3">
+              <div className="flex items-center justify-between text-xs text-arena-700 mt-3">
                 <span>⚽ {totalMatches} {t3(locale, "partidos", "matches", "matchs")}</span>
                 <span className="font-semibold text-terracotta-600 bg-terracotta-50 px-2 py-0.5 rounded-full">
                   {t3(locale, "Desde", "From", "Dès")} {formatCurrency(venue.avgMatchDayBudget.min, venue.avgMatchDayBudget.currency)}/{t3(locale, "día", "day", "jour")}

@@ -129,7 +129,7 @@ export default function MenuBuilder({ menu, locale }: Props) {
               </div>
               <h4 className="font-display text-xl md:text-2xl font-bold text-arena-800">
                 {drink && pick(drink.name, locale)}
-                {drink && food && <span className="text-arena-400"> + </span>}
+                {drink && food && <span className="text-arena-700"> + </span>}
                 {food && pick(food.name, locale)}
               </h4>
             </div>
@@ -178,7 +178,7 @@ export default function MenuBuilder({ menu, locale }: Props) {
             </p>
             {locale !== "es" && (
               <div className="mt-3 pt-3 border-t border-arena-700">
-                <div className="text-xs text-arena-400 mb-1">
+                <div className="text-xs text-arena-700 mb-1">
                   {locale === "fr" ? "🔊 Prononciation phonétique" : "🔊 Phonetic pronunciation"}
                 </div>
                 <p className="text-sm text-arena-300 italic">

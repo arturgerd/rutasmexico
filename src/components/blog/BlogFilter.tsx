@@ -51,7 +51,7 @@ export default function BlogFilter({ posts }: BlogFilterProps) {
               }`}
             >
               {cat.emoji} {t3(locale, cat.labelEs, cat.labelEn, cat.labelFr)}
-              <span className={`ml-1.5 text-xs ${isActive ? "text-white/80" : "text-arena-400"}`}>
+              <span className={`ml-1.5 text-xs ${isActive ? "text-white/80" : "text-arena-700"}`}>
                 ({count})
               </span>
             </button>
@@ -61,7 +61,7 @@ export default function BlogFilter({ posts }: BlogFilterProps) {
 
       {/* Results count */}
       {activeCategory !== "all" && (
-        <p className="text-center text-sm text-arena-400 mb-6">
+        <p className="text-center text-sm text-arena-700 mb-6">
           {t3(
             locale,
             `Mostrando ${filteredPosts.length} artículo${filteredPosts.length !== 1 ? "s" : ""} en esta categoría`,

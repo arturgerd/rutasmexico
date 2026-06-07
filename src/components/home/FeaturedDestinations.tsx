@@ -74,7 +74,7 @@ export default function FeaturedDestinations({ destinations }: FeaturedDestinati
                   </div>
                 </div>
                 <div className="p-4 flex items-center justify-between">
-                  <span className="text-xs text-arena-400 flex items-center gap-1">
+                  <span className="text-xs text-arena-700 flex items-center gap-1">
                     💰 {locale === "es" ? "Presupuesto diario" : "Daily budget"}
                   </span>
                   <span className="text-sm font-bold text-terracotta-600 bg-terracotta-50 px-3 py-1 rounded-full">

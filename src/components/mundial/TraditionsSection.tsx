@@ -88,7 +88,7 @@ export default function TraditionsSection({ locale }: { locale: string }) {
           <TraditionCard key={t.id} tradition={t} locale={locale} />
         ))}
       </div>
-      <p className="text-xs text-arena-400 mt-4 text-center">
+      <p className="text-xs text-arena-700 mt-4 text-center">
         🎵 {t3(
           locale,
           "Clips de audio: Cielito Lindo (Wikimedia, dominio público). Trompeta y multitud sintetizados bajo CC0.",

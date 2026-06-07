@@ -59,7 +59,7 @@ export default function InteractiveMapExplorer({ destinations }: InteractiveMapE
           }`}
         >
           🗺️ {t3(locale, "Todos", "All", "Tous")}
-          <span className={`ml-1.5 text-xs ${activeRegion === "all" ? "text-white/80" : "text-arena-400"}`}>
+          <span className={`ml-1.5 text-xs ${activeRegion === "all" ? "text-white/80" : "text-arena-700"}`}>
             ({destinations.length})
           </span>
         </button>
@@ -83,7 +83,7 @@ export default function InteractiveMapExplorer({ destinations }: InteractiveMapE
             >
               <span className="mr-1">{style.emoji}</span>
               {locale === "es" ? style.label.es : style.label.en}
-              <span className={`ml-1.5 text-xs ${isActive ? "text-white/80" : "text-arena-400"}`}>
+              <span className={`ml-1.5 text-xs ${isActive ? "text-white/80" : "text-arena-700"}`}>
                 ({count})
               </span>
             </button>
@@ -124,7 +124,7 @@ export default function InteractiveMapExplorer({ destinations }: InteractiveMapE
 
             <div className="overflow-y-auto flex-1 divide-y divide-arena-100">
               {filtered.length === 0 ? (
-                <div className="p-6 text-center text-sm text-arena-400">
+                <div className="p-6 text-center text-sm text-arena-700">
                   {t3(locale,
                     "No hay destinos en esta región todavía.",
                     "No destinations in this region yet.",
@@ -192,7 +192,7 @@ export default function InteractiveMapExplorer({ destinations }: InteractiveMapE
       </div>
 
       {/* Hint */}
-      <p className="text-xs text-arena-400 text-center mt-4">
+      <p className="text-xs text-arena-700 text-center mt-4">
         {t3(locale,
           "💡 Haz clic en un destino de la lista para verlo en el mapa",
           "💡 Click a destination from the list to see it on the map",

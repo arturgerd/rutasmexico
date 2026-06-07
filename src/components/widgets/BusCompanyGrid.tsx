@@ -114,7 +114,7 @@ export default function BusCompanyGrid({ compact = false }: BusCompanyGridProps)
                     </span>
                   </div>
                 </div>
-                <p className="text-xs text-arena-400 mb-2 line-clamp-1">{company.tagline[locale]}</p>
+                <p className="text-xs text-arena-700 mb-2 line-clamp-1">{company.tagline[locale]}</p>
                 <div className="flex flex-wrap gap-1">
                   {company.regions.slice(0, 3).map((region) => (
                     <span key={region} className="text-[10px] px-1.5 py-0.5 rounded bg-arena-50 text-arena-500 font-medium">
@@ -122,7 +122,7 @@ export default function BusCompanyGrid({ compact = false }: BusCompanyGridProps)
                     </span>
                   ))}
                   {company.regions.length > 3 && (
-                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-arena-50 text-arena-400">
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-arena-50 text-arena-700">
                       +{company.regions.length - 3}
                     </span>
                   )}
@@ -134,7 +134,7 @@ export default function BusCompanyGrid({ compact = false }: BusCompanyGridProps)
       ))}
 
       {/* Total count badge */}
-      <div className="flex flex-wrap items-center justify-center gap-3 text-sm text-arena-400 bg-white rounded-xl py-4 px-6 border border-arena-100 shadow-sm">
+      <div className="flex flex-wrap items-center justify-center gap-3 text-sm text-arena-700 bg-white rounded-xl py-4 px-6 border border-arena-100 shadow-sm">
         <div className="flex items-center gap-2">
           <svg className="w-4 h-4 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />

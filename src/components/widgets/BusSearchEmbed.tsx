@@ -264,7 +264,7 @@ export default function BusSearchEmbed() {
 
           {/* Bus lines badge */}
           <div className="flex flex-wrap items-center gap-2 text-xs">
-            <span className="text-arena-400 font-medium">
+            <span className="text-arena-700 font-medium">
               {locale === "es" ? "Comparamos:" : "We compare:"}
             </span>
             {["ADO", "ETN", "Primera Plus", "Estrella Blanca", "Chihuahuenses", "OCC", "Futura", "Tufesa", "+12 más"].map((line) => (
@@ -299,7 +299,7 @@ export default function BusSearchEmbed() {
                     <p className="font-semibold text-arena-900 text-sm group-hover:text-blue-700 transition-colors">
                       {originCity?.name[locale]} → {destCity?.name[locale]}
                     </p>
-                    <p className="text-xs text-arena-400">
+                    <p className="text-xs text-arena-700">
                       ~{route.duration} • {route.price} MXN
                     </p>
                     <p className="text-[10px] text-blue-500 font-medium mt-0.5">

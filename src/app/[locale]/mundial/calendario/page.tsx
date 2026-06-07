@@ -54,7 +54,7 @@ export default async function MundialCalendarPage({ params: { locale } }: { para
       {/* Hero */}
       <div className="bg-arena-900 py-12 md:py-16">
         <div className="container-custom">
-          <nav className="text-xs text-arena-400 mb-4">
+          <nav className="text-xs text-arena-700 mb-4">
             <Link href={`/${locale}`} className="hover:text-white">{t3(locale, "Inicio", "Home", "Accueil")}</Link>
             {" / "}
             <Link href={`/${locale}/mundial`} className="hover:text-white">{t3(locale, "Mundial 2026", "World Cup 2026", "Coupe du Monde 2026")}</Link>
@@ -83,15 +83,15 @@ export default async function MundialCalendarPage({ params: { locale } }: { para
             <div className="grid grid-cols-3 gap-3 max-w-xl mx-auto mt-6">
               <div className="bg-arena-800 rounded-xl p-3 border border-arena-700">
                 <div className="text-2xl font-bold text-oro-400">{total}</div>
-                <div className="text-xs text-arena-400 mt-1">{t3(locale, "Partidos en agenda", "Scheduled matches", "Matchs programmés")}</div>
+                <div className="text-xs text-arena-700 mt-1">{t3(locale, "Partidos en agenda", "Scheduled matches", "Matchs programmés")}</div>
               </div>
               <div className="bg-arena-800 rounded-xl p-3 border border-arena-700">
                 <div className="text-2xl font-bold text-jade-400">🇲🇽 {mxMatches}</div>
-                <div className="text-xs text-arena-400 mt-1">{t3(locale, "En sedes mexicanas", "In Mexican venues", "Stades mexicains")}</div>
+                <div className="text-xs text-arena-700 mt-1">{t3(locale, "En sedes mexicanas", "In Mexican venues", "Stades mexicains")}</div>
               </div>
               <div className="bg-arena-800 rounded-xl p-3 border border-arena-700">
                 <div className="text-2xl font-bold text-terracotta-400">⚽ {mexicoGames}</div>
-                <div className="text-xs text-arena-400 mt-1">{t3(locale, "Juegos del Tri", "Mexico games", "Matchs du Mexique")}</div>
+                <div className="text-xs text-arena-700 mt-1">{t3(locale, "Juegos del Tri", "Mexico games", "Matchs du Mexique")}</div>
               </div>
             </div>
           </div>

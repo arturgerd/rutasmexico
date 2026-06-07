@@ -79,7 +79,7 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
       />
       <div className="container-custom py-12 max-w-4xl">
         {/* Breadcrumb */}
-        <nav className="text-sm text-arena-400 mb-8">
+        <nav className="text-sm text-arena-700 mb-8">
           <Link href={`/${locale}`} className="hover:text-terracotta-500 transition-colors">
             {t3(locale, "Inicio", "Home", "Accueil")}
           </Link>

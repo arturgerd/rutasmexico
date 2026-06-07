@@ -74,7 +74,7 @@ export default function RouteSearch({ destinations, routes }: RouteSearchProps) 
 
       {/* Route Results */}
       {filteredRoutes.length === 0 ? (
-        <p className="text-center text-arena-400 py-8">{t("noResults")}</p>
+        <p className="text-center text-arena-700 py-8">{t("noResults")}</p>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {filteredRoutes.map((route) => {
@@ -112,13 +112,13 @@ export default function RouteSearch({ destinations, routes }: RouteSearchProps) 
                 </div>
 
                 <div className="flex items-center justify-between text-sm">
-                  <span className="text-arena-400">
+                  <span className="text-arena-700">
                     {locale === "es" ? "Desde" : "From"}{" "}
                     <span className="text-terracotta-600 font-bold text-base">
                       {formatCurrency(cheapest.priceRange.min)}
                     </span>
                   </span>
-                  <span className="text-arena-400">
+                  <span className="text-arena-700">
                     {locale === "es" ? "Más rápido" : "Fastest"}:{" "}
                     <span className="font-semibold text-arena-700">
                       {formatDuration(fastest.duration.minMinutes)}
