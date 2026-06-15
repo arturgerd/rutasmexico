@@ -59,6 +59,21 @@ export const routeSchema = z
   })
   .passthrough();
 
+export const mundialResultSchema = z
+  .object({
+    id: z.string().min(1),
+    group: z.string().min(1),
+    date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "date must be YYYY-MM-DD"),
+    time: z.string().min(1),
+    teamA: localizedSchema,
+    teamB: localizedSchema,
+    // null = not played yet / result not entered. The standings only count
+    // matches where BOTH scores are present, so partial data degrades cleanly.
+    scoreA: z.number().int().min(0).nullable(),
+    scoreB: z.number().int().min(0).nullable(),
+  })
+  .passthrough();
+
 /** Parse + throw on invalid data, but return the original typed value. */
 export function validateData<T>(schema: z.ZodTypeAny, data: T, label: string): T {
   const result = schema.safeParse(data);

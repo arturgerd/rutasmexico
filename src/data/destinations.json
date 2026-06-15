@@ -2154,5 +2154,245 @@
     },
     "airportIATA": "CUN",
     "lastModified": "2026-06-06"
+  },
+  {
+    "id": "bacalar",
+    "slug": "bacalar",
+    "name": {
+      "es": "Bacalar",
+      "en": "Bacalar"
+    },
+    "shortName": "Bacalar",
+    "coordinates": {
+      "lat": 18.6764,
+      "lng": -88.3953
+    },
+    "state": {
+      "es": "Quintana Roo",
+      "en": "Quintana Roo"
+    },
+    "region": "peninsula",
+    "description": {
+      "es": "Bacalar, Pueblo Mágico al sur de Quintana Roo, es famoso por su Laguna de los Siete Colores: aguas dulces que van del turquesa al azul profundo, cenotes y antiguos estromatolitos.",
+      "en": "Bacalar, a Pueblo Mágico in southern Quintana Roo, is famous for its Lagoon of Seven Colors: freshwater shading from turquoise to deep blue, cenotes, and ancient stromatolites."
+    },
+    "longDescription": {
+      "es": "Bacalar se asienta junto a una laguna de agua dulce de unos 42 km de largo cuyo fondo de arena blanca y distintas profundidades crean siete tonos de azul, lo que le ha valido el apodo de 'Laguna de los Siete Colores'. Es un Pueblo Mágico tranquilo, alternativa pausada a la fiesta de la Riviera Maya, ideal para nadar, navegar en velero, remar en kayak o paddleboard al amanecer. Sobre la laguna se asoma el Fuerte de San Felipe (1733), construido para defender el pueblo de los piratas y hoy museo. Alrededor hay cenotes espectaculares como el Cenote Azul (uno de los más profundos de México), el Cenote Cocalitos —donde sobreviven estromatolitos, las formaciones vivas más antiguas del planeta— y Los Rápidos, un canal de corriente suave. El centro conserva calles coloridas, el cenote y un ritmo de vida lento. El aeropuerto más cercano es el de Chetumal (CTM), a unos 40 minutos.",
+      "en": "Bacalar sits beside a freshwater lagoon about 42 km long whose white-sand bottom and varying depths create seven shades of blue, earning it the nickname 'Lagoon of Seven Colors.' It's a laid-back Pueblo Mágico, a slow-paced alternative to the Riviera Maya party scene, ideal for swimming, sailing, and paddling by kayak or paddleboard at sunrise. Overlooking the lagoon stands the Fort of San Felipe (1733), built to defend the town from pirates and now a museum. Nearby are spectacular cenotes such as Cenote Azul (one of Mexico's deepest), Cenote Cocalitos —home to stromatolites, the planet's oldest living formations— and Los Rápidos, a gentle-current channel. The center keeps colorful streets, its own cenote, and an unhurried pace. The nearest airport is Chetumal (CTM), about 40 minutes away."
+    },
+    "heroImage": "https://images.unsplash.com/photo-1610651475830-1f6c4d36b3dc?w=1200&h=630&fit=crop&q=80",
+    "highlights": [
+      {
+        "es": "Navegar la Laguna de los Siete Colores en velero, lancha o paddleboard al amanecer",
+        "en": "Sail the Lagoon of Seven Colors by sailboat, boat, or paddleboard at sunrise"
+      },
+      {
+        "es": "Nadar en el Cenote Azul, uno de los cenotes a cielo abierto más profundos de México (~90 m)",
+        "en": "Swim in Cenote Azul, one of Mexico's deepest open-air cenotes (~90 m)"
+      },
+      {
+        "es": "Ver los estromatolitos vivos del Cenote Cocalitos, formaciones de miles de años",
+        "en": "See the living stromatolites at Cenote Cocalitos, formations thousands of years old"
+      },
+      {
+        "es": "Recorrer el Fuerte de San Felipe (1733) y su museo de la historia pirata",
+        "en": "Tour the Fort of San Felipe (1733) and its pirate-history museum"
+      }
+    ],
+    "gettingAround": {
+      "es": "El centro de Bacalar es pequeño y caminable. Para llegar a los balnearios, cenotes y a Los Rápidos (al sur, sobre la carretera Costera) conviene bicicleta, taxi o auto rentado, ya que están a varios kilómetros. Los taxis no usan taxímetro: acuerda la tarifa antes de subir (un trayecto dentro del pueblo ronda 40-80 MXN). Muchos hoteles a orilla de laguna ofrecen kayaks y paddleboards. Para excursiones a la laguna lo habitual es contratar un tour en lancha o velero compartido desde el muelle.",
+      "en": "Downtown Bacalar is small and walkable. To reach the swimming spots, cenotes, and Los Rápidos (to the south along the Costera road) you'll want a bike, taxi, or rental car, since they're several kilometers out. Taxis don't use meters: agree on the fare before getting in (a ride within town runs about 40-80 MXN). Many lakeside hotels offer kayaks and paddleboards. For lagoon excursions, the usual option is a shared boat or sailboat tour from the dock."
+    },
+    "safetyTips": [
+      {
+        "es": "Bacalar es un destino tranquilo y seguro. Cuida la laguna: usa solo bloqueador biodegradable para no dañar los estromatolitos, que son organismos vivos protegidos.",
+        "en": "Bacalar is a calm, safe destination. Protect the lagoon: use only biodegradable sunscreen to avoid harming the stromatolites, which are protected living organisms."
+      },
+      {
+        "es": "Lleva efectivo: varios balnearios, cenotes y comercios pequeños no aceptan tarjeta y los cajeros del centro pueden quedarse sin efectivo en temporada alta.",
+        "en": "Carry cash: several swimming spots, cenotes, and small shops don't take cards, and the town's ATMs can run out during high season."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Pescado frito y ceviche de laguna",
+        "description": {
+          "es": "Pescado fresco frito entero o en ceviche, servido en los balnearios y palapas a orilla de la laguna, a menudo con arroz, ensalada y tortillas.",
+          "en": "Fresh fish fried whole or as ceviche, served at the swimming spots and palapas along the lagoon, often with rice, salad, and tortillas."
+        },
+        "priceRange": {
+          "min": 120,
+          "max": 280,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Las palapas y balnearios sobre la Costera y los restaurantes con muelle propio frente a la laguna.",
+          "en": "The palapas and swimming clubs along the Costera and lakeside restaurants with their own docks."
+        }
+      },
+      {
+        "name": "Marquesita",
+        "description": {
+          "es": "Crepa crujiente enrollada, rellena de queso de bola con cajeta, Nutella o mermelada: el postre callejero típico de la península de Yucatán.",
+          "en": "A crispy rolled crepe filled with Edam cheese and cajeta, Nutella, or jam: the classic street dessert of the Yucatán Peninsula."
+        },
+        "priceRange": {
+          "min": 35,
+          "max": 70,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Los puestos ambulantes alrededor del parque central y el zócalo de Bacalar por la noche.",
+          "en": "The street carts around the central park and main square of Bacalar at night."
+        }
+      },
+      {
+        "name": "Panuchos y salbutes",
+        "description": {
+          "es": "Antojitos yucatecos de tortilla de maíz (rellena de frijol en el panucho, inflada en el salbute) con cochinita o pavo, lechuga, jitomate y cebolla encurtida.",
+          "en": "Yucatecan corn-tortilla snacks (bean-stuffed for panucho, puffed for salbute) topped with cochinita or turkey, lettuce, tomato, and pickled onion."
+        },
+        "priceRange": {
+          "min": 15,
+          "max": 45,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Las loncherías y cocinas económicas del centro de Bacalar, sobre todo por la noche.",
+          "en": "The loncherías and budget kitchens in downtown Bacalar, especially in the evening."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 600,
+      "max": 2800,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "De noviembre a abril el clima es seco y la laguna luce sus colores más vivos bajo el sol. Evita la temporada de lluvias y huracanes (junio-octubre), cuando el agua puede enturbiarse. Entre semana hay menos gente que en fines de semana largos, cuando llegan visitantes de Chetumal y la Riviera Maya.",
+      "en": "From November to April the weather is dry and the lagoon shows its most vivid colors in the sun. Avoid the rainy and hurricane season (June-October), when the water can turn cloudy. Weekdays are quieter than long weekends, when visitors arrive from Chetumal and the Riviera Maya."
+    },
+    "airportIATA": "CTM",
+    "lastModified": "2026-06-14"
+  },
+  {
+    "id": "valladolid",
+    "slug": "valladolid",
+    "name": {
+      "es": "Valladolid",
+      "en": "Valladolid"
+    },
+    "shortName": "Valladolid",
+    "coordinates": {
+      "lat": 20.6896,
+      "lng": -88.2011
+    },
+    "state": {
+      "es": "Yucatán",
+      "en": "Yucatán"
+    },
+    "region": "peninsula",
+    "description": {
+      "es": "Valladolid, Pueblo Mágico colonial en el corazón de Yucatán, es la base perfecta para visitar Chichén Itzá y Ek Balam, con cenotes en pleno centro y calles coloridas.",
+      "en": "Valladolid, a colonial Pueblo Mágico in the heart of Yucatán, is the perfect base for visiting Chichén Itzá and Ek Balam, with cenotes in the town center and colorful streets."
+    },
+    "longDescription": {
+      "es": "Valladolid es una de las ciudades coloniales más bonitas de la península de Yucatán y la base ideal para explorar la región maya sin las multitudes de la costa. Fundada en 1543, conserva fachadas en tonos pastel, un zócalo arbolado frente a la iglesia de San Servacio y la Calzada de los Frailes, una calle empedrada que lleva al convento de San Bernardino de Siena (siglo XVI). Lo más sorprendente es que tiene cenotes dentro y a un paso de la ciudad: el Cenote Zací en pleno centro y los fotogénicos Suytun y Oxman a pocos minutos. Está a unos 40 minutos de Chichén Itzá —una de las Siete Maravillas del Mundo— y muy cerca de Ek Balam, lo que permite llegar temprano antes que los tours de Cancún. La gastronomía yucateca brilla aquí: cochinita pibil, lomitos de Valladolid y longaniza. El aeropuerto más práctico es Cancún (CUN), a unas 2 horas; Mérida (MID) queda a distancia similar.",
+      "en": "Valladolid is one of the prettiest colonial towns on the Yucatán Peninsula and the ideal base for exploring the Maya region without the coastal crowds. Founded in 1543, it keeps pastel facades, a tree-lined main square facing the church of San Servacio, and the Calzada de los Frailes, a cobbled street leading to the 16th-century convent of San Bernardino de Siena. Most striking, it has cenotes within and just outside town: Cenote Zací right in the center and the photogenic Suytun and Oxman minutes away. It's about 40 minutes from Chichén Itzá —one of the New Seven Wonders of the World— and very close to Ek Balam, letting you arrive early ahead of the Cancún tour buses. Yucatecan cuisine shines here: cochinita pibil, lomitos de Valladolid, and longaniza. The handiest airport is Cancún (CUN), about 2 hours away; Mérida (MID) is a similar distance."
+    },
+    "heroImage": "https://images.unsplash.com/photo-1568454537842-d933259bb258?w=1200&h=630&fit=crop&q=80",
+    "highlights": [
+      {
+        "es": "Usar Valladolid como base para llegar temprano a Chichén Itzá (~40 min) y Ek Balam",
+        "en": "Use Valladolid as a base to reach Chichén Itzá (~40 min) and Ek Balam early"
+      },
+      {
+        "es": "Nadar en cenotes cercanos como Suytun, Oxman y el Cenote Zací, en pleno centro",
+        "en": "Swim in nearby cenotes like Suytun, Oxman, and Cenote Zací right in the center"
+      },
+      {
+        "es": "Caminar la Calzada de los Frailes hasta el convento de San Bernardino de Siena",
+        "en": "Walk the Calzada de los Frailes to the convent of San Bernardino de Siena"
+      },
+      {
+        "es": "Probar la cocina yucateca: cochinita pibil, lomitos y longaniza de Valladolid",
+        "en": "Taste Yucatecan cuisine: cochinita pibil, lomitos, and Valladolid longaniza"
+      }
+    ],
+    "gettingAround": {
+      "es": "El centro histórico de Valladolid es compacto y se recorre a pie: del zócalo a la Calzada de los Frailes hay unos 10 minutos caminando. Para los cenotes de las afueras (Suytun, Oxman) y para Chichén Itzá o Ek Balam conviene auto rentado, taxi o colectivo. Los colectivos a Chichén Itzá salen del centro por unos 40-50 MXN; los taxis dentro de la ciudad cuestan 30-60 MXN. También se rentan bicicletas. La terminal de ADO en el centro conecta con Cancún, Mérida, Tulum y Playa del Carmen.",
+      "en": "Valladolid's historic center is compact and walkable: it's about a 10-minute walk from the main square to the Calzada de los Frailes. For the cenotes outside town (Suytun, Oxman) and for Chichén Itzá or Ek Balam, a rental car, taxi, or colectivo is best. Colectivos to Chichén Itzá leave the center for about 40-50 MXN; taxis within town cost 30-60 MXN. Bicycles are also for rent. The downtown ADO terminal connects to Cancún, Mérida, Tulum, and Playa del Carmen."
+    },
+    "safetyTips": [
+      {
+        "es": "Valladolid es una ciudad tranquila y muy segura para caminar de día y de noche en el centro. Como siempre, cuida tus pertenencias en cenotes y sitios concurridos.",
+        "en": "Valladolid is a calm, very safe town for walking day and night in the center. As always, watch your belongings at cenotes and busy sites."
+      },
+      {
+        "es": "Para Chichén Itzá llega a la apertura (8:00) para evitar el calor y los tours masivos de Cancún; lleva agua, sombrero y efectivo para la entrada.",
+        "en": "For Chichén Itzá arrive at opening (8:00) to beat the heat and the mass tours from Cancún; bring water, a hat, and cash for the entrance fee."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Cochinita pibil",
+        "description": {
+          "es": "Cerdo marinado en achiote y naranja agria, envuelto en hoja de plátano y cocido bajo tierra. El platillo emblema de Yucatán, servido en tacos, tortas o por kilo.",
+          "en": "Pork marinated in achiote and sour orange, wrapped in banana leaf and cooked underground. Yucatán's signature dish, served in tacos, tortas, or by the kilo."
+        },
+        "priceRange": {
+          "min": 40,
+          "max": 130,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "El mercado municipal por la mañana y las cocinas económicas alrededor del centro, donde se sirve recién hecha.",
+          "en": "The municipal market in the morning and the budget kitchens around the center, where it's served freshly made."
+        }
+      },
+      {
+        "name": "Lomitos de Valladolid",
+        "description": {
+          "es": "Platillo típico de la ciudad: trozos de cerdo guisados en una salsa de jitomate, servidos con huevo cocido y la clásica cebolla morada encurtida.",
+          "en": "A dish native to the town: chunks of pork stewed in a tomato sauce, served with hard-boiled egg and the classic pickled red onion."
+        },
+        "priceRange": {
+          "min": 70,
+          "max": 150,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Los restaurantes de cocina yucateca tradicional del centro de Valladolid.",
+          "en": "The traditional Yucatecan restaurants in downtown Valladolid."
+        }
+      },
+      {
+        "name": "Longaniza de Valladolid",
+        "description": {
+          "es": "Embutido ahumado típico de la región, de sabor intenso, que se asa y se come en tacos con tortilla recién hecha, naranja agria y salsa de chile habanero.",
+          "en": "A smoked sausage typical of the region, intensely flavored, grilled and eaten in tacos with fresh tortillas, sour orange, and habanero salsa."
+        },
+        "priceRange": {
+          "min": 30,
+          "max": 90,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Las taquerías y puestos del mercado y del zócalo, sobre todo por la noche.",
+          "en": "The taquerías and stalls at the market and the main square, especially at night."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 550,
+      "max": 2400,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "De noviembre a marzo el clima es más fresco y seco, ideal para caminar el centro y visitar Chichén Itzá sin el calor extremo de la primavera. Marzo y septiembre ofrecen el espectáculo del equinoccio en Chichén Itzá (la serpiente de luz en El Castillo), aunque con más afluencia. Evita el mediodía de abril-mayo, los meses más calurosos.",
+      "en": "From November to March the weather is cooler and drier, ideal for walking the center and visiting Chichén Itzá without the extreme spring heat. March and September bring the equinox spectacle at Chichén Itzá (the serpent of light on El Castillo), though with bigger crowds. Avoid midday in April-May, the hottest months."
+    },
+    "airportIATA": "CUN",
+    "lastModified": "2026-06-14"
   }
 ]

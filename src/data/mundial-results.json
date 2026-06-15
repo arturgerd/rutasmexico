@@ -1,0 +1,80 @@
+[
+  {
+    "id": "a-mex-rsa",
+    "group": "A",
+    "date": "2026-06-11",
+    "time": "13:00",
+    "venue": { "es": "Estadio Azteca, CDMX", "en": "Estadio Azteca, Mexico City", "fr": "Estadio Azteca, Mexico" },
+    "venueSlug": "ciudad-de-mexico",
+    "isMexicoGame": true,
+    "teamA": { "es": "México", "en": "Mexico", "fr": "Mexique" },
+    "teamB": { "es": "Sudáfrica", "en": "South Africa", "fr": "Afrique du Sud" },
+    "scoreA": 2,
+    "scoreB": 0
+  },
+  {
+    "id": "a-kor-cze",
+    "group": "A",
+    "date": "2026-06-11",
+    "time": "16:00",
+    "venue": { "es": "Por confirmar", "en": "To be confirmed", "fr": "À confirmer" },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": { "es": "Corea del Sur", "en": "South Korea", "fr": "Corée du Sud" },
+    "teamB": { "es": "Chequia", "en": "Czechia", "fr": "Tchéquie" },
+    "scoreA": 2,
+    "scoreB": 1
+  },
+  {
+    "id": "a-mex-kor",
+    "group": "A",
+    "date": "2026-06-18",
+    "time": "19:00",
+    "venue": { "es": "Estadio Akron, Guadalajara", "en": "Estadio Akron, Guadalajara", "fr": "Estadio Akron, Guadalajara" },
+    "venueSlug": "guadalajara",
+    "isMexicoGame": true,
+    "teamA": { "es": "México", "en": "Mexico", "fr": "Mexique" },
+    "teamB": { "es": "Corea del Sur", "en": "South Korea", "fr": "Corée du Sud" },
+    "scoreA": null,
+    "scoreB": null
+  },
+  {
+    "id": "a-rsa-cze",
+    "group": "A",
+    "date": "2026-06-18",
+    "time": "12:00",
+    "venue": { "es": "Por confirmar", "en": "To be confirmed", "fr": "À confirmer" },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": { "es": "Chequia", "en": "Czechia", "fr": "Tchéquie" },
+    "teamB": { "es": "Sudáfrica", "en": "South Africa", "fr": "Afrique du Sud" },
+    "scoreA": null,
+    "scoreB": null
+  },
+  {
+    "id": "a-cze-mex",
+    "group": "A",
+    "date": "2026-06-24",
+    "time": "19:00",
+    "venue": { "es": "Estadio Azteca, CDMX", "en": "Estadio Azteca, Mexico City", "fr": "Estadio Azteca, Mexico" },
+    "venueSlug": "ciudad-de-mexico",
+    "isMexicoGame": true,
+    "teamA": { "es": "Chequia", "en": "Czechia", "fr": "Tchéquie" },
+    "teamB": { "es": "México", "en": "Mexico", "fr": "Mexique" },
+    "scoreA": null,
+    "scoreB": null
+  },
+  {
+    "id": "a-kor-rsa",
+    "group": "A",
+    "date": "2026-06-24",
+    "time": "19:00",
+    "venue": { "es": "Por confirmar", "en": "To be confirmed", "fr": "À confirmer" },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": { "es": "Sudáfrica", "en": "South Africa", "fr": "Afrique du Sud" },
+    "teamB": { "es": "Corea del Sur", "en": "South Korea", "fr": "Corée du Sud" },
+    "scoreA": null,
+    "scoreB": null
+  }
+]

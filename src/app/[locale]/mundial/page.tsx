@@ -7,6 +7,7 @@ import MenuBuilder from "@/components/mundial/MenuBuilder";
 import TraditionsSection from "@/components/mundial/TraditionsSection";
 import CountdownHero from "@/components/mundial/CountdownHero";
 import HostCitiesBento from "@/components/mundial/HostCitiesBento";
+import GroupStandings from "@/components/mundial/GroupStandings";
 import FinalFeature from "@/components/mundial/FinalFeature";
 import MercadoLibreBanner from "@/components/widgets/MercadoLibreBanner";
 import { t3, seoAlternates, seoOpenGraph } from "@/lib/utils";
@@ -171,6 +172,9 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
           </div>
         </div>
       </div>
+
+      {/* Resultados, tabla de posiciones y estadísticas del Grupo A */}
+      <GroupStandings locale={locale} group="A" />
 
       {/* Host countries bento overview */}
       <HostCitiesBento
