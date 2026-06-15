@@ -42,6 +42,28 @@ export function getMexicoResults(): MundialResult[] {
     .sort((a, b) => a.date.localeCompare(b.date));
 }
 
+const byDateTime = (a: MundialResult, b: MundialResult) =>
+  a.date !== b.date ? a.date.localeCompare(b.date) : a.time.localeCompare(b.time);
+
+export function getAllResults(): MundialResult[] {
+  return [...results].sort(byDateTime);
+}
+
+/**
+ * Every match scheduled on or before `todayISO` (server-render date), grouped by
+ * day — the "results so far" view across all groups. Future fixtures (e.g.
+ * Group A's later matchdays) are excluded so the list stays a true scoreboard.
+ */
+export function getResultsUpToToday(todayISO: string): Array<[string, MundialResult[]]> {
+  const map = new Map<string, MundialResult[]>();
+  for (const m of getAllResults()) {
+    if (m.date > todayISO) continue;
+    if (!map.has(m.date)) map.set(m.date, []);
+    map.get(m.date)!.push(m);
+  }
+  return Array.from(map.entries());
+}
+
 export interface StandingRow {
   team: LocalizedText;
   played: number;

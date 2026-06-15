@@ -3,20 +3,51 @@ import {
   computeStandings,
   getResultsByGroup,
   getGroupStats,
+  getResultsUpToToday,
   isPlayed,
   type MundialResult,
 } from "@/lib/data/mundial-results";
 import { t3, localize } from "@/lib/utils";
 
-// Minimal flag map for the Group A teams. Kept local (server component) so we
-// don't pull the big client-side teamFlag() switch from CalendarClient.
+// Flag map keyed by Spanish team name. Kept local (server component) so we don't
+// pull the big client-side teamFlag() switch from CalendarClient. Covers every
+// team that appears in mundial-results.json; extend it when adding new teams.
 const FLAG: Record<string, string> = {
   "México": "🇲🇽",
   "Sudáfrica": "🇿🇦",
   "Corea del Sur": "🇰🇷",
   "Chequia": "🇨🇿",
+  "Canadá": "🇨🇦",
+  "Bosnia y Herzegovina": "🇧🇦",
+  "Catar": "🇶🇦",
+  "Suiza": "🇨🇭",
+  "Brasil": "🇧🇷",
+  "Marruecos": "🇲🇦",
+  "Escocia": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+  "Haití": "🇭🇹",
+  "Estados Unidos": "🇺🇸",
+  "Paraguay": "🇵🇾",
+  "Australia": "🇦🇺",
+  "Turquía": "🇹🇷",
+  "Alemania": "🇩🇪",
+  "Curazao": "🇨🇼",
+  "Costa de Marfil": "🇨🇮",
+  "Ecuador": "🇪🇨",
+  "Países Bajos": "🇳🇱",
+  "Japón": "🇯🇵",
+  "Suecia": "🇸🇪",
+  "Túnez": "🇹🇳",
 };
 const flagFor = (esName: string) => FLAG[esName] ?? "⚽";
+
+const GROUP_BADGE: Record<string, string> = {
+  A: "bg-emerald-100 text-emerald-800",
+  B: "bg-sky-100 text-sky-800",
+  C: "bg-amber-100 text-amber-900",
+  D: "bg-rose-100 text-rose-800",
+  E: "bg-violet-100 text-violet-800",
+  F: "bg-orange-100 text-orange-900",
+};
 
 function fmtDate(iso: string, locale: string): string {
   const d = new Date(`${iso}T12:00:00Z`);
@@ -83,25 +114,85 @@ function MatchRow({ m, locale }: { m: MundialResult; locale: string }) {
   );
 }
 
+// Compact one-line result used in the tournament-wide "results so far" list.
+function CompactResult({ m, locale }: { m: MundialResult; locale: string }) {
+  const teamA = localize(m.teamA, locale);
+  const teamB = localize(m.teamB, locale);
+  const played = isPlayed(m);
+  const aWon = played && (m.scoreA as number) > (m.scoreB as number);
+  const bWon = played && (m.scoreB as number) > (m.scoreA as number);
+  return (
+    <div className="flex items-center gap-2 bg-white rounded-lg border border-arena-200 px-3 py-2">
+      <span className={`text-xs font-bold rounded px-1.5 py-0.5 ${GROUP_BADGE[m.group] || "bg-arena-100 text-arena-700"}`}>
+        {m.group}
+      </span>
+      <span className={`flex items-center gap-1.5 flex-1 min-w-0 justify-end text-right ${aWon ? "font-bold text-arena-900" : "text-arena-800"}`}>
+        <span className="truncate text-sm">{teamA}</span>
+        <span className="text-lg" aria-hidden="true">{flagFor(m.teamA.es)}</span>
+      </span>
+      <span className="font-display font-bold text-sm text-arena-900 tabular-nums whitespace-nowrap px-1">
+        {played ? `${m.scoreA} - ${m.scoreB}` : t3(locale, "vs", "vs")}
+      </span>
+      <span className={`flex items-center gap-1.5 flex-1 min-w-0 ${bWon ? "font-bold text-arena-900" : "text-arena-800"}`}>
+        <span className="text-lg" aria-hidden="true">{flagFor(m.teamB.es)}</span>
+        <span className="truncate text-sm">{teamB}</span>
+      </span>
+    </div>
+  );
+}
+
 export default function GroupStandings({ locale, group = "A" }: { locale: string; group?: string }) {
   const standings = computeStandings(group);
   const matches = getResultsByGroup(group);
   const stats = getGroupStats(group);
   const anyPlayed = stats.matchesPlayed > 0;
 
+  // Server-render date (refreshes via the page's `revalidate`). Used to show
+  // every match up to "today" across all groups, newest day first.
+  const todayISO = new Date().toISOString().slice(0, 10);
+  const resultsByDate = getResultsUpToToday(todayISO).reverse();
+
   return (
     <div className="bg-white py-12 border-t border-arena-200" id="resultados">
       <div className="container-custom">
         <h2 className="font-display text-2xl md:text-3xl font-bold text-arena-800 mb-2 text-center">
-          📊 {t3(locale, `Resultados y posiciones — Grupo ${group}`, `Results & standings — Group ${group}`)}
+          📊 {t3(locale, "Resultados y posiciones del Mundial", "World Cup results & standings")}
         </h2>
         <p className="text-arena-700 text-center mb-8 max-w-2xl mx-auto">
           {t3(
             locale,
-            "Tabla del grupo de México, marcadores y estadísticas. Se actualiza conforme se juegan los partidos.",
-            "Mexico's group table, scores and statistics. Updated as matches are played."
+            "Todos los marcadores hasta hoy y la tabla del grupo de México. Se actualiza conforme se juegan los partidos.",
+            "All scores so far plus Mexico's group table. Updated as matches are played."
           )}
         </p>
+
+        {/* Tournament-wide results so far */}
+        {resultsByDate.length > 0 && (
+          <div className="max-w-3xl mx-auto mb-12">
+            <h3 className="font-display text-xl font-bold text-arena-800 mb-4 text-center">
+              {t3(locale, "Todos los resultados hasta hoy", "All results so far")}
+            </h3>
+            <div className="space-y-6">
+              {resultsByDate.map(([date, dayMatches]) => (
+                <div key={date}>
+                  <h4 className="text-sm font-bold text-arena-700 mb-2 border-b border-arena-200 pb-1">
+                    📅 {fmtDate(date, locale)}
+                  </h4>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    {dayMatches.map((m) => (
+                      <CompactResult key={m.id} m={m} locale={locale} />
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Group A — Mexico's group */}
+        <h3 className="font-display text-xl font-bold text-arena-800 mb-6 text-center">
+          🇲🇽 {t3(locale, "Grupo A — el grupo de México", "Group A — Mexico's group")}
+        </h3>
 
         {/* Stats strip */}
         <div className="grid grid-cols-3 gap-3 max-w-2xl mx-auto mb-8">
