@@ -7,38 +7,9 @@ import {
   isPlayed,
   type MundialResult,
 } from "@/lib/data/mundial-results";
+import { flagCodeByName } from "@/lib/data/mundial-teams";
 import { t3, localize } from "@/lib/utils";
-
-// Flag map keyed by Spanish team name. Kept local (server component) so we don't
-// pull the big client-side teamFlag() switch from CalendarClient. Covers every
-// team that appears in mundial-results.json; extend it when adding new teams.
-const FLAG: Record<string, string> = {
-  "México": "🇲🇽",
-  "Sudáfrica": "🇿🇦",
-  "Corea del Sur": "🇰🇷",
-  "Chequia": "🇨🇿",
-  "Canadá": "🇨🇦",
-  "Bosnia y Herzegovina": "🇧🇦",
-  "Catar": "🇶🇦",
-  "Suiza": "🇨🇭",
-  "Brasil": "🇧🇷",
-  "Marruecos": "🇲🇦",
-  "Escocia": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
-  "Haití": "🇭🇹",
-  "Estados Unidos": "🇺🇸",
-  "Paraguay": "🇵🇾",
-  "Australia": "🇦🇺",
-  "Turquía": "🇹🇷",
-  "Alemania": "🇩🇪",
-  "Curazao": "🇨🇼",
-  "Costa de Marfil": "🇨🇮",
-  "Ecuador": "🇪🇨",
-  "Países Bajos": "🇳🇱",
-  "Japón": "🇯🇵",
-  "Suecia": "🇸🇪",
-  "Túnez": "🇹🇳",
-};
-const flagFor = (esName: string) => FLAG[esName] ?? "⚽";
+import Flag from "./Flag";
 
 const GROUP_BADGE: Record<string, string> = {
   A: "bg-emerald-100 text-emerald-800",
@@ -80,7 +51,7 @@ function MatchRow({ m, locale }: { m: MundialResult; locale: string }) {
       </div>
       <div className="flex items-center justify-between gap-2">
         <span className={`flex items-center gap-2 flex-1 min-w-0 ${aWon ? "font-bold text-arena-900" : "text-arena-800"}`}>
-          <span className="text-2xl" aria-hidden="true">{flagFor(m.teamA.es)}</span>
+          <Flag code={flagCodeByName(m.teamA.es)} alt={teamA} className="h-5 w-7 shrink-0" />
           <span className="truncate">{teamA}</span>
         </span>
         {played ? (
@@ -96,7 +67,7 @@ function MatchRow({ m, locale }: { m: MundialResult; locale: string }) {
         )}
         <span className={`flex items-center gap-2 flex-1 min-w-0 justify-end text-right ${bWon ? "font-bold text-arena-900" : "text-arena-800"}`}>
           <span className="truncate">{teamB}</span>
-          <span className="text-2xl" aria-hidden="true">{flagFor(m.teamB.es)}</span>
+          <Flag code={flagCodeByName(m.teamB.es)} alt={teamB} className="h-5 w-7 shrink-0" />
         </span>
       </div>
       {m.venue && (
@@ -128,13 +99,13 @@ function CompactResult({ m, locale }: { m: MundialResult; locale: string }) {
       </span>
       <span className={`flex items-center gap-1.5 flex-1 min-w-0 justify-end text-right ${aWon ? "font-bold text-arena-900" : "text-arena-800"}`}>
         <span className="truncate text-sm">{teamA}</span>
-        <span className="text-lg" aria-hidden="true">{flagFor(m.teamA.es)}</span>
+        <Flag code={flagCodeByName(m.teamA.es)} alt={teamA} className="h-4 w-6 shrink-0" />
       </span>
       <span className="font-display font-bold text-sm text-arena-900 tabular-nums whitespace-nowrap px-1">
         {played ? `${m.scoreA} - ${m.scoreB}` : t3(locale, "vs", "vs")}
       </span>
       <span className={`flex items-center gap-1.5 flex-1 min-w-0 ${bWon ? "font-bold text-arena-900" : "text-arena-800"}`}>
-        <span className="text-lg" aria-hidden="true">{flagFor(m.teamB.es)}</span>
+        <Flag code={flagCodeByName(m.teamB.es)} alt={teamB} className="h-4 w-6 shrink-0" />
         <span className="truncate text-sm">{teamB}</span>
       </span>
     </div>
@@ -239,8 +210,10 @@ export default function GroupStandings({ locale, group = "A" }: { locale: string
                   >
                     <td className="py-2 pr-2 text-arena-700">{i + 1}</td>
                     <th scope="row" className="py-2 pr-2 text-left font-medium text-arena-900">
-                      <span className="mr-1.5" aria-hidden="true">{flagFor(row.team.es)}</span>
-                      {localize(row.team, locale)}
+                      <span className="inline-flex items-center gap-1.5">
+                        <Flag code={flagCodeByName(row.team.es)} alt={localize(row.team, locale)} className="h-4 w-6 shrink-0" />
+                        {localize(row.team, locale)}
+                      </span>
                     </th>
                     <td className="py-2 px-1 text-center tabular-nums text-arena-800">{row.played}</td>
                     <td className="py-2 px-1 text-center tabular-nums text-arena-800">{row.won}</td>

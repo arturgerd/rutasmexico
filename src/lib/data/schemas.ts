@@ -74,6 +74,28 @@ export const mundialResultSchema = z
   })
   .passthrough();
 
+export const mundialTeamSchema = z
+  .object({
+    id: z.string().min(1),
+    name: localizedSchema,
+    flag: z.string().min(1),
+    code: z.string().min(1),
+    group: z.string().min(1),
+    fifaRank: z.number().int().positive(),
+    attack: z.number(),
+    defense: z.number(),
+    possession: z.number(),
+    cornersAvg: z.number(),
+    colors: z.tuple([z.string(), z.string()]),
+    host: z.boolean(),
+    wc2026: z.object({
+      played: z.number().int().min(0),
+      goals: z.number().int().min(0),
+      conceded: z.number().int().min(0),
+    }),
+  })
+  .passthrough();
+
 /** Parse + throw on invalid data, but return the original typed value. */
 export function validateData<T>(schema: z.ZodTypeAny, data: T, label: string): T {
   const result = schema.safeParse(data);
