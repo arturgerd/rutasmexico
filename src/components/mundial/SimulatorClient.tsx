@@ -8,7 +8,9 @@ import {
   type HomeSide,
 } from "@/lib/mundial-simulator";
 import { t3 } from "@/lib/utils";
+import { textOn } from "@/lib/color";
 import Flag from "./Flag";
+import AnimatedNumber from "./AnimatedNumber";
 
 const GROUPS = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"];
 
@@ -226,23 +228,32 @@ export default function SimulatorClient({
             `${nameA} ${proj.homeWin}%, draw ${proj.draw}%, ${nameB} ${proj.awayWin}%`
           )}
         >
-          <div className="bg-jade-600 flex items-center justify-center text-white text-xs font-bold transition-all duration-500"
-            style={{ width: `${proj.homeWin}%` }}>
+          <div className="flex items-center justify-center text-xs font-bold transition-all duration-500"
+            style={{ width: `${proj.homeWin}%`, backgroundColor: teamA.colors[0], color: textOn(teamA.colors[0]) }}>
             {proj.homeWin >= 9 ? `${proj.homeWin}%` : ""}
           </div>
           <div className="bg-arena-400 flex items-center justify-center text-white text-xs font-bold transition-all duration-500"
             style={{ width: `${proj.draw}%` }}>
             {proj.draw >= 9 ? `${proj.draw}%` : ""}
           </div>
-          <div className="bg-terracotta-600 flex items-center justify-center text-white text-xs font-bold transition-all duration-500"
-            style={{ width: `${proj.awayWin}%` }}>
+          <div className="flex items-center justify-center text-xs font-bold transition-all duration-500"
+            style={{ width: `${proj.awayWin}%`, backgroundColor: teamB.colors[0], color: textOn(teamB.colors[0]) }}>
             {proj.awayWin >= 9 ? `${proj.awayWin}%` : ""}
           </div>
         </div>
-        <div className="flex justify-between text-xs mt-2 font-semibold">
-          <span className="text-jade-700">{t3(locale, "Gana", "Win")} {nameA} · {proj.homeWin}%</span>
-          <span className="text-arena-700">{t3(locale, "Empate", "Draw")} · {proj.draw}%</span>
-          <span className="text-terracotta-700">{t3(locale, "Gana", "Win")} {nameB} · {proj.awayWin}%</span>
+        <div className="flex justify-between text-xs mt-2 font-semibold text-arena-700">
+          <span className="flex items-center gap-1.5">
+            <span className="inline-block w-2.5 h-2.5 rounded-full" style={{ backgroundColor: teamA.colors[0] }} />
+            {t3(locale, "Gana", "Win")} {nameA} · <AnimatedNumber value={proj.homeWin} decimals={1} suffix="%" />
+          </span>
+          <span className="flex items-center gap-1.5">
+            <span className="inline-block w-2.5 h-2.5 rounded-full bg-arena-400" />
+            {t3(locale, "Empate", "Draw")} · <AnimatedNumber value={proj.draw} decimals={1} suffix="%" />
+          </span>
+          <span className="flex items-center gap-1.5">
+            <span className="inline-block w-2.5 h-2.5 rounded-full" style={{ backgroundColor: teamB.colors[0] }} />
+            {t3(locale, "Gana", "Win")} {nameB} · <AnimatedNumber value={proj.awayWin} decimals={1} suffix="%" />
+          </span>
         </div>
         <p className="text-center text-sm font-bold text-arena-800 mt-3">⚽ {verdict}</p>
       </div>
@@ -250,19 +261,19 @@ export default function SimulatorClient({
       {/* Métricas */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6">
         <div className="bg-arena-50 rounded-xl p-3 text-center border border-arena-200">
-          <div className="text-xl font-bold text-oro-600 tabular-nums">{proj.expTotal}</div>
+          <div className="text-xl font-bold text-oro-600 tabular-nums"><AnimatedNumber value={proj.expTotal} decimals={2} /></div>
           <div className="text-xs text-arena-700 mt-1">{t3(locale, "Goles esperados", "Expected goals")}</div>
         </div>
         <div className="bg-arena-50 rounded-xl p-3 text-center border border-arena-200">
-          <div className="text-xl font-bold text-jade-700 tabular-nums">{proj.btts}%</div>
+          <div className="text-xl font-bold text-jade-700 tabular-nums"><AnimatedNumber value={proj.btts} decimals={1} suffix="%" /></div>
           <div className="text-xs text-arena-700 mt-1">{t3(locale, "Ambos anotan", "Both teams score")}</div>
         </div>
         <div className="bg-arena-50 rounded-xl p-3 text-center border border-arena-200">
-          <div className="text-xl font-bold text-terracotta-600 tabular-nums">{proj.over25}%</div>
+          <div className="text-xl font-bold text-terracotta-600 tabular-nums"><AnimatedNumber value={proj.over25} decimals={1} suffix="%" /></div>
           <div className="text-xs text-arena-700 mt-1">{t3(locale, "Más de 2.5 goles", "Over 2.5 goals")}</div>
         </div>
         <div className="bg-arena-50 rounded-xl p-3 text-center border border-arena-200">
-          <div className="text-xl font-bold text-jade-600 tabular-nums">{proj.expCornersTotal}</div>
+          <div className="text-xl font-bold text-jade-600 tabular-nums"><AnimatedNumber value={proj.expCornersTotal} decimals={1} /></div>
           <div className="text-xs text-arena-700 mt-1">{t3(locale, "Tiros de esquina", "Corner kicks")}</div>
           <div className="text-[11px] text-arena-600 mt-0.5 tabular-nums">
             {proj.expCornersHome} · {proj.expCornersAway}
@@ -270,23 +281,51 @@ export default function SimulatorClient({
         </div>
       </div>
 
-      {/* Marcadores más probables */}
-      <div className="mt-6">
-        <h3 className="font-display font-bold text-arena-800 mb-2 text-sm">
-          {t3(locale, "Marcadores más probables", "Most likely scorelines")}
-        </h3>
-        <div className="flex flex-wrap gap-2">
-          {proj.topScores.map((s) => (
-            <span
-              key={`${s.home}-${s.away}`}
-              className="inline-flex items-center gap-1.5 rounded-lg border border-arena-200 bg-white px-2.5 py-1.5 text-sm"
-            >
-              <Flag code={teamA.code} alt={nameA} className="h-3.5 w-5" />
-              <span className="font-bold tabular-nums text-arena-900">{s.home}-{s.away}</span>
-              <Flag code={teamB.code} alt={nameB} className="h-3.5 w-5" />
-              <span className="text-arena-700 text-xs">· {s.pct}%</span>
-            </span>
-          ))}
+      {/* Marcadores más probables (mini-barras) + distribución de goles */}
+      <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <h3 className="font-display font-bold text-arena-800 mb-3 text-sm">
+            {t3(locale, "Marcadores más probables", "Most likely scorelines")}
+          </h3>
+          <div className="space-y-2">
+            {proj.topScores.map((s) => {
+              const max = proj.topScores[0]?.pct || 1;
+              return (
+                <div key={`${s.home}-${s.away}`} className="flex items-center gap-2">
+                  <span className="flex items-center gap-1 w-[4.5rem] shrink-0">
+                    <Flag code={teamA.code} alt="" className="h-3.5 w-5" />
+                    <span className="font-bold tabular-nums text-arena-900 text-sm">{s.home}-{s.away}</span>
+                    <Flag code={teamB.code} alt="" className="h-3.5 w-5" />
+                  </span>
+                  <div className="flex-1 h-4 rounded bg-arena-100 overflow-hidden">
+                    <div className="h-full rounded bg-jade-500 transition-all duration-500" style={{ width: `${(s.pct / max) * 100}%` }} />
+                  </div>
+                  <span className="text-xs text-arena-700 tabular-nums w-10 text-right">{s.pct}%</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        <div>
+          <h3 className="font-display font-bold text-arena-800 mb-3 text-sm">
+            {t3(locale, "Goles totales en el partido", "Total goals in the match")}
+          </h3>
+          <div className="flex items-end gap-2 h-28" aria-hidden="true">
+            {proj.goalsDistribution.map((g) => {
+              const max = Math.max(...proj.goalsDistribution.map((x) => x.pct), 1);
+              return (
+                <div key={g.label} className="flex-1 flex flex-col items-center justify-end h-full">
+                  <span className="text-[10px] text-arena-700 tabular-nums mb-1">{g.pct}%</span>
+                  <div className="w-full rounded-t bg-oro-400 transition-all duration-500" style={{ height: `${Math.max(2, (g.pct / max) * 100)}%` }} />
+                  <span className="text-[11px] font-bold text-arena-800 mt-1">{g.label}</span>
+                </div>
+              );
+            })}
+          </div>
+          <p className="text-[11px] text-arena-600 mt-1 text-center">
+            {t3(locale, "Probabilidad de N goles en total", "Probability of N total goals")}
+          </p>
         </div>
       </div>
 

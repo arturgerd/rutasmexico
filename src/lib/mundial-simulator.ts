@@ -109,6 +109,8 @@ export interface MatchProjection {
   expCornersTotal: number;
   /** Marcadores más probables (orden descendente), prob en %. */
   topScores: Array<{ home: number; away: number; pct: number }>;
+  /** Distribución de goles totales: % de 0, 1, 2, 3, 4 y 5+ goles. */
+  goalsDistribution: Array<{ label: string; pct: number }>;
   /** Matriz P(home,away) normalizada — para muestrear un marcador puntual. */
   matrix: number[][];
 }
@@ -148,6 +150,7 @@ export function projectMatch(
     expH = 0,
     expA = 0;
   const cells: ScoreCell[] = [];
+  const totals = [0, 0, 0, 0, 0, 0]; // 0,1,2,3,4,5+ goles
 
   for (let h = 0; h <= MAX_GOALS; h++) {
     for (let a = 0; a <= MAX_GOALS; a++) {
@@ -159,6 +162,7 @@ export function projectMatch(
       else draw += prob;
       if (h >= 1 && a >= 1) btts += prob;
       if (h + a >= 3) over25 += prob;
+      totals[Math.min(h + a, 5)] += prob;
       expH += h * prob;
       expA += a * prob;
     }
@@ -188,6 +192,7 @@ export function projectMatch(
     expCornersAway: r1(cornersAway),
     expCornersTotal: r1(cornersHome + cornersAway),
     topScores: cells.slice(0, 6).map((c) => ({ home: c.home, away: c.away, pct: pct(c.prob) })),
+    goalsDistribution: totals.map((p, i) => ({ label: i === 5 ? "5+" : String(i), pct: pct(p) })),
     matrix,
   };
 }
