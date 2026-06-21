@@ -176,6 +176,62 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
       {/* Resultados, tabla de posiciones y estadísticas del Grupo A */}
       <GroupStandings locale={locale} group="A" />
 
+      {/* Juega: simulador + penales */}
+      <div className="bg-white py-12 border-t border-arena-200">
+        <div className="container-custom max-w-4xl">
+          <h2 className="font-display text-2xl md:text-3xl font-bold text-arena-800 mb-2 text-center">
+            🎮 {t3(locale, "Juega con el Mundial", "Play the World Cup", "Joue avec la Coupe du Monde")}
+          </h2>
+          <p className="text-arena-700 text-center mb-8 max-w-2xl mx-auto">
+            {t3(locale,
+              "Simula cualquier partido o métele gol al portero más difícil. Gratis y sin registro.",
+              "Simulate any match or score on the toughest keeper. Free, no signup.",
+              "Simule n'importe quel match ou marque face au gardien le plus difficile."
+            )}
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <Link
+              href={`/${locale}/mundial/simulador`}
+              className="group bg-arena-50 border border-arena-200 rounded-2xl p-6 hover:-translate-y-0.5 hover:shadow-md transition-all"
+            >
+              <div className="text-4xl mb-3">🎮</div>
+              <h3 className="font-display text-xl font-bold text-arena-900 mb-1">
+                {t3(locale, "Simulador de partidos", "Match simulator", "Simulateur de matchs")}
+              </h3>
+              <p className="text-sm text-arena-700 mb-3">
+                {t3(locale,
+                  "Probabilidades, marcadores más probables, goles esperados y córners de cualquier duelo.",
+                  "Win odds, likely scorelines, expected goals and corners for any matchup.",
+                  "Probabilités, scores probables, buts attendus et corners de n'importe quel duel."
+                )}
+              </p>
+              <span className="text-jade-700 font-semibold text-sm group-hover:underline">
+                {t3(locale, "Simular un partido →", "Simulate a match →", "Simuler un match →")}
+              </span>
+            </Link>
+            <Link
+              href={`/${locale}/mundial/penales`}
+              className="group bg-arena-50 border border-arena-200 rounded-2xl p-6 hover:-translate-y-0.5 hover:shadow-md transition-all"
+            >
+              <div className="text-4xl mb-3">🧤</div>
+              <h3 className="font-display text-xl font-bold text-arena-900 mb-1">
+                {t3(locale, "Penales: métele gol al portero", "Penalties: beat the keeper", "Penaltys : bats le gardien")}
+              </h3>
+              <p className="text-sm text-arena-700 mb-3">
+                {t3(locale,
+                  "Apunta, mide la potencia y batea. Bosnia es el portero más difícil del torneo.",
+                  "Aim, set the power and shoot. Bosnia is the hardest keeper in the tournament.",
+                  "Vise, dose la puissance et tire. La Bosnie est le gardien le plus difficile."
+                )}
+              </p>
+              <span className="text-terracotta-700 font-semibold text-sm group-hover:underline">
+                {t3(locale, "Jugar penales →", "Play penalties →", "Jouer aux penaltys →")}
+              </span>
+            </Link>
+          </div>
+        </div>
+      </div>
+
       {/* Host countries bento overview */}
       <HostCitiesBento
         locale={locale}
