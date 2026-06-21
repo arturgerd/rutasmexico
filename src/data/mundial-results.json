@@ -206,5 +206,57 @@
     "teamB": { "es": "Túnez", "en": "Tunisia", "fr": "Tunisie" },
     "scoreA": 5,
     "scoreB": 1
+  },
+  {
+    "id": "e-ger-civ",
+    "group": "E",
+    "date": "2026-06-20",
+    "time": "—",
+    "venue": { "es": "Por confirmar", "en": "To be confirmed", "fr": "À confirmer" },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": { "es": "Alemania", "en": "Germany", "fr": "Allemagne" },
+    "teamB": { "es": "Costa de Marfil", "en": "Ivory Coast", "fr": "Côte d'Ivoire" },
+    "scoreA": 2,
+    "scoreB": 1
+  },
+  {
+    "id": "e-ecu-cuw",
+    "group": "E",
+    "date": "2026-06-20",
+    "time": "—",
+    "venue": { "es": "Por confirmar", "en": "To be confirmed", "fr": "À confirmer" },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": { "es": "Ecuador", "en": "Ecuador", "fr": "Équateur" },
+    "teamB": { "es": "Curazao", "en": "Curaçao", "fr": "Curaçao" },
+    "scoreA": 0,
+    "scoreB": 0
+  },
+  {
+    "id": "f-ned-swe",
+    "group": "F",
+    "date": "2026-06-20",
+    "time": "—",
+    "venue": { "es": "Por confirmar", "en": "To be confirmed", "fr": "À confirmer" },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": { "es": "Países Bajos", "en": "Netherlands", "fr": "Pays-Bas" },
+    "teamB": { "es": "Suecia", "en": "Sweden", "fr": "Suède" },
+    "scoreA": 5,
+    "scoreB": 1
+  },
+  {
+    "id": "f-jpn-tun",
+    "group": "F",
+    "date": "2026-06-20",
+    "time": "—",
+    "venue": { "es": "Por confirmar", "en": "To be confirmed", "fr": "À confirmer" },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": { "es": "Japón", "en": "Japan", "fr": "Japon" },
+    "teamB": { "es": "Túnez", "en": "Tunisia", "fr": "Tunisie" },
+    "scoreA": 4,
+    "scoreB": 0
   }
 ]
