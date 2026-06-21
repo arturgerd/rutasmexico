@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { adsenseEnabled } from "@/lib/env";
 
 interface AdSenseBannerProps {
   adSlot: string;
@@ -22,18 +23,22 @@ export default function AdSenseBanner({
   const isLoaded = useRef(false);
 
   useEffect(() => {
-    if (isLoaded.current) return;
+    if (!adsenseEnabled || isLoaded.current) return;
     try {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const adsbygoogle = (window as any).adsbygoogle;
-      if (adsbygoogle) {
-        adsbygoogle.push({});
+      const w = window as unknown as { adsbygoogle?: { push: (config: object) => void } };
+      if (w.adsbygoogle) {
+        w.adsbygoogle.push({});
         isLoaded.current = true;
       }
     } catch {
       // AdSense not loaded yet - this is normal in development
     }
   }, []);
+
+  // AdSense account not approved → render nothing so we never inject empty/invalid
+  // ad slots (which throw "config is not valid"). Flip NEXT_PUBLIC_ADSENSE_ENABLED
+  // to "true" once approved.
+  if (!adsenseEnabled) return null;
 
   const formatMap: Record<string, React.CSSProperties> = {
     auto: { display: "block" },
@@ -56,24 +61,6 @@ export default function AdSenseBanner({
         data-ad-format={format === "auto" ? "auto" : undefined}
         data-full-width-responsive={format === "auto" ? "true" : undefined}
       />
-    </div>
-  );
-}
-
-// Inline ad that blends with content - for between sections
-export function InlineAd({ className = "" }: { className?: string }) {
-  return (
-    <div className={`my-6 ${className}`}>
-      <AdSenseBanner adSlot="INLINE_AD_SLOT" format="auto" />
-    </div>
-  );
-}
-
-// Sidebar ad - for destination detail pages
-export function SidebarAd({ className = "" }: { className?: string }) {
-  return (
-    <div className={`${className}`}>
-      <AdSenseBanner adSlot="SIDEBAR_AD_SLOT" format="rectangle" />
     </div>
   );
 }

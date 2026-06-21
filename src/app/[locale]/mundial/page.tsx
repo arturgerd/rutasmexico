@@ -7,6 +7,7 @@ import MenuBuilder from "@/components/mundial/MenuBuilder";
 import TraditionsSection from "@/components/mundial/TraditionsSection";
 import CountdownHero from "@/components/mundial/CountdownHero";
 import HostCitiesBento from "@/components/mundial/HostCitiesBento";
+import GroupStandings from "@/components/mundial/GroupStandings";
 import FinalFeature from "@/components/mundial/FinalFeature";
 import MercadoLibreBanner from "@/components/widgets/MercadoLibreBanner";
 import { t3, seoAlternates, seoOpenGraph } from "@/lib/utils";
@@ -98,19 +99,19 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
               <div className="bg-arena-800 rounded-xl p-4 border border-arena-700">
                 <div className="text-3xl font-bold text-oro-400">{venues.length}</div>
-                <div className="text-xs text-arena-400 mt-1">{t3(locale, "Ciudades sede", "Host cities", "Villes hôtes")}</div>
+                <div className="text-xs text-arena-700 mt-1">{t3(locale, "Ciudades sede", "Host cities", "Villes hôtes")}</div>
               </div>
               <div className="bg-arena-800 rounded-xl p-4 border border-arena-700">
                 <div className="text-3xl font-bold text-oro-400">{TOURNAMENT_TOTAL_MATCHES}</div>
-                <div className="text-xs text-arena-400 mt-1">{t3(locale, "Partidos totales", "Total matches", "Matchs au total")}</div>
+                <div className="text-xs text-arena-700 mt-1">{t3(locale, "Partidos totales", "Total matches", "Matchs au total")}</div>
               </div>
               <div className="bg-arena-800 rounded-xl p-4 border border-arena-700">
                 <div className="text-3xl font-bold text-jade-400">🇲🇽 {mexicoMatches}</div>
-                <div className="text-xs text-arena-400 mt-1">{t3(locale, "Juegos de México", "Mexico games", "Matchs du Mexique")}</div>
+                <div className="text-xs text-arena-700 mt-1">{t3(locale, "Juegos de México", "Mexico games", "Matchs du Mexique")}</div>
               </div>
               <div className="bg-arena-800 rounded-xl p-4 border border-arena-700">
                 <div className="text-3xl font-bold text-terracotta-400">Jun 11</div>
-                <div className="text-xs text-arena-400 mt-1">{t3(locale, "Inauguración", "Opening day", "Ouverture")}</div>
+                <div className="text-xs text-arena-700 mt-1">{t3(locale, "Inauguración", "Opening day", "Ouverture")}</div>
               </div>
             </div>
           </div>
@@ -154,7 +155,7 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
                     <div className="text-2xl mb-1">{match.teamA.es.includes("México") ? "🇲🇽" : match.teamA.es.includes("Sudáfrica") ? "🇿🇦" : match.teamA.es.includes("Chequia") ? "🇨🇿" : "🏳️"}</div>
                     <div className="font-bold text-arena-800 text-sm">{locale === "en" ? match.teamA.en : match.teamA.es}</div>
                   </div>
-                  <div className="text-xl font-bold text-arena-400">VS</div>
+                  <div className="text-xl font-bold text-arena-700">VS</div>
                   <div className="text-center">
                     <div className="text-2xl mb-1">{match.teamB.es.includes("México") ? "🇲🇽" : match.teamB.es.includes("Corea") ? "🇰🇷" : match.teamB.es.includes("Sudáfrica") ? "🇿🇦" : "🏳️"}</div>
                     <div className="font-bold text-arena-800 text-sm">{locale === "en" ? match.teamB.en : match.teamB.es}</div>
@@ -163,7 +164,7 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
                 <div className="text-sm text-arena-500 mt-2">
                   📅 {match.date} • ⏰ {match.time} hrs
                 </div>
-                <div className="text-xs text-arena-400 mt-1">
+                <div className="text-xs text-arena-700 mt-1">
                   {venues.find(v => v.matches.some(m => m.date === match.date && m.isMexicoGame))?.stadium.name}
                 </div>
               </div>
@@ -171,6 +172,9 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
           </div>
         </div>
       </div>
+
+      {/* Resultados, tabla de posiciones y estadísticas del Grupo A */}
+      <GroupStandings locale={locale} group="A" />
 
       {/* Host countries bento overview */}
       <HostCitiesBento
@@ -406,7 +410,7 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
             <div className="bg-terracotta-50 border border-terracotta-200 rounded-xl p-4 mt-6 text-center">
               <p className="text-sm text-arena-600">{t3(locale, "Total estimado por día:", "Estimated daily total:", "Total quotidien estimé:")}</p>
               <p className="text-2xl font-bold text-terracotta-600">$4,900 - $27,300 MXN</p>
-              <p className="text-xs text-arena-400">({t3(locale, "~$250 - $1,400 USD", "~$250 - $1,400 USD", "~$250 - $1 400 USD")})</p>
+              <p className="text-xs text-arena-700">({t3(locale, "~$250 - $1,400 USD", "~$250 - $1,400 USD", "~$250 - $1 400 USD")})</p>
             </div>
           </div>
         </div>
@@ -452,7 +456,7 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
           <h2 className="font-display text-2xl font-bold text-white mb-4">
             🛫 {t3(locale, "Planea tu viaje al Mundial", "Plan your World Cup trip", "Planifiez votre voyage")}
           </h2>
-          <p className="text-arena-400 mb-6 max-w-xl mx-auto">
+          <p className="text-arena-700 mb-6 max-w-xl mx-auto">
             {t3(locale,
               "Busca vuelos, compara hoteles y encuentra las mejores rutas para llegar a cada sede",
               "Search flights, compare hotels and find the best routes to each venue",

@@ -1532,5 +1532,551 @@
         }
       }
     ]
+  },
+  "tulum": {
+    "howToGetThere": {
+      "es": "Tulum tiene dos aeropuertos a su alcance. El más cercano es el Aeropuerto Internacional Felipe Carrillo Puerto (TQO), inaugurado en diciembre de 2023, a unos 45 minutos del centro del Pueblo y 25 minutos de los hoteles de la zona de playa sur. Desde TQO, el autobús ADO cuesta alrededor de 220-226 MXN (unos 12 USD) hasta la terminal del Pueblo, con varias salidas coordinadas con los vuelos y un trayecto de unos 45 minutos.\n\nLa alternativa clásica es volar al Aeropuerto Internacional de Cancún (CUN), el más conectado del país, y bajar a Tulum por la carretera 307. El ADO directo Cancún-Tulum cuesta aproximadamente 250-420 MXN según la clase y tarda entre 2 y 2.5 horas, con salidas frecuentes desde temprano hasta casi medianoche. Un transfer privado para grupos ronda los 80-120 USD, y rentar auto cuesta unos 35-60 USD al día (el manejo por la 307 toma de 90 a 120 minutos). Desde Playa del Carmen, los colectivos son la opción más económica.",
+      "en": "Tulum has two airports within reach. The closest is Felipe Carrillo Puerto International Airport (TQO), opened in December 2023, about 45 minutes from downtown Pueblo and 25 minutes from the southern beach-zone hotels. From TQO, the ADO bus costs around 220-226 MXN (about $12 USD) to the Pueblo terminal, with several departures timed to flights and a roughly 45-minute trip.\n\nThe classic alternative is to fly into Cancún International Airport (CUN), the country's best-connected, and head down to Tulum on Highway 307. The direct Cancún-Tulum ADO costs roughly 250-420 MXN depending on class and takes 2 to 2.5 hours, with frequent departures from early morning until nearly midnight. A private transfer for groups runs about $80-120 USD, and renting a car costs around $35-60 USD per day (the drive on the 307 takes 90 to 120 minutes). From Playa del Carmen, colectivos are the cheapest option."
+    },
+    "whereToStay": {
+      "es": "Tulum se divide en dos zonas con precios muy distintos. El Pueblo (centro), hacia el interior, concentra los hoteles económicos, hostales y posadas: aquí encuentras habitaciones desde 600-1,200 MXN la noche, taquerías, supermercados y la terminal de ADO. Es la mejor base si viajas con presupuesto ajustado o quieres movilidad.\n\nLa Zona Hotelera es la carretera junto a la playa, repleta de hoteles boutique eco-chic con palapas, generadores propios y estética selva-Caribe. Es preciosa pero cara: las tarifas van de 2,500 a más de 8,000 MXN la noche, muchas veces sin aire acondicionado constante por funcionar con energía limitada. Para lo mejor de ambos mundos, muchos viajeros se hospedan en el Pueblo y van a la playa en bici o taxi. La zona de Aldea Zama, entre el Pueblo y la playa, ofrece departamentos y opciones de gama media en crecimiento.",
+      "en": "Tulum splits into two zones with very different prices. The Pueblo (town) inland concentrates budget hotels, hostels, and guesthouses: here you'll find rooms from 600-1,200 MXN a night, taquerías, supermarkets, and the ADO terminal. It's the best base if you're on a tight budget or want mobility.\n\nThe Hotel Zone is the beachfront road, packed with eco-chic boutique hotels with palapas, their own generators, and a jungle-Caribbean aesthetic. It's gorgeous but pricey: rates run from 2,500 to over 8,000 MXN a night, often without constant air conditioning since they run on limited power. For the best of both worlds, many travelers stay in the Pueblo and bike or taxi to the beach. The Aldea Zama area, between the Pueblo and the beach, offers a growing range of apartments and mid-range options."
+    },
+    "gettingAround": {
+      "es": "La bicicleta es la reina de Tulum: la mayoría de hoteles las prestan o las rentas por 150-200 MXN al día, y un carril conecta el Pueblo con la Zona Hotelera en 15-20 minutos pedaleando. Los taxis no tienen taxímetro y son notoriamente caros; siempre acuerda la tarifa antes de subir (Pueblo-playa ronda 150-250 MXN, y sube de noche). Para visitar cenotes, las ruinas y Sian Ka'an, lo más cómodo es rentar auto (con estacionamiento en cada sitio) o contratar tours. Los colectivos (vans compartidas) sobre la 307 son la forma más barata de moverte entre Tulum, Akumal y Playa del Carmen. Evita rentar scooter si no tienes experiencia: el tráfico de la carretera de la playa puede ser complicado.",
+      "en": "The bicycle is king in Tulum: most hotels lend them or you can rent for 150-200 MXN a day, and a bike lane connects the Pueblo with the Hotel Zone in a 15-20 minute ride. Taxis have no meters and are notoriously expensive; always agree on the fare before getting in (Pueblo-beach runs 150-250 MXN, and rises at night). To visit cenotes, the ruins, and Sian Ka'an, it's easiest to rent a car (with parking at each site) or book tours. Colectivos (shared vans) along Highway 307 are the cheapest way to move between Tulum, Akumal, and Playa del Carmen. Avoid renting a scooter if you're inexperienced: traffic on the beach road can be tricky."
+    },
+    "foodScene": {
+      "es": "La comida en Tulum va de lo humilde a lo carísimo. En el Pueblo encuentras la cocina yucateca auténtica a precios justos: cochinita pibil por las mañanas, tacos de pescado, panuchos, salbutes y marquesitas en el parque por la noche. Las loncherías y marisquerías locales son la mejor relación calidad-precio.\n\nLa Zona Hotelera, en cambio, es escaparate de la alta cocina: restaurantes de autor, conceptos farm-to-table en la selva y beach clubs donde un platillo puede costar lo que tres comidas en el Pueblo. Vale la pena darse un gusto al menos una vez, pero para el día a día conviene comer en el centro. No te pierdas el chile habanero (úsalo con cuidado), el agua de chaya y, para el calor, una michelada o agua fresca. Muchos lugares de playa solo aceptan efectivo o cobran comisión por tarjeta.",
+      "en": "Food in Tulum ranges from humble to wildly expensive. In the Pueblo you'll find authentic, fairly priced Yucatecan cooking: cochinita pibil in the mornings, fish tacos, panuchos, salbutes, and marquesitas in the park at night. Local loncherías and seafood spots are the best value.\n\nThe Hotel Zone, by contrast, is a showcase of high-end dining: chef-driven restaurants, farm-to-table concepts in the jungle, and beach clubs where a single dish can cost as much as three meals in the Pueblo. It's worth a splurge at least once, but for everyday eating, downtown is the move. Don't miss habanero chile (use it carefully), chaya water, and, for the heat, a michelada or agua fresca. Many beachfront places only take cash or add a card surcharge."
+    },
+    "bestTime": {
+      "es": "La mejor época para Tulum es de noviembre a abril: temporada seca, calor agradable (25-30 °C), cielos despejados y la menor cantidad de sargazo. Diciembre a marzo es temporada alta, con los precios más caros y la playa más concurrida.\n\nDe mayo a agosto el calor y la humedad aumentan y llega el sargazo, un alga parda que puede cubrir las playas del Caribe; los cenotes, al ser de agua dulce tierra adentro, no se ven afectados, así que siguen siendo un plan perfecto. Septiembre y octubre son el pico de la temporada de huracanes del Atlántico (que va oficialmente del 1 de junio al 30 de noviembre): hay buenas ofertas, pero también más riesgo de lluvias intensas. Mayo y noviembre son meses de transición con buen clima y precios más moderados.",
+      "en": "The best time for Tulum is November to April: dry season, pleasant heat (25-30°C), clear skies, and the least sargassum. December to March is high season, with the highest prices and the busiest beaches.\n\nFrom May to August, heat and humidity rise and sargassum arrives, a brown seaweed that can cover Caribbean beaches; cenotes, being freshwater inland, are unaffected, so they remain a perfect plan. September and October are the peak of the Atlantic hurricane season (officially June 1 to November 30): there are good deals, but also more risk of heavy rain. May and November are transition months with good weather and more moderate prices."
+    },
+    "dailyCost": {
+      "es": "Tulum es uno de los destinos más caros de México, sobre todo en la playa. Un viajero de presupuesto que se hospeda en el Pueblo, come en loncherías y se mueve en bici puede arreglárselas con 700-1,000 MXN al día. Un presupuesto de gama media (hotel cómodo, un par de cenotes, comidas en restaurantes) ronda 1,800-3,000 MXN diarios por persona. En la Zona Hotelera, con hoteles boutique y beach clubs, es fácil superar los 3,500-5,000 MXN al día.\n\nLos costos que más sorprenden son los cenotes (300-550 MXN cada uno), la entrada a las ruinas (~515 MXN) y los taxis. Para ahorrar: hospédate en el Pueblo, renta bici, lleva efectivo, come donde comen los locales y agrupa las visitas a cenotes en un solo día con auto rentado.",
+      "en": "Tulum is one of Mexico's most expensive destinations, especially at the beach. A budget traveler staying in the Pueblo, eating at loncherías, and biking around can manage on 700-1,000 MXN a day. A mid-range budget (comfortable hotel, a couple of cenotes, restaurant meals) runs about 1,800-3,000 MXN per person daily. In the Hotel Zone, with boutique hotels and beach clubs, it's easy to top 3,500-5,000 MXN a day.\n\nThe costs that surprise people most are cenotes (300-550 MXN each), ruins admission (~515 MXN), and taxis. To save: stay in the Pueblo, rent a bike, carry cash, eat where locals eat, and group cenote visits into a single day with a rental car."
+    },
+    "faqs": [
+      {
+        "question": {
+          "es": "¿Cuál es la mejor forma de llegar a Tulum?",
+          "en": "What's the best way to get to Tulum?"
+        },
+        "answer": {
+          "es": "Si vuelas al nuevo aeropuerto de Tulum (TQO) estás a ~45 min en ADO (~220 MXN). Si llegas a Cancún (CUN), el ADO directo cuesta 250-420 MXN y tarda 2-2.5 horas. También hay transfers privados (80-120 USD por grupo) y autos de renta (35-60 USD/día).",
+          "en": "If you fly into Tulum's new airport (TQO), you're ~45 min away by ADO (~220 MXN). If you arrive in Cancún (CUN), the direct ADO costs 250-420 MXN and takes 2-2.5 hours. There are also private transfers ($80-120 USD per group) and rental cars ($35-60 USD/day)."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Cuándo hay sargazo en Tulum?",
+          "en": "When is there sargassum in Tulum?"
+        },
+        "answer": {
+          "es": "El sargazo suele llegar entre mayo y agosto, cuando puede cubrir las playas del Caribe. De noviembre a abril hay mucho menos. Los cenotes nunca se ven afectados porque son de agua dulce.",
+          "en": "Sargassum typically arrives between May and August, when it can cover Caribbean beaches. From November to April there's much less. Cenotes are never affected because they're freshwater."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Cuánto cuesta entrar a las ruinas de Tulum y a los cenotes?",
+          "en": "How much is entry to the Tulum ruins and cenotes?"
+        },
+        "answer": {
+          "es": "La zona arqueológica de Tulum cuesta alrededor de 515 MXN. Los cenotes cobran por separado: Gran Cenote ~500 MXN y Dos Ojos ~400 MXN (550 por dos cenotes). La mayoría cobra en efectivo.",
+          "en": "The Tulum archaeological site costs around 515 MXN. Cenotes charge separately: Gran Cenote ~500 MXN and Dos Ojos ~400 MXN (550 for two cenotes). Most charge in cash."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Conviene hospedarse en el Pueblo o en la playa?",
+          "en": "Should I stay in the Pueblo or at the beach?"
+        },
+        "answer": {
+          "es": "El Pueblo es mucho más económico (habitaciones desde 600-1,200 MXN) y práctico para moverte; la Zona Hotelera es preciosa pero cara (2,500-8,000+ MXN) y a veces sin aire constante. Muchos se hospedan en el Pueblo y van a la playa en bici o taxi.",
+          "en": "The Pueblo is much cheaper (rooms from 600-1,200 MXN) and practical for getting around; the Hotel Zone is beautiful but expensive (2,500-8,000+ MXN) and sometimes without constant A/C. Many stay in the Pueblo and bike or taxi to the beach."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Es seguro Tulum?",
+          "en": "Is Tulum safe?"
+        },
+        "answer": {
+          "es": "Tulum es turístico y generalmente seguro de día. De noche, usa taxis de sitio o apps, evita zonas oscuras y acuerda siempre la tarifa del taxi antes de subir, ya que no usan taxímetro.",
+          "en": "Tulum is touristy and generally safe by day. At night, use registered taxis or apps, avoid dark areas, and always agree on the taxi fare before getting in, since they don't use meters."
+        }
+      }
+    ]
+  },
+  "puebla": {
+    "howToGetThere": {
+      "es": "La forma más práctica de llegar a Puebla es por autobús desde la Ciudad de México. Las salidas son constantes (cada 15-20 minutos en horas pico) desde la terminal TAPO y otras de la capital hacia la central CAPU de Puebla, con un trayecto de poco más de 2 horas. ADO y su clase ADO GL (alrededor de 220-250 MXN) ofrecen la mejor relación comodidad-precio: asientos amplios, aire acondicionado y puertos USB; líneas como Estrella Roja y Autobuses Unidos también cubren la ruta, algunas desde el aeropuerto de la CDMX.\n\nEn auto, la autopista México-Puebla toma de 2 a 2.5 horas según el tráfico de salida de la capital. Puebla también tiene aeropuerto propio, el Hermanos Serdán (PBC), con algunos vuelos nacionales, pero la mayoría de los viajeros llega volando a la Ciudad de México (MEX o AIFA) y completando el tramo por carretera.",
+      "en": "The most practical way to reach Puebla is by bus from Mexico City. Departures are constant (every 15-20 minutes at peak times) from the TAPO terminal and others in the capital to Puebla's CAPU station, with a trip of just over 2 hours. ADO and its ADO GL class (around 220-250 MXN) offer the best comfort-to-price ratio: wide seats, air conditioning, and USB ports; lines like Estrella Roja and Autobuses Unidos also cover the route, some from Mexico City's airport.\n\nBy car, the Mexico City-Puebla highway takes 2 to 2.5 hours depending on traffic leaving the capital. Puebla also has its own airport, Hermanos Serdán (PBC), with some domestic flights, but most travelers arrive by flying into Mexico City (MEX or AIFA) and completing the leg by road."
+    },
+    "whereToStay": {
+      "es": "La mejor zona para hospedarte es el Centro Histórico: caminable, lleno de vida y a pasos de la Catedral, el zócalo y los principales museos. Aquí hay desde hostales y hoteles boutique en casonas coloniales hasta opciones de gama media muy razonables; las tarifas suelen ir de 700 a 2,000 MXN la noche, bastante por debajo de lo que cuesta algo equivalente en la Ciudad de México.\n\nSi viajas por la pirámide y el ambiente más joven y bohemio, considera Cholula (San Andrés o San Pedro), a 15 km, con hostales, cafés y vida nocturna universitaria. La zona de Angelópolis, al poniente, concentra hoteles de cadena modernos cerca de centros comerciales, ideal si llegas en auto o viajas por negocios. Para turismo, el Centro Histórico gana por ubicación y encanto.",
+      "en": "The best area to stay is the Historic Center: walkable, full of life, and steps from the Cathedral, main square, and the main museums. Here you'll find everything from hostels and boutique hotels in colonial mansions to very reasonable mid-range options; rates usually run from 700 to 2,000 MXN a night, well below what something equivalent costs in Mexico City.\n\nIf you're here for the pyramid and a younger, bohemian vibe, consider Cholula (San Andrés or San Pedro), 15 km away, with hostels, cafés, and university nightlife. The Angelópolis area, to the west, concentrates modern chain hotels near malls, ideal if you arrive by car or travel for business. For tourism, the Historic Center wins for location and charm."
+    },
+    "gettingAround": {
+      "es": "El Centro Histórico de Puebla se recorre a pie sin problema: las cuadras son planas y los atractivos están concentrados. Para distancias mayores, Uber y Didi funcionan excelente y son baratos (muchos trayectos por menos de 60-80 MXN), una opción más cómoda y transparente que el taxi. Para ir a Cholula hay colectivos y autobuses económicos desde el centro, o un Uber por unos 120-180 MXN. El Turibús turístico ofrece un recorrido panorámico por los principales puntos. Si conduces, considera que el centro tiene calles de un solo sentido y estacionamiento limitado: conviene usar estacionamientos públicos.",
+      "en": "Puebla's Historic Center is easy to explore on foot: the blocks are flat and the sights are concentrated. For longer distances, Uber and Didi work great and are cheap (many trips under 60-80 MXN), a more comfortable and transparent option than taxis. To reach Cholula there are affordable colectivos and buses from downtown, or an Uber for about 120-180 MXN. The tourist Turibús offers a panoramic loop of the main sights. If you drive, note that downtown has one-way streets and limited parking: it's best to use public parking lots."
+    },
+    "foodScene": {
+      "es": "Puebla es una de las grandes capitales gastronómicas de México y, además, sorprendentemente barata: una comida completa en mercado cuesta 60-80 MXN y hasta los restaurantes de manteles largos cobran menos que sus equivalentes en la capital. El platillo obligado es el mole poblano, esa salsa de más de veinte ingredientes con chocolate y chiles servida sobre pollo o guajolote. De agosto a mediados de septiembre llegan los chiles en nogada, de temporada porque dependen de la nuez de Castilla y la granada frescas.\n\nLa comida callejera brilla con las cemitas (tortas en pan de ajonjolí con quesillo, aguacate y papalo), las chalupas, los tacos árabes (herencia libanesa, antecesores del pastor) y las tradicionales aguas y nieves. Para el postre, los camotes poblanos y los dulces de Santa Clara en la Calle de los Dulces. Recorre el Mercado del Carmen y el Callejón de los Sapos para comer como local.",
+      "en": "Puebla is one of Mexico's great culinary capitals and, on top of that, surprisingly cheap: a full market meal costs 60-80 MXN, and even white-tablecloth restaurants charge less than their counterparts in the capital. The must-try dish is mole poblano, that sauce of more than twenty ingredients with chocolate and chiles served over chicken or turkey. From August to mid-September come chiles en nogada, seasonal because they depend on fresh Castilla walnuts and pomegranate.\n\nStreet food shines with cemitas (sandwiches on sesame bread with string cheese, avocado, and papalo), chalupas, tacos árabes (a Lebanese legacy and ancestor of al pastor), and traditional aguas frescas and ices. For dessert, Puebla's camotes and the Santa Clara sweets on the Calle de los Dulces. Wander the El Carmen market and Callejón de los Sapos to eat like a local."
+    },
+    "bestTime": {
+      "es": "Puebla disfruta de un clima templado de montaña todo el año (la ciudad está a más de 2,100 m de altitud), con días frescos y noches que pueden enfriar. La temporada seca, de noviembre a abril, es la más cómoda para caminar el centro. El verano (junio a septiembre) trae lluvias por la tarde, pero las mañanas suelen ser despejadas.\n\nHay dos momentos especialmente atractivos: agosto y principios de septiembre, cuando se sirven los chiles en nogada en su mejor punto, y el 5 de mayo, cuando la ciudad conmemora la Batalla de Puebla de 1862 con un gran desfile cívico-militar en los fuertes de Loreto y Guadalupe. Diciembre suma el ambiente navideño y los nacimientos monumentales.",
+      "en": "Puebla enjoys a mild mountain climate year-round (the city sits above 2,100 m / 6,900 ft), with cool days and nights that can get chilly. The dry season, November to April, is the most comfortable for walking the center. Summer (June to September) brings afternoon rain, but mornings are usually clear.\n\nTwo moments are especially appealing: August and early September, when chiles en nogada are served at their best, and May 5, when the city commemorates the 1862 Battle of Puebla with a large civic-military parade at the Loreto and Guadalupe forts. December adds Christmas atmosphere and monumental nativity scenes."
+    },
+    "dailyCost": {
+      "es": "Puebla es uno de los destinos coloniales con mejor relación calidad-precio de México: suele ser entre 20 y 30 % más barata que la Ciudad de México o San Miguel de Allende. Un viajero de presupuesto puede arreglárselas con 500-800 MXN al día (hostal, comidas en mercado, transporte y un par de entradas). Un presupuesto de gama media —hotel en el centro, restaurantes, Uber y visitas a Cholula y museos— ronda 1,200-1,800 MXN por persona al día.\n\nLas entradas son económicas: la pirámide de Cholula cuesta unos 85 MXN y muchas iglesias son gratuitas. Los grandes ahorros vienen de comer en mercados y fondas (60-80 MXN por comida) y de usar Uber/Didi en lugar de taxis. Comprar talavera o dulces en la Calle de los Dulces es el gasto extra más típico.",
+      "en": "Puebla is one of Mexico's best-value colonial destinations: it's usually 20-30% cheaper than Mexico City or San Miguel de Allende. A budget traveler can manage on 500-800 MXN a day (hostel, market meals, transport, and a couple of entry fees). A mid-range budget —a downtown hotel, restaurants, Uber, and visits to Cholula and museums— runs about 1,200-1,800 MXN per person per day.\n\nEntry fees are cheap: the Cholula pyramid costs around 85 MXN and many churches are free. The big savings come from eating at markets and fondas (60-80 MXN per meal) and using Uber/Didi instead of taxis. Buying Talavera or sweets on the Calle de los Dulces is the most typical extra expense."
+    },
+    "faqs": [
+      {
+        "question": {
+          "es": "¿Cómo llegar de la Ciudad de México a Puebla?",
+          "en": "How do I get from Mexico City to Puebla?"
+        },
+        "answer": {
+          "es": "En autobús desde la terminal TAPO hacia la CAPU de Puebla: salidas cada 15-20 minutos, ~2 horas de trayecto y boletos en ADO GL por unos 220-250 MXN. En auto, la autopista toma de 2 a 2.5 horas.",
+          "en": "By bus from the TAPO terminal to Puebla's CAPU: departures every 15-20 minutes, ~2-hour trip, and ADO GL tickets for about 220-250 MXN. By car, the highway takes 2 to 2.5 hours."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Cuándo se comen los chiles en nogada en Puebla?",
+          "en": "When are chiles en nogada eaten in Puebla?"
+        },
+        "answer": {
+          "es": "De agosto a mediados de septiembre, cuando la nuez de Castilla y la granada están frescas. Fuera de esa temporada es difícil encontrarlos en su punto auténtico.",
+          "en": "From August to mid-September, when Castilla walnut and pomegranate are fresh. Outside that season it's hard to find them at their authentic best."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Vale la pena visitar Cholula desde Puebla?",
+          "en": "Is it worth visiting Cholula from Puebla?"
+        },
+        "answer": {
+          "es": "Sí. Cholula está a unos 15 km y alberga la pirámide más grande del mundo por volumen, coronada por una iglesia (entrada ~85 MXN). Se llega en colectivo, autobús o un Uber de 120-180 MXN, y combina arqueología, túneles y ambiente universitario.",
+          "en": "Yes. Cholula is about 15 km away and home to the world's largest pyramid by volume, crowned by a church (entry ~85 MXN). You can get there by colectivo, bus, or a 120-180 MXN Uber, and it combines archaeology, tunnels, and a university-town vibe."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Cuántos días necesito en Puebla?",
+          "en": "How many days do I need in Puebla?"
+        },
+        "answer": {
+          "es": "Dos o tres días son ideales: uno para el Centro Histórico (Catedral, Capilla del Rosario, mercados y la Calle de los Dulces), otro para Cholula y su pirámide, y un tercero para museos, los fuertes o comer con calma.",
+          "en": "Two or three days are ideal: one for the Historic Center (Cathedral, Rosary Chapel, markets, and the Calle de los Dulces), another for Cholula and its pyramid, and a third for museums, the forts, or a leisurely meal."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Es Puebla más barata que la Ciudad de México?",
+          "en": "Is Puebla cheaper than Mexico City?"
+        },
+        "answer": {
+          "es": "Sí, suele ser entre 20 y 30 % más económica en hospedaje y comida. Una comida de mercado cuesta 60-80 MXN y los hoteles del centro son notablemente más baratos que sus equivalentes en la capital.",
+          "en": "Yes, it's usually 20-30% cheaper for lodging and food. A market meal costs 60-80 MXN and downtown hotels are noticeably cheaper than their counterparts in the capital."
+        }
+      }
+    ]
+  },
+  "queretaro": {
+    "howToGetThere": {
+      "es": "La forma más práctica de llegar a Querétaro desde la Ciudad de México es por autobús. Líneas como ETN, Primera Plus y Ómnibus de México salen de la Terminal del Norte (Metro Autobuses del Norte, Línea 5) cada 30-60 minutos, con un trayecto de 2.5 a 3 horas y boletos de 200 a 350 MXN según la clase. No suele hacer falta reservar, salvo los viernes por la tarde y en puentes.\n\nEn auto, son 215 km por la autopista 57 (de cuota), con 2 a 2.5 horas de manejo y casetas por unos 200-250 MXN por sentido. Querétaro también cuenta con aeropuerto internacional propio (QRO), con vuelos nacionales y algunas conexiones internacionales, una buena opción si vienes del norte del país o de Estados Unidos.",
+      "en": "The most practical way to reach Querétaro from Mexico City is by bus. Lines like ETN, Primera Plus, and Ómnibus de México leave from Terminal del Norte (Metro Autobuses del Norte, Line 5) every 30-60 minutes, with a 2.5 to 3-hour trip and tickets from 200 to 350 MXN depending on class. Booking isn't usually necessary, except on Friday afternoons and long weekends.\n\nBy car, it's 215 km via the Highway 57 toll road, with 2 to 2.5 hours of driving and tolls around 200-250 MXN each way. Querétaro also has its own international airport (QRO), with domestic flights and some international connections, a good option if you're coming from northern Mexico or the United States."
+    },
+    "whereToStay": {
+      "es": "El mejor lugar para hospedarte es el Centro Histórico: caminable, lleno de andadores, restaurantes y plazas, y a pasos del acueducto y los principales templos. Hay desde hostales y hoteles boutique en casonas coloniales hasta opciones de gama media muy razonables, con tarifas que suelen ir de 700 a 2,000 MXN la noche —bastante más baratas que en San Miguel de Allende—.\n\nSi viajas en auto o por negocios, la zona de Juriquilla y el norte de la ciudad concentran hoteles de cadena modernos cerca de centros comerciales. Pero para turismo, el Centro Histórico gana por ubicación, encanto y ambiente nocturno seguro.",
+      "en": "The best place to stay is the Historic Center: walkable, full of pedestrian streets, restaurants, and plazas, and steps from the aqueduct and the main churches. There's everything from hostels and boutique hotels in colonial mansions to very reasonable mid-range options, with rates usually from 700 to 2,000 MXN a night —considerably cheaper than San Miguel de Allende.\n\nIf you're traveling by car or for business, the Juriquilla area and the north of the city concentrate modern chain hotels near malls. But for tourism, the Historic Center wins for location, charm, and a safe nighttime atmosphere."
+    },
+    "gettingAround": {
+      "es": "El Centro Histórico de Querétaro es plano y peatonal: casi todo se hace caminando entre andadores y plazas. Para distancias mayores, Uber y Didi funcionan muy bien y son económicos (muchos trayectos por menos de 70 MXN). Para explorar la ruta del vino y el queso (Tequisquiapan, Ezequiel Montes) y la Peña de Bernal, lo más cómodo es rentar auto o contratar un tour, ya que el transporte público hacia esas zonas es limitado y poco frecuente.",
+      "en": "Querétaro's Historic Center is flat and pedestrian: almost everything is done on foot among walkways and plazas. For longer distances, Uber and Didi work very well and are affordable (many trips under 70 MXN). To explore the wine-and-cheese route (Tequisquiapan, Ezequiel Montes) and Peña de Bernal, it's easiest to rent a car or book a tour, since public transport to those areas is limited and infrequent."
+    },
+    "foodScene": {
+      "es": "La gastronomía queretana mezcla la cocina del Bajío con una sólida cultura del vino. El platillo emblemático son las enchiladas queretanas, bañadas en salsa de guajillo y acompañadas de papas y zanahorias. En los mercados encuentras gorditas de migajas, tamales y nieves artesanales a precios bajos. La ciudad tiene además una escena de cafés y restaurantes de autor en crecimiento, varios destacados por el New York Times.\n\nPero lo que distingue a Querétaro es ser una de las grandes regiones vinícolas de México: a menos de una hora están viñedos como Freixenet y La Redonda, donde puedes hacer catas y tablas de quesos artesanales. La Ruta del Queso y el Vino es una de las mejores experiencias gastronómicas del centro del país.",
+      "en": "Querétaro's cuisine blends Bajío cooking with a strong wine culture. The signature dish is enchiladas queretanas, bathed in guajillo sauce and served with potatoes and carrots. In the markets you'll find gorditas de migajas, tamales, and artisanal ices at low prices. The city also has a growing scene of cafés and chef-driven restaurants, several highlighted by the New York Times.\n\nBut what sets Querétaro apart is being one of Mexico's great wine regions: less than an hour away are vineyards like Freixenet and La Redonda, where you can do tastings and artisanal cheese boards. The Cheese and Wine Route is one of the best food experiences in central Mexico."
+    },
+    "bestTime": {
+      "es": "El mejor periodo para visitar Querétaro es de septiembre a junio, con clima templado y seco (días de 22-28 °C y noches frescas). La temporada de lluvias va de junio a septiembre, con chubascos por la tarde pero mañanas agradables.\n\nEvita —o reserva con mucha antelación— Semana Santa y los puentes, cuando el turismo nacional llena el centro y los precios de hotel suben entre 30 y 50 %. El otoño y la primavera son ideales para combinar la ciudad con la ruta del vino, especialmente durante las Fiestas de la Vendimia (vendimias) entre julio y septiembre en los viñedos.",
+      "en": "The best period to visit Querétaro is September to June, with mild, dry weather (22-28°C days and cool nights). The rainy season runs June to September, with afternoon showers but pleasant mornings.\n\nAvoid —or book well ahead for— Holy Week and Mexican long weekends, when domestic tourism fills the center and hotel prices rise 30-50%. Fall and spring are ideal for combining the city with the wine route, especially during the grape-harvest festivals (vendimias) between July and September at the vineyards."
+    },
+    "dailyCost": {
+      "es": "Querétaro ofrece una excelente relación calidad-precio: es entre 30 y 60 % más barata que la vecina San Miguel de Allende. Un viajero de presupuesto puede arreglárselas con 450-800 MXN al día (hostal, comidas en mercado, transporte y alguna entrada). Un presupuesto de gama media —hotel en el centro, restaurantes y una excursión a Bernal o a un viñedo— ronda 1,200-1,800 MXN por persona al día.\n\nMuchos de los principales atractivos (acueducto, plazas, templos, andadores) son gratuitos. Los gastos extra más típicos son las catas de vino y las excursiones a la ruta del queso y el vino. Usar Uber/Didi en lugar de taxis y comer en fondas y mercados son las mejores formas de ahorrar.",
+      "en": "Querétaro offers excellent value: it's 30-60% cheaper than neighboring San Miguel de Allende. A budget traveler can manage on 450-800 MXN a day (hostel, market meals, transport, and an entry fee or two). A mid-range budget —a downtown hotel, restaurants, and a trip to Bernal or a vineyard— runs about 1,200-1,800 MXN per person per day.\n\nMany of the main attractions (aqueduct, plazas, churches, walkways) are free. The most typical extra costs are wine tastings and excursions on the cheese-and-wine route. Using Uber/Didi instead of taxis and eating at fondas and markets are the best ways to save."
+    },
+    "faqs": [
+      {
+        "question": {
+          "es": "¿Cómo llegar de la Ciudad de México a Querétaro?",
+          "en": "How do I get from Mexico City to Querétaro?"
+        },
+        "answer": {
+          "es": "En autobús desde la Terminal del Norte (ETN, Primera Plus, Ómnibus de México): salidas cada 30-60 minutos, 2.5-3 horas y boletos de 200-350 MXN. En auto, la autopista 57 toma 2-2.5 horas. También hay aeropuerto propio (QRO).",
+          "en": "By bus from Terminal del Norte (ETN, Primera Plus, Ómnibus de México): departures every 30-60 minutes, 2.5-3 hours, and tickets from 200-350 MXN. By car, Highway 57 takes 2-2.5 hours. There's also its own airport (QRO)."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Vale la pena ir a la Peña de Bernal desde Querétaro?",
+          "en": "Is Peña de Bernal worth visiting from Querétaro?"
+        },
+        "answer": {
+          "es": "Sí. Bernal es un pueblo mágico a una hora, dominado por uno de los monolitos más grandes del mundo. Combina senderismo ligero, calles bonitas, gastronomía y artesanías, y se suele unir con la ruta del queso y el vino.",
+          "en": "Yes. Bernal is a magic town an hour away, crowned by one of the world's largest monoliths. It combines light hiking, pretty streets, food, and crafts, and is usually combined with the cheese-and-wine route."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Es Querétaro más barato que San Miguel de Allende?",
+          "en": "Is Querétaro cheaper than San Miguel de Allende?"
+        },
+        "answer": {
+          "es": "Sí, bastante: entre 30 y 60 % más económico en hospedaje y comida, y con un ambiente más auténtico y menos enfocado al turismo extranjero.",
+          "en": "Yes, considerably: 30-60% cheaper for lodging and food, with a more authentic atmosphere that's less focused on foreign tourism."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Cuántos días necesito en Querétaro?",
+          "en": "How many days do I need in Querétaro?"
+        },
+        "answer": {
+          "es": "Dos o tres: uno para el Centro Histórico y el acueducto, y uno o dos para excursiones a Bernal y a la ruta del queso y el vino.",
+          "en": "Two or three: one for the Historic Center and the aqueduct, and one or two for trips to Bernal and the cheese-and-wine route."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Es seguro Querétaro?",
+          "en": "Is Querétaro safe?"
+        },
+        "answer": {
+          "es": "Querétaro es considerada una de las ciudades más seguras de México. El Centro Histórico es tranquilo de día y de noche; aplica las precauciones habituales de cualquier ciudad.",
+          "en": "Querétaro is considered one of Mexico's safest cities. The Historic Center is calm day and night; take the usual precautions of any city."
+        }
+      }
+    ]
+  },
+  "san-cristobal-de-las-casas": {
+    "howToGetThere": {
+      "es": "La puerta de entrada a San Cristóbal es el Aeropuerto de Tuxtla Gutiérrez (TGZ, Ángel Albino Corzo), a unos 77 km (1 hora 20 minutos). Desde el aeropuerto, las opciones son: transporte colectivo (vans) directo por unos 240 MXN, autobús de primera clase por aproximadamente 200 MXN (alrededor de 1 hora, con pocas salidas al día) o taxi privado, más caro (cerca de 800-1,000 MXN).\n\nTambién puedes llegar en autobús ADO desde otras ciudades del sur y centro del país; los trayectos son largos por la geografía montañosa de Chiapas. Una ruta popular es combinar San Cristóbal con Palenque o con Oaxaca en autobús nocturno. Recuerda que la ciudad está a más de 2,200 metros de altitud, así que el clima es fresco todo el año.",
+      "en": "The gateway to San Cristóbal is Tuxtla Gutiérrez Airport (TGZ, Ángel Albino Corzo), about 77 km away (1 hour 20 minutes). From the airport, the options are: direct shared vans (colectivos) for around 240 MXN, a first-class bus for approximately 200 MXN (about 1 hour, with few daily departures), or a private taxi, which is pricier (around 800-1,000 MXN).\n\nYou can also arrive by ADO bus from other southern and central cities; the trips are long due to the mountainous Chiapas geography. A popular route is to combine San Cristóbal with Palenque or with Oaxaca on an overnight bus. Remember the city sits at over 2,200 meters, so the climate is cool year-round."
+    },
+    "whereToStay": {
+      "es": "La mejor zona es el Centro Histórico, alrededor de los andadores peatonales (Andador Eclesiástico y Real de Guadalupe) y la Plaza de la Paz. Aquí encuentras hostales económicos —algunos por menos de 200 MXN la cama, con desayuno y actividades—, posadas familiares y hoteles boutique en casonas coloniales. Las tarifas son de las más bajas de México: muchos hoteles cómodos rondan 600-1,200 MXN la noche.\n\nEl barrio de Guadalupe, junto a su iglesia en lo alto, y el de El Cerrillo son tranquilos y con encanto, a pocos minutos a pie del centro. Por la altitud, busca alojamiento con buenas cobijas o calefacción, ya que las noches son frías.",
+      "en": "The best area is the Historic Center, around the pedestrian walkways (Andador Eclesiástico and Real de Guadalupe) and the Plaza de la Paz. Here you'll find budget hostels —some under 200 MXN a bed, with breakfast and activities—, family guesthouses, and boutique hotels in colonial mansions. Rates are among the lowest in Mexico: many comfortable hotels run 600-1,200 MXN a night.\n\nThe Guadalupe neighborhood, next to its hilltop church, and El Cerrillo are quiet and charming, a few minutes' walk from the center. Because of the altitude, look for lodging with good blankets or heating, since the nights are cold."
+    },
+    "gettingAround": {
+      "es": "El centro de San Cristóbal se recorre íntegramente a pie: los andadores peatonales conectan las principales plazas, iglesias y mercados. Para las excursiones imperdibles —Cañón del Sumidero, San Juan Chamula y Zinacantán, El Chiflón y los lagos de Montebello— la forma más práctica y barata son los tours en colectivo que salen del centro, que incluyen transporte y guía. Hay taxis baratos para trayectos cortos. Lleva calzado cómodo: las calles empedradas y la altitud hacen que las cuestas se sientan.",
+      "en": "San Cristóbal's center is entirely walkable: the pedestrian walkways connect the main plazas, churches, and markets. For the unmissable excursions —Sumidero Canyon, San Juan Chamula and Zinacantán, El Chiflón, and the Montebello lakes— the most practical and cheapest option is the shared-van tours that leave from downtown, including transport and a guide. There are cheap taxis for short trips. Wear comfortable shoes: the cobbled streets and altitude make the hills noticeable."
+    },
+    "foodScene": {
+      "es": "San Cristóbal sorprende por la variedad de su escena gastronómica. Por un lado, la cocina chiapaneca tradicional: cochito horneado, tamales de chipilín, sopa de pan, butifarra y el café de altura, uno de los mejores de México, servido en numerosas cafeterías de especialidad. Por otro, una notable oferta internacional y vegana poco común para una ciudad de su tamaño, fruto de su ambiente cosmopolita y mochilero.\n\nEl Mercado de Santo Domingo y el mercado municipal son ideales para comer barato y probar productos locales como el ámbar, el chocolate y los quesos. Comer bien aquí es muy económico: la comida callejera cuesta menos de 60 MXN y hasta los restaurantes más cuidados rara vez superan los 250-300 MXN por persona.",
+      "en": "San Cristóbal surprises with the variety of its food scene. On one hand, traditional Chiapanecan cuisine: cochito horneado, chipilín tamales, sopa de pan, butifarra, and high-altitude coffee, one of Mexico's best, served in numerous specialty cafés. On the other, a notable international and vegan offering uncommon for a city its size, a product of its cosmopolitan, backpacker atmosphere.\n\nThe Santo Domingo market and the municipal market are ideal for eating cheaply and trying local products like amber, chocolate, and cheeses. Eating well here is very affordable: street food costs under 60 MXN and even the nicest restaurants rarely exceed 250-300 MXN per person."
+    },
+    "bestTime": {
+      "es": "La mejor época es la temporada seca, de noviembre a abril, con días soleados y noches frías; marzo a mayo suele ofrecer el clima más estable. Por la altitud (más de 2,200 m), las temperaturas son frescas todo el año: lleva siempre una chamarra para la noche.\n\nLa temporada de lluvias va de junio a octubre, con tardes húmedas pero paisajes muy verdes, menos turistas y mejores precios. Dos momentos especiales: el Día de Muertos (finales de octubre y principios de noviembre) y las fiestas decembrinas, cuando la ciudad y los pueblos indígenas cercanos celebran con gran color.",
+      "en": "The best time is the dry season, November to April, with sunny days and cold nights; March to May usually offers the most stable weather. Because of the altitude (over 2,200 m), temperatures are cool year-round: always bring a jacket for the evening.\n\nThe rainy season runs June to October, with wet afternoons but very green landscapes, fewer tourists, and better prices. Two special moments: Day of the Dead (late October and early November) and the December holidays, when the city and nearby indigenous towns celebrate with great color."
+    },
+    "dailyCost": {
+      "es": "San Cristóbal es uno de los destinos más económicos de México. Un viajero mochilero puede vivir con 400-700 MXN al día: cama en hostal (desde 150-200 MXN), comida en mercados y tours en colectivo. Un presupuesto de gama media —hotel boutique, restaurantes y dos o tres excursiones— ronda 1,000-1,400 MXN por persona al día.\n\nLas excursiones son el gasto principal: un tour al Cañón del Sumidero o a las cascadas de El Chiflón cuesta entre 400 y 800 MXN según el destino. Caminar el centro, visitar iglesias y mercados y recorrer los andadores es gratuito. Comer y hospedarse cuesta notablemente menos que en destinos de playa o ciudades grandes.",
+      "en": "San Cristóbal is one of Mexico's most affordable destinations. A backpacker can get by on 400-700 MXN a day: a hostel bed (from 150-200 MXN), market meals, and shared-van tours. A mid-range budget —a boutique hotel, restaurants, and two or three excursions— runs about 1,000-1,400 MXN per person per day.\n\nExcursions are the main expense: a tour to the Sumidero Canyon or the El Chiflón waterfalls costs between 400 and 800 MXN depending on the destination. Walking the center, visiting churches and markets, and strolling the walkways is free. Eating and lodging cost noticeably less than at beach destinations or big cities."
+    },
+    "faqs": [
+      {
+        "question": {
+          "es": "¿Cómo llegar a San Cristóbal de las Casas?",
+          "en": "How do I get to San Cristóbal de las Casas?"
+        },
+        "answer": {
+          "es": "Volando al Aeropuerto de Tuxtla Gutiérrez (TGZ), a 77 km. Desde ahí, colectivo (~240 MXN), autobús de primera clase (~200 MXN, ~1 h) o taxi privado. También llega ADO desde otras ciudades del sur y centro.",
+          "en": "By flying into Tuxtla Gutiérrez Airport (TGZ), 77 km away. From there, a shared van (~240 MXN), first-class bus (~200 MXN, ~1 h), or private taxi. ADO also arrives from other southern and central cities."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Qué excursiones hacer desde San Cristóbal?",
+          "en": "What excursions can I do from San Cristóbal?"
+        },
+        "answer": {
+          "es": "Las imperdibles son el Cañón del Sumidero (paseo en lancha), los pueblos indígenas de San Juan Chamula y Zinacantán, las cascadas de El Chiflón y los lagos de Montebello. Casi todas se hacen en tours de colectivo desde el centro.",
+          "en": "The must-dos are the Sumidero Canyon (boat ride), the indigenous towns of San Juan Chamula and Zinacantán, the El Chiflón waterfalls, and the Montebello lakes. Almost all are done on shared-van tours from downtown."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Hace frío en San Cristóbal?",
+          "en": "Is it cold in San Cristóbal?"
+        },
+        "answer": {
+          "es": "Sí, sobre todo de noche. La ciudad está a más de 2,200 m de altitud, así que aunque los días sean soleados, las noches son frías todo el año. Lleva chamarra y ropa de capas.",
+          "en": "Yes, especially at night. The city sits above 2,200 m, so even on sunny days the nights are cold year-round. Bring a jacket and layered clothing."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Cuántos días necesito en San Cristóbal?",
+          "en": "How many days do I need in San Cristóbal?"
+        },
+        "answer": {
+          "es": "Tres o cuatro: uno para la ciudad y sus andadores, mercados e iglesias, y dos o tres para las excursiones al Sumidero, Chamula y las cascadas o lagos.",
+          "en": "Three or four: one for the city with its walkways, markets, and churches, and two or three for excursions to the Sumidero, Chamula, and the waterfalls or lakes."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Es seguro San Cristóbal de las Casas?",
+          "en": "Is San Cristóbal de las Casas safe?"
+        },
+        "answer": {
+          "es": "Sí, es un destino tranquilo y muy turístico. En los pueblos indígenas como San Juan Chamula respeta las costumbres: no fotografíes el interior de la iglesia ni a las personas sin permiso.",
+          "en": "Yes, it's a calm and very touristy destination. In indigenous towns like San Juan Chamula, respect local customs: don't photograph the church interior or people without permission."
+        }
+      }
+    ]
+  },
+  "playa-del-carmen": {
+    "howToGetThere": {
+      "es": "Playa del Carmen no tiene aeropuerto propio: la puerta de entrada es el Aeropuerto Internacional de Cancún (CUN), a una hora al norte. La opción más económica y cómoda es el autobús ADO, que sale directo desde el aeropuerto cada 30 minutos por unos 240 MXN y tarda poco más de una hora hasta la terminal del centro, sobre la Quinta Avenida.\n\nOtras alternativas: shuttles compartidos (25-36 USD por persona), vans privadas (45-90 USD por vehículo) o auto de renta para explorar la Riviera Maya a tu ritmo. El nuevo aeropuerto de Tulum (TQO) también es una opción si llegas desde el sur. Desde Playa, los colectivos sobre la 307 conectan de forma barata con Tulum, Akumal y Cancún.",
+      "en": "Playa del Carmen has no airport of its own: the gateway is Cancún International Airport (CUN), an hour to the north. The cheapest and most convenient option is the ADO bus, which leaves directly from the airport every 30 minutes for around 240 MXN and takes just over an hour to the downtown terminal, on the Quinta Avenida.\n\nOther options: shared shuttles ($25-36 USD per person), private vans ($45-90 USD per vehicle), or a rental car to explore the Riviera Maya at your own pace. The new Tulum airport (TQO) is also an option if you're coming from the south. From Playa, colectivos along Highway 307 connect cheaply with Tulum, Akumal, and Cancún."
+    },
+    "whereToStay": {
+      "es": "Playa del Carmen tiene alojamiento para todos los presupuestos, casi todo cerca de la Quinta Avenida. La zona más práctica es el centro, entre la Quinta y la playa (calles 1 a 14): aquí estás a pie de restaurantes, vida nocturna, el muelle del ferry a Cozumel y las mejores playas urbanas. Hay desde hostales (camas desde 250-400 MXN) hasta hoteles boutique y resorts.\n\nPlaya Norte y la zona de Coco Beach son más tranquilas y buenas para familias. Hacia el norte está Playacar, un fraccionamiento residencial con resorts todo incluido y campo de golf. Las tarifas suben mucho en temporada alta (diciembre-marzo) y bajan en verano. Hospédate cerca de la Quinta si quieres moverte a pie.",
+      "en": "Playa del Carmen has lodging for every budget, almost all near the Quinta Avenida. The most practical area is downtown, between the Quinta and the beach (streets 1 to 14): here you're steps from restaurants, nightlife, the Cozumel ferry pier, and the best city beaches. There's everything from hostels (beds from 250-400 MXN) to boutique hotels and resorts.\n\nPlaya Norte and the Coco Beach area are quieter and good for families. To the north is Playacar, a residential development with all-inclusive resorts and a golf course. Rates rise sharply in high season (December-March) and drop in summer. Stay near the Quinta if you want to get around on foot."
+    },
+    "gettingAround": {
+      "es": "El centro de Playa del Carmen es totalmente caminable: la Quinta Avenida es un andador peatonal de 5 km y la playa está a una o dos cuadras. Para distancias mayores hay taxis (sin taxímetro: acuerda el precio antes de subir, suelen ser caros) y colectivos económicos sobre la carretera 307 hacia Tulum y Cancún. El ferry a Cozumel sale del muelle frente a la Quinta cada 30-60 minutos (redondo 250-350 MXN). Para cenotes, parques (Xcaret, Xplor) y excursiones, lo más cómodo es rentar auto o tomar tours.",
+      "en": "Downtown Playa del Carmen is completely walkable: the Quinta Avenida is a 5 km pedestrian street and the beach is a block or two away. For longer distances there are taxis (no meter: agree the fare before getting in, they're usually expensive) and cheap colectivos along Highway 307 toward Tulum and Cancún. The ferry to Cozumel leaves from the pier by the Quinta every 30-60 minutes (round trip 250-350 MXN). For cenotes, parks (Xcaret, Xplor), and excursions, it's easiest to rent a car or take tours."
+    },
+    "foodScene": {
+      "es": "Playa del Carmen tiene una de las escenas gastronómicas más internacionales de la Riviera Maya, fruto de su comunidad multicultural: encontrarás cocina italiana, argentina, japonesa y mexicana de autor, sobre todo en la Quinta Avenida y la zona de la calle Corazón. Los precios frente al paseo son altos; para comer auténtico y barato, aléjate unas cuadras de la Quinta hacia el poniente, donde están las taquerías y loncherías que frecuentan los locales.\n\nNo te pierdas los tacos al pastor, el marisco caribeño (ceviche, aguachile, pescado a la talla) y las marquesitas como postre. La cocina yucateca está presente con cochinita pibil y panuchos. Muchos restaurantes turísticos añaden propina automática y cobran en dólares: revisa la cuenta y paga en pesos para mejor tipo de cambio.",
+      "en": "Playa del Carmen has one of the Riviera Maya's most international food scenes, a product of its multicultural community: you'll find Italian, Argentine, Japanese, and chef-driven Mexican cuisine, especially on the Quinta Avenida and the Calle Corazón area. Prices along the promenade are high; to eat authentically and cheaply, head a few blocks west of the Quinta, where the taquerías and loncherías frequented by locals are.\n\nDon't miss tacos al pastor, Caribbean seafood (ceviche, aguachile, grilled fish), and marquesitas for dessert. Yucatecan cooking is present with cochinita pibil and panuchos. Many tourist restaurants add automatic gratuity and charge in dollars: check the bill and pay in pesos for a better exchange rate."
+    },
+    "bestTime": {
+      "es": "La mejor época para Playa del Carmen es de noviembre a abril: clima seco, calor agradable y, sobre todo, las playas más limpias, ya que el sargazo disminuye desde finales de octubre. Noviembre y principios de diciembre combinan buen clima con menos gente, antes del pico de Navidad y Semana Santa.\n\nDe abril a octubre puede llegar el sargazo, un alga parda que afecta las playas del Caribe de forma variable; los cenotes, al ser de agua dulce, nunca se ven afectados. Septiembre y octubre son el pico de la temporada de huracanes del Atlántico, con buenas ofertas pero más riesgo de lluvias. Conviene revisar reportes de sargazo recientes antes de reservar.",
+      "en": "The best time for Playa del Carmen is November to April: dry weather, pleasant heat, and, above all, the cleanest beaches, since sargassum eases from late October. November and early December combine good weather with fewer people, before the Christmas and Holy Week peak.\n\nFrom April to October sargassum can arrive, a brown seaweed that affects Caribbean beaches to varying degrees; cenotes, being freshwater, are never affected. September and October are the peak of the Atlantic hurricane season, with good deals but more rain risk. It's worth checking recent sargassum reports before booking."
+    },
+    "dailyCost": {
+      "es": "Playa del Carmen es un destino de la Riviera Maya con precios medios-altos. Un viajero de presupuesto que se hospeda en hostal, come fuera de la Quinta Avenida y se mueve a pie o en colectivo puede arreglárselas con 800-1,200 MXN al día. Un presupuesto de gama media (hotel cómodo, restaurantes, una excursión a Cozumel o a un cenote) ronda 2,000-3,500 MXN diarios por persona.\n\nLos gastos que más suben son los restaurantes de la Quinta Avenida, los taxis y las excursiones (parques como Xcaret cuestan varios miles de pesos). Para ahorrar: come donde comen los locales unas calles tierra adentro, usa colectivos en lugar de taxis, lleva efectivo y agrupa las visitas a cenotes y ruinas en días con auto rentado.",
+      "en": "Playa del Carmen is a Riviera Maya destination with mid-to-high prices. A budget traveler staying in a hostel, eating away from the Quinta Avenida, and getting around on foot or by colectivo can manage on 800-1,200 MXN a day. A mid-range budget (a comfortable hotel, restaurants, a trip to Cozumel or a cenote) runs about 2,000-3,500 MXN per person daily.\n\nThe biggest costs are Quinta Avenida restaurants, taxis, and excursions (parks like Xcaret cost several thousand pesos). To save: eat where locals eat a few blocks inland, use colectivos instead of taxis, carry cash, and group cenote and ruins visits into days with a rental car."
+    },
+    "faqs": [
+      {
+        "question": {
+          "es": "¿Cómo llegar de Cancún a Playa del Carmen?",
+          "en": "How do I get from Cancún to Playa del Carmen?"
+        },
+        "answer": {
+          "es": "El ADO sale directo del aeropuerto de Cancún cada 30 minutos por unos 240 MXN y tarda poco más de una hora. También hay shuttles compartidos (25-36 USD) y vans privadas (45-90 USD por vehículo).",
+          "en": "The ADO leaves directly from Cancún airport every 30 minutes for around 240 MXN and takes just over an hour. There are also shared shuttles ($25-36 USD) and private vans ($45-90 USD per vehicle)."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Vale la pena el viaje a Cozumel desde Playa?",
+          "en": "Is the trip to Cozumel from Playa worth it?"
+        },
+        "answer": {
+          "es": "Sí, sobre todo si te gusta el buceo y el esnórquel: Cozumel tiene arrecifes de clase mundial. El ferry sale frente a la Quinta cada 30-60 minutos, tarda 35-45 minutos y el viaje redondo cuesta 250-350 MXN.",
+          "en": "Yes, especially if you like diving and snorkeling: Cozumel has world-class reefs. The ferry leaves by the Quinta every 30-60 minutes, takes 35-45 minutes, and the round trip costs 250-350 MXN."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Cuándo hay sargazo en Playa del Carmen?",
+          "en": "When is there sargassum in Playa del Carmen?"
+        },
+        "answer": {
+          "es": "Sobre todo de abril a octubre, de forma variable. De noviembre a marzo las playas suelen estar limpias. Los cenotes nunca se ven afectados. Revisa reportes recientes antes de reservar.",
+          "en": "Mostly from April to October, to varying degrees. From November to March the beaches are usually clean. Cenotes are never affected. Check recent reports before booking."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Playa del Carmen o Tulum?",
+          "en": "Playa del Carmen or Tulum?"
+        },
+        "answer": {
+          "es": "Playa es más urbana, conectada y económica, con vida nocturna y el ferry a Cozumel. Tulum es más boho-chic y caro, con ruinas frente al mar. Muchos viajeros combinan ambos, ya que están a una hora por la 307.",
+          "en": "Playa is more urban, connected, and affordable, with nightlife and the Cozumel ferry. Tulum is more boho-chic and expensive, with ruins facing the sea. Many travelers combine both, since they're an hour apart on Highway 307."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Cuántos días necesito en Playa del Carmen?",
+          "en": "How many days do I need in Playa del Carmen?"
+        },
+        "answer": {
+          "es": "Tres o cuatro como base: tiempo para disfrutar la playa y la Quinta Avenida y para hacer excursiones a Cozumel, cenotes, Akumal o Tulum.",
+          "en": "Three or four as a base: time to enjoy the beach and the Quinta Avenida and to take excursions to Cozumel, cenotes, Akumal, or Tulum."
+        }
+      }
+    ]
+  },
+  "bacalar": {
+    "howToGetThere": {
+      "es": "El aeropuerto más cercano a Bacalar es el de Chetumal (CTM), a unos 40-45 minutos en auto, con vuelos nacionales desde Ciudad de México. La mayoría de los viajeros, sin embargo, llega volando a Cancún (CUN) y tomando el autobús ADO hacia el sur: el trayecto Cancún-Bacalar dura entre 4.5 y 5.5 horas y cuesta aproximadamente 450-700 MXN. Desde Tulum son unas 3 horas en ADO. La nueva línea del Tren Maya conecta Cancún, Tulum y Chetumal con estación en Bacalar, lo que ha hecho mucho más cómodo el acceso. Si vienes manejando, la carretera federal 307 desde la Riviera Maya está en buen estado y es la ruta directa. Renta de auto desde Chetumal o Cancún ronda los 600-1,000 MXN por día.",
+      "en": "The closest airport to Bacalar is Chetumal (CTM), about 40-45 minutes away by car, with domestic flights from Mexico City. Most travelers, though, fly into Cancún (CUN) and take the ADO bus south: the Cancún-Bacalar trip takes 4.5 to 5.5 hours and costs roughly 450-700 MXN. From Tulum it's about 3 hours by ADO. The new Tren Maya line connects Cancún, Tulum, and Chetumal with a station at Bacalar, making access much easier. If you're driving, federal highway 307 from the Riviera Maya is in good shape and is the direct route. Car rental from Chetumal or Cancún runs about 600-1,000 MXN per day."
+    },
+    "whereToStay": {
+      "es": "Bacalar ofrece tres zonas claras. El centro del pueblo, alrededor del zócalo y el fuerte, concentra hostales y hoteles económicos a precios amigables (300-800 MXN la noche), ideal si buscas vida de pueblo y caminar a restaurantes. La orilla de la laguna, sobre la avenida Costera, reúne hoteles boutique y cabañas con muelle propio y acceso directo al agua (1,500-4,000 MXN), perfectos para amaneceres en kayak. Más al sur, cerca de Los Rápidos, hay eco-lodges tranquilos rodeados de naturaleza. Reserva con anticipación en temporada alta (diciembre-abril) y fines de semana largos, cuando el pueblo se llena. Para vivir la laguna al máximo, conviene un hotel con acceso al agua aunque cueste más.",
+      "en": "Bacalar has three clear areas. The town center, around the main square and the fort, concentrates hostels and budget hotels at friendly prices (300-800 MXN a night), ideal if you want village life and to walk to restaurants. The lagoon shore, along Avenida Costera, gathers boutique hotels and cabins with their own docks and direct water access (1,500-4,000 MXN), perfect for sunrise kayaking. Farther south, near Los Rápidos, there are quiet eco-lodges surrounded by nature. Book ahead in high season (December-April) and long weekends, when the town fills up. To enjoy the lagoon to the fullest, a hotel with water access is worth the extra cost."
+    },
+    "gettingAround": {
+      "es": "El centro de Bacalar es compacto y se camina sin problema: del zócalo al fuerte y al Cenote Zací hay pocos minutos. Para los balnearios, cenotes y Los Rápidos, que están a entre 3 y 12 km al sur sobre la Costera, conviene bicicleta (renta ~150 MXN/día), taxi o auto. Los taxis no usan taxímetro, así que pacta el precio antes de subir; un trayecto local cuesta 40-100 MXN. La forma más bonita de moverse es sobre el agua: muchos hoteles prestan kayaks y paddleboards, y hay tours en velero o lancha compartida que recorren los puntos icónicos de la laguna (Canal de los Piratas, Cenote Negro, isla de los pájaros) por 350-600 MXN por persona.",
+      "en": "Bacalar's center is compact and easily walkable: it's just a few minutes from the square to the fort and Cenote Zací. For the swimming spots, cenotes, and Los Rápidos, which lie 3 to 12 km south along the Costera, a bike (rental ~150 MXN/day), taxi, or car is best. Taxis don't use meters, so agree on the price before getting in; a local ride costs 40-100 MXN. The prettiest way to get around is on the water: many hotels lend kayaks and paddleboards, and there are shared sailboat or boat tours covering the lagoon's iconic spots (Pirates' Channel, Cenote Negro, bird island) for 350-600 MXN per person."
+    },
+    "foodScene": {
+      "es": "La cocina de Bacalar mezcla el recetario yucateco con pescados y mariscos de la laguna y el Caribe. En los balnearios y palapas a orilla del agua se come pescado frito entero, ceviche y aguachile mirando la laguna. En el pueblo encontrarás panuchos, salbutes y cochinita pibil en cocinas económicas a muy buen precio, y por la noche puestos de marquesitas y elotes en el zócalo. Han surgido cafés de especialidad y restaurantes con propuesta de autor sobre la Costera, de la mano del turismo boutique. No te pierdas un café o una michelada al atardecer en un muelle, una de las experiencias clásicas del lugar. Lleva efectivo: muchos sitios pequeños no aceptan tarjeta.",
+      "en": "Bacalar's cooking blends the Yucatecan repertoire with fish and seafood from the lagoon and the Caribbean. At the lakeside palapas and swimming clubs you'll eat whole fried fish, ceviche, and aguachile looking out over the lagoon. In town you'll find panuchos, salbutes, and cochinita pibil at budget kitchens for great prices, and at night marquesita and elote stalls on the square. Specialty cafés and chef-driven restaurants have popped up along the Costera alongside boutique tourism. Don't miss a coffee or a michelada at sunset on a dock, one of the classic local experiences. Bring cash: many small spots don't take cards."
+    },
+    "bestTime": {
+      "es": "La mejor época para Bacalar es la temporada seca, de noviembre a abril, cuando el sol saca los siete tonos de azul de la laguna y hay poco viento por la mañana —el mejor momento para kayak y paddleboard, con el agua como espejo—. De junio a octubre es temporada de lluvias y huracanes: los chubascos y el viento pueden enturbiar el agua y apagar los colores, aunque hay menos gente y mejores precios. Los fines de semana largos y las vacaciones de Navidad y Semana Santa son los más concurridos, con visitantes de Chetumal y la Riviera Maya. Para fotos de la laguna en su esplendor, ve entre semana y temprano, antes de que el viento levante el agua.",
+      "en": "The best time for Bacalar is the dry season, November to April, when the sun brings out the lagoon's seven shades of blue and mornings are calm —the best moment for kayaking and paddleboarding, with the water like glass. June to October is the rainy and hurricane season: downpours and wind can cloud the water and dull the colors, though there are fewer people and better prices. Long weekends and the Christmas and Easter holidays are busiest, with visitors from Chetumal and the Riviera Maya. For photos of the lagoon at its best, go midweek and early, before the wind stirs the water."
+    },
+    "dailyCost": {
+      "es": "Bacalar es más económico que la Riviera Maya. Un viajero mochilero puede arreglárselas con 600-900 MXN al día (hostal, comida en cocinas económicas, una bici). Un presupuesto medio ronda los 1,500-2,800 MXN diarios: hotel boutique o cabaña con laguna, comidas en restaurantes y un tour en velero. En el rango alto, con hoteles frente al agua, tours privados y cenas de autor, puedes superar los 4,000 MXN por persona al día. Los costos clave: tour en velero compartido 350-600 MXN, entrada a balnearios y cenotes 50-150 MXN, renta de kayak 150-250 MXN. Lleva efectivo suficiente, ya que muchos balnearios y comercios no aceptan tarjeta y los cajeros pueden agotarse en temporada alta.",
+      "en": "Bacalar is cheaper than the Riviera Maya. A backpacker can manage on 600-900 MXN a day (hostel, budget-kitchen meals, a bike). A mid-range budget runs about 1,500-2,800 MXN a day: boutique hotel or lakeside cabin, restaurant meals, and a sailboat tour. At the high end, with waterfront hotels, private tours, and chef-driven dinners, you can top 4,000 MXN per person a day. Key costs: shared sailboat tour 350-600 MXN, entry to swimming spots and cenotes 50-150 MXN, kayak rental 150-250 MXN. Carry enough cash, since many swimming spots and shops don't take cards and ATMs can run dry in high season."
+    },
+    "faqs": [
+      {
+        "question": {
+          "es": "¿Cómo llego a Bacalar desde Cancún?",
+          "en": "How do I get to Bacalar from Cancún?"
+        },
+        "answer": {
+          "es": "En autobús ADO el trayecto dura 4.5-5.5 horas y cuesta 450-700 MXN, con varias salidas al día. El Tren Maya también conecta Cancún con Bacalar. Si manejas, son unas 4.5 horas por la carretera 307. Volar a Chetumal (CTM) y manejar 40 min es la opción más rápida.",
+          "en": "By ADO bus the trip takes 4.5-5.5 hours and costs 450-700 MXN, with several departures a day. The Tren Maya also connects Cancún with Bacalar. If you drive, it's about 4.5 hours via highway 307. Flying to Chetumal (CTM) and driving 40 min is the fastest option."
+        }
+      },
+      {
+        "question": {
+          "es": "¿La laguna de Bacalar es agua dulce o salada?",
+          "en": "Is the Bacalar lagoon freshwater or saltwater?"
+        },
+        "answer": {
+          "es": "Es agua dulce. Sus siete tonos de azul se deben al fondo de arena blanca y a las distintas profundidades, no a la sal. Por eso es tan importante usar bloqueador biodegradable: protege los estromatolitos, organismos vivos muy frágiles que crecen en sus orillas.",
+          "en": "It's freshwater. Its seven shades of blue come from the white-sand bottom and varying depths, not from salt. That's why biodegradable sunscreen matters so much: it protects the stromatolites, very fragile living organisms that grow along its shores."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Cuántos días recomiendan en Bacalar?",
+          "en": "How many days do you recommend in Bacalar?"
+        },
+        "answer": {
+          "es": "Dos o tres días bastan para tomar un tour en velero, nadar en el Cenote Azul, conocer Los Rápidos y disfrutar el ritmo lento del pueblo. Muchos lo combinan con Tulum o con un cruce a Chetumal y la zona arqueológica de Kohunlich.",
+          "en": "Two or three days are enough to take a sailboat tour, swim at Cenote Azul, see Los Rápidos, and enjoy the town's slow pace. Many combine it with Tulum or with a trip to Chetumal and the Kohunlich archaeological site."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Bacalar es seguro para viajar?",
+          "en": "Is Bacalar safe to travel to?"
+        },
+        "answer": {
+          "es": "Sí, es uno de los destinos más tranquilos del sureste mexicano, con ambiente familiar y de pueblo. Toma las precauciones normales de cualquier viaje, lleva efectivo y, en la laguna, sigue las indicaciones de los guías y usa chaleco si no eres buen nadador.",
+          "en": "Yes, it's one of the calmest destinations in southeastern Mexico, with a family, small-town feel. Take normal travel precautions, carry cash, and on the lagoon follow the guides' instructions and wear a life vest if you're not a strong swimmer."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Qué no me puedo perder en Bacalar?",
+          "en": "What shouldn't I miss in Bacalar?"
+        },
+        "answer": {
+          "es": "El tour en velero por la laguna al amanecer, nadar en el Cenote Azul, ver los estromatolitos en Cocalitos, flotar en Los Rápidos y subir al Fuerte de San Felipe para ver la laguna desde lo alto. Cierra el día con un atardecer en un muelle.",
+          "en": "The sunrise sailboat tour on the lagoon, swimming at Cenote Azul, seeing the stromatolites at Cocalitos, floating down Los Rápidos, and climbing the Fort of San Felipe for a high view of the lagoon. End the day with a sunset on a dock."
+        }
+      }
+    ]
+  },
+  "valladolid": {
+    "howToGetThere": {
+      "es": "Valladolid está en el centro de la península de Yucatán, sobre la autopista 180D que une Cancún con Mérida, lo que la hace muy accesible. Desde Cancún (CUN), el aeropuerto más usado, el autobús ADO tarda unas 2-2.5 horas y cuesta 250-450 MXN; en auto por la autopista de cuota son unas 2 horas. Desde Mérida (MID) la distancia es similar (1.5-2 horas). El Tren Maya tiene estación en Valladolid y la conecta con Cancún, Mérida y Chichén Itzá, una opción cómoda y panorámica. La terminal de ADO está en pleno centro, a pocas cuadras del zócalo. Si tu plan incluye varios cenotes y zonas arqueológicas, rentar auto (600-1,000 MXN/día) da la mayor libertad.",
+      "en": "Valladolid sits in the center of the Yucatán Peninsula, on the 180D highway linking Cancún with Mérida, which makes it very accessible. From Cancún (CUN), the most-used airport, the ADO bus takes about 2-2.5 hours and costs 250-450 MXN; by car on the toll road it's about 2 hours. From Mérida (MID) the distance is similar (1.5-2 hours). The Tren Maya has a station in Valladolid connecting it with Cancún, Mérida, and Chichén Itzá, a comfortable, scenic option. The ADO terminal is right downtown, a few blocks from the main square. If your plan includes several cenotes and archaeological sites, renting a car (600-1,000 MXN/day) gives the most freedom."
+    },
+    "whereToStay": {
+      "es": "Valladolid tiene alojamiento para todos los bolsillos concentrado en el centro histórico, lo que permite caminar a todo. Hay hostales y posadas económicas (250-600 MXN), perfectos para mochileros que usan la ciudad como base de excursiones. En el rango medio abundan hoteles boutique en casonas coloniales restauradas con patios y albercas (1,000-2,500 MXN), muchos sobre o cerca de la Calzada de los Frailes. Para una experiencia especial, algunos hoteles tienen su propio cenote o jardines amplios. Quedarte cerca del zócalo o de la Calzada de los Frailes es lo más práctico: estarás a pasos de restaurantes, el cenote Zací y la terminal de autobuses. Reserva con tiempo en temporada alta y alrededor de los equinoccios.",
+      "en": "Valladolid has lodging for every budget, concentrated in the historic center, so you can walk everywhere. There are hostels and budget guesthouses (250-600 MXN), perfect for backpackers using the town as an excursion base. In the mid range, boutique hotels in restored colonial mansions with courtyards and pools abound (1,000-2,500 MXN), many on or near the Calzada de los Frailes. For something special, some hotels have their own cenote or large gardens. Staying near the main square or the Calzada de los Frailes is most convenient: you'll be steps from restaurants, the Zací cenote, and the bus terminal. Book early in high season and around the equinoxes."
+    },
+    "gettingAround": {
+      "es": "El centro histórico de Valladolid es plano y compacto: del zócalo a la Calzada de los Frailes y al convento de San Bernardino hay unos 10-15 minutos a pie, y el Cenote Zací está a un par de cuadras de la plaza. Para los cenotes de las afueras (Suytun a ~8 km, Oxman a ~5 km) y para Chichén Itzá (~40 min) o Ek Balam (~30 min) necesitas auto, taxi o colectivo. Los colectivos hacia Chichén Itzá y los pueblos cercanos salen de calles específicas del centro por 40-60 MXN. Los taxis urbanos cuestan 30-60 MXN. También se rentan bicicletas, una forma agradable de llegar a Oxman. Para varios cenotes en un día, el auto rentado o un tour es lo más eficiente.",
+      "en": "Valladolid's historic center is flat and compact: it's a 10-15 minute walk from the square to the Calzada de los Frailes and the San Bernardino convent, and Cenote Zací is a couple of blocks off the plaza. For the cenotes outside town (Suytun ~8 km, Oxman ~5 km) and for Chichén Itzá (~40 min) or Ek Balam (~30 min) you'll need a car, taxi, or colectivo. Colectivos to Chichén Itzá and nearby villages leave from specific downtown streets for 40-60 MXN. City taxis cost 30-60 MXN. Bicycles are also for rent, a pleasant way to reach Oxman. For several cenotes in one day, a rental car or a tour is most efficient."
+    },
+    "foodScene": {
+      "es": "Valladolid es uno de los mejores lugares para comer cocina yucateca tradicional. Sus platillos emblema son la cochinita pibil, los lomitos de Valladolid (cerdo en salsa de jitomate con huevo) y la longaniza ahumada de la región, que se come en tacos. En el mercado municipal y en las cocinas económicas alrededor del centro encuentras desayunos y comidas auténticas a precios muy accesibles. La Calzada de los Frailes concentra restaurantes más cuidados y cafés de especialidad en casonas restauradas. No te pierdas las marquesitas, los panuchos y salbutes, y un agua fresca de chaya o de jamaica. Por la noche el zócalo se llena de puestos y ambiente familiar. Lleva efectivo para los puestos del mercado.",
+      "en": "Valladolid is one of the best places to eat traditional Yucatecan food. Its signature dishes are cochinita pibil, lomitos de Valladolid (pork in tomato sauce with egg), and the region's smoked longaniza, eaten in tacos. At the municipal market and the budget kitchens around the center you'll find authentic breakfasts and lunches at very accessible prices. The Calzada de los Frailes gathers more polished restaurants and specialty cafés in restored mansions. Don't miss marquesitas, panuchos and salbutes, and a chaya or hibiscus agua fresca. At night the main square fills with stalls and a family atmosphere. Bring cash for the market stalls."
+    },
+    "bestTime": {
+      "es": "La mejor temporada para Valladolid es de noviembre a marzo, cuando el clima es más fresco y seco y se camina el centro con comodidad; también es la mejor época para visitar Chichén Itzá sin el calor extremo. Los equinoccios de primavera (alrededor del 21 de marzo) y otoño (22-23 de septiembre) atraen multitudes a Chichén Itzá para ver el descenso de la serpiente de luz en El Castillo: es espectacular, pero implica mucha gente y reservar con anticipación. Abril y mayo son los meses más calurosos de Yucatán; visita los cenotes y sitios arqueológicos temprano. De junio a octubre hay lluvias por la tarde, breves pero intensas, y precios más bajos.",
+      "en": "The best season for Valladolid is November to March, when the weather is cooler and drier and you can walk the center comfortably; it's also the best time to visit Chichén Itzá without extreme heat. The spring (around March 21) and autumn (September 22-23) equinoxes draw crowds to Chichén Itzá to see the serpent of light descend El Castillo: it's spectacular, but means big crowds and booking ahead. April and May are Yucatán's hottest months; visit cenotes and archaeological sites early. June to October brings afternoon rains, brief but intense, and lower prices."
+    },
+    "dailyCost": {
+      "es": "Valladolid es un destino económico. Un mochilero puede viajar con 550-850 MXN al día (hostal, comidas en el mercado, colectivos). Un presupuesto medio ronda los 1,200-2,400 MXN diarios: hotel boutique en casona colonial, comidas en restaurantes, entradas a cenotes y una excursión a Chichén Itzá. En el rango alto, con hoteles de lujo y tours privados, puedes superar los 3,500 MXN por persona. Costos de referencia: entrada a Chichén Itzá ~614 MXN (extranjeros) más el costo estatal, cenotes 80-150 MXN, colectivo a Chichén Itzá 40-60 MXN, renta de bici ~120 MXN/día. Muchos sitios pequeños y el mercado solo aceptan efectivo, así que lleva suficiente.",
+      "en": "Valladolid is an affordable destination. A backpacker can travel on 550-850 MXN a day (hostel, market meals, colectivos). A mid-range budget runs about 1,200-2,400 MXN a day: boutique hotel in a colonial mansion, restaurant meals, cenote entries, and a Chichén Itzá excursion. At the high end, with luxury hotels and private tours, you can top 3,500 MXN per person. Reference costs: Chichén Itzá entry ~614 MXN (foreigners) plus the state fee, cenotes 80-150 MXN, colectivo to Chichén Itzá 40-60 MXN, bike rental ~120 MXN/day. Many small spots and the market take cash only, so bring enough."
+    },
+    "faqs": [
+      {
+        "question": {
+          "es": "¿Vale la pena quedarse en Valladolid para ver Chichén Itzá?",
+          "en": "Is it worth staying in Valladolid to see Chichén Itzá?"
+        },
+        "answer": {
+          "es": "Mucho. Estás a solo ~40 minutos, así que puedes llegar a la apertura (8:00) y recorrer la zona antes de que lleguen los tours masivos de Cancún hacia las 11:00, con menos calor y mejores fotos. Hospedarte en Cancún para ver Chichén Itzá implica 2 horas de viaje cada lado.",
+          "en": "Very much. You're only ~40 minutes away, so you can arrive at opening (8:00) and tour the site before the mass tours from Cancún arrive around 11:00, with less heat and better photos. Staying in Cancún to see Chichén Itzá means 2 hours of travel each way."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Qué cenotes puedo visitar desde Valladolid?",
+          "en": "Which cenotes can I visit from Valladolid?"
+        },
+        "answer": {
+          "es": "El Cenote Zací está en pleno centro. A pocos minutos están Suytun (famoso por su plataforma y el rayo de luz), Oxman (con tirolesa y alberca), y los cenotes de Dzitnup: Samulá y X'kekén. Hacia Chichén Itzá queda el Cenote Ik Kil. Lleva traje de baño, toalla y bloqueador biodegradable.",
+          "en": "Cenote Zací is right in the center. Minutes away are Suytun (famous for its platform and beam of light), Oxman (with a zipline and pool), and the Dzitnup cenotes: Samulá and X'kekén. Toward Chichén Itzá lies Cenote Ik Kil. Bring a swimsuit, towel, and biodegradable sunscreen."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Cuántos días necesito en Valladolid?",
+          "en": "How many days do I need in Valladolid?"
+        },
+        "answer": {
+          "es": "Dos o tres días son ideales: uno para el centro histórico, la Calzada de los Frailes y el Cenote Zací; otro para Chichén Itzá y un cenote; y un tercero para Ek Balam o más cenotes. Es una base excelente para explorar el oriente de Yucatán con calma.",
+          "en": "Two or three days are ideal: one for the historic center, the Calzada de los Frailes, and Cenote Zací; another for Chichén Itzá and a cenote; and a third for Ek Balam or more cenotes. It's an excellent base for exploring eastern Yucatán at a relaxed pace."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Cómo llego a Chichén Itzá desde Valladolid sin tour?",
+          "en": "How do I get to Chichén Itzá from Valladolid without a tour?"
+        },
+        "answer": {
+          "es": "Puedes tomar un colectivo o un autobús de segunda clase desde el centro por 40-60 MXN, o manejar ~40 minutos por la carretera libre. Sal temprano para llegar a la apertura. También hay servicio del Tren Maya. Compra tu boleto de entrada en taquilla (efectivo o tarjeta).",
+          "en": "You can take a colectivo or a second-class bus from downtown for 40-60 MXN, or drive ~40 minutes on the free road. Leave early to arrive at opening. There's also Tren Maya service. Buy your entry ticket at the box office (cash or card)."
+        }
+      },
+      {
+        "question": {
+          "es": "¿Valladolid es seguro?",
+          "en": "Is Valladolid safe?"
+        },
+        "answer": {
+          "es": "Sí, es una ciudad muy tranquila y de las más seguras de la península, agradable para caminar de día y de noche por el centro. Toma las precauciones habituales, cuida tus cosas en cenotes y sitios concurridos y acuerda tarifas de taxi por adelantado.",
+          "en": "Yes, it's a very calm town and one of the safest on the peninsula, pleasant for walking day and night in the center. Take the usual precautions, watch your things at cenotes and busy sites, and agree on taxi fares in advance."
+        }
+      }
+    ]
   }
 }

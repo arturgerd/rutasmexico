@@ -2,7 +2,7 @@ import "./globals.css";
 import Script from "next/script";
 import ConsentManager from "@/components/layout/ConsentManager";
 import { inter, outfit } from "@/lib/fonts";
-import { clientEnv } from "@/lib/env";
+import { clientEnv, adsenseEnabled } from "@/lib/env";
 
 export const metadata = {
   metadataBase: new URL("https://rutasmexico.com.mx"),
@@ -144,13 +144,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             Ads render in explicit <ins class="adsbygoogle"> slots placed by editorial code —
             we do NOT enable auto-ads, which previously injected unlabeled "Publicidad"
             placeholders and contributed to the 2026-04-15 rejection. */}
-        <Script
-          id="adsense-script"
-          strategy="afterInteractive"
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
-          crossOrigin="anonymous"
-        />
+        {adsenseEnabled && (
+          <Script
+            id="adsense-script"
+            strategy="afterInteractive"
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+            crossOrigin="anonymous"
+          />
+        )}
+        {/* Ownership meta tag is kept always: it's an inert verification signal with no
+            JS side effects, so AdSense can confirm the site when we re-apply. */}
         <meta name="google-adsense-account" content={ADSENSE_CLIENT} />
 
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -9,8 +9,22 @@ import Icon from "@/components/ui/Icon";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
   const t = useTranslations("common");
   const locale = useLocale();
+
+  // Close the mobile menu on Escape and return focus to the toggle button (a11y).
+  useEffect(() => {
+    if (!mobileMenuOpen) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setMobileMenuOpen(false);
+        menuButtonRef.current?.focus();
+      }
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [mobileMenuOpen]);
 
   const homeLabel = locale === "es" ? "Inicio" : "Home";
   const flightLabel = locale === "es" ? "Vuelos" : "Flights";
@@ -94,6 +108,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
+            ref={menuButtonRef}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="md:hidden p-3 -mr-3 min-w-[44px] min-h-[44px] inline-flex items-center justify-center text-arena-700 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500"
             aria-label={mobileMenuOpen ? "Cerrar menú" : "Abrir menú"}

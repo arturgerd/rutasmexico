@@ -3,7 +3,9 @@ import contentData from "@/data/destinations-content.json";
 export interface ExpandedSection {
   es: string;
   en: string;
-  fr: string;
+  // French is deprecated (Locale is es/en; /fr redirects to /es) but legacy
+  // content entries still carry it, so keep it optional rather than required.
+  fr?: string;
 }
 
 export interface ExpandedFaq {

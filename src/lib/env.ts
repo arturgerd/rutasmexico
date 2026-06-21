@@ -18,6 +18,11 @@ const ClientEnvSchema = z.object({
   // Supabase is configured but currently unused; kept optional for future use
   NEXT_PUBLIC_SUPABASE_URL: z.string().url().optional(),
   NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().min(20).optional(),
+  // Master switch for Google AdSense. The account was rejected on 2026-04-15,
+  // so the adsbygoogle.js script and all <ins> ad slots stay OFF until it's
+  // approved — loading them while unapproved only throws "config is not valid"
+  // in the console. Set to "true" in the environment once AdSense approves.
+  NEXT_PUBLIC_ADSENSE_ENABLED: z.enum(["true", "false"]).optional(),
 });
 
 const ServerEnvSchema = z.object({
@@ -29,7 +34,11 @@ export const clientEnv = ClientEnvSchema.parse({
   NEXT_PUBLIC_GA_ID: process.env.NEXT_PUBLIC_GA_ID,
   NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
   NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+  NEXT_PUBLIC_ADSENSE_ENABLED: process.env.NEXT_PUBLIC_ADSENSE_ENABLED,
 });
+
+// Convenience flag — AdSense renders only when explicitly enabled.
+export const adsenseEnabled = clientEnv.NEXT_PUBLIC_ADSENSE_ENABLED === "true";
 
 // Server env is only validated when running on the server. During the browser
 // bundle pass, `process.env.FORMSPREE_ID` is undefined (correctly) and we

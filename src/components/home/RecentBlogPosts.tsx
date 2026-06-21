@@ -1,18 +1,16 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
-import { useLocale } from "next-intl";
+import { getLocale } from "next-intl/server";
 import { BlogPost } from "@/types/blog";
 import { l, t3 } from "@/lib/utils";
-import { getCategoryLabel, getCategoryColor } from "@/components/blog/BlogCard";
+import { getCategoryLabel, getCategoryColor } from "@/lib/blog-category";
 
 interface RecentBlogPostsProps {
   posts: BlogPost[];
 }
 
-export default function RecentBlogPosts({ posts }: RecentBlogPostsProps) {
-  const locale = useLocale();
+export default async function RecentBlogPosts({ posts }: RecentBlogPostsProps) {
+  const locale = await getLocale();
 
   const formatDate = (dateStr: string) => {
     const date = new Date(dateStr + "T12:00:00");
@@ -75,7 +73,7 @@ export default function RecentBlogPosts({ posts }: RecentBlogPostsProps) {
                 <p className="text-arena-500 text-sm mt-2 line-clamp-2">
                   {l(post.excerpt, locale)}
                 </p>
-                <div className="flex items-center justify-between mt-4 text-xs text-arena-400">
+                <div className="flex items-center justify-between mt-4 text-xs text-arena-700">
                   <span>{formatDate(post.publishedDate)}</span>
                   <span>
                     {post.readingTime} {t3(locale, "min de lectura", "min read", "min de lecture")}

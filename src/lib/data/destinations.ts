@@ -1,7 +1,12 @@
 import destinationsData from "@/data/destinations.json";
 import { Destination } from "@/types/destination";
+import { destinationSchema, validateData } from "./schemas";
 
-const destinations = destinationsData as Destination[];
+const destinations = validateData(
+  destinationSchema.array(),
+  destinationsData as Destination[],
+  "destinations.json"
+);
 
 export async function getAllDestinations(): Promise<Destination[]> {
   return destinations;

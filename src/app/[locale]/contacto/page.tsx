@@ -30,7 +30,7 @@ export default function ContactoPage({ params: { locale } }: { params: { locale:
     <div className="min-h-screen bg-arena-50">
       <div className="container-custom py-12 max-w-4xl">
         {/* Breadcrumb */}
-        <nav className="text-sm text-arena-400 mb-8">
+        <nav className="text-sm text-arena-700 mb-8">
           <Link href={`/${locale}`} className="hover:text-terracotta-500 transition-colors">
             {t3(locale, "Inicio", "Home", "Accueil")}
           </Link>
@@ -68,7 +68,7 @@ export default function ContactoPage({ params: { locale } }: { params: { locale:
                   >
                     contacto@rutasmexico.com.mx
                   </a>
-                  <p className="text-sm text-arena-400 mt-1">
+                  <p className="text-sm text-arena-700 mt-1">
                     {t3(locale,
                       "Respondemos en 24-48 horas",
                       "We respond within 24-48 hours",

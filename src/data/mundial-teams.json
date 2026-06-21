@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "argentina",
+    "name": {
+      "es": "Argentina",
+      "en": "Argentina"
+    },
+    "flag": "🇦🇷",
+    "code": "ar",
+    "group": "J",
+    "fifaRank": 1,
+    "attack": 94,
+    "defense": 90,
+    "possession": 58,
+    "cornersAvg": 6.1,
+    "colors": [
+      "#6c9ce6",
+      "#0b3d91"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "spain",
+    "name": {
+      "es": "España",
+      "en": "Spain"
+    },
+    "flag": "🇪🇸",
+    "code": "es",
+    "group": "H",
+    "fifaRank": 2,
+    "attack": 92,
+    "defense": 88,
+    "possession": 62,
+    "cornersAvg": 7.0,
+    "colors": [
+      "#c60b1e",
+      "#f1c400"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "france",
+    "name": {
+      "es": "Francia",
+      "en": "France"
+    },
+    "flag": "🇫🇷",
+    "code": "fr",
+    "group": "I",
+    "fifaRank": 3,
+    "attack": 93,
+    "defense": 89,
+    "possession": 57,
+    "cornersAvg": 6.3,
+    "colors": [
+      "#1f2d6b",
+      "#ce1126"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "england",
+    "name": {
+      "es": "Inglaterra",
+      "en": "England"
+    },
+    "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "code": "gb-eng",
+    "group": "L",
+    "fifaRank": 4,
+    "attack": 90,
+    "defense": 87,
+    "possession": 55,
+    "cornersAvg": 5.8,
+    "colors": [
+      "#cf142b",
+      "#1a2a6c"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "portugal",
+    "name": {
+      "es": "Portugal",
+      "en": "Portugal"
+    },
+    "flag": "🇵🇹",
+    "code": "pt",
+    "group": "K",
+    "fifaRank": 5,
+    "attack": 90,
+    "defense": 86,
+    "possession": 56,
+    "cornersAvg": 5.8,
+    "colors": [
+      "#b3122f",
+      "#14823f"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "brazil",
+    "name": {
+      "es": "Brasil",
+      "en": "Brazil"
+    },
+    "flag": "🇧🇷",
+    "code": "br",
+    "group": "C",
+    "fifaRank": 6,
+    "attack": 91,
+    "defense": 85,
+    "possession": 60,
+    "cornersAvg": 6.5,
+    "colors": [
+      "#f6d100",
+      "#1f7a3f"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 1,
+      "goals": 1,
+      "conceded": 1
+    }
+  },
+  {
+    "id": "morocco",
+    "name": {
+      "es": "Marruecos",
+      "en": "Morocco"
+    },
+    "flag": "🇲🇦",
+    "code": "ma",
+    "group": "C",
+    "fifaRank": 7,
+    "attack": 84,
+    "defense": 86,
+    "possession": 48,
+    "cornersAvg": 4.8,
+    "colors": [
+      "#b3122f",
+      "#0a6b3b"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 1,
+      "goals": 1,
+      "conceded": 1
+    }
+  },
+  {
+    "id": "netherlands",
+    "name": {
+      "es": "Países Bajos",
+      "en": "Netherlands"
+    },
+    "flag": "🇳🇱",
+    "code": "nl",
+    "group": "F",
+    "fifaRank": 8,
+    "attack": 88,
+    "defense": 84,
+    "possession": 58,
+    "cornersAvg": 6.0,
+    "colors": [
+      "#ff6a13",
+      "#14233f"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 1,
+      "goals": 2,
+      "conceded": 2
+    }
+  },
+  {
+    "id": "belgium",
+    "name": {
+      "es": "Bélgica",
+      "en": "Belgium"
+    },
+    "flag": "🇧🇪",
+    "code": "be",
+    "group": "G",
+    "fifaRank": 9,
+    "attack": 86,
+    "defense": 82,
+    "possession": 54,
+    "cornersAvg": 5.5,
+    "colors": [
+      "#d4122a",
+      "#e6b800"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "germany",
+    "name": {
+      "es": "Alemania",
+      "en": "Germany"
+    },
+    "flag": "🇩🇪",
+    "code": "de",
+    "group": "E",
+    "fifaRank": 10,
+    "attack": 89,
+    "defense": 86,
+    "possession": 56,
+    "cornersAvg": 6.2,
+    "colors": [
+      "#1a1a1a",
+      "#ffce00"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 1,
+      "goals": 7,
+      "conceded": 1
+    }
+  },
+  {
+    "id": "croatia",
+    "name": {
+      "es": "Croacia",
+      "en": "Croatia"
+    },
+    "flag": "🇭🇷",
+    "code": "hr",
+    "group": "L",
+    "fifaRank": 11,
+    "attack": 85,
+    "defense": 84,
+    "possession": 52,
+    "cornersAvg": 5.2,
+    "colors": [
+      "#d4122a",
+      "#1f4fb0"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "colombia",
+    "name": {
+      "es": "Colombia",
+      "en": "Colombia"
+    },
+    "flag": "🇨🇴",
+    "code": "co",
+    "group": "K",
+    "fifaRank": 13,
+    "attack": 84,
+    "defense": 80,
+    "possession": 52,
+    "cornersAvg": 5.0,
+    "colors": [
+      "#f5d000",
+      "#00379b"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "mexico",
+    "name": {
+      "es": "México",
+      "en": "Mexico"
+    },
+    "flag": "🇲🇽",
+    "code": "mx",
+    "group": "A",
+    "fifaRank": 14,
+    "attack": 78,
+    "defense": 76,
+    "possession": 50,
+    "cornersAvg": 4.5,
+    "colors": [
+      "#006847",
+      "#ce1126"
+    ],
+    "host": true,
+    "wc2026": {
+      "played": 2,
+      "goals": 3,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "senegal",
+    "name": {
+      "es": "Senegal",
+      "en": "Senegal"
+    },
+    "flag": "🇸🇳",
+    "code": "sn",
+    "group": "I",
+    "fifaRank": 15,
+    "attack": 82,
+    "defense": 81,
+    "possession": 48,
+    "cornersAvg": 4.2,
+    "colors": [
+      "#14823f",
+      "#e31b23"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "uruguay",
+    "name": {
+      "es": "Uruguay",
+      "en": "Uruguay"
+    },
+    "flag": "🇺🇾",
+    "code": "uy",
+    "group": "H",
+    "fifaRank": 16,
+    "attack": 83,
+    "defense": 84,
+    "possession": 46,
+    "cornersAvg": 4.0,
+    "colors": [
+      "#4a9fd6",
+      "#0b2e5e"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "usa",
+    "name": {
+      "es": "Estados Unidos",
+      "en": "United States"
+    },
+    "flag": "🇺🇸",
+    "code": "us",
+    "group": "D",
+    "fifaRank": 17,
+    "attack": 80,
+    "defense": 78,
+    "possession": 52,
+    "cornersAvg": 5.5,
+    "colors": [
+      "#1f2f6b",
+      "#b22234"
+    ],
+    "host": true,
+    "wc2026": {
+      "played": 1,
+      "goals": 4,
+      "conceded": 1
+    }
+  },
+  {
+    "id": "japan",
+    "name": {
+      "es": "Japón",
+      "en": "Japan"
+    },
+    "flag": "🇯🇵",
+    "code": "jp",
+    "group": "F",
+    "fifaRank": 18,
+    "attack": 82,
+    "defense": 80,
+    "possession": 54,
+    "cornersAvg": 5.8,
+    "colors": [
+      "#0a2a6b",
+      "#d4122a"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 1,
+      "goals": 2,
+      "conceded": 2
+    }
+  },
+  {
+    "id": "switzerland",
+    "name": {
+      "es": "Suiza",
+      "en": "Switzerland"
+    },
+    "flag": "🇨🇭",
+    "code": "ch",
+    "group": "B",
+    "fifaRank": 19,
+    "attack": 80,
+    "defense": 82,
+    "possession": 48,
+    "cornersAvg": 4.5,
+    "colors": [
+      "#d4122a",
+      "#7a0c1a"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 1,
+      "goals": 1,
+      "conceded": 1
+    }
+  },
+  {
+    "id": "iran",
+    "name": {
+      "es": "Irán",
+      "en": "Iran"
+    },
+    "flag": "🇮🇷",
+    "code": "ir",
+    "group": "G",
+    "fifaRank": 20,
+    "attack": 76,
+    "defense": 78,
+    "possession": 44,
+    "cornersAvg": 3.8,
+    "colors": [
+      "#d4122a",
+      "#14823f"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "ecuador",
+    "name": {
+      "es": "Ecuador",
+      "en": "Ecuador"
+    },
+    "flag": "🇪🇨",
+    "code": "ec",
+    "group": "E",
+    "fifaRank": 23,
+    "attack": 78,
+    "defense": 77,
+    "possession": 48,
+    "cornersAvg": 4.5,
+    "colors": [
+      "#f5d000",
+      "#00379b"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 1,
+      "goals": 0,
+      "conceded": 1
+    }
+  },
+  {
+    "id": "austria",
+    "name": {
+      "es": "Austria",
+      "en": "Austria"
+    },
+    "flag": "🇦🇹",
+    "code": "at",
+    "group": "J",
+    "fifaRank": 24,
+    "attack": 80,
+    "defense": 79,
+    "possession": 50,
+    "cornersAvg": 4.8,
+    "colors": [
+      "#d4122a",
+      "#7a0c1a"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "south_korea",
+    "name": {
+      "es": "Corea del Sur",
+      "en": "South Korea"
+    },
+    "flag": "🇰🇷",
+    "code": "kr",
+    "group": "A",
+    "fifaRank": 25,
+    "attack": 79,
+    "defense": 78,
+    "possession": 50,
+    "cornersAvg": 5.0,
+    "colors": [
+      "#d4122a",
+      "#1f3a93"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 2,
+      "goals": 2,
+      "conceded": 2
+    }
+  },
+  {
+    "id": "australia",
+    "name": {
+      "es": "Australia",
+      "en": "Australia"
+    },
+    "flag": "🇦🇺",
+    "code": "au",
+    "group": "D",
+    "fifaRank": 27,
+    "attack": 74,
+    "defense": 75,
+    "possession": 46,
+    "cornersAvg": 4.2,
+    "colors": [
+      "#f6c500",
+      "#0b6b3a"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 1,
+      "goals": 2,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "algeria",
+    "name": {
+      "es": "Argelia",
+      "en": "Algeria"
+    },
+    "flag": "🇩🇿",
+    "code": "dz",
+    "group": "J",
+    "fifaRank": 28,
+    "attack": 77,
+    "defense": 76,
+    "possession": 47,
+    "cornersAvg": 4.0,
+    "colors": [
+      "#14823f",
+      "#d4122a"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "egypt",
+    "name": {
+      "es": "Egipto",
+      "en": "Egypt"
+    },
+    "flag": "🇪🇬",
+    "code": "eg",
+    "group": "G",
+    "fifaRank": 29,
+    "attack": 76,
+    "defense": 74,
+    "possession": 48,
+    "cornersAvg": 4.2,
+    "colors": [
+      "#d4122a",
+      "#1a1a1a"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "canada",
+    "name": {
+      "es": "Canadá",
+      "en": "Canada"
+    },
+    "flag": "🇨🇦",
+    "code": "ca",
+    "group": "B",
+    "fifaRank": 30,
+    "attack": 77,
+    "defense": 75,
+    "possession": 48,
+    "cornersAvg": 4.5,
+    "colors": [
+      "#d4122a",
+      "#7a0c1a"
+    ],
+    "host": true,
+    "wc2026": {
+      "played": 1,
+      "goals": 1,
+      "conceded": 1
+    }
+  },
+  {
+    "id": "norway",
+    "name": {
+      "es": "Noruega",
+      "en": "Norway"
+    },
+    "flag": "🇳🇴",
+    "code": "no",
+    "group": "I",
+    "fifaRank": 31,
+    "attack": 79,
+    "defense": 77,
+    "possession": 50,
+    "cornersAvg": 4.8,
+    "colors": [
+      "#b3122f",
+      "#14233f"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "sweden",
+    "name": {
+      "es": "Suecia",
+      "en": "Sweden"
+    },
+    "flag": "🇸🇪",
+    "code": "se",
+    "group": "F",
+    "fifaRank": 32,
+    "attack": 77,
+    "defense": 76,
+    "possession": 48,
+    "cornersAvg": 4.5,
+    "colors": [
+      "#f6c500",
+      "#1f4fb0"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 1,
+      "goals": 5,
+      "conceded": 1
+    }
+  },
+  {
+    "id": "ivory_coast",
+    "name": {
+      "es": "Costa de Marfil",
+      "en": "Ivory Coast"
+    },
+    "flag": "🇨🇮",
+    "code": "ci",
+    "group": "E",
+    "fifaRank": 33,
+    "attack": 78,
+    "defense": 75,
+    "possession": 50,
+    "cornersAvg": 4.5,
+    "colors": [
+      "#ff6a13",
+      "#14823f"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 1,
+      "goals": 1,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "panama",
+    "name": {
+      "es": "Panamá",
+      "en": "Panama"
+    },
+    "flag": "🇵🇦",
+    "code": "pa",
+    "group": "L",
+    "fifaRank": 34,
+    "attack": 70,
+    "defense": 72,
+    "possession": 42,
+    "cornersAvg": 3.5,
+    "colors": [
+      "#b22234",
+      "#1f2f6b"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "turkey",
+    "name": {
+      "es": "Turquía",
+      "en": "Türkiye"
+    },
+    "flag": "🇹🇷",
+    "code": "tr",
+    "group": "D",
+    "fifaRank": 35,
+    "attack": 76,
+    "defense": 74,
+    "possession": 48,
+    "cornersAvg": 4.5,
+    "colors": [
+      "#d4122a",
+      "#7a0c1a"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 1,
+      "goals": 0,
+      "conceded": 2
+    }
+  },
+  {
+    "id": "scotland",
+    "name": {
+      "es": "Escocia",
+      "en": "Scotland"
+    },
+    "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+    "code": "gb-sct",
+    "group": "C",
+    "fifaRank": 38,
+    "attack": 74,
+    "defense": 76,
+    "possession": 44,
+    "cornersAvg": 4.0,
+    "colors": [
+      "#1f3a8a",
+      "#14264f"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 1,
+      "goals": 1,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "czechia",
+    "name": {
+      "es": "Chequia",
+      "en": "Czechia"
+    },
+    "flag": "🇨🇿",
+    "code": "cz",
+    "group": "A",
+    "fifaRank": 40,
+    "attack": 74,
+    "defense": 76,
+    "possession": 48,
+    "cornersAvg": 4.2,
+    "colors": [
+      "#d4122a",
+      "#1f4fb0"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 2,
+      "goals": 2,
+      "conceded": 3
+    }
+  },
+  {
+    "id": "tunisia",
+    "name": {
+      "es": "Túnez",
+      "en": "Tunisia"
+    },
+    "flag": "🇹🇳",
+    "code": "tn",
+    "group": "F",
+    "fifaRank": 43,
+    "attack": 70,
+    "defense": 74,
+    "possession": 42,
+    "cornersAvg": 3.5,
+    "colors": [
+      "#d4122a",
+      "#7a0c1a"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 1,
+      "goals": 1,
+      "conceded": 5
+    }
+  },
+  {
+    "id": "dr_congo",
+    "name": {
+      "es": "RD Congo",
+      "en": "DR Congo"
+    },
+    "flag": "🇨🇩",
+    "code": "cd",
+    "group": "K",
+    "fifaRank": 46,
+    "attack": 70,
+    "defense": 72,
+    "possession": 42,
+    "cornersAvg": 3.5,
+    "colors": [
+      "#1f8fd0",
+      "#f6c500"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "uzbekistan",
+    "name": {
+      "es": "Uzbekistán",
+      "en": "Uzbekistan"
+    },
+    "flag": "🇺🇿",
+    "code": "uz",
+    "group": "K",
+    "fifaRank": 50,
+    "attack": 68,
+    "defense": 70,
+    "possession": 44,
+    "cornersAvg": 3.8,
+    "colors": [
+      "#1f7fc0",
+      "#14823f"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "paraguay",
+    "name": {
+      "es": "Paraguay",
+      "en": "Paraguay"
+    },
+    "flag": "🇵🇾",
+    "code": "py",
+    "group": "D",
+    "fifaRank": 52,
+    "attack": 70,
+    "defense": 74,
+    "possession": 42,
+    "cornersAvg": 3.5,
+    "colors": [
+      "#d4122a",
+      "#1f4fb0"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 1,
+      "goals": 1,
+      "conceded": 4
+    }
+  },
+  {
+    "id": "qatar",
+    "name": {
+      "es": "Catar",
+      "en": "Qatar"
+    },
+    "flag": "🇶🇦",
+    "code": "qa",
+    "group": "B",
+    "fifaRank": 56,
+    "attack": 66,
+    "defense": 70,
+    "possession": 42,
+    "cornersAvg": 3.5,
+    "colors": [
+      "#7a1230",
+      "#4a0c1e"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 1,
+      "goals": 1,
+      "conceded": 1
+    }
+  },
+  {
+    "id": "iraq",
+    "name": {
+      "es": "Irak",
+      "en": "Iraq"
+    },
+    "flag": "🇮🇶",
+    "code": "iq",
+    "group": "I",
+    "fifaRank": 57,
+    "attack": 66,
+    "defense": 72,
+    "possession": 40,
+    "cornersAvg": 3.2,
+    "colors": [
+      "#14823f",
+      "#d4122a"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "south_africa",
+    "name": {
+      "es": "Sudáfrica",
+      "en": "South Africa"
+    },
+    "flag": "🇿🇦",
+    "code": "za",
+    "group": "A",
+    "fifaRank": 60,
+    "attack": 68,
+    "defense": 70,
+    "possession": 42,
+    "cornersAvg": 3.5,
+    "colors": [
+      "#14823f",
+      "#f6c500"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 2,
+      "goals": 1,
+      "conceded": 3
+    }
+  },
+  {
+    "id": "saudi_arabia",
+    "name": {
+      "es": "Arabia Saudita",
+      "en": "Saudi Arabia"
+    },
+    "flag": "🇸🇦",
+    "code": "sa",
+    "group": "H",
+    "fifaRank": 61,
+    "attack": 70,
+    "defense": 72,
+    "possession": 42,
+    "cornersAvg": 3.5,
+    "colors": [
+      "#14823f",
+      "#0c5a2c"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "jordan",
+    "name": {
+      "es": "Jordania",
+      "en": "Jordan"
+    },
+    "flag": "🇯🇴",
+    "code": "jo",
+    "group": "J",
+    "fifaRank": 63,
+    "attack": 65,
+    "defense": 70,
+    "possession": 40,
+    "cornersAvg": 3.2,
+    "colors": [
+      "#d4122a",
+      "#1a1a1a"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "bosnia",
+    "name": {
+      "es": "Bosnia y Herzegovina",
+      "en": "Bosnia and Herzegovina"
+    },
+    "flag": "🇧🇦",
+    "code": "ba",
+    "group": "B",
+    "fifaRank": 64,
+    "attack": 72,
+    "defense": 73,
+    "possession": 46,
+    "cornersAvg": 4.0,
+    "colors": [
+      "#1f3a93",
+      "#f6c500"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 1,
+      "goals": 1,
+      "conceded": 1
+    }
+  },
+  {
+    "id": "cape_verde",
+    "name": {
+      "es": "Cabo Verde",
+      "en": "Cape Verde"
+    },
+    "flag": "🇨🇻",
+    "code": "cv",
+    "group": "H",
+    "fifaRank": 67,
+    "attack": 68,
+    "defense": 72,
+    "possession": 42,
+    "cornersAvg": 3.5,
+    "colors": [
+      "#1f6fb0",
+      "#d4122a"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "ghana",
+    "name": {
+      "es": "Ghana",
+      "en": "Ghana"
+    },
+    "flag": "🇬🇭",
+    "code": "gh",
+    "group": "L",
+    "fifaRank": 73,
+    "attack": 72,
+    "defense": 72,
+    "possession": 46,
+    "cornersAvg": 4.0,
+    "colors": [
+      "#d4122a",
+      "#f6c500"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  },
+  {
+    "id": "curacao",
+    "name": {
+      "es": "Curazao",
+      "en": "Curaçao"
+    },
+    "flag": "🇨🇼",
+    "code": "cw",
+    "group": "E",
+    "fifaRank": 82,
+    "attack": 62,
+    "defense": 68,
+    "possession": 38,
+    "cornersAvg": 3.0,
+    "colors": [
+      "#1f3a93",
+      "#f6c500"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 1,
+      "goals": 1,
+      "conceded": 7
+    }
+  },
+  {
+    "id": "haiti",
+    "name": {
+      "es": "Haití",
+      "en": "Haiti"
+    },
+    "flag": "🇭🇹",
+    "code": "ht",
+    "group": "C",
+    "fifaRank": 83,
+    "attack": 60,
+    "defense": 66,
+    "possession": 36,
+    "cornersAvg": 2.8,
+    "colors": [
+      "#1f3a93",
+      "#d4122a"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 1,
+      "goals": 0,
+      "conceded": 1
+    }
+  },
+  {
+    "id": "new_zealand",
+    "name": {
+      "es": "Nueva Zelanda",
+      "en": "New Zealand"
+    },
+    "flag": "🇳🇿",
+    "code": "nz",
+    "group": "G",
+    "fifaRank": 85,
+    "attack": 58,
+    "defense": 65,
+    "possession": 36,
+    "cornersAvg": 2.5,
+    "colors": [
+      "#1a1a1a",
+      "#c0c0c0"
+    ],
+    "host": false,
+    "wc2026": {
+      "played": 0,
+      "goals": 0,
+      "conceded": 0
+    }
+  }
+]

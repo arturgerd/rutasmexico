@@ -20,6 +20,7 @@ export default function HotelSearch({ airports, defaultCity = "", compact = fals
   const [checkIn, setCheckIn] = useState("");
   const [checkOut, setCheckOut] = useState("");
   const [adults, setAdults] = useState(2);
+  const [error, setError] = useState<string | null>(null);
   const idPrefix = useId();
   const cityId = `${idPrefix}city`;
   const inId = `${idPrefix}in`;
@@ -51,12 +52,13 @@ export default function HotelSearch({ airports, defaultCity = "", compact = fals
 
   const handleSearch = () => {
     if (!city) {
-      alert(locale === "es" ? "Selecciona una ciudad" : "Select a city");
+      setError(locale === "es" ? "Selecciona una ciudad" : "Select a city");
       return;
     }
 
     const selectedAirport = airports.find((a) => a.iata === city);
     if (!selectedAirport) return;
+    setError(null);
 
     const cityNameEn = localize(selectedAirport.city, "en");
     const url = getHotelSearchUrl({
@@ -78,8 +80,11 @@ export default function HotelSearch({ airports, defaultCity = "", compact = fals
 
   if (compact) {
     return (
-      <div className="flex flex-col sm:flex-row gap-2">
+      <div className="space-y-2">
+        <div className="flex flex-col sm:flex-row gap-2">
+        <label htmlFor={cityId} className="sr-only">{locale === "es" ? "Ciudad" : "City"}</label>
         <select
+          id={cityId}
           value={city}
           onChange={(e) => setCity(e.target.value)}
           className="flex-1 p-2 bg-white border border-arena-200 rounded-lg text-sm text-arena-800 focus:ring-2 focus:ring-terracotta-500/50"
@@ -97,6 +102,10 @@ export default function HotelSearch({ airports, defaultCity = "", compact = fals
         >
           {locale === "es" ? "Encuentra hotel barato" : "Find cheapest hotel"}
         </button>
+        </div>
+        {error && (
+          <p role="alert" className="text-sm font-medium text-red-600">{error}</p>
+        )}
       </div>
     );
   }
@@ -179,7 +188,11 @@ export default function HotelSearch({ airports, defaultCity = "", compact = fals
         </button>
       </div>
 
-      <p className="text-xs text-arena-400 text-center">
+      {error && (
+        <p role="alert" className="text-sm font-medium text-red-600">{error}</p>
+      )}
+
+      <p className="text-xs text-arena-700 text-center">
         {locale === "es"
           ? "Compara precios de Booking.com, Expedia, Hotels.com y más"
           : "Compare prices from Booking.com, Expedia, Hotels.com and more"}

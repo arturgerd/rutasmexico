@@ -31,6 +31,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
   const [isOneWay, setIsOneWay] = useState(false);
   const [searchUrl, setSearchUrl] = useState("");
   const [isSearching, setIsSearching] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const idPrefix = useId();
   const originId = `${idPrefix}origin`;
   const destId = `${idPrefix}dest`;
@@ -71,13 +72,14 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
 
   const handleSearch = useCallback(() => {
     if (!origin || !destination) {
-      alert(t3(locale, "Selecciona origen y destino", "Select origin and destination", "Sélectionnez départ et destination"));
+      setError(t3(locale, "Selecciona origen y destino", "Select origin and destination"));
       return;
     }
     if (origin === destination) {
-      alert(t3(locale, "Origen y destino deben ser diferentes", "Origin and destination must be different", "Le départ et la destination doivent être différents"));
+      setError(t3(locale, "Origen y destino deben ser diferentes", "Origin and destination must be different"));
       return;
     }
+    setError(null);
 
     // Build Aviasales search URL with marker
     const dep = departDate || tomorrow;
@@ -254,6 +256,10 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
               </button>
             </div>
           </div>
+
+          {error && (
+            <p role="alert" className="text-sm font-medium text-red-600">{error}</p>
+          )}
         </div>
       </div>
 
@@ -361,7 +367,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                     <p className="font-semibold text-arena-900 text-sm group-hover:text-terracotta-600 transition-colors">
                       {route.origin} → {route.dest}
                     </p>
-                    <p className="text-xs text-arena-400">{l(route.label, locale)}</p>
+                    <p className="text-xs text-arena-700">{l(route.label, locale)}</p>
                   </div>
                 </div>
                 <span className="text-xs text-terracotta-500 font-semibold opacity-0 group-hover:opacity-100 transition-opacity">

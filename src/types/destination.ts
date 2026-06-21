@@ -8,7 +8,7 @@ export interface Destination {
   airportIATA: string; // IATA code of nearest airport (e.g. "MEX", "CUN")
   coordinates: Coordinates;
   state: LocalizedString;
-  region: "centro" | "norte" | "sur" | "peninsula" | "pacifico" | "golfo" | "bajio";
+  region: "centro" | "norte" | "sur" | "peninsula" | "pacifico" | "golfo" | "bajio" | "occidente";
   description: LocalizedString;
   longDescription: LocalizedString;
   heroImage: string;

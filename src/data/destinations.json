@@ -1554,5 +1554,845 @@
     },
     "airportIATA": "MZT",
     "lastModified": "2026-02-15"
+  },
+  {
+    "id": "tulum",
+    "slug": "tulum",
+    "name": {
+      "es": "Tulum",
+      "en": "Tulum"
+    },
+    "shortName": "TQO",
+    "coordinates": {
+      "lat": 20.2114,
+      "lng": -87.4654
+    },
+    "state": {
+      "es": "Quintana Roo",
+      "en": "Quintana Roo"
+    },
+    "region": "peninsula",
+    "description": {
+      "es": "Tulum combina las únicas ruinas mayas frente al mar Caribe con cenotes cristalinos, playas de arena blanca y un ambiente boho-chic en la Riviera Maya.",
+      "en": "Tulum combines the only Mayan ruins overlooking the Caribbean Sea with crystal-clear cenotes, white-sand beaches, and a boho-chic vibe on the Riviera Maya."
+    },
+    "longDescription": {
+      "es": "Tulum, en la costa sur de la Riviera Maya, es famoso por su zona arqueológica encaramada sobre un acantilado frente al mar turquesa: la única ciudad amurallada maya construida junto al Caribe. Más allá de las ruinas, Tulum se divide en dos mundos: el Pueblo, hacia el interior, con hoteles económicos, taquerías y la terminal de autobuses ADO; y la Zona Hotelera, una carretera junto a la playa llena de hoteles boutique eco-chic, beach clubs y restaurantes de autor. Alrededor, la selva esconde algunos de los cenotes más espectaculares de México —Gran Cenote, Dos Ojos, Cenote Calavera— ideales para nadar, esnórquel y buceo. Tulum es también puerta de entrada a la Reserva de la Biósfera de Sian Ka'an, Patrimonio de la Humanidad. Desde diciembre de 2023 cuenta con aeropuerto internacional propio (Felipe Carrillo Puerto, TQO).",
+      "en": "Tulum, on the southern Riviera Maya coast, is famous for its archaeological site perched on a cliff above the turquoise sea: the only walled Mayan city built beside the Caribbean. Beyond the ruins, Tulum is two worlds: the Pueblo (town) inland, with budget hotels, taquerías, and the ADO bus station; and the Hotel Zone, a beachfront road lined with eco-chic boutique hotels, beach clubs, and chef-driven restaurants. Around it, the jungle hides some of Mexico's most spectacular cenotes —Gran Cenote, Dos Ojos, Cenote Calavera— perfect for swimming, snorkeling, and diving. Tulum is also the gateway to the Sian Ka'an Biosphere Reserve, a UNESCO World Heritage Site. Since December 2023 it has its own international airport (Felipe Carrillo Puerto, TQO)."
+    },
+    "heroImage": "https://images.unsplash.com/photo-1622870129889-f7e0ba2603a1?w=1200&h=630&fit=crop&q=80",
+    "highlights": [
+      {
+        "es": "Zona arqueológica de Tulum, la única ciudad maya amurallada frente al mar Caribe (entrada ~515 MXN)",
+        "en": "Tulum archaeological site, the only walled Mayan city facing the Caribbean Sea (entry ~515 MXN)"
+      },
+      {
+        "es": "Nadar en cenotes de la selva como Gran Cenote, Dos Ojos y Cenote Calavera",
+        "en": "Swim in jungle cenotes like Gran Cenote, Dos Ojos, and Cenote Calavera"
+      },
+      {
+        "es": "Playas de arena blanca como Playa Paraíso y Playa Ruinas en la Zona Hotelera",
+        "en": "White-sand beaches like Playa Paraíso and Playa Ruinas in the Hotel Zone"
+      },
+      {
+        "es": "Excursión a la Reserva de la Biósfera de Sian Ka'an, Patrimonio de la Humanidad",
+        "en": "Day trip to the Sian Ka'an Biosphere Reserve, a UNESCO World Heritage Site"
+      }
+    ],
+    "gettingAround": {
+      "es": "El Pueblo de Tulum es caminable, pero la playa (Zona Hotelera) está a 4-5 km: la forma más popular de recorrerla es en bicicleta (renta ~150-200 MXN/día) o taxi. Los taxis no usan taxímetro y son caros, así que acuerda el precio antes de subir (un trayecto Pueblo-playa ronda 150-250 MXN). Para cenotes y Sian Ka'an conviene rentar auto o tomar tours. Los colectivos (vans) conectan Tulum con Playa del Carmen y otros puntos de la Riviera Maya de forma económica.",
+      "en": "Tulum Pueblo is walkable, but the beach (Hotel Zone) is 4-5 km away: the most popular way to get around is by bicycle (rental ~150-200 MXN/day) or taxi. Taxis don't use meters and are expensive, so agree on the fare before getting in (a Pueblo-beach trip runs about 150-250 MXN). For cenotes and Sian Ka'an it's best to rent a car or take tours. Colectivos (vans) connect Tulum with Playa del Carmen and other Riviera Maya points affordably."
+    },
+    "safetyTips": [
+      {
+        "es": "Tulum es turístico y generalmente seguro de día. Evita zonas poco iluminadas de noche y usa taxis de sitio o apps al regresar de la playa.",
+        "en": "Tulum is touristy and generally safe by day. Avoid poorly lit areas at night and use registered taxis or apps when returning from the beach."
+      },
+      {
+        "es": "Lleva efectivo: muchos beach clubs y cenotes cobran en efectivo y el cajero más cercano puede estar lejos. Confirma el precio del taxi antes de subir.",
+        "en": "Carry cash: many beach clubs and cenotes charge in cash and the nearest ATM may be far. Confirm the taxi fare before getting in."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Cochinita pibil",
+        "description": {
+          "es": "Cerdo marinado en achiote y naranja agria, envuelto en hoja de plátano y cocido bajo tierra. Se sirve en tacos o tortas con cebolla morada encurtida y habanero.",
+          "en": "Pork marinated in achiote and sour orange, wrapped in banana leaf and cooked underground. Served in tacos or tortas with pickled red onion and habanero."
+        },
+        "priceRange": {
+          "min": 40,
+          "max": 120,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Las taquerías del Pueblo de Tulum, especialmente las de la avenida Tulum por la mañana, sirven cochinita auténtica a buen precio.",
+          "en": "The taquerías in Tulum Pueblo, especially those on Avenida Tulum in the morning, serve authentic, affordable cochinita."
+        }
+      },
+      {
+        "name": "Tacos de pescado y marisco",
+        "description": {
+          "es": "Tacos de pescado fresco a la plancha o capeado, camarón y pulpo, con salsas caribeñas. Reflejan la cocina costera de Quintana Roo.",
+          "en": "Tacos of fresh grilled or battered fish, shrimp, and octopus, with Caribbean salsas. They reflect the coastal cooking of Quintana Roo."
+        },
+        "priceRange": {
+          "min": 35,
+          "max": 90,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Marisquerías y loncherías del Pueblo. En la Zona Hotelera los beach clubs ofrecen versiones más caras frente al mar.",
+          "en": "Seafood spots and loncherías in the Pueblo. In the Hotel Zone, beach clubs offer pricier beachfront versions."
+        }
+      },
+      {
+        "name": "Marquesita",
+        "description": {
+          "es": "Antojito yucateco: una crepa crujiente enrollada y rellena de queso de bola con cajeta, Nutella o mermelada. El postre callejero típico de la región.",
+          "en": "A Yucatecan treat: a crispy rolled crepe filled with Edam cheese and cajeta, Nutella, or jam. The region's classic street dessert."
+        },
+        "priceRange": {
+          "min": 35,
+          "max": 70,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Puestos ambulantes en el parque central del Pueblo de Tulum por la noche.",
+          "en": "Street carts in the central park of Tulum Pueblo at night."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 700,
+      "max": 3500,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "Noviembre a abril ofrece clima seco, cielos despejados y menos sargazo. Evita septiembre-octubre (pico de huracanes) y los meses de mayo a agosto, cuando el sargazo puede cubrir las playas. La temporada alta (diciembre-marzo) es la más cara.",
+      "en": "November to April offers dry weather, clear skies, and less sargassum. Avoid September-October (peak hurricane season) and the May-August months, when sargassum can cover the beaches. High season (December-March) is the most expensive."
+    },
+    "airportIATA": "TQO",
+    "lastModified": "2026-06-06"
+  },
+  {
+    "id": "puebla",
+    "slug": "puebla",
+    "name": {
+      "es": "Puebla",
+      "en": "Puebla"
+    },
+    "shortName": "PBC",
+    "coordinates": {
+      "lat": 19.0414,
+      "lng": -98.2063
+    },
+    "state": {
+      "es": "Puebla",
+      "en": "Puebla"
+    },
+    "region": "centro",
+    "description": {
+      "es": "Puebla es una joya colonial Patrimonio de la Humanidad, cuna del mole poblano y los chiles en nogada, con talavera, iglesias barrocas y la pirámide de Cholula a un paso.",
+      "en": "Puebla is a UNESCO World Heritage colonial gem, birthplace of mole poblano and chiles en nogada, with Talavera pottery, Baroque churches, and the Cholula pyramid nearby."
+    },
+    "longDescription": {
+      "es": "Puebla de Zaragoza, a solo dos horas de la Ciudad de México, es una de las ciudades coloniales mejor conservadas del país y Patrimonio de la Humanidad desde 1987. Su Centro Histórico deslumbra con fachadas de talavera, más de 70 iglesias y joyas barrocas como la Capilla del Rosario y la Biblioteca Palafoxiana, la primera biblioteca pública de América. Es, además, una capital gastronómica: aquí nacieron el mole poblano, los chiles en nogada y las cemitas. A pocos kilómetros está Cholula, con la pirámide más grande del mundo por volumen, coronada por una iglesia. Puebla también es escenario de la Batalla del 5 de mayo de 1862, que se conmemora en los fuertes de Loreto y Guadalupe. Todo a precios notablemente más bajos que en la capital.",
+      "en": "Puebla de Zaragoza, just two hours from Mexico City, is one of the country's best-preserved colonial cities and a UNESCO World Heritage Site since 1987. Its Historic Center dazzles with Talavera-tiled facades, more than 70 churches, and Baroque jewels like the Rosary Chapel and the Palafoxiana Library, the first public library in the Americas. It's also a culinary capital: mole poblano, chiles en nogada, and cemitas were all born here. A few kilometers away is Cholula, home to the largest pyramid in the world by volume, crowned by a church. Puebla is also the setting of the Battle of May 5, 1862, commemorated at the Loreto and Guadalupe forts. All at prices noticeably lower than the capital."
+    },
+    "heroImage": "https://images.unsplash.com/photo-1653661279002-692227e35f0f?w=1200&h=630&fit=crop&q=80",
+    "highlights": [
+      {
+        "es": "Centro Histórico Patrimonio de la Humanidad: Catedral, zócalo y casas de talavera",
+        "en": "UNESCO World Heritage Historic Center: Cathedral, main square, and Talavera-tiled houses"
+      },
+      {
+        "es": "Capilla del Rosario en el Templo de Santo Domingo, obra cumbre del barroco novohispano",
+        "en": "The Rosary Chapel in Santo Domingo church, a masterpiece of New Spanish Baroque"
+      },
+      {
+        "es": "Gran Pirámide de Cholula (la más grande del mundo por volumen) con iglesia en la cima (entrada ~85 MXN)",
+        "en": "Great Pyramid of Cholula (the world's largest by volume) topped by a church (entry ~85 MXN)"
+      },
+      {
+        "es": "Probar mole poblano, cemitas y, en temporada, chiles en nogada en el Callejón de los Sapos y mercados",
+        "en": "Taste mole poblano, cemitas, and, in season, chiles en nogada in Callejón de los Sapos and markets"
+      }
+    ],
+    "gettingAround": {
+      "es": "El Centro Histórico de Puebla es compacto y muy caminable: la mayoría de los atractivos están a poca distancia del zócalo. Para Cholula (unos 15 km), hay colectivos y autobuses económicos, además de Uber y Didi, que funcionan muy bien en toda la ciudad y son baratos. Los taxis de sitio son seguros. El Turibús turístico recorre los principales puntos. Para los fuertes de Loreto y Guadalupe conviene tomar un Uber por la subida.",
+      "en": "Puebla's Historic Center is compact and very walkable: most sights are a short distance from the main square. For Cholula (about 15 km), there are affordable colectivos and buses, plus Uber and Didi, which work very well across the city and are cheap. Registered taxis are safe. The tourist Turibús covers the main sights. For the Loreto and Guadalupe forts it's worth taking an Uber up the hill."
+    },
+    "safetyTips": [
+      {
+        "es": "El Centro Histórico y Cholula son seguros y muy transitados por turistas. Aplica las precauciones normales de ciudad y cuida tus pertenencias en mercados llenos.",
+        "en": "The Historic Center and Cholula are safe and heavily visited by tourists. Take normal city precautions and watch your belongings in crowded markets."
+      },
+      {
+        "es": "Usa Uber/Didi o taxis de sitio por la noche. La carretera México-Puebla puede tener neblina en la madrugada si conduces.",
+        "en": "Use Uber/Didi or registered taxis at night. The Mexico City-Puebla highway can be foggy in the early morning if you're driving."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Mole poblano",
+        "description": {
+          "es": "El platillo más emblemático de Puebla: una salsa espesa de más de 20 ingredientes —varios chiles, chocolate, especias y semillas— servida sobre pollo o guajolote con arroz y tortillas.",
+          "en": "Puebla's most emblematic dish: a thick sauce of over 20 ingredients —several chiles, chocolate, spices, and seeds— served over chicken or turkey with rice and tortillas."
+        },
+        "priceRange": {
+          "min": 90,
+          "max": 200,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Fondas del centro y restaurantes tradicionales como El Mural de los Poblanos o La Casita Poblana; también en el mercado El Carmen.",
+          "en": "Downtown fondas and traditional restaurants like El Mural de los Poblanos or La Casita Poblana; also at the El Carmen market."
+        }
+      },
+      {
+        "name": "Chiles en nogada",
+        "description": {
+          "es": "Chile poblano relleno de picadillo de carne con fruta, bañado en crema de nuez (nogada) y granada. Platillo de temporada con los colores de la bandera mexicana.",
+          "en": "Poblano chile stuffed with meat-and-fruit picadillo, bathed in walnut cream (nogada) and pomegranate. A seasonal dish in the colors of the Mexican flag."
+        },
+        "priceRange": {
+          "min": 180,
+          "max": 350,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Solo de agosto a mediados de septiembre, cuando la nuez y la granada están en temporada. Restaurantes tradicionales del centro lo ofrecen recién hecho.",
+          "en": "Only from August to mid-September, when walnut and pomegranate are in season. Traditional downtown restaurants serve it freshly made."
+        }
+      },
+      {
+        "name": "Cemita poblana",
+        "description": {
+          "es": "Torta servida en pan de ajonjolí, rellena de milanesa o carne, con quesillo de Oaxaca, aguacate, papalo y chipotle. La reina de la comida callejera poblana.",
+          "en": "A sandwich on sesame-seed bread, filled with milanesa or meat, with Oaxaca string cheese, avocado, papalo herb, and chipotle. The queen of Puebla street food."
+        },
+        "priceRange": {
+          "min": 50,
+          "max": 110,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "El Mercado del Carmen y los puestos de cemitas del centro. Las del mercado son las más auténticas y económicas.",
+          "en": "The El Carmen market and downtown cemita stalls. The market ones are the most authentic and affordable."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 500,
+      "max": 1800,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "Puebla tiene clima templado todo el año. La temporada seca de noviembre a abril es la más cómoda. Agosto y principios de septiembre son ideales para probar chiles en nogada en temporada. El 5 de mayo la ciudad celebra el aniversario de la Batalla de Puebla con desfile.",
+      "en": "Puebla has a mild climate year-round. The dry season from November to April is the most comfortable. August and early September are ideal for tasting chiles en nogada in season. On May 5, the city celebrates the anniversary of the Battle of Puebla with a parade."
+    },
+    "airportIATA": "PBC",
+    "lastModified": "2026-06-06"
+  },
+  {
+    "id": "queretaro",
+    "slug": "queretaro",
+    "name": {
+      "es": "Querétaro",
+      "en": "Querétaro"
+    },
+    "shortName": "QRO",
+    "coordinates": {
+      "lat": 20.5888,
+      "lng": -100.3899
+    },
+    "state": {
+      "es": "Querétaro",
+      "en": "Querétaro"
+    },
+    "region": "bajio",
+    "description": {
+      "es": "Querétaro es una elegante ciudad colonial del Bajío, Patrimonio de la Humanidad, famosa por su acueducto de 74 arcos, su ruta del vino y queso y la cercana peña de Bernal.",
+      "en": "Querétaro is an elegant colonial Bajío city and UNESCO World Heritage Site, famous for its 74-arch aqueduct, its wine-and-cheese route, and the nearby Peña de Bernal monolith."
+    },
+    "longDescription": {
+      "es": "Santiago de Querétaro, a 2.5 horas de la Ciudad de México, es una de las ciudades coloniales más bonitas y mejor conservadas del país, incluida en la lista del New York Times de lugares para visitar en 2026. Su Centro Histórico, Patrimonio de la Humanidad, combina andadores peatonales, plazas arboladas, conventos barrocos y un ambiente tranquilo y seguro. El símbolo de la ciudad es su acueducto del siglo XVIII, con 74 arcos que alcanzan 23 metros de altura. Alrededor se extiende una de las regiones vinícolas más dinámicas de México (Tequisquiapan y Ezequiel Montes) y pueblos mágicos como Bernal, dominado por uno de los monolitos más grandes del mundo. Es un destino más auténtico y económico que el vecino San Miguel de Allende.",
+      "en": "Santiago de Querétaro, 2.5 hours from Mexico City, is one of the prettiest and best-preserved colonial cities in the country, included on the New York Times list of places to visit in 2026. Its UNESCO-listed Historic Center blends pedestrian walkways, leafy plazas, Baroque convents, and a calm, safe atmosphere. The city's symbol is its 18th-century aqueduct, with 74 arches reaching 23 meters high. Around it lies one of Mexico's most dynamic wine regions (Tequisquiapan and Ezequiel Montes) and magic towns like Bernal, crowned by one of the largest monoliths in the world. It's a more authentic and affordable destination than neighboring San Miguel de Allende."
+    },
+    "heroImage": "https://images.unsplash.com/photo-1512442827816-8e5a088619c9?w=1200&h=630&fit=crop&q=80",
+    "highlights": [
+      {
+        "es": "Acueducto de Querétaro, con 74 arcos de hasta 23 metros (siglo XVIII)",
+        "en": "Querétaro Aqueduct, with 74 arches up to 23 meters high (18th century)"
+      },
+      {
+        "es": "Centro Histórico Patrimonio de la Humanidad: andadores, plazas y el Templo de Santa Rosa de Viterbo",
+        "en": "UNESCO World Heritage Historic Center: walkways, plazas, and the Temple of Santa Rosa de Viterbo"
+      },
+      {
+        "es": "Excursión a Peña de Bernal, uno de los monolitos más grandes del mundo, y a los pueblos del queso y el vino",
+        "en": "Day trip to Peña de Bernal, one of the world's largest monoliths, and the cheese-and-wine towns"
+      },
+      {
+        "es": "Ruta del vino y el queso en Tequisquiapan y Ezequiel Montes",
+        "en": "Wine and cheese route in Tequisquiapan and Ezequiel Montes"
+      }
+    ],
+    "gettingAround": {
+      "es": "El Centro Histórico es peatonal y se recorre a pie. Uber y Didi funcionan muy bien y son baratos para distancias mayores o para llegar a la central de autobuses. Para Bernal y la ruta del vino conviene rentar auto o tomar un tour, ya que el transporte público es limitado.",
+      "en": "The Historic Center is pedestrian and easily walkable. Uber and Didi work very well and are cheap for longer distances or reaching the bus station. For Bernal and the wine route it's best to rent a car or take a tour, since public transport is limited."
+    },
+    "safetyTips": [
+      {
+        "es": "Querétaro es de las ciudades más seguras de México. Aplica las precauciones normales y disfruta el centro caminando, incluso de noche en las zonas concurridas.",
+        "en": "Querétaro is one of Mexico's safest cities. Take normal precautions and enjoy walking the center, even at night in busy areas."
+      },
+      {
+        "es": "Si rentas auto para la ruta del vino, no manejes de noche por carreteras rurales y respeta los límites en las casetas de la 57.",
+        "en": "If you rent a car for the wine route, avoid driving rural roads at night and mind the limits at the Highway 57 toll booths."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Enchiladas queretanas",
+        "description": {
+          "es": "Tortillas pasadas por salsa de chile guajillo, rellenas y acompañadas de papas y zanahorias doradas, pollo y queso. El antojito clásico de la ciudad.",
+          "en": "Tortillas dipped in guajillo chile sauce, filled and served with sautéed potatoes and carrots, chicken, and cheese. The city's classic dish."
+        },
+        "priceRange": {
+          "min": 60,
+          "max": 130,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Fondas del Centro Histórico y mercados como La Cruz para la versión más tradicional.",
+          "en": "Historic Center fondas and markets like La Cruz for the most traditional version."
+        }
+      },
+      {
+        "name": "Vinos y quesos del Bajío",
+        "description": {
+          "es": "Querétaro es de las principales regiones vinícolas de México. Tablas de quesos artesanales maridados con vino tinto y espumoso local.",
+          "en": "Querétaro is one of Mexico's leading wine regions. Boards of artisanal cheeses paired with local red and sparkling wine."
+        },
+        "priceRange": {
+          "min": 250,
+          "max": 700,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Viñedos como Freixenet y La Redonda en Ezequiel Montes, o bares de vino en el centro.",
+          "en": "Vineyards like Freixenet and La Redonda in Ezequiel Montes, or wine bars downtown."
+        }
+      },
+      {
+        "name": "Gorditas de migajas",
+        "description": {
+          "es": "Gorditas de maíz rellenas de migajas de chicharrón en salsa, un antojo callejero económico y muy queretano.",
+          "en": "Corn gorditas filled with chicharrón crumbs in salsa, a cheap, very Queretaro street snack."
+        },
+        "priceRange": {
+          "min": 15,
+          "max": 40,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Puestos del centro y mercados por la mañana.",
+          "en": "Downtown stalls and markets in the morning."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 450,
+      "max": 1500,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "De septiembre a junio, con clima templado y seco. Evita las multitudes y los precios altos de Semana Santa y los puentes (fines de semana largos). El otoño y la primavera son ideales para la ruta del vino.",
+      "en": "September to June, with mild, dry weather. Avoid the crowds and high prices of Holy Week and Mexican long weekends. Fall and spring are ideal for the wine route."
+    },
+    "airportIATA": "QRO",
+    "lastModified": "2026-06-06"
+  },
+  {
+    "id": "san-cristobal-de-las-casas",
+    "slug": "san-cristobal-de-las-casas",
+    "name": {
+      "es": "San Cristóbal de las Casas",
+      "en": "San Cristóbal de las Casas"
+    },
+    "shortName": "SCLC",
+    "coordinates": {
+      "lat": 16.737,
+      "lng": -92.6376
+    },
+    "state": {
+      "es": "Chiapas",
+      "en": "Chiapas"
+    },
+    "region": "sur",
+    "description": {
+      "es": "San Cristóbal de las Casas es un pueblo mágico de montaña en Chiapas, con calles coloniales, fuerte cultura indígena maya, artesanías, café y acceso al Cañón del Sumidero.",
+      "en": "San Cristóbal de las Casas is a magical mountain town in Chiapas, with colonial streets, strong Maya indigenous culture, handicrafts, coffee, and access to the Sumidero Canyon."
+    },
+    "longDescription": {
+      "es": "San Cristóbal de las Casas, a más de 2,200 metros de altitud en los Altos de Chiapas, es uno de los pueblos mágicos más cautivadores de México. Sus calles empedradas, casas de colores y andadores peatonales conviven con una intensa cultura indígena tzotzil y tzeltal que llena los mercados de textiles, ámbar y artesanías —la ciudad es Ciudad Creativa de la UNESCO—. Es base para excursiones imperdibles: el Cañón del Sumidero, los pueblos indígenas de San Juan Chamula y Zinacantán, las cascadas de El Chiflón y los lagos de Montebello. Su escena gastronómica sorprende por su variedad, con cafés de altura, cocina chiapaneca y una notable oferta vegana e internacional. El clima fresco de montaña pide suéter por las noches.",
+      "en": "San Cristóbal de las Casas, at over 2,200 meters in the Chiapas highlands, is one of Mexico's most captivating magic towns. Its cobbled streets, colorful houses, and pedestrian walkways coexist with an intense Tzotzil and Tzeltal indigenous culture that fills the markets with textiles, amber, and crafts —the city is a UNESCO Creative City. It's a base for unmissable excursions: the Sumidero Canyon, the indigenous towns of San Juan Chamula and Zinacantán, the El Chiflón waterfalls, and the Montebello lakes. Its food scene surprises with its variety, from high-altitude coffee to Chiapanecan cuisine and a notable vegan and international offering. The cool mountain climate calls for a sweater at night."
+    },
+    "heroImage": "https://images.unsplash.com/photo-1593374419603-bf046ae3a497?w=1200&h=630&fit=crop&q=80",
+    "highlights": [
+      {
+        "es": "Andador Eclesiástico y el Templo de Santo Domingo con su mercado de artesanías",
+        "en": "Andador Eclesiástico walkway and the Santo Domingo church with its handicraft market"
+      },
+      {
+        "es": "Excursión en lancha por el Cañón del Sumidero, con paredes de hasta 1,000 metros",
+        "en": "Boat trip through the Sumidero Canyon, with walls up to 1,000 meters high"
+      },
+      {
+        "es": "Visita a los pueblos indígenas de San Juan Chamula y Zinacantán",
+        "en": "Visit to the indigenous towns of San Juan Chamula and Zinacantán"
+      },
+      {
+        "es": "Cascadas de El Chiflón y lagos de Montebello como excursiones de día",
+        "en": "El Chiflón waterfalls and Montebello lakes as day trips"
+      }
+    ],
+    "gettingAround": {
+      "es": "El centro de San Cristóbal es compacto y peatonal: casi todo se hace caminando por los andadores. Para excursiones (Sumidero, Chamula, El Chiflón, Montebello) la opción más cómoda y económica son los tours en colectivo que salen del centro. Hay taxis baratos para distancias cortas. Lleva calzado cómodo: las calles son empedradas y la altitud se siente al subir cuestas.",
+      "en": "San Cristóbal's center is compact and pedestrian: almost everything is done on foot along the walkways. For excursions (Sumidero, Chamula, El Chiflón, Montebello), the most comfortable and affordable option is the shared-van tours that leave from downtown. There are cheap taxis for short distances. Wear comfortable shoes: the streets are cobbled and the altitude is noticeable on the uphills."
+    },
+    "safetyTips": [
+      {
+        "es": "San Cristóbal es tranquilo y seguro para turistas. En San Juan Chamula respeta las reglas: no se permite fotografiar el interior de la iglesia ni a las personas sin permiso.",
+        "en": "San Cristóbal is calm and safe for tourists. In San Juan Chamula respect the rules: photographing the church interior or people without permission is not allowed."
+      },
+      {
+        "es": "Por la altitud y el clima fresco, lleva ropa abrigadora para la noche. Bebe agua embotellada y date un día para aclimatarte.",
+        "en": "Due to the altitude and cool climate, bring warm clothes for the evening. Drink bottled water and give yourself a day to acclimatize."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Cochito horneado",
+        "description": {
+          "es": "Cerdo marinado en adobo de chiles y especias, horneado hasta quedar suave. Platillo festivo típico de los Altos de Chiapas.",
+          "en": "Pork marinated in a chile-and-spice adobo and roasted until tender. A festive dish typical of the Chiapas highlands."
+        },
+        "priceRange": {
+          "min": 70,
+          "max": 150,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "El Mercado de Santo Domingo y fondas tradicionales del centro.",
+          "en": "The Santo Domingo market and traditional downtown fondas."
+        }
+      },
+      {
+        "name": "Café chiapaneco",
+        "description": {
+          "es": "Chiapas produce algunos de los mejores cafés de altura de México. San Cristóbal tiene una cultura cafetera excepcional con tostadores locales.",
+          "en": "Chiapas produces some of Mexico's best high-altitude coffee. San Cristóbal has an exceptional coffee culture with local roasters."
+        },
+        "priceRange": {
+          "min": 35,
+          "max": 90,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Cafeterías de especialidad del centro como Frontera Artisan Café o Carajillo.",
+          "en": "Specialty cafés downtown like Frontera Artisan Café or Carajillo."
+        }
+      },
+      {
+        "name": "Tamales y sopa de pan",
+        "description": {
+          "es": "Tamales chiapanecos (de chipilín, de bola) y la sopa de pan, un guiso tradicional de los Altos con pan, caldo y verduras.",
+          "en": "Chiapanecan tamales (chipilín, bola) and sopa de pan, a traditional highlands stew with bread, broth, and vegetables."
+        },
+        "priceRange": {
+          "min": 25,
+          "max": 90,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Mercados locales y restaurantes de cocina chiapaneca del centro.",
+          "en": "Local markets and Chiapanecan restaurants downtown."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 400,
+      "max": 1400,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "De noviembre a abril, la temporada seca, con días soleados y noches frías. Marzo a mayo ofrece el mejor clima. La temporada de lluvias (junio a octubre) tiene tardes húmedas pero menos turistas y precios más bajos.",
+      "en": "November to April, the dry season, with sunny days and cold nights. March to May offers the best weather. The rainy season (June to October) has wet afternoons but fewer tourists and lower prices."
+    },
+    "airportIATA": "TGZ",
+    "lastModified": "2026-06-06"
+  },
+  {
+    "id": "playa-del-carmen",
+    "slug": "playa-del-carmen",
+    "name": {
+      "es": "Playa del Carmen",
+      "en": "Playa del Carmen"
+    },
+    "shortName": "PDC",
+    "coordinates": {
+      "lat": 20.6296,
+      "lng": -87.0739
+    },
+    "state": {
+      "es": "Quintana Roo",
+      "en": "Quintana Roo"
+    },
+    "region": "peninsula",
+    "description": {
+      "es": "Playa del Carmen es el corazón de la Riviera Maya: playas caribeñas, la animada Quinta Avenida peatonal, cenotes cercanos y el ferry a Cozumel.",
+      "en": "Playa del Carmen is the heart of the Riviera Maya: Caribbean beaches, the lively pedestrian Quinta Avenida, nearby cenotes, and the ferry to Cozumel."
+    },
+    "longDescription": {
+      "es": "Playa del Carmen, a una hora al sur de Cancún, es la ciudad más cosmopolita de la Riviera Maya. Su columna vertebral es la Quinta Avenida, un andador peatonal de 5 km paralelo a la playa, repleto de restaurantes, tiendas, mercados de artesanías y vida nocturna. Combina el ambiente de playa caribeña con una escena gastronómica internacional y una ubicación inmejorable: desde aquí salen los ferris a Cozumel (paraíso del buceo), está a un paso de Akumal y sus tortugas, de Tulum y de un corredor de cenotes espectaculares hacia el interior de la selva. Es una base práctica y bien conectada para explorar toda la Riviera Maya, con opciones para todos los presupuestos.",
+      "en": "Playa del Carmen, an hour south of Cancún, is the Riviera Maya's most cosmopolitan town. Its backbone is the Quinta Avenida, a 5 km pedestrian street parallel to the beach, packed with restaurants, shops, craft markets, and nightlife. It blends a Caribbean beach vibe with an international food scene and an unbeatable location: ferries to Cozumel (a diving paradise) leave from here, and it's a short hop from Akumal and its turtles, from Tulum, and from a corridor of spectacular cenotes inland in the jungle. It's a practical, well-connected base for exploring the whole Riviera Maya, with options for every budget."
+    },
+    "heroImage": "https://images.unsplash.com/photo-1509233725247-49e657c54213?w=1200&h=630&fit=crop&q=80",
+    "highlights": [
+      {
+        "es": "La Quinta Avenida, andador peatonal de 5 km con restaurantes, tiendas y vida nocturna",
+        "en": "La Quinta Avenida, a 5 km pedestrian street with restaurants, shops, and nightlife"
+      },
+      {
+        "es": "Ferry a Cozumel (35-45 min) para bucear y esnórquel en arrecifes de clase mundial",
+        "en": "Ferry to Cozumel (35-45 min) for world-class reef diving and snorkeling"
+      },
+      {
+        "es": "Cenotes cercanos como Chaak-Tun, Cristalino y Dos Ojos para nadar y bucear",
+        "en": "Nearby cenotes like Chaak-Tun, Cristalino, and Dos Ojos for swimming and diving"
+      },
+      {
+        "es": "Excursiones a Akumal (tortugas), Tulum y los parques Xcaret y Xplor",
+        "en": "Trips to Akumal (turtles), Tulum, and the Xcaret and Xplor parks"
+      }
+    ],
+    "gettingAround": {
+      "es": "El centro y la Quinta Avenida se recorren a pie. Para distancias mayores hay taxis (sin taxímetro: acuerda el precio antes) y colectivos económicos sobre la carretera 307 que conectan con Tulum y Cancún. El ferry a Cozumel sale del muelle frente a la Quinta Avenida cada 30-60 minutos (redondo 250-350 MXN). Para cenotes y parques conviene rentar auto o tomar tours.",
+      "en": "Downtown and the Quinta Avenida are walkable. For longer distances there are taxis (no meter: agree the fare first) and cheap colectivos along Highway 307 connecting to Tulum and Cancún. The ferry to Cozumel leaves from the pier by the Quinta Avenida every 30-60 minutes (round trip 250-350 MXN). For cenotes and parks it's best to rent a car or take tours."
+    },
+    "safetyTips": [
+      {
+        "es": "Las zonas turísticas son seguras de día y de noche en la Quinta Avenida, muy transitada. Usa taxis de sitio de noche y acuerda siempre la tarifa antes de subir.",
+        "en": "The tourist areas are safe day and night on the busy Quinta Avenida. Use registered taxis at night and always agree on the fare before getting in."
+      },
+      {
+        "es": "Cuida tus cosas en la playa y revisa las condiciones del sargazo (abril-octubre) antes de elegir fechas si buscas playa impecable.",
+        "en": "Watch your belongings on the beach and check sargassum conditions (April-October) before choosing dates if you want a pristine beach."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Tacos al pastor",
+        "description": {
+          "es": "Tacos de cerdo marinado al trompo con piña, cilantro y cebolla. Imprescindibles en las taquerías fuera de la zona turística, donde son más auténticos y baratos.",
+          "en": "Spit-roasted marinated pork tacos with pineapple, cilantro, and onion. A must at taquerías away from the tourist zone, where they're more authentic and cheaper."
+        },
+        "priceRange": {
+          "min": 15,
+          "max": 40,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Taquerías locales en las calles del centro, lejos de la Quinta Avenida.",
+          "en": "Local taquerías on downtown streets, away from the Quinta Avenida."
+        }
+      },
+      {
+        "name": "Marisco caribeño",
+        "description": {
+          "es": "Ceviche, aguachile, pescado a la talla y cócteles de camarón frescos del Caribe, ideales con una cerveza fría.",
+          "en": "Ceviche, aguachile, grilled fish, and shrimp cocktails fresh from the Caribbean, ideal with a cold beer."
+        },
+        "priceRange": {
+          "min": 90,
+          "max": 280,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Marisquerías locales y mercados; en la Quinta Avenida hay versiones más caras frente al paseo.",
+          "en": "Local seafood spots and markets; the Quinta Avenida has pricier versions along the promenade."
+        }
+      },
+      {
+        "name": "Marquesitas",
+        "description": {
+          "es": "Crepa crujiente enrollada rellena de queso de bola y dulce, el postre callejero clásico de la península de Yucatán.",
+          "en": "A crispy rolled crepe filled with Edam cheese and something sweet, the classic street dessert of the Yucatán Peninsula."
+        },
+        "priceRange": {
+          "min": 35,
+          "max": 70,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Puestos ambulantes en el Parque Fundadores y la Quinta Avenida por la noche.",
+          "en": "Street carts at Parque Fundadores and the Quinta Avenida at night."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 800,
+      "max": 3500,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "Noviembre y diciembre son ideales: el sargazo disminuye desde finales de octubre, el clima es perfecto y las multitudes aún no llegan a su pico (Navidad y spring break). De abril a octubre el sargazo puede afectar las playas; los cenotes nunca se ven afectados.",
+      "en": "November and December are ideal: sargassum eases from late October, the weather is perfect, and crowds haven't peaked yet (Christmas and spring break). From April to October sargassum can affect the beaches; cenotes are never affected."
+    },
+    "airportIATA": "CUN",
+    "lastModified": "2026-06-06"
+  },
+  {
+    "id": "bacalar",
+    "slug": "bacalar",
+    "name": {
+      "es": "Bacalar",
+      "en": "Bacalar"
+    },
+    "shortName": "Bacalar",
+    "coordinates": {
+      "lat": 18.6764,
+      "lng": -88.3953
+    },
+    "state": {
+      "es": "Quintana Roo",
+      "en": "Quintana Roo"
+    },
+    "region": "peninsula",
+    "description": {
+      "es": "Bacalar, Pueblo Mágico al sur de Quintana Roo, es famoso por su Laguna de los Siete Colores: aguas dulces que van del turquesa al azul profundo, cenotes y antiguos estromatolitos.",
+      "en": "Bacalar, a Pueblo Mágico in southern Quintana Roo, is famous for its Lagoon of Seven Colors: freshwater shading from turquoise to deep blue, cenotes, and ancient stromatolites."
+    },
+    "longDescription": {
+      "es": "Bacalar se asienta junto a una laguna de agua dulce de unos 42 km de largo cuyo fondo de arena blanca y distintas profundidades crean siete tonos de azul, lo que le ha valido el apodo de 'Laguna de los Siete Colores'. Es un Pueblo Mágico tranquilo, alternativa pausada a la fiesta de la Riviera Maya, ideal para nadar, navegar en velero, remar en kayak o paddleboard al amanecer. Sobre la laguna se asoma el Fuerte de San Felipe (1733), construido para defender el pueblo de los piratas y hoy museo. Alrededor hay cenotes espectaculares como el Cenote Azul (uno de los más profundos de México), el Cenote Cocalitos —donde sobreviven estromatolitos, las formaciones vivas más antiguas del planeta— y Los Rápidos, un canal de corriente suave. El centro conserva calles coloridas, el cenote y un ritmo de vida lento. El aeropuerto más cercano es el de Chetumal (CTM), a unos 40 minutos.",
+      "en": "Bacalar sits beside a freshwater lagoon about 42 km long whose white-sand bottom and varying depths create seven shades of blue, earning it the nickname 'Lagoon of Seven Colors.' It's a laid-back Pueblo Mágico, a slow-paced alternative to the Riviera Maya party scene, ideal for swimming, sailing, and paddling by kayak or paddleboard at sunrise. Overlooking the lagoon stands the Fort of San Felipe (1733), built to defend the town from pirates and now a museum. Nearby are spectacular cenotes such as Cenote Azul (one of Mexico's deepest), Cenote Cocalitos —home to stromatolites, the planet's oldest living formations— and Los Rápidos, a gentle-current channel. The center keeps colorful streets, its own cenote, and an unhurried pace. The nearest airport is Chetumal (CTM), about 40 minutes away."
+    },
+    "heroImage": "https://images.unsplash.com/photo-1610651475830-1f6c4d36b3dc?w=1200&h=630&fit=crop&q=80",
+    "highlights": [
+      {
+        "es": "Navegar la Laguna de los Siete Colores en velero, lancha o paddleboard al amanecer",
+        "en": "Sail the Lagoon of Seven Colors by sailboat, boat, or paddleboard at sunrise"
+      },
+      {
+        "es": "Nadar en el Cenote Azul, uno de los cenotes a cielo abierto más profundos de México (~90 m)",
+        "en": "Swim in Cenote Azul, one of Mexico's deepest open-air cenotes (~90 m)"
+      },
+      {
+        "es": "Ver los estromatolitos vivos del Cenote Cocalitos, formaciones de miles de años",
+        "en": "See the living stromatolites at Cenote Cocalitos, formations thousands of years old"
+      },
+      {
+        "es": "Recorrer el Fuerte de San Felipe (1733) y su museo de la historia pirata",
+        "en": "Tour the Fort of San Felipe (1733) and its pirate-history museum"
+      }
+    ],
+    "gettingAround": {
+      "es": "El centro de Bacalar es pequeño y caminable. Para llegar a los balnearios, cenotes y a Los Rápidos (al sur, sobre la carretera Costera) conviene bicicleta, taxi o auto rentado, ya que están a varios kilómetros. Los taxis no usan taxímetro: acuerda la tarifa antes de subir (un trayecto dentro del pueblo ronda 40-80 MXN). Muchos hoteles a orilla de laguna ofrecen kayaks y paddleboards. Para excursiones a la laguna lo habitual es contratar un tour en lancha o velero compartido desde el muelle.",
+      "en": "Downtown Bacalar is small and walkable. To reach the swimming spots, cenotes, and Los Rápidos (to the south along the Costera road) you'll want a bike, taxi, or rental car, since they're several kilometers out. Taxis don't use meters: agree on the fare before getting in (a ride within town runs about 40-80 MXN). Many lakeside hotels offer kayaks and paddleboards. For lagoon excursions, the usual option is a shared boat or sailboat tour from the dock."
+    },
+    "safetyTips": [
+      {
+        "es": "Bacalar es un destino tranquilo y seguro. Cuida la laguna: usa solo bloqueador biodegradable para no dañar los estromatolitos, que son organismos vivos protegidos.",
+        "en": "Bacalar is a calm, safe destination. Protect the lagoon: use only biodegradable sunscreen to avoid harming the stromatolites, which are protected living organisms."
+      },
+      {
+        "es": "Lleva efectivo: varios balnearios, cenotes y comercios pequeños no aceptan tarjeta y los cajeros del centro pueden quedarse sin efectivo en temporada alta.",
+        "en": "Carry cash: several swimming spots, cenotes, and small shops don't take cards, and the town's ATMs can run out during high season."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Pescado frito y ceviche de laguna",
+        "description": {
+          "es": "Pescado fresco frito entero o en ceviche, servido en los balnearios y palapas a orilla de la laguna, a menudo con arroz, ensalada y tortillas.",
+          "en": "Fresh fish fried whole or as ceviche, served at the swimming spots and palapas along the lagoon, often with rice, salad, and tortillas."
+        },
+        "priceRange": {
+          "min": 120,
+          "max": 280,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Las palapas y balnearios sobre la Costera y los restaurantes con muelle propio frente a la laguna.",
+          "en": "The palapas and swimming clubs along the Costera and lakeside restaurants with their own docks."
+        }
+      },
+      {
+        "name": "Marquesita",
+        "description": {
+          "es": "Crepa crujiente enrollada, rellena de queso de bola con cajeta, Nutella o mermelada: el postre callejero típico de la península de Yucatán.",
+          "en": "A crispy rolled crepe filled with Edam cheese and cajeta, Nutella, or jam: the classic street dessert of the Yucatán Peninsula."
+        },
+        "priceRange": {
+          "min": 35,
+          "max": 70,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Los puestos ambulantes alrededor del parque central y el zócalo de Bacalar por la noche.",
+          "en": "The street carts around the central park and main square of Bacalar at night."
+        }
+      },
+      {
+        "name": "Panuchos y salbutes",
+        "description": {
+          "es": "Antojitos yucatecos de tortilla de maíz (rellena de frijol en el panucho, inflada en el salbute) con cochinita o pavo, lechuga, jitomate y cebolla encurtida.",
+          "en": "Yucatecan corn-tortilla snacks (bean-stuffed for panucho, puffed for salbute) topped with cochinita or turkey, lettuce, tomato, and pickled onion."
+        },
+        "priceRange": {
+          "min": 15,
+          "max": 45,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Las loncherías y cocinas económicas del centro de Bacalar, sobre todo por la noche.",
+          "en": "The loncherías and budget kitchens in downtown Bacalar, especially in the evening."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 600,
+      "max": 2800,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "De noviembre a abril el clima es seco y la laguna luce sus colores más vivos bajo el sol. Evita la temporada de lluvias y huracanes (junio-octubre), cuando el agua puede enturbiarse. Entre semana hay menos gente que en fines de semana largos, cuando llegan visitantes de Chetumal y la Riviera Maya.",
+      "en": "From November to April the weather is dry and the lagoon shows its most vivid colors in the sun. Avoid the rainy and hurricane season (June-October), when the water can turn cloudy. Weekdays are quieter than long weekends, when visitors arrive from Chetumal and the Riviera Maya."
+    },
+    "airportIATA": "CTM",
+    "lastModified": "2026-06-14"
+  },
+  {
+    "id": "valladolid",
+    "slug": "valladolid",
+    "name": {
+      "es": "Valladolid",
+      "en": "Valladolid"
+    },
+    "shortName": "Valladolid",
+    "coordinates": {
+      "lat": 20.6896,
+      "lng": -88.2011
+    },
+    "state": {
+      "es": "Yucatán",
+      "en": "Yucatán"
+    },
+    "region": "peninsula",
+    "description": {
+      "es": "Valladolid, Pueblo Mágico colonial en el corazón de Yucatán, es la base perfecta para visitar Chichén Itzá y Ek Balam, con cenotes en pleno centro y calles coloridas.",
+      "en": "Valladolid, a colonial Pueblo Mágico in the heart of Yucatán, is the perfect base for visiting Chichén Itzá and Ek Balam, with cenotes in the town center and colorful streets."
+    },
+    "longDescription": {
+      "es": "Valladolid es una de las ciudades coloniales más bonitas de la península de Yucatán y la base ideal para explorar la región maya sin las multitudes de la costa. Fundada en 1543, conserva fachadas en tonos pastel, un zócalo arbolado frente a la iglesia de San Servacio y la Calzada de los Frailes, una calle empedrada que lleva al convento de San Bernardino de Siena (siglo XVI). Lo más sorprendente es que tiene cenotes dentro y a un paso de la ciudad: el Cenote Zací en pleno centro y los fotogénicos Suytun y Oxman a pocos minutos. Está a unos 40 minutos de Chichén Itzá —una de las Siete Maravillas del Mundo— y muy cerca de Ek Balam, lo que permite llegar temprano antes que los tours de Cancún. La gastronomía yucateca brilla aquí: cochinita pibil, lomitos de Valladolid y longaniza. El aeropuerto más práctico es Cancún (CUN), a unas 2 horas; Mérida (MID) queda a distancia similar.",
+      "en": "Valladolid is one of the prettiest colonial towns on the Yucatán Peninsula and the ideal base for exploring the Maya region without the coastal crowds. Founded in 1543, it keeps pastel facades, a tree-lined main square facing the church of San Servacio, and the Calzada de los Frailes, a cobbled street leading to the 16th-century convent of San Bernardino de Siena. Most striking, it has cenotes within and just outside town: Cenote Zací right in the center and the photogenic Suytun and Oxman minutes away. It's about 40 minutes from Chichén Itzá —one of the New Seven Wonders of the World— and very close to Ek Balam, letting you arrive early ahead of the Cancún tour buses. Yucatecan cuisine shines here: cochinita pibil, lomitos de Valladolid, and longaniza. The handiest airport is Cancún (CUN), about 2 hours away; Mérida (MID) is a similar distance."
+    },
+    "heroImage": "https://images.unsplash.com/photo-1568454537842-d933259bb258?w=1200&h=630&fit=crop&q=80",
+    "highlights": [
+      {
+        "es": "Usar Valladolid como base para llegar temprano a Chichén Itzá (~40 min) y Ek Balam",
+        "en": "Use Valladolid as a base to reach Chichén Itzá (~40 min) and Ek Balam early"
+      },
+      {
+        "es": "Nadar en cenotes cercanos como Suytun, Oxman y el Cenote Zací, en pleno centro",
+        "en": "Swim in nearby cenotes like Suytun, Oxman, and Cenote Zací right in the center"
+      },
+      {
+        "es": "Caminar la Calzada de los Frailes hasta el convento de San Bernardino de Siena",
+        "en": "Walk the Calzada de los Frailes to the convent of San Bernardino de Siena"
+      },
+      {
+        "es": "Probar la cocina yucateca: cochinita pibil, lomitos y longaniza de Valladolid",
+        "en": "Taste Yucatecan cuisine: cochinita pibil, lomitos, and Valladolid longaniza"
+      }
+    ],
+    "gettingAround": {
+      "es": "El centro histórico de Valladolid es compacto y se recorre a pie: del zócalo a la Calzada de los Frailes hay unos 10 minutos caminando. Para los cenotes de las afueras (Suytun, Oxman) y para Chichén Itzá o Ek Balam conviene auto rentado, taxi o colectivo. Los colectivos a Chichén Itzá salen del centro por unos 40-50 MXN; los taxis dentro de la ciudad cuestan 30-60 MXN. También se rentan bicicletas. La terminal de ADO en el centro conecta con Cancún, Mérida, Tulum y Playa del Carmen.",
+      "en": "Valladolid's historic center is compact and walkable: it's about a 10-minute walk from the main square to the Calzada de los Frailes. For the cenotes outside town (Suytun, Oxman) and for Chichén Itzá or Ek Balam, a rental car, taxi, or colectivo is best. Colectivos to Chichén Itzá leave the center for about 40-50 MXN; taxis within town cost 30-60 MXN. Bicycles are also for rent. The downtown ADO terminal connects to Cancún, Mérida, Tulum, and Playa del Carmen."
+    },
+    "safetyTips": [
+      {
+        "es": "Valladolid es una ciudad tranquila y muy segura para caminar de día y de noche en el centro. Como siempre, cuida tus pertenencias en cenotes y sitios concurridos.",
+        "en": "Valladolid is a calm, very safe town for walking day and night in the center. As always, watch your belongings at cenotes and busy sites."
+      },
+      {
+        "es": "Para Chichén Itzá llega a la apertura (8:00) para evitar el calor y los tours masivos de Cancún; lleva agua, sombrero y efectivo para la entrada.",
+        "en": "For Chichén Itzá arrive at opening (8:00) to beat the heat and the mass tours from Cancún; bring water, a hat, and cash for the entrance fee."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Cochinita pibil",
+        "description": {
+          "es": "Cerdo marinado en achiote y naranja agria, envuelto en hoja de plátano y cocido bajo tierra. El platillo emblema de Yucatán, servido en tacos, tortas o por kilo.",
+          "en": "Pork marinated in achiote and sour orange, wrapped in banana leaf and cooked underground. Yucatán's signature dish, served in tacos, tortas, or by the kilo."
+        },
+        "priceRange": {
+          "min": 40,
+          "max": 130,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "El mercado municipal por la mañana y las cocinas económicas alrededor del centro, donde se sirve recién hecha.",
+          "en": "The municipal market in the morning and the budget kitchens around the center, where it's served freshly made."
+        }
+      },
+      {
+        "name": "Lomitos de Valladolid",
+        "description": {
+          "es": "Platillo típico de la ciudad: trozos de cerdo guisados en una salsa de jitomate, servidos con huevo cocido y la clásica cebolla morada encurtida.",
+          "en": "A dish native to the town: chunks of pork stewed in a tomato sauce, served with hard-boiled egg and the classic pickled red onion."
+        },
+        "priceRange": {
+          "min": 70,
+          "max": 150,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Los restaurantes de cocina yucateca tradicional del centro de Valladolid.",
+          "en": "The traditional Yucatecan restaurants in downtown Valladolid."
+        }
+      },
+      {
+        "name": "Longaniza de Valladolid",
+        "description": {
+          "es": "Embutido ahumado típico de la región, de sabor intenso, que se asa y se come en tacos con tortilla recién hecha, naranja agria y salsa de chile habanero.",
+          "en": "A smoked sausage typical of the region, intensely flavored, grilled and eaten in tacos with fresh tortillas, sour orange, and habanero salsa."
+        },
+        "priceRange": {
+          "min": 30,
+          "max": 90,
+          "currency": "MXN"
+        },
+        "whereToTry": {
+          "es": "Las taquerías y puestos del mercado y del zócalo, sobre todo por la noche.",
+          "en": "The taquerías and stalls at the market and the main square, especially at night."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 550,
+      "max": 2400,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "De noviembre a marzo el clima es más fresco y seco, ideal para caminar el centro y visitar Chichén Itzá sin el calor extremo de la primavera. Marzo y septiembre ofrecen el espectáculo del equinoccio en Chichén Itzá (la serpiente de luz en El Castillo), aunque con más afluencia. Evita el mediodía de abril-mayo, los meses más calurosos.",
+      "en": "From November to March the weather is cooler and drier, ideal for walking the center and visiting Chichén Itzá without the extreme spring heat. March and September bring the equinox spectacle at Chichén Itzá (the serpent of light on El Castillo), though with bigger crowds. Avoid midday in April-May, the hottest months."
+    },
+    "airportIATA": "CUN",
+    "lastModified": "2026-06-14"
   }
 ]

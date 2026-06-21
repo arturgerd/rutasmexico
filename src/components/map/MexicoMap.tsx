@@ -192,7 +192,7 @@ export default function MexicoMap({
                   <span className="text-arena-700 font-medium">
                     {locale === "es" ? style.label.es : style.label.en}
                   </span>
-                  <span className="text-arena-400 text-xs">({count})</span>
+                  <span className="text-arena-700 text-xs">({count})</span>
                 </div>
               );
             })}

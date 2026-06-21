@@ -7,7 +7,7 @@ const LocationPinMapDynamic = dynamic(() => import("./LocationPinMap"), {
   ssr: false,
   loading: () => (
     <div className="w-full h-[200px] rounded-xl bg-arena-100 animate-pulse flex items-center justify-center">
-      <span className="text-arena-400 text-sm">📍</span>
+      <span className="text-arena-700 text-sm">📍</span>
     </div>
   ),
 });

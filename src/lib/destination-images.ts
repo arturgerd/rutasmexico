@@ -65,6 +65,32 @@ export const DESTINATION_IMAGES: Record<string, DestinationImage> = {
     alt: { es: "Bahías de Huatulco, costa del Pacífico", en: "Huatulco Bays, Pacific coast" },
     credit: "Unsplash",
   },
+  // Added 2026-06-06 — URLs visually verified to depict the destination.
+  tulum: {
+    url: "https://images.unsplash.com/photo-1622870129889-f7e0ba2603a1?w=800&h=500&fit=crop&q=80",
+    alt: { es: "Ruinas mayas de Tulum sobre el mar Caribe", en: "Mayan ruins of Tulum above the Caribbean Sea" },
+    credit: "Unsplash",
+  },
+  puebla: {
+    url: "https://images.unsplash.com/photo-1653661279002-692227e35f0f?w=800&h=500&fit=crop&q=80",
+    alt: { es: "Calle colonial del centro histórico de Puebla", en: "Colonial street in Puebla's historic center" },
+    credit: "Unsplash",
+  },
+  queretaro: {
+    url: "https://images.unsplash.com/photo-1512442827816-8e5a088619c9?w=800&h=500&fit=crop&q=80",
+    alt: { es: "Calle empedrada del centro histórico de Querétaro", en: "Cobblestone street in Querétaro's historic center" },
+    credit: "Unsplash",
+  },
+  "san-cristobal-de-las-casas": {
+    url: "https://images.unsplash.com/photo-1593374419603-bf046ae3a497?w=800&h=500&fit=crop&q=80",
+    alt: { es: "Andador colonial de San Cristóbal de las Casas", en: "Colonial walkway in San Cristóbal de las Casas" },
+    credit: "Unsplash",
+  },
+  "playa-del-carmen": {
+    url: "https://images.unsplash.com/photo-1509233725247-49e657c54213?w=800&h=500&fit=crop&q=80",
+    alt: { es: "Playa caribeña en Playa del Carmen", en: "Caribbean beach in Playa del Carmen" },
+    credit: "Unsplash",
+  },
 };
 
 // Hero/background images for pages
@@ -80,10 +106,11 @@ export const PAGE_HERO_IMAGES = {
 export const POPULAR_DESTINATION_IMAGES: Record<string, string> = {
   // PLAYAS
   cancun: "https://images.unsplash.com/photo-1510097467424-192d713fd8b2?w=400&h=300&fit=crop&q=75",
-  "playa-del-carmen": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=300&fit=crop&q=75",
+  "playa-del-carmen": "https://images.unsplash.com/photo-1509233725247-49e657c54213?w=400&h=300&fit=crop&q=75",
+  "san-cristobal-de-las-casas": "https://images.unsplash.com/photo-1593374419603-bf046ae3a497?w=400&h=300&fit=crop&q=75",
   "cabo-san-lucas": "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=400&h=300&fit=crop&q=75",
   "puerto-vallarta": "https://images.unsplash.com/photo-1578469550956-0e16b69c6a3d?w=400&h=300&fit=crop&q=75",
-  tulum: "https://images.unsplash.com/photo-1605723517503-3cadb5818a0c?w=400&h=300&fit=crop&q=75",
+  tulum: "https://images.unsplash.com/photo-1622870129889-f7e0ba2603a1?w=400&h=300&fit=crop&q=75",
   cozumel: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop&q=75",
   acapulco: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=400&h=300&fit=crop&q=75",
   "riviera-maya": "https://images.unsplash.com/photo-1505881502353-a1986add3762?w=400&h=300&fit=crop&q=75",
@@ -108,8 +135,8 @@ export const POPULAR_DESTINATION_IMAGES: Record<string, string> = {
   merida: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=400&h=300&fit=crop&q=75",
   oaxaca: "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=400&h=300&fit=crop&q=75",
   monterrey: "https://images.unsplash.com/photo-1500759285222-a95626b934cb?w=400&h=300&fit=crop&q=75",
-  puebla: "https://images.unsplash.com/photo-1587135941948-670b381f08ce?w=400&h=300&fit=crop&q=75",
-  queretaro: "https://images.unsplash.com/photo-1595875708571-854a3492c245?w=400&h=300&fit=crop&q=75",
+  puebla: "https://images.unsplash.com/photo-1653661279002-692227e35f0f?w=400&h=300&fit=crop&q=75",
+  queretaro: "https://images.unsplash.com/photo-1512442827816-8e5a088619c9?w=400&h=300&fit=crop&q=75",
   // PUEBLOS
   "san-miguel-de-allende": "https://images.unsplash.com/photo-1549439602-43ebca2327af?w=400&h=300&fit=crop&q=75",
   guanajuato: "https://images.unsplash.com/photo-1568402102990-bc541580b59f?w=400&h=300&fit=crop&q=75",
@@ -125,9 +152,14 @@ export const DESTINATION_CAROUSEL_IMAGES: Record<string, string[]> = {
     "https://images.unsplash.com/photo-1535913989690-f90e1c2d4cfa?w=500&h=350&fit=crop&q=75",
   ],
   "playa-del-carmen": [
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&h=350&fit=crop&q=75",
-    "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=500&h=350&fit=crop&q=75",
-    "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?w=500&h=350&fit=crop&q=75",
+    "https://images.unsplash.com/photo-1509233725247-49e657c54213?w=500&h=350&fit=crop&q=75",
+    "https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=500&h=350&fit=crop&q=75",
+    "https://images.unsplash.com/photo-1503756234508-e32369269deb?w=500&h=350&fit=crop&q=75",
+  ],
+  "san-cristobal-de-las-casas": [
+    "https://images.unsplash.com/photo-1593374419603-bf046ae3a497?w=500&h=350&fit=crop&q=75",
+    "https://images.unsplash.com/photo-1627789196495-caaf82e0e864?w=500&h=350&fit=crop&q=75",
+    "https://images.unsplash.com/photo-1600107617870-fbf34f765b17?w=500&h=350&fit=crop&q=75",
   ],
   "cabo-san-lucas": [
     "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=500&h=350&fit=crop&q=75",
@@ -140,9 +172,9 @@ export const DESTINATION_CAROUSEL_IMAGES: Record<string, string[]> = {
     "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=500&h=350&fit=crop&q=75",
   ],
   tulum: [
-    "https://images.unsplash.com/photo-1605723517503-3cadb5818a0c?w=500&h=350&fit=crop&q=75",
-    "https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=500&h=350&fit=crop&q=75",
-    "https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=500&h=350&fit=crop&q=75",
+    "https://images.unsplash.com/photo-1622870129889-f7e0ba2603a1?w=500&h=350&fit=crop&q=75",
+    "https://images.unsplash.com/photo-1581710862235-eb6e05d8783f?w=500&h=350&fit=crop&q=75",
+    "https://images.unsplash.com/photo-1617758409477-f0dd6e31b865?w=500&h=350&fit=crop&q=75",
   ],
   cozumel: [
     "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=500&h=350&fit=crop&q=75",
@@ -252,16 +284,16 @@ export const DESTINATION_CAROUSEL_IMAGES: Record<string, string[]> = {
     "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=500&h=350&fit=crop&q=75",
   ],
   queretaro: [
-    "https://images.unsplash.com/photo-1595875708571-854a3492c245?w=500&h=350&fit=crop&q=75",
-    "https://images.unsplash.com/photo-1618336753974-aae8e04506aa?w=500&h=350&fit=crop&q=75",
+    "https://images.unsplash.com/photo-1512442827816-8e5a088619c9?w=500&h=350&fit=crop&q=75",
+    "https://images.unsplash.com/photo-1581628202159-93628d44b3d2?w=500&h=350&fit=crop&q=75",
   ],
   guanajuato: [
     "https://images.unsplash.com/photo-1568402102990-bc541580b59f?w=500&h=350&fit=crop&q=75",
     "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=500&h=350&fit=crop&q=75",
   ],
   puebla: [
-    "https://images.unsplash.com/photo-1587135941948-670b381f08ce?w=500&h=350&fit=crop&q=75",
-    "https://images.unsplash.com/photo-1517490232338-06b912a786b5?w=500&h=350&fit=crop&q=75",
+    "https://images.unsplash.com/photo-1653661279002-692227e35f0f?w=500&h=350&fit=crop&q=75",
+    "https://images.unsplash.com/photo-1541033861714-bd82cd092c74?w=500&h=350&fit=crop&q=75",
   ],
 };
 

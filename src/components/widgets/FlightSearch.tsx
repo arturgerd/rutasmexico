@@ -23,6 +23,7 @@ export default function FlightSearch({ airports, defaultOrigin = "", defaultDest
   const [returnDate, setReturnDate] = useState("");
   const [passengers, setPassengers] = useState(1);
   const [isOneWay, setIsOneWay] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const idPrefix = useId();
   const originId = `${idPrefix}origin`;
   const destId = `${idPrefix}dest`;
@@ -45,13 +46,14 @@ export default function FlightSearch({ airports, defaultOrigin = "", defaultDest
 
   const handleSearch = () => {
     if (!origin || !destination) {
-      alert(locale === "es" ? "Selecciona origen y destino" : "Select origin and destination");
+      setError(locale === "es" ? "Selecciona origen y destino" : "Select origin and destination");
       return;
     }
     if (origin === destination) {
-      alert(locale === "es" ? "Origen y destino deben ser diferentes" : "Origin and destination must be different");
+      setError(locale === "es" ? "Origen y destino deben ser diferentes" : "Origin and destination must be different");
       return;
     }
+    setError(null);
 
     const url = getFlightSearchUrl({
       originIATA: origin,
@@ -93,7 +95,8 @@ export default function FlightSearch({ airports, defaultOrigin = "", defaultDest
 
   if (compact) {
     return (
-      <div className="flex flex-col sm:flex-row gap-2">
+      <div className="space-y-2">
+        <div className="flex flex-col sm:flex-row gap-2">
         <label htmlFor={originId} className="sr-only">{locale === "es" ? "Origen" : "Origin"}</label>
         <select
           id={originId}
@@ -128,6 +131,10 @@ export default function FlightSearch({ airports, defaultOrigin = "", defaultDest
         >
           {locale === "es" ? "Encuentra vuelo barato" : "Find cheapest flight"}
         </button>
+        </div>
+        {error && (
+          <p role="alert" className="text-sm font-medium text-red-600">{error}</p>
+        )}
       </div>
     );
   }
@@ -269,8 +276,12 @@ export default function FlightSearch({ airports, defaultOrigin = "", defaultDest
         </div>
       </div>
 
+      {error && (
+        <p role="alert" className="text-sm font-medium text-red-600">{error}</p>
+      )}
+
       {/* Airlines info */}
-      <p className="text-xs text-arena-400 text-center">
+      <p className="text-xs text-arena-700 text-center">
         {locale === "es"
           ? "Compara precios de Volaris, VivaAerobus, Aeroméxico y más aerolíneas"
           : "Compare prices from Volaris, VivaAerobus, Aeromexico and more airlines"}

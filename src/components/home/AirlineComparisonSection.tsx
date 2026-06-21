@@ -1,5 +1,3 @@
-"use client";
-
 import AirlineGrid from "@/components/widgets/AirlineGrid";
 
 export default function AirlineComparisonSection() {

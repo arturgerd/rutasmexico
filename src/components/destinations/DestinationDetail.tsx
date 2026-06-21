@@ -184,7 +184,7 @@ export default function DestinationDetail({ destination, routes, terminals, loca
                           </span>
                         </div>
                         <p className="text-sm text-arena-600 mb-2">{localize(food.description, locale)}</p>
-                        <p className="text-xs text-arena-400">
+                        <p className="text-xs text-arena-700">
                           📍 {localize(food.whereToTry, locale)}
                         </p>
                       </div>
@@ -220,7 +220,7 @@ export default function DestinationDetail({ destination, routes, terminals, loca
                     </a>
                   ))}
                 </div>
-                <p className="text-xs text-arena-400 mt-3 text-center">
+                <p className="text-xs text-arena-700 mt-3 text-center">
                   {(locale as string) === "fr"
                     ? "Clique sur une image pour la voir en grand"
                     : locale === "es"
@@ -362,7 +362,7 @@ export default function DestinationDetail({ destination, routes, terminals, loca
                 <span className="text-xl">✈️</span>
                 <div>
                   <p className="font-semibold text-sm text-arena-900 group-hover:text-terracotta-600">{locale === "es" ? "Buscar vuelos" : "Search flights"}</p>
-                  <p className="text-xs text-arena-400">{locale === "es" ? "Compara aerolíneas" : "Compare airlines"}</p>
+                  <p className="text-xs text-arena-700">{locale === "es" ? "Compara aerolíneas" : "Compare airlines"}</p>
                 </div>
               </Link>
               <Link
@@ -372,7 +372,7 @@ export default function DestinationDetail({ destination, routes, terminals, loca
                 <span className="text-xl">🏨</span>
                 <div>
                   <p className="font-semibold text-sm text-arena-900 group-hover:text-amber-600">{locale === "es" ? "Buscar hoteles" : "Search hotels"}</p>
-                  <p className="text-xs text-arena-400">{locale === "es" ? "Mejores precios" : "Best prices"}</p>
+                  <p className="text-xs text-arena-700">{locale === "es" ? "Mejores precios" : "Best prices"}</p>
                 </div>
               </Link>
               <Link
@@ -382,7 +382,7 @@ export default function DestinationDetail({ destination, routes, terminals, loca
                 <span className="text-xl">🚌</span>
                 <div>
                   <p className="font-semibold text-sm text-arena-900 group-hover:text-blue-600">{locale === "es" ? "Buscar autobuses" : "Search buses"}</p>
-                  <p className="text-xs text-arena-400">{locale === "es" ? "ADO, ETN, Primera Plus" : "ADO, ETN, Primera Plus"}</p>
+                  <p className="text-xs text-arena-700">{locale === "es" ? "ADO, ETN, Primera Plus" : "ADO, ETN, Primera Plus"}</p>
                 </div>
               </Link>
             </div>
@@ -398,7 +398,7 @@ export default function DestinationDetail({ destination, routes, terminals, loca
                   <p className="font-semibold text-sm text-arena-900 group-hover:text-terracotta-600">
                     {t3(locale, "Casarte aquí", "Get married here", "Se marier ici")}
                   </p>
-                  <p className="text-xs text-arena-400">
+                  <p className="text-xs text-arena-700">
                     {t3(locale, "Guía de bodas y venues", "Wedding & venue guide", "Guide mariages et lieux")}
                   </p>
                 </div>

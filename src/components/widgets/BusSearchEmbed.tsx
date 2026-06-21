@@ -92,6 +92,7 @@ export default function BusSearchEmbed() {
   const [origin, setOrigin] = useState("");
   const [destination, setDestination] = useState("");
   const [departDate, setDepartDate] = useState("");
+  const [error, setError] = useState<string | null>(null);
   const idPrefix = useId();
   const originId = `${idPrefix}origin`;
   const destId = `${idPrefix}dest`;
@@ -111,13 +112,14 @@ export default function BusSearchEmbed() {
 
   const handleSearch = () => {
     if (!origin || !destination) {
-      alert(locale === "es" ? "Selecciona origen y destino" : "Select origin and destination");
+      setError(locale === "es" ? "Selecciona origen y destino" : "Select origin and destination");
       return;
     }
     if (origin === destination) {
-      alert(locale === "es" ? "Origen y destino deben ser diferentes" : "Origin and destination must be different");
+      setError(locale === "es" ? "Origen y destino deben ser diferentes" : "Origin and destination must be different");
       return;
     }
+    setError(null);
 
     const originCity = BUS_CITIES.find(c => c.id === origin);
     const destCity = BUS_CITIES.find(c => c.id === destination);
@@ -262,9 +264,13 @@ export default function BusSearchEmbed() {
             </div>
           </div>
 
+          {error && (
+            <p role="alert" className="text-sm font-medium text-red-600">{error}</p>
+          )}
+
           {/* Bus lines badge */}
           <div className="flex flex-wrap items-center gap-2 text-xs">
-            <span className="text-arena-400 font-medium">
+            <span className="text-arena-700 font-medium">
               {locale === "es" ? "Comparamos:" : "We compare:"}
             </span>
             {["ADO", "ETN", "Primera Plus", "Estrella Blanca", "Chihuahuenses", "OCC", "Futura", "Tufesa", "+12 más"].map((line) => (
@@ -299,7 +305,7 @@ export default function BusSearchEmbed() {
                     <p className="font-semibold text-arena-900 text-sm group-hover:text-blue-700 transition-colors">
                       {originCity?.name[locale]} → {destCity?.name[locale]}
                     </p>
-                    <p className="text-xs text-arena-400">
+                    <p className="text-xs text-arena-700">
                       ~{route.duration} • {route.price} MXN
                     </p>
                     <p className="text-[10px] text-blue-500 font-medium mt-0.5">

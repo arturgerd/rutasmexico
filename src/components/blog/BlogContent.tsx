@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BlogPost } from "@/types/blog";
 import { l, t3 } from "@/lib/utils";
-import { getCategoryLabel, getCategoryColor } from "./BlogCard";
+import { getCategoryLabel, getCategoryColor } from "@/lib/blog-category";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 interface RelatedPost {

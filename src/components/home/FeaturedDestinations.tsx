@@ -1,6 +1,4 @@
-"use client";
-
-import { useTranslations, useLocale } from "next-intl";
+import { getTranslations, getLocale } from "next-intl/server";
 import Link from "next/link";
 import Image from "next/image";
 import { Destination } from "@/types/destination";
@@ -12,9 +10,9 @@ interface FeaturedDestinationsProps {
   destinations: Destination[];
 }
 
-export default function FeaturedDestinations({ destinations }: FeaturedDestinationsProps) {
-  const t = useTranslations("home");
-  const locale = useLocale() as Locale;
+export default async function FeaturedDestinations({ destinations }: FeaturedDestinationsProps) {
+  const t = await getTranslations("home");
+  const locale = (await getLocale()) as Locale;
 
   const regionColors: Record<string, string> = {
     centro: "bg-azul-100 text-azul-700",
@@ -74,7 +72,7 @@ export default function FeaturedDestinations({ destinations }: FeaturedDestinati
                   </div>
                 </div>
                 <div className="p-4 flex items-center justify-between">
-                  <span className="text-xs text-arena-400 flex items-center gap-1">
+                  <span className="text-xs text-arena-700 flex items-center gap-1">
                     💰 {locale === "es" ? "Presupuesto diario" : "Daily budget"}
                   </span>
                   <span className="text-sm font-bold text-terracotta-600 bg-terracotta-50 px-3 py-1 rounded-full">

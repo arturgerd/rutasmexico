@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { t3 } from "@/lib/utils";
+import Flag from "@/components/mundial/Flag";
 
 const OPENING_MATCH = new Date("2026-06-11T13:00:00-06:00");
 
@@ -57,6 +58,20 @@ export default function MundialBanner({ locale }: { locale: string }) {
             >
               🗺️ {t3(locale, "Ver la guía completa", "View the complete guide", "Voir le guide complet")}
             </Link>
+            <div className="grid grid-cols-2 gap-3">
+              <Link
+                href={`/${locale}/mundial/simulador`}
+                className="bg-oro-400 text-arena-900 font-bold py-3.5 px-4 rounded-xl text-center shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200"
+              >
+                🎮 {t3(locale, "Simular", "Simulate", "Simuler")}
+              </Link>
+              <Link
+                href={`/${locale}/mundial/penales`}
+                className="bg-white text-terracotta-700 font-bold py-3.5 px-4 rounded-xl text-center shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200"
+              >
+                🧤 {t3(locale, "Penales", "Penalties", "Penaltys")}
+              </Link>
+            </div>
           </div>
         </div>
 
@@ -65,21 +80,21 @@ export default function MundialBanner({ locale }: { locale: string }) {
           {[
             {
               slug: "ciudad-de-mexico",
-              flag: "🇲🇽",
+              code: "mx",
               city: { es: "CDMX · Estadio Azteca", en: "Mexico City · Estadio Azteca", fr: "Mexico · Estadio Azteca" },
               stadium: { es: "Sede en México", en: "Mexico venue", fr: "Stade au Mexique" },
               highlight: { es: "🎉 Partido inaugural", en: "🎉 Opening match", fr: "🎉 Match d'ouverture" },
             },
             {
               slug: "nueva-york-nueva-jersey",
-              flag: "🇺🇸",
+              code: "us",
               city: { es: "NY/NJ · MetLife Stadium", en: "NY/NJ · MetLife Stadium", fr: "NY/NJ · MetLife Stadium" },
               stadium: { es: "Sede en EE.UU.", en: "USA venue", fr: "Stade aux USA" },
               highlight: { es: "🏆 FINAL · 19 julio", en: "🏆 FINAL · July 19", fr: "🏆 FINALE · 19 juillet" },
             },
             {
               slug: "vancouver",
-              flag: "🇨🇦",
+              code: "ca",
               city: { es: "Vancouver · BC Place", en: "Vancouver · BC Place", fr: "Vancouver · BC Place" },
               stadium: { es: "Sede en Canadá", en: "Canada venue", fr: "Stade au Canada" },
               highlight: { es: "🍁 Octavos de final", en: "🍁 Round of 16", fr: "🍁 8es de finale" },
@@ -91,7 +106,7 @@ export default function MundialBanner({ locale }: { locale: string }) {
               className="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-4 hover:bg-white/15 hover:-translate-y-0.5 transition-all duration-200"
             >
               <div className="flex items-center gap-3">
-                <span className="text-3xl">{v.flag}</span>
+                <Flag code={v.code} alt="" className="h-7 w-10 shrink-0" />
                 <div className="flex-1 min-w-0">
                   <div className="font-bold text-white truncate">{t3(locale, v.city.es, v.city.en, v.city.fr)}</div>
                   <div className="text-xs text-white/70 truncate">{t3(locale, v.stadium.es, v.stadium.en, v.stadium.fr)}</div>

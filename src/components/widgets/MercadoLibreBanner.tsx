@@ -61,11 +61,10 @@ export default function MercadoLibreBanner({ context = "general" }: MercadoLibre
         <h3 className="font-display font-bold text-arena-800 text-lg">
           {t3(locale,
             context === "wedding" ? "Productos para tu boda" : "Productos para tu viaje",
-            context === "wedding" ? "Products for your wedding" : "Products for your trip",
-            context === "wedding" ? "Produits pour votre mariage" : "Produits pour votre voyage"
+            context === "wedding" ? "Products for your wedding" : "Products for your trip"
           )}
         </h3>
-        <span className="text-xs text-arena-400 ml-auto">Mercado Libre</span>
+        <span className="text-xs text-arena-700 ml-auto">Mercado Libre</span>
       </div>
 
       <div className="flex gap-4 overflow-x-auto pb-3 -mx-1 px-1 scrollbar-hide">
@@ -88,11 +87,10 @@ export default function MercadoLibreBanner({ context = "general" }: MercadoLibre
         ))}
       </div>
 
-      <p className="text-xs text-arena-400 mt-3 text-center">
+      <p className="text-xs text-arena-700 mt-3 text-center">
         {t3(locale,
           "Comprando a través de estos enlaces nos ayudas a mantener el sitio",
-          "Purchasing through these links helps us maintain the site",
-          "En achetant via ces liens, vous nous aidez à maintenir le site"
+          "Purchasing through these links helps us maintain the site"
         )}
       </p>
     </section>
