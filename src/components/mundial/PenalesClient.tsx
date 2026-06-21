@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { SimTeam } from "@/lib/mundial-simulator";
 import { keeperDifficulty, resolveShot, type ShotResult } from "@/lib/mundial-penales";
 import { t3 } from "@/lib/utils";
+import { getGoalkeeper } from "@/data/goalkeepers";
 import Flag from "./Flag";
 import GoalkeeperKit from "./GoalkeeperKit";
 
@@ -69,6 +70,7 @@ export default function PenalesClient({
 
   const keeper = byId.get(keeperId)!;
   const diff = useMemo(() => keeperDifficulty(keeper), [keeper]);
+  const gkInfo = useMemo(() => getGoalkeeper(keeper.id), [keeper.id]);
   const kName = teamName(keeper, locale);
 
   const dirRef = useRef(1);
@@ -210,9 +212,10 @@ export default function PenalesClient({
 
       {/* Portero actual + marcador */}
       <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 flex-wrap">
           <Flag code={keeper.code} alt={kName} className="h-5 w-7" />
           <span className="font-bold text-arena-900">{kName}</span>
+          <span className="text-arena-700 text-sm">· {gkInfo.name}</span>
           <Stars n={diff.stars} />
           {keeper.id === "bosnia" && (
             <span className="text-[11px] font-bold text-terracotta-700">🧱 {t3(locale, "El muro", "The wall")}</span>
@@ -282,7 +285,7 @@ export default function PenalesClient({
           className="absolute transition-all duration-500 ease-out"
           style={{ left: `${gk.left}%`, top: `${gk.top}%`, width: "17%", transform: `translate(-50%,-50%) rotate(${gk.rot}deg)` }}
         >
-          <GoalkeeperKit primary={keeper.colors[0]} secondary={keeper.colors[1]} className="w-full h-auto drop-shadow" />
+          <GoalkeeperKit primary={keeper.colors[0]} secondary={keeper.colors[1]} face={gkInfo} className="w-full h-auto drop-shadow" />
         </div>
 
         {/* Estela del balón */}
@@ -429,7 +432,7 @@ export default function PenalesClient({
                 <optgroup key={g} label={t3(locale, `Grupo ${g}`, `Group ${g}`)}>
                   {inGroup.map((t) => (
                     <option key={t.id} value={t.id}>
-                      {teamName(t, locale)} {"★".repeat(keeperDifficulty(t).stars)}
+                      {teamName(t, locale)} — {getGoalkeeper(t.id).name} {"★".repeat(keeperDifficulty(t).stars)}
                     </option>
                   ))}
                 </optgroup>
