@@ -3,12 +3,13 @@
 import { useEffect, useState } from "react";
 import { t3 } from "@/lib/utils";
 
-const OPENING_KICKOFF = new Date("2026-06-11T13:00:00-06:00").getTime();
+// El Mundial ya empezó; ahora contamos los días que restan hacia la gran final.
+const FINAL_KICKOFF = new Date("2026-07-19T15:00:00-04:00").getTime();
 
 type Parts = { days: number; hours: number; mins: number; secs: number };
 
 function diff(now: number): Parts {
-  const ms = Math.max(0, OPENING_KICKOFF - now);
+  const ms = Math.max(0, FINAL_KICKOFF - now);
   const days = Math.floor(ms / 86_400_000);
   const hours = Math.floor((ms % 86_400_000) / 3_600_000);
   const mins = Math.floor((ms % 3_600_000) / 60_000);
@@ -45,16 +46,18 @@ export default function CountdownHero({ locale }: CountdownHeroProps) {
       <div className="container-custom">
         <div className="text-center mb-6">
           <span className="inline-block text-oro-300 text-xs font-bold tracking-[0.2em] uppercase mb-2">
-            {t3(locale, "Cuenta regresiva", "Kickoff countdown", "Compte à rebours")}
+            {finished
+              ? t3(locale, "Mundial 2026", "World Cup 2026", "Coupe du Monde 2026")
+              : t3(locale, "Días que restan del Mundial", "Days left in the World Cup", "Jours restants de la Coupe")}
           </span>
           <h2 className="font-display text-2xl md:text-3xl font-bold text-white">
             {finished
-              ? t3(locale, "¡Inició el Mundial 2026!", "World Cup 2026 has started!", "La Coupe du Monde 2026 a commencé !")
+              ? t3(locale, "¡El Mundial 2026 terminó!", "World Cup 2026 has ended!", "La Coupe du Monde 2026 est terminée !")
               : t3(
                   locale,
-                  "11 de junio 2026 · Estadio Azteca · 13:00",
-                  "June 11, 2026 · Estadio Azteca · 13:00",
-                  "11 juin 2026 · Estadio Azteca · 13h00"
+                  "Rumbo a la gran final · 19 de julio 2026",
+                  "Toward the grand final · July 19, 2026",
+                  "Vers la grande finale · 19 juillet 2026"
                 )}
           </h2>
         </div>
