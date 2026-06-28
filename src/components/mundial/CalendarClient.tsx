@@ -266,7 +266,13 @@ export default function CalendarClient({ matches }: Props) {
                           <span className="text-3xl">{teamFlag(teamA)}</span>
                           <span className="font-bold text-arena-800 truncate">{teamA}</span>
                         </div>
-                        <span className="text-arena-700 font-bold text-sm">vs</span>
+                        {typeof m.scoreA === "number" && typeof m.scoreB === "number" ? (
+                          <span className="font-mono text-base font-bold text-arena-900 bg-arena-100 rounded px-2 py-0.5 whitespace-nowrap">
+                            {m.scoreA} - {m.scoreB}
+                          </span>
+                        ) : (
+                          <span className="text-arena-700 font-bold text-sm">vs</span>
+                        )}
                         <div className="flex items-center gap-2 flex-1 min-w-0 justify-end text-right">
                           <span className="font-bold text-arena-800 truncate">{teamB}</span>
                           <span className="text-3xl">{teamFlag(teamB)}</span>

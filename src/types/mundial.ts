@@ -8,6 +8,8 @@ export interface MundialMatch {
   round: "group" | "round-of-32" | "round-of-16" | "quarter" | "semi" | "third-place" | "final";
   group?: string;
   isMexicoGame: boolean;
+  scoreA?: number;
+  scoreB?: number;
 }
 
 export type SafetyLevel = "green" | "yellow" | "red";
