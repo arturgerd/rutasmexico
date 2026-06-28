@@ -4,11 +4,23 @@
     "group": "A",
     "date": "2026-06-11",
     "time": "13:00",
-    "venue": { "es": "Estadio Azteca, CDMX", "en": "Estadio Azteca, Mexico City", "fr": "Estadio Azteca, Mexico" },
+    "venue": {
+      "es": "Estadio Azteca, CDMX",
+      "en": "Estadio Azteca, Mexico City",
+      "fr": "Estadio Azteca, Mexico"
+    },
     "venueSlug": "ciudad-de-mexico",
     "isMexicoGame": true,
-    "teamA": { "es": "México", "en": "Mexico", "fr": "Mexique" },
-    "teamB": { "es": "Sudáfrica", "en": "South Africa", "fr": "Afrique du Sud" },
+    "teamA": {
+      "es": "México",
+      "en": "Mexico",
+      "fr": "Mexique"
+    },
+    "teamB": {
+      "es": "Sudáfrica",
+      "en": "South Africa",
+      "fr": "Afrique du Sud"
+    },
     "scoreA": 2,
     "scoreB": 0
   },
@@ -17,11 +29,23 @@
     "group": "A",
     "date": "2026-06-11",
     "time": "16:00",
-    "venue": { "es": "Por confirmar", "en": "To be confirmed", "fr": "À confirmer" },
+    "venue": {
+      "es": "Por confirmar",
+      "en": "To be confirmed",
+      "fr": "À confirmer"
+    },
     "venueSlug": null,
     "isMexicoGame": false,
-    "teamA": { "es": "Corea del Sur", "en": "South Korea", "fr": "Corée du Sud" },
-    "teamB": { "es": "Chequia", "en": "Czechia", "fr": "Tchéquie" },
+    "teamA": {
+      "es": "Corea del Sur",
+      "en": "South Korea",
+      "fr": "Corée du Sud"
+    },
+    "teamB": {
+      "es": "Chequia",
+      "en": "Czechia",
+      "fr": "Tchéquie"
+    },
     "scoreA": 2,
     "scoreB": 1
   },
@@ -30,11 +54,23 @@
     "group": "A",
     "date": "2026-06-18",
     "time": "19:00",
-    "venue": { "es": "Estadio Akron, Guadalajara", "en": "Estadio Akron, Guadalajara", "fr": "Estadio Akron, Guadalajara" },
+    "venue": {
+      "es": "Estadio Akron, Guadalajara",
+      "en": "Estadio Akron, Guadalajara",
+      "fr": "Estadio Akron, Guadalajara"
+    },
     "venueSlug": "guadalajara",
     "isMexicoGame": true,
-    "teamA": { "es": "México", "en": "Mexico", "fr": "Mexique" },
-    "teamB": { "es": "Corea del Sur", "en": "South Korea", "fr": "Corée du Sud" },
+    "teamA": {
+      "es": "México",
+      "en": "Mexico",
+      "fr": "Mexique"
+    },
+    "teamB": {
+      "es": "Corea del Sur",
+      "en": "South Korea",
+      "fr": "Corée du Sud"
+    },
     "scoreA": 1,
     "scoreB": 0
   },
@@ -43,11 +79,23 @@
     "group": "A",
     "date": "2026-06-18",
     "time": "12:00",
-    "venue": { "es": "Por confirmar", "en": "To be confirmed", "fr": "À confirmer" },
+    "venue": {
+      "es": "Por confirmar",
+      "en": "To be confirmed",
+      "fr": "À confirmer"
+    },
     "venueSlug": null,
     "isMexicoGame": false,
-    "teamA": { "es": "Chequia", "en": "Czechia", "fr": "Tchéquie" },
-    "teamB": { "es": "Sudáfrica", "en": "South Africa", "fr": "Afrique du Sud" },
+    "teamA": {
+      "es": "Chequia",
+      "en": "Czechia",
+      "fr": "Tchéquie"
+    },
+    "teamB": {
+      "es": "Sudáfrica",
+      "en": "South Africa",
+      "fr": "Afrique du Sud"
+    },
     "scoreA": 1,
     "scoreB": 1
   },
@@ -56,51 +104,74 @@
     "group": "A",
     "date": "2026-06-24",
     "time": "19:00",
-    "venue": { "es": "Estadio Azteca, CDMX", "en": "Estadio Azteca, Mexico City", "fr": "Estadio Azteca, Mexico" },
+    "venue": {
+      "es": "Estadio Azteca, CDMX",
+      "en": "Estadio Azteca, Mexico City",
+      "fr": "Estadio Azteca, Mexico"
+    },
     "venueSlug": "ciudad-de-mexico",
     "isMexicoGame": true,
-    "teamA": { "es": "Chequia", "en": "Czechia", "fr": "Tchéquie" },
-    "teamB": { "es": "México", "en": "Mexico", "fr": "Mexique" },
-    "scoreA": null,
-    "scoreB": null
+    "teamA": {
+      "es": "Chequia",
+      "en": "Czechia",
+      "fr": "Tchéquie"
+    },
+    "teamB": {
+      "es": "México",
+      "en": "Mexico",
+      "fr": "Mexique"
+    },
+    "scoreA": 0,
+    "scoreB": 3
   },
   {
     "id": "a-kor-rsa",
     "group": "A",
     "date": "2026-06-24",
     "time": "19:00",
-    "venue": { "es": "Por confirmar", "en": "To be confirmed", "fr": "À confirmer" },
+    "venue": {
+      "es": "Por confirmar",
+      "en": "To be confirmed",
+      "fr": "À confirmer"
+    },
     "venueSlug": null,
     "isMexicoGame": false,
-    "teamA": { "es": "Sudáfrica", "en": "South Africa", "fr": "Afrique du Sud" },
-    "teamB": { "es": "Corea del Sur", "en": "South Korea", "fr": "Corée du Sud" },
-    "scoreA": null,
-    "scoreB": null
+    "teamA": {
+      "es": "Sudáfrica",
+      "en": "South Africa",
+      "fr": "Afrique du Sud"
+    },
+    "teamB": {
+      "es": "Corea del Sur",
+      "en": "South Korea",
+      "fr": "Corée du Sud"
+    },
+    "scoreA": 1,
+    "scoreB": 0
   },
   {
     "id": "b-can-bih",
     "group": "B",
     "date": "2026-06-12",
     "time": "—",
-    "venue": { "es": "Toronto, Canadá", "en": "Toronto, Canada", "fr": "Toronto, Canada" },
+    "venue": {
+      "es": "Toronto",
+      "en": "Toronto",
+      "fr": "Toronto"
+    },
     "venueSlug": null,
     "isMexicoGame": false,
-    "teamA": { "es": "Canadá", "en": "Canada", "fr": "Canada" },
-    "teamB": { "es": "Bosnia y Herzegovina", "en": "Bosnia and Herzegovina", "fr": "Bosnie-Herzégovine" },
+    "teamA": {
+      "es": "Canadá",
+      "en": "Canada",
+      "fr": "Canada"
+    },
+    "teamB": {
+      "es": "Bosnia y Herzegovina",
+      "en": "Bosnia and Herzegovina",
+      "fr": "Bosnie-Herzégovine"
+    },
     "scoreA": 1,
-    "scoreB": 1
-  },
-  {
-    "id": "d-usa-par",
-    "group": "D",
-    "date": "2026-06-12",
-    "time": "—",
-    "venue": { "es": "Estados Unidos", "en": "United States", "fr": "États-Unis" },
-    "venueSlug": null,
-    "isMexicoGame": false,
-    "teamA": { "es": "Estados Unidos", "en": "United States", "fr": "États-Unis" },
-    "teamB": { "es": "Paraguay", "en": "Paraguay", "fr": "Paraguay" },
-    "scoreA": 4,
     "scoreB": 1
   },
   {
@@ -108,12 +179,124 @@
     "group": "B",
     "date": "2026-06-13",
     "time": "—",
-    "venue": { "es": "Por confirmar", "en": "To be confirmed", "fr": "À confirmer" },
+    "venue": {
+      "es": "Santa Clara",
+      "en": "Santa Clara",
+      "fr": "Santa Clara"
+    },
     "venueSlug": null,
     "isMexicoGame": false,
-    "teamA": { "es": "Catar", "en": "Qatar", "fr": "Qatar" },
-    "teamB": { "es": "Suiza", "en": "Switzerland", "fr": "Suisse" },
+    "teamA": {
+      "es": "Catar",
+      "en": "Qatar",
+      "fr": "Qatar"
+    },
+    "teamB": {
+      "es": "Suiza",
+      "en": "Switzerland",
+      "fr": "Suisse"
+    },
     "scoreA": 1,
+    "scoreB": 1
+  },
+  {
+    "id": "b-sui-bih",
+    "group": "B",
+    "date": "2026-06-18",
+    "time": "—",
+    "venue": {
+      "es": "Inglewood",
+      "en": "Inglewood",
+      "fr": "Inglewood"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Suiza",
+      "en": "Switzerland",
+      "fr": "Suisse"
+    },
+    "teamB": {
+      "es": "Bosnia y Herzegovina",
+      "en": "Bosnia and Herzegovina",
+      "fr": "Bosnie-Herzégovine"
+    },
+    "scoreA": 4,
+    "scoreB": 1
+  },
+  {
+    "id": "b-can-qat",
+    "group": "B",
+    "date": "2026-06-18",
+    "time": "—",
+    "venue": {
+      "es": "Vancouver",
+      "en": "Vancouver",
+      "fr": "Vancouver"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Canadá",
+      "en": "Canada",
+      "fr": "Canada"
+    },
+    "teamB": {
+      "es": "Catar",
+      "en": "Qatar",
+      "fr": "Qatar"
+    },
+    "scoreA": 6,
+    "scoreB": 0
+  },
+  {
+    "id": "b-sui-can",
+    "group": "B",
+    "date": "2026-06-24",
+    "time": "—",
+    "venue": {
+      "es": "Vancouver",
+      "en": "Vancouver",
+      "fr": "Vancouver"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Suiza",
+      "en": "Switzerland",
+      "fr": "Suisse"
+    },
+    "teamB": {
+      "es": "Canadá",
+      "en": "Canada",
+      "fr": "Canada"
+    },
+    "scoreA": 2,
+    "scoreB": 1
+  },
+  {
+    "id": "b-bih-qat",
+    "group": "B",
+    "date": "2026-06-24",
+    "time": "—",
+    "venue": {
+      "es": "Seattle",
+      "en": "Seattle",
+      "fr": "Seattle"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Bosnia y Herzegovina",
+      "en": "Bosnia and Herzegovina",
+      "fr": "Bosnie-Herzégovine"
+    },
+    "teamB": {
+      "es": "Catar",
+      "en": "Qatar",
+      "fr": "Qatar"
+    },
+    "scoreA": 3,
     "scoreB": 1
   },
   {
@@ -121,38 +304,299 @@
     "group": "C",
     "date": "2026-06-13",
     "time": "—",
-    "venue": { "es": "Por confirmar", "en": "To be confirmed", "fr": "À confirmer" },
+    "venue": {
+      "es": "East Rutherford",
+      "en": "East Rutherford",
+      "fr": "East Rutherford"
+    },
     "venueSlug": null,
     "isMexicoGame": false,
-    "teamA": { "es": "Brasil", "en": "Brazil", "fr": "Brésil" },
-    "teamB": { "es": "Marruecos", "en": "Morocco", "fr": "Maroc" },
+    "teamA": {
+      "es": "Brasil",
+      "en": "Brazil",
+      "fr": "Brésil"
+    },
+    "teamB": {
+      "es": "Marruecos",
+      "en": "Morocco",
+      "fr": "Maroc"
+    },
     "scoreA": 1,
     "scoreB": 1
   },
   {
-    "id": "c-sco-hai",
+    "id": "c-hai-sco",
     "group": "C",
     "date": "2026-06-13",
     "time": "—",
-    "venue": { "es": "Por confirmar", "en": "To be confirmed", "fr": "À confirmer" },
+    "venue": {
+      "es": "Foxborough",
+      "en": "Foxborough",
+      "fr": "Foxborough"
+    },
     "venueSlug": null,
     "isMexicoGame": false,
-    "teamA": { "es": "Escocia", "en": "Scotland", "fr": "Écosse" },
-    "teamB": { "es": "Haití", "en": "Haiti", "fr": "Haïti" },
-    "scoreA": 1,
+    "teamA": {
+      "es": "Haití",
+      "en": "Haiti",
+      "fr": "Haïti"
+    },
+    "teamB": {
+      "es": "Escocia",
+      "en": "Scotland",
+      "fr": "Écosse"
+    },
+    "scoreA": 0,
+    "scoreB": 1
+  },
+  {
+    "id": "c-sco-mar",
+    "group": "C",
+    "date": "2026-06-19",
+    "time": "—",
+    "venue": {
+      "es": "Foxborough",
+      "en": "Foxborough",
+      "fr": "Foxborough"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Escocia",
+      "en": "Scotland",
+      "fr": "Écosse"
+    },
+    "teamB": {
+      "es": "Marruecos",
+      "en": "Morocco",
+      "fr": "Maroc"
+    },
+    "scoreA": 0,
+    "scoreB": 1
+  },
+  {
+    "id": "c-bra-hai",
+    "group": "C",
+    "date": "2026-06-19",
+    "time": "—",
+    "venue": {
+      "es": "Filadelfia",
+      "en": "Filadelfia",
+      "fr": "Filadelfia"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Brasil",
+      "en": "Brazil",
+      "fr": "Brésil"
+    },
+    "teamB": {
+      "es": "Haití",
+      "en": "Haiti",
+      "fr": "Haïti"
+    },
+    "scoreA": 3,
     "scoreB": 0
+  },
+  {
+    "id": "c-sco-bra",
+    "group": "C",
+    "date": "2026-06-24",
+    "time": "—",
+    "venue": {
+      "es": "Miami",
+      "en": "Miami",
+      "fr": "Miami"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Escocia",
+      "en": "Scotland",
+      "fr": "Écosse"
+    },
+    "teamB": {
+      "es": "Brasil",
+      "en": "Brazil",
+      "fr": "Brésil"
+    },
+    "scoreA": 0,
+    "scoreB": 3
+  },
+  {
+    "id": "c-mar-hai",
+    "group": "C",
+    "date": "2026-06-24",
+    "time": "—",
+    "venue": {
+      "es": "Atlanta",
+      "en": "Atlanta",
+      "fr": "Atlanta"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Marruecos",
+      "en": "Morocco",
+      "fr": "Maroc"
+    },
+    "teamB": {
+      "es": "Haití",
+      "en": "Haiti",
+      "fr": "Haïti"
+    },
+    "scoreA": 4,
+    "scoreB": 2
+  },
+  {
+    "id": "d-usa-par",
+    "group": "D",
+    "date": "2026-06-12",
+    "time": "—",
+    "venue": {
+      "es": "Inglewood",
+      "en": "Inglewood",
+      "fr": "Inglewood"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Estados Unidos",
+      "en": "United States",
+      "fr": "États-Unis"
+    },
+    "teamB": {
+      "es": "Paraguay",
+      "en": "Paraguay",
+      "fr": "Paraguay"
+    },
+    "scoreA": 4,
+    "scoreB": 1
   },
   {
     "id": "d-aus-tur",
     "group": "D",
-    "date": "2026-06-14",
+    "date": "2026-06-13",
     "time": "—",
-    "venue": { "es": "Por confirmar", "en": "To be confirmed", "fr": "À confirmer" },
+    "venue": {
+      "es": "Vancouver",
+      "en": "Vancouver",
+      "fr": "Vancouver"
+    },
     "venueSlug": null,
     "isMexicoGame": false,
-    "teamA": { "es": "Australia", "en": "Australia", "fr": "Australie" },
-    "teamB": { "es": "Turquía", "en": "Türkiye", "fr": "Turquie" },
+    "teamA": {
+      "es": "Australia",
+      "en": "Australia",
+      "fr": "Australie"
+    },
+    "teamB": {
+      "es": "Turquía",
+      "en": "Türkiye",
+      "fr": "Turquie"
+    },
     "scoreA": 2,
+    "scoreB": 0
+  },
+  {
+    "id": "d-usa-aus",
+    "group": "D",
+    "date": "2026-06-19",
+    "time": "—",
+    "venue": {
+      "es": "Seattle",
+      "en": "Seattle",
+      "fr": "Seattle"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Estados Unidos",
+      "en": "United States",
+      "fr": "États-Unis"
+    },
+    "teamB": {
+      "es": "Australia",
+      "en": "Australia",
+      "fr": "Australie"
+    },
+    "scoreA": 2,
+    "scoreB": 0
+  },
+  {
+    "id": "d-tur-par",
+    "group": "D",
+    "date": "2026-06-19",
+    "time": "—",
+    "venue": {
+      "es": "Santa Clara",
+      "en": "Santa Clara",
+      "fr": "Santa Clara"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Turquía",
+      "en": "Türkiye",
+      "fr": "Turquie"
+    },
+    "teamB": {
+      "es": "Paraguay",
+      "en": "Paraguay",
+      "fr": "Paraguay"
+    },
+    "scoreA": 0,
+    "scoreB": 1
+  },
+  {
+    "id": "d-tur-usa",
+    "group": "D",
+    "date": "2026-06-25",
+    "time": "—",
+    "venue": {
+      "es": "Inglewood",
+      "en": "Inglewood",
+      "fr": "Inglewood"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Turquía",
+      "en": "Türkiye",
+      "fr": "Turquie"
+    },
+    "teamB": {
+      "es": "Estados Unidos",
+      "en": "United States",
+      "fr": "États-Unis"
+    },
+    "scoreA": 3,
+    "scoreB": 2
+  },
+  {
+    "id": "d-par-aus",
+    "group": "D",
+    "date": "2026-06-25",
+    "time": "—",
+    "venue": {
+      "es": "Santa Clara",
+      "en": "Santa Clara",
+      "fr": "Santa Clara"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Paraguay",
+      "en": "Paraguay",
+      "fr": "Paraguay"
+    },
+    "teamB": {
+      "es": "Australia",
+      "en": "Australia",
+      "fr": "Australie"
+    },
+    "scoreA": 0,
     "scoreB": 0
   },
   {
@@ -160,63 +604,73 @@
     "group": "E",
     "date": "2026-06-14",
     "time": "—",
-    "venue": { "es": "Por confirmar", "en": "To be confirmed", "fr": "À confirmer" },
+    "venue": {
+      "es": "Houston",
+      "en": "Houston",
+      "fr": "Houston"
+    },
     "venueSlug": null,
     "isMexicoGame": false,
-    "teamA": { "es": "Alemania", "en": "Germany", "fr": "Allemagne" },
-    "teamB": { "es": "Curazao", "en": "Curaçao", "fr": "Curaçao" },
+    "teamA": {
+      "es": "Alemania",
+      "en": "Germany",
+      "fr": "Allemagne"
+    },
+    "teamB": {
+      "es": "Curazao",
+      "en": "Curaçao",
+      "fr": "Curaçao"
+    },
     "scoreA": 7,
     "scoreB": 1
-  },
-  {
-    "id": "f-ned-jpn",
-    "group": "F",
-    "date": "2026-06-14",
-    "time": "—",
-    "venue": { "es": "Por confirmar", "en": "To be confirmed", "fr": "À confirmer" },
-    "venueSlug": null,
-    "isMexicoGame": false,
-    "teamA": { "es": "Países Bajos", "en": "Netherlands", "fr": "Pays-Bas" },
-    "teamB": { "es": "Japón", "en": "Japan", "fr": "Japon" },
-    "scoreA": 2,
-    "scoreB": 2
   },
   {
     "id": "e-civ-ecu",
     "group": "E",
     "date": "2026-06-14",
     "time": "—",
-    "venue": { "es": "Filadelfia, EE.UU.", "en": "Philadelphia, USA", "fr": "Philadelphie, USA" },
+    "venue": {
+      "es": "Filadelfia",
+      "en": "Filadelfia",
+      "fr": "Filadelfia"
+    },
     "venueSlug": null,
     "isMexicoGame": false,
-    "teamA": { "es": "Costa de Marfil", "en": "Ivory Coast", "fr": "Côte d'Ivoire" },
-    "teamB": { "es": "Ecuador", "en": "Ecuador", "fr": "Équateur" },
+    "teamA": {
+      "es": "Costa de Marfil",
+      "en": "Ivory Coast",
+      "fr": "Côte d'Ivoire"
+    },
+    "teamB": {
+      "es": "Ecuador",
+      "en": "Ecuador",
+      "fr": "Équateur"
+    },
     "scoreA": 1,
     "scoreB": 0
-  },
-  {
-    "id": "f-swe-tun",
-    "group": "F",
-    "date": "2026-06-14",
-    "time": "21:00",
-    "venue": { "es": "Estadio BBVA, Monterrey", "en": "Estadio BBVA, Monterrey", "fr": "Estadio BBVA, Monterrey" },
-    "venueSlug": "monterrey",
-    "isMexicoGame": false,
-    "teamA": { "es": "Suecia", "en": "Sweden", "fr": "Suède" },
-    "teamB": { "es": "Túnez", "en": "Tunisia", "fr": "Tunisie" },
-    "scoreA": 5,
-    "scoreB": 1
   },
   {
     "id": "e-ger-civ",
     "group": "E",
     "date": "2026-06-20",
     "time": "—",
-    "venue": { "es": "Por confirmar", "en": "To be confirmed", "fr": "À confirmer" },
+    "venue": {
+      "es": "Toronto",
+      "en": "Toronto",
+      "fr": "Toronto"
+    },
     "venueSlug": null,
     "isMexicoGame": false,
-    "teamA": { "es": "Alemania", "en": "Germany", "fr": "Allemagne" },
-    "teamB": { "es": "Costa de Marfil", "en": "Ivory Coast", "fr": "Côte d'Ivoire" },
+    "teamA": {
+      "es": "Alemania",
+      "en": "Germany",
+      "fr": "Allemagne"
+    },
+    "teamB": {
+      "es": "Costa de Marfil",
+      "en": "Ivory Coast",
+      "fr": "Côte d'Ivoire"
+    },
     "scoreA": 2,
     "scoreB": 1
   },
@@ -225,24 +679,148 @@
     "group": "E",
     "date": "2026-06-20",
     "time": "—",
-    "venue": { "es": "Por confirmar", "en": "To be confirmed", "fr": "À confirmer" },
+    "venue": {
+      "es": "Kansas City",
+      "en": "Kansas City",
+      "fr": "Kansas City"
+    },
     "venueSlug": null,
     "isMexicoGame": false,
-    "teamA": { "es": "Ecuador", "en": "Ecuador", "fr": "Équateur" },
-    "teamB": { "es": "Curazao", "en": "Curaçao", "fr": "Curaçao" },
+    "teamA": {
+      "es": "Ecuador",
+      "en": "Ecuador",
+      "fr": "Équateur"
+    },
+    "teamB": {
+      "es": "Curazao",
+      "en": "Curaçao",
+      "fr": "Curaçao"
+    },
     "scoreA": 0,
     "scoreB": 0
+  },
+  {
+    "id": "e-cuw-civ",
+    "group": "E",
+    "date": "2026-06-25",
+    "time": "—",
+    "venue": {
+      "es": "Filadelfia",
+      "en": "Filadelfia",
+      "fr": "Filadelfia"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Curazao",
+      "en": "Curaçao",
+      "fr": "Curaçao"
+    },
+    "teamB": {
+      "es": "Costa de Marfil",
+      "en": "Ivory Coast",
+      "fr": "Côte d'Ivoire"
+    },
+    "scoreA": 0,
+    "scoreB": 2
+  },
+  {
+    "id": "e-ecu-ger",
+    "group": "E",
+    "date": "2026-06-25",
+    "time": "—",
+    "venue": {
+      "es": "East Rutherford",
+      "en": "East Rutherford",
+      "fr": "East Rutherford"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Ecuador",
+      "en": "Ecuador",
+      "fr": "Équateur"
+    },
+    "teamB": {
+      "es": "Alemania",
+      "en": "Germany",
+      "fr": "Allemagne"
+    },
+    "scoreA": 2,
+    "scoreB": 1
+  },
+  {
+    "id": "f-ned-jpn",
+    "group": "F",
+    "date": "2026-06-14",
+    "time": "—",
+    "venue": {
+      "es": "Arlington",
+      "en": "Arlington",
+      "fr": "Arlington"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Países Bajos",
+      "en": "Netherlands",
+      "fr": "Pays-Bas"
+    },
+    "teamB": {
+      "es": "Japón",
+      "en": "Japan",
+      "fr": "Japon"
+    },
+    "scoreA": 2,
+    "scoreB": 2
+  },
+  {
+    "id": "f-swe-tun",
+    "group": "F",
+    "date": "2026-06-14",
+    "time": "—",
+    "venue": {
+      "es": "Monterrey",
+      "en": "Monterrey",
+      "fr": "Monterrey"
+    },
+    "venueSlug": "monterrey",
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Suecia",
+      "en": "Sweden",
+      "fr": "Suède"
+    },
+    "teamB": {
+      "es": "Túnez",
+      "en": "Tunisia",
+      "fr": "Tunisie"
+    },
+    "scoreA": 5,
+    "scoreB": 1
   },
   {
     "id": "f-ned-swe",
     "group": "F",
     "date": "2026-06-20",
     "time": "—",
-    "venue": { "es": "Por confirmar", "en": "To be confirmed", "fr": "À confirmer" },
+    "venue": {
+      "es": "Houston",
+      "en": "Houston",
+      "fr": "Houston"
+    },
     "venueSlug": null,
     "isMexicoGame": false,
-    "teamA": { "es": "Países Bajos", "en": "Netherlands", "fr": "Pays-Bas" },
-    "teamB": { "es": "Suecia", "en": "Sweden", "fr": "Suède" },
+    "teamA": {
+      "es": "Países Bajos",
+      "en": "Netherlands",
+      "fr": "Pays-Bas"
+    },
+    "teamB": {
+      "es": "Suecia",
+      "en": "Sweden",
+      "fr": "Suède"
+    },
     "scoreA": 5,
     "scoreB": 1
   },
@@ -251,12 +829,974 @@
     "group": "F",
     "date": "2026-06-20",
     "time": "—",
-    "venue": { "es": "Por confirmar", "en": "To be confirmed", "fr": "À confirmer" },
-    "venueSlug": null,
+    "venue": {
+      "es": "Monterrey",
+      "en": "Monterrey",
+      "fr": "Monterrey"
+    },
+    "venueSlug": "monterrey",
     "isMexicoGame": false,
-    "teamA": { "es": "Japón", "en": "Japan", "fr": "Japon" },
-    "teamB": { "es": "Túnez", "en": "Tunisia", "fr": "Tunisie" },
+    "teamA": {
+      "es": "Japón",
+      "en": "Japan",
+      "fr": "Japon"
+    },
+    "teamB": {
+      "es": "Túnez",
+      "en": "Tunisia",
+      "fr": "Tunisie"
+    },
     "scoreA": 4,
     "scoreB": 0
+  },
+  {
+    "id": "f-jpn-swe",
+    "group": "F",
+    "date": "2026-06-25",
+    "time": "—",
+    "venue": {
+      "es": "Arlington",
+      "en": "Arlington",
+      "fr": "Arlington"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Japón",
+      "en": "Japan",
+      "fr": "Japon"
+    },
+    "teamB": {
+      "es": "Suecia",
+      "en": "Sweden",
+      "fr": "Suède"
+    },
+    "scoreA": 1,
+    "scoreB": 1
+  },
+  {
+    "id": "f-ned-tun",
+    "group": "F",
+    "date": "2026-06-25",
+    "time": "—",
+    "venue": {
+      "es": "Kansas City",
+      "en": "Kansas City",
+      "fr": "Kansas City"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Países Bajos",
+      "en": "Netherlands",
+      "fr": "Pays-Bas"
+    },
+    "teamB": {
+      "es": "Túnez",
+      "en": "Tunisia",
+      "fr": "Tunisie"
+    },
+    "scoreA": 3,
+    "scoreB": 1
+  },
+  {
+    "id": "g-bel-egy",
+    "group": "G",
+    "date": "2026-06-15",
+    "time": "—",
+    "venue": {
+      "es": "Seattle",
+      "en": "Seattle",
+      "fr": "Seattle"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Bélgica",
+      "en": "Belgium",
+      "fr": "Belgique"
+    },
+    "teamB": {
+      "es": "Egipto",
+      "en": "Egypt",
+      "fr": "Égypte"
+    },
+    "scoreA": 1,
+    "scoreB": 1
+  },
+  {
+    "id": "g-irn-nzl",
+    "group": "G",
+    "date": "2026-06-15",
+    "time": "—",
+    "venue": {
+      "es": "Inglewood",
+      "en": "Inglewood",
+      "fr": "Inglewood"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Irán",
+      "en": "Iran",
+      "fr": "Iran"
+    },
+    "teamB": {
+      "es": "Nueva Zelanda",
+      "en": "New Zealand",
+      "fr": "Nouvelle-Zélande"
+    },
+    "scoreA": 2,
+    "scoreB": 2
+  },
+  {
+    "id": "g-bel-irn",
+    "group": "G",
+    "date": "2026-06-21",
+    "time": "—",
+    "venue": {
+      "es": "Inglewood",
+      "en": "Inglewood",
+      "fr": "Inglewood"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Bélgica",
+      "en": "Belgium",
+      "fr": "Belgique"
+    },
+    "teamB": {
+      "es": "Irán",
+      "en": "Iran",
+      "fr": "Iran"
+    },
+    "scoreA": 0,
+    "scoreB": 0
+  },
+  {
+    "id": "g-nzl-egy",
+    "group": "G",
+    "date": "2026-06-21",
+    "time": "—",
+    "venue": {
+      "es": "Vancouver",
+      "en": "Vancouver",
+      "fr": "Vancouver"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Nueva Zelanda",
+      "en": "New Zealand",
+      "fr": "Nouvelle-Zélande"
+    },
+    "teamB": {
+      "es": "Egipto",
+      "en": "Egypt",
+      "fr": "Égypte"
+    },
+    "scoreA": 1,
+    "scoreB": 3
+  },
+  {
+    "id": "g-egy-irn",
+    "group": "G",
+    "date": "2026-06-26",
+    "time": "—",
+    "venue": {
+      "es": "Seattle",
+      "en": "Seattle",
+      "fr": "Seattle"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Egipto",
+      "en": "Egypt",
+      "fr": "Égypte"
+    },
+    "teamB": {
+      "es": "Irán",
+      "en": "Iran",
+      "fr": "Iran"
+    },
+    "scoreA": 1,
+    "scoreB": 1
+  },
+  {
+    "id": "g-nzl-bel",
+    "group": "G",
+    "date": "2026-06-26",
+    "time": "—",
+    "venue": {
+      "es": "Vancouver",
+      "en": "Vancouver",
+      "fr": "Vancouver"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Nueva Zelanda",
+      "en": "New Zealand",
+      "fr": "Nouvelle-Zélande"
+    },
+    "teamB": {
+      "es": "Bélgica",
+      "en": "Belgium",
+      "fr": "Belgique"
+    },
+    "scoreA": 1,
+    "scoreB": 5
+  },
+  {
+    "id": "h-esp-cpv",
+    "group": "H",
+    "date": "2026-06-15",
+    "time": "—",
+    "venue": {
+      "es": "Atlanta",
+      "en": "Atlanta",
+      "fr": "Atlanta"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "España",
+      "en": "Spain",
+      "fr": "Espagne"
+    },
+    "teamB": {
+      "es": "Cabo Verde",
+      "en": "Cape Verde",
+      "fr": "Cap-Vert"
+    },
+    "scoreA": 0,
+    "scoreB": 0
+  },
+  {
+    "id": "h-ksa-uru",
+    "group": "H",
+    "date": "2026-06-15",
+    "time": "—",
+    "venue": {
+      "es": "Miami",
+      "en": "Miami",
+      "fr": "Miami"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Arabia Saudita",
+      "en": "Saudi Arabia",
+      "fr": "Arabie saoudite"
+    },
+    "teamB": {
+      "es": "Uruguay",
+      "en": "Uruguay",
+      "fr": "Uruguay"
+    },
+    "scoreA": 1,
+    "scoreB": 1
+  },
+  {
+    "id": "h-esp-ksa",
+    "group": "H",
+    "date": "2026-06-21",
+    "time": "—",
+    "venue": {
+      "es": "Atlanta",
+      "en": "Atlanta",
+      "fr": "Atlanta"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "España",
+      "en": "Spain",
+      "fr": "Espagne"
+    },
+    "teamB": {
+      "es": "Arabia Saudita",
+      "en": "Saudi Arabia",
+      "fr": "Arabie saoudite"
+    },
+    "scoreA": 4,
+    "scoreB": 0
+  },
+  {
+    "id": "h-uru-cpv",
+    "group": "H",
+    "date": "2026-06-21",
+    "time": "—",
+    "venue": {
+      "es": "Miami",
+      "en": "Miami",
+      "fr": "Miami"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Uruguay",
+      "en": "Uruguay",
+      "fr": "Uruguay"
+    },
+    "teamB": {
+      "es": "Cabo Verde",
+      "en": "Cape Verde",
+      "fr": "Cap-Vert"
+    },
+    "scoreA": 2,
+    "scoreB": 2
+  },
+  {
+    "id": "h-cpv-ksa",
+    "group": "H",
+    "date": "2026-06-26",
+    "time": "—",
+    "venue": {
+      "es": "Houston",
+      "en": "Houston",
+      "fr": "Houston"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Cabo Verde",
+      "en": "Cape Verde",
+      "fr": "Cap-Vert"
+    },
+    "teamB": {
+      "es": "Arabia Saudita",
+      "en": "Saudi Arabia",
+      "fr": "Arabie saoudite"
+    },
+    "scoreA": 0,
+    "scoreB": 0
+  },
+  {
+    "id": "h-uru-esp",
+    "group": "H",
+    "date": "2026-06-26",
+    "time": "—",
+    "venue": {
+      "es": "Guadalajara",
+      "en": "Guadalajara",
+      "fr": "Guadalajara"
+    },
+    "venueSlug": "guadalajara",
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Uruguay",
+      "en": "Uruguay",
+      "fr": "Uruguay"
+    },
+    "teamB": {
+      "es": "España",
+      "en": "Spain",
+      "fr": "Espagne"
+    },
+    "scoreA": 0,
+    "scoreB": 1
+  },
+  {
+    "id": "i-fra-sen",
+    "group": "I",
+    "date": "2026-06-16",
+    "time": "—",
+    "venue": {
+      "es": "East Rutherford",
+      "en": "East Rutherford",
+      "fr": "East Rutherford"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Francia",
+      "en": "France",
+      "fr": "France"
+    },
+    "teamB": {
+      "es": "Senegal",
+      "en": "Senegal",
+      "fr": "Sénégal"
+    },
+    "scoreA": 3,
+    "scoreB": 1
+  },
+  {
+    "id": "i-irq-nor",
+    "group": "I",
+    "date": "2026-06-16",
+    "time": "—",
+    "venue": {
+      "es": "Foxborough",
+      "en": "Foxborough",
+      "fr": "Foxborough"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Irak",
+      "en": "Iraq",
+      "fr": "Irak"
+    },
+    "teamB": {
+      "es": "Noruega",
+      "en": "Norway",
+      "fr": "Norvège"
+    },
+    "scoreA": 1,
+    "scoreB": 4
+  },
+  {
+    "id": "i-fra-irq",
+    "group": "I",
+    "date": "2026-06-22",
+    "time": "—",
+    "venue": {
+      "es": "Filadelfia",
+      "en": "Filadelfia",
+      "fr": "Filadelfia"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Francia",
+      "en": "France",
+      "fr": "France"
+    },
+    "teamB": {
+      "es": "Irak",
+      "en": "Iraq",
+      "fr": "Irak"
+    },
+    "scoreA": 3,
+    "scoreB": 0
+  },
+  {
+    "id": "i-nor-sen",
+    "group": "I",
+    "date": "2026-06-22",
+    "time": "—",
+    "venue": {
+      "es": "East Rutherford",
+      "en": "East Rutherford",
+      "fr": "East Rutherford"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Noruega",
+      "en": "Norway",
+      "fr": "Norvège"
+    },
+    "teamB": {
+      "es": "Senegal",
+      "en": "Senegal",
+      "fr": "Sénégal"
+    },
+    "scoreA": 3,
+    "scoreB": 2
+  },
+  {
+    "id": "i-nor-fra",
+    "group": "I",
+    "date": "2026-06-26",
+    "time": "—",
+    "venue": {
+      "es": "Foxborough",
+      "en": "Foxborough",
+      "fr": "Foxborough"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Noruega",
+      "en": "Norway",
+      "fr": "Norvège"
+    },
+    "teamB": {
+      "es": "Francia",
+      "en": "France",
+      "fr": "France"
+    },
+    "scoreA": 1,
+    "scoreB": 4
+  },
+  {
+    "id": "i-sen-irq",
+    "group": "I",
+    "date": "2026-06-26",
+    "time": "—",
+    "venue": {
+      "es": "Toronto",
+      "en": "Toronto",
+      "fr": "Toronto"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Senegal",
+      "en": "Senegal",
+      "fr": "Sénégal"
+    },
+    "teamB": {
+      "es": "Irak",
+      "en": "Iraq",
+      "fr": "Irak"
+    },
+    "scoreA": 5,
+    "scoreB": 0
+  },
+  {
+    "id": "j-arg-alg",
+    "group": "J",
+    "date": "2026-06-16",
+    "time": "—",
+    "venue": {
+      "es": "Kansas City",
+      "en": "Kansas City",
+      "fr": "Kansas City"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Argentina",
+      "en": "Argentina",
+      "fr": "Argentine"
+    },
+    "teamB": {
+      "es": "Argelia",
+      "en": "Algeria",
+      "fr": "Algérie"
+    },
+    "scoreA": 3,
+    "scoreB": 0
+  },
+  {
+    "id": "j-aut-jor",
+    "group": "J",
+    "date": "2026-06-16",
+    "time": "—",
+    "venue": {
+      "es": "Santa Clara",
+      "en": "Santa Clara",
+      "fr": "Santa Clara"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Austria",
+      "en": "Austria",
+      "fr": "Autriche"
+    },
+    "teamB": {
+      "es": "Jordania",
+      "en": "Jordan",
+      "fr": "Jordanie"
+    },
+    "scoreA": 3,
+    "scoreB": 1
+  },
+  {
+    "id": "j-arg-aut",
+    "group": "J",
+    "date": "2026-06-22",
+    "time": "—",
+    "venue": {
+      "es": "Arlington",
+      "en": "Arlington",
+      "fr": "Arlington"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Argentina",
+      "en": "Argentina",
+      "fr": "Argentine"
+    },
+    "teamB": {
+      "es": "Austria",
+      "en": "Austria",
+      "fr": "Autriche"
+    },
+    "scoreA": 2,
+    "scoreB": 0
+  },
+  {
+    "id": "j-jor-alg",
+    "group": "J",
+    "date": "2026-06-22",
+    "time": "—",
+    "venue": {
+      "es": "Santa Clara",
+      "en": "Santa Clara",
+      "fr": "Santa Clara"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Jordania",
+      "en": "Jordan",
+      "fr": "Jordanie"
+    },
+    "teamB": {
+      "es": "Argelia",
+      "en": "Algeria",
+      "fr": "Algérie"
+    },
+    "scoreA": 1,
+    "scoreB": 2
+  },
+  {
+    "id": "j-alg-aut",
+    "group": "J",
+    "date": "2026-06-27",
+    "time": "—",
+    "venue": {
+      "es": "Kansas City",
+      "en": "Kansas City",
+      "fr": "Kansas City"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Argelia",
+      "en": "Algeria",
+      "fr": "Algérie"
+    },
+    "teamB": {
+      "es": "Austria",
+      "en": "Austria",
+      "fr": "Autriche"
+    },
+    "scoreA": 3,
+    "scoreB": 3
+  },
+  {
+    "id": "j-jor-arg",
+    "group": "J",
+    "date": "2026-06-27",
+    "time": "—",
+    "venue": {
+      "es": "Arlington",
+      "en": "Arlington",
+      "fr": "Arlington"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Jordania",
+      "en": "Jordan",
+      "fr": "Jordanie"
+    },
+    "teamB": {
+      "es": "Argentina",
+      "en": "Argentina",
+      "fr": "Argentine"
+    },
+    "scoreA": 1,
+    "scoreB": 3
+  },
+  {
+    "id": "k-por-cod",
+    "group": "K",
+    "date": "2026-06-17",
+    "time": "—",
+    "venue": {
+      "es": "Houston",
+      "en": "Houston",
+      "fr": "Houston"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Portugal",
+      "en": "Portugal",
+      "fr": "Portugal"
+    },
+    "teamB": {
+      "es": "RD Congo",
+      "en": "DR Congo",
+      "fr": "RD Congo"
+    },
+    "scoreA": 1,
+    "scoreB": 1
+  },
+  {
+    "id": "k-uzb-col",
+    "group": "K",
+    "date": "2026-06-17",
+    "time": "—",
+    "venue": {
+      "es": "Ciudad de México",
+      "en": "Ciudad de México",
+      "fr": "Ciudad de México"
+    },
+    "venueSlug": "ciudad-de-mexico",
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Uzbekistán",
+      "en": "Uzbekistan",
+      "fr": "Ouzbékistan"
+    },
+    "teamB": {
+      "es": "Colombia",
+      "en": "Colombia",
+      "fr": "Colombie"
+    },
+    "scoreA": 1,
+    "scoreB": 3
+  },
+  {
+    "id": "k-por-uzb",
+    "group": "K",
+    "date": "2026-06-23",
+    "time": "—",
+    "venue": {
+      "es": "Houston",
+      "en": "Houston",
+      "fr": "Houston"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Portugal",
+      "en": "Portugal",
+      "fr": "Portugal"
+    },
+    "teamB": {
+      "es": "Uzbekistán",
+      "en": "Uzbekistan",
+      "fr": "Ouzbékistan"
+    },
+    "scoreA": 5,
+    "scoreB": 0
+  },
+  {
+    "id": "k-col-cod",
+    "group": "K",
+    "date": "2026-06-23",
+    "time": "—",
+    "venue": {
+      "es": "Guadalajara",
+      "en": "Guadalajara",
+      "fr": "Guadalajara"
+    },
+    "venueSlug": "guadalajara",
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Colombia",
+      "en": "Colombia",
+      "fr": "Colombie"
+    },
+    "teamB": {
+      "es": "RD Congo",
+      "en": "DR Congo",
+      "fr": "RD Congo"
+    },
+    "scoreA": 1,
+    "scoreB": 0
+  },
+  {
+    "id": "k-col-por",
+    "group": "K",
+    "date": "2026-06-27",
+    "time": "—",
+    "venue": {
+      "es": "Miami",
+      "en": "Miami",
+      "fr": "Miami"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Colombia",
+      "en": "Colombia",
+      "fr": "Colombie"
+    },
+    "teamB": {
+      "es": "Portugal",
+      "en": "Portugal",
+      "fr": "Portugal"
+    },
+    "scoreA": 0,
+    "scoreB": 0
+  },
+  {
+    "id": "k-cod-uzb",
+    "group": "K",
+    "date": "2026-06-27",
+    "time": "—",
+    "venue": {
+      "es": "Atlanta",
+      "en": "Atlanta",
+      "fr": "Atlanta"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "RD Congo",
+      "en": "DR Congo",
+      "fr": "RD Congo"
+    },
+    "teamB": {
+      "es": "Uzbekistán",
+      "en": "Uzbekistan",
+      "fr": "Ouzbékistan"
+    },
+    "scoreA": 3,
+    "scoreB": 1
+  },
+  {
+    "id": "l-eng-cro",
+    "group": "L",
+    "date": "2026-06-17",
+    "time": "—",
+    "venue": {
+      "es": "Arlington",
+      "en": "Arlington",
+      "fr": "Arlington"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Inglaterra",
+      "en": "England",
+      "fr": "Angleterre"
+    },
+    "teamB": {
+      "es": "Croacia",
+      "en": "Croatia",
+      "fr": "Croatie"
+    },
+    "scoreA": 4,
+    "scoreB": 2
+  },
+  {
+    "id": "l-gha-pan",
+    "group": "L",
+    "date": "2026-06-17",
+    "time": "—",
+    "venue": {
+      "es": "Toronto",
+      "en": "Toronto",
+      "fr": "Toronto"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Ghana",
+      "en": "Ghana",
+      "fr": "Ghana"
+    },
+    "teamB": {
+      "es": "Panamá",
+      "en": "Panama",
+      "fr": "Panama"
+    },
+    "scoreA": 1,
+    "scoreB": 0
+  },
+  {
+    "id": "l-eng-gha",
+    "group": "L",
+    "date": "2026-06-23",
+    "time": "—",
+    "venue": {
+      "es": "Foxborough",
+      "en": "Foxborough",
+      "fr": "Foxborough"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Inglaterra",
+      "en": "England",
+      "fr": "Angleterre"
+    },
+    "teamB": {
+      "es": "Ghana",
+      "en": "Ghana",
+      "fr": "Ghana"
+    },
+    "scoreA": 0,
+    "scoreB": 0
+  },
+  {
+    "id": "l-pan-cro",
+    "group": "L",
+    "date": "2026-06-23",
+    "time": "—",
+    "venue": {
+      "es": "Toronto",
+      "en": "Toronto",
+      "fr": "Toronto"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Panamá",
+      "en": "Panama",
+      "fr": "Panama"
+    },
+    "teamB": {
+      "es": "Croacia",
+      "en": "Croatia",
+      "fr": "Croatie"
+    },
+    "scoreA": 0,
+    "scoreB": 1
+  },
+  {
+    "id": "l-pan-eng",
+    "group": "L",
+    "date": "2026-06-27",
+    "time": "—",
+    "venue": {
+      "es": "East Rutherford",
+      "en": "East Rutherford",
+      "fr": "East Rutherford"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Panamá",
+      "en": "Panama",
+      "fr": "Panama"
+    },
+    "teamB": {
+      "es": "Inglaterra",
+      "en": "England",
+      "fr": "Angleterre"
+    },
+    "scoreA": 0,
+    "scoreB": 2
+  },
+  {
+    "id": "l-cro-gha",
+    "group": "L",
+    "date": "2026-06-27",
+    "time": "—",
+    "venue": {
+      "es": "Filadelfia",
+      "en": "Filadelfia",
+      "fr": "Filadelfia"
+    },
+    "venueSlug": null,
+    "isMexicoGame": false,
+    "teamA": {
+      "es": "Croacia",
+      "en": "Croatia",
+      "fr": "Croatie"
+    },
+    "teamB": {
+      "es": "Ghana",
+      "en": "Ghana",
+      "fr": "Ghana"
+    },
+    "scoreA": 2,
+    "scoreB": 1
   }
 ]
