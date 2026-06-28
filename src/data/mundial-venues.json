@@ -79,17 +79,17 @@
         "date": "2026-06-30",
         "time": "19:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "México",
+          "en": "Mexico",
+          "zh": "墨西哥"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Ecuador",
+          "en": "Ecuador",
+          "zh": "厄瓜多尔"
         },
         "round": "round-of-32",
-        "isMexicoGame": false
+        "isMexicoGame": true
       },
       {
         "date": "2026-07-05",

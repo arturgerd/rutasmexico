@@ -18,6 +18,12 @@ const GROUP_BADGE: Record<string, string> = {
   D: "bg-rose-100 text-rose-800",
   E: "bg-violet-100 text-violet-800",
   F: "bg-orange-100 text-orange-900",
+  G: "bg-teal-100 text-teal-800",
+  H: "bg-indigo-100 text-indigo-800",
+  I: "bg-lime-100 text-lime-900",
+  J: "bg-fuchsia-100 text-fuchsia-800",
+  K: "bg-cyan-100 text-cyan-900",
+  L: "bg-red-100 text-red-800",
 };
 
 function fmtDate(iso: string, locale: string): string {

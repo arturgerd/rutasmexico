@@ -138,37 +138,71 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
         </div>
       </div>
 
-      {/* Mexico Group A - Partidos */}
+      {/* Mexico - El camino en el Mundial (grupo + eliminatorias) */}
       <div className="bg-jade-700 py-8">
         <div className="container-custom">
-          <h2 className="font-display text-2xl font-bold text-white mb-6 text-center">
-            🇲🇽 {t3(locale, "Partidos de México — Grupo A", "Mexico Matches — Group A", "Matchs du Mexique — Groupe A")}
+          <h2 className="font-display text-2xl font-bold text-white mb-2 text-center">
+            🇲🇽 {t3(locale, "El camino de México", "Mexico's road", "Le parcours du Mexique")}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {allMexicoGames.map((match, i) => (
-              <div key={i} className="bg-white rounded-xl p-5 text-center shadow-lg">
-                <div className="text-xs font-bold text-jade-600 uppercase mb-2">
-                  {i === 0 ? `🎉 ${t3(locale, "PARTIDO INAUGURAL", "OPENING MATCH", "MATCH D'OUVERTURE")}` : `${t3(locale, "Fase de Grupos", "Group Stage", "Phase de Groupes")}`}
-                </div>
-                <div className="flex items-center justify-center gap-4 my-3">
-                  <div className="text-center">
-                    <div className="text-2xl mb-1">{match.teamA.es.includes("México") ? "🇲🇽" : match.teamA.es.includes("Sudáfrica") ? "🇿🇦" : match.teamA.es.includes("Chequia") ? "🇨🇿" : "🏳️"}</div>
-                    <div className="font-bold text-arena-800 text-sm">{locale === "en" ? match.teamA.en : match.teamA.es}</div>
+          <p className="text-jade-100 text-sm text-center mb-6 max-w-2xl mx-auto">
+            {t3(locale,
+              "México ganó el Grupo A con paso perfecto (9 pts) y ya está en la fase eliminatoria.",
+              "Mexico won Group A with a perfect record (9 pts) and is now into the knockout stage.",
+              "Le Mexique a gagné le Groupe A avec un parcours parfait (9 pts) et est en phase à élimination directe."
+            )}
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {allMexicoGames.map((match, i) => {
+              const flag = (name: string) =>
+                name.includes("México") ? "🇲🇽"
+                : name.includes("Sudáfrica") ? "🇿🇦"
+                : name.includes("Corea") ? "🇰🇷"
+                : name.includes("Chequia") ? "🇨🇿"
+                : name.includes("Ecuador") ? "🇪🇨"
+                : "🏳️";
+              const roundLabel =
+                i === 0
+                  ? `🎉 ${t3(locale, "PARTIDO INAUGURAL", "OPENING MATCH", "MATCH D'OUVERTURE")}`
+                  : match.round === "round-of-32"
+                  ? `🏆 ${t3(locale, "DIECISEISAVOS DE FINAL", "ROUND OF 32", "16es DE FINALE")}`
+                  : match.round === "round-of-16"
+                  ? `🏆 ${t3(locale, "OCTAVOS DE FINAL", "ROUND OF 16", "8es DE FINALE")}`
+                  : t3(locale, "FASE DE GRUPOS", "GROUP STAGE", "PHASE DE GROUPES");
+              const dt = new Date(`${match.date}T12:00:00Z`);
+              const weekday = dt.toLocaleDateString(locale === "en" ? "en-US" : locale === "fr" ? "fr-FR" : "es-MX", { weekday: "long" });
+              const dayMonth = dt.toLocaleDateString(locale === "en" ? "en-US" : locale === "fr" ? "fr-FR" : "es-MX", { day: "numeric", month: "long" });
+              const isUpcoming = match.round !== "group";
+              const stadium = venues.find(v => v.matches.some(m => m.date === match.date && m.isMexicoGame))?.stadium.name;
+              return (
+                <div
+                  key={i}
+                  className={`bg-white rounded-xl p-5 text-center shadow-lg ${isUpcoming ? "ring-2 ring-oro-400" : ""}`}
+                >
+                  <div className="text-xs font-bold text-jade-600 uppercase mb-2">{roundLabel}</div>
+                  {isUpcoming && (
+                    <div className="inline-block bg-oro-500 text-arena-900 text-[10px] font-bold uppercase rounded-full px-2 py-0.5 mb-2">
+                      {t3(locale, "Próximo partido", "Next match", "Prochain match")}
+                    </div>
+                  )}
+                  <div className="flex items-center justify-center gap-4 my-3">
+                    <div className="text-center">
+                      <div className="text-2xl mb-1">{flag(match.teamA.es)}</div>
+                      <div className="font-bold text-arena-800 text-sm">{locale === "en" ? match.teamA.en : match.teamA.es}</div>
+                    </div>
+                    <div className="text-xl font-bold text-arena-700">VS</div>
+                    <div className="text-center">
+                      <div className="text-2xl mb-1">{flag(match.teamB.es)}</div>
+                      <div className="font-bold text-arena-800 text-sm">{locale === "en" ? match.teamB.en : match.teamB.es}</div>
+                    </div>
                   </div>
-                  <div className="text-xl font-bold text-arena-700">VS</div>
-                  <div className="text-center">
-                    <div className="text-2xl mb-1">{match.teamB.es.includes("México") ? "🇲🇽" : match.teamB.es.includes("Corea") ? "🇰🇷" : match.teamB.es.includes("Sudáfrica") ? "🇿🇦" : "🏳️"}</div>
-                    <div className="font-bold text-arena-800 text-sm">{locale === "en" ? match.teamB.en : match.teamB.es}</div>
+                  <div className="text-sm font-semibold text-arena-700 capitalize">
+                    📅 {weekday} {dayMonth}
                   </div>
+                  <div className="text-sm text-arena-500">⏰ {match.time} hrs</div>
+                  {stadium && <div className="text-xs text-arena-700 mt-1">📍 {stadium}</div>}
                 </div>
-                <div className="text-sm text-arena-500 mt-2">
-                  📅 {match.date} • ⏰ {match.time} hrs
-                </div>
-                <div className="text-xs text-arena-700 mt-1">
-                  {venues.find(v => v.matches.some(m => m.date === match.date && m.isMexicoGame))?.stadium.name}
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
