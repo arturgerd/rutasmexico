@@ -8,6 +8,14 @@ export interface MundialMatch {
   round: "group" | "round-of-32" | "round-of-16" | "quarter" | "semi" | "third-place" | "final";
   group?: string;
   isMexicoGame: boolean;
+  /** Final score (after extra time if played). Absent/null = not played yet. */
+  scoreA?: number | null;
+  scoreB?: number | null;
+  /** Set when the match went to extra time. */
+  aet?: boolean;
+  /** Penalty-shootout score, only when the match was decided from the spot. */
+  penaltiesA?: number;
+  penaltiesB?: number;
 }
 
 export type SafetyLevel = "green" | "yellow" | "red";

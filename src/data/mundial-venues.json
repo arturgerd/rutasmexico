@@ -81,31 +81,35 @@
         "teamA": {
           "es": "México",
           "en": "Mexico",
-          "zh": "墨西哥"
+          "fr": "Mexique"
         },
         "teamB": {
           "es": "Ecuador",
           "en": "Ecuador",
-          "zh": "厄瓜多尔"
+          "fr": "Équateur"
         },
         "round": "round-of-32",
-        "isMexicoGame": true
+        "isMexicoGame": true,
+        "scoreA": 2,
+        "scoreB": 0
       },
       {
         "date": "2026-07-05",
         "time": "18:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "México",
+          "en": "Mexico",
+          "fr": "Mexique"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Inglaterra",
+          "en": "England",
+          "fr": "Angleterre"
         },
         "round": "round-of-16",
-        "isMexicoGame": false
+        "isMexicoGame": true,
+        "scoreA": 2,
+        "scoreB": 3
       }
     ],
     "howToGetThere": {
@@ -1155,17 +1159,22 @@
         "date": "2026-06-29",
         "time": "19:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Países Bajos",
+          "en": "Netherlands",
+          "fr": "Pays-Bas"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Marruecos",
+          "en": "Morocco",
+          "fr": "Maroc"
         },
         "round": "round-of-32",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 1,
+        "scoreB": 1,
+        "aet": true,
+        "penaltiesA": 2,
+        "penaltiesB": 3
       }
     ],
     "howToGetThere": {
@@ -2970,33 +2979,37 @@
         "date": "2026-06-30",
         "time": "17:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Francia",
+          "en": "France",
+          "fr": "France"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Suecia",
+          "en": "Sweden",
+          "fr": "Suède"
         },
         "round": "round-of-32",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 3,
+        "scoreB": 0
       },
       {
         "date": "2026-07-05",
         "time": "16:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Brasil",
+          "en": "Brazil",
+          "fr": "Brésil"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Noruega",
+          "en": "Norway",
+          "fr": "Norvège"
         },
         "round": "round-of-16",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 1,
+        "scoreB": 2
       },
       {
         "date": "2026-07-19",
@@ -3753,49 +3766,58 @@
         "date": "2026-06-30",
         "time": "11:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Costa de Marfil",
+          "en": "Ivory Coast",
+          "fr": "Côte d'Ivoire"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Noruega",
+          "en": "Norway",
+          "fr": "Norvège"
         },
         "round": "round-of-32",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 1,
+        "scoreB": 2
       },
       {
         "date": "2026-07-03",
         "time": "12:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Australia",
+          "en": "Australia",
+          "fr": "Australie"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Egipto",
+          "en": "Egypt",
+          "fr": "Égypte"
         },
         "round": "round-of-32",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 1,
+        "scoreB": 1,
+        "aet": true,
+        "penaltiesA": 2,
+        "penaltiesB": 4
       },
       {
         "date": "2026-07-06",
         "time": "13:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Portugal",
+          "en": "Portugal",
+          "fr": "Portugal"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "España",
+          "en": "Spain",
+          "fr": "Espagne"
         },
         "round": "round-of-16",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 0,
+        "scoreB": 1
       },
       {
         "date": "2026-07-14",
@@ -4446,46 +4468,50 @@
         "date": "2026-06-28",
         "time": "12:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Sudáfrica",
+          "en": "South Africa",
+          "fr": "Afrique du Sud"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Canadá",
+          "en": "Canada",
+          "fr": "Canada"
         },
         "round": "round-of-32",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 0,
+        "scoreB": 1
       },
       {
         "date": "2026-07-02",
         "time": "12:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "España",
+          "en": "Spain",
+          "fr": "Espagne"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Austria",
+          "en": "Austria",
+          "fr": "Autriche"
         },
         "round": "round-of-32",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 3,
+        "scoreB": 0
       },
       {
         "date": "2026-07-10",
         "time": "12:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "España",
+          "en": "Spain",
+          "fr": "Espagne"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Bélgica",
+          "en": "Belgium",
+          "fr": "Belgique"
         },
         "round": "quarter",
         "isMexicoGame": false
@@ -5118,30 +5144,33 @@
         "date": "2026-07-03",
         "time": "18:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Argentina",
+          "en": "Argentina",
+          "fr": "Argentine"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Cabo Verde",
+          "en": "Cape Verde",
+          "fr": "Cap-Vert"
         },
         "round": "round-of-32",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 3,
+        "scoreB": 2,
+        "aet": true
       },
       {
         "date": "2026-07-11",
         "time": "17:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Inglaterra",
+          "en": "England",
+          "fr": "Angleterre"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Noruega",
+          "en": "Norway",
+          "fr": "Norvège"
         },
         "round": "quarter",
         "isMexicoGame": false
@@ -5785,33 +5814,37 @@
         "date": "2026-06-29",
         "time": "12:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Brasil",
+          "en": "Brazil",
+          "fr": "Brésil"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Japón",
+          "en": "Japan",
+          "fr": "Japon"
         },
         "round": "round-of-32",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 2,
+        "scoreB": 1
       },
       {
         "date": "2026-07-04",
         "time": "12:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Canadá",
+          "en": "Canada",
+          "fr": "Canada"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Marruecos",
+          "en": "Morocco",
+          "fr": "Maroc"
         },
         "round": "round-of-16",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 0,
+        "scoreB": 3
       }
     ],
     "howToGetThere": {
@@ -6452,33 +6485,37 @@
         "date": "2026-07-01",
         "time": "12:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Inglaterra",
+          "en": "England",
+          "fr": "Angleterre"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "RD del Congo",
+          "en": "DR Congo",
+          "fr": "RD Congo"
         },
         "round": "round-of-32",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 2,
+        "scoreB": 1
       },
       {
         "date": "2026-07-07",
         "time": "12:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Argentina",
+          "en": "Argentina",
+          "fr": "Argentine"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Egipto",
+          "en": "Egypt",
+          "fr": "Égypte"
         },
         "round": "round-of-16",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 3,
+        "scoreB": 2
       },
       {
         "date": "2026-07-15",
@@ -7084,30 +7121,35 @@
         "date": "2026-06-29",
         "time": "16:30",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Alemania",
+          "en": "Germany",
+          "fr": "Allemagne"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Paraguay",
+          "en": "Paraguay",
+          "fr": "Paraguay"
         },
         "round": "round-of-32",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 1,
+        "scoreB": 1,
+        "aet": true,
+        "penaltiesA": 3,
+        "penaltiesB": 4
       },
       {
         "date": "2026-07-09",
         "time": "16:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Francia",
+          "en": "France",
+          "fr": "France"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Marruecos",
+          "en": "Morocco",
+          "fr": "Maroc"
         },
         "round": "quarter",
         "isMexicoGame": false
@@ -7690,33 +7732,38 @@
         "date": "2026-07-01",
         "time": "13:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Bélgica",
+          "en": "Belgium",
+          "fr": "Belgique"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Senegal",
+          "en": "Senegal",
+          "fr": "Sénégal"
         },
         "round": "round-of-32",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 3,
+        "scoreB": 2,
+        "aet": true
       },
       {
         "date": "2026-07-06",
         "time": "17:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Estados Unidos",
+          "en": "United States",
+          "fr": "États-Unis"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Bélgica",
+          "en": "Belgium",
+          "fr": "Belgique"
         },
         "round": "round-of-16",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 1,
+        "scoreB": 4
       }
     ],
     "howToGetThere": {
@@ -8296,17 +8343,19 @@
         "date": "2026-07-04",
         "time": "17:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Paraguay",
+          "en": "Paraguay",
+          "fr": "Paraguay"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Francia",
+          "en": "France",
+          "fr": "France"
         },
         "round": "round-of-16",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 0,
+        "scoreB": 1
       }
     ],
     "howToGetThere": {
@@ -8886,17 +8935,19 @@
         "date": "2026-07-01",
         "time": "17:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Estados Unidos",
+          "en": "United States",
+          "fr": "États-Unis"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Bosnia y Herzegovina",
+          "en": "Bosnia and Herzegovina",
+          "fr": "Bosnie-Herzégovine"
         },
         "round": "round-of-32",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 2,
+        "scoreB": 0
       }
     ],
     "howToGetThere": {
@@ -9562,30 +9613,32 @@
         "date": "2026-07-03",
         "time": "19:30",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Colombia",
+          "en": "Colombia",
+          "fr": "Colombie"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Ghana",
+          "en": "Ghana",
+          "fr": "Ghana"
         },
         "round": "round-of-32",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 1,
+        "scoreB": 0
       },
       {
         "date": "2026-07-11",
         "time": "19:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Argentina",
+          "en": "Argentina",
+          "fr": "Argentine"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Suiza",
+          "en": "Switzerland",
+          "fr": "Suisse"
         },
         "round": "quarter",
         "isMexicoGame": false
@@ -10190,17 +10243,19 @@
         "date": "2026-07-02",
         "time": "19:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Portugal",
+          "en": "Portugal",
+          "fr": "Portugal"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Croacia",
+          "en": "Croatia",
+          "fr": "Croatie"
         },
         "round": "round-of-32",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 2,
+        "scoreB": 1
       }
     ],
     "howToGetThere": {
@@ -10850,33 +10905,40 @@
         "date": "2026-07-02",
         "time": "20:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Suiza",
+          "en": "Switzerland",
+          "fr": "Suisse"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Argelia",
+          "en": "Algeria",
+          "fr": "Algérie"
         },
         "round": "round-of-32",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 2,
+        "scoreB": 0
       },
       {
         "date": "2026-07-07",
         "time": "13:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Suiza",
+          "en": "Switzerland",
+          "fr": "Suisse"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Colombia",
+          "en": "Colombia",
+          "fr": "Colombie"
         },
         "round": "round-of-16",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 0,
+        "scoreB": 0,
+        "aet": true,
+        "penaltiesA": 4,
+        "penaltiesB": 3
       }
     ],
     "howToGetThere": {
