@@ -200,11 +200,22 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
                   {match.isMexicoGame && <span className="text-2xl">🇲🇽</span>}
                   <div>
                     <p className="font-bold text-arena-800">
-                      {localize(match.teamA, locale)} <span className="text-arena-700">vs</span> {localize(match.teamB, locale)}
+                      {localize(match.teamA, locale)}{" "}
+                      {match.scoreA != null && match.scoreB != null ? (
+                        <span className="text-arena-900 bg-oro-100 rounded px-1.5 font-mono">
+                          {match.scoreA}–{match.scoreB}
+                        </span>
+                      ) : (
+                        <span className="text-arena-700">vs</span>
+                      )}{" "}
+                      {localize(match.teamB, locale)}
                     </p>
                     <p className="text-xs text-arena-500 mt-0.5">
                       {roundLabels[match.round]?.[locale] || match.round}
                       {match.group && ` • ${t3(locale, "Grupo", "Group", "Groupe")} ${match.group}`}
+                      {match.aet && ` • ${t3(locale, "T. extra", "AET", "Prol.")}`}
+                      {match.penaltiesA != null && match.penaltiesB != null &&
+                        ` • ${t3(locale, "Penales", "Pens", "T.a.b.")} ${match.penaltiesA}-${match.penaltiesB}`}
                     </p>
                   </div>
                 </div>

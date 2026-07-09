@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { setRequestLocale } from "next-intl/server";
 import { getAllMundialVenues } from "@/lib/data/mundial";
+import { getMexicoResults } from "@/lib/data/mundial-results";
 import { getMundialMenu } from "@/lib/data/mundial-menu";
 import MundialVenueGrid from "@/components/mundial/MundialVenueGrid";
 import MenuBuilder from "@/components/mundial/MenuBuilder";
@@ -52,7 +53,20 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
   // authored. If/when we need to expose how many we cover, compute it inline at the use site.
   const TOURNAMENT_TOTAL_MATCHES = 104;
   const mexicoMatches = venues.reduce((sum, v) => sum + v.matches.filter(m => m.isMexicoGame).length, 0);
-  const allMexicoGames = venues.flatMap(v => v.matches.filter(m => m.isMexicoGame)).sort((a, b) => a.date.localeCompare(b.date));
+  // Group-stage scores live in mundial-results.json, not in the venue data —
+  // graft them onto the venue matches (matching by date + team order) so the
+  // "camino de México" cards show every result, group and knockout alike.
+  const mexicoResults = getMexicoResults();
+  const allMexicoGames = venues
+    .flatMap(v => v.matches.filter(m => m.isMexicoGame))
+    .map(m => {
+      if (m.scoreA != null || m.round !== "group") return m;
+      const r = mexicoResults.find(r => r.date === m.date);
+      if (!r || r.scoreA == null || r.scoreB == null) return m;
+      const sameOrder = r.teamA.es === m.teamA.es;
+      return { ...m, scoreA: sameOrder ? r.scoreA : r.scoreB, scoreB: sameOrder ? r.scoreB : r.scoreA };
+    })
+    .sort((a, b) => a.date.localeCompare(b.date));
   const mxVenues = venues.filter(v => (v.country ?? "MX") === "MX");
   const usVenues = venues.filter(v => v.country === "US");
   const caVenues = venues.filter(v => v.country === "CA");
@@ -146,9 +160,9 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
           </h2>
           <p className="text-jade-100 text-sm text-center mb-6 max-w-2xl mx-auto">
             {t3(locale,
-              "México ganó el Grupo A con paso perfecto (9 pts) y ya está en la fase eliminatoria.",
-              "Mexico won Group A with a perfect record (9 pts) and is now into the knockout stage.",
-              "Le Mexique a gagné le Groupe A avec un parcours parfait (9 pts) et est en phase à élimination directe."
+              "México ganó el Grupo A con paso perfecto (9 pts), venció 2-0 a Ecuador en dieciseisavos y cayó 2-3 ante Inglaterra en octavos de final, en un Estadio Azteca con más de 80 mil aficionados.",
+              "Mexico won Group A with a perfect record (9 pts), beat Ecuador 2-0 in the round of 32 and fell 2-3 to England in the round of 16 in front of 80,000+ fans at Estadio Azteca.",
+              "Le Mexique a gagné le Groupe A (9 pts), battu l'Équateur 2-0 en 16es et s'est incliné 2-3 face à l'Angleterre en 8es de finale."
             )}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -159,6 +173,7 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
                 : name.includes("Corea") ? "🇰🇷"
                 : name.includes("Chequia") ? "🇨🇿"
                 : name.includes("Ecuador") ? "🇪🇨"
+                : name.includes("Inglaterra") ? "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
                 : "🏳️";
               const roundLabel =
                 i === 0
@@ -171,7 +186,10 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
               const dt = new Date(`${match.date}T12:00:00Z`);
               const weekday = dt.toLocaleDateString(locale === "en" ? "en-US" : locale === "fr" ? "fr-FR" : "es-MX", { weekday: "long" });
               const dayMonth = dt.toLocaleDateString(locale === "en" ? "en-US" : locale === "fr" ? "fr-FR" : "es-MX", { day: "numeric", month: "long" });
-              const isUpcoming = match.round !== "group";
+              const played = match.scoreA != null && match.scoreB != null;
+              const isUpcoming = !played && match.round !== "group";
+              const mexIsA = match.teamA.es.includes("México");
+              const mexWon = played && (mexIsA ? match.scoreA! > match.scoreB! : match.scoreB! > match.scoreA!);
               const stadium = venues.find(v => v.matches.some(m => m.date === match.date && m.isMexicoGame))?.stadium.name;
               return (
                 <div
@@ -184,12 +202,21 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
                       {t3(locale, "Próximo partido", "Next match", "Prochain match")}
                     </div>
                   )}
+                  {played && match.round !== "group" && (
+                    <div className={`inline-block text-[10px] font-bold uppercase rounded-full px-2 py-0.5 mb-2 ${mexWon ? "bg-jade-100 text-jade-800" : "bg-terracotta-100 text-terracotta-800"}`}>
+                      {mexWon
+                        ? t3(locale, "Victoria", "Win", "Victoire")
+                        : t3(locale, "Eliminados", "Eliminated", "Éliminés")}
+                    </div>
+                  )}
                   <div className="flex items-center justify-center gap-4 my-3">
                     <div className="text-center">
                       <div className="text-2xl mb-1">{flag(match.teamA.es)}</div>
                       <div className="font-bold text-arena-800 text-sm">{locale === "en" ? match.teamA.en : match.teamA.es}</div>
                     </div>
-                    <div className="text-xl font-bold text-arena-700">VS</div>
+                    <div className="text-xl font-bold text-arena-700">
+                      {played ? `${match.scoreA}–${match.scoreB}` : "VS"}
+                    </div>
                     <div className="text-center">
                       <div className="text-2xl mb-1">{flag(match.teamB.es)}</div>
                       <div className="font-bold text-arena-800 text-sm">{locale === "en" ? match.teamB.en : match.teamB.es}</div>
