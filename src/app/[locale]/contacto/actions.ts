@@ -42,7 +42,8 @@ export async function submitContact(_prev: ContactState, formData: FormData): Pr
       return { ok: false, message: isEn ? "Network error. Try again or email us." : "Error de red. Intenta de nuevo o escríbenos por correo." };
     }
   } else {
-    console.log("[contact:fallback]", { name, email, topic, len: message.length });
+    // No PII in server logs — only enough to see the fallback fired and roughly what came in.
+    console.log("[contact:fallback]", { topic, len: message.length });
   }
 
   return {

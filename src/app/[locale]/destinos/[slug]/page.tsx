@@ -127,29 +127,12 @@ export default async function DestinationPage({
     touristType: locale === "es"
       ? ["Turismo cultural", "Turismo gastronomico", "Turismo de playa"]
       : ["Cultural tourism", "Food tourism", "Beach tourism"],
-    ...(destination.reviews && destination.reviews.length > 0 && {
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: (
-          destination.reviews.reduce((s, r) => s + r.rating, 0) / destination.reviews.length
-        ).toFixed(1),
-        reviewCount: destination.reviews.length,
-        bestRating: 5,
-        worstRating: 1,
-      },
-      review: destination.reviews.map((r) => ({
-        "@type": "Review",
-        author: { "@type": "Person", name: r.author },
-        datePublished: r.date,
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: r.rating,
-          bestRating: 5,
-          worstRating: 1,
-        },
-        reviewBody: localize(r.text, locale as Locale),
-      })),
-    }),
+    // NOTE: no aggregateRating/review here on purpose. The testimonials in
+    // destination.reviews are editorial (our own JSON), not verifiable third-party
+    // user reviews — marking them up as AggregateRating counts as self-serving
+    // review markup under Google's structured-data policies and risks a manual
+    // action. They still render visibly on the page; they just aren't claimed
+    // as review rich-results.
   };
 
   // Breadcrumb schema

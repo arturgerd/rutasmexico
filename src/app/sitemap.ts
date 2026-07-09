@@ -13,7 +13,7 @@ const locales = ["es", "en"];
 
 // Stable build-time date so the sitemap doesn't tell Google "everything changed"
 // on every crawl. Bump this when doing a sweep update across many static pages.
-const BUILD_DATE = new Date("2026-04-26");
+const BUILD_DATE = new Date("2026-07-08");
 
 // Per-entry lastModified resolver: if a data file entry exposes its own lastModified
 // (yyyy-mm-dd or ISO), use it; otherwise fall back to BUILD_DATE. This lets us refresh
@@ -51,6 +51,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/bodas", changeFrequency: "monthly" as const, priority: 0.7 },
     { path: "/mundial", changeFrequency: "weekly" as const, priority: 0.95 },
     { path: "/mundial/calendario", changeFrequency: "weekly" as const, priority: 0.92 },
+    { path: "/mundial/simulador", changeFrequency: "weekly" as const, priority: 0.7 },
+    { path: "/mundial/penales", changeFrequency: "monthly" as const, priority: 0.6 },
     { path: "/nosotros", changeFrequency: "monthly" as const, priority: 0.5 },
     { path: "/metodologia", changeFrequency: "monthly" as const, priority: 0.5 },
     { path: "/contacto", changeFrequency: "monthly" as const, priority: 0.4 },
