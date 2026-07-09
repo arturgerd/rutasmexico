@@ -235,7 +235,7 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
               <p className="text-sm text-arena-700 mb-3">
                 {t3(locale,
                   "Probabilidades, marcadores más probables, goles esperados y córners de cualquier duelo.",
-                  "Win odds, likely scorelines, expected goals and corners for any matchup.",
+                  "Win probability, likely scorelines, expected goals and corners for any matchup.",
                   "Probabilités, scores probables, buts attendus et corners de n'importe quel duel."
                 )}
               </p>

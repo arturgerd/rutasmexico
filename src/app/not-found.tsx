@@ -17,7 +17,6 @@ export default function GlobalNotFound() {
           <div style={{ display: "flex", justifyContent: "center", gap: 12, flexWrap: "wrap" }}>
             <Link href="/es" style={btn}>Español</Link>
             <Link href="/en" style={btn}>English</Link>
-            <Link href="/fr" style={btn}>Français</Link>
           </div>
         </div>
       </body>
