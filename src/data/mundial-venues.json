@@ -3015,17 +3015,20 @@
         "date": "2026-07-19",
         "time": "15:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "España",
+          "en": "Spain",
+          "fr": "Espagne"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Argentina",
+          "en": "Argentina",
+          "fr": "Argentine"
         },
         "round": "final",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 1,
+        "scoreB": 0,
+        "aet": true
       }
     ],
     "howToGetThere": {
@@ -3703,7 +3706,7 @@
         "mapsQuery": "Brooklyn+Bridge+DUMBO"
       }
     ],
-    "lastModified": "2026-04-26"
+    "lastModified": "2026-07-19"
   },
   {
     "id": "mundial-dallas",
@@ -3823,17 +3826,19 @@
         "date": "2026-07-14",
         "time": "13:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "España",
+          "en": "Spain",
+          "fr": "Espagne"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Francia",
+          "en": "France",
+          "fr": "France"
         },
         "round": "semi",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 2,
+        "scoreB": 0
       }
     ],
     "howToGetThere": {
@@ -4405,7 +4410,7 @@
         "mapsQuery": "NorthPark+Center+Dallas"
       }
     ],
-    "lastModified": "2026-04-26"
+    "lastModified": "2026-07-19"
   },
   {
     "id": "mundial-los-angeles",
@@ -4514,7 +4519,9 @@
           "fr": "Belgique"
         },
         "round": "quarter",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 2,
+        "scoreB": 1
       }
     ],
     "howToGetThere": {
@@ -5081,7 +5088,7 @@
         "mapsQuery": "Getty+Center+LA"
       }
     ],
-    "lastModified": "2026-04-26"
+    "lastModified": "2026-07-19"
   },
   {
     "id": "mundial-miami",
@@ -5173,23 +5180,27 @@
           "fr": "Norvège"
         },
         "round": "quarter",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 2,
+        "scoreB": 1
       },
       {
         "date": "2026-07-18",
         "time": "18:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Inglaterra",
+          "en": "England",
+          "fr": "Angleterre"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Francia",
+          "en": "France",
+          "fr": "France"
         },
         "round": "third-place",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 6,
+        "scoreB": 4
       }
     ],
     "howToGetThere": {
@@ -5751,7 +5762,7 @@
         "mapsQuery": "Vizcaya+Museum+Miami"
       }
     ],
-    "lastModified": "2026-04-26"
+    "lastModified": "2026-07-19"
   },
   {
     "id": "mundial-houston",
@@ -6521,17 +6532,19 @@
         "date": "2026-07-15",
         "time": "15:00",
         "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Argentina",
+          "en": "Argentina",
+          "fr": "Argentine"
         },
         "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
+          "es": "Inglaterra",
+          "en": "England",
+          "fr": "Angleterre"
         },
         "round": "semi",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 2,
+        "scoreB": 1
       }
     ],
     "howToGetThere": {
@@ -7058,7 +7071,7 @@
         "mapsQuery": "Buford+Highway+Atlanta"
       }
     ],
-    "lastModified": "2026-04-26"
+    "lastModified": "2026-07-19"
   },
   {
     "id": "mundial-boston",
@@ -7152,7 +7165,9 @@
           "fr": "Maroc"
         },
         "round": "quarter",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 2,
+        "scoreB": 0
       }
     ],
     "howToGetThere": {
@@ -7669,7 +7684,7 @@
         "mapsQuery": "Cape+Cod+Massachusetts"
       }
     ],
-    "lastModified": "2026-04-26"
+    "lastModified": "2026-07-19"
   },
   {
     "id": "mundial-seattle",
@@ -9641,7 +9656,10 @@
           "fr": "Suisse"
         },
         "round": "quarter",
-        "isMexicoGame": false
+        "isMexicoGame": false,
+        "scoreA": 3,
+        "scoreB": 1,
+        "aet": true
       }
     ],
     "howToGetThere": {
@@ -10163,7 +10181,7 @@
         "mapsQuery": "National+WWI+Museum"
       }
     ],
-    "lastModified": "2026-04-26"
+    "lastModified": "2026-07-19"
   },
   {
     "id": "mundial-toronto",

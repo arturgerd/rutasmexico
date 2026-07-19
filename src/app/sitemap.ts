@@ -13,7 +13,7 @@ const locales = ["es", "en"];
 
 // Stable build-time date so the sitemap doesn't tell Google "everything changed"
 // on every crawl. Bump this when doing a sweep update across many static pages.
-const BUILD_DATE = new Date("2026-07-08");
+const BUILD_DATE = new Date("2026-07-19");
 
 // Per-entry lastModified resolver: if a data file entry exposes its own lastModified
 // (yyyy-mm-dd or ISO), use it; otherwise fall back to BUILD_DATE. This lets us refresh

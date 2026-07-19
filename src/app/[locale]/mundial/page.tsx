@@ -326,9 +326,9 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
           </h2>
           <p className="text-arena-500 text-center mb-8 max-w-2xl mx-auto">
             {t3(locale,
-              "Semifinales en Atlanta y Dallas, final en Nueva York (MetLife Stadium, 19 julio). Guía para cada sede: vuelos desde México, transporte local, zonas seguras y cambio USD.",
-              "Semifinals in Atlanta and Dallas, final in New York (MetLife Stadium, July 19). Guide for each venue: flights from Mexico, local transport, safe zones and USD exchange.",
-              "Demi-finales à Atlanta et Dallas, finale à New York (MetLife Stadium, 19 juillet). Guide pour chaque site : vols depuis le Mexique, transport local, zones sûres et change USD."
+              "España venció 2-0 a Francia en Dallas y ganó la final 1-0 a Argentina en Nueva York (MetLife Stadium, 19 julio). Guía para cada sede: vuelos desde México, transporte local, zonas seguras y cambio USD.",
+              "Spain beat France 2-0 in Dallas and won the final 1-0 over Argentina in New York (MetLife Stadium, July 19). Guide for each venue: flights from Mexico, local transport, safe zones and USD exchange.",
+              "L'Espagne a battu la France 2-0 à Dallas puis remporté la finale 1-0 contre l'Argentine à New York (MetLife Stadium, 19 juillet). Guide pour chaque site : vols depuis le Mexique, transport local, zones sûres et change USD."
             )}
           </p>
           <MundialVenueGrid venues={usVenues} />

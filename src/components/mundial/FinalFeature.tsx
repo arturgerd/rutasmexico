@@ -6,11 +6,13 @@ interface FinalFeatureProps {
 }
 
 export default function FinalFeature({ locale }: FinalFeatureProps) {
+  // La final ya se jugó; el CTA de vuelos queda como viaje genérico a NYC
+  // con fechas futuras (Aviasales rechaza fechas pasadas).
   const flightUrl = getFlightSearchUrl({
     originIATA: "MEX",
     destIATA: "EWR",
-    departDate: "2026-07-17",
-    returnDate: "2026-07-21",
+    departDate: "2026-08-14",
+    returnDate: "2026-08-18",
     passengers: 2,
   });
   const klookNYC = getKlookAffiliateUrl("https://www.klook.com/en-US/search/?keyword=New+York");
@@ -27,17 +29,17 @@ export default function FinalFeature({ locale }: FinalFeatureProps) {
       <div className="container-custom relative grid md:grid-cols-2 gap-10 md:gap-16 items-center">
         <div>
           <span className="inline-block text-oro-300 text-xs font-bold tracking-[0.2em] uppercase mb-3">
-            {t3(locale, "La gran final", "The grand final", "La grande finale")}
+            {t3(locale, "Campeón del mundo", "World champions", "Champions du monde")}
           </span>
           <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
-            {t3(locale, "Final del Mundial 2026", "World Cup 2026 Final", "Finale de la Coupe du Monde 2026")}
+            {t3(locale, "🇪🇸 España 1-0 Argentina 🇦🇷", "🇪🇸 Spain 1-0 Argentina 🇦🇷", "🇪🇸 Espagne 1-0 Argentine 🇦🇷")}
           </h2>
           <p className="text-arena-200 text-base md:text-lg mb-8 max-w-lg leading-relaxed">
             {t3(
               locale,
-              "El 19 de julio se decide al campeón en el MetLife Stadium, área metropolitana de Nueva York. Empieza a planear tu viaje desde México con tiempo: los vuelos a EWR/JFK se inflan rápido en julio.",
-              "On July 19 the champion is crowned at MetLife Stadium, in the New York metro area. Start planning early — flights to EWR/JFK spike fast in July.",
-              "Le 19 juillet, le champion est sacré au MetLife Stadium, dans la région de New York. Planifiez tôt : les vols vers EWR/JFK explosent vite en juillet."
+              "España conquistó su segunda Copa del Mundo el 19 de julio en el MetLife Stadium con gol de Ferran Torres en la prórroga (106'). Argentina se quedó a un paso del bicampeonato. ¿Se te antojó Nueva York? Planea tu viaje desde México.",
+              "Spain won its second World Cup on July 19 at MetLife Stadium with a Ferran Torres goal in extra time (106'). Argentina fell just short of back-to-back titles. Craving New York? Plan your trip from Mexico.",
+              "L'Espagne a remporté sa deuxième Coupe du Monde le 19 juillet au MetLife Stadium grâce à un but de Ferran Torres en prolongation (106'). L'Argentine a échoué à un pas du doublé. Envie de New York ? Planifiez votre voyage depuis le Mexique."
             )}
           </p>
 
@@ -90,7 +92,7 @@ export default function FinalFeature({ locale }: FinalFeatureProps) {
                 🏆
               </div>
               <div className="font-display text-white text-2xl md:text-3xl font-bold drop-shadow-lg mt-2">
-                {t3(locale, "Por la copa", "For the cup", "Pour la coupe")}
+                {t3(locale, "España campeón", "Spain champions", "L'Espagne championne")}
               </div>
               <div className="text-white/90 text-sm md:text-base mt-1 uppercase tracking-widest">
                 New Jersey · USA
