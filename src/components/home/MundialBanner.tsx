@@ -90,7 +90,7 @@ export default function MundialBanner({ locale }: { locale: string }) {
               code: "us",
               city: { es: "NY/NJ · MetLife Stadium", en: "NY/NJ · MetLife Stadium", fr: "NY/NJ · MetLife Stadium" },
               stadium: { es: "Sede en EE.UU.", en: "USA venue", fr: "Stade aux USA" },
-              highlight: { es: "🏆 FINAL · 19 julio", en: "🏆 FINAL · July 19", fr: "🏆 FINALE · 19 juillet" },
+              highlight: { es: "🏆 España campeón · 1-0 a Argentina", en: "🏆 Spain champions · 1-0 vs Argentina", fr: "🏆 Espagne championne · 1-0 vs Argentine" },
             },
             {
               slug: "vancouver",
