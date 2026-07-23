@@ -1,4 +1,6 @@
 import resultsData from "@/data/mundial-results.json";
+import venuesData from "@/data/mundial-venues.json";
+import { MundialVenue } from "@/types/mundial";
 import { mundialResultSchema, validateData } from "./schemas";
 import { z } from "zod";
 
@@ -45,18 +47,65 @@ export function getMexicoResults(): MundialResult[] {
 const byDateTime = (a: MundialResult, b: MundialResult) =>
   a.date !== b.date ? a.date.localeCompare(b.date) : a.time.localeCompare(b.time);
 
+/** Group-stage results only (the tracked 72 matches). */
 export function getAllResults(): MundialResult[] {
   return [...results].sort(byDateTime);
 }
 
+// Short round tags shown where a group letter would go (badge in result lists).
+const ROUND_TAG: Record<string, string> = {
+  "round-of-32": "R32",
+  "round-of-16": "R16",
+  quarter: "QF",
+  semi: "SF",
+  "third-place": "3°",
+  final: "🏆",
+};
+
 /**
- * Every match scheduled on or before `todayISO` (server-render date), grouped by
- * day — the "results so far" view across all groups. Future fixtures (e.g.
- * Group A's later matchdays) are excluded so the list stays a true scoreboard.
+ * The 32 knockout matches live on each venue's match list (they were tracked
+ * per stadium), not in mundial-results.json. Projected here into MundialResult
+ * shape so the tournament-wide scoreboard can show the bracket through the
+ * final instead of stopping at the group stage.
+ */
+const knockoutResults: MundialResult[] = (venuesData as MundialVenue[]).flatMap(
+  (v) =>
+    v.matches
+      .filter(
+        (m) =>
+          m.round !== "group" &&
+          m.scoreA != null &&
+          m.scoreB != null &&
+          !/^(por definir|tbd|à définir)/i.test(m.teamA.es)
+      )
+      .map((m) => ({
+        id: `${m.round}-${m.date}-${v.slug}-${m.time}`,
+        group: ROUND_TAG[m.round] ?? m.round,
+        date: m.date,
+        time: m.time,
+        teamA: m.teamA,
+        teamB: m.teamB,
+        scoreA: m.scoreA ?? null,
+        scoreB: m.scoreB ?? null,
+        isMexicoGame: m.isMexicoGame,
+        venue: {
+          es: `${v.stadium.name}, ${v.name.es.split(" - ")[0]}`,
+          en: `${v.stadium.name}, ${v.name.en.split(" - ")[0]}`,
+        },
+        venueSlug: v.slug,
+      }))
+);
+
+/**
+ * Every match played on or before `todayISO` (server-render date), grouped by
+ * day — the tournament-wide scoreboard. Includes the group stage from
+ * mundial-results.json plus the knockout rounds tracked on the venue lists,
+ * so the list runs through the July 19 final.
  */
 export function getResultsUpToToday(todayISO: string): Array<[string, MundialResult[]]> {
   const map = new Map<string, MundialResult[]>();
-  for (const m of getAllResults()) {
+  const all = [...results, ...knockoutResults].sort(byDateTime);
+  for (const m of all) {
     if (m.date > todayISO) continue;
     if (!map.has(m.date)) map.set(m.date, []);
     map.get(m.date)!.push(m);

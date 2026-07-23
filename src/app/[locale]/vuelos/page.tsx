@@ -168,6 +168,15 @@ export default async function VuelosPage({ params: { locale } }: { params: { loc
 
       <div className="bg-arena-50 pb-12">
         <div className="container-custom -mt-8 relative z-20">
+          {/* Editorial lead — text-first before the search widget */}
+          <div className="bg-white rounded-2xl shadow-lg border border-arena-100 p-6 md:p-8 mb-6">
+            <p className="text-arena-700 leading-relaxed">
+              {isEs
+                ? "Volar dentro de México casi siempre es más barato de lo que parece, pero el precio final depende de tres decisiones: qué aerolínea eliges (Volaris y VivaAerobus cobran cada extra; Aeroméxico incluye maleta), desde qué aeropuerto sales (en CDMX, AIFA suele ser más barato que el AICM) y con cuánta anticipación compras (la ventana ideal es de 4 a 8 semanas). En esta guía comparamos las tarifas reales de todas las aerolíneas mexicanas, te explicamos las políticas de equipaje que más sorprenden en el aeropuerto y qué temporadas conviene evitar. Usa el buscador para comparar precios en tiempo real y sigue leyendo para pagar menos por el mismo asiento."
+                : "Flying within Mexico is almost always cheaper than it looks, but the final price depends on three decisions: which airline you pick (Volaris and VivaAerobus charge for every extra; Aeromexico includes a checked bag), which airport you fly from (in Mexico City, AIFA is usually cheaper than MEX) and how far ahead you book (the sweet spot is 4 to 8 weeks). In this guide we compare real fares across all Mexican airlines, explain the baggage rules that surprise travelers at the airport, and flag the seasons worth avoiding. Use the search box to compare live prices, then keep reading to pay less for the same seat."}
+            </p>
+          </div>
+
           {/* Main search embed */}
           <AviasalesEmbed airports={airports} />
 

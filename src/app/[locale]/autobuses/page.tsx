@@ -160,6 +160,15 @@ export default async function AutobusesPage({ params: { locale } }: { params: { 
 
       <div className="bg-arena-50 pb-12">
         <div className="container-custom -mt-8 relative z-20">
+          {/* Editorial lead — text-first before the search widget */}
+          <div className="bg-white rounded-2xl shadow-lg border border-arena-100 p-6 md:p-8 mb-6">
+            <p className="text-arena-700 leading-relaxed">
+              {isEs
+                ? "México tiene una de las mejores redes de autobuses del mundo: para rutas de 2 a 6 horas suele ganarle al avión en precio total y hasta en tiempo puerta a puerta. La clave está en elegir bien la línea y la clase: ADO domina el sureste desde la TAPO, ETN y Primera Plus el Bajío y occidente desde Terminal Norte, y las clases premium (ADO Platino, Turistar Lujo) ofrecen asientos casi cama que hacen rentable viajar de noche y ahorrarte una noche de hotel. Abajo puedes buscar horarios y precios en línea, ver qué terminal de CDMX te toca según tu destino y leer nuestros consejos de equipaje y seguridad para viajes largos."
+                : "Mexico has one of the best intercity bus networks in the world: on 2-to-6-hour routes it often beats flying on total price and even door-to-door time. The key is picking the right line and class: ADO rules the southeast out of TAPO, ETN and Primera Plus cover the Bajío and the west from Terminal Norte, and premium classes (ADO Platino, Turistar Lujo) offer near-flat seats that make overnight trips worth it — saving you a hotel night. Below you can search schedules and prices online, see which Mexico City terminal serves your destination, and read our luggage and safety tips for long rides."}
+            </p>
+          </div>
+
           {/* Bus search */}
           <BusSearchEmbed />
 

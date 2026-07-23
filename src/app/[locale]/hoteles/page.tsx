@@ -159,6 +159,15 @@ export default async function HotelesPage({ params: { locale } }: { params: { lo
 
       <div className="bg-arena-50 pb-12">
         <div className="container-custom -mt-8 relative z-20">
+          {/* Editorial lead — text-first before the search widget */}
+          <div className="bg-white rounded-2xl shadow-lg border border-arena-100 p-6 md:p-8 mb-6">
+            <p className="text-arena-700 leading-relaxed">
+              {isEs
+                ? "El mismo cuarto de hotel puede costar hasta 40% más según dónde lo reserves y en qué temporada viajes. En destinos de playa como Cancún o Los Cabos, la temporada baja (mayo a octubre) trae descuentos de 30-50%; en ciudades como CDMX o Guadalajara los precios bajan en fin de semana, cuando se van los viajeros de negocios. También importa el formato: un all-inclusive conviene si no piensas salir del resort, pero en destinos gastronómicos como Oaxaca o Mérida un hotel boutique con desayuno te deja probar la cocina local. Compara Booking, Expedia y Hotels.com en el buscador y revisa nuestra guía de zonas, temporadas y trucos de reserva antes de decidir."
+                : "The same hotel room can cost up to 40% more depending on where you book it and when you travel. In beach destinations like Cancún or Los Cabos, low season (May to October) brings 30-50% discounts; in cities like Mexico City or Guadalajara, prices drop on weekends when business travelers leave. Format matters too: an all-inclusive makes sense if you plan to stay at the resort, but in food destinations like Oaxaca or Mérida a boutique hotel with breakfast lets you explore the local cuisine. Compare Booking, Expedia and Hotels.com in the search box, and check our guide to areas, seasons and booking tricks before you decide."}
+            </p>
+          </div>
+
           {/* Hotel search */}
           <HotelSearchEmbed />
 

@@ -94,6 +94,31 @@ export default async function MundialPenalesPage({ params: { locale } }: { param
             </div>
           </div>
 
+          {/* Las tandas reales del torneo — data-grounded context for the game */}
+          <div className="bg-arena-50 border border-arena-200 rounded-xl p-5 mb-8">
+            <h2 className="font-display text-xl font-bold text-arena-800 mb-3">
+              🧤 {t3(locale, "Las tandas reales del Mundial 2026", "The real shootouts of World Cup 2026")}
+            </h2>
+            <p className="text-sm text-arena-700 mb-3">
+              {t3(locale,
+                "Cuatro partidos del torneo se definieron desde los once pasos — todos en eliminatorias:",
+                "Four matches of the tournament were decided from the spot — all in the knockout rounds:"
+              )}
+            </p>
+            <ul className="text-sm text-arena-700 space-y-1.5 list-disc pl-5">
+              <li>{t3(locale, "Dieciseisavos: Marruecos eliminó 3-2 en penales a Países Bajos (1-1) en Monterrey.", "Round of 32: Morocco knocked out the Netherlands 3-2 on penalties (1-1) in Monterrey.")}</li>
+              <li>{t3(locale, "Dieciseisavos: Paraguay sorprendió 4-3 a Alemania (1-1) en Boston.", "Round of 32: Paraguay stunned Germany 4-3 (1-1) in Boston.")}</li>
+              <li>{t3(locale, "Dieciseisavos: Egipto venció 4-2 a Australia (1-1) en Dallas.", "Round of 32: Egypt beat Australia 4-2 (1-1) in Dallas.")}</li>
+              <li>{t3(locale, "Octavos: Suiza dejó fuera 4-3 a Colombia (0-0) en Vancouver.", "Round of 16: Switzerland edged Colombia 4-3 (0-0) in Vancouver.")}</li>
+            </ul>
+            <p className="text-sm text-arena-700 mt-3">
+              {t3(locale,
+                "La final no llegó a penales: España venció 1-0 a Argentina con gol de Ferran Torres en la prórroga.",
+                "The final never reached a shootout: Spain beat Argentina 1-0 with a Ferran Torres goal in extra time."
+              )}
+            </p>
+          </div>
+
           <div className="text-center">
             <p className="text-arena-700 mb-5">
               {t3(locale, "¿Quieres más Mundial?", "Want more World Cup?")}

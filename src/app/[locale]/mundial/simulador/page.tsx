@@ -115,12 +115,12 @@ export default async function MundialSimuladorPage({ params: { locale } }: { par
 
           <div className="text-center">
             <h2 className="font-display text-2xl font-bold text-arena-800 mb-3">
-              ✈️ {t3(locale, "¿Vas a viajar al Mundial?", "Traveling to the World Cup?")}
+              🏆 {t3(locale, "¿Quieres revivir el Mundial?", "Want to relive the World Cup?")}
             </h2>
             <p className="text-arena-700 mb-5">
               {t3(locale,
-                "Encuentra vuelos y hoteles cerca de cada sede, y consulta el calendario y las sedes.",
-                "Find flights and hotels near each venue, and check the schedule and venues."
+                "Compara tus simulaciones contra lo que pasó de verdad: revisa los 104 resultados en el calendario y las guías de cada sede.",
+                "Compare your simulations against what actually happened: check all 104 results in the calendar and each venue guide."
               )}
             </p>
             <div className="flex flex-wrap justify-center gap-3">
