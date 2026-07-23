@@ -410,17 +410,24 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
       {/* Tips generales */}
       <div className="bg-arena-100 py-12">
         <div className="container-custom">
-          <h2 className="font-display text-2xl font-bold text-arena-800 mb-8 text-center">
+          <h2 className="font-display text-2xl font-bold text-arena-800 mb-2 text-center">
             📋 {t3(locale, "Guía esencial para el aficionado", "Essential fan guide", "Guide essentiel pour les fans")}
           </h2>
+          <p className="text-arena-600 text-sm text-center mb-8 max-w-2xl mx-auto">
+            {t3(locale,
+              "Con esta guía preparamos a los visitantes durante el torneo (11 de junio – 19 de julio de 2026). Los consejos de pagos, transporte y seguridad siguen aplicando si visitas las ciudades sede.",
+              "This is the guide we used to prepare visitors during the tournament (June 11 – July 19, 2026). The payment, transport and safety tips still apply when visiting the host cities.",
+              "Le guide que nous avons utilisé pendant le tournoi (11 juin – 19 juillet 2026). Les conseils restent utiles pour visiter les villes hôtes."
+            )}
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-xl p-5 shadow-sm">
               <h3 className="font-bold text-arena-800 mb-2">🎟️ {t3(locale, "Boletos", "Tickets", "Billets")}</h3>
               <p className="text-sm text-arena-600">
                 {t3(locale,
-                  "Solo compra boletos en FIFA.com/tickets. No compres en reventa callejera. Los precios van de $1,800 a $50,000 MXN dependiendo de la fase y ubicación.",
-                  "Only buy tickets at FIFA.com/tickets. Don't buy from street resellers. Prices range from $1,800 to $50,000 MXN depending on phase and location.",
-                  "Achetez uniquement sur FIFA.com/tickets. Les prix vont de 1 800 à 50 000 MXN."
+                  "Durante el torneo los boletos oficiales se vendieron solo en FIFA.com/tickets, de $1,800 a $50,000 MXN según fase y ubicación. La regla sigue vigente para cualquier evento en los estadios: compra en canales oficiales, nunca en reventa callejera.",
+                  "During the tournament official tickets were sold only at FIFA.com/tickets, from $1,800 to $50,000 MXN depending on round and seat. The rule still holds for any stadium event: buy through official channels, never street resellers.",
+                  "Pendant le tournoi, les billets officiels n'étaient vendus que sur FIFA.com/tickets (1 800 à 50 000 MXN). Achetez toujours via les canaux officiels."
                 )}
               </p>
             </div>
@@ -428,9 +435,9 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
               <h3 className="font-bold text-arena-800 mb-2">💳 {t3(locale, "Pagos", "Payments", "Paiements")}</h3>
               <p className="text-sm text-arena-600">
                 {t3(locale,
-                  "Los estadios serán cashless (sin efectivo). Lleva tarjeta de crédito/débito o billetera digital. Hay cajeros ATM afuera de los estadios.",
-                  "Stadiums will be cashless. Bring credit/debit cards or digital wallet. ATMs available outside stadiums.",
-                  "Les stades seront sans espèces. Apportez cartes ou portefeuille numérique."
+                  "Los estadios operaron 100% cashless durante el Mundial y mantienen ese esquema en conciertos y liga: lleva tarjeta de crédito/débito o billetera digital. Hay cajeros ATM afuera de los estadios.",
+                  "Stadiums ran 100% cashless during the World Cup and keep that setup for concerts and league games: bring credit/debit cards or a digital wallet. ATMs are available outside.",
+                  "Les stades ont fonctionné sans espèces pendant la Coupe du Monde et gardent ce système : apportez cartes ou portefeuille numérique."
                 )}
               </p>
             </div>
@@ -468,9 +475,9 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
               <h3 className="font-bold text-arena-800 mb-2">🔒 {t3(locale, "Seguridad", "Safety", "Sécurité")}</h3>
               <p className="text-sm text-arena-600">
                 {t3(locale,
-                  "Las zonas de estadios tendrán seguridad reforzada. No lleves mochilas grandes. Usa Uber/DiDi en lugar de taxis callejeros. Guarda tus pertenencias cerca.",
-                  "Stadium areas will have enhanced security. Don't bring large backpacks. Use Uber/DiDi instead of street taxis. Keep belongings close.",
-                  "Les zones de stade auront une sécurité renforcée. N'apportez pas de grands sacs."
+                  "Las zonas de estadios operan con seguridad reforzada en eventos grandes. No lleves mochilas grandes. Usa Uber/DiDi en lugar de taxis callejeros. Guarda tus pertenencias cerca.",
+                  "Stadium areas run enhanced security at major events. Don't bring large backpacks. Use Uber/DiDi instead of street taxis. Keep belongings close.",
+                  "Les zones de stade appliquent une sécurité renforcée lors des grands événements. N'apportez pas de grands sacs."
                 )}
               </p>
             </div>

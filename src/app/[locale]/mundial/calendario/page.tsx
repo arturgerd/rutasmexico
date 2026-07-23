@@ -8,14 +8,14 @@ import { buildBreadcrumbList, buildTournamentSchema } from "@/lib/mundial-schema
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const title = t3(locale,
-    "Calendario Mundial 2026 — Fechas, Horarios y Sedes Oficiales FIFA",
-    "World Cup 2026 Calendar — Official FIFA Dates, Times & Venues",
-    "Calendrier Coupe du Monde 2026 — Dates, Horaires et Stades FIFA"
+    "Calendario y resultados del Mundial 2026 — Marcadores por sede",
+    "World Cup 2026 Schedule & Results — Scores by Venue",
+    "Calendrier et résultats de la Coupe du Monde 2026"
   );
   const description = t3(locale,
-    "Calendario completo del Mundial FIFA 2026: fechas, horarios y sedes de cada partido. Filtra por país, ronda o equipo. Partidos de México, EE.UU. y Canadá.",
-    "Complete FIFA World Cup 2026 schedule: dates, times and venues for every match. Filter by country, round or team. Matches in Mexico, USA and Canada.",
-    "Calendrier complet de la Coupe du Monde FIFA 2026 : dates, horaires et stades de chaque match. Filtrez par pays, tour ou équipe."
+    "Resultados y calendario del Mundial FIFA 2026: marcadores, fechas y sedes de cada partido, de la inauguración en el Azteca a la final donde España venció 1-0 a Argentina.",
+    "FIFA World Cup 2026 results and schedule: scores, dates and venues for every match, from the Azteca opener to the final where Spain beat Argentina 1-0.",
+    "Résultats et calendrier de la Coupe du Monde FIFA 2026 : scores, dates et stades de chaque match."
   );
   return {
     title,
@@ -68,22 +68,22 @@ export default async function MundialCalendarPage({ params: { locale } }: { para
             </div>
             <h1 className="font-display text-3xl md:text-5xl font-bold text-white mb-3">
               {t3(locale,
-                "Calendario del Mundial 2026",
-                "World Cup 2026 Calendar",
-                "Calendrier de la Coupe du Monde 2026"
+                "Calendario y resultados del Mundial 2026",
+                "World Cup 2026 Schedule & Results",
+                "Calendrier et résultats de la Coupe du Monde 2026"
               )}
             </h1>
             <p className="text-arena-300 text-base md:text-lg max-w-2xl mx-auto">
               {t3(locale,
-                "Todas las fechas, horarios y sedes. Filtra por país, ronda o equipo para encontrar el partido que vas a ver.",
-                "All dates, times and venues. Filter by country, round or team to find the match you'll watch.",
-                "Toutes les dates, horaires et stades. Filtrez par pays, tour ou équipe."
+                "El torneo se jugó del 11 de junio al 19 de julio de 2026 y España se coronó campeón al vencer 1-0 a Argentina en la final. Filtra por país, ronda o equipo para revivir cada partido.",
+                "The tournament ran from June 11 to July 19, 2026, and Spain were crowned champions after beating Argentina 1-0 in the final. Filter by country, round or team to relive every match.",
+                "Le tournoi s'est joué du 11 juin au 19 juillet 2026 ; l'Espagne a été sacrée championne en battant l'Argentine 1-0 en finale."
               )}
             </p>
             <div className="grid grid-cols-3 gap-3 max-w-xl mx-auto mt-6">
               <div className="bg-arena-800 rounded-xl p-3 border border-arena-700">
                 <div className="text-2xl font-bold text-oro-400">{total}</div>
-                <div className="text-xs text-arena-700 mt-1">{t3(locale, "Partidos en agenda", "Scheduled matches", "Matchs programmés")}</div>
+                <div className="text-xs text-arena-700 mt-1">{t3(locale, "Partidos registrados", "Matches on record", "Matchs enregistrés")}</div>
               </div>
               <div className="bg-arena-800 rounded-xl p-3 border border-arena-700">
                 <div className="text-2xl font-bold text-jade-400">🇲🇽 {mxMatches}</div>
@@ -111,20 +111,20 @@ export default async function MundialCalendarPage({ params: { locale } }: { para
           <div className="bg-arena-50 border border-arena-200 rounded-xl p-5 text-sm text-arena-600 mb-8">
             <strong>{t3(locale, "Nota:", "Note:", "Note :")}</strong>{" "}
             {t3(locale,
-              "Horarios en hora local del estadio sede. Equipos 'Por definir' en eliminatorias se actualizan al avanzar la fase de grupos. Verifica siempre en FIFA.com antes de tu viaje.",
-              "Times shown in the host stadium's local timezone. 'TBD' teams in knockouts fill in as group stage advances. Always verify on FIFA.com before traveling.",
-              "Horaires locaux du stade hôte. Les équipes 'À définir' en éliminatoires se complètent à mesure que la phase de groupes avance."
+              "El torneo concluyó el 19 de julio de 2026; los marcadores provienen de nuestro seguimiento partido a partido. El estadio y la hora local aparecen en los partidos cuya sede registramos (todos los de México y toda la fase eliminatoria); en el resto de la fase de grupos indicamos fecha, grupo y marcador. Consulta las tablas por grupo en la página principal del Mundial.",
+              "The tournament ended on July 19, 2026; scores come from our match-by-match tracking. Stadium and local kickoff time appear on matches whose venue we recorded (all Mexico games and the entire knockout stage); for the rest of the group stage we list date, group and final score. See the group tables on the World Cup main page.",
+              "Le tournoi s'est achevé le 19 juillet 2026 ; les scores proviennent de notre suivi match par match. Le stade apparaît lorsque nous l'avons enregistré."
             )}
           </div>
           <div className="text-center">
             <h2 className="font-display text-2xl font-bold text-arena-800 mb-3">
-              ✈️ {t3(locale, "¿Vas a viajar al Mundial?", "Traveling to the World Cup?", "Vous voyagez à la Coupe du Monde ?")}
+              ✈️ {t3(locale, "¿Te quedaste con ganas de conocer las sedes?", "Want to visit the host cities?", "Envie de découvrir les villes hôtes ?")}
             </h2>
             <p className="text-arena-600 mb-5">
               {t3(locale,
-                "Encuentra vuelos y hoteles cerca de cada sede.",
-                "Find flights and hotels near each venue.",
-                "Trouvez vols et hôtels près de chaque stade."
+                "Los estadios y sus ciudades siguen siendo grandes destinos después del torneo. Encuentra vuelos, hoteles y nuestras guías de cada sede.",
+                "The stadiums and their cities remain great destinations after the tournament. Find flights, hotels and our guide to each venue.",
+                "Les stades et leurs villes restent de belles destinations après le tournoi. Trouvez vols, hôtels et nos guides."
               )}
             </p>
             <div className="flex flex-wrap justify-center gap-3">

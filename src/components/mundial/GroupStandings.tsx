@@ -138,8 +138,8 @@ export default function GroupStandings({ locale, group = "A" }: { locale: string
         <p className="text-arena-700 text-center mb-8 max-w-2xl mx-auto">
           {t3(
             locale,
-            "Todos los marcadores hasta hoy y la tabla del grupo de México. Se actualiza conforme se juegan los partidos.",
-            "All scores so far plus Mexico's group table. Updated as matches are played."
+            "Los marcadores de todo el torneo — de la fase de grupos a la final del 19 de julio — y la tabla del grupo de México.",
+            "Every score of the tournament — from the group stage to the July 19 final — plus Mexico's group table."
           )}
         </p>
 
@@ -147,7 +147,7 @@ export default function GroupStandings({ locale, group = "A" }: { locale: string
         {resultsByDate.length > 0 && (
           <div className="max-w-3xl mx-auto mb-12">
             <h3 className="font-display text-xl font-bold text-arena-800 mb-4 text-center">
-              {t3(locale, "Todos los resultados hasta hoy", "All results so far")}
+              {t3(locale, "Todos los resultados del torneo", "All tournament results")}
             </h3>
             <div className="space-y-6">
               {resultsByDate.map(([date, dayMatches]) => (
