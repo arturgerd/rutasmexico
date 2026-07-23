@@ -11,6 +11,13 @@ const TOURNAMENT_NAME: Record<string, string> = {
 const TOURNAMENT_START = "2026-06-11";
 const TOURNAMENT_END = "2026-07-19";
 
+// Pre-draw placeholder slots ("Por definir vs Por definir") never became real
+// fixtures — emitting them as SportsEvent structured data reads as stale
+// machine-generated content, so schema builders skip them entirely.
+const TBD_RE = /^(Por definir|TBD|À définir)/i;
+const hasTbdTeam = (m: MundialMatch) =>
+  TBD_RE.test(m.teamA.es) || TBD_RE.test(m.teamB.es);
+
 function roundLabel(round: MundialMatch["round"], locale: string): string {
   const labels: Record<string, Record<string, string>> = {
     group: { es: "Fase de grupos", en: "Group stage", fr: "Phase de groupes" },
@@ -98,7 +105,9 @@ export function buildMatchSportsEvent(
 
 export function buildVenueMatchesSchema(venue: MundialVenue, locale: string) {
   const venueUrl = `${BASE_URL}/${locale}/mundial/${venue.slug}`;
-  return venue.matches.map((m) => buildMatchSportsEvent(venue, m, locale, venueUrl));
+  return venue.matches
+    .filter((m) => !hasTbdTeam(m))
+    .map((m) => buildMatchSportsEvent(venue, m, locale, venueUrl));
 }
 
 export function buildStadiumPlaceSchema(
@@ -142,7 +151,9 @@ export function buildStadiumPlaceSchema(
 export function buildTournamentSchema(venues: MundialVenue[], locale: string) {
   const subEvents = venues.flatMap((v) => {
     const venueUrl = `${BASE_URL}/${locale}/mundial/${v.slug}`;
-    return v.matches.map((m) => buildMatchSportsEvent(v, m, locale, venueUrl));
+    return v.matches
+      .filter((m) => !hasTbdTeam(m))
+      .map((m) => buildMatchSportsEvent(v, m, locale, venueUrl));
   });
 
   return {
@@ -152,10 +163,10 @@ export function buildTournamentSchema(venues: MundialVenue[], locale: string) {
     name: TOURNAMENT_NAME[locale] || TOURNAMENT_NAME.es,
     description:
       locale === "es"
-        ? "La Copa Mundial de la FIFA 2026 se disputará en 16 sedes de México, Estados Unidos y Canadá del 11 de junio al 19 de julio de 2026. México albergará el partido inaugural en el Estadio Azteca."
+        ? "La Copa Mundial de la FIFA 2026 se disputó en 16 sedes de México, Estados Unidos y Canadá del 11 de junio al 19 de julio de 2026. México albergó el partido inaugural en el Estadio Azteca y España se coronó campeón al vencer 1-0 a Argentina en la final."
         : locale === "fr"
-          ? "La Coupe du Monde de la FIFA 2026 se déroulera dans 16 stades au Mexique, aux États-Unis et au Canada du 11 juin au 19 juillet 2026. Le match d'ouverture aura lieu au Estadio Azteca."
-          : "The FIFA World Cup 2026 will be held across 16 venues in Mexico, the United States and Canada from June 11 to July 19, 2026. Mexico will host the opening match at Estadio Azteca.",
+          ? "La Coupe du Monde de la FIFA 2026 s'est déroulée dans 16 stades au Mexique, aux États-Unis et au Canada du 11 juin au 19 juillet 2026. Le match d'ouverture a eu lieu au Estadio Azteca et l'Espagne a été sacrée championne en battant l'Argentine 1-0 en finale."
+          : "The FIFA World Cup 2026 was held across 16 venues in Mexico, the United States and Canada from June 11 to July 19, 2026. Mexico hosted the opening match at Estadio Azteca and Spain were crowned champions after beating Argentina 1-0 in the final.",
     startDate: TOURNAMENT_START,
     endDate: TOURNAMENT_END,
     url: `${BASE_URL}/${locale}/mundial`,
