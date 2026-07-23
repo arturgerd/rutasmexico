@@ -125,6 +125,7 @@ export default function CalendarClient({ matches }: Props) {
 
   const filtered = useMemo(() => {
     return matches.filter((m) => {
+      // Matches without a recorded venue only show under "all countries".
       if (country !== "all" && m.country !== country) return false;
       if (round !== "all" && m.round !== round) return false;
       if (mxOnly && !m.isMexicoGame) return false;
@@ -223,7 +224,9 @@ export default function CalendarClient({ matches }: Props) {
       )}
       <div className="space-y-6">
         {grouped.map(([date, dayMatches]) => {
-          const dayCountries = Array.from(new Set(dayMatches.map((m) => m.country)));
+          const dayCountries = Array.from(
+            new Set(dayMatches.map((m) => m.country).filter((c): c is NonNullable<typeof c> => !!c))
+          );
           return (
           <div key={date}>
             <h3 className="font-display text-lg font-bold text-arena-800 mb-3 sticky top-0 bg-arena-50/95 backdrop-blur py-2 z-10 border-b border-arena-200 flex items-center gap-2 flex-wrap">
@@ -237,15 +240,12 @@ export default function CalendarClient({ matches }: Props) {
               {dayMatches.map((m, i) => {
                 const teamA = m.teamA[locale] || m.teamA.es;
                 const teamB = m.teamB[locale] || m.teamB.es;
-                const venueLabel = localize(m.venueName, locale);
+                const venueLabel = m.venueName ? localize(m.venueName, locale) : "";
                 const roundLabel = ROUND_LABELS[m.round]?.[locale] || ROUND_LABELS[m.round]?.es || m.round;
-                return (
-                  <Link
-                    key={`${m.venueId}-${date}-${m.time}-${i}`}
-                    href={`/${locale}/mundial/${m.venueSlug}`}
-                    className={`bg-white rounded-xl border ${m.isMexicoGame ? "border-jade-400 ring-2 ring-jade-200" : "border-arena-200"} overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all`}
-                  >
-                    <div className={`h-1.5 bg-gradient-to-r ${COUNTRY_STRIPE[m.country]}`} />
+                const cardClass = `bg-white rounded-xl border ${m.isMexicoGame ? "border-jade-400 ring-2 ring-jade-200" : "border-arena-200"} overflow-hidden ${m.venueSlug ? "hover:shadow-lg hover:-translate-y-0.5 transition-all" : ""}`;
+                const cardInner = (
+                  <>
+                    <div className={`h-1.5 bg-gradient-to-r ${(m.country && COUNTRY_STRIPE[m.country]) || "from-arena-200 via-white to-arena-200"}`} />
                     <div className="p-4">
                       <div className="flex items-center justify-between mb-2 gap-2">
                         <div className="flex items-center gap-2 min-w-0">
@@ -257,9 +257,11 @@ export default function CalendarClient({ matches }: Props) {
                             </span>
                           )}
                         </div>
-                        <span className="text-xs font-mono text-arena-700 bg-arena-100 rounded px-2 py-0.5 whitespace-nowrap">
-                          ⏰ {m.time}
-                        </span>
+                        {m.time && (
+                          <span className="text-xs font-mono text-arena-700 bg-arena-100 rounded px-2 py-0.5 whitespace-nowrap">
+                            ⏰ {m.time}
+                          </span>
+                        )}
                       </div>
                       <div className="flex items-center justify-between gap-3 my-3">
                         <div className="flex items-center gap-2 flex-1 min-w-0">
@@ -290,15 +292,27 @@ export default function CalendarClient({ matches }: Props) {
                           <span className="text-3xl">{teamFlag(teamB)}</span>
                         </div>
                       </div>
-                      <div className="text-xs text-arena-500 flex items-center justify-between border-t border-arena-100 pt-2">
-                        <span className="flex items-center gap-1">
-                          <span className="text-base">{COUNTRY_FLAG[m.country]}</span>
-                          <span className="truncate">{m.stadiumName}</span>
-                        </span>
-                        <span className="text-arena-700 truncate ml-2">{venueLabel.split(" - ")[0]}</span>
-                      </div>
+                      {m.stadiumName && (
+                        <div className="text-xs text-arena-500 flex items-center justify-between border-t border-arena-100 pt-2">
+                          <span className="flex items-center gap-1">
+                            {m.country && <span className="text-base">{COUNTRY_FLAG[m.country]}</span>}
+                            <span className="truncate">{m.stadiumName}</span>
+                          </span>
+                          <span className="text-arena-700 truncate ml-2">{venueLabel.split(" - ")[0]}</span>
+                        </div>
+                      )}
                     </div>
+                  </>
+                );
+                const key = `${m.venueId ?? "res"}-${date}-${m.time}-${teamA}-${i}`;
+                return m.venueSlug ? (
+                  <Link key={key} href={`/${locale}/mundial/${m.venueSlug}`} className={cardClass}>
+                    {cardInner}
                   </Link>
+                ) : (
+                  <div key={key} className={cardClass}>
+                    {cardInner}
+                  </div>
                 );
               })}
             </div>
