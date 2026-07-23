@@ -227,42 +227,23 @@ export default async function VuelosPage({ params: { locale } }: { params: { loc
             </div>
           </div>
 
-          {/* FAQ / Trust signals */}
+          {/* FAQ — HTML <details> mirrors the FAQPage schema above for SERP rich result eligibility */}
           <div className="mt-8 bg-white rounded-2xl shadow-lg border border-arena-100 p-6 md:p-8">
             <h2 className="font-display text-xl font-bold text-arena-900 mb-4">
               {locale === "es" ? "Preguntas frecuentes" : "FAQ"}
             </h2>
-            <div className="space-y-4">
-              <div>
-                <h3 className="font-semibold text-arena-900 text-sm">
-                  {locale === "es" ? "Que aerolineas comparan?" : "What airlines do you compare?"}
-                </h3>
-                <p className="text-sm text-arena-500 mt-1">
-                  {locale === "es"
-                    ? "Comparamos todas las aerolineas mexicanas (Volaris, VivaAerobus, Aeromexico, TAR, MagniCharters, Aeromar) ademas de aerolineas internacionales como American Airlines, United, Delta, JetBlue y mas de 700 aerolineas en total."
-                    : "We compare all Mexican airlines (Volaris, VivaAerobus, Aeromexico, TAR, MagniCharters, Aeromar) plus international airlines like American Airlines, United, Delta, JetBlue and over 700 airlines total."}
-                </p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-arena-900 text-sm">
-                  {locale === "es" ? "Es gratis usar el buscador?" : "Is the search free?"}
-                </h3>
-                <p className="text-sm text-arena-500 mt-1">
-                  {locale === "es"
-                    ? "Si, buscar y comparar vuelos es completamente gratis. No cobramos ninguna comision adicional."
-                    : "Yes, searching and comparing flights is completely free. We don't charge any additional fees."}
-                </p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-arena-900 text-sm">
-                  {locale === "es" ? "Los precios son en tiempo real?" : "Are prices in real time?"}
-                </h3>
-                <p className="text-sm text-arena-500 mt-1">
-                  {locale === "es"
-                    ? "Si, los precios se actualizan en tiempo real directamente desde los sistemas de las aerolineas y agencias de viaje."
-                    : "Yes, prices are updated in real time directly from airline and travel agency systems."}
-                </p>
-              </div>
+            <div className="divide-y divide-arena-100">
+              {faqs.map((f, i) => (
+                <details key={i} className="group py-3" {...(i === 0 ? { open: true } : {})}>
+                  <summary className="cursor-pointer font-semibold text-arena-900 text-sm md:text-base list-none flex items-center justify-between gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 rounded">
+                    <span>{f.q}</span>
+                    <svg className="w-4 h-4 flex-shrink-0 text-arena-500 transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.06l3.71-3.83a.75.75 0 1 1 1.08 1.04l-4.24 4.39a.75.75 0 0 1-1.08 0L5.21 8.27a.75.75 0 0 1 .02-1.06z" clipRule="evenodd" />
+                    </svg>
+                  </summary>
+                  <p className="text-sm text-arena-700 mt-2 leading-relaxed">{f.a}</p>
+                </details>
+              ))}
             </div>
           </div>
         </div>
