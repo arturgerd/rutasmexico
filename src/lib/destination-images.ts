@@ -96,7 +96,7 @@ export const DESTINATION_IMAGES: Record<string, DestinationImage> = {
 // Hero/background images for pages
 export const PAGE_HERO_IMAGES = {
   home: "https://images.unsplash.com/photo-1518638150340-f706e86654de?w=1920&h=800&fit=crop&q=80", // Chichen Itza
-  flights: "https://images.unsplash.com/photo-1436491865332-7a61a109db05?w=1920&h=600&fit=crop&q=80", // Airplane view
+  flights: "https://images.unsplash.com/photo-1558882423-f05f3544bebc?w=1920&h=600&fit=crop&q=80", // Airplane wing from window
   hotels: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1920&h=600&fit=crop&q=80", // Hotel resort
   buses: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1920&h=600&fit=crop&q=80", // Bus travel
   destinations: "https://images.unsplash.com/photo-1547995886-6dc09384c6e6?w=1920&h=600&fit=crop&q=80", // Mexico landscape
