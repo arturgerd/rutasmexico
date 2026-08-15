@@ -4,6 +4,7 @@ import { getAllAirports } from "@/lib/data/airports";
 import { getRecentBlogPosts } from "@/lib/data/blog";
 import HeroSection from "@/components/home/HeroSection";
 import MundialBanner from "@/components/home/MundialBanner";
+import FutbolBanner from "@/components/home/FutbolBanner";
 import FeaturedDestinations from "@/components/home/FeaturedDestinations";
 import HowItWorks from "@/components/home/HowItWorks";
 import MapSection from "@/components/home/MapSection";
@@ -57,6 +58,7 @@ export default async function HomePage({ params: { locale } }: { params: { local
     <>
       <HeroSection airports={airports} />
       <AffiliateDisclosure locale={locale} />
+      <FutbolBanner locale={locale} />
       <MundialBanner locale={locale} />
       <WhyMexicoSection locale={locale} />
       <RecentBlogPosts posts={recentPosts} />
