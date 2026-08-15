@@ -27,11 +27,10 @@ export const AFFILIATE_CONFIG = {
   },
 
   // 3. DISCOVERCARS (Renta de autos)
-  // Regístrate en: https://www.discovercars.com/affiliate
-  // 70% de ganancia por reserva
+  // Va por Travelpayouts (programa 117, 23-54% de comisión, cookie 365 días)
+  // vía tpDeepLink() — no requiere alta directa en DiscoverCars.
   discoverCars: {
-    affiliateCode: "TU_ID_DISCOVERCARS",
-    enabled: false,
+    enabled: true,
   },
 
   // 4. VIATOR (Tours - Tripadvisor)
@@ -51,13 +50,11 @@ export const AFFILIATE_CONFIG = {
   },
 
   // 6. BUSBUD (Autobuses - ADO, ETN, Primera Plus, etc.)
-  // Regístrate en: https://www.busbud.com/affiliates
-  // O por Impact: https://app.impact.com → busca "Busbud"
-  // Comisión: hasta 5% por cada reserva de boleto de autobús
+  // Va por Travelpayouts (programa 138, 5% de comisión, cookie 7 días)
+  // vía tpDeepLink() — el redirect pasa por Commission Junction.
   // Cubre TODAS las líneas mexicanas: ADO, ETN, Primera Plus, etc.
   busbud: {
-    affiliateId: "TU_ID_BUSBUD",
-    enabled: true, // Funciona sin ID (tracking se activa al agregar ID)
+    enabled: true,
   },
 };
 
@@ -130,7 +127,7 @@ export function getHotelSearchUrl(params: {
 }
 
 /**
- * Genera link de renta de autos en DiscoverCars
+ * Genera link de renta de autos en DiscoverCars (vía Travelpayouts)
  */
 export function getCarRentalUrl(params: {
   pickupIATA: string;
@@ -139,9 +136,9 @@ export function getCarRentalUrl(params: {
   locale?: "es" | "en" | "fr";
 }): string {
   const { pickupIATA, pickupDate, returnDate, locale = "es" } = params;
-  const code = AFFILIATE_CONFIG.discoverCars.affiliateCode;
 
-  return `https://www.discovercars.com/mexico/search?pos=MX&lng=${locale}&loc=${pickupIATA}&doff=${pickupDate}T10:00&don=${returnDate}T10:00&currency=MXN&drv_age=30&rff=${code}`;
+  const target = `https://www.discovercars.com/mexico/search?pos=MX&lng=${locale}&loc=${pickupIATA}&doff=${pickupDate}T10:00&don=${returnDate}T10:00&currency=MXN&drv_age=30`;
+  return tpDeepLink("discoverCars", target);
 }
 
 /**
@@ -172,6 +169,31 @@ export function getTourSearchUrl(params: {
 
 const TP_SHMARKER = "712936";
 const KLOOK_CAMPAIGN_ID = "13694";
+
+// ============================================================
+// Deep links vía el redirector oficial de Travelpayouts (tp.media/r)
+// ============================================================
+// Formato capturado de la API CreatePartnerLink del panel (2026-08-15) y
+// verificado contra los redirects reales:
+//   - DiscoverCars → discovercars.com?code=travelpayouts&tpsub_id=…-712936
+//   - Busbud → Commission Junction (kqzyfj.com) → busbud.com
+// En estos links `marker` es el publisher (712936) y `trs` el proyecto
+// Rutasmexico (511361) — al revés que en los widgets tp.media/content.
+// `u` acepta cualquier URL del dominio de la marca, incluidas búsquedas
+// con fechas dinámicas.
+
+const TP_DEEPLINK_PROGRAMS = {
+  discoverCars: { campaignId: 117, p: 3555 }, // 23-54%, cookie 365 días
+  busbud: { campaignId: 138, p: 4109 }, // 5%, cookie 7 días
+} as const;
+
+function tpDeepLink(
+  program: keyof typeof TP_DEEPLINK_PROGRAMS,
+  targetUrl: string
+): string {
+  const { campaignId, p } = TP_DEEPLINK_PROGRAMS[program];
+  return `https://tp.media/r?campaign_id=${campaignId}&marker=${TP_SHMARKER}&p=${p}&trs=511361&u=${encodeURIComponent(targetUrl)}`;
+}
 
 /**
  * Wraps a Klook URL with the Travelpayouts → Klook affiliate redirect.
@@ -471,7 +493,6 @@ export function getBusSearchUrl(params: {
   locale?: "es" | "en" | "fr";
 }): string {
   const { originCity, destCity, departDate, locale = "es" } = params;
-  const affId = AFFILIATE_CONFIG.busbud.affiliateId;
 
   // Busbud URL slug format
   const slugify = (city: string) =>
@@ -490,12 +511,7 @@ export function getBusSearchUrl(params: {
     url += `?outbound_date=${departDate}`;
   }
 
-  // Add affiliate tracking
-  if (affId && affId !== "TU_ID_BUSBUD") {
-    url += `${departDate ? "&" : "?"}aff_id=${affId}`;
-  }
-
-  return url;
+  return tpDeepLink("busbud", url);
 }
 
 /**
@@ -506,7 +522,7 @@ export function getBusSearchGenericUrl(params: {
 }): string {
   const { locale = "es" } = params;
   const lang = locale === "es" ? "es-mx" : locale === "fr" ? "fr" : "en";
-  return `https://www.busbud.com/${lang}/d/bus-tickets/mexico`;
+  return tpDeepLink("busbud", `https://www.busbud.com/${lang}/d/bus-tickets/mexico`);
 }
 
 // ============================================================
