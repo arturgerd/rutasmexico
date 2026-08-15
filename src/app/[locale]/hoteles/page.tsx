@@ -2,6 +2,7 @@ import Image from "next/image";
 import { setRequestLocale } from "next-intl/server";
 import HotelSearchEmbed from "@/components/widgets/HotelSearchEmbed";
 import HotelsGuide from "@/components/editorial/HotelsGuide";
+import AffiliateDisclosure from "@/components/editorial/AffiliateDisclosure";
 import { PAGE_HERO_IMAGES } from "@/lib/destination-images";
 import { seoAlternates, seoOpenGraph } from "@/lib/utils";
 
@@ -170,6 +171,8 @@ export default async function HotelesPage({ params: { locale } }: { params: { lo
 
           {/* Hotel search */}
           <HotelSearchEmbed />
+
+          <AffiliateDisclosure locale={locale} variant="inline" />
 
           {/* Editorial guide - main content for AdSense compliance */}
           <HotelsGuide locale={locale} />

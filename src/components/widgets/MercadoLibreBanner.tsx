@@ -73,7 +73,7 @@ export default function MercadoLibreBanner({ context = "general" }: MercadoLibre
             key={i}
             href={product.url}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="sponsored noopener noreferrer"
             className="flex-shrink-0 w-[160px] bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow p-4 text-center group border border-arena-100"
           >
             <span className="text-3xl block mb-2">{product.emoji}</span>

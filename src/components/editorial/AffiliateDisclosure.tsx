@@ -8,9 +8,9 @@ interface Props {
 
 export default function AffiliateDisclosure({ locale, variant = "banner" }: Props) {
   const text = t3(locale,
-    "RutasMéxico contiene enlaces afiliados a Travelpayouts (Aviasales, Booking), Klook, Tiqets, Kiwitaxi, Airalo y otras plataformas. Si reservas a través de estos enlaces, recibimos una pequeña comisión sin costo adicional para ti — así mantenemos el sitio gratuito y sin paywalls. Solo recomendamos servicios que usaríamos nosotros mismos.",
-    "RutasMéxico contains affiliate links to Travelpayouts (Aviasales, Booking), Klook, Tiqets, Kiwitaxi, Airalo and other platforms. If you book through these links, we earn a small commission at no extra cost to you — that keeps this site free and paywall-free. We only recommend services we would use ourselves.",
-    "RutasMéxico contient des liens d'affiliation vers Travelpayouts (Aviasales, Booking), Klook, Tiqets, Kiwitaxi, Airalo et d'autres plateformes. Si vous réservez via ces liens, nous touchons une petite commission sans coût supplémentaire — c'est ce qui rend ce site gratuit et sans paywall. Nous ne recommandons que des services que nous utiliserions nous-mêmes."
+    "RutasMéxico contiene enlaces afiliados a Travelpayouts (Aviasales, Booking, DiscoverCars, Busbud), Klook, Tiqets, Kiwitaxi, Airalo, Mercado Libre y otras plataformas. Si reservas o compras a través de estos enlaces, recibimos una pequeña comisión sin costo adicional para ti — así mantenemos el sitio gratuito y sin paywalls. Solo recomendamos servicios que usaríamos nosotros mismos.",
+    "RutasMéxico contains affiliate links to Travelpayouts (Aviasales, Booking, DiscoverCars, Busbud), Klook, Tiqets, Kiwitaxi, Airalo, Mercado Libre and other platforms. If you book or buy through these links, we earn a small commission at no extra cost to you — that keeps this site free and paywall-free. We only recommend services we would use ourselves.",
+    "RutasMéxico contient des liens d'affiliation vers Travelpayouts (Aviasales, Booking, DiscoverCars, Busbud), Klook, Tiqets, Kiwitaxi, Airalo, Mercado Libre et d'autres plateformes. Si vous réservez via ces liens, nous touchons une petite commission sans coût supplémentaire — c'est ce qui rend ce site gratuit et sans paywall. Nous ne recommandons que des services que nous utiliserions nous-mêmes."
   );
 
   const learnMore = t3(locale, "Más en términos y privacidad", "More in terms and privacy", "Plus dans conditions et confidentialité");

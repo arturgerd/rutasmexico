@@ -84,7 +84,8 @@ export default function PrivacidadPage({ params: { locale } }: { params: { local
                 <p>Our website uses the following third-party services that may collect information:</p>
                 <ul>
                   <li><strong>Google AdSense:</strong> Displays personalized ads. Google may use cookies to serve ads based on your browsing history. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</li>
-                  <li><strong>Travelpayouts / Aviasales:</strong> Our affiliate partner for flight and hotel searches. When you click on search links, you are redirected to their platform. <a href="https://www.travelpayouts.com/privacy" target="_blank" rel="noopener noreferrer">Travelpayouts Privacy Policy</a>.</li>
+                  <li><strong>Travelpayouts / Aviasales:</strong> Our affiliate partner for flight, hotel, car rental (DiscoverCars) and bus (Busbud) searches. When you click on search links, you are redirected to their platform. <a href="https://www.travelpayouts.com/privacy" target="_blank" rel="noopener noreferrer">Travelpayouts Privacy Policy</a>.</li>
+                  <li><strong>Other affiliate partners:</strong> Some links on the site point to Klook, Tiqets, Kiwitaxi, Airalo and Mercado Libre with affiliate tracking. Each platform processes your data under its own privacy policy once you land on their site.</li>
                   <li><strong>Vercel:</strong> Our hosting provider. <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Vercel Privacy Policy</a>.</li>
                 </ul>
 
@@ -211,7 +212,8 @@ export default function PrivacidadPage({ params: { locale } }: { params: { local
                 <p>Nuestro sitio web utiliza los siguientes servicios de terceros que pueden recopilar información:</p>
                 <ul>
                   <li><strong>Google AdSense:</strong> Muestra anuncios personalizados. Google puede usar cookies basadas en tu historial de navegación. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a>.</li>
-                  <li><strong>Travelpayouts / Aviasales:</strong> Nuestro socio afiliado para búsquedas de vuelos y hoteles. Al hacer clic en los enlaces, serás redirigido a su plataforma. <a href="https://www.travelpayouts.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Travelpayouts</a>.</li>
+                  <li><strong>Travelpayouts / Aviasales:</strong> Nuestro socio afiliado para búsquedas de vuelos, hoteles, renta de autos (DiscoverCars) y autobuses (Busbud). Al hacer clic en los enlaces, serás redirigido a su plataforma. <a href="https://www.travelpayouts.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Travelpayouts</a>.</li>
+                  <li><strong>Otros socios afiliados:</strong> Algunos enlaces del sitio apuntan a Klook, Tiqets, Kiwitaxi, Airalo y Mercado Libre con seguimiento de afiliados. Cada plataforma trata tus datos bajo su propia política de privacidad una vez que llegas a su sitio.</li>
                   <li><strong>Vercel:</strong> Nuestro proveedor de hospedaje. <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Vercel</a>.</li>
                 </ul>
 

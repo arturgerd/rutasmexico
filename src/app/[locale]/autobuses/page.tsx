@@ -3,6 +3,7 @@ import { setRequestLocale } from "next-intl/server";
 import BusSearchEmbed from "@/components/widgets/BusSearchEmbed";
 import BusCompanyGrid from "@/components/widgets/BusCompanyGrid";
 import BusesGuide from "@/components/editorial/BusesGuide";
+import AffiliateDisclosure from "@/components/editorial/AffiliateDisclosure";
 import { PAGE_HERO_IMAGES } from "@/lib/destination-images";
 import { seoAlternates, seoOpenGraph } from "@/lib/utils";
 
@@ -171,6 +172,8 @@ export default async function AutobusesPage({ params: { locale } }: { params: { 
 
           {/* Bus search */}
           <BusSearchEmbed />
+
+          <AffiliateDisclosure locale={locale} variant="inline" />
 
           {/* Editorial guide - main content for AdSense compliance */}
           <BusesGuide locale={locale} />

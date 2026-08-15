@@ -42,23 +42,6 @@
         "isMexicoGame": true
       },
       {
-        "date": "2026-06-12",
-        "time": "16:00",
-        "teamA": {
-          "es": "Por definir (Grupo B)",
-          "en": "TBD (Group B)",
-          "zh": "待定（B组）"
-        },
-        "teamB": {
-          "es": "Por definir (Grupo B)",
-          "en": "TBD (Group B)",
-          "zh": "待定（B组）"
-        },
-        "round": "group",
-        "group": "B",
-        "isMexicoGame": false
-      },
-      {
         "date": "2026-06-24",
         "time": "19:00",
         "teamA": {
@@ -1106,56 +1089,6 @@
     },
     "matches": [
       {
-        "date": "2026-06-14",
-        "time": "13:00",
-        "teamA": {
-          "es": "Por definir (Grupo C)",
-          "en": "TBD (Group C)",
-          "zh": "待定（C组）"
-        },
-        "teamB": {
-          "es": "Por definir (Grupo C)",
-          "en": "TBD (Group C)",
-          "zh": "待定（C组）"
-        },
-        "round": "group",
-        "group": "C",
-        "isMexicoGame": false
-      },
-      {
-        "date": "2026-06-20",
-        "time": "16:00",
-        "teamA": {
-          "es": "Por definir (Grupo D)",
-          "en": "TBD (Group D)",
-          "zh": "待定（D组）"
-        },
-        "teamB": {
-          "es": "Por definir (Grupo D)",
-          "en": "TBD (Group D)",
-          "zh": "待定（D组）"
-        },
-        "round": "group",
-        "group": "D",
-        "isMexicoGame": false
-      },
-      {
-        "date": "2026-06-26",
-        "time": "16:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
         "date": "2026-06-29",
         "time": "19:00",
         "teamA": {
@@ -2018,23 +1951,6 @@
     },
     "matches": [
       {
-        "date": "2026-06-13",
-        "time": "16:00",
-        "teamA": {
-          "es": "Por definir (Grupo E)",
-          "en": "TBD (Group E)",
-          "zh": "待定（E组）"
-        },
-        "teamB": {
-          "es": "Por definir (Grupo E)",
-          "en": "TBD (Group E)",
-          "zh": "待定（E组）"
-        },
-        "round": "group",
-        "group": "E",
-        "isMexicoGame": false
-      },
-      {
         "date": "2026-06-18",
         "time": "19:00",
         "teamA": {
@@ -2050,22 +1966,6 @@
         "round": "group",
         "group": "A",
         "isMexicoGame": true
-      },
-      {
-        "date": "2026-06-25",
-        "time": "13:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "zh": "待定"
-        },
-        "round": "group",
-        "isMexicoGame": false
       }
     ],
     "howToGetThere": {
@@ -2944,38 +2844,6 @@
     },
     "matches": [
       {
-        "date": "2026-06-13",
-        "time": "16:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
-        "date": "2026-06-25",
-        "time": "19:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
         "date": "2026-06-30",
         "time": "17:00",
         "teamA": {
@@ -3734,38 +3602,6 @@
     },
     "matches": [
       {
-        "date": "2026-06-14",
-        "time": "19:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
-        "date": "2026-06-22",
-        "time": "13:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
         "date": "2026-06-30",
         "time": "11:00",
         "teamA": {
@@ -4438,38 +4274,6 @@
     },
     "matches": [
       {
-        "date": "2026-06-12",
-        "time": "13:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
-        "date": "2026-06-18",
-        "time": "16:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
         "date": "2026-06-28",
         "time": "12:00",
         "teamA": {
@@ -5116,38 +4920,6 @@
     },
     "matches": [
       {
-        "date": "2026-06-15",
-        "time": "19:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
-        "date": "2026-06-21",
-        "time": "13:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
         "date": "2026-07-03",
         "time": "18:00",
         "teamA": {
@@ -5790,38 +5562,6 @@
     },
     "matches": [
       {
-        "date": "2026-06-16",
-        "time": "13:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
-        "date": "2026-06-22",
-        "time": "19:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
         "date": "2026-06-29",
         "time": "12:00",
         "teamA": {
@@ -6461,38 +6201,6 @@
     },
     "matches": [
       {
-        "date": "2026-06-15",
-        "time": "16:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
-        "date": "2026-06-23",
-        "time": "13:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
         "date": "2026-07-01",
         "time": "12:00",
         "teamA": {
@@ -7099,38 +6807,6 @@
     },
     "matches": [
       {
-        "date": "2026-06-13",
-        "time": "13:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
-        "date": "2026-06-19",
-        "time": "16:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
         "date": "2026-06-29",
         "time": "16:30",
         "teamA": {
@@ -7712,38 +7388,6 @@
     },
     "matches": [
       {
-        "date": "2026-06-16",
-        "time": "19:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
-        "date": "2026-06-24",
-        "time": "13:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
         "date": "2026-07-01",
         "time": "13:00",
         "teamA": {
@@ -8323,38 +7967,6 @@
     },
     "matches": [
       {
-        "date": "2026-06-14",
-        "time": "16:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
-        "date": "2026-06-20",
-        "time": "13:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
         "date": "2026-07-04",
         "time": "17:00",
         "teamA": {
@@ -8914,38 +8526,6 @@
       }
     },
     "matches": [
-      {
-        "date": "2026-06-14",
-        "time": "13:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
-        "date": "2026-06-20",
-        "time": "19:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
       {
         "date": "2026-07-01",
         "time": "17:00",
@@ -9593,38 +9173,6 @@
     },
     "matches": [
       {
-        "date": "2026-06-16",
-        "time": "16:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
-        "date": "2026-06-22",
-        "time": "13:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
         "date": "2026-07-03",
         "time": "19:30",
         "teamA": {
@@ -10208,55 +9756,6 @@
       }
     },
     "matches": [
-      {
-        "date": "2026-06-13",
-        "time": "15:00",
-        "teamA": {
-          "es": "Canadá",
-          "en": "Canada",
-          "fr": "Canada"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "group": "B",
-        "isMexicoGame": false
-      },
-      {
-        "date": "2026-06-19",
-        "time": "18:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
-        "date": "2026-06-26",
-        "time": "15:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
       {
         "date": "2026-07-02",
         "time": "19:00",
@@ -10869,56 +10368,6 @@
       }
     },
     "matches": [
-      {
-        "date": "2026-06-13",
-        "time": "18:00",
-        "teamA": {
-          "es": "Canadá",
-          "en": "Canada",
-          "fr": "Canada"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "group": "B",
-        "isMexicoGame": false
-      },
-      {
-        "date": "2026-06-18",
-        "time": "15:00",
-        "teamA": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "isMexicoGame": false
-      },
-      {
-        "date": "2026-06-24",
-        "time": "18:00",
-        "teamA": {
-          "es": "Canadá",
-          "en": "Canada",
-          "fr": "Canada"
-        },
-        "teamB": {
-          "es": "Por definir",
-          "en": "TBD",
-          "fr": "À définir"
-        },
-        "round": "group",
-        "group": "B",
-        "isMexicoGame": false
-      },
       {
         "date": "2026-07-02",
         "time": "20:00",

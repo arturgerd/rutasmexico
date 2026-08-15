@@ -36,6 +36,7 @@ export default function Header() {
   const weddingLabel = locale === "es" ? "Bodas" : "Weddings";
 
   const mundialLabel = locale === "es" ? "Mundial 2026" : "World Cup 2026";
+  const futbolLabel = locale === "es" ? "Fútbol" : "Football";
 
   const aboutLabel = locale === "es" ? "Nosotros" : "About";
 
@@ -51,6 +52,7 @@ export default function Header() {
   ];
   // Secondary links: hidden on md, shown on lg+ to avoid overflow
   const secondaryLinks: NavLink[] = [
+    { href: `/${locale}/mundial`, label: mundialLabel },
     { href: `/${locale}/bodas`, label: weddingLabel, icon: "ring" },
     { href: `/${locale}/blog`, label: blogLabel, icon: "pen" },
     { href: `/${locale}/nosotros`, label: aboutLabel },
@@ -97,11 +99,11 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href={`/${locale}/mundial`}
+              href={`/${locale}/futbol`}
               className="inline-flex items-center gap-1.5 bg-gradient-to-r from-jade-700 to-jade-600 text-white text-sm font-bold py-1.5 px-3.5 rounded-full shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-jade-500 focus-visible:ring-offset-2"
             >
               <Icon name="ball" className="w-4 h-4" />
-              {mundialLabel}
+              {futbolLabel}
             </Link>
             <LanguageSwitcher />
           </nav>
@@ -132,12 +134,12 @@ export default function Header() {
           <nav id="mobile-nav" className="md:hidden pb-4 border-t border-arena-200 pt-4">
             <div className="flex flex-col gap-3">
               <Link
-                href={`/${locale}/mundial`}
+                href={`/${locale}/futbol`}
                 onClick={() => setMobileMenuOpen(false)}
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-jade-700 to-jade-600 text-white font-bold py-2.5 px-4 rounded-xl shadow-md"
               >
                 <Icon name="ball" className="w-5 h-5" />
-                {mundialLabel}
+                {futbolLabel}
               </Link>
               {mobileLinks.map((link) => (
                 <Link

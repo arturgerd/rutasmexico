@@ -49,10 +49,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/rutas", changeFrequency: "weekly" as const, priority: 0.9 },
     { path: "/blog", changeFrequency: "daily" as const, priority: 0.8 },
     { path: "/bodas", changeFrequency: "monthly" as const, priority: 0.7 },
-    { path: "/mundial", changeFrequency: "weekly" as const, priority: 0.95 },
-    { path: "/mundial/calendario", changeFrequency: "weekly" as const, priority: 0.92 },
-    { path: "/mundial/simulador", changeFrequency: "weekly" as const, priority: 0.7 },
-    { path: "/mundial/penales", changeFrequency: "monthly" as const, priority: 0.6 },
+    { path: "/futbol", changeFrequency: "daily" as const, priority: 0.9 },
+    // Mundial 2026: terminó el 19-jul-2026 — contenido de archivo, ya no cambia.
+    { path: "/mundial", changeFrequency: "monthly" as const, priority: 0.7 },
+    { path: "/mundial/calendario", changeFrequency: "monthly" as const, priority: 0.6 },
+    { path: "/mundial/simulador", changeFrequency: "monthly" as const, priority: 0.5 },
+    { path: "/mundial/penales", changeFrequency: "monthly" as const, priority: 0.5 },
     { path: "/nosotros", changeFrequency: "monthly" as const, priority: 0.5 },
     { path: "/metodologia", changeFrequency: "monthly" as const, priority: 0.5 },
     { path: "/contacto", changeFrequency: "monthly" as const, priority: 0.4 },
@@ -136,8 +138,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       entries.push({
         url: `${BASE_URL}/${locale}/mundial/${venue.slug}`,
         lastModified: lm,
-        changeFrequency: "weekly",
-        priority: 0.9,
+        changeFrequency: "monthly",
+        priority: 0.6,
         alternates: generateAlternates(`/mundial/${venue.slug}`),
       });
     }

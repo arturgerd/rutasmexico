@@ -1,123 +1,57 @@
 import Link from "next/link";
 import { t3 } from "@/lib/utils";
-import Flag from "@/components/mundial/Flag";
 
-const OPENING_MATCH = new Date("2026-06-11T13:00:00-06:00");
-
+// El Mundial 2026 terminó el 19-jul-2026 (España campeón). Este banner quedó
+// como acceso al archivo histórico; el protagonismo futbolero de la home lo
+// lleva FutbolBanner (Liga MX + Leagues Cup).
 export default function MundialBanner({ locale }: { locale: string }) {
-  const now = new Date();
-  const daysUntil = Math.max(0, Math.ceil((OPENING_MATCH.getTime() - now.getTime()) / (1000 * 60 * 60 * 24)));
-
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-jade-600 via-jade-700 to-terracotta-900 py-12 md:py-16">
-      <div
-        className="absolute inset-0 opacity-10"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 20% 30%, rgba(255,255,255,0.3), transparent 30%), radial-gradient(circle at 80% 70%, rgba(255,255,255,0.25), transparent 40%)",
-        }}
-      />
-      <div className="container-custom relative z-10">
-        <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8">
+    <section className="bg-arena-900 py-8">
+      <div className="container-custom">
+        <div className="flex flex-col md:flex-row md:items-center gap-4">
           <div className="flex-1">
-            <div className="inline-flex items-center gap-2 bg-oro-400 rounded-full px-4 py-1.5 mb-4 shadow-lg">
-              <span className="text-sm font-bold tracking-wide text-arena-900">⚽ FIFA WORLD CUP 2026™</span>
+            <div className="inline-flex items-center gap-2 bg-oro-400/90 rounded-full px-3 py-1 mb-2">
+              <span className="text-xs font-bold tracking-wide text-arena-900">
+                🏆 {t3(locale, "ASÍ FUE EL MUNDIAL 2026", "THE 2026 WORLD CUP, AS IT HAPPENED", "LA COUPE DU MONDE 2026")}
+              </span>
             </div>
-            <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-3 drop-shadow-lg">
+            <h2 className="font-display text-xl md:text-2xl font-bold text-white">
               {t3(
                 locale,
-                "Mundial 2026: 16 sedes en 3 países",
-                "World Cup 2026: 16 venues across 3 countries",
-                "Coupe du Monde 2026 : 16 stades dans 3 pays"
+                "España campeón: los 104 partidos, las 16 sedes y todas las guías",
+                "Spain champions: all 104 matches, 16 venues and every guide",
+                "Espagne championne : les 104 matchs et les 16 stades"
               )}
             </h2>
-            <p className="text-white/85 text-base md:text-lg max-w-2xl leading-relaxed">
+            <p className="text-arena-400 text-sm mt-1 max-w-2xl">
               {t3(
                 locale,
-                "🇲🇽 3 sedes en México + 🇺🇸 11 en EE.UU. + 🇨🇦 2 en Canadá. Inaugural en CDMX, final en Nueva York. Guía completa por ciudad: vuelos desde México, transporte seguro, casas de cambio y zonas turísticas.",
-                "🇲🇽 3 venues in Mexico + 🇺🇸 11 in USA + 🇨🇦 2 in Canada. Opening in Mexico City, final in New York. Complete city guide: flights from Mexico, safe transport, currency exchange and tourist zones.",
-                "🇲🇽 3 stades au Mexique + 🇺🇸 11 aux USA + 🇨🇦 2 au Canada. Ouverture à Mexico, finale à New York. Guide complet par ville : vols depuis le Mexique, transport sûr, change et zones touristiques."
+                "El torneo terminó el 19 de julio con la final en Nueva York (1-0 a Argentina). Conservamos el archivo completo: resultados, guías por sede y el simulador para revivirlo.",
+                "The tournament ended July 19 with the final in New York (1-0 vs Argentina). The full archive is still here: results, venue guides and the simulator to relive it.",
+                "Le tournoi s'est achevé le 19 juillet à New York. L'archive complète reste disponible."
               )}
             </p>
           </div>
-
-          <div className="flex flex-col items-stretch gap-4 w-full lg:w-auto lg:min-w-[280px]">
-            {daysUntil > 0 && (
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-5 text-center border border-white/20">
-                <div className="text-5xl md:text-6xl font-bold text-oro-300 drop-shadow-lg leading-none">
-                  {daysUntil}
-                </div>
-                <div className="text-white/80 text-sm mt-2">
-                  {t3(locale, "días al partido inaugural", "days to the opening match", "jours avant le match d'ouverture")}
-                </div>
-              </div>
-            )}
+          <div className="flex flex-wrap gap-3 shrink-0">
+            <Link
+              href={`/${locale}/mundial/calendario`}
+              className="bg-white text-arena-900 font-bold py-2.5 px-5 rounded-xl text-sm shadow hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+            >
+              📋 {t3(locale, "Resultados", "Results", "Résultats")}
+            </Link>
             <Link
               href={`/${locale}/mundial`}
-              className="bg-white text-emerald-700 font-bold py-3.5 px-6 rounded-xl text-center shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200"
+              className="bg-white/10 text-white font-bold py-2.5 px-5 rounded-xl text-sm border border-white/20 hover:bg-white/20 transition-all duration-200"
             >
-              🗺️ {t3(locale, "Ver la guía completa", "View the complete guide", "Voir le guide complet")}
+              🗺️ {t3(locale, "Guías por sede", "Venue guides", "Guides par stade")}
             </Link>
-            <div className="grid grid-cols-2 gap-3">
-              <Link
-                href={`/${locale}/mundial/simulador`}
-                className="bg-oro-400 text-arena-900 font-bold py-3.5 px-4 rounded-xl text-center shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200"
-              >
-                🎮 {t3(locale, "Simular", "Simulate", "Simuler")}
-              </Link>
-              <Link
-                href={`/${locale}/mundial/penales`}
-                className="bg-white text-terracotta-700 font-bold py-3.5 px-4 rounded-xl text-center shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200"
-              >
-                🧤 {t3(locale, "Penales", "Penalties", "Penaltys")}
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        {/* Venue cards — 3 iconic stops (opening, final, and regional flavor) */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-8">
-          {[
-            {
-              slug: "ciudad-de-mexico",
-              code: "mx",
-              city: { es: "CDMX · Estadio Azteca", en: "Mexico City · Estadio Azteca", fr: "Mexico · Estadio Azteca" },
-              stadium: { es: "Sede en México", en: "Mexico venue", fr: "Stade au Mexique" },
-              highlight: { es: "🎉 Partido inaugural", en: "🎉 Opening match", fr: "🎉 Match d'ouverture" },
-            },
-            {
-              slug: "nueva-york-nueva-jersey",
-              code: "us",
-              city: { es: "NY/NJ · MetLife Stadium", en: "NY/NJ · MetLife Stadium", fr: "NY/NJ · MetLife Stadium" },
-              stadium: { es: "Sede en EE.UU.", en: "USA venue", fr: "Stade aux USA" },
-              highlight: { es: "🏆 España campeón · 1-0 a Argentina", en: "🏆 Spain champions · 1-0 vs Argentina", fr: "🏆 Espagne championne · 1-0 vs Argentine" },
-            },
-            {
-              slug: "vancouver",
-              code: "ca",
-              city: { es: "Vancouver · BC Place", en: "Vancouver · BC Place", fr: "Vancouver · BC Place" },
-              stadium: { es: "Sede en Canadá", en: "Canada venue", fr: "Stade au Canada" },
-              highlight: { es: "🍁 Octavos de final", en: "🍁 Round of 16", fr: "🍁 8es de finale" },
-            },
-          ].map((v) => (
             <Link
-              key={v.slug}
-              href={`/${locale}/mundial/${v.slug}`}
-              className="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-4 hover:bg-white/15 hover:-translate-y-0.5 transition-all duration-200"
+              href={`/${locale}/mundial/simulador`}
+              className="bg-white/10 text-white font-bold py-2.5 px-5 rounded-xl text-sm border border-white/20 hover:bg-white/20 transition-all duration-200"
             >
-              <div className="flex items-center gap-3">
-                <Flag code={v.code} alt="" className="h-7 w-10 shrink-0" />
-                <div className="flex-1 min-w-0">
-                  <div className="font-bold text-white truncate">{t3(locale, v.city.es, v.city.en, v.city.fr)}</div>
-                  <div className="text-xs text-white/70 truncate">{t3(locale, v.stadium.es, v.stadium.en, v.stadium.fr)}</div>
-                </div>
-                <span className="text-white/60 group-hover:text-white transition-colors">→</span>
-              </div>
-              <div className="text-xs text-oro-300 mt-2 font-semibold">
-                {t3(locale, v.highlight.es, v.highlight.en, v.highlight.fr)}
-              </div>
+              🎮 {t3(locale, "Simulador", "Simulator", "Simulateur")}
             </Link>
-          ))}
+          </div>
         </div>
       </div>
     </section>

@@ -8,6 +8,7 @@ import { Destination } from "@/types/destination";
 import { localize, formatCurrency, t3 } from "@/lib/utils";
 import { Locale } from "@/types/common";
 import MercadoLibreBanner from "@/components/widgets/MercadoLibreBanner";
+import AffiliateDisclosure from "@/components/editorial/AffiliateDisclosure";
 
 interface MundialVenueDetailProps {
   venue: MundialVenue;
@@ -653,6 +654,7 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
         </section>
 
         <MercadoLibreBanner context="travel" />
+        <AffiliateDisclosure locale={locale} variant="inline" />
 
         {/* Link to destination */}
         <div className="bg-gradient-to-r from-jade-500 to-azul-500 rounded-2xl p-8 text-center mt-8 shadow-lg">
