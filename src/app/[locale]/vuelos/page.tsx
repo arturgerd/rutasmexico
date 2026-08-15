@@ -4,6 +4,7 @@ import { getAllAirports } from "@/lib/data/airports";
 import AviasalesEmbed from "@/components/widgets/AviasalesEmbed";
 import AirlineGrid from "@/components/widgets/AirlineGrid";
 import FlightsGuide from "@/components/editorial/FlightsGuide";
+import AffiliateDisclosure from "@/components/editorial/AffiliateDisclosure";
 import { PAGE_HERO_IMAGES } from "@/lib/destination-images";
 import { seoAlternates, seoOpenGraph } from "@/lib/utils";
 
@@ -179,6 +180,8 @@ export default async function VuelosPage({ params: { locale } }: { params: { loc
 
           {/* Main search embed */}
           <AviasalesEmbed airports={airports} />
+
+          <AffiliateDisclosure locale={locale} variant="inline" />
 
           {/* Editorial guide - main content for AdSense compliance */}
           <FlightsGuide locale={locale} />

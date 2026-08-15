@@ -11,6 +11,7 @@ import HostCitiesBento from "@/components/mundial/HostCitiesBento";
 import GroupStandings from "@/components/mundial/GroupStandings";
 import FinalFeature from "@/components/mundial/FinalFeature";
 import MercadoLibreBanner from "@/components/widgets/MercadoLibreBanner";
+import AffiliateDisclosure from "@/components/editorial/AffiliateDisclosure";
 import { t3, seoAlternates, seoOpenGraph } from "@/lib/utils";
 import { buildTournamentSchema, buildBreadcrumbList } from "@/lib/mundial-schema";
 import { getAllBlogPosts } from "@/lib/data/blog";
@@ -571,6 +572,7 @@ export default async function MundialPage({ params: { locale } }: { params: { lo
       <div className="bg-arena-50 py-8">
         <div className="container-custom">
           <MercadoLibreBanner context="travel" />
+          <AffiliateDisclosure locale={locale} variant="inline" />
         </div>
       </div>
 

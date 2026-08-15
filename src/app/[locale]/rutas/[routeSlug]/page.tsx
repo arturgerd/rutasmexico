@@ -10,6 +10,7 @@ import { Locale } from "@/types/common";
 import { setRequestLocale } from "next-intl/server";
 import RouteDetail from "@/components/routes/RouteDetail";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
+import AffiliateDisclosure from "@/components/editorial/AffiliateDisclosure";
 
 export async function generateStaticParams() {
   const routes = await getAllRoutes();
@@ -208,6 +209,9 @@ export default async function RouteDetailPage({
         editorialContent={editorialContent}
         faqs={faqItems.map((f) => ({ q: f.name, a: f.acceptedAnswer.text }))}
       />
+      <div className="container-custom">
+        <AffiliateDisclosure locale={locale} variant="inline" />
+      </div>
     </>
   );
 }
