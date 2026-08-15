@@ -36,6 +36,7 @@ export default function Header() {
   const weddingLabel = locale === "es" ? "Bodas" : "Weddings";
 
   const mundialLabel = locale === "es" ? "Mundial 2026" : "World Cup 2026";
+  const futbolLabel = locale === "es" ? "Fútbol" : "Football";
 
   const aboutLabel = locale === "es" ? "Nosotros" : "About";
 
@@ -51,6 +52,7 @@ export default function Header() {
   ];
   // Secondary links: hidden on md, shown on lg+ to avoid overflow
   const secondaryLinks: NavLink[] = [
+    { href: `/${locale}/futbol`, label: futbolLabel },
     { href: `/${locale}/bodas`, label: weddingLabel, icon: "ring" },
     { href: `/${locale}/blog`, label: blogLabel, icon: "pen" },
     { href: `/${locale}/nosotros`, label: aboutLabel },

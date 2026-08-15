@@ -49,6 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/rutas", changeFrequency: "weekly" as const, priority: 0.9 },
     { path: "/blog", changeFrequency: "daily" as const, priority: 0.8 },
     { path: "/bodas", changeFrequency: "monthly" as const, priority: 0.7 },
+    { path: "/futbol", changeFrequency: "daily" as const, priority: 0.85 },
     { path: "/mundial", changeFrequency: "weekly" as const, priority: 0.95 },
     { path: "/mundial/calendario", changeFrequency: "weekly" as const, priority: 0.92 },
     { path: "/mundial/simulador", changeFrequency: "weekly" as const, priority: 0.7 },
