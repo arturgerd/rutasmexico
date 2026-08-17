@@ -1,0 +1,333 @@
+{
+  "iata": "CUN",
+  "lastReviewed": "2026-08-16",
+  "terminalNote": {
+    "es": "El aeropuerto de Cancún tiene cuatro terminales. ADO recoge afuera de las terminales 2, 3 y 4; la Terminal 1 no tiene servicio ADO. Revisa en tu pase de abordar desde cuál sales o llegas, porque están separadas y el traslado entre ellas toma tiempo.",
+    "en": "Cancún airport has four terminals. ADO picks up outside terminals 2, 3 and 4; Terminal 1 has no ADO service. Check your boarding pass for which one you use — they're far apart and moving between them takes time."
+  },
+  "options": [
+    {
+      "id": "ado-centro",
+      "mode": "bus",
+      "operator": "ADO",
+      "recommended": true,
+      "name": {
+        "es": "Autobús ADO al centro de Cancún",
+        "en": "ADO bus to downtown Cancún"
+      },
+      "destination": {
+        "es": "Terminal ADO Centro (Av. Tulum esq. Av. Uxmal)",
+        "en": "ADO Downtown Terminal (Av. Tulum at Av. Uxmal)"
+      },
+      "price": {
+        "amount": 145,
+        "currency": "MXN",
+        "unit": "person",
+        "confidence": "verified",
+        "checkedOn": "2026-08-16",
+        "source": "Tarifa mínima publicada en Busbud, coincide con guías locales",
+        "sourceUrl": "https://www.busbud.com/es-mx/autobus-cancun-cun-airport-cancun/i/d5dpxjd-d5f283",
+        "note": {
+          "es": "Es la tarifa más baja disponible; sube en salidas de hora pico. ADO la ajusta varias veces al año.",
+          "en": "This is the lowest available fare; it rises on peak departures. ADO adjusts it several times a year."
+        }
+      },
+      "duration": { "minMinutes": 45, "maxMinutes": 70 },
+      "frequency": {
+        "es": "Alrededor de 30 salidas al día, una cada 30-45 minutos",
+        "en": "Around 30 departures a day, roughly every 30-45 minutes"
+      },
+      "hours": {
+        "es": "Desde la madrugada hasta cerca de las 23:00",
+        "en": "From early morning until around 11:00 pm"
+      },
+      "terminals": ["T2", "T3", "T4"],
+      "pros": [
+        { "es": "La opción más barata con equipaje incluido", "en": "Cheapest option, luggage included" },
+        { "es": "No necesitas reservar: compras en el mostrador al salir", "en": "No booking needed — buy at the counter on your way out" }
+      ],
+      "cons": [
+        { "es": "Te deja en el centro, no en tu hotel", "en": "Drops you downtown, not at your hotel" },
+        { "es": "Si tu hotel está en la Zona Hotelera, todavía te falta un camión R-1 o R-2", "en": "If your hotel is in the Hotel Zone you still need an R-1 or R-2 city bus" }
+      ]
+    },
+    {
+      "id": "ado-playa-del-carmen",
+      "mode": "bus",
+      "operator": "ADO",
+      "recommended": true,
+      "name": {
+        "es": "Autobús ADO a Playa del Carmen",
+        "en": "ADO bus to Playa del Carmen"
+      },
+      "destination": {
+        "es": "Terminal Turística (5a Avenida) y Terminal Alterna",
+        "en": "Tourist Terminal (5th Avenue) and Alterna Terminal"
+      },
+      "price": {
+        "amount": 270,
+        "currency": "MXN",
+        "unit": "person",
+        "confidence": "verified",
+        "checkedOn": "2026-08-16",
+        "source": "Coincide en el sitio internacional de ADO y en Busbud",
+        "sourceUrl": "https://international.ado.com.mx/ado-bus/cancun-airport-to-playa-del-carmen",
+        "note": {
+          "es": "Tarifa más baja disponible. Cambia según fecha, hora y disponibilidad, y sube en temporada alta.",
+          "en": "Lowest available fare. It moves with date, time and availability, and climbs in high season."
+        }
+      },
+      "duration": { "minMinutes": 90, "maxMinutes": 110 },
+      "frequency": {
+        "es": "Hasta 30 salidas al día, una cada 20-40 minutos",
+        "en": "Up to 30 departures a day, every 20-40 minutes"
+      },
+      "hours": {
+        "es": "Primera salida cerca de 07:50, última cerca de 22:35",
+        "en": "First departure around 07:50, last around 22:35"
+      },
+      "terminals": ["T2", "T3", "T4"],
+      "pros": [
+        { "es": "Directo, sin transbordos, con 25 kg de equipaje documentado incluido", "en": "Direct, no transfers, 25 kg checked luggage included" },
+        { "es": "Te deja a pasos de la Quinta Avenida", "en": "Drops you steps from Fifth Avenue" }
+      ],
+      "cons": [
+        { "es": "Se agota en temporada alta: compra en línea con anticipación", "en": "Sells out in high season — buy online in advance" },
+        { "es": "No hay salidas de madrugada", "en": "No overnight departures" }
+      ]
+    },
+    {
+      "id": "ado-tulum",
+      "mode": "bus",
+      "operator": "ADO",
+      "recommended": false,
+      "name": {
+        "es": "Autobús ADO a Tulum",
+        "en": "ADO bus to Tulum"
+      },
+      "destination": {
+        "es": "Centro de Tulum y zona arqueológica",
+        "en": "Tulum town centre and archaeological zone"
+      },
+      "price": {
+        "amount": 445,
+        "currency": "MXN",
+        "unit": "person",
+        "confidence": "verified",
+        "checkedOn": "2026-08-16",
+        "source": "Tarifa mínima publicada en Busbud",
+        "sourceUrl": "https://www.busbud.com/es-mx/autobus-cancun-cun-airport-tulum/i/d5dpxjd-d59fcx",
+        "note": {
+          "es": "Casi el doble que a Playa del Carmen. Con tres o más personas, compara contra un traslado privado: la diferencia se cierra.",
+          "en": "Nearly double the Playa del Carmen fare. With three or more people, compare it against a private transfer — the gap closes."
+        }
+      },
+      "duration": { "minMinutes": 150, "maxMinutes": 165 },
+      "frequency": {
+        "es": "Varias salidas al día, menos frecuentes que a Playa del Carmen",
+        "en": "Several departures a day, less frequent than to Playa del Carmen"
+      },
+      "hours": {
+        "es": "Aproximadamente de 08:00 a 17:20",
+        "en": "Roughly 08:00 to 17:20"
+      },
+      "terminals": ["T2", "T3", "T4"],
+      "pros": [
+        { "es": "Mucho más barato que un traslado privado a Tulum", "en": "Far cheaper than a private transfer to Tulum" }
+      ],
+      "cons": [
+        { "es": "Son más de 2 horas y media de camino", "en": "It's over two and a half hours" },
+        { "es": "Sin salidas nocturnas: si tu vuelo llega tarde, no alcanzas", "en": "No late departures — if your flight lands late, you'll miss it" }
+      ]
+    },
+    {
+      "id": "taxi-oficial",
+      "mode": "taxi",
+      "operator": {
+        "es": "Taxis autorizados del aeropuerto",
+        "en": "Airport authorized taxis"
+      },
+      "recommended": false,
+      "name": {
+        "es": "Taxi autorizado del aeropuerto",
+        "en": "Airport authorized taxi"
+      },
+      "destination": {
+        "es": "Puerta a puerta, a cualquier hotel",
+        "en": "Door to door, to any hotel"
+      },
+      "price": {
+        "amount": 45,
+        "currency": "USD",
+        "unit": "vehicle",
+        "confidence": "approx",
+        "checkedOn": "2026-08-16",
+        "source": "Tarifario publicado por operadores autorizados del aeropuerto",
+        "sourceUrl": "https://es.cancunairport.com/taxi.html",
+        "note": {
+          "es": "Tarifa de mostrador a Zona Hotelera o centro, por vehículo y en dólares. Reservando en línea con anticipación suele bajar a la mitad. De regreso, desde el hotel al aeropuerto, se consigue por 400-600 MXN.",
+          "en": "Counter rate to the Hotel Zone or downtown, per vehicle and quoted in dollars. Booking online in advance usually cuts it roughly in half. Going back, hotel to airport runs 400-600 MXN."
+        }
+      },
+      "duration": { "minMinutes": 20, "maxMinutes": 35 },
+      "frequency": {
+        "es": "Permanente, pero solo con reserva o contratación en el mostrador oficial",
+        "en": "Always available, but only via reservation or the official counter"
+      },
+      "hours": {
+        "es": "24 horas",
+        "en": "24 hours"
+      },
+      "terminals": ["T1", "T2", "T3", "T4"],
+      "pros": [
+        { "es": "Puerta a puerta y disponible a cualquier hora", "en": "Door to door, any time of day" }
+      ],
+      "cons": [
+        { "es": "Es de lo más caro que hay: cobran por vehículo y en dólares", "en": "Among the most expensive options: charged per vehicle, in dollars" },
+        { "es": "No puedes tomar un taxi de calle dentro del aeropuerto", "en": "You can't hail a street taxi inside the airport" }
+      ]
+    },
+    {
+      "id": "transfer-privado",
+      "mode": "transfer",
+      "operator": "Kiwitaxi",
+      "recommended": true,
+      "name": {
+        "es": "Traslado privado reservado",
+        "en": "Pre-booked private transfer"
+      },
+      "destination": {
+        "es": "Puerta a puerta, con chofer esperándote en llegadas",
+        "en": "Door to door, driver waiting in arrivals"
+      },
+      "price": {
+        "confidence": "live",
+        "currency": "MXN",
+        "unit": "vehicle",
+        "checkedOn": "2026-08-16",
+        "source": "Precio en vivo del proveedor al momento de tu búsqueda",
+        "note": {
+          "es": "Se cotiza al momento según destino y número de pasajeros. Suele salir por debajo del taxi de mostrador si viajan tres o más personas.",
+          "en": "Quoted live by destination and party size. Usually beats the counter taxi once you're three or more people."
+        }
+      },
+      "duration": { "minMinutes": 20, "maxMinutes": 100 },
+      "frequency": {
+        "es": "A la hora que llegue tu vuelo",
+        "en": "Whenever your flight lands"
+      },
+      "hours": {
+        "es": "24 horas",
+        "en": "24 hours"
+      },
+      "terminals": ["T1", "T2", "T3", "T4"],
+      "pros": [
+        { "es": "Precio cerrado antes de viajar, sin negociar al llegar", "en": "Price locked in before you travel, no haggling on arrival" },
+        { "es": "Conviene con familia, equipaje o vuelos de madrugada", "en": "Worth it with family, luggage, or late-night arrivals" }
+      ],
+      "cons": [
+        { "es": "Hay que reservar con anticipación", "en": "You have to book ahead" },
+        { "es": "Si tu vuelo se retrasa mucho, avisa al proveedor", "en": "If your flight is badly delayed, notify the provider" }
+      ]
+    },
+    {
+      "id": "renta-auto",
+      "mode": "car",
+      "operator": "DiscoverCars",
+      "recommended": false,
+      "name": {
+        "es": "Renta de auto en el aeropuerto",
+        "en": "Airport car rental"
+      },
+      "destination": {
+        "es": "A donde quieras: Riviera Maya, cenotes, Valladolid",
+        "en": "Anywhere: Riviera Maya, cenotes, Valladolid"
+      },
+      "price": {
+        "confidence": "live",
+        "currency": "MXN",
+        "unit": "day",
+        "checkedOn": "2026-08-16",
+        "source": "Precio en vivo del comparador al momento de tu búsqueda",
+        "note": {
+          "es": "Cuidado con el precio anunciado: en Cancún el seguro obligatorio de responsabilidad civil casi nunca viene incluido en la tarifa de gancho y se cobra en mostrador. Compara siempre el precio con seguro incluido.",
+          "en": "Watch the headline price: in Cancún the mandatory third-party insurance is almost never in the teaser rate and gets charged at the counter. Always compare the price with insurance included."
+        }
+      },
+      "duration": { "minMinutes": 25, "maxMinutes": 120 },
+      "frequency": {
+        "es": "Mostradores dentro de las terminales y lanzaderas a los lotes",
+        "en": "Counters inside the terminals and shuttles to the lots"
+      },
+      "hours": {
+        "es": "24 horas en la mayoría de las agencias",
+        "en": "24 hours at most agencies"
+      },
+      "terminals": ["T2", "T3", "T4"],
+      "pros": [
+        { "es": "Imbatible si vas a moverte por la Riviera Maya varios días", "en": "Unbeatable if you're moving around the Riviera Maya for days" }
+      ],
+      "cons": [
+        { "es": "El seguro obligatorio puede duplicar el precio anunciado", "en": "Mandatory insurance can double the advertised price" },
+        { "es": "Estacionamiento caro en la Zona Hotelera", "en": "Expensive parking in the Hotel Zone" }
+      ]
+    }
+  ],
+  "rideshare": {
+    "status": "disputed",
+    "checkedOn": "2026-08-16",
+    "title": {
+      "es": "Uber y DiDi: la situación real en el aeropuerto",
+      "en": "Uber and DiDi: the real situation at the airport"
+    },
+    "body": {
+      "es": "Esto no es sencillo y ninguna guía te lo cuenta completo. Uber obtuvo en 2025 un amparo con suspensión definitiva que impide a las autoridades sancionar a conductores de plataforma que suban o bajen pasajeros en aeropuertos mexicanos, Cancún incluido. Pero en marzo de 2026 el operador del aeropuerto, Asur, declaró que no tiene proyecto para abrir espacios a estas plataformas, y el sindicato de taxistas mantiene el conflicto abierto. En la práctica: el viaje es legal, pero no hay una zona designada de recogida y ha habido fricciones. Si dependes de una app para salir del aeropuerto, ten un plan B —el ADO o un traslado reservado— antes de aterrizar.",
+      "en": "This isn't simple, and no guide tells you the whole story. In 2025 Uber won a court order barring authorities from sanctioning platform drivers who pick up or drop off passengers at Mexican airports, Cancún included. But in March 2026 the airport operator, Asur, said it has no plan to open designated space to these platforms, and the taxi union keeps the dispute alive. In practice: the ride is legal, but there's no designated pickup area and there has been friction. If you're counting on an app to leave the airport, have a backup — the ADO bus or a pre-booked transfer — before you land."
+    },
+    "sources": [
+      {
+        "label": "Uber en aeropuertos de México (marzo 2026)",
+        "url": "https://www.reportur.com/agencias/2026/03/13/mexico-uber-asegura-que-puede-operar-en-todos-los-aeropuertos/"
+      },
+      {
+        "label": "Asur descarta abrir espacios a plataformas (marzo 2026)",
+        "url": "https://www.poresto.com/quintana-roo/cancun/2026/3/15/aeropuerto-de-cancun-descarta-abrir-espacios-para-uber-y-otras-plataformas-de-transporte.html"
+      }
+    ]
+  },
+  "warnings": [
+    {
+      "id": "solicitantes",
+      "title": {
+        "es": "Ignora a quien te aborde en la sala de llegadas",
+        "en": "Ignore anyone who approaches you in arrivals"
+      },
+      "body": {
+        "es": "La salida del aeropuerto de Cancún está llena de gente ofreciendo traslados, casi siempre a cambio de sentarte a escuchar una presentación de tiempo compartido. Los operadores autorizados traen uniforme y gafete del aeropuerto, y no te persiguen. Si alguien te ofrece un traslado gratis o muy barato, hay una presentación de por medio.",
+        "en": "The exit at Cancún airport is full of people offering transfers, almost always in exchange for sitting through a timeshare presentation. Authorized operators wear a uniform and an airport ID badge, and they don't chase you. If someone offers you a free or suspiciously cheap ride, there's a sales pitch attached."
+      }
+    },
+    {
+      "id": "boleto-ado",
+      "title": {
+        "es": "Compra el boleto de ADO antes de salir de la terminal",
+        "en": "Buy your ADO ticket before you leave the terminal"
+      },
+      "body": {
+        "es": "Los mostradores de ADO están dentro de las terminales 2, 3 y 4, con el logo blanco y rojo. En temporada alta las corridas a Playa del Carmen se agotan: si tu vuelo llega en diciembre, Semana Santa o julio, compra en línea con días de anticipación.",
+        "en": "ADO counters are inside terminals 2, 3 and 4, with the white and red logo. In high season the Playa del Carmen runs sell out: if you land in December, Easter week or July, buy online days ahead."
+      }
+    },
+    {
+      "id": "zona-hotelera",
+      "title": {
+        "es": "El ADO no entra a la Zona Hotelera",
+        "en": "The ADO bus doesn't enter the Hotel Zone"
+      },
+      "body": {
+        "es": "Este es el error más común. El autobús del aeropuerto te deja en la terminal del centro, sobre Av. Tulum. Si tu hotel está en el bulevar Kukulcán, desde ahí tienes que tomar un camión urbano R-1 o R-2, que cuesta unos pocos pesos y pasa constantemente. Con maletas grandes y a medianoche, esa combinación deja de ser buena idea.",
+        "en": "This is the most common mistake. The airport bus drops you at the downtown terminal on Av. Tulum. If your hotel is on Kukulcán Boulevard, from there you need an R-1 or R-2 city bus — a few pesos, and they run constantly. With big suitcases at midnight, that combination stops being a good idea."
+      }
+    }
+  ]
+}

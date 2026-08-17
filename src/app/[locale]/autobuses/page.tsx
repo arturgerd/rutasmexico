@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { setRequestLocale } from "next-intl/server";
 import BusSearchEmbed from "@/components/widgets/BusSearchEmbed";
 import BusCompanyGrid from "@/components/widgets/BusCompanyGrid";
@@ -172,6 +173,33 @@ export default async function AutobusesPage({ params: { locale } }: { params: { 
 
           {/* Bus search */}
           <BusSearchEmbed />
+
+          {/* Guía del aeropuerto de Cancún: ADO opera la ruta más buscada del país
+              desde CUN, así que este es el enlace interno natural hacia esa página. */}
+          <Link
+            href={`/${locale}/aeropuerto-cancun`}
+            className="group mt-6 flex flex-wrap items-center gap-4 rounded-2xl border border-arena-200 bg-white p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-terracotta-300 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500"
+          >
+            <span className="text-2xl" aria-hidden="true">✈️</span>
+            <span className="min-w-0 flex-1">
+              <span className="font-display block font-bold text-arena-900 transition-colors group-hover:text-terracotta-600">
+                {isEs
+                  ? "¿Llegas al aeropuerto de Cancún?"
+                  : "Landing at Cancún airport?"}
+              </span>
+              <span className="block text-sm text-arena-700">
+                {isEs
+                  ? "ADO al centro desde $145, a Playa del Carmen desde $270. Comparamos autobús, taxi, traslado y renta de auto con precios verificados."
+                  : "ADO downtown from MX$145, Playa del Carmen from MX$270. We compare bus, taxi, transfer and car rental with verified prices."}
+              </span>
+            </span>
+            <span className="inline-flex items-center gap-1 text-sm font-semibold text-terracotta-600">
+              {isEs ? "Ver la guía" : "See the guide"}
+              <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 0 1 .02-1.06L11.168 10 7.23 6.29a.75.75 0 1 1 1.04-1.08l4.5 4.25a.75.75 0 0 1 0 1.08l-4.5 4.25a.75.75 0 0 1-1.06-.02z" clipRule="evenodd" />
+              </svg>
+            </span>
+          </Link>
 
           <AffiliateDisclosure locale={locale} variant="inline" />
 

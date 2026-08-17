@@ -1,0 +1,110 @@
+{
+  "lastReviewed": "2026-08-16",
+  "intro": {
+    "es": "La Zona Hotelera no es una playa: es una franja de arena de 22 km con forma de 7. Arranca junto al centro, corre hacia el oriente mirando a Isla Mujeres y, al llegar al kilómetro 9, dobla y baja hacia el sur de cara al Caribe abierto. Ese giro lo cambia todo. El tramo del norte queda protegido dentro de la Bahía de Mujeres: agua casi sin olas y mucho menos sargazo. El tramo del sur da al mar abierto: más oleaje, más viento y es el que se lleva el sargazo cuando hay temporada. Dos hoteles con el mismo precio y la misma foto pueden darte dos vacaciones completamente distintas según de qué lado del kilómetro 9 estén.",
+    "en": "The Hotel Zone isn't a beach: it's a 22 km sandbar shaped like a 7. It starts next to downtown, runs east facing Isla Mujeres and, at kilometre 9, turns and heads south facing the open Caribbean. That turn changes everything. The northern stretch sits sheltered inside Bahía de Mujeres: almost no waves and far less sargassum. The southern stretch faces open sea: more surf, more wind, and it's the one that takes the sargassum when the season hits. Two hotels at the same price with the same photo can give you two completely different holidays depending on which side of kilometre 9 they're on."
+  },
+  "airportTimes": {
+    "confidence": "approx",
+    "checkedOn": "2026-08-16",
+    "source": "Tiempos de manejo típicos en el bulevar Kukulcán",
+    "note": {
+      "es": "El aeropuerto está al sur, así que el kilómetro 20 es el más cercano y el kilómetro 1 el más lejano — al revés de lo que mucha gente supone. Los tiempos son con tráfico normal; en hora pico y en temporada alta pueden crecer bastante.",
+      "en": "The airport is to the south, so kilometre 20 is the closest and kilometre 1 the farthest — the opposite of what most people assume. Times assume normal traffic; at rush hour and in high season they stretch a fair bit."
+    }
+  },
+  "zones": [
+    {
+      "id": "norte",
+      "km": "Km 1 – 9",
+      "accent": "jade",
+      "name": {
+        "es": "Lado norte, Bahía de Mujeres",
+        "en": "North side, Bahía de Mujeres"
+      },
+      "tagline": {
+        "es": "El agua parece alberca",
+        "en": "The water feels like a pool"
+      },
+      "orientation": { "es": "Mira al norte, hacia Isla Mujeres", "en": "Faces north, toward Isla Mujeres" },
+      "waves": { "level": "low", "es": "Prácticamente sin olas", "en": "Practically waveless" },
+      "sargassum": { "level": "low", "es": "El tramo menos afectado", "en": "The least affected stretch" },
+      "airportMinutes": { "min": 30, "max": 40 },
+      "beaches": ["Las Perlas", "Playa del Niño", "Tortugas", "Langosta", "Caracol"],
+      "goodFor": {
+        "es": "Familias con niños pequeños, quien no nada bien y quien quiere entrar al agua sin pelearse con el oleaje. También es el tramo más cerca del centro, así que salir a comer fuera del hotel sale barato.",
+        "en": "Families with small children, weak swimmers, and anyone who wants to get in the water without fighting the surf. It's also the stretch closest to downtown, so eating outside the hotel stays cheap."
+      },
+      "tradeoff": {
+        "es": "Las playas son más angostas y algunas se llenan de gente local los fines de semana. Menos resorts grandes y menos todo incluido.",
+        "en": "Beaches are narrower and some fill with locals on weekends. Fewer big resorts and fewer all-inclusives."
+      }
+    },
+    {
+      "id": "punta",
+      "km": "Km 9 – 15",
+      "accent": "oro",
+      "name": {
+        "es": "Punta Cancún y el corredor nocturno",
+        "en": "Punta Cancún and the nightlife strip"
+      },
+      "tagline": {
+        "es": "Donde está todo lo que abre de noche",
+        "en": "Where everything that opens at night is"
+      },
+      "orientation": { "es": "La esquina: aquí la franja dobla al sur", "en": "The corner: here the strip turns south" },
+      "waves": { "level": "medium", "es": "Moderado, protegido en parte por arrecife", "en": "Moderate, partly reef-sheltered" },
+      "sargassum": { "level": "medium", "es": "Variable: depende del viento de la semana", "en": "Variable: depends on that week's wind" },
+      "airportMinutes": { "min": 25, "max": 35 },
+      "beaches": ["Caracol", "Chac Mool", "Gaviota Azul", "Marlin"],
+      "goodFor": {
+        "es": "Quien viene a salir. Los antros, los centros comerciales y los restaurantes están concentrados aquí, y puedes volver caminando. Es el punto medio para todo lo demás.",
+        "en": "People who came to go out. The clubs, malls and restaurants are concentrated here, and you can walk back. It's the midpoint for everything else."
+      },
+      "tradeoff": {
+        "es": "Es ruidoso de verdad. Si tu cuarto da al bulevar vas a oír música hasta la madrugada, y en temporada de spring break el ambiente puede ser mucho más intenso de lo que esperas.",
+        "en": "It is genuinely loud. If your room faces the boulevard you'll hear music until dawn, and during spring break the scene can be far more intense than you expect."
+      }
+    },
+    {
+      "id": "sur",
+      "km": "Km 15 – 20+",
+      "accent": "azul",
+      "name": {
+        "es": "Lado este, la franja de resorts",
+        "en": "East side, the resort strip"
+      },
+      "tagline": {
+        "es": "La postal, con el mar abierto de frente",
+        "en": "The postcard, facing open sea"
+      },
+      "orientation": { "es": "Mira al oriente, al Caribe abierto", "en": "Faces east, to the open Caribbean" },
+      "waves": { "level": "high", "es": "Fuerte, con días de bandera roja", "en": "Strong, with red-flag days" },
+      "sargassum": { "level": "high", "es": "El más expuesto cuando hay temporada", "en": "The most exposed when the season hits" },
+      "airportMinutes": { "min": 20, "max": 30 },
+      "beaches": ["Ballenas", "Delfines", "Punta Nizuc"],
+      "goodFor": {
+        "es": "Todo incluido, resorts grandes y playas anchas de arena blanca. Es el tramo más tranquilo y el más cercano al aeropuerto. Playa Delfines, con el letrero gigante de CANCÚN, está aquí.",
+        "en": "All-inclusives, big resorts and wide white-sand beaches. It's the quietest stretch and the closest to the airport. Playa Delfines, with the giant CANCÚN sign, is here."
+      },
+      "tradeoff": {
+        "es": "Quedas lejos de todo lo demás: cada salida es un taxi. Y es donde el oleaje y el sargazo pegan más fuerte, así que en temporada mala la playa puede no ser la de la foto.",
+        "en": "You're far from everything else: every outing is a taxi. And it's where surf and sargassum hit hardest, so in a bad season the beach may not be the one in the photo."
+      }
+    }
+  ],
+  "sargassum": {
+    "confidence": "approx",
+    "checkedOn": "2026-08-16",
+    "title": {
+      "es": "Sobre el sargazo, sin rodeos",
+      "en": "About the sargassum, plainly"
+    },
+    "body": {
+      "es": "El sargazo es un alga que llega en masas flotantes y se acumula en la orilla. La temporada va aproximadamente de abril a octubre, con el pico entre mayo y agosto, pero varía mucho de un año a otro y hasta de una semana a otra según el viento. Ninguna guía puede prometerte una playa limpia en una fecha concreta, y desconfía de la que lo haga. Lo que sí es consistente: las playas orientadas al norte, dentro de la Bahía de Mujeres, reciben una fracción de lo que recibe el lado este. Si viajas en temporada y el mar limpio es tu prioridad, ese dato vale más que las estrellas del hotel.",
+      "en": "Sargassum is a seaweed that arrives in floating mats and piles up on the shore. The season runs roughly April to October, peaking between May and August, but it swings a lot year to year and even week to week with the wind. No guide can promise you a clean beach on a specific date, and be suspicious of any that does. What is consistent: north-facing beaches inside Bahía de Mujeres get a fraction of what the east side gets. If you're travelling in season and clean water is your priority, that fact matters more than the hotel's star rating."
+    },
+    "source": "Reportes de monitoreo de sargazo en la Zona Hotelera",
+    "sourceUrl": "https://www.excelsior.com.mx/estilo-de-vida/playas-con-menos-sargazo-cancun"
+  }
+}

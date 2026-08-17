@@ -47,6 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/hoteles", changeFrequency: "weekly" as const, priority: 0.8 },
     { path: "/destinos", changeFrequency: "weekly" as const, priority: 0.9 },
     { path: "/rutas", changeFrequency: "weekly" as const, priority: 0.9 },
+    { path: "/aeropuerto-cancun", changeFrequency: "monthly" as const, priority: 0.9 },
     { path: "/blog", changeFrequency: "daily" as const, priority: 0.8 },
     { path: "/bodas", changeFrequency: "monthly" as const, priority: 0.7 },
     { path: "/futbol", changeFrequency: "daily" as const, priority: 0.9 },
