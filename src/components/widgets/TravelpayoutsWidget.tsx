@@ -5,6 +5,7 @@ import { useLocale } from "next-intl";
 import { Locale } from "@/types/common";
 import { AFFILIATE_CONFIG, getFlightSearchUrl } from "@/lib/affiliate";
 import { trackAffiliateClick } from "@/lib/analytics";
+import { localDateISO } from "@/lib/travel-dates";
 
 interface TravelpayoutsWidgetProps {
   originIATA: string;
@@ -96,12 +97,8 @@ function FallbackPriceComparison({ originIATA, destIATA, locale }: { originIATA:
   ];
 
   const handleSearch = () => {
-    const tomorrow = new Date();
-    tomorrow.setDate(tomorrow.getDate() + 1);
-    const tomorrowStr = tomorrow.toISOString().split("T")[0];
-    const weekLater = new Date();
-    weekLater.setDate(weekLater.getDate() + 8);
-    const weekStr = weekLater.toISOString().split("T")[0];
+    const tomorrowStr = localDateISO(1);
+    const weekStr = localDateISO(8);
 
     const url = getFlightSearchUrl({
       originIATA,

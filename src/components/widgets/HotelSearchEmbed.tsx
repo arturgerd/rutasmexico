@@ -4,6 +4,7 @@ import { useState, useMemo, useId } from "react";
 import { useLocale } from "next-intl";
 import { Locale } from "@/types/common";
 import { getHotelSearchUrl } from "@/lib/affiliate";
+import { useTravelDates } from "@/lib/travel-dates";
 import { trackAffiliateClick } from "@/lib/analytics";
 import { getDestinationCarouselImages } from "@/lib/destination-images";
 import { t3, l } from "@/lib/utils";
@@ -72,17 +73,7 @@ export default function HotelSearchEmbed() {
   const outId = `${idPrefix}out`;
   const roomsId = `${idPrefix}rooms`;
 
-  const tomorrow = useMemo(() => {
-    const d = new Date();
-    d.setDate(d.getDate() + 1);
-    return d.toISOString().split("T")[0];
-  }, []);
-
-  const threeDaysLater = useMemo(() => {
-    const d = new Date();
-    d.setDate(d.getDate() + 4);
-    return d.toISOString().split("T")[0];
-  }, []);
+  const { today, first: tomorrow, second: threeDaysLater } = useTravelDates(1, 4);
 
   const sortedCities = useMemo(() => {
     return [...HOTEL_CITIES].sort((a, b) =>
@@ -204,7 +195,7 @@ export default function HotelSearchEmbed() {
                 type="date"
                 value={checkIn || tomorrow}
                 onChange={(e) => setCheckIn(e.target.value)}
-                min={tomorrow}
+                min={today || undefined}
                 className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-amber-500/50"
               />
             </div>
@@ -217,7 +208,7 @@ export default function HotelSearchEmbed() {
                 type="date"
                 value={checkOut || threeDaysLater}
                 onChange={(e) => setCheckOut(e.target.value)}
-                min={checkIn || tomorrow}
+                min={checkIn || today || undefined}
                 className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-amber-500/50"
               />
             </div>

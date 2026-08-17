@@ -3,6 +3,7 @@
 import { useLocale } from "next-intl";
 import { Locale } from "@/types/common";
 import { getFlightSearchUrl, getFlightSearchGenericUrl } from "@/lib/affiliate";
+import { localDateISO } from "@/lib/travel-dates";
 import { trackAffiliateClick } from "@/lib/analytics";
 
 // Mexican airlines data — accent color used only for the logo badge and hub chips,
@@ -93,18 +94,11 @@ export default function AirlineGrid({ originIATA, destIATA, compact = false, sho
     let url: string;
 
     if (originIATA && destIATA) {
-      const tomorrow = new Date();
-      tomorrow.setDate(tomorrow.getDate() + 1);
-      const tomorrowStr = tomorrow.toISOString().split("T")[0];
-      const weekLater = new Date();
-      weekLater.setDate(weekLater.getDate() + 8);
-      const weekStr = weekLater.toISOString().split("T")[0];
-
       url = getFlightSearchUrl({
         originIATA,
         destIATA,
-        departDate: tomorrowStr,
-        returnDate: weekStr,
+        departDate: localDateISO(1),
+        returnDate: localDateISO(8),
         locale,
       });
     } else {

@@ -4,6 +4,7 @@ import { useState, useMemo, useId } from "react";
 import { useLocale } from "next-intl";
 import { Airport } from "@/types/airport";
 import { Locale } from "@/types/common";
+import { useTravelDates } from "@/lib/travel-dates";
 import { localize } from "@/lib/utils";
 import { getCarRentalUrl } from "@/lib/affiliate";
 import { trackAffiliateClick } from "@/lib/analytics";
@@ -25,17 +26,7 @@ export default function CarRentalSearch({ airports, defaultPickup = "", compact 
   const pickupDateId = `${idPrefix}pickupDate`;
   const returnDateId = `${idPrefix}returnDate`;
 
-  const tomorrow = useMemo(() => {
-    const d = new Date();
-    d.setDate(d.getDate() + 1);
-    return d.toISOString().split("T")[0];
-  }, []);
-
-  const weekLater = useMemo(() => {
-    const d = new Date();
-    d.setDate(d.getDate() + 8);
-    return d.toISOString().split("T")[0];
-  }, []);
+  const { today, first: tomorrow, second: weekLater } = useTravelDates(1, 8);
 
   // Major rental cities (airports with car rental availability)
   const rentalCities = useMemo(() => {
@@ -129,7 +120,7 @@ export default function CarRentalSearch({ airports, defaultPickup = "", compact 
             type="date"
             value={pickupDate || tomorrow}
             onChange={(e) => setPickupDate(e.target.value)}
-            min={tomorrow}
+            min={today || undefined}
             className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-terracotta-500/50 focus:border-terracotta-500"
           />
         </div>
@@ -143,7 +134,7 @@ export default function CarRentalSearch({ airports, defaultPickup = "", compact 
             type="date"
             value={returnDate || weekLater}
             onChange={(e) => setReturnDate(e.target.value)}
-            min={pickupDate || tomorrow}
+            min={pickupDate || today || undefined}
             className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-terracotta-500/50 focus:border-terracotta-500"
           />
         </div>

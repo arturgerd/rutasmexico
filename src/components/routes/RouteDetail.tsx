@@ -15,6 +15,7 @@ import StepByStepGuide from "./StepByStepGuide";
 import RouteEditorial from "./RouteEditorial";
 import FlightSearch from "@/components/widgets/FlightSearch";
 import type { RouteContent } from "@/lib/data/route-content";
+import { localDateISO } from "@/lib/travel-dates";
 
 interface RelatedRoute {
   slug: string;
@@ -49,12 +50,8 @@ export default function RouteDetail({ route, origin, destination, guidesMap, air
   ];
 
   const handleBooking = (mode: string) => {
-    const tomorrow = new Date();
-    tomorrow.setDate(tomorrow.getDate() + 1);
-    const tomorrowStr = tomorrow.toISOString().split("T")[0];
-    const weekLater = new Date();
-    weekLater.setDate(weekLater.getDate() + 8);
-    const weekStr = weekLater.toISOString().split("T")[0];
+    const tomorrowStr = localDateISO(1);
+    const weekStr = localDateISO(8);
 
     let url = "";
 
