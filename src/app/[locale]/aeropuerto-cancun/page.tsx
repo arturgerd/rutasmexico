@@ -237,6 +237,28 @@ export default async function AeropuertoCancunPage({
               que eligió bien. Es el punto natural de la página para esto. */}
           <ZonaHoteleraGuide locale={locale} />
 
+          {/* El ADO del aeropuerto deja en el centro, no en Kukulcán. Este es el
+              punto donde el lector necesita el camión urbano, así que aquí va
+              el enlace al catálogo de rutas. */}
+          <section className="mt-8 rounded-2xl border border-terracotta-200 bg-terracotta-50 p-6 md:p-8">
+            <h2 className="font-display mb-3 text-xl font-bold text-arena-900">
+              {isEs
+                ? "Del centro a tu hotel: el camión urbano"
+                : "Downtown to your hotel: the city bus"}
+            </h2>
+            <p className="leading-relaxed text-arena-800">
+              {isEs
+                ? "Si llegaste en ADO, estás en la terminal del centro y todavía te falta el último tramo. Lo hace el camión urbano: diez pesos por la ciudad, doce si entra a Kukulcán, en efectivo al chofer. El R1 y el R2 pasan las 24 horas y son los que usa casi todo el mundo."
+                : "If you came by ADO you are at the downtown terminal with one leg still to go. The city bus covers it: ten pesos around town, twelve if it enters Kukulcán, cash to the driver. The R1 and R2 run around the clock and are what almost everyone takes."}
+            </p>
+            <Link
+              href={`/${locale}/camiones-cancun`}
+              className="mt-4 inline-flex items-center gap-2 rounded-xl bg-terracotta-600 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-terracotta-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500"
+            >
+              {isEs ? "Ver las 31 rutas en el mapa" : "See all 31 routes on the map"}
+            </Link>
+          </section>
+
           {/* Uber / DiDi */}
           <section className="mt-8 rounded-2xl border border-azul-200 bg-azul-50 p-6 md:p-8">
             <h2 className="font-display mb-3 text-xl font-bold text-arena-900">
@@ -308,8 +330,13 @@ export default async function AeropuertoCancunPage({
           </section>
 
           {/* Siguientes pasos */}
-          <section className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <section className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
+              {
+                href: `/${locale}/camiones-cancun`,
+                title: isEs ? "Camiones de Cancún" : "Cancún city buses",
+                desc: isEs ? "Las 31 rutas urbanas, tarifas y mapa" : "All 31 city routes, fares and map",
+              },
               {
                 href: `/${locale}/destinos/cancun`,
                 title: isEs ? "Guía de Cancún" : "Cancún guide",

@@ -4,6 +4,7 @@ import blogPosts from "@/data/blog-posts.json";
 import routes from "@/data/routes.json";
 import bodas from "@/data/bodas.json";
 import mundialVenues from "@/data/mundial-venues.json";
+import camionesCancun from "@/data/camiones-cancun.json";
 
 const BASE_URL = "https://rutasmexico.com.mx";
 // FR omitted from sitemap until translations reach parity with es/en —
@@ -48,6 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/destinos", changeFrequency: "weekly" as const, priority: 0.9 },
     { path: "/rutas", changeFrequency: "weekly" as const, priority: 0.9 },
     { path: "/aeropuerto-cancun", changeFrequency: "monthly" as const, priority: 0.9 },
+    { path: "/camiones-cancun", changeFrequency: "monthly" as const, priority: 0.8 },
     { path: "/blog", changeFrequency: "daily" as const, priority: 0.8 },
     { path: "/bodas", changeFrequency: "monthly" as const, priority: 0.7 },
     { path: "/futbol", changeFrequency: "daily" as const, priority: 0.9 },
@@ -114,6 +116,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "monthly",
         priority: 0.7,
         alternates: generateAlternates(`/rutas/${route.slug}`),
+      });
+    }
+  }
+
+  // Camiones urbanos de Cancún (31 rutas × 2 locales = 62 URLs). La fecha es la
+  // de la última revisión del catálogo, no la del build: estas páginas sólo
+  // cambian cuando volvemos a verificar tarifas y letreros.
+  const camionesLastReviewed = new Date(camionesCancun.lastReviewed);
+  for (const route of camionesCancun.routes) {
+    for (const locale of locales) {
+      entries.push({
+        url: `${BASE_URL}/${locale}/camiones-cancun/${route.slug}`,
+        lastModified: camionesLastReviewed,
+        changeFrequency: "monthly",
+        priority: 0.6,
+        alternates: generateAlternates(`/camiones-cancun/${route.slug}`),
       });
     }
   }
