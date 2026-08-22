@@ -4,6 +4,8 @@ import { setRequestLocale } from "next-intl/server";
 import AirportOptions from "@/components/airport/AirportOptions";
 import AffiliateDisclosure from "@/components/editorial/AffiliateDisclosure";
 import ZonaHoteleraGuide from "@/components/airport/ZonaHoteleraGuide";
+import DestinoRapido from "@/components/airport/DestinoRapido";
+import LugaresDeInteres from "@/components/airport/LugaresDeInteres";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import { formatCheckedOn } from "@/components/ui/DataConfidence";
 import { getCancunAirportGuide } from "@/lib/data/aeropuerto-cun";
@@ -21,8 +23,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       : "Cancún airport to your hotel: real 2026 prices";
   const description =
     locale === "es"
-      ? "ADO, taxi, traslado privado o renta de auto desde el aeropuerto de Cancún (CUN), con precios verificados. Más qué pasa con Uber y en qué kilómetro de la Zona Hotelera conviene dormir."
-      : "ADO bus, taxi, private transfer or car rental from Cancún airport (CUN), with verified prices. Plus what happens with Uber and which Hotel Zone kilometre to sleep in.";
+      ? "Cuánto cuesta llegar del aeropuerto de Cancún (CUN) a la Zona Hotelera, el centro, Playa del Carmen o Tulum, con precios verificados. Más dónde dormir en cada zona y qué ver llegando en camión."
+      : "What it costs to get from Cancún airport (CUN) to the Hotel Zone, downtown, Playa del Carmen or Tulum, with verified prices. Plus where to stay in each area and what to see by bus.";
   return {
     title,
     description,
@@ -100,6 +102,25 @@ export default async function AeropuertoCancunPage({
         : "Worth it if you're moving around the Riviera Maya, cenotes or Valladolid for several days. But watch the headline price: in Cancún the mandatory third-party insurance is almost never in the teaser rate and gets charged at the counter, which can double the real cost. Always compare with insurance included, and factor in parking, which is expensive in the Hotel Zone.",
     },
   ];
+
+  faqs.push(
+    {
+      q: isEs
+        ? "¿Cuánto cuesta una noche de hotel en Cancún?"
+        : "How much is a hotel night in Cancún?",
+      a: isEs
+        ? "Depende sobre todo de en qué kilómetro duermas. Fuera de temporada alta, el lado norte de la Zona Hotelera ronda entre 1,800 y 4,500 pesos la noche; Punta Cancún, entre 2,200 y 6,500; y la franja de resorts del sur, entre 2,800 y 9,000, casi siempre con todo incluido. El centro de la ciudad cuesta entre 600 y 1,600 pesos, y desde ahí la playa queda a un camión de doce pesos que pasa las 24 horas. En Navidad, Semana Santa y spring break todas esas cifras se disparan."
+        : "It depends mostly on which kilometre you sleep at. Outside high season, the northern Hotel Zone runs between 1,800 and 4,500 pesos a night; Punta Cancún between 2,200 and 6,500; and the southern resort strip between 2,800 and 9,000, almost always all-inclusive. Downtown costs between 600 and 1,600 pesos, and from there the beach is a twelve-peso bus that runs around the clock. At Christmas, Easter and spring break all those figures soar.",
+    },
+    {
+      q: isEs
+        ? "¿Qué se puede hacer en Cancún sin rentar coche?"
+        : "What can you do in Cancún without renting a car?",
+      a: isEs
+        ? "Casi todo. Playa Delfines, las ruinas de El Rey y el Museo Maya están sobre el bulevar Kukulcán y se llega en camión por doce pesos. Mercado 28 y el Parque de las Palapas, en el centro, con el mismo camión. Isla Mujeres es camión al muelle de Puerto Juárez más ferry. Chichén Itzá, Tulum, Playa del Carmen y Holbox se hacen en autobús ADO desde la terminal del centro. Lo único que de verdad necesita coche es la Ruta de los Cenotes de Puerto Morelos."
+        : "Almost everything. Playa Delfines, the El Rey ruins and the Maya Museum are all on Kukulcán Boulevard, reachable by bus for twelve pesos. Mercado 28 and Parque de las Palapas, downtown, on the same bus. Isla Mujeres is a bus to the Puerto Juárez pier plus a ferry. Chichén Itzá, Tulum, Playa del Carmen and Holbox are all doable by ADO coach from the downtown terminal. The only thing that genuinely needs a car is the Puerto Morelos cenote route.",
+    }
+  );
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -206,8 +227,8 @@ export default async function AeropuertoCancunPage({
             />
             <p className="leading-relaxed text-arena-700">
               {isEs
-                ? "Salir del aeropuerto de Cancún es la parte del viaje donde más gente paga de más, y casi siempre por lo mismo: llega cansada, no sabe cuánto debería costar y acepta lo primero que le ofrecen en la puerta. La diferencia entre el autobús ADO y un taxi de mostrador para el mismo trayecto puede ser de más de diez veces. Abajo están las cuatro formas reales de salir, con el precio que encontramos, de dónde lo sacamos y la fecha en que lo revisamos, para que puedas juzgar tú mismo qué tan fresco es el dato."
-                : "Leaving Cancún airport is the part of the trip where most people overpay, almost always for the same reason: they land tired, don't know what it should cost, and take the first offer at the door. The gap between the ADO bus and a counter taxi for the same trip can be more than tenfold. Below are the four real ways out, with the price we found, where we found it, and the date we checked — so you can judge for yourself how fresh the number is."}
+                ? "Salir del aeropuerto de Cancún es la parte del viaje donde más gente paga de más, y casi siempre por lo mismo: llega cansada, no sabe cuánto debería costar y acepta lo primero que le ofrecen en la puerta. Entre el autobús ADO y un taxi de mostrador, el mismo trayecto puede costar diez veces más. Empieza por tu destino, y si quieres comparar, cada opción trae el precio con su fuente y la fecha en que lo revisamos."
+                : "Leaving Cancún airport is the part of the trip where most people overpay, almost always for the same reason: they land tired, don't know what it should cost, and take the first offer at the door. Between the ADO bus and a counter taxi, the same trip can cost ten times more. Start with your destination, and if you want to compare, every option carries its price with a source and the date we checked it."}
             </p>
             <p className="mt-4 rounded-xl border border-arena-200 bg-arena-50 p-4 text-sm leading-relaxed text-arena-700">
               <strong className="text-arena-900">
@@ -224,10 +245,52 @@ export default async function AeropuertoCancunPage({
             </p>
           </div>
 
+          {/* La pagina cubre cuatro decisiones distintas (como salgo, donde
+              duermo, como me muevo, que veo). El indice deja que cada quien
+              entre por la suya en vez de recorrerlas todas. */}
+          <nav
+            aria-label={isEs ? "Contenido de la página" : "Page contents"}
+            className="mb-8 rounded-2xl border border-arena-200 bg-white p-5"
+          >
+            <p className="text-xs font-semibold uppercase tracking-wide text-arena-500">
+              {isEs ? "En esta página" : "On this page"}
+            </p>
+            <ul className="mt-3 flex flex-wrap gap-2">
+              {[
+                { href: "#a-donde-vas", es: "¿A dónde vas?", en: "Where are you headed?" },
+                { href: "#formas-de-salir", es: "Las seis formas de salir", en: "The six ways out" },
+                { href: "#donde-dormir", es: "Dónde dormir", en: "Where to stay" },
+                { href: "#camion-urbano", es: "El camión urbano", en: "The city bus" },
+                { href: "#lugares-de-interes", es: "Qué ver", en: "What to see" },
+                { href: "#uber-didi", es: "Uber y DiDi", en: "Uber and DiDi" },
+              ].map((item) => (
+                <li key={item.href}>
+                  <a
+                    href={item.href}
+                    className="inline-block rounded-full border border-arena-200 px-3 py-1.5 text-sm font-medium text-arena-700 transition-colors hover:border-terracotta-300 hover:text-terracotta-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500"
+                  >
+                    {isEs ? item.es : item.en}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          {/* La respuesta corta antes que el comparador: la mayoria llega
+              sabiendo a donde va, no queriendo comparar medios de transporte. */}
+          <div className="mb-10 rounded-2xl border border-arena-100 bg-white p-6 shadow-lg md:p-8">
+            <DestinoRapido locale={locale} />
+          </div>
+
           {/* Opciones */}
-          <h2 className="font-display mb-4 text-2xl font-bold text-arena-900">
-            {isEs ? "Las formas de salir, comparadas" : "The ways out, compared"}
+          <h2 id="formas-de-salir" className="font-display mb-2 text-2xl font-bold text-arena-900">
+            {isEs ? "Las seis formas de salir, comparadas" : "The six ways out, compared"}
           </h2>
+          <p className="mb-4 max-w-3xl text-arena-700">
+            {isEs
+              ? "Cada ficha abre su detalle: de dónde sale el precio, con qué frecuencia pasa y qué tiene de bueno y de malo."
+              : "Each card opens its detail: where the price comes from, how often it runs, and what's good and bad about it."}
+          </p>
           <AirportOptions options={guide.options} locale={locale} />
 
           <AffiliateDisclosure locale={locale} variant="inline" />
@@ -240,7 +303,7 @@ export default async function AeropuertoCancunPage({
           {/* El ADO del aeropuerto deja en el centro, no en Kukulcán. Este es el
               punto donde el lector necesita el camión urbano, así que aquí va
               el enlace al catálogo de rutas. */}
-          <section className="mt-8 rounded-2xl border border-terracotta-200 bg-terracotta-50 p-6 md:p-8">
+          <section id="camion-urbano" className="mt-8 rounded-2xl border border-terracotta-200 bg-terracotta-50 p-6 md:p-8">
             <h2 className="font-display mb-3 text-xl font-bold text-arena-900">
               {isEs
                 ? "Del centro a tu hotel: el camión urbano"
@@ -259,8 +322,13 @@ export default async function AeropuertoCancunPage({
             </Link>
           </section>
 
+          {/* Ya sabe como llegar y donde dormir; lo siguiente que pregunta es
+              que hacer. Va despues del camion urbano a proposito: casi todo lo
+              de esta lista se resuelve con las rutas que acaba de conocer. */}
+          <LugaresDeInteres locale={locale} />
+
           {/* Uber / DiDi */}
-          <section className="mt-8 rounded-2xl border border-azul-200 bg-azul-50 p-6 md:p-8">
+          <section id="uber-didi" className="mt-8 rounded-2xl border border-azul-200 bg-azul-50 p-6 md:p-8">
             <h2 className="font-display mb-3 text-xl font-bold text-arena-900">
               {l(guide.rideshare.title, locale)}
             </h2>

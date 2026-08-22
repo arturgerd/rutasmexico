@@ -130,61 +130,7 @@ export default function AirportOptions({ options, locale }: Props) {
               </div>
             </div>
 
-            <DataConfidence
-              className="mt-4 border-t border-arena-100 pt-4"
-              level={option.price.confidence}
-              checkedOn={option.price.checkedOn}
-              source={option.price.source}
-              sourceUrl={option.price.sourceUrl}
-              note={option.price.note ? l(option.price.note, locale) : undefined}
-              locale={locale}
-            />
-
-            <dl className="mt-4 grid grid-cols-1 gap-3 text-sm sm:grid-cols-3">
-              <div>
-                <dt className="text-xs font-semibold uppercase tracking-wide text-arena-500">
-                  {t3(locale, "Operador", "Operator")}
-                </dt>
-                <dd className="text-arena-800">{operatorName(option.operator, locale)}</dd>
-              </div>
-              <div>
-                <dt className="text-xs font-semibold uppercase tracking-wide text-arena-500">
-                  {t3(locale, "Frecuencia", "Frequency")}
-                </dt>
-                <dd className="text-arena-800">{l(option.frequency, locale)}</dd>
-              </div>
-              <div>
-                <dt className="text-xs font-semibold uppercase tracking-wide text-arena-500">
-                  {t3(locale, "Horario", "Hours")}
-                </dt>
-                <dd className="text-arena-800">{l(option.hours, locale)}</dd>
-              </div>
-            </dl>
-
-            <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <ul className="space-y-1.5">
-                {option.pros.map((pro, i) => (
-                  <li key={i} className="flex gap-2 text-sm text-arena-700">
-                    <span className="mt-0.5 flex-shrink-0 text-jade-600" aria-hidden="true">
-                      ✓
-                    </span>
-                    <span>{l(pro, locale)}</span>
-                  </li>
-                ))}
-              </ul>
-              <ul className="space-y-1.5">
-                {option.cons.map((con, i) => (
-                  <li key={i} className="flex gap-2 text-sm text-arena-700">
-                    <span className="mt-0.5 flex-shrink-0 text-terracotta-600" aria-hidden="true">
-                      ✕
-                    </span>
-                    <span>{l(con, locale)}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="mt-5 flex flex-wrap items-center gap-3">
+            <div className="mt-4 flex flex-wrap items-center gap-3 border-t border-arena-100 pt-4">
               <p className="text-xs text-arena-500">
                 {t3(locale, "Sale de:", "Departs from:")}{" "}
                 <span className="font-medium text-arena-700">{option.terminals.join(" · ")}</span>
@@ -207,6 +153,82 @@ export default function AirportOptions({ options, locale }: Props) {
                 </a>
               )}
             </div>
+
+            {/* Seis fichas con toda su letra chica abierta eran un muro. Lo que
+                decide —precio, duración, a dónde te deja— se queda arriba
+                siempre; la procedencia del dato y el pro y contra siguen a un
+                clic, sin salir de la página. */}
+            <details className="group/detail mt-4 border-t border-arena-100 pt-4">
+              <summary className="flex cursor-pointer items-center gap-2 text-sm font-medium text-arena-700 marker:content-none hover:text-terracotta-600">
+                <svg
+                  className="h-4 w-4 shrink-0 text-arena-400 transition-transform group-open/detail:rotate-90"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M7.21 14.77a.75.75 0 0 1 .02-1.06L11.168 10 7.23 6.29a.75.75 0 1 1 1.04-1.08l4.5 4.25a.75.75 0 0 1 0 1.08l-4.5 4.25a.75.75 0 0 1-1.06-.02z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                {t3(locale, "Ver el detalle y de dónde sale el precio", "See the detail and where the price comes from")}
+              </summary>
+
+              <DataConfidence
+                className="mt-4"
+                level={option.price.confidence}
+                checkedOn={option.price.checkedOn}
+                source={option.price.source}
+                sourceUrl={option.price.sourceUrl}
+                note={option.price.note ? l(option.price.note, locale) : undefined}
+                locale={locale}
+              />
+
+              <dl className="mt-4 grid grid-cols-1 gap-3 text-sm sm:grid-cols-3">
+                <div>
+                  <dt className="text-xs font-semibold uppercase tracking-wide text-arena-500">
+                    {t3(locale, "Operador", "Operator")}
+                  </dt>
+                  <dd className="text-arena-800">{operatorName(option.operator, locale)}</dd>
+                </div>
+                <div>
+                  <dt className="text-xs font-semibold uppercase tracking-wide text-arena-500">
+                    {t3(locale, "Frecuencia", "Frequency")}
+                  </dt>
+                  <dd className="text-arena-800">{l(option.frequency, locale)}</dd>
+                </div>
+                <div>
+                  <dt className="text-xs font-semibold uppercase tracking-wide text-arena-500">
+                    {t3(locale, "Horario", "Hours")}
+                  </dt>
+                  <dd className="text-arena-800">{l(option.hours, locale)}</dd>
+                </div>
+              </dl>
+
+              <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <ul className="space-y-1.5">
+                  {option.pros.map((pro, i) => (
+                    <li key={i} className="flex gap-2 text-sm text-arena-700">
+                      <span className="mt-0.5 flex-shrink-0 text-jade-600" aria-hidden="true">
+                        ✓
+                      </span>
+                      <span>{l(pro, locale)}</span>
+                    </li>
+                  ))}
+                </ul>
+                <ul className="space-y-1.5">
+                  {option.cons.map((con, i) => (
+                    <li key={i} className="flex gap-2 text-sm text-arena-700">
+                      <span className="mt-0.5 flex-shrink-0 text-terracotta-600" aria-hidden="true">
+                        ✕
+                      </span>
+                      <span>{l(con, locale)}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </details>
           </article>
         );
       })}

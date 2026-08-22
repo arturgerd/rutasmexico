@@ -1,0 +1,273 @@
+{
+  "lastReviewed": "2026-08-19",
+  "pricesNote": {
+    "es": "Entradas y traslados de referencia, revisados en la fecha indicada. Las entradas del INAH suben cada enero y los parques privados cambian de precio por temporada y por si compras en línea o en taquilla.",
+    "en": "Indicative entry and transport prices, checked on the date shown. INAH entry fees rise every January, and private parks change prices by season and by whether you buy online or at the gate."
+  },
+  "places": [
+    {
+      "id": "playa-delfines",
+      "name": "Playa Delfines",
+      "area": "hotelera",
+      "badge": { "es": "Km 18", "en": "Km 18" },
+      "why": {
+        "es": "La playa pública más grande de la Zona Hotelera y la única con estacionamiento y mirador. Es la del letrero gigante de CANCÚN. Al estar de cara al mar abierto tiene oleaje de verdad: se ve espectacular y se nada regular.",
+        "en": "The largest public beach in the Hotel Zone and the only one with parking and a lookout. It's the one with the giant CANCÚN sign. Facing the open sea it gets real surf: it looks spectacular and swims so-so."
+      },
+      "entry": { "amountMxn": 0, "note": { "es": "Playa pública, sin cuota", "en": "Public beach, no fee" } },
+      "howTo": {
+        "es": "Cualquier camión del corredor sobre Kukulcán. Bájate en el km 18, la parada está frente al mirador.",
+        "en": "Any corridor bus along Kukulcán. Get off at km 18; the stop faces the lookout."
+      },
+      "priceMxn": 12,
+      "minutes": 25,
+      "camion": "r1",
+      "tip": {
+        "es": "No hay palapas ni camastros. Lleva sombrilla o ve temprano.",
+        "en": "No palapas or loungers. Bring an umbrella or go early."
+      }
+    },
+    {
+      "id": "el-rey",
+      "name": "Zona Arqueológica El Rey",
+      "area": "hotelera",
+      "badge": { "es": "Km 17", "en": "Km 17" },
+      "why": {
+        "es": "Ruinas mayas dentro de la Zona Hotelera, a una cuadra de Playa Delfines. Son pequeñas y se recorren en cuarenta minutos, pero están llenas de iguanas y salen casi gratis. La mejor manera de ver arqueología sin dedicarle un día entero.",
+        "en": "Maya ruins inside the Hotel Zone, a block from Playa Delfines. They're small and take forty minutes, but they're full of iguanas and cost almost nothing. The easiest way to see archaeology without giving up a whole day."
+      },
+      "entry": { "amountMxn": 100, "note": { "es": "Tarifa INAH, sube cada enero", "en": "INAH fee, rises every January" } },
+      "howTo": {
+        "es": "Misma parada que Playa Delfines: cruzas el bulevar y ya estás.",
+        "en": "Same stop as Playa Delfines: cross the boulevard and you're there."
+      },
+      "priceMxn": 12,
+      "minutes": 25,
+      "camion": "r1",
+      "tip": {
+        "es": "Cierra a las 17:00 y la última entrada es antes. No lo dejes para la tarde.",
+        "en": "Closes at 17:00 and last entry is earlier. Don't leave it for late afternoon."
+      }
+    },
+    {
+      "id": "museo-maya",
+      "name": "Museo Maya y San Miguelito",
+      "area": "hotelera",
+      "badge": { "es": "Km 16.5", "en": "Km 16.5" },
+      "why": {
+        "es": "El museo arqueológico serio de Cancún, con piezas de toda la península, y en el mismo boleto la zona de San Miguelito, que se recorre por un andador entre la selva. Es el plan de refugio perfecto para un día nublado o de sargazo.",
+        "en": "Cancún's serious archaeology museum, with pieces from across the peninsula, and on the same ticket the San Miguelito site, walked along a boardwalk through the jungle. The perfect fallback for a cloudy or sargassum day."
+      },
+      "entry": { "amountMxn": 100, "note": { "es": "Incluye museo y zona arqueológica", "en": "Covers both museum and site" } },
+      "howTo": {
+        "es": "Sobre Kukulcán, a la altura del km 16.5. Cualquier camión del corredor te deja enfrente.",
+        "en": "On Kukulcán at km 16.5. Any corridor bus drops you across the street."
+      },
+      "priceMxn": 12,
+      "minutes": 22,
+      "camion": "r1",
+      "tip": {
+        "es": "Cierra los lunes.",
+        "en": "Closed on Mondays."
+      }
+    },
+    {
+      "id": "mercado-28",
+      "name": "Mercado 28",
+      "area": "centro",
+      "badge": { "es": "Centro", "en": "Downtown" },
+      "why": {
+        "es": "El mercado de artesanías del centro, con un patio de fondas alrededor donde se come cochinita, sopa de lima y panuchos por una fracción de lo que cuesta lo mismo en Kukulcán. Se regatea, y se espera que lo hagas.",
+        "en": "The downtown crafts market, ringed by a courtyard of family kitchens serving cochinita, lime soup and panuchos for a fraction of what the same costs on Kukulcán. Haggling is expected."
+      },
+      "entry": { "amountMxn": 0, "note": { "es": "Entrada libre", "en": "Free entry" } },
+      "howTo": {
+        "es": "Desde la Zona Hotelera, cualquier camión con letrero Hoteles hacia el centro; el R2 es el que pasa más cerca.",
+        "en": "From the Hotel Zone, any bus signed Hoteles heading downtown; the R2 passes closest."
+      },
+      "priceMxn": 12,
+      "minutes": 35,
+      "camion": "r2",
+      "tip": {
+        "es": "El primer precio que te den suele ser el doble del razonable.",
+        "en": "The first price you're quoted is usually double the reasonable one."
+      }
+    },
+    {
+      "id": "palapas",
+      "name": "Parque de las Palapas",
+      "area": "centro",
+      "badge": { "es": "Centro", "en": "Downtown" },
+      "why": {
+        "es": "La plaza donde cena la ciudad, no los turistas. Puestos de marquesitas, elotes y antojitos por la noche, música en vivo los fines de semana y precios de colonia. Es lo más cerca que vas a estar del Cancún que vive ahí todo el año.",
+        "en": "The square where the city eats, not the tourists. Marquesita and street-food stalls at night, live music on weekends, neighbourhood prices. It's the closest you'll get to the Cancún that lives here all year."
+      },
+      "entry": { "amountMxn": 0, "note": { "es": "Entrada libre", "en": "Free entry" } },
+      "howTo": {
+        "es": "A una cuadra de la avenida Tulum, junto a la terminal del ADO. Si llegaste en autobús desde el aeropuerto, ya estás ahí.",
+        "en": "A block off Avenida Tulum, next to the ADO terminal. If you arrived by bus from the airport, you're already there."
+      },
+      "priceMxn": 12,
+      "minutes": 35,
+      "camion": "r1",
+      "tip": {
+        "es": "Cobra vida a partir de las 19:00. Antes está vacío.",
+        "en": "It comes alive after 19:00. Before that it's empty."
+      }
+    },
+    {
+      "id": "isla-mujeres",
+      "name": "Isla Mujeres",
+      "area": "cerca",
+      "badge": { "es": "Medio día", "en": "Half day" },
+      "why": {
+        "es": "Playa Norte es la playa que la gente imagina cuando piensa en el Caribe: agua turquesa, plana y de un metro de profundidad durante decenas de metros. La isla se recorre entera en carrito de golf en una tarde. Si sólo puedes hacer una excursión, es ésta.",
+        "en": "Playa Norte is the beach people picture when they imagine the Caribbean: turquoise, flat, waist-deep for dozens of metres. You can drive the whole island by golf cart in an afternoon. If you only make one trip, make it this one."
+      },
+      "entry": { "amountMxn": 320, "note": { "es": "Ferry redondo desde Puerto Juárez", "en": "Return ferry from Puerto Juárez" } },
+      "howTo": {
+        "es": "Camión al muelle de Puerto Juárez y de ahí el ferry, que sale cada media hora y tarda veinte minutos. Hay ferries desde la Zona Hotelera, pero cuestan bastante más.",
+        "en": "Bus to the Puerto Juárez pier, then the ferry, which leaves every half hour and takes twenty minutes. There are ferries from the Hotel Zone, but they cost considerably more."
+      },
+      "priceMxn": 12,
+      "minutes": 60,
+      "camion": "r10",
+      "tip": {
+        "es": "El último ferry de regreso sale cerca de las 23:30. Confírmalo al llegar.",
+        "en": "The last ferry back leaves around 23:30. Confirm it when you arrive."
+      }
+    },
+    {
+      "id": "puerto-morelos",
+      "name": "Puerto Morelos",
+      "area": "cerca",
+      "badge": { "es": "Medio día", "en": "Half day" },
+      "why": {
+        "es": "Un pueblo de pescadores a media hora que todavía no se convirtió en Playa del Carmen. Arrecife a doscientos metros de la orilla, snorkel barato con cooperativa local y una ruta de cenotes en la carretera de entrada.",
+        "en": "A fishing village half an hour away that hasn't turned into Playa del Carmen yet. Reef two hundred metres offshore, cheap snorkelling with the local co-op, and a cenote route on the access road."
+      },
+      "entry": { "amountMxn": 0, "note": { "es": "El pueblo es libre; el snorkel se cotiza aparte", "en": "The village is free; snorkelling is quoted separately" } },
+      "howTo": {
+        "es": "Colectivo o ADO desde la terminal del centro. Los colectivos salen en cuanto se llenan y son la opción más barata.",
+        "en": "Colectivo van or ADO from the downtown terminal. Colectivos leave as soon as they fill and are the cheapest option."
+      },
+      "priceMxn": 80,
+      "minutes": 45,
+      "camion": null,
+      "tip": {
+        "es": "El colectivo te deja en la carretera; al pueblo son otros tres kilómetros en taxi.",
+        "en": "The colectivo drops you on the highway; the village is another three kilometres by taxi."
+      }
+    },
+    {
+      "id": "chichen-itza",
+      "name": "Chichén Itzá",
+      "area": "lejos",
+      "badge": { "es": "Día completo", "en": "Full day" },
+      "why": {
+        "es": "La maravilla del mundo que todos vienen a ver, a casi tres horas por autopista. Se puede hacer por tu cuenta en ADO, pero el autobús llega a media mañana, que es justo cuando el sitio está más lleno y más caliente.",
+        "en": "The wonder of the world everyone comes to see, nearly three hours away by motorway. You can do it yourself by ADO, but the bus arrives mid-morning, exactly when the site is busiest and hottest."
+      },
+      "entry": { "amountMxn": 700, "note": { "es": "Suma de la cuota federal y la estatal", "en": "Federal and state fees combined" } },
+      "howTo": {
+        "es": "ADO directo desde la terminal del centro, con salida temprana y regreso por la tarde. Reserva con días de anticipación.",
+        "en": "Direct ADO from the downtown terminal, leaving early and returning in the afternoon. Book days ahead."
+      },
+      "priceMxn": 500,
+      "minutes": 180,
+      "camion": null,
+      "tip": {
+        "es": "Los tours organizados suelen salir más baratos que ADO más entrada, porque compran en grupo.",
+        "en": "Organised tours often work out cheaper than ADO plus entry, because they buy in bulk."
+      }
+    },
+    {
+      "id": "tulum",
+      "name": "Tulum y sus ruinas",
+      "area": "lejos",
+      "badge": { "es": "Día completo", "en": "Full day" },
+      "why": {
+        "es": "El único sitio maya construido frente al mar, sobre un acantilado con una playa abajo a la que se baja por unas escaleras. Es más chico que Chichén Itzá y la foto es mejor. El pueblo tiene su propia escena aparte.",
+        "en": "The only Maya site built facing the sea, on a cliff with a beach below reached by a staircase. It's smaller than Chichén Itzá and the photograph is better. The town has a scene of its own."
+      },
+      "entry": { "amountMxn": 315, "note": { "es": "Entrada al sitio, más estacionamiento si vas en auto", "en": "Site entry, plus parking if you drive" } },
+      "howTo": {
+        "es": "ADO directo desde el aeropuerto o desde la terminal del centro. De la terminal de Tulum a las ruinas hay colectivo o taxi.",
+        "en": "Direct ADO from the airport or from the downtown terminal. From the Tulum terminal to the ruins take a colectivo or taxi."
+      },
+      "priceMxn": 445,
+      "minutes": 150,
+      "camion": null,
+      "tip": {
+        "es": "Llega a la apertura, a las 8:00: hacia las 10:00 llegan los autobuses de Playa del Carmen.",
+        "en": "Arrive at opening, 8:00: by 10:00 the coaches from Playa del Carmen roll in."
+      }
+    },
+    {
+      "id": "playa-del-carmen",
+      "name": "Playa del Carmen",
+      "area": "lejos",
+      "badge": { "es": "Día completo", "en": "Full day" },
+      "why": {
+        "es": "Hora y media al sur, con la Quinta Avenida peatonal como eje: bares, tiendas y restaurantes a lo largo de kilómetro y medio. Es también el punto de salida del ferry a Cozumel, si quieres bucear.",
+        "en": "Ninety minutes south, built around the pedestrian Quinta Avenida: bars, shops and restaurants along a mile and a half. It's also the ferry port for Cozumel if you want to dive."
+      },
+      "entry": { "amountMxn": 0, "note": { "es": "La ciudad es libre; el ferry a Cozumel se paga aparte", "en": "The town is free; the Cozumel ferry is separate" } },
+      "howTo": {
+        "es": "ADO directo desde el aeropuerto, o desde la terminal del centro si ya estás en Cancún. Te deja a pasos de la Quinta.",
+        "en": "Direct ADO from the airport, or from the downtown terminal if you're already in Cancún. It drops you steps from La Quinta."
+      },
+      "priceMxn": 270,
+      "minutes": 90,
+      "camion": null,
+      "tip": {
+        "es": "En temporada alta el ADO se agota. Compra en línea con anticipación.",
+        "en": "In high season the ADO sells out. Buy online in advance."
+      }
+    },
+    {
+      "id": "holbox",
+      "name": "Isla Holbox",
+      "area": "lejos",
+      "badge": { "es": "Dos días", "en": "Two days" },
+      "why": {
+        "es": "Isla de arena sin coches, con calles de tierra y agua que te llega a la rodilla a cien metros de la orilla. De mayo a septiembre se nada con tiburón ballena. No es un viaje de ida y vuelta en el día: son tres horas de autobús más el ferry.",
+        "en": "A car-free sand island with dirt streets and water that's knee-deep a hundred metres out. From May to September you can swim with whale sharks. It isn't a day trip: three hours by bus plus the ferry."
+      },
+      "entry": { "amountMxn": 280, "note": { "es": "Ferry redondo desde Chiquilá", "en": "Return ferry from Chiquilá" } },
+      "howTo": {
+        "es": "ADO desde la terminal del centro hasta Chiquilá, y ahí el ferry, que tarda media hora.",
+        "en": "ADO from the downtown terminal to Chiquilá, then the ferry, which takes half an hour."
+      },
+      "priceMxn": 400,
+      "minutes": 180,
+      "camion": null,
+      "tip": {
+        "es": "Quédate a dormir. Ir y volver el mismo día son ocho horas de traslado para tres de isla.",
+        "en": "Stay overnight. There and back in a day is eight hours of travel for three of island."
+      }
+    },
+    {
+      "id": "cenotes",
+      "name": "Ruta de los Cenotes",
+      "area": "cerca",
+      "badge": { "es": "Medio día", "en": "Half day" },
+      "why": {
+        "es": "Saliendo de Puerto Morelos hacia el poniente hay una carretera con decenas de cenotes abiertos al público, desde pozas a cielo abierto hasta cavernas con estalactitas. Son agua dulce y fría, sin sargazo y sin oleaje, y casi ninguno está lleno.",
+        "en": "Heading inland from Puerto Morelos there's a road with dozens of cenotes open to the public, from open-air pools to caverns hung with stalactites. Fresh cold water, no sargassum, no surf, and hardly any of them crowded."
+      },
+      "entry": { "amountMxn": 300, "note": { "es": "Por cenote; varía mucho entre uno y otro", "en": "Per cenote; varies a lot between them" } },
+      "howTo": {
+        "es": "No hay transporte público por la ruta: se necesita auto rentado o un tour. Es el único plan de esta lista que no se resuelve en camión.",
+        "en": "There's no public transport along the route: you need a rental car or a tour. It's the only plan on this list a bus won't solve."
+      },
+      "priceMxn": null,
+      "minutes": 60,
+      "camion": null,
+      "tip": {
+        "es": "Prohibido el bloqueador solar en casi todos: arruina el agua. Lleva camiseta.",
+        "en": "Sunscreen is banned in nearly all of them: it wrecks the water. Bring a shirt."
+      }
+    }
+  ]
+}

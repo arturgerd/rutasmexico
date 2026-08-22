@@ -30,6 +30,7 @@
       "waves": { "level": "low", "es": "Prácticamente sin olas", "en": "Practically waveless" },
       "sargassum": { "level": "low", "es": "El tramo menos afectado", "en": "The least affected stretch" },
       "airportMinutes": { "min": 30, "max": 40 },
+      "nightly": { "minMxn": 1800, "maxMxn": 4500 },
       "beaches": ["Las Perlas", "Playa del Niño", "Tortugas", "Langosta", "Caracol"],
       "goodFor": {
         "es": "Familias con niños pequeños, quien no nada bien y quien quiere entrar al agua sin pelearse con el oleaje. También es el tramo más cerca del centro, así que salir a comer fuera del hotel sale barato.",
@@ -56,6 +57,7 @@
       "waves": { "level": "medium", "es": "Moderado, protegido en parte por arrecife", "en": "Moderate, partly reef-sheltered" },
       "sargassum": { "level": "medium", "es": "Variable: depende del viento de la semana", "en": "Variable: depends on that week's wind" },
       "airportMinutes": { "min": 25, "max": 35 },
+      "nightly": { "minMxn": 2200, "maxMxn": 6500 },
       "beaches": ["Caracol", "Chac Mool", "Gaviota Azul", "Marlin"],
       "goodFor": {
         "es": "Quien viene a salir. Los antros, los centros comerciales y los restaurantes están concentrados aquí, y puedes volver caminando. Es el punto medio para todo lo demás.",
@@ -82,6 +84,7 @@
       "waves": { "level": "high", "es": "Fuerte, con días de bandera roja", "en": "Strong, with red-flag days" },
       "sargassum": { "level": "high", "es": "El más expuesto cuando hay temporada", "en": "The most exposed when the season hits" },
       "airportMinutes": { "min": 20, "max": 30 },
+      "nightly": { "minMxn": 2800, "maxMxn": 9000 },
       "beaches": ["Ballenas", "Delfines", "Punta Nizuc"],
       "goodFor": {
         "es": "Todo incluido, resorts grandes y playas anchas de arena blanca. Es el tramo más tranquilo y el más cercano al aeropuerto. Playa Delfines, con el letrero gigante de CANCÚN, está aquí.",
@@ -91,6 +94,44 @@
         "es": "Quedas lejos de todo lo demás: cada salida es un taxi. Y es donde el oleaje y el sargazo pegan más fuerte, así que en temporada mala la playa puede no ser la de la foto.",
         "en": "You're far from everything else: every outing is a taxi. And it's where surf and sargassum hit hardest, so in a bad season the beach may not be the one in the photo."
       }
+    }
+  ],
+  "nightlyNote": {
+    "confidence": "approx",
+    "checkedOn": "2026-08-19",
+    "note": {
+      "es": "Rangos por noche en habitación doble fuera de temporada alta, para dar orden de magnitud. En Navidad, Semana Santa y spring break se disparan, y los resorts del sur casi siempre se venden con todo incluido, así que su precio no se compara directo con el de un hotel del centro.",
+      "en": "Per-night ranges for a double room outside high season, to give you the order of magnitude. Christmas, Easter and spring break send them soaring, and southern resorts almost always sell all-inclusive, so their price is not directly comparable to a downtown hotel."
+    }
+  },
+  "alternatives": [
+    {
+      "id": "centro",
+      "name": { "es": "Centro de Cancún", "en": "Downtown Cancún" },
+      "nightly": { "minMxn": 600, "maxMxn": 1600 },
+      "why": {
+        "es": "La misma ciudad por un tercio del precio. Comes donde come la gente que trabaja en los hoteles, tienes la terminal del ADO al lado para cualquier excursión y el camión a la playa cuesta doce pesos y pasa toda la noche.",
+        "en": "The same city for a third of the price. You eat where the hotel staff eat, the ADO terminal is next door for any day trip, and the bus to the beach costs twelve pesos and runs all night."
+      },
+      "tradeoff": {
+        "es": "No tienes playa abajo. Son entre veinte y cuarenta minutos de camión cada vez que quieras meterte al mar.",
+        "en": "You have no beach downstairs. It's twenty to forty minutes by bus every time you want to get in the sea."
+      },
+      "camion": "r1"
+    },
+    {
+      "id": "puerto-juarez",
+      "name": { "es": "Puerto Juárez y el norte", "en": "Puerto Juárez and the north" },
+      "nightly": { "minMxn": 900, "maxMxn": 2200 },
+      "why": {
+        "es": "Junto al muelle del ferry a Isla Mujeres, con playas de bahía sin oleaje y prácticamente sin sargazo. Es la zona que eligen los que van a la isla más de una vez.",
+        "en": "Next to the Isla Mujeres ferry pier, with sheltered bay beaches, no surf and almost no sargassum. It's the area chosen by people going to the island more than once."
+      },
+      "tradeoff": {
+        "es": "Poca vida nocturna y menos oferta de restaurantes. Para cenar fuera acabas bajando al centro.",
+        "en": "Little nightlife and fewer restaurants. To eat out you end up heading downtown."
+      },
+      "camion": "r10"
     }
   ],
   "sargassum": {
