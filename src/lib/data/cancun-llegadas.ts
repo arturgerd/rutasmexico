@@ -11,7 +11,11 @@ import type { LocalizedString } from "@/types/common";
  * guía suma bien.
  */
 
-/** Tarifa del camión urbano que entra a Kukulcán. Coincide con el catálogo de camiones. */
+/**
+ * Tarifa del camión urbano que entra a Kukulcán, comprobada en campo pagando el
+ * pasaje. Coincide con el catálogo de camiones, donde va etiquetada como
+ * verificada ruta por ruta.
+ */
 const CAMION_HOTELERA_MXN = 12;
 /** Ferry Puerto Juárez → Isla Mujeres, sencillo. El redondo ronda los $320. */
 const FERRY_ISLA_SENCILLO_MXN = 160;

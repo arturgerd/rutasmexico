@@ -21,6 +21,14 @@ const data = catalog as unknown as CamionCatalog;
 export const CAMIONES_LAST_REVIEWED = data.lastReviewed;
 export const CAMIONES_ATTRIBUTION = data.attribution;
 
+/**
+ * Fecha en que se comprobó en campo la tarifa del corredor de la Zona Hotelera.
+ * Se lee del catálogo en vez de escribirla aquí para que no se desincronice con
+ * lo que dicen las páginas de cada ruta.
+ */
+export const CAMIONES_FARE_VERIFIED_ON =
+  data.routes.find((r) => r.fareConfidence === "verified")?.fareCheckedOn ?? data.lastReviewed;
+
 export function getAllCamionRoutes(): CamionRoute[] {
   return data.routes;
 }

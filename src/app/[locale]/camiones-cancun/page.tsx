@@ -5,6 +5,7 @@ import DataConfidence from "@/components/ui/DataConfidence";
 import CamionesExplorer from "@/components/camiones/CamionesExplorer";
 import {
   CAMIONES_ATTRIBUTION,
+  CAMIONES_FARE_VERIFIED_ON,
   CAMIONES_LAST_REVIEWED,
   getAllCamionRoutes,
   getHotelZoneRoutes,
@@ -168,18 +169,34 @@ export default async function CamionesCancunPage({
               : "Cancún city transport has no official map, no published timetable and no tracking app. What it does have is a simple logic: ten pesos around town, twelve if the bus enters Kukulcán, and a windshield sign that matters more than the route number. Here are all 31 routes drawn over the real streets."}
           </p>
 
-          <DataConfidence
-            className="mt-5"
-            level="approx"
-            checkedOn={CAMIONES_LAST_REVIEWED}
-            locale={locale}
-            source={isEs ? "Referencia pública del transporte urbano de Cancún" : "Public reference for Cancún city transport"}
-            note={
-              isEs
-                ? "Las tarifas y los letreros son de referencia pública y los revisamos en la fecha indicada. Los trazos siguen calles de OpenStreetMap: muestran por dónde va cada ruta, no la posición de las unidades."
-                : "Fares and signs come from public reference data and were checked on the date shown. The lines follow OpenStreetMap streets: they show where each route runs, not where the vehicles are."
-            }
-          />
+          {/* Dos etiquetas y no una: la tarifa del corredor de Kukulcán está
+              comprobada pagándola y la urbana no. Fundirlas en un solo
+              "aproximado" tira la comprobación; fundirlas en un solo
+              "verificado" afirma de más sobre 22 rutas. */}
+          <div className="mt-5 space-y-3">
+            <DataConfidence
+              level="verified"
+              checkedOn={CAMIONES_FARE_VERIFIED_ON}
+              locale={locale}
+              source={isEs ? "Comprobación propia a bordo" : "Our own check on board"}
+              note={
+                isEs
+                  ? `Los $12 de las ${hotelZone.length} rutas que entran a la Zona Hotelera están comprobados pagando el pasaje.`
+                  : `The $12 fare on the ${hotelZone.length} routes that enter the Hotel Zone was checked by paying it.`
+              }
+            />
+            <DataConfidence
+              level="approx"
+              checkedOn={CAMIONES_LAST_REVIEWED}
+              locale={locale}
+              source={isEs ? "Referencia pública del transporte urbano de Cancún" : "Public reference for Cancún city transport"}
+              note={
+                isEs
+                  ? "Los $10 de las rutas urbanas y los letreros son de referencia pública, sin comprobación propia. Los trazos siguen calles de OpenStreetMap: muestran por dónde va cada ruta, no la posición de las unidades."
+                  : "The $10 city-route fare and the windshield signs come from public reference data, not checked by us. The lines follow OpenStreetMap streets: they show where each route runs, not where the vehicles are."
+              }
+            />
+          </div>
         </header>
 
         {/* Cifras de cabecera */}

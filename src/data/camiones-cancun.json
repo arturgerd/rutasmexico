@@ -16,6 +16,8 @@
       "vehicleType": "autobus",
       "coverage": "hotelera",
       "fareMxn": 12,
+      "fareConfidence": "verified",
+      "fareCheckedOn": "2026-08-22",
       "allDay": true,
       "schedule": {
         "es": "Servicio continuo las 24 horas",
@@ -2054,6 +2056,8 @@
       "vehicleType": "autobus",
       "coverage": "hotelera",
       "fareMxn": 12,
+      "fareConfidence": "verified",
+      "fareCheckedOn": "2026-08-22",
       "allDay": true,
       "schedule": {
         "es": "Servicio continuo las 24 horas",
@@ -4313,6 +4317,8 @@
       "vehicleType": "autobus",
       "coverage": "hotelera",
       "fareMxn": 12,
+      "fareConfidence": "verified",
+      "fareCheckedOn": "2026-08-22",
       "allDay": true,
       "schedule": {
         "es": "Servicio continuo las 24 horas",
@@ -6693,6 +6699,8 @@
       "vehicleType": "autobus",
       "coverage": "hotelera",
       "fareMxn": 12,
+      "fareConfidence": "verified",
+      "fareCheckedOn": "2026-08-22",
       "allDay": true,
       "schedule": {
         "es": "Servicio continuo las 24 horas",
@@ -8807,6 +8815,8 @@
       "vehicleType": "autobus",
       "coverage": "hotelera",
       "fareMxn": 12,
+      "fareConfidence": "verified",
+      "fareCheckedOn": "2026-08-22",
       "allDay": true,
       "schedule": {
         "es": "Servicio continuo las 24 horas",
@@ -11037,6 +11047,8 @@
       "vehicleType": "autobus",
       "coverage": "hotelera",
       "fareMxn": 12,
+      "fareConfidence": "verified",
+      "fareCheckedOn": "2026-08-22",
       "allDay": true,
       "schedule": {
         "es": "Servicio continuo las 24 horas",
@@ -12999,6 +13011,8 @@
       "vehicleType": "autobus",
       "coverage": "urbana",
       "fareMxn": 10,
+      "fareConfidence": "approx",
+      "fareCheckedOn": "2026-08-18",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -13439,6 +13453,8 @@
       "vehicleType": "autobus",
       "coverage": "urbana",
       "fareMxn": 10,
+      "fareConfidence": "approx",
+      "fareCheckedOn": "2026-08-18",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -13849,6 +13865,8 @@
       "vehicleType": "autobus",
       "coverage": "urbana",
       "fareMxn": 10,
+      "fareConfidence": "approx",
+      "fareCheckedOn": "2026-08-18",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -14148,6 +14166,8 @@
       "vehicleType": "autobus",
       "coverage": "urbana",
       "fareMxn": 10,
+      "fareConfidence": "approx",
+      "fareCheckedOn": "2026-08-18",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -14736,6 +14756,8 @@
       "vehicleType": "autobus",
       "coverage": "urbana",
       "fareMxn": 10,
+      "fareConfidence": "approx",
+      "fareCheckedOn": "2026-08-18",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -15189,6 +15211,8 @@
       "vehicleType": "autobus",
       "coverage": "hotelera",
       "fareMxn": 12,
+      "fareConfidence": "verified",
+      "fareCheckedOn": "2026-08-22",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -17186,6 +17210,8 @@
       "vehicleType": "autobus",
       "coverage": "urbana",
       "fareMxn": 10,
+      "fareConfidence": "approx",
+      "fareCheckedOn": "2026-08-18",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -17767,6 +17793,8 @@
       "vehicleType": "autobus",
       "coverage": "hotelera",
       "fareMxn": 12,
+      "fareConfidence": "verified",
+      "fareCheckedOn": "2026-08-22",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -20014,6 +20042,8 @@
       "vehicleType": "autobus",
       "coverage": "urbana",
       "fareMxn": 10,
+      "fareConfidence": "approx",
+      "fareCheckedOn": "2026-08-18",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -20428,6 +20458,8 @@
       "vehicleType": "autobus",
       "coverage": "urbana",
       "fareMxn": 10,
+      "fareConfidence": "approx",
+      "fareCheckedOn": "2026-08-18",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -21041,6 +21073,8 @@
       "vehicleType": "autobus",
       "coverage": "urbana",
       "fareMxn": 10,
+      "fareConfidence": "approx",
+      "fareCheckedOn": "2026-08-18",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -21426,6 +21460,8 @@
       "vehicleType": "autobus",
       "coverage": "urbana",
       "fareMxn": 10,
+      "fareConfidence": "approx",
+      "fareCheckedOn": "2026-08-18",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -21867,6 +21903,8 @@
       "vehicleType": "autobus",
       "coverage": "urbana",
       "fareMxn": 10,
+      "fareConfidence": "approx",
+      "fareCheckedOn": "2026-08-18",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -22407,6 +22445,8 @@
       "vehicleType": "autobus",
       "coverage": "urbana",
       "fareMxn": 10,
+      "fareConfidence": "approx",
+      "fareCheckedOn": "2026-08-18",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -23062,6 +23102,8 @@
       "vehicleType": "autobus",
       "coverage": "hotelera",
       "fareMxn": 12,
+      "fareConfidence": "verified",
+      "fareCheckedOn": "2026-08-22",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas cerca de las 23:30",
@@ -25024,6 +25066,8 @@
       "vehicleType": "autobus",
       "coverage": "urbana",
       "fareMxn": 10,
+      "fareConfidence": "approx",
+      "fareCheckedOn": "2026-08-18",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -25537,6 +25581,8 @@
       "vehicleType": "autobus",
       "coverage": "urbana",
       "fareMxn": 10,
+      "fareConfidence": "approx",
+      "fareCheckedOn": "2026-08-18",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -26071,6 +26117,8 @@
       "vehicleType": "autobus",
       "coverage": "urbana",
       "fareMxn": 10,
+      "fareConfidence": "approx",
+      "fareCheckedOn": "2026-08-18",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -26514,6 +26562,8 @@
       "vehicleType": "autobus",
       "coverage": "urbana",
       "fareMxn": 10,
+      "fareConfidence": "approx",
+      "fareCheckedOn": "2026-08-18",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -26843,6 +26893,8 @@
       "vehicleType": "autobus",
       "coverage": "urbana",
       "fareMxn": 10,
+      "fareConfidence": "approx",
+      "fareCheckedOn": "2026-08-18",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -27394,6 +27446,8 @@
       "vehicleType": "autobus",
       "coverage": "urbana",
       "fareMxn": 10,
+      "fareConfidence": "approx",
+      "fareCheckedOn": "2026-08-18",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -27889,6 +27943,8 @@
       "vehicleType": "autobus",
       "coverage": "urbana",
       "fareMxn": 10,
+      "fareConfidence": "approx",
+      "fareCheckedOn": "2026-08-18",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -28437,6 +28493,8 @@
       "vehicleType": "autobus",
       "coverage": "urbana",
       "fareMxn": 10,
+      "fareConfidence": "approx",
+      "fareCheckedOn": "2026-08-18",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -28780,6 +28838,8 @@
       "vehicleType": "combi",
       "coverage": "urbana",
       "fareMxn": 10,
+      "fareConfidence": "approx",
+      "fareCheckedOn": "2026-08-18",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",
@@ -29273,6 +29333,8 @@
       "vehicleType": "combi",
       "coverage": "urbana",
       "fareMxn": 10,
+      "fareConfidence": "approx",
+      "fareCheckedOn": "2026-08-18",
       "allDay": false,
       "schedule": {
         "es": "Diurno · últimas corridas al caer la noche",

@@ -32,6 +32,12 @@ export interface CamionRoute {
   vehicleType: CamionVehicle;
   coverage: CamionCoverage;
   fareMxn: number;
+  /**
+   * Confianza de la tarifa, por ruta. El corredor de la Zona Hotelera está
+   * comprobado pagando el pasaje; el urbano sigue siendo referencia pública.
+   */
+  fareConfidence: "verified" | "approx";
+  fareCheckedOn: string;
   allDay: boolean;
   schedule: LocalizedString;
   color: string;
@@ -53,6 +59,7 @@ export interface CamionLine {
   coverage: CamionCoverage;
   vehicleType: CamionVehicle;
   fareMxn: number;
+  fareConfidence: "verified" | "approx";
   allDay: boolean;
   name: LocalizedString;
   stops: CamionStop[];
