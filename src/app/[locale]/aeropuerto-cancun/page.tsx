@@ -6,6 +6,7 @@ import AffiliateDisclosure from "@/components/editorial/AffiliateDisclosure";
 import ZonaHoteleraGuide from "@/components/airport/ZonaHoteleraGuide";
 import DestinoRapido from "@/components/airport/DestinoRapido";
 import LugaresDeInteres from "@/components/airport/LugaresDeInteres";
+import LugarDetalle from "@/components/airport/LugarDetalle";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import { formatCheckedOn } from "@/components/ui/DataConfidence";
 import { getCancunAirportGuide } from "@/lib/data/aeropuerto-cun";
@@ -121,6 +122,13 @@ export default async function AeropuertoCancunPage({
         : "Almost everything. Playa Delfines, the El Rey ruins and the Maya Museum are all on Kukulcán Boulevard, reachable by bus for twelve pesos. Mercado 28 and Parque de las Palapas, downtown, on the same bus. Isla Mujeres is a bus to the Puerto Juárez pier plus a ferry. Chichén Itzá, Tulum, Playa del Carmen and Holbox are all doable by ADO coach from the downtown terminal. The only thing that genuinely needs a car is the Puerto Morelos cenote route.",
     }
   );
+
+  faqs.push({
+    q: isEs ? "¿Cuánto cuesta entrar a Coco Bongo en Cancún?" : "How much does Coco Bongo Cancún cost?",
+    a: isEs
+      ? "Hay tres boletos y todos incluyen barra libre. El general arranca cerca de los 1,634 pesos, unos 90 dólares, con barra libre de marcas nacionales y sin asiento. El premium ronda los 2,280 pesos y cambia la barra libre a premium. El Front Row va cerca de los 3,458 pesos e incluye pre-show, barra premium y asiento reservado en primera fila, que es el único con el que no pasas la noche de pie. Los precios suben en Navidad, Año Nuevo y spring break, y comprar en línea con anticipación suele salir más barato que en taquilla."
+      : "There are three tickets and all include an open bar. General starts near 1,634 pesos, about 90 US dollars, with a national-brand open bar and no seat. Premium runs around 2,280 pesos and upgrades the bar. Front Row is close to 3,458 pesos and adds a pre-show, premium bar and a reserved front-row seat — the only one that keeps you off your feet. Prices rise at Christmas, New Year and spring break, and buying online in advance usually beats the box office.",
+  });
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -262,6 +270,7 @@ export default async function AeropuertoCancunPage({
                 { href: "#donde-dormir", es: "Dónde dormir", en: "Where to stay" },
                 { href: "#camion-urbano", es: "El camión urbano", en: "The city bus" },
                 { href: "#lugares-de-interes", es: "Qué ver", en: "What to see" },
+                { href: "#en-detalle", es: "Mercado 28 y Coco Bongo", en: "Mercado 28 and Coco Bongo" },
                 { href: "#uber-didi", es: "Uber y DiDi", en: "Uber and DiDi" },
               ].map((item) => (
                 <li key={item.href}>
@@ -326,6 +335,10 @@ export default async function AeropuertoCancunPage({
               que hacer. Va despues del camion urbano a proposito: casi todo lo
               de esta lista se resuelve con las rutas que acaba de conocer. */}
           <LugaresDeInteres locale={locale} />
+
+          {/* Los perfiles largos van despues de la reticula: primero el mapa
+              mental de que hay, luego el fondo de los dos que lo piden. */}
+          <LugarDetalle locale={locale} />
 
           {/* Uber / DiDi */}
           <section id="uber-didi" className="mt-8 rounded-2xl border border-azul-200 bg-azul-50 p-6 md:p-8">

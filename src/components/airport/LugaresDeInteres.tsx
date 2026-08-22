@@ -1,8 +1,16 @@
 import Link from "next/link";
 import data from "@/data/cancun-lugares.json";
+import detalles from "@/data/cancun-lugares-detalle.json";
 import DataConfidence from "@/components/ui/DataConfidence";
 import { l, t3 } from "@/lib/utils";
 import type { LocalizedString } from "@/types/common";
+
+/**
+ * Lugares que además tienen un perfil largo más abajo. Se deriva del propio
+ * archivo de detalles para que añadir uno nuevo no obligue a tocar este
+ * componente.
+ */
+const CON_DETALLE = new Set(detalles.details.map((d) => d.placeId));
 
 type Area = "hotelera" | "centro" | "cerca" | "lejos";
 
@@ -136,16 +144,26 @@ export default function LugaresDeInteres({ locale }: { locale: string }) {
                       {l(place.howTo, locale)}
                     </p>
 
-                    {place.camion && (
-                      <Link
-                        href={`/${locale}/camiones-cancun/${place.camion}`}
-                        className="mt-2 inline-block text-sm font-medium text-terracotta-600 underline-offset-2 hover:underline"
-                      >
-                        {isEs
-                          ? `Recorrido del ${place.camion.toUpperCase()}`
-                          : `${place.camion.toUpperCase()} route map`}
-                      </Link>
-                    )}
+                    <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1">
+                      {place.camion && (
+                        <Link
+                          href={`/${locale}/camiones-cancun/${place.camion}`}
+                          className="text-sm font-medium text-terracotta-600 underline-offset-2 hover:underline"
+                        >
+                          {isEs
+                            ? `Recorrido del ${place.camion.toUpperCase()}`
+                            : `${place.camion.toUpperCase()} route map`}
+                        </Link>
+                      )}
+                      {CON_DETALLE.has(place.id) && (
+                        <a
+                          href={`#detalle-${place.id}`}
+                          className="text-sm font-medium text-arena-700 underline-offset-2 hover:text-terracotta-600 hover:underline"
+                        >
+                          {isEs ? "Leer en detalle ↓" : "Read in full ↓"}
+                        </a>
+                      )}
+                    </div>
 
                     <p className="mt-3 border-l-2 border-oro-300 pl-3 text-sm leading-relaxed text-arena-600">
                       {l(place.tip, locale)}

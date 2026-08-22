@@ -1,0 +1,177 @@
+{
+  "lastReviewed": "2026-08-19",
+  "details": [
+    {
+      "placeId": "mercado-28",
+      "title": { "es": "Mercado 28, el que nadie llama por su nombre", "en": "Mercado 28, the market nobody calls by its name" },
+      "standfirst": {
+        "es": "Es la parada obligada de todos los tours y aparece en cada guía de Cancún. También es un mercado que dejó de ser lo que era hace treinta años, y conviene saber eso antes de ir.",
+        "en": "It's the compulsory stop on every tour and appears in every Cancún guide. It's also a market that stopped being what it was thirty years ago, and it helps to know that before you go."
+      },
+      "history": {
+        "title": { "es": "De mercado de abasto a mercado de souvenirs", "en": "From produce market to souvenir market" },
+        "body": [
+          {
+            "es": "Abrió en los años ochenta, cuando Cancún llevaba apenas una década de existir. No nació para el turismo: era el mercado de abasto del centro, con puestos de fruta y verdura, carnicerías, pescaderías y fondas. La ciudad compraba ahí.",
+            "en": "It opened in the eighties, when Cancún had barely existed for a decade. It wasn't built for tourism: it was downtown's produce market, with fruit and vegetable stalls, butchers, fishmongers and family kitchens. The city did its shopping there."
+          },
+          {
+            "es": "La crisis de 1994 lo cambió todo. La devaluación hundió el poder adquisitivo local de un día para otro, mientras el turismo seguía llegando y pagando en dólares. Los locatarios hicieron la cuenta y giraron: hoy cerca del 85 % de lo que se vende ahí son artesanías y recuerdos.",
+            "en": "The 1994 crisis changed everything. The devaluation sank local purchasing power overnight while tourism kept arriving and paying in dollars. The stallholders did the maths and pivoted: today around 85% of what's sold there is handicrafts and souvenirs."
+          },
+          {
+            "es": "Su nombre oficial es Mercado Municipal Artículo 115, y prácticamente nadie lo usa: si preguntas por el Artículo 115 vas a recibir una cara de desconcierto. Todo el mundo lo llama por la supermanzana donde está, la 28, que es como se orienta Cancún entero desde que se trazó en los setenta.",
+            "en": "Its official name is Mercado Municipal Artículo 115, and virtually nobody uses it: ask for Artículo 115 and you'll get a blank look. Everyone calls it by the supermanzana it sits in, number 28, which is how the whole of Cancún has been navigated since it was laid out in the seventies."
+          },
+          {
+            "es": "Hoy pasan por sus más de cien locales entre tres mil y tres mil quinientas personas al día, y alrededor de cuatro mil familias viven de lo que ahí se vende. Sigue siendo el mercado más antiguo del centro de Cancún.",
+            "en": "Today its hundred-plus stalls see between three thousand and three thousand five hundred people a day, and some four thousand families live off what's sold there. It remains the oldest market in downtown Cancún."
+          }
+        ]
+      },
+      "whatYouFind": {
+        "title": { "es": "Qué vas a encontrar adentro", "en": "What you'll find inside" },
+        "items": [
+          {
+            "label": { "es": "Artesanía y recuerdos", "en": "Handicrafts and souvenirs" },
+            "text": {
+              "es": "Es el grueso del mercado: figuras de madera tallada, textiles bordados, hamacas, sombreros, plata, cerámica, cuero y los sets de tequila de rigor.",
+              "en": "The bulk of the market: carved wooden figures, embroidered textiles, hammocks, hats, silver, ceramics, leather and the obligatory tequila gift sets."
+            }
+          },
+          {
+            "label": { "es": "El patio de comida", "en": "The food courtyard" },
+            "text": {
+              "es": "Fondas y marisquerías alrededor del mercado, con cochinita, sopa de lima, panuchos, ceviches y tacos de pescado. Regla local: fíjate dónde comen policías, taxistas y oficinistas. Ahí la comida es buena y el precio es el justo.",
+              "en": "Family kitchens and seafood counters ringing the market, serving cochinita, lime soup, panuchos, ceviche and fish tacos. Local rule: look for where the police, taxi drivers and office workers are eating. That's where the food is good and the price is fair."
+            }
+          },
+          {
+            "label": { "es": "El lado que sigue siendo local", "en": "The side that's still local" },
+            "text": {
+              "es": "Entre los puestos de souvenirs quedan zapaterías, joyerías, tiendas de ropa, farmacias y puestos de hierbas y remedios, que son a los que de verdad va la gente del barrio.",
+              "en": "Among the souvenir stalls there are still shoe shops, jewellers, clothing stores, pharmacies and herb and remedy stands — the ones the neighbourhood actually comes for."
+            }
+          }
+        ]
+      },
+      "practical": [
+        { "label": { "es": "Horario", "en": "Hours" }, "value": { "es": "Aproximadamente de 9:00 a 20:00", "en": "Roughly 9:00 to 20:00" } },
+        { "label": { "es": "Mejor hora", "en": "Best time" }, "value": { "es": "Temprano o al mediodía; después de las 16:00 se llena", "en": "Early or around midday; it fills up after 16:00" } },
+        { "label": { "es": "Pago", "en": "Payment" }, "value": { "es": "Efectivo, en pesos. Muchos puestos no aceptan tarjeta", "en": "Cash, in pesos. Many stalls don't take cards" } },
+        { "label": { "es": "Regateo", "en": "Haggling" }, "value": { "es": "Se espera. Ofrece entre el 40 % y el 50 % de lo que piden", "en": "Expected. Offer 40% to 50% of the asking price" } }
+      ],
+      "headsUp": {
+        "title": { "es": "Lo que conviene saber antes de entrar", "en": "What to know before you walk in" },
+        "body": [
+          {
+            "es": "Los vendedores son insistentes. No es agresión, es el formato del lugar, pero si vienes de un país donde nadie te habla al pasar frente a una tienda, abruma. Un «gracias, sólo estoy viendo» y seguir caminando funciona.",
+            "en": "The vendors are persistent. It isn't aggression, it's how the place works, but if you come from somewhere nobody speaks to you as you pass a shop, it's overwhelming. A polite \"just looking, thanks\" and walking on works fine."
+          },
+          {
+            "es": "Muchos artículos no traen precio, o traen un código en vez de una cifra. Pregunta siempre antes de mostrar interés, y compara: el mismo objeto cambia bastante de precio entre un puesto y el de al lado.",
+            "en": "Plenty of items carry no price, or a code instead of a figure. Always ask before showing interest, and compare: the same object swings a fair amount in price between one stall and the next."
+          },
+          {
+            "es": "Y lo más importante: el Mercado 28 ya no es el mercado local de Cancún, es el mercado de souvenirs. Si lo que buscas es el mercado de verdad —fruta, verdura, especias, fondas de barrio y ni un solo turista— ése es el Mercado 23, más chico y más crudo, a unas cuadras de la terminal del ADO.",
+            "en": "And most importantly: Mercado 28 is no longer Cancún's local market, it's the souvenir market. If what you want is the real thing — fruit, vegetables, spices, neighbourhood kitchens and not a single tourist — that's Mercado 23, smaller and rougher, a few blocks from the ADO terminal."
+          }
+        ]
+      },
+      "gettingThere": {
+        "title": { "es": "Cómo llegar", "en": "Getting there" },
+        "body": {
+          "es": "Está sobre la avenida Xel-Há, entre Sunyaxchén y Tankah, en la supermanzana 28. Desde la Zona Hotelera, cualquier camión con letrero hacia el centro sirve: el R2 es el que pasa más cerca. Son unos treinta y cinco minutos y doce pesos. Si llegaste en ADO desde el aeropuerto, estás a diez minutos caminando desde la terminal, o a un paso del Parque de las Palapas.",
+          "en": "It sits on Avenida Xel-Há, between Sunyaxchén and Tankah, in supermanzana 28. From the Hotel Zone any bus signed for downtown will do: the R2 passes closest. About thirty-five minutes and twelve pesos. If you arrived by ADO from the airport, it's a ten-minute walk from the terminal, or a step away from Parque de las Palapas."
+        }
+      },
+      "sources": [
+        { "label": "Wikipedia — Mercado 28", "url": "https://en.wikipedia.org/wiki/Mercado_28" },
+        { "label": "Macronews — Mercado 28, historia y tradición de Cancún", "url": "https://macronews.mx/quintana-roo/benito-juarez/mercado-28-historia-y-tradicion-de-cancun/" },
+        { "label": "Oasis Hoteles — el mercado que nadie llama por su nombre", "url": "https://oasishoteles.com/blog/en/market-one-calls-real-name/" }
+      ]
+    },
+    {
+      "placeId": "coco-bongo",
+      "title": { "es": "Coco Bongo: qué es en realidad y cuánto cuesta", "en": "Coco Bongo: what it actually is, and what it costs" },
+      "standfirst": {
+        "es": "Es el nombre que más se repite cuando alguien pregunta qué hacer de noche en Cancún, y también el que más se malentiende. No vas a un antro: vas a un espectáculo de tres horas con barra libre incluida.",
+        "en": "It's the name that comes up most when someone asks what to do at night in Cancún, and the one most misunderstood. You're not going to a club: you're going to a three-hour show with an open bar included."
+      },
+      "history": {
+        "title": { "es": "Qué vas a ver", "en": "What you'll see" },
+        "body": [
+          {
+            "es": "El formato es un cruce entre Cirque du Soleil y una fiesta: acróbatas que bajan del techo y vuelan sobre la pista, imitadores de Michael Jackson, Queen y Madonna, y escenas de películas recreadas en vivo con pantallas gigantes, pirotecnia y confeti. Los números que más se repiten en la programación son La Máscara, Moulin Rouge y Mad Max.",
+            "en": "The format is a cross between Cirque du Soleil and a party: acrobats descending from the ceiling and flying over the floor, Michael Jackson, Queen and Madonna impersonators, and film scenes staged live with giant screens, pyrotechnics and confetti. The numbers that recur most are The Mask, Moulin Rouge and Mad Max."
+          },
+          {
+            "es": "Entre número y número entra el DJ y el sitio funciona como discoteca. No hay una pista separada del escenario: todo pasa encima y alrededor de la misma sala, y por eso se está de pie casi toda la noche salvo que pagues asiento.",
+            "en": "Between numbers the DJ takes over and the place works as a nightclub. There's no dance floor separate from the stage: everything happens above and around the same room, which is why you're on your feet nearly all night unless you pay for a seat."
+          }
+        ]
+      },
+      "whatYouFind": {
+        "title": { "es": "Los tres boletos, y qué cambia entre ellos", "en": "The three tickets, and what changes between them" },
+        "items": [
+          {
+            "label": { "es": "General · desde $1,634 MXN", "en": "General · from $1,634 MXN" },
+            "text": {
+              "es": "Unos 90 dólares. Incluye entrada, show, barra libre de marcas nacionales y un snack. Sin asiento: entras y buscas dónde pararte.",
+              "en": "Around 90 US dollars. Covers entry, the show, an open bar of national brands and a snack. No seat: you go in and find somewhere to stand."
+            }
+          },
+          {
+            "label": { "es": "Premium · desde $2,280 MXN", "en": "Premium · from $2,280 MXN" },
+            "text": {
+              "es": "Cerca de 116 dólares. Lo mismo, con barra libre premium en vez de nacional. Es el upgrade que más se empuja en la puerta.",
+              "en": "About 116 US dollars. The same, with a premium open bar instead of the national one. It's the upgrade pushed hardest at the door."
+            }
+          },
+          {
+            "label": { "es": "Front Row · desde $3,458 MXN", "en": "Front Row · from $3,458 MXN" },
+            "text": {
+              "es": "Unos 176 dólares. Añade pre-show en el Bongo Bar con bebidas, barra libre premium y asiento reservado en primera fila. Es el único boleto con el que no pasas la noche de pie.",
+              "en": "Around 176 US dollars. Adds a pre-show at the Bongo Bar with drinks, a premium open bar and a reserved front-row seat. It's the only ticket that keeps you off your feet."
+            }
+          }
+        ]
+      },
+      "practical": [
+        { "label": { "es": "Dirección", "en": "Address" }, "value": { "es": "Blvd. Kukulcán km 9.5, Plaza Forum by the Sea", "en": "Blvd. Kukulcán km 9.5, Plaza Forum by the Sea" } },
+        { "label": { "es": "Horario", "en": "Hours" }, "value": { "es": "Puertas cerca de las 22:00; el show fuerte arranca sobre las 23:00 y la noche cierra entre las 3:00 y las 3:30", "en": "Doors around 22:00; the main show starts near 23:00 and the night ends between 3:00 and 3:30" } },
+        { "label": { "es": "Edad", "en": "Age" }, "value": { "es": "Mayores de 18 con identificación oficial", "en": "Over 18s with official ID" } },
+        { "label": { "es": "Vestimenta", "en": "Dress" }, "value": { "es": "Sin código estricto, pero desentonas en chanclas y traje de baño", "en": "No strict code, but flip-flops and swimwear will feel out of place" } }
+      ],
+      "headsUp": {
+        "title": { "es": "Lo que conviene saber antes de comprar", "en": "What to know before you buy" },
+        "body": [
+          {
+            "es": "El precio cambia por temporada, por día y por evento. En Navidad, Año Nuevo y spring break sube, y las cifras de arriba son el punto de partida, no la tarifa fija.",
+            "en": "The price changes by season, by day and by event. It rises at Christmas, New Year and spring break, and the figures above are the starting point, not a fixed rate."
+          },
+          {
+            "es": "En la calle y en la puerta hay revendedores. Los boletos legítimos salen del sitio oficial o de operadores establecidos, y comprar en línea con anticipación suele costar menos que en taquilla.",
+            "en": "There are touts on the street and at the door. Legitimate tickets come from the official site or established operators, and buying online in advance usually costs less than at the box office."
+          },
+          {
+            "es": "Es ruidoso, va lleno y se está de pie: no es el lugar para conversar ni para una primera noche de viaje con desfase horario. Y la barra libre incluida en el boleto general es de marcas nacionales, no de las que se anuncian en el escenario.",
+            "en": "It's loud, packed and standing-room: not the place for conversation, nor for your first jet-lagged night. And the open bar included in the general ticket is national brands, not the ones advertised on stage."
+          }
+        ]
+      },
+      "gettingThere": {
+        "title": { "es": "Cómo llegar, y cómo volver", "en": "Getting there, and getting back" },
+        "body": {
+          "es": "Está en el km 9.5 del bulevar Kukulcán, en Punta Cancún, que es justo el tramo por donde pasan el R1 y el R2. Como esas dos rutas circulan las 24 horas, Coco Bongo es de las pocas salidas nocturnas de Cancún a las que puedes ir y de las que puedes volver en camión de doce pesos a las tres de la mañana, en vez de negociar un taxi a la salida. Si duermes en el centro, el mismo camión te regresa.",
+          "en": "It's at km 9.5 of Kukulcán Boulevard, in Punta Cancún, exactly the stretch the R1 and R2 run along. Because both routes operate around the clock, Coco Bongo is one of the few Cancún nights out you can reach and leave by twelve-peso bus at three in the morning, instead of haggling for a taxi on the way out. If you're sleeping downtown, the same bus takes you back."
+        }
+      },
+      "sources": [
+        { "label": "Coco Bongo — sitio oficial", "url": "https://www.cocobongo.com/en/show/cancun/" },
+        { "label": "Vive Cancún — precios y tipos de entrada 2026", "url": "https://vivecancun.com/l/coco-bongo-cancun/" },
+        { "label": "Expedición Cancún — precios y tipos de entradas", "url": "https://www.expedicioncancun.com/blog/articulo/coco-bongo-cancun-precios-y-tipos-de-entradas/256" }
+      ]
+    }
+  ]
+}

@@ -72,6 +72,28 @@
       }
     },
     {
+      "id": "coco-bongo",
+      "name": "Coco Bongo",
+      "area": "hotelera",
+      "badge": { "es": "Km 9.5", "en": "Km 9.5" },
+      "why": {
+        "es": "No es un antro con pista: es un show. Acróbatas colgando del techo, imitadores de Michael Jackson, Queen y Madonna, y escenas de películas recreadas con pantallas y confeti, con el DJ llenando los huecos entre número y número. Es la salida nocturna más conocida de Cancún y la más cara.",
+        "en": "It isn't a club with a dance floor: it's a show. Acrobats hanging from the ceiling, Michael Jackson, Queen and Madonna impersonators, and film scenes recreated with screens and confetti, with the DJ filling the gaps between numbers. It's Cancún's best-known night out, and its priciest."
+      },
+      "entry": { "amountMxn": 1634, "note": { "es": "Entrada general con barra libre nacional", "en": "General admission with national open bar" } },
+      "howTo": {
+        "es": "Está en Plaza Forum by the Sea, sobre Kukulcán, justo en el corredor del R1 y el R2. Son de las pocas salidas nocturnas de Cancún a las que puedes ir y volver en camión de doce pesos a las tres de la mañana.",
+        "en": "It's in Plaza Forum by the Sea on Kukulcán, right on the R1 and R2 corridor. It's one of the few Cancún nights out you can reach and leave by twelve-peso bus at three in the morning."
+      },
+      "priceMxn": 12,
+      "minutes": 10,
+      "camion": "r1",
+      "tip": {
+        "es": "Mínimo 18 años con identificación. Se entra de pie salvo que pagues asiento.",
+        "en": "Over 18s only, with ID. You stand all night unless you pay for a seat."
+      }
+    },
+    {
       "id": "mercado-28",
       "name": "Mercado 28",
       "area": "centro",
