@@ -4,6 +4,7 @@ import { useState, useMemo, useCallback, useId } from "react";
 import { useLocale } from "next-intl";
 import { Airport } from "@/types/airport";
 import { localize, t3, l } from "@/lib/utils";
+import { useTravelDates } from "@/lib/travel-dates";
 import { AFFILIATE_CONFIG } from "@/lib/affiliate";
 import { trackAffiliateClick } from "@/lib/analytics";
 
@@ -39,17 +40,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
   const returnId = `${idPrefix}return`;
   const paxId = `${idPrefix}pax`;
 
-  const tomorrow = useMemo(() => {
-    const d = new Date();
-    d.setDate(d.getDate() + 1);
-    return d.toISOString().split("T")[0];
-  }, []);
-
-  const weekLater = useMemo(() => {
-    const d = new Date();
-    d.setDate(d.getDate() + 8);
-    return d.toISOString().split("T")[0];
-  }, []);
+  const { today, first: tomorrow, second: weekLater } = useTravelDates(1, 8);
 
   // Sort airports: popular first
   const popularCodes = ["MEX", "CUN", "GDL", "MTY", "TIJ", "SJD", "PVR", "MID"];
@@ -208,7 +199,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                 type="date"
                 value={departDate || tomorrow}
                 onChange={(e) => setDepartDate(e.target.value)}
-                min={tomorrow}
+                min={today || undefined}
                 className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-terracotta-500/50"
               />
             </div>
@@ -223,7 +214,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                   type="date"
                   value={returnDate || weekLater}
                   onChange={(e) => setReturnDate(e.target.value)}
-                  min={departDate || tomorrow}
+                  min={departDate || today || undefined}
                   className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-terracotta-500/50"
                 />
               </div>

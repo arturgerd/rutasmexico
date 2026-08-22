@@ -482,9 +482,45 @@ export const MEXICAN_BUS_COMPANIES: BusCompanyInfo[] = [
   },
 ];
 
+// ============================================================
+// Busbud: formato real de URL de ruta
+// ============================================================
+// Una ruta de Busbud NO se resuelve solo con los nombres de las ciudades.
+// El path lleva un sufijo /i/<idOrigen>-<idDestino> con identificadores
+// internos de Busbud, y el prefijo del slug cambia con el idioma ("bus-" en
+// inglés, "autobus-" en español). Sin esas dos piezas la URL devuelve 404 —
+// verificado el 2026-08-16 contra el sitio en vivo:
+//   https://www.busbud.com/es-mx/bus-cancun-playa-del-carmen                     → 404
+//   https://www.busbud.com/es-mx/d/bus-tickets/mexico                            → 404
+//   https://www.busbud.com/es-mx/autobus-cancun-cun-airport-tulum/i/d5dpxjd-d59fcx → 200
+//
+// Como los ids no se pueden derivar de los nombres, aquí solo viven los pares
+// que hemos comprobado uno por uno. Cualquier par que no esté en la tabla cae
+// al buscador de Busbud, que sí resuelve: el usuario pierde el pre-llenado
+// pero la cookie de afiliado se registra igual. Un 404 no registra nada.
+
+const BUSBUD_CITY_IDS: Record<string, string> = {
+  "cancun-cun-airport": "d5dpxjd",
+  cancun: "d5f283",
+  "playa-del-carmen": "d5dj1d",
+  tulum: "d59fcx",
+  valladolid: "d59m8y",
+  chiquila: "d5ccut",
+};
+
+/** El prefijo del slug está localizado; "bus-" solo funciona en los locales en inglés. */
+function busbudLang(locale: string): { path: string; prefix: string } {
+  return locale === "es"
+    ? { path: "es-mx", prefix: "autobus" }
+    : { path: "en", prefix: "bus" };
+}
+
 /**
- * Genera link de búsqueda de autobuses en Busbud
+ * Genera link de búsqueda de autobuses en Busbud.
  * Busbud compara TODAS las líneas mexicanas y genera comisión por reserva.
+ *
+ * Si el par de ciudades está en BUSBUD_CITY_IDS, devuelve el deep link a esa
+ * ruta. Si no, devuelve el buscador en vez de una URL rota.
  */
 export function getBusSearchUrl(params: {
   originCity: string; // nombre de la ciudad en inglés (slug-friendly)
@@ -501,11 +537,17 @@ export function getBusSearchUrl(params: {
       .replace(/\s+/g, "-")
       .replace(/[^a-z0-9-]/g, "");
 
-  const lang = locale === "es" ? "es-mx" : locale === "fr" ? "fr" : "en";
+  const { path, prefix } = busbudLang(locale);
   const originSlug = slugify(originCity);
   const destSlug = slugify(destCity);
+  const originId = BUSBUD_CITY_IDS[originSlug];
+  const destId = BUSBUD_CITY_IDS[destSlug];
 
-  let url = `https://www.busbud.com/${lang}/bus-${originSlug}-${destSlug}`;
+  if (!originId || !destId) {
+    return getBusSearchGenericUrl({ locale });
+  }
+
+  let url = `https://www.busbud.com/${path}/${prefix}-${originSlug}-${destSlug}/i/${originId}-${destId}`;
 
   if (departDate) {
     url += `?outbound_date=${departDate}`;
@@ -515,14 +557,15 @@ export function getBusSearchUrl(params: {
 }
 
 /**
- * Genera link genérico de búsqueda de autobuses en Busbud México
+ * Genera link genérico al buscador de Busbud.
+ * `/d/bus-tickets/mexico` devuelve 404; la home localizada sí resuelve.
  */
 export function getBusSearchGenericUrl(params: {
   locale?: "es" | "en" | "fr";
 }): string {
   const { locale = "es" } = params;
-  const lang = locale === "es" ? "es-mx" : locale === "fr" ? "fr" : "en";
-  return tpDeepLink("busbud", `https://www.busbud.com/${lang}/d/bus-tickets/mexico`);
+  const { path } = busbudLang(locale);
+  return tpDeepLink("busbud", `https://www.busbud.com/${path}`);
 }
 
 // ============================================================

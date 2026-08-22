@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo, useId } from "react";
+import { useTravelDates } from "@/lib/travel-dates";
 import { useLocale } from "next-intl";
 import { Locale } from "@/types/common";
 import { getBusSearchUrl } from "@/lib/affiliate";
@@ -98,11 +99,7 @@ export default function BusSearchEmbed() {
   const destId = `${idPrefix}dest`;
   const departId = `${idPrefix}depart`;
 
-  const tomorrow = useMemo(() => {
-    const d = new Date();
-    d.setDate(d.getDate() + 1);
-    return d.toISOString().split("T")[0];
-  }, []);
+  const { today, first: tomorrow } = useTravelDates(1);
 
   const sortedCities = useMemo(() => {
     return [...BUS_CITIES].sort((a, b) =>
@@ -250,7 +247,7 @@ export default function BusSearchEmbed() {
                 type="date"
                 value={departDate || tomorrow}
                 onChange={(e) => setDepartDate(e.target.value)}
-                min={tomorrow}
+                min={today || undefined}
                 className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
               />
             </div>

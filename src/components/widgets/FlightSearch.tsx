@@ -4,6 +4,7 @@ import { useState, useMemo, useId } from "react";
 import { useLocale } from "next-intl";
 import { Airport } from "@/types/airport";
 import { Locale } from "@/types/common";
+import { useTravelDates } from "@/lib/travel-dates";
 import { localize } from "@/lib/utils";
 import { getFlightSearchUrl } from "@/lib/affiliate";
 import { trackAffiliateClick } from "@/lib/analytics";
@@ -31,18 +32,8 @@ export default function FlightSearch({ airports, defaultOrigin = "", defaultDest
   const returnId = `${idPrefix}return`;
   const paxId = `${idPrefix}pax`;
 
-  // Default dates: tomorrow + 7 days later
-  const tomorrow = useMemo(() => {
-    const d = new Date();
-    d.setDate(d.getDate() + 1);
-    return d.toISOString().split("T")[0];
-  }, []);
-
-  const weekLater = useMemo(() => {
-    const d = new Date();
-    d.setDate(d.getDate() + 8);
-    return d.toISOString().split("T")[0];
-  }, []);
+  // Fechas por defecto: mañana + 7 días después. El mínimo seleccionable es hoy.
+  const { today, first: tomorrow, second: weekLater } = useTravelDates(1, 8);
 
   const handleSearch = () => {
     if (!origin || !destination) {
@@ -227,7 +218,7 @@ export default function FlightSearch({ airports, defaultOrigin = "", defaultDest
             type="date"
             value={departDate || tomorrow}
             onChange={(e) => setDepartDate(e.target.value)}
-            min={tomorrow}
+            min={today || undefined}
             className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-terracotta-500/50 focus:border-terracotta-500"
           />
         </div>
@@ -242,7 +233,7 @@ export default function FlightSearch({ airports, defaultOrigin = "", defaultDest
               type="date"
               value={returnDate || weekLater}
               onChange={(e) => setReturnDate(e.target.value)}
-              min={departDate || tomorrow}
+              min={departDate || today || undefined}
               className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-terracotta-500/50 focus:border-terracotta-500"
             />
           </div>

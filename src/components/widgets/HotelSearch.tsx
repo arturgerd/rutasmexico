@@ -4,6 +4,7 @@ import { useState, useMemo, useId } from "react";
 import { useLocale } from "next-intl";
 import { Airport } from "@/types/airport";
 import { Locale } from "@/types/common";
+import { useTravelDates } from "@/lib/travel-dates";
 import { localize } from "@/lib/utils";
 import { getHotelSearchUrl } from "@/lib/affiliate";
 import { trackAffiliateClick } from "@/lib/analytics";
@@ -27,17 +28,7 @@ export default function HotelSearch({ airports, defaultCity = "", compact = fals
   const outId = `${idPrefix}out`;
   const guestsId = `${idPrefix}guests`;
 
-  const tomorrow = useMemo(() => {
-    const d = new Date();
-    d.setDate(d.getDate() + 1);
-    return d.toISOString().split("T")[0];
-  }, []);
-
-  const threeDaysLater = useMemo(() => {
-    const d = new Date();
-    d.setDate(d.getDate() + 4);
-    return d.toISOString().split("T")[0];
-  }, []);
+  const { today, first: tomorrow, second: threeDaysLater } = useTravelDates(1, 4);
 
   // Deduplicate cities (some cities have multiple airports)
   const cities = useMemo(() => {
@@ -141,7 +132,7 @@ export default function HotelSearch({ airports, defaultCity = "", compact = fals
             type="date"
             value={checkIn || tomorrow}
             onChange={(e) => setCheckIn(e.target.value)}
-            min={tomorrow}
+            min={today || undefined}
             className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-terracotta-500/50 focus:border-terracotta-500"
           />
         </div>
@@ -155,7 +146,7 @@ export default function HotelSearch({ airports, defaultCity = "", compact = fals
             type="date"
             value={checkOut || threeDaysLater}
             onChange={(e) => setCheckOut(e.target.value)}
-            min={checkIn || tomorrow}
+            min={checkIn || today || undefined}
             className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-terracotta-500/50 focus:border-terracotta-500"
           />
         </div>
