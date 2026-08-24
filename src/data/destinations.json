@@ -2394,5 +2394,98 @@
     },
     "airportIATA": "CUN",
     "lastModified": "2026-06-14"
+  },
+  {
+    "id": "isla-mujeres",
+    "slug": "isla-mujeres",
+    "name": {
+      "es": "Isla Mujeres",
+      "en": "Isla Mujeres"
+    },
+    "shortName": "Isla Mujeres",
+    "coordinates": {
+      "lat": 21.2335,
+      "lng": -86.729
+    },
+    "state": {
+      "es": "Quintana Roo",
+      "en": "Quintana Roo"
+    },
+    "region": "peninsula",
+    "description": {
+      "es": "Isla de 7 km frente a Cancún, a veinte minutos en ferry. Playa Norte es la playa plana y turquesa que la gente imagina cuando piensa en el Caribe, y la isla entera se recorre en carrito de golf en una tarde.",
+      "en": "A 7 km island facing Cancún, twenty minutes away by ferry. Playa Norte is the flat turquoise beach people picture when they imagine the Caribbean, and you can drive the whole island by golf cart in an afternoon."
+    },
+    "longDescription": {
+      "es": "Isla Mujeres es la escapada corta de Cancún, y funciona precisamente porque es lo contrario: siete kilómetros de largo por apenas ochocientos metros de ancho, sin bulevar de resorts y con calles por las que caben carritos de golf y poco más. En el extremo norte está Playa Norte, protegida del oleaje y con un metro de profundidad durante decenas de metros mar adentro, que es la razón por la que casi todo el mundo viene. En el extremo sur, Punta Sur combina un acantilado, los restos de un templo dedicado a Ixchel y el punto donde primero amanece en México. Entre los dos extremos hay colonias donde vive gente todo el año, marisquerías de pueblo y tramos de costa oriental con oleaje real y prácticamente nadie. Se puede hacer en el día desde Cancún, pero la isla cambia por completo cuando se van los ferris de la tarde: si puedes, duerme una noche.",
+      "en": "Isla Mujeres is Cancún's short escape, and it works precisely because it's the opposite: seven kilometres long by barely eight hundred metres wide, with no resort boulevard and streets sized for golf carts and little else. At the northern tip sits Playa Norte, sheltered from the swell and waist-deep for dozens of metres out, which is why almost everyone comes. At the southern tip, Punta Sur combines a cliff, the remains of a temple to Ixchel and the point where the sun first rises over Mexico. Between the two ends there are neighbourhoods where people live year-round, village seafood counters and stretches of east-facing coast with real surf and almost nobody on them. You can do it in a day from Cancún, but the island changes completely once the afternoon ferries leave: if you can, stay a night."
+    },
+    "heroImage": "https://images.unsplash.com/photo-1518638150340-f706e86654de?w=1200&h=630&fit=crop&q=80",
+    "highlights": [
+      {
+        "es": "Playa Norte: agua plana y de un metro de profundidad durante decenas de metros, sin oleaje y casi sin sargazo",
+        "en": "Playa Norte: flat, waist-deep water for dozens of metres, no surf and almost no sargassum"
+      },
+      {
+        "es": "Recorrer los 7 km de la isla en carrito de golf, de Punta Norte a Punta Sur, en una tarde",
+        "en": "Driving the island's 7 km by golf cart, from Punta Norte to Punta Sur, in an afternoon"
+      },
+      {
+        "es": "Punta Sur: acantilado, restos del templo de Ixchel y el primer amanecer de México",
+        "en": "Punta Sur: a cliff, the remains of the temple to Ixchel and Mexico's first sunrise"
+      },
+      {
+        "es": "Snorkel en el arrecife y en el Museo Subacuático de Arte (MUSA) con operador autorizado",
+        "en": "Snorkelling the reef and the Underwater Museum of Art (MUSA) with an authorised operator"
+      }
+    ],
+    "gettingAround": {
+      "es": "El centro y Playa Norte se recorren caminando: del muelle a la playa hay unos diez minutos. Para el resto de la isla, el carrito de golf es el transporte estándar (unos 1,150 MXN por ocho horas o 1,300-1,600 por veinticuatro, con gasolina incluida si el operador es serio). También hay taxis con tarifa fija por tramo, bicicletas y scooters. No necesitas auto: de hecho, llevarlo en el ferry cuesta más y estorba.",
+      "en": "The town and Playa Norte are walkable: about ten minutes from the pier to the beach. For the rest of the island the golf cart is the standard vehicle (around 1,150 MXN for eight hours or 1,300-1,600 for twenty-four, with fuel included if the operator is reputable). There are also taxis with fixed per-leg fares, bicycles and scooters. You don't need a car: taking one on the ferry costs more and gets in the way."
+    },
+    "safetyTips": [
+      {
+        "es": "La costa oriental de la isla da al mar abierto y tiene corrientes: se ve preciosa desde el carrito, pero no es para meterse. Nada en Playa Norte o en las calas protegidas del poniente.",
+        "en": "The island's east coast faces the open sea and has currents: it looks beautiful from the cart, but it isn't for swimming. Swim at Playa Norte or in the sheltered coves on the west side."
+      },
+      {
+        "es": "Confirma el horario del último ferry antes de bajar del primero. Si vas y vuelves en el día, quedarte varado significa pagar una noche imprevista en temporada alta.",
+        "en": "Check the last ferry time before you step off the first one. On a day trip, getting stranded means paying for an unplanned night in high season."
+      }
+    ],
+    "foodRecommendations": [
+      {
+        "name": "Tikin xic",
+        "description": {
+          "es": "Pescado entero abierto, marinado en achiote y naranja agria y asado envuelto en hoja de plátano. Es el platillo de la isla y se come frente al mar.",
+          "en": "Whole butterflied fish marinated in achiote and sour orange, grilled wrapped in banana leaf. It's the island's dish, eaten facing the sea."
+        }
+      },
+      {
+        "name": "Ceviche y cocteles de caracol",
+        "description": {
+          "es": "Marisco fresco en las marisquerías del centro y de la costa poniente. Pregunta el precio antes de ordenar lo que se cobra por peso.",
+          "en": "Fresh seafood at the counters downtown and along the west coast. Ask the price before ordering anything sold by weight."
+        }
+      },
+      {
+        "name": "Marquesitas y antojitos del centro",
+        "description": {
+          "es": "Por la noche, los puestos de la zona peatonal venden marquesitas, elotes y antojitos a precio de pueblo, no de resort.",
+          "en": "At night the stalls in the pedestrian area sell marquesitas, corn and snacks at village prices, not resort prices."
+        }
+      }
+    ],
+    "averageDailyBudget": {
+      "min": 900,
+      "max": 3500,
+      "currency": "MXN"
+    },
+    "bestTimeToVisit": {
+      "es": "De diciembre a abril, con mar en calma y poca lluvia. Playa Norte mira al norte y al poniente, protegida dentro de la Bahía de Mujeres, así que recibe mucho menos sargazo que la costa oriental de Cancún incluso en plena temporada, de abril a octubre. Evita septiembre y octubre por huracanes, y ten en cuenta que en Semana Santa y en diciembre la isla se llena y los ferris salen a tope.",
+      "en": "December to April, with calm seas and little rain. Playa Norte faces north and west, sheltered inside Bahía de Mujeres, so it gets far less sargassum than Cancún's east-facing coast even at the height of the season, April to October. Avoid September and October for hurricanes, and note that at Easter and in December the island fills up and the ferries run packed."
+    },
+    "airportIATA": "CUN",
+    "lastModified": "2026-08-24"
   }
 ]

@@ -68,16 +68,28 @@ export default function DestinoRapido({ locale }: { locale: string }) {
 
             <p className="mt-3 text-sm leading-relaxed text-arena-700">{l(row.note, locale)}</p>
 
-            {row.camionSlug && (
-              <Link
-                href={`/${locale}/camiones-cancun/${row.camionSlug}`}
-                className="mt-2 inline-block text-sm font-medium text-terracotta-600 underline-offset-2 hover:underline"
-              >
-                {isEs
-                  ? `Ver el recorrido del ${row.camionSlug.toUpperCase()}`
-                  : `See the ${row.camionSlug.toUpperCase()} route`}
-              </Link>
-            )}
+            <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1">
+              {row.camionSlug && (
+                <Link
+                  href={`/${locale}/camiones-cancun/${row.camionSlug}`}
+                  className="text-sm font-medium text-terracotta-600 underline-offset-2 hover:underline"
+                >
+                  {isEs
+                    ? `Ver el recorrido del ${row.camionSlug.toUpperCase()}`
+                    : `See the ${row.camionSlug.toUpperCase()} route`}
+                </Link>
+              )}
+              {row.destinoSlug && (
+                <Link
+                  href={`/${locale}/destinos/${row.destinoSlug}`}
+                  className="text-sm font-medium text-terracotta-600 underline-offset-2 hover:underline"
+                >
+                  {isEs
+                    ? `Guía de ${l(row.destination, locale)}`
+                    : `${l(row.destination, locale)} guide`}
+                </Link>
+              )}
+            </div>
           </li>
         ))}
       </ul>
