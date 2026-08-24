@@ -7,6 +7,7 @@ import ZonaHoteleraGuide from "@/components/airport/ZonaHoteleraGuide";
 import DestinoRapido from "@/components/airport/DestinoRapido";
 import LugaresDeInteres from "@/components/airport/LugaresDeInteres";
 import LugarDetalle from "@/components/airport/LugarDetalle";
+import Opiniones from "@/components/opiniones/Opiniones";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import { formatCheckedOn } from "@/components/ui/DataConfidence";
 import { getCancunAirportGuide } from "@/lib/data/aeropuerto-cun";
@@ -409,6 +410,10 @@ export default async function AeropuertoCancunPage({
               ))}
             </div>
           </section>
+
+          {/* Las opiniones van al final: quien llega hasta aqui ya leyo la guia
+              y es quien puede corregirla con lo que le paso de verdad. */}
+          <Opiniones locale={locale} tema="aeropuerto-cancun" />
 
           {/* Siguientes pasos */}
           <section className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">

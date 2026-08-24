@@ -3,6 +3,7 @@ import { setRequestLocale } from "next-intl/server";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import DataConfidence from "@/components/ui/DataConfidence";
 import CamionesExplorer from "@/components/camiones/CamionesExplorer";
+import Opiniones from "@/components/opiniones/Opiniones";
 import {
   CAMIONES_ATTRIBUTION,
   CAMIONES_FARE_VERIFIED_ON,
@@ -349,6 +350,13 @@ export default async function CamionesCancunPage({
             ))}
           </div>
         </section>
+
+        {/* Nadie conoce mejor una ruta que quien la toma a diario. */}
+        <Opiniones
+          locale={locale}
+          tema="camiones-cancun"
+          titulo={isEs ? "Lo que cuenta quien se sube" : "What the people who ride say"}
+        />
 
         {/* Siguientes pasos */}
         <section className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3">
