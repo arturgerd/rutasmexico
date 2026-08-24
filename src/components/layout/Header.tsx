@@ -77,7 +77,12 @@ export default function Header() {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-4 lg:gap-5">
+          {/* Once elementos no caben en una barra horizontal hasta bien pasados
+              los 1300 px. Por debajo de lg la barra entera cede su sitio al menu
+              desplegable, y los enlaces secundarios no aparecen hasta xl. En
+              ambos casos el menu movil los lista todos, asi que no se pierde
+              ningun destino: solo cambia por donde se llega. */}
+          <nav className="hidden lg:flex items-center gap-3">
             {primaryLinks.map((link) => (
               <Link
                 key={link.href}
@@ -92,7 +97,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="hidden lg:inline-flex items-center gap-1.5 text-arena-700 hover:text-terracotta-500 font-medium transition-colors text-sm whitespace-nowrap rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 focus-visible:ring-offset-2"
+                className="hidden xl:inline-flex items-center gap-1.5 text-arena-700 hover:text-terracotta-500 font-medium transition-colors text-sm whitespace-nowrap rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 focus-visible:ring-offset-2"
               >
                 {link.icon && <Icon name={link.icon} className="w-4 h-4" />}
                 {link.label}
@@ -112,7 +117,7 @@ export default function Header() {
           <button
             ref={menuButtonRef}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-3 -mr-3 min-w-[44px] min-h-[44px] inline-flex items-center justify-center text-arena-700 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500"
+            className="lg:hidden p-3 -mr-3 min-w-[44px] min-h-[44px] inline-flex items-center justify-center text-arena-700 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500"
             aria-label={mobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
             aria-expanded={mobileMenuOpen}
             aria-controls="mobile-nav"
@@ -131,7 +136,7 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <nav id="mobile-nav" className="md:hidden pb-4 border-t border-arena-200 pt-4">
+          <nav id="mobile-nav" className="lg:hidden pb-4 border-t border-arena-200 pt-4">
             <div className="flex flex-col gap-3">
               <Link
                 href={`/${locale}/futbol`}

@@ -20,11 +20,9 @@ export const DESTINATION_IMAGES: Record<string, DestinationImage> = {
     alt: { es: "Playa de Cancún, Mar Caribe", en: "Cancun Beach, Caribbean Sea" },
     credit: "Unsplash",
   },
-  // PENDIENTE: foto propia de Playa Norte. Por ahora usa la genérica ya
-  // verificada del archivo en vez de un ID inventado que devolvería 404.
   "isla-mujeres": {
-    url: "https://images.unsplash.com/photo-1518638150340-f706e86654de?w=800&h=500&fit=crop&q=80",
-    alt: { es: "Costa del Caribe mexicano", en: "Mexican Caribbean coast" },
+    url: "https://images.unsplash.com/photo-1591891231877-c01bc4299a67?w=800&h=500&fit=crop&q=80",
+    alt: { es: "Orilla de playa en Isla Mujeres", en: "Beach shore on Isla Mujeres" },
     credit: "Unsplash",
   },
   oaxaca: {

@@ -8,10 +8,14 @@ import { Locale, LocalizedString } from "@/types/common";
 import { localize } from "@/lib/utils";
 import { useLocale } from "next-intl";
 
+// Los iconos se sirven desde /public en vez de unpkg: el CSP del sitio no
+// permite img-src externo, asi que las URLs del CDN salian bloqueadas y el pin
+// se veia roto en todas las fichas de destino con terminal. Copiados de
+// node_modules/leaflet/dist/images.
 const pinIcon = L.icon({
-  iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
-  iconRetinaUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
-  shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+  iconUrl: "/leaflet/marker-icon.png",
+  iconRetinaUrl: "/leaflet/marker-icon-2x.png",
+  shadowUrl: "/leaflet/marker-shadow.png",
   iconSize: [25, 41],
   iconAnchor: [12, 41],
   popupAnchor: [1, -34],

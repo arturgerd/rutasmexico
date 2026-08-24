@@ -50,6 +50,18 @@ export default function Footer() {
                   {tc("popularRoutes")}
                 </Link>
               </li>
+              {/* La seccion de camiones solo se alcanzaba desde la guia del
+                  aeropuerto. En el pie cabe; en la nav superior ya no. */}
+              <li>
+                <Link href={`/${locale}/aeropuerto-cancun`} className="hover:text-terracotta-400 transition-colors">
+                  {locale === "es" ? "Aeropuerto de Cancún" : "Cancún airport"}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/camiones-cancun`} className="hover:text-terracotta-400 transition-colors">
+                  {locale === "es" ? "Camiones de Cancún" : "Cancún city buses"}
+                </Link>
+              </li>
               <li>
                 <Link href={`/${locale}/blog`} className="hover:text-terracotta-400 transition-colors">
                   Blog
