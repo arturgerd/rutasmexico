@@ -38,6 +38,17 @@ const SRC =
 const LAST_REVIEWED = "2026-08-18";
 
 /**
+ * La tarifa del corredor de la Zona Hotelera está comprobada en campo, pagando
+ * el pasaje; la urbana sigue siendo referencia pública.
+ *
+ * La distinción importa y por eso la confianza viaja POR RUTA y no como una
+ * etiqueta global de la página: dar por verificados los $10 urbanos porque
+ * comprobamos los $12 de Kukulcán sería exactamente el tipo de salto que la
+ * etiqueta existe para impedir.
+ */
+const FARE_VERIFIED_ON = "2026-08-22";
+
+/**
  * Traducción y reescritura por ruta. El `sign` (letrero de parabrisas) NO se
  * traduce a propósito: es el texto que el pasajero tiene que reconocer pintado
  * en el cristal, traducirlo lo volvería inútil.
@@ -332,6 +343,8 @@ const routes = raw.routes.map((r) => {
     vehicleType: r.vehicleType,
     coverage: r.coverage,
     fareMxn: r.fareMxn,
+    fareConfidence: r.coverage === "hotelera" ? "verified" : "approx",
+    fareCheckedOn: r.coverage === "hotelera" ? FARE_VERIFIED_ON : LAST_REVIEWED,
     allDay: r.allDay,
     schedule: localizedSchedule(r),
     color: r.color,
@@ -381,6 +394,7 @@ writeFileSync(
       coverage: r.coverage,
       vehicleType: r.vehicleType,
       fareMxn: r.fareMxn,
+      fareConfidence: r.fareConfidence,
       allDay: r.allDay,
       name: r.name,
       stops: r.stops,

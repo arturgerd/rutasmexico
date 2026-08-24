@@ -27,6 +27,8 @@ interface Place {
   minutes: number;
   /** Ruta de camión que te deja ahí. Enlaza a su página del catálogo. */
   camion: string | null;
+  /** Destino con guía propia en el sitio, si existe. */
+  destino?: string;
   tip: LocalizedString;
 }
 
@@ -153,6 +155,14 @@ export default function LugaresDeInteres({ locale }: { locale: string }) {
                           {isEs
                             ? `Recorrido del ${place.camion.toUpperCase()}`
                             : `${place.camion.toUpperCase()} route map`}
+                        </Link>
+                      )}
+                      {place.destino && (
+                        <Link
+                          href={`/${locale}/destinos/${place.destino}`}
+                          className="text-sm font-medium text-terracotta-600 underline-offset-2 hover:underline"
+                        >
+                          {isEs ? `Guía de ${place.name}` : `${place.name} guide`}
                         </Link>
                       )}
                       {CON_DETALLE.has(place.id) && (

@@ -10,6 +10,8 @@ import { Locale } from "@/types/common";
 import { setRequestLocale } from "next-intl/server";
 import DestinationDetail from "@/components/destinations/DestinationDetail";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
+import Opiniones from "@/components/opiniones/Opiniones";
+import { TEMAS_OPINION } from "@/components/opiniones/temas";
 
 export async function generateStaticParams() {
   const destinations = await getAllDestinations();
@@ -208,6 +210,13 @@ export default async function DestinationPage({
         relatedBlog={relatedBlog}
         hasWeddingGuide={hasWeddingGuide}
       />
+      {/* Solo en los destinos que tienen tema propio. En el resto la seccion
+          apareceria vacia y con un selector que no los incluye. */}
+      {TEMAS_OPINION.some((t) => t.id === slug) && (
+        <div className="container-custom pb-12">
+          <Opiniones locale={locale} tema={slug} />
+        </div>
+      )}
     </>
   );
 }

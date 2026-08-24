@@ -1,0 +1,5 @@
+{
+  "_comentario": "Opiniones de lectores YA REVISADAS Y APROBADAS. Nada llega aquí solo: el formulario del sitio manda las opiniones a Formspree y sólo aparecen en la web cuando alguien las lee, decide publicarlas y las añade a mano a este archivo. No automatizar ese paso. Campos: id (slug único), nombre y ciudad tal como los escribió la persona, tema (debe existir en components/opiniones/temas.ts), visita (texto libre, cuándo fue), texto (se puede recortar por longitud, nunca cambiar el sentido), aprobadoEl (fecha en que se publicó).",
+  "lastReviewed": "2026-08-24",
+  "opiniones": []
+}

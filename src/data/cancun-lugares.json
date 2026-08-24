@@ -146,7 +146,7 @@
         "es": "Playa Norte es la playa que la gente imagina cuando piensa en el Caribe: agua turquesa, plana y de un metro de profundidad durante decenas de metros. La isla se recorre entera en carrito de golf en una tarde. Si sólo puedes hacer una excursión, es ésta.",
         "en": "Playa Norte is the beach people picture when they imagine the Caribbean: turquoise, flat, waist-deep for dozens of metres. You can drive the whole island by golf cart in an afternoon. If you only make one trip, make it this one."
       },
-      "entry": { "amountMxn": 320, "note": { "es": "Ferry redondo desde Puerto Juárez", "en": "Return ferry from Puerto Juárez" } },
+      "entry": { "amountMxn": 300, "note": { "es": "Ferry redondo desde Puerto Juárez", "en": "Return ferry from Puerto Juárez" } },
       "howTo": {
         "es": "Camión al muelle de Puerto Juárez y de ahí el ferry, que sale cada media hora y tarda veinte minutos. Hay ferries desde la Zona Hotelera, pero cuestan bastante más.",
         "en": "Bus to the Puerto Juárez pier, then the ferry, which leaves every half hour and takes twenty minutes. There are ferries from the Hotel Zone, but they cost considerably more."
@@ -154,6 +154,7 @@
       "priceMxn": 12,
       "minutes": 60,
       "camion": "r10",
+      "destino": "isla-mujeres",
       "tip": {
         "es": "El último ferry de regreso sale cerca de las 23:30. Confírmalo al llegar.",
         "en": "The last ferry back leaves around 23:30. Confirm it when you arrive."

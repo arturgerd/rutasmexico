@@ -11,10 +11,18 @@ import type { LocalizedString } from "@/types/common";
  * guía suma bien.
  */
 
-/** Tarifa del camión urbano que entra a Kukulcán. Coincide con el catálogo de camiones. */
+/**
+ * Tarifa del camión urbano que entra a Kukulcán, comprobada en campo pagando el
+ * pasaje. Coincide con el catálogo de camiones, donde va etiquetada como
+ * verificada ruta por ruta.
+ */
 const CAMION_HOTELERA_MXN = 12;
-/** Ferry Puerto Juárez → Isla Mujeres, sencillo. El redondo ronda los $320. */
-const FERRY_ISLA_SENCILLO_MXN = 160;
+/**
+ * Ferry Ultramar Puerto Juárez → Isla Mujeres, sencillo. El redondo ronda los
+ * $300. Los muelles de la Zona Hotelera (Playa Tortugas km 6.5 y Playa Caracol
+ * km 9.5) cuestan bastante más por el mismo trayecto.
+ */
+const FERRY_ISLA_SENCILLO_MXN = 150;
 /** Colectivo del centro a Puerto Morelos. Se paga en efectivo al subir. */
 const COLECTIVO_MORELOS_MXN = 80;
 
@@ -34,6 +42,8 @@ export interface ArrivalRow {
   note: LocalizedString;
   /** Ruta de camión que remata el trayecto, si la hay. Enlaza a su página. */
   camionSlug?: string;
+  /** Destino con guía propia en el sitio, si existe. */
+  destinoSlug?: string;
 }
 
 function priceOf(id: string): number {
@@ -119,6 +129,7 @@ export function getArrivalRows(): ArrivalRow[] {
         en: "The ferry leaves Puerto Juárez every half hour and takes twenty minutes. The ones from the Hotel Zone cost considerably more.",
       },
       camionSlug: "r10",
+      destinoSlug: "isla-mujeres",
     },
     {
       id: "puerto-morelos",

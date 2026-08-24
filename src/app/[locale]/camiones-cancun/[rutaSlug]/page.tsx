@@ -6,7 +6,6 @@ import DataConfidence from "@/components/ui/DataConfidence";
 import RutaMapLoader from "@/components/camiones/RutaMapLoader";
 import {
   CAMIONES_ATTRIBUTION,
-  CAMIONES_LAST_REVIEWED,
   getAllCamionRoutes,
   getCamionRouteBySlug,
   getRelatedCamionRoutes,
@@ -202,15 +201,21 @@ export default async function CamionRutaPage({
               ))}
             </dl>
 
+            {/* La etiqueta la pone la ruta, no la página: la tarifa del corredor
+                de Kukulcán está comprobada en campo y la urbana no. */}
             <DataConfidence
               className="mt-4"
-              level="approx"
-              checkedOn={CAMIONES_LAST_REVIEWED}
+              level={route.fareConfidence}
+              checkedOn={route.fareCheckedOn}
               locale={locale}
               note={
-                isEs
-                  ? "Tarifa y letrero de referencia pública. No hay horarios oficiales publicados para esta ruta."
-                  : "Fare and sign from public reference data. No official timetable is published for this route."
+                route.fareConfidence === "verified"
+                  ? isEs
+                    ? "Tarifa comprobada pagando el pasaje en el corredor de la Zona Hotelera. El letrero es de referencia pública y no hay horarios oficiales publicados para esta ruta."
+                    : "Fare checked by paying it on the Hotel Zone corridor. The windshield sign comes from public reference data, and no official timetable is published for this route."
+                  : isEs
+                    ? "Tarifa y letrero de referencia pública, sin comprobación propia. No hay horarios oficiales publicados para esta ruta."
+                    : "Fare and sign from public reference data, not checked by us. No official timetable is published for this route."
               }
             />
           </aside>
