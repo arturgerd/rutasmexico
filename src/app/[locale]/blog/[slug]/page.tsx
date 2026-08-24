@@ -141,11 +141,54 @@ export default async function BlogPostPage({
     ],
   };
 
+  // FAQPage sólo cuando NO estamos emitiendo ya un HowTo: Google desaconseja
+  // apilar los dos en la misma página porque señalan intenciones distintas.
+  // Los pares pregunta/respuesta se detectan escaneando los H2 y H3 que abren
+  // con ¿, cierran con ? o empiezan por una palabra interrogativa en inglés, y
+  // se toma como respuesta el contenido que sigue hasta el próximo encabezado.
+  const faqs: { question: string; answer: string }[] = [];
+  if (!howToSchema) {
+    const sectionRe = /<(h2|h3)[^>]*>([\s\S]*?)<\/\1>([\s\S]*?)(?=<h[23][^>]*>|$)/gi;
+    let section: RegExpExecArray | null;
+    while ((section = sectionRe.exec(localizedContent)) !== null && faqs.length < 10) {
+      const heading = section[2].replace(/<[^>]+>/g, "").replace(/&[a-z]+;/gi, " ").trim();
+      const isQuestion =
+        /^¿/.test(heading) ||
+        /\?\s*$/.test(heading) ||
+        /^(what|how|why|when|where|which|is|are|do|does|can)\b/i.test(heading);
+      if (!isQuestion) continue;
+      const answer = section[3]
+        .replace(/<[^>]+>/g, " ")
+        .replace(/&[a-z]+;/gi, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+      // Demasiado corta suele ser un encabezado suelto; demasiado larga es una
+      // sección entera volcada, que confunde el patrón de FAQ.
+      if (answer.length < 40 || answer.length > 900) continue;
+      faqs.push({ question: heading, answer });
+    }
+  }
+  const faqSchema =
+    faqs.length >= 2
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.question,
+            acceptedAnswer: { "@type": "Answer", text: f.answer },
+          })),
+        }
+      : null;
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {howToSchema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      )}
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <div className="min-h-screen bg-white">

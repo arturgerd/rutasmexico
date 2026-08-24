@@ -1,5 +1,9 @@
 import { notFound } from "next/navigation";
-import { getAllDestinations, getDestinationBySlug } from "@/lib/data/destinations";
+import {
+  getAllDestinations,
+  getDestinationBySlug,
+  getNearbyDestinations,
+} from "@/lib/data/destinations";
 import { getRoutesByDestination } from "@/lib/data/routes";
 import { getTerminalsByCity } from "@/lib/data/terminals";
 import { getBlogPostsForDestination } from "@/lib/data/blog";
@@ -9,9 +13,49 @@ import { localize, seoAlternates } from "@/lib/utils";
 import { Locale } from "@/types/common";
 import { setRequestLocale } from "next-intl/server";
 import DestinationDetail from "@/components/destinations/DestinationDetail";
+import RelatedDestinations from "@/components/destinations/RelatedDestinations";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Opiniones from "@/components/opiniones/Opiniones";
 import { TEMAS_OPINION } from "@/components/opiniones/temas";
+
+// Tipos de turismo por región. El valor anterior era el mismo para los veinte
+// destinos, así que Google no tenía forma de distinguir que Cancún es playa y
+// la Ciudad de México es urbano: con la lista genérica, ninguna página competía
+// por consultas como "destinos de playa en México".
+const TOURIST_TYPES_BY_REGION: Record<string, { es: string[]; en: string[] }> = {
+  peninsula: {
+    es: ["Turismo de playa", "Turismo arqueológico", "Cenotes y buceo", "Gastronomía yucateca"],
+    en: ["Beach tourism", "Archaeological tourism", "Cenotes and diving", "Yucatecan cuisine"],
+  },
+  pacifico: {
+    es: ["Turismo de playa", "Surf", "Avistamiento de ballenas", "Gastronomía costera"],
+    en: ["Beach tourism", "Surfing", "Whale watching", "Coastal cuisine"],
+  },
+  centro: {
+    es: ["Turismo urbano", "Turismo cultural", "Museos y arte", "Gastronomía mexicana"],
+    en: ["Urban tourism", "Cultural tourism", "Museums and art", "Mexican cuisine"],
+  },
+  bajio: {
+    es: ["Pueblos Mágicos", "Patrimonio colonial", "Ruta del vino", "Turismo cultural"],
+    en: ["Magical Towns", "Colonial heritage", "Wine route", "Cultural tourism"],
+  },
+  norte: {
+    es: ["Aventura y desierto", "Turismo de playa", "Naturaleza", "Vida nocturna"],
+    en: ["Adventure and desert", "Beach tourism", "Nature", "Nightlife"],
+  },
+  sur: {
+    es: ["Turismo cultural", "Gastronomía oaxaqueña", "Patrimonio indígena", "Mezcal"],
+    en: ["Cultural tourism", "Oaxacan cuisine", "Indigenous heritage", "Mezcal"],
+  },
+  occidente: {
+    es: ["Turismo de playa", "Ruta del tequila", "Mariachi", "Gastronomía jalisciense"],
+    en: ["Beach tourism", "Tequila route", "Mariachi", "Jalisco cuisine"],
+  },
+  golfo: {
+    es: ["Turismo de playa", "Música tropical", "Historia colonial", "Gastronomía veracruzana"],
+    en: ["Beach tourism", "Tropical music", "Colonial history", "Veracruz cuisine"],
+  },
+};
 
 export async function generateStaticParams() {
   const destinations = await getAllDestinations();
@@ -86,8 +130,11 @@ export default async function DestinationPage({
   const destination = await getDestinationBySlug(slug);
   if (!destination) notFound();
 
-  const routes = await getRoutesByDestination(destination.id);
-  const terminals = await getTerminalsByCity(destination.id);
+  const [routes, terminals, nearby] = await Promise.all([
+    getRoutesByDestination(destination.id),
+    getTerminalsByCity(destination.id),
+    getNearbyDestinations(destination.id, 4),
+  ]);
   const expandedContent = getExpandedContent(slug);
   const relatedBlog = (await getBlogPostsForDestination(destination, 4)).map((p) => ({
     slug: p.slug,
@@ -126,9 +173,25 @@ export default async function DestinationPage({
       latitude: destination.coordinates.lat,
       longitude: destination.coordinates.lng,
     },
-    touristType: locale === "es"
-      ? ["Turismo cultural", "Turismo gastronomico", "Turismo de playa"]
-      : ["Cultural tourism", "Food tourism", "Beach tourism"],
+    containedInPlace: {
+      "@type": "Country",
+      name: locale === "es" ? "México" : "Mexico",
+      sameAs: "https://www.wikidata.org/wiki/Q96",
+    },
+    touristType:
+      TOURIST_TYPES_BY_REGION[destination.region]?.[locale === "es" ? "es" : "en"] ??
+      (locale === "es"
+        ? ["Turismo cultural", "Gastronomía mexicana"]
+        : ["Cultural tourism", "Mexican cuisine"]),
+    // Los cinco primeros highlights como entidades TouristAttraction: Google usa
+    // las atracciones anidadas para los resultados de "qué hacer en X".
+    includesAttraction: destination.highlights.slice(0, 5).map((h) => ({
+      "@type": "TouristAttraction",
+      name: localize(h, locale as Locale),
+    })),
+    publicAccess: true,
+    isAccessibleForFree: true,
+    currenciesAccepted: "MXN",
     // NOTE: no aggregateRating/review here on purpose. The testimonials in
     // destination.reviews are editorial (our own JSON), not verifiable third-party
     // user reviews — marking them up as AggregateRating counts as self-serving
@@ -210,6 +273,7 @@ export default async function DestinationPage({
         relatedBlog={relatedBlog}
         hasWeddingGuide={hasWeddingGuide}
       />
+      <RelatedDestinations destinations={nearby} locale={locale as Locale} />
       {/* Solo en los destinos que tienen tema propio. En el resto la seccion
           apareceria vacia y con un selector que no los incluye. */}
       {TEMAS_OPINION.some((t) => t.id === slug) && (
