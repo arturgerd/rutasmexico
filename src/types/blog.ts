@@ -16,3 +16,11 @@ export interface BlogPost {
   tags: string[];
   readingTime: number; // minutes
 }
+
+/**
+ * Lo que necesita una tarjeta de blog. Es lo que cruza a los componentes
+ * cliente (BlogFilter, BlogCard): sin `content`, que pesa el 95 % del JSON y
+ * que ninguna tarjeta lee. Pasar BlogPost entero metía ~900 KB de HTML de
+ * artículos en el payload de /blog.
+ */
+export type BlogPostSummary = Omit<BlogPost, "content">;

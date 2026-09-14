@@ -10,7 +10,8 @@ import { localize, formatCurrency, formatDuration } from "@/lib/utils";
 import { TRAVEL_MODE_ICONS, TRAVEL_MODE_COLORS } from "@/lib/constants";
 
 interface RouteSearchProps {
-  destinations: Destination[];
+  /** Solo id + nombre: el selector no necesita más y el Destination entero pesa ~150 KB. */
+  destinations: Pick<Destination, "id" | "name">[];
   routes: Route[];
 }
 

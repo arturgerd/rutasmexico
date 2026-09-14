@@ -97,7 +97,7 @@ function teamFlag(name: string): string {
 
 function fmtDate(iso: string, locale: string): string {
   const d = new Date(`${iso}T12:00:00Z`);
-  const intlLocale = locale === "es" ? "es-MX" : locale === "fr" ? "fr-FR" : "en-US";
+  const intlLocale = locale === "es" ? "es-MX" : "en-US";
   return d.toLocaleDateString(intlLocale, { weekday: "short", day: "numeric", month: "short" });
 }
 
@@ -154,29 +154,29 @@ export default function CalendarClient({ matches }: Props) {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div>
             <label className="block text-xs font-bold text-arena-600 uppercase mb-1">
-              {t3(locale, "País sede", "Host country", "Pays hôte")}
+              {t3(locale, "País sede", "Host country")}
             </label>
             <select
               value={country}
               onChange={(e) => setCountry(e.target.value as typeof country)}
               className="w-full rounded-lg border border-arena-300 bg-white px-3 py-2 text-sm"
             >
-              <option value="all">{t3(locale, "Todos", "All", "Tous")}</option>
+              <option value="all">{t3(locale, "Todos", "All")}</option>
               <option value="MX">🇲🇽 México</option>
-              <option value="US">🇺🇸 {t3(locale, "Estados Unidos", "United States", "États-Unis")}</option>
-              <option value="CA">🇨🇦 {t3(locale, "Canadá", "Canada", "Canada")}</option>
+              <option value="US">🇺🇸 {t3(locale, "Estados Unidos", "United States")}</option>
+              <option value="CA">🇨🇦 {t3(locale, "Canadá", "Canada")}</option>
             </select>
           </div>
           <div>
             <label className="block text-xs font-bold text-arena-600 uppercase mb-1">
-              {t3(locale, "Ronda", "Round", "Tour")}
+              {t3(locale, "Ronda", "Round")}
             </label>
             <select
               value={round}
               onChange={(e) => setRound(e.target.value)}
               className="w-full rounded-lg border border-arena-300 bg-white px-3 py-2 text-sm"
             >
-              <option value="all">{t3(locale, "Todas", "All", "Toutes")}</option>
+              <option value="all">{t3(locale, "Todas", "All")}</option>
               {Object.entries(ROUND_LABELS).map(([key, label]) => (
                 <option key={key} value={key}>{label[locale] || label.es}</option>
               ))}
@@ -184,14 +184,14 @@ export default function CalendarClient({ matches }: Props) {
           </div>
           <div>
             <label className="block text-xs font-bold text-arena-600 uppercase mb-1">
-              {t3(locale, "Equipo", "Team", "Équipe")}
+              {t3(locale, "Equipo", "Team")}
             </label>
             <select
               value={team}
               onChange={(e) => setTeam(e.target.value)}
               className="w-full rounded-lg border border-arena-300 bg-white px-3 py-2 text-sm"
             >
-              <option value="">{t3(locale, "Todos los equipos", "All teams", "Toutes les équipes")}</option>
+              <option value="">{t3(locale, "Todos los equipos", "All teams")}</option>
               {teamOptions.map((t) => (
                 <option key={t} value={t}>{t}</option>
               ))}
@@ -206,20 +206,20 @@ export default function CalendarClient({ matches }: Props) {
                 className="w-4 h-4 accent-jade-600"
               />
               <span className="text-sm text-arena-700 font-medium">
-                🇲🇽 {t3(locale, "Solo partidos de México", "Mexico games only", "Matchs du Mexique seulement")}
+                🇲🇽 {t3(locale, "Solo partidos de México", "Mexico games only")}
               </span>
             </label>
           </div>
         </div>
         <div className="mt-3 text-xs text-arena-500">
-          {t3(locale, "Mostrando", "Showing", "Affichage")} <strong>{filtered.length}</strong> {t3(locale, "de", "of", "de")} {matches.length} {t3(locale, "partidos", "matches", "matchs")}
+          {t3(locale, "Mostrando", "Showing")} <strong>{filtered.length}</strong> {t3(locale, "de", "of")} {matches.length} {t3(locale, "partidos", "matches")}
         </div>
       </div>
 
       {/* Lista por fecha */}
       {grouped.length === 0 && (
         <div className="text-center py-12 text-arena-500">
-          {t3(locale, "Sin resultados con esos filtros.", "No matches with those filters.", "Aucun match avec ces filtres.")}
+          {t3(locale, "Sin resultados con esos filtros.", "No matches with those filters.")}
         </div>
       )}
       <div className="space-y-6">
@@ -275,12 +275,12 @@ export default function CalendarClient({ matches }: Props) {
                             </span>
                             {m.penaltiesA != null && m.penaltiesB != null && (
                               <div className="text-[10px] text-arena-500 mt-0.5">
-                                {t3(locale, "Pen.", "Pens", "T.a.b.")} {m.penaltiesA}-{m.penaltiesB}
+                                {t3(locale, "Pen.", "Pens")} {m.penaltiesA}-{m.penaltiesB}
                               </div>
                             )}
                             {m.aet && m.penaltiesA == null && (
                               <div className="text-[10px] text-arena-500 mt-0.5">
-                                {t3(locale, "T. extra", "AET", "Prol.")}
+                                {t3(locale, "T. extra", "AET")}
                               </div>
                             )}
                           </div>

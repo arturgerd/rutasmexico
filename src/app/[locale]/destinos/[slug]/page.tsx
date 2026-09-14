@@ -258,8 +258,8 @@ export default async function DestinationPage({
       <div className="container-custom pt-4">
         <Breadcrumbs
           items={[
-            { name: locale === "es" ? "Inicio" : locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
-            { name: locale === "es" ? "Destinos" : locale === "fr" ? "Destinations" : "Destinations", href: `/${locale}/destinos` },
+            { name: locale === "es" ? "Inicio" : "Home", href: `/${locale}` },
+            { name: locale === "es" ? "Destinos" : "Destinations", href: `/${locale}/destinos` },
             { name },
           ]}
         />

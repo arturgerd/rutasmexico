@@ -13,14 +13,13 @@ export default function HostCitiesBento({ locale, mxCount, usCount, caCount }: H
     {
       anchor: "sedes-mexico",
       flag: "🇲🇽",
-      name: t3(locale, "México", "Mexico", "Mexique"),
+      name: t3(locale, "México", "Mexico"),
       count: mxCount,
-      countLabel: t3(locale, "sedes", "venues", "stades"),
+      countLabel: t3(locale, "sedes", "venues"),
       blurb: t3(
         locale,
         "CDMX (Estadio Azteca), Guadalajara y Monterrey. Partido inaugural en el Azteca.",
-        "Mexico City (Azteca), Guadalajara and Monterrey. Opening match at the Azteca.",
-        "Mexico (Azteca), Guadalajara et Monterrey. Match d'ouverture à l'Azteca."
+        "Mexico City (Azteca), Guadalajara and Monterrey. Opening match at the Azteca."
       ),
       gradient: "from-jade-700 via-jade-800 to-jade-900",
       span: "md:col-span-7 md:row-span-2",
@@ -30,14 +29,13 @@ export default function HostCitiesBento({ locale, mxCount, usCount, caCount }: H
     {
       anchor: "sedes-usa",
       flag: "🇺🇸",
-      name: t3(locale, "Estados Unidos", "United States", "États-Unis"),
+      name: t3(locale, "Estados Unidos", "United States"),
       count: usCount,
-      countLabel: t3(locale, "sedes", "venues", "stades"),
+      countLabel: t3(locale, "sedes", "venues"),
       blurb: t3(
         locale,
         "De Los Ángeles a Nueva York. Semifinales en Atlanta y Dallas, final en NY.",
-        "From Los Angeles to New York. Semifinals in Atlanta and Dallas, final in NY.",
-        "De Los Angeles à New York. Demi-finales à Atlanta et Dallas, finale à NY."
+        "From Los Angeles to New York. Semifinals in Atlanta and Dallas, final in NY."
       ),
       gradient: "from-azul-800 via-azul-900 to-arena-900",
       span: "md:col-span-5 md:row-span-2",
@@ -47,14 +45,13 @@ export default function HostCitiesBento({ locale, mxCount, usCount, caCount }: H
     {
       anchor: "sedes-canada",
       flag: "🇨🇦",
-      name: t3(locale, "Canadá", "Canada", "Canada"),
+      name: t3(locale, "Canadá", "Canada"),
       count: caCount,
-      countLabel: t3(locale, "sedes", "venues", "stades"),
+      countLabel: t3(locale, "sedes", "venues"),
       blurb: t3(
         locale,
         "Toronto (BMO Field) y Vancouver (BC Place). Sin visa para mexicanos: solo eTA.",
-        "Toronto (BMO Field) and Vancouver (BC Place). No visa for Mexicans: just eTA.",
-        "Toronto et Vancouver. Pas de visa pour les Mexicains : juste eTA."
+        "Toronto (BMO Field) and Vancouver (BC Place). No visa for Mexicans: just eTA."
       ),
       gradient: "from-terracotta-700 via-terracotta-800 to-arena-900",
       span: "md:col-span-12",
@@ -71,16 +68,14 @@ export default function HostCitiesBento({ locale, mxCount, usCount, caCount }: H
             {t3(
               locale,
               "Las 16 sedes en 3 países",
-              "16 venues across 3 countries",
-              "16 stades dans 3 pays"
+              "16 venues across 3 countries"
             )}
           </h2>
           <p className="text-arena-600 max-w-2xl mx-auto">
             {t3(
               locale,
               "Explora los países anfitriones del Mundial 2026 y salta directo a la guía de cada sede.",
-              "Explore the host countries of World Cup 2026 and jump straight into each venue guide.",
-              "Explorez les pays hôtes de la Coupe du Monde 2026 et accédez aux guides de chaque stade."
+              "Explore the host countries of World Cup 2026 and jump straight into each venue guide."
             )}
           </p>
         </div>
@@ -113,7 +108,7 @@ export default function HostCitiesBento({ locale, mxCount, usCount, caCount }: H
                   <h3 className="font-display text-2xl md:text-3xl font-bold mb-2 drop-shadow">{c.name}</h3>
                   <p className="text-white/85 text-sm md:text-base leading-snug max-w-md">{c.blurb}</p>
                   <span className="inline-flex items-center gap-1.5 mt-4 text-oro-200 text-sm font-semibold group-hover:gap-3 transition-all">
-                    {t3(locale, "Ver guías", "See guides", "Voir les guides")} →
+                    {t3(locale, "Ver guías", "See guides")} →
                   </span>
                 </div>
               </div>

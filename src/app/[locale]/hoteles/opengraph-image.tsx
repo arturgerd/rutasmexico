@@ -11,15 +11,13 @@ export default async function Image({ params: { locale } }: { params: { locale: 
     emoji: "🏨",
     title: ogText(locale,
       "Hoteles baratos en México",
-      "Cheap hotels in Mexico",
-      "Hôtels pas chers au Mexique"
+      "Cheap hotels in Mexico"
     ),
     subtitle: ogText(locale,
       "Cancún · CDMX · Playa del Carmen · Puerto Vallarta · Los Cabos",
-      "Cancun · Mexico City · Playa del Carmen · Puerto Vallarta · Los Cabos",
-      "Cancun · Mexico · Playa del Carmen · Puerto Vallarta · Los Cabos"
+      "Cancun · Mexico City · Playa del Carmen · Puerto Vallarta · Los Cabos"
     ),
     background: "linear-gradient(135deg, #087f57 0%, #0d9668 100%)",
-    badgeText: ogText(locale, "Compara hoteles", "Compare hotels", "Comparez les hôtels"),
+    badgeText: ogText(locale, "Compara hoteles", "Compare hotels"),
   });
 }

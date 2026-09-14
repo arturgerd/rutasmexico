@@ -42,9 +42,29 @@ export function getPlayedMatches(comp: FutbolCompetition): FutbolMatch[] {
     .sort((a, b) => sortKey(b).localeCompare(sortKey(a)));
 }
 
-/** Partidos programados, del más próximo al más lejano. */
+/** Fecha de hoy en Ciudad de México (YYYY-MM-DD). Las páginas que la usan
+ *  regeneran cada hora (revalidate), así que nunca se quedan más de eso atrás. */
+export function todayCDMX(): string {
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "America/Mexico_City",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date());
+}
+
+/** Partidos programados de hoy en adelante, del más próximo al más lejano.
+ *  Un partido pasado sin marcador cargado NO es "próximo": se oculta hasta
+ *  que alguien registre el resultado, en vez de anunciar fechas ya vencidas. */
 export function getUpcomingMatches(comp: FutbolCompetition): FutbolMatch[] {
+  const today = todayCDMX();
   return comp.matches
-    .filter((m) => m.status === "scheduled")
+    .filter((m) => m.status === "scheduled" && m.date >= today)
     .sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
+}
+
+/** Partidos ya disputados que siguen sin marcador: lo que falta por capturar. */
+export function getPendingResults(comp: FutbolCompetition): FutbolMatch[] {
+  const today = todayCDMX();
+  return comp.matches.filter((m) => m.status === "scheduled" && m.date < today);
 }

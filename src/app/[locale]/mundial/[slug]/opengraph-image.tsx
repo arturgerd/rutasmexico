@@ -21,14 +21,12 @@ export default async function Image({ params }: { params: { locale: string; slug
   const tagline = t3(
     params.locale as Locale,
     "Mundial 2026",
-    "World Cup 2026",
-    "Coupe du Monde 2026"
+    "World Cup 2026"
   );
   const cta = t3(
     params.locale as Locale,
     "Guía oficial de la sede",
-    "Official venue guide",
-    "Guide officiel du stade"
+    "Official venue guide"
   );
 
   return new ImageResponse(

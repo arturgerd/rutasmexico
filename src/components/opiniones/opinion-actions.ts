@@ -2,6 +2,7 @@
 
 import { serverEnv } from "@/lib/env";
 import { TEMAS_OPINION } from "./temas";
+import { isRateLimited } from "@/lib/rate-limit";
 
 /**
  * Recepción de opiniones de lectores.
@@ -42,6 +43,15 @@ export async function submitOpinion(
   // Los bots rellenan todos los campos, incluido el que está oculto. Se les
   // responde con éxito para que no reintenten.
   if (honeypot) return { ok: true, message: "" };
+
+  if (isRateLimited("opinion")) {
+    return {
+      ok: false,
+      message: isEn
+        ? "Too many submissions in a short time. Please try again in a few minutes."
+        : "Demasiados envíos en poco tiempo. Intenta de nuevo en unos minutos.",
+    };
+  }
 
   if (nombre.length < NOMBRE_MIN || nombre.length > NOMBRE_MAX) {
     return {

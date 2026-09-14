@@ -15,9 +15,6 @@ import { z } from "zod";
 const ClientEnvSchema = z.object({
   // Google Analytics measurement id, e.g. "G-XXXXXXXXXX"
   NEXT_PUBLIC_GA_ID: z.string().regex(/^G-[A-Z0-9]+$/, "GA_ID must look like G-XXXXXXXXXX").optional(),
-  // Supabase is configured but currently unused; kept optional for future use
-  NEXT_PUBLIC_SUPABASE_URL: z.string().url().optional(),
-  NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().min(20).optional(),
   // Master switch for Google AdSense. The account was rejected on 2026-04-15,
   // so the adsbygoogle.js script and all <ins> ad slots stay OFF until it's
   // approved — loading them while unapproved only throws "config is not valid"
@@ -32,8 +29,6 @@ const ServerEnvSchema = z.object({
 
 export const clientEnv = ClientEnvSchema.parse({
   NEXT_PUBLIC_GA_ID: process.env.NEXT_PUBLIC_GA_ID,
-  NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
-  NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
   NEXT_PUBLIC_ADSENSE_ENABLED: process.env.NEXT_PUBLIC_ADSENSE_ENABLED,
 });
 

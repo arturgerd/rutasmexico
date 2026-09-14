@@ -112,3 +112,17 @@ export interface MundialVenue {
   mapsEmbedSrc?: string;
   fromMexico?: FromMexico;
 }
+
+/**
+ * Proyección ligera de MundialVenue para las tarjetas de MundialVenueGrid
+ * (componente cliente). El objeto completo pesa ~350 KB por las guías de
+ * transporte, atracciones, seguridad, etc., que la tarjeta nunca muestra.
+ */
+export interface MundialVenueCard {
+  id: string;
+  slug: string;
+  name: LocalizedString;
+  stadium: { name: string; capacity: number };
+  matches: Pick<MundialMatch, "date" | "teamA" | "teamB" | "isMexicoGame">[];
+  avgMatchDayBudget: PriceRange;
+}

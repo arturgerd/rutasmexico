@@ -18,13 +18,13 @@ interface MundialVenueDetailProps {
 const fromCityLabels: Record<string, string> = { CDMX: "CDMX", MTY: "Monterrey", GDL: "Guadalajara" };
 
 const roundLabels: Record<string, Record<string, string>> = {
-  group: { es: "Fase de Grupos", en: "Group Stage", fr: "Phase de Groupes", zh: "小组赛" },
-  "round-of-32": { es: "Ronda de 32", en: "Round of 32", fr: "32es de finale", zh: "32强" },
-  "round-of-16": { es: "Octavos de Final", en: "Round of 16", fr: "Huitièmes de finale", zh: "16强" },
-  quarter: { es: "Cuartos de Final", en: "Quarter Finals", fr: "Quarts de finale", zh: "四分之一决赛" },
-  semi: { es: "Semifinal", en: "Semi Final", fr: "Demi-finale", zh: "半决赛" },
-  "third-place": { es: "Tercer Lugar", en: "Third Place", fr: "Troisième place", zh: "季军赛" },
-  final: { es: "Final", en: "Final", fr: "Finale", zh: "决赛" },
+  group: { es: "Fase de Grupos", en: "Group Stage"},
+  "round-of-32": { es: "Ronda de 32", en: "Round of 32"},
+  "round-of-16": { es: "Octavos de Final", en: "Round of 16"},
+  quarter: { es: "Cuartos de Final", en: "Quarter Finals"},
+  semi: { es: "Semifinal", en: "Semi Final"},
+  "third-place": { es: "Tercer Lugar", en: "Third Place"},
+  final: { es: "Final", en: "Final"},
 };
 
 const safetyStyles: Record<
@@ -112,9 +112,9 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
       <div className="relative py-16 md:py-24 overflow-hidden bg-gradient-to-br from-jade-600 via-arena-900 to-terracotta-700">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(255,255,255,0.08),transparent_40%),radial-gradient(circle_at_80%_70%,rgba(255,255,255,0.06),transparent_40%)]" />
         <div className="container-custom relative z-10">
-          <nav className="text-white/70 text-sm mb-4">
+          <nav aria-label="Breadcrumb" className="text-white/70 text-sm mb-4">
             <Link href={`/${locale}/mundial`} className="hover:text-white transition-colors">
-              {t3(locale, "Mundial 2026", "World Cup 2026", "Coupe du Monde 2026")}
+              {t3(locale, "Mundial 2026", "World Cup 2026")}
             </Link>
             {" / "}
             <span className="text-white">{localize(venue.name, locale)}</span>
@@ -126,7 +126,7 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
                 <span>🏟️</span>
                 <span className="text-white text-sm font-medium">{venue.stadium.name}</span>
                 <span className="text-white/50 text-xs">•</span>
-                <span className="text-white/80 text-xs">{venue.stadium.capacity.toLocaleString()} {t3(locale, "asientos", "seats", "places")}</span>
+                <span className="text-white/80 text-xs">{venue.stadium.capacity.toLocaleString()} {t3(locale, "asientos", "seats")}</span>
               </div>
               <h1 className="font-display text-3xl md:text-5xl font-bold text-white mb-3 drop-shadow-lg">
                 ⚽ {localize(venue.name, locale)}
@@ -140,7 +140,7 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/20 min-w-[180px] shadow-xl">
                 <div className="text-5xl font-bold text-oro-300 drop-shadow-lg">{daysUntil}</div>
                 <div className="text-white/80 text-sm mt-1">
-                  {t3(locale, "días al 1er partido", "days to 1st match", "jours avant le 1er match")}
+                  {t3(locale, "días al 1er partido", "days to 1st match")}
                 </div>
               </div>
             )}
@@ -149,7 +149,7 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
       </div>
 
       {/* Sticky section nav */}
-      <nav className="sticky top-0 z-30 bg-white/95 backdrop-blur-md border-b border-arena-200 shadow-sm">
+      <nav aria-label={t3(locale, "Secciones de la guía", "Guide sections")} className="sticky top-0 z-30 bg-white/95 backdrop-blur-md border-b border-arena-200 shadow-sm">
         <div className="container-custom">
           <div className="flex gap-1 py-2 overflow-x-auto scrollbar-hide">
             {sections.map((s) => (
@@ -159,7 +159,7 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
                 className="flex-shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-semibold text-arena-700 hover:bg-jade-600 hover:text-white transition-all duration-200 whitespace-nowrap"
               >
                 <span>{s.emoji}</span>
-                <span>{t3(locale, s.label.es, s.label.en, s.label.fr)}</span>
+                <span>{t3(locale, s.label.es, s.label.en)}</span>
               </a>
             ))}
           </div>
@@ -170,10 +170,10 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
         {/* Quick stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12">
           {[
-            { icon: "🏟️", value: venue.stadium.capacity.toLocaleString(), label: t3(locale, "Capacidad", "Capacity", "Capacité") },
-            { icon: "⚽", value: venue.matches.length, label: t3(locale, "Partidos", "Matches", "Matchs") },
-            { icon: "🇲🇽", value: venue.matches.filter((m) => m.isMexicoGame).length, label: t3(locale, "De México", "Mexico", "Mexique") },
-            { icon: "📅", value: venue.stadium.yearBuilt, label: t3(locale, "Inaugurado", "Year built", "Année") },
+            { icon: "🏟️", value: venue.stadium.capacity.toLocaleString(), label: t3(locale, "Capacidad", "Capacity") },
+            { icon: "⚽", value: venue.matches.length, label: t3(locale, "Partidos", "Matches") },
+            { icon: "🇲🇽", value: venue.matches.filter((m) => m.isMexicoGame).length, label: t3(locale, "De México", "Mexico") },
+            { icon: "📅", value: venue.stadium.yearBuilt, label: t3(locale, "Inaugurado", "Year built") },
           ].map((s, i) => (
             <div
               key={i}
@@ -188,7 +188,7 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
 
         {/* Matches */}
         <section id="partidos" className="mb-14 scroll-mt-20">
-          <SectionHeader emoji="⚽" title={t3(locale, "Calendario de partidos", "Match schedule", "Calendrier des matchs")} />
+          <SectionHeader emoji="⚽" title={t3(locale, "Calendario de partidos", "Match schedule")} />
           <div className="grid gap-3">
             {venue.matches.map((match, i) => (
               <div
@@ -213,10 +213,10 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
                     </p>
                     <p className="text-xs text-arena-500 mt-0.5">
                       {roundLabels[match.round]?.[locale] || match.round}
-                      {match.group && ` • ${t3(locale, "Grupo", "Group", "Groupe")} ${match.group}`}
-                      {match.aet && ` • ${t3(locale, "T. extra", "AET", "Prol.")}`}
+                      {match.group && ` • ${t3(locale, "Grupo", "Group")} ${match.group}`}
+                      {match.aet && ` • ${t3(locale, "T. extra", "AET")}`}
                       {match.penaltiesA != null && match.penaltiesB != null &&
-                        ` • ${t3(locale, "Penales", "Pens", "T.a.b.")} ${match.penaltiesA}-${match.penaltiesB}`}
+                        ` • ${t3(locale, "Penales", "Pens")} ${match.penaltiesA}-${match.penaltiesB}`}
                     </p>
                   </div>
                 </div>
@@ -233,12 +233,11 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
           <section id="desde-mexico" className="mb-14 scroll-mt-20">
             <SectionHeader
               emoji="🇲🇽"
-              title={t3(locale, "Cómo llegar desde México", "How to get there from Mexico", "Depuis le Mexique")}
+              title={t3(locale, "Cómo llegar desde México", "How to get there from Mexico")}
               subtitle={t3(
                 locale,
                 "Opciones de vuelo desde las ciudades más grandes de México a la sede",
-                "Flight options from Mexico's biggest cities to the venue",
-                "Options de vol depuis les grandes villes du Mexique vers le stade"
+                "Flight options from Mexico's biggest cities to the venue"
               )}
             />
             <div className="bg-jade-50 border border-jade-200 rounded-xl p-5 mb-5">
@@ -260,8 +259,8 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
                     </div>
                     <span className={`text-[10px] font-bold rounded-full px-2 py-0.5 whitespace-nowrap ${f.direct ? "bg-emerald-500 text-white" : "bg-amber-500 text-white"}`}>
                       {f.direct
-                        ? t3(locale, "Directo", "Direct", "Direct")
-                        : t3(locale, "Con escala", "Connecting", "Avec escale")}
+                        ? t3(locale, "Directo", "Direct")
+                        : t3(locale, "Con escala", "Connecting")}
                     </span>
                   </div>
                   <div className="space-y-1.5 text-xs">
@@ -298,12 +297,11 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
           <section id="llegada" className="mb-14 scroll-mt-20">
             <SectionHeader
               emoji="🛬"
-              title={t3(locale, "Cómo llegar desde el aeropuerto", "How to get there from the airport", "Depuis l'aéroport")}
+              title={t3(locale, "Cómo llegar desde el aeropuerto", "How to get there from the airport")}
               subtitle={t3(
                 locale,
                 "Compara opciones de transporte desde cada aeropuerto hasta el estadio",
-                "Compare transport options from each airport to the stadium",
-                "Comparez les options depuis chaque aéroport"
+                "Compare transport options from each airport to the stadium"
               )}
             />
 
@@ -361,7 +359,7 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
                             </div>
                           </div>
                           <span className={`${style.badge} text-xs font-bold rounded-full px-2.5 py-1 whitespace-nowrap`}>
-                            {style.icon} {t3(locale, style.label.es, style.label.en, style.label.fr)}
+                            {style.icon} {t3(locale, style.label.es, style.label.en)}
                           </span>
                         </div>
                         <p className="text-sm text-arena-700 leading-relaxed mb-2">{localize(opt.safetyNote, locale)}</p>
@@ -382,12 +380,11 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
           <section id="transporte" className="mb-14 scroll-mt-20">
             <SectionHeader
               emoji="🚗"
-              title={t3(locale, "Transporte en la ciudad", "Getting around the city", "Transport en ville")}
+              title={t3(locale, "Transporte en la ciudad", "Getting around the city")}
               subtitle={t3(
                 locale,
                 "Opciones para moverte, con nivel de seguridad por color",
-                "Options to get around, color-coded by safety level",
-                "Options de transport, code couleur par sécurité"
+                "Options to get around, color-coded by safety level"
               )}
             />
             <div className="grid md:grid-cols-2 gap-4">
@@ -411,7 +408,7 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
                         </div>
                       </div>
                       <span className={`${style.badge} text-xs font-bold rounded-full px-2.5 py-1 whitespace-nowrap`}>
-                        {style.icon} {t3(locale, style.label.es, style.label.en, style.label.fr)}
+                        {style.icon} {t3(locale, style.label.es, style.label.en)}
                       </span>
                     </div>
                     <p className="text-sm text-arena-700 leading-relaxed mb-2">{localize(opt.safetyNote, locale)}</p>
@@ -430,12 +427,11 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
           <section id="seguridad" className="mb-14 scroll-mt-20">
             <SectionHeader
               emoji="🗺️"
-              title={t3(locale, "Zonas: dónde caminar y qué evitar", "Zones: where to walk, what to avoid", "Zones : où marcher, quoi éviter")}
+              title={t3(locale, "Zonas: dónde caminar y qué evitar", "Zones: where to walk, what to avoid")}
               subtitle={t3(
                 locale,
                 "Recomendaciones por colonia según horario. Verde = seguro, amarillo = precaución, rojo = evitar",
-                "Neighborhood-by-neighborhood advice. Green = safe, yellow = caution, red = avoid",
-                "Guide par quartier. Vert = sûr, jaune = prudence, rouge = éviter"
+                "Neighborhood-by-neighborhood advice. Green = safe, yellow = caution, red = avoid"
               )}
             />
             <div className="grid md:grid-cols-2 gap-4">
@@ -454,7 +450,7 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
                           <h4 className="font-bold text-arena-800">{localize(zone.name, locale)}</h4>
                         </div>
                         <span className={`${style.badge} text-xs font-bold rounded-full px-2.5 py-1 whitespace-nowrap`}>
-                          {style.icon} {t3(locale, style.label.es, style.label.en, style.label.fr)}
+                          {style.icon} {t3(locale, style.label.es, style.label.en)}
                         </span>
                       </div>
                       <p className="text-sm text-arena-700 leading-relaxed">{localize(zone.description, locale)}</p>
@@ -475,12 +471,11 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
           <section id="cambio" className="mb-14 scroll-mt-20">
             <SectionHeader
               emoji="💱"
-              title={t3(locale, "Cambio de moneda (USD, EUR y más)", "Currency exchange (USD, EUR and more)", "Change de devises (USD, EUR)")}
+              title={t3(locale, "Cambio de moneda (USD, EUR y más)", "Currency exchange (USD, EUR and more)")}
               subtitle={t3(
                 locale,
                 "Dónde cambiar tu dinero extranjero con buena tasa y seguridad",
-                "Where to exchange your foreign money with good rates and safety",
-                "Où changer votre argent avec bon taux"
+                "Where to exchange your foreign money with good rates and safety"
               )}
             />
 
@@ -508,7 +503,7 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
                         </div>
                       </div>
                       <span className={`${rate.badge} text-xs font-bold rounded-full px-2.5 py-1 whitespace-nowrap`}>
-                        {t3(locale, rate.label.es, rate.label.en, rate.label.fr)}
+                        {t3(locale, rate.label.es, rate.label.en)}
                       </span>
                     </div>
                     {p.hours && (
@@ -529,12 +524,11 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
           <section id="cerca" className="mb-14 scroll-mt-20">
             <SectionHeader
               emoji="📍"
-              title={t3(locale, "Qué hay cerca del estadio", "What's nearby the stadium", "À proximité du stade")}
+              title={t3(locale, "Qué hay cerca del estadio", "What's nearby the stadium")}
               subtitle={t3(
                 locale,
                 "Aprovecha los días entre partidos para visitar estos lugares",
-                "Make the most of days between matches",
-                "Profitez des jours entre les matchs"
+                "Make the most of days between matches"
               )}
             />
 
@@ -577,7 +571,7 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
                     <p className="text-sm text-arena-600 leading-relaxed">{localize(a.description, locale)}</p>
                     {a.mapsQuery && (
                       <p className="text-xs text-azul-600 mt-3 group-hover:underline">
-                        🗺️ {t3(locale, "Ver en Google Maps", "View on Google Maps", "Voir sur Google Maps")} →
+                        🗺️ {t3(locale, "Ver en Google Maps", "View on Google Maps")} →
                       </p>
                     )}
                   </a>
@@ -590,7 +584,7 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
         {/* Legacy: how to get there (if no rich data) */}
         {!hasAirports && (
           <section className="mb-14">
-            <SectionHeader emoji="🚗" title={t3(locale, "Cómo llegar al estadio", "How to get to the stadium", "Comment arriver au stade")} />
+            <SectionHeader emoji="🚗" title={t3(locale, "Cómo llegar al estadio", "How to get to the stadium")} />
             <div className="bg-azul-50 border border-azul-200 rounded-xl p-6">
               <p className="text-arena-600 leading-relaxed">{localize(venue.howToGetThere, locale)}</p>
             </div>
@@ -599,18 +593,18 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
 
         {/* Hotels */}
         <section id="hoteles" className="mb-14 scroll-mt-20">
-          <SectionHeader emoji="🏨" title={t3(locale, "Dónde hospedarse", "Where to stay", "Où se loger")} />
+          <SectionHeader emoji="🏨" title={t3(locale, "Dónde hospedarse", "Where to stay")} />
           <div className="bg-oro-50 border border-oro-200 rounded-2xl p-6">
             <p className="text-arena-700 leading-relaxed mb-4">{localize(venue.nearbyHotels, locale)}</p>
             <Link href={`/${locale}/hoteles`} className="btn-primary inline-block">
-              {t3(locale, "Buscar hoteles", "Search hotels", "Chercher des hôtels")}
+              {t3(locale, "Buscar hoteles", "Search hotels")}
             </Link>
           </div>
         </section>
 
         {/* Fan Zones */}
         <section id="fanzones" className="mb-14 scroll-mt-20">
-          <SectionHeader emoji="🎉" title={t3(locale, "Fan Zones y ambiente", "Fan Zones & atmosphere", "Fan Zones et ambiance")} />
+          <SectionHeader emoji="🎉" title={t3(locale, "Fan Zones y ambiente", "Fan Zones & atmosphere")} />
           <div className="bg-terracotta-50 border border-terracotta-200 rounded-2xl p-6">
             <p className="text-arena-700 leading-relaxed">{localize(venue.fanZones, locale)}</p>
           </div>
@@ -618,7 +612,7 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
 
         {/* Tips */}
         <section id="tips" className="mb-14 scroll-mt-20">
-          <SectionHeader emoji="💡" title={t3(locale, "Tips para el día del partido", "Match day tips", "Conseils jour du match")} />
+          <SectionHeader emoji="💡" title={t3(locale, "Tips para el día del partido", "Match day tips")} />
           <div className="grid md:grid-cols-2 gap-4">
             {venue.tips.map((tip, i) => (
               <div
@@ -642,13 +636,13 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
           <div className="bg-gradient-to-r from-jade-50 via-white to-oro-50 border border-arena-200 rounded-2xl p-8 text-center">
             <span className="text-4xl">💰</span>
             <h3 className="font-display font-bold text-arena-800 text-xl mt-2 mb-2">
-              {t3(locale, "Presupuesto por día de partido", "Match day budget", "Budget par jour")}
+              {t3(locale, "Presupuesto por día de partido", "Match day budget")}
             </h3>
             <p className="text-3xl font-bold text-terracotta-600">
               {formatCurrency(venue.avgMatchDayBudget.min, budgetCurrency)} — {formatCurrency(venue.avgMatchDayBudget.max, budgetCurrency)}
             </p>
             <p className="text-xs text-arena-500 mt-2">
-              {t3(locale, "Incluye transporte, comida y entrada", "Includes transport, food and ticket", "Transport, nourriture et billet inclus")}
+              {t3(locale, "Incluye transporte, comida y entrada", "Includes transport, food and ticket")}
             </p>
           </div>
         </section>
@@ -663,29 +657,27 @@ export default function MundialVenueDetail({ venue, destination }: MundialVenueD
               ? t3(
                   locale,
                   `¿Quieres explorar más sobre ${localize(destination.name, locale)}?`,
-                  `Want to explore more about ${localize(destination.name, locale)}?`,
-                  `Vous voulez explorer ${localize(destination.name, locale)} ?`
+                  `Want to explore more about ${localize(destination.name, locale)}?`
                 )
               : isUS
               ? t3(
                   locale,
                   `¿Vas a ${localize(venue.name, locale).split(" - ")[0]}? Planea tu viaje:`,
-                  `Heading to ${localize(venue.name, locale).split(" - ")[0]}? Plan your trip:`,
-                  `Tu vas à ${localize(venue.name, locale).split(" - ")[0]} ? Planifie ton voyage :`
+                  `Heading to ${localize(venue.name, locale).split(" - ")[0]}? Plan your trip:`
                 )
-              : t3(locale, "Planea tu viaje a la sede", "Plan your trip to the venue", "Planifie ton voyage vers le stade")}
+              : t3(locale, "Planea tu viaje a la sede", "Plan your trip to the venue")}
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {destination && (
               <Link href={`/${locale}/destinos/${destination.slug}`} className="bg-white text-arena-800 font-semibold py-3 px-6 rounded-xl hover:bg-arena-100 transition-colors">
-                {t3(locale, "Guía del destino", "Destination guide", "Guide destination")}
+                {t3(locale, "Guía del destino", "Destination guide")}
               </Link>
             )}
             <Link href={`/${locale}/vuelos`} className="bg-white text-arena-800 font-semibold py-3 px-6 rounded-xl hover:bg-arena-100 transition-colors">
-              ✈️ {t3(locale, "Buscar vuelos", "Search flights", "Chercher des vols")}
+              ✈️ {t3(locale, "Buscar vuelos", "Search flights")}
             </Link>
             <Link href={`/${locale}/hoteles`} className="bg-white/15 backdrop-blur border border-white/30 text-white font-semibold py-3 px-6 rounded-xl hover:bg-white/25 transition-colors">
-              🏨 {t3(locale, "Buscar hoteles", "Search hotels", "Chercher des hôtels")}
+              🏨 {t3(locale, "Buscar hoteles", "Search hotels")}
             </Link>
           </div>
         </div>

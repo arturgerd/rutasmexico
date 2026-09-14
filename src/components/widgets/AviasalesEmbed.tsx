@@ -105,10 +105,10 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
       <div className="bg-white rounded-2xl shadow-xl border border-arena-100 overflow-hidden">
         <div className="bg-gradient-to-r from-azul-700 to-terracotta-500 px-6 py-4">
           <h2 className="font-display text-xl font-bold text-white flex items-center gap-2">
-            ✈️ {t3(locale, "Busca vuelos baratos en todas las aerolíneas", "Search cheap flights across all airlines", "Recherchez des vols pas chers sur toutes les compagnies")}
+            ✈️ {t3(locale, "Busca vuelos baratos en todas las aerolíneas", "Search cheap flights across all airlines")}
           </h2>
           <p className="text-white/80 text-sm mt-1">
-            {t3(locale, "Volaris • VivaAerobus • Aeroméxico • TAR • MagniCharters • y más", "Volaris • VivaAerobus • Aeromexico • TAR • MagniCharters • and more", "Volaris • VivaAerobus • Aeroméxico • TAR • MagniCharters • et plus")}
+            {t3(locale, "Volaris • VivaAerobus • Aeroméxico • TAR • MagniCharters • y más", "Volaris • VivaAerobus • Aeromexico • TAR • MagniCharters • and more")}
           </p>
         </div>
 
@@ -122,7 +122,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                 onChange={() => setIsOneWay(false)}
                 className="text-terracotta-500 focus:ring-terracotta-500"
               />
-              <span className="text-sm text-arena-700">{t3(locale, "Ida y vuelta", "Round trip", "Aller-retour")}</span>
+              <span className="text-sm text-arena-700">{t3(locale, "Ida y vuelta", "Round trip")}</span>
             </label>
             <label className="flex items-center gap-2 cursor-pointer">
               <input
@@ -131,7 +131,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                 onChange={() => setIsOneWay(true)}
                 className="text-terracotta-500 focus:ring-terracotta-500"
               />
-              <span className="text-sm text-arena-700">{t3(locale, "Solo ida", "One way", "Aller simple")}</span>
+              <span className="text-sm text-arena-700">{t3(locale, "Solo ida", "One way")}</span>
             </label>
           </div>
 
@@ -139,7 +139,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
           <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-3 items-end">
             <div>
               <label htmlFor={originId} className="block text-xs font-semibold text-arena-500 mb-1">
-                {t3(locale, "Origen", "Origin", "Origine")}
+                {t3(locale, "Origen", "Origin")}
               </label>
               <select
                 id={originId}
@@ -147,7 +147,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                 onChange={(e) => setOrigin(e.target.value)}
                 className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-terracotta-500/50 focus:border-terracotta-500"
               >
-                <option value="">{t3(locale, "✈️ Selecciona aeropuerto", "✈️ Select airport", "✈️ Sélectionnez un aéroport")}</option>
+                <option value="">{t3(locale, "✈️ Selecciona aeropuerto", "✈️ Select airport")}</option>
                 {sortedAirports.map((a) => (
                   <option key={a.iata} value={a.iata}>
                     {a.iata} - {localize(a.city, locale)} ({localize(a.state, locale)})
@@ -159,9 +159,9 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
             <button
               type="button"
               onClick={swapAirports}
-              aria-label={t3(locale, "Intercambiar origen y destino", "Swap origin and destination", "Échanger origine et destination")}
+              aria-label={t3(locale, "Intercambiar origen y destino", "Swap origin and destination")}
               className="hidden md:flex w-10 h-10 rounded-full bg-arena-100 hover:bg-terracotta-100 items-center justify-center transition-colors mb-0.5"
-              title={t3(locale, "Intercambiar", "Swap", "Échanger")}
+              title={t3(locale, "Intercambiar", "Swap")}
             >
               <svg className="w-5 h-5 text-arena-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
@@ -170,7 +170,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
 
             <div>
               <label htmlFor={destId} className="block text-xs font-semibold text-arena-500 mb-1">
-                {t3(locale, "Destino", "Destination", "Destination")}
+                {t3(locale, "Destino", "Destination")}
               </label>
               <select
                 id={destId}
@@ -178,7 +178,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                 onChange={(e) => setDestination(e.target.value)}
                 className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-terracotta-500/50 focus:border-terracotta-500"
               >
-                <option value="">{t3(locale, "🛬 Selecciona aeropuerto", "🛬 Select airport", "🛬 Sélectionnez un aéroport")}</option>
+                <option value="">{t3(locale, "🛬 Selecciona aeropuerto", "🛬 Select airport")}</option>
                 {sortedAirports.map((a) => (
                   <option key={a.iata} value={a.iata}>
                     {a.iata} - {localize(a.city, locale)} ({localize(a.state, locale)})
@@ -192,7 +192,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
             <div>
               <label htmlFor={departId} className="block text-xs font-semibold text-arena-500 mb-1">
-                {t3(locale, "Fecha de ida", "Departure date", "Date de départ")}
+                {t3(locale, "Fecha de ida", "Departure date")}
               </label>
               <input
                 id={departId}
@@ -207,7 +207,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
             {!isOneWay && (
               <div>
                 <label htmlFor={returnId} className="block text-xs font-semibold text-arena-500 mb-1">
-                  {t3(locale, "Fecha de regreso", "Return date", "Date de retour")}
+                  {t3(locale, "Fecha de regreso", "Return date")}
                 </label>
                 <input
                   id={returnId}
@@ -222,7 +222,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
 
             <div>
               <label htmlFor={paxId} className="block text-xs font-semibold text-arena-500 mb-1">
-                {t3(locale, "Pasajeros", "Passengers", "Passagers")}
+                {t3(locale, "Pasajeros", "Passengers")}
               </label>
               <select
                 id={paxId}
@@ -232,7 +232,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
               >
                 {[1, 2, 3, 4, 5, 6].map((n) => (
                   <option key={n} value={n}>
-                    {n} {locale === "es" ? (n === 1 ? "pasajero" : "pasajeros") : locale === "fr" ? (n === 1 ? "passager" : "passagers") : (n === 1 ? "passenger" : "passengers")}
+                    {n} {locale === "es" ? (n === 1 ? "pasajero" : "pasajeros") : (n === 1 ? "passenger" : "passengers")}
                   </option>
                 ))}
               </select>
@@ -243,7 +243,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                 onClick={handleSearch}
                 className="w-full bg-gradient-to-r from-terracotta-500 to-terracotta-600 text-white py-3 rounded-xl text-base font-bold hover:from-terracotta-600 hover:to-terracotta-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
-                🔍 {t3(locale, "Encuentra el vuelo más barato", "Find the cheapest flight", "Trouver le vol le moins cher")}
+                🔍 {t3(locale, "Encuentra el vuelo más barato", "Find the cheapest flight")}
               </button>
             </div>
           </div>
@@ -264,21 +264,20 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
               </div>
               <div className="flex-1">
                 <h3 className="font-display font-bold text-green-800 text-lg">
-                  {t3(locale, "¡Búsqueda abierta!", "Search opened!", "Recherche lancée !")}
+                  {t3(locale, "¡Búsqueda abierta!", "Search opened!")}
                 </h3>
                 <p className="text-sm text-green-700 mt-1">
                   {originAirport && destAirport
                     ? t3(locale,
                       `Comparando vuelos ${localize(originAirport.city, locale)} → ${localize(destAirport.city, locale)} en una nueva pestaña`,
-                      `Comparing flights ${localize(originAirport.city, locale)} → ${localize(destAirport.city, locale)} in a new tab`,
-                      `Comparaison des vols ${localize(originAirport.city, locale)} → ${localize(destAirport.city, locale)} dans un nouvel onglet`)
+                      `Comparing flights ${localize(originAirport.city, locale)} → ${localize(destAirport.city, locale)} in a new tab`)
                     : `${origin} → ${destination}`}
                 </p>
 
                 {/* Airlines being compared */}
                 <div className="flex flex-wrap items-center gap-2 mt-3 text-xs">
                   <span className="text-green-600 font-medium">
-                    {t3(locale, "Comparando:", "Comparing:", "Nous comparons :")}
+                    {t3(locale, "Comparando:", "Comparing:")}
                   </span>
                   {["Volaris", "VivaAerobus", "Aeroméxico", "TAR", "MagniCharters"].map((airline) => (
                     <span key={airline} className="px-2 py-0.5 bg-white rounded-full border border-green-200 text-green-700 font-medium">
@@ -286,7 +285,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                     </span>
                   ))}
                   <span className="text-green-500">
-                    {t3(locale, "+700 aerolíneas", "+700 airlines", "+700 compagnies")}
+                    {t3(locale, "+700 aerolíneas", "+700 airlines")}
                   </span>
                 </div>
 
@@ -297,7 +296,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-xl text-sm font-semibold hover:bg-green-700 transition-colors"
                   >
-                    {t3(locale, "Ver resultados →", "View results →", "Voir les résultats →")}
+                    {t3(locale, "Ver resultados →", "View results →")}
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
@@ -306,7 +305,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                     onClick={() => setIsSearching(false)}
                     className="inline-flex items-center gap-2 bg-arena-100 text-arena-600 px-4 py-2 rounded-xl text-sm font-semibold hover:bg-arena-200 transition-colors"
                   >
-                    {t3(locale, "Nueva búsqueda", "New search", "Nouvelle recherche")}
+                    {t3(locale, "Nueva búsqueda", "New search")}
                   </button>
                 </div>
               </div>
@@ -320,7 +319,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
         <div className="bg-white rounded-2xl shadow-lg border border-arena-100 overflow-hidden">
           <div className="px-6 py-4 border-b border-arena-200">
             <h3 className="font-display font-bold text-arena-900">
-              {t3(locale, "🔥 Rutas populares", "🔥 Popular routes", "🔥 Itinéraires populaires")}
+              {t3(locale, "🔥 Rutas populares", "🔥 Popular routes")}
             </h3>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0">
@@ -362,7 +361,7 @@ export default function AviasalesEmbed({ airports, defaultOrigin = "", defaultDe
                   </div>
                 </div>
                 <span className="text-xs text-terracotta-500 font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
-                  {t3(locale, "Buscar →", "Search →", "Rechercher →")}
+                  {t3(locale, "Buscar →", "Search →")}
                 </span>
               </button>
             ))}

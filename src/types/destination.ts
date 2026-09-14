@@ -30,3 +30,21 @@ export interface Destination {
     text: LocalizedString;
   }[];
 }
+
+/**
+ * Lo que pinta una tarjeta de destino (DestinationGrid, componente cliente).
+ * El Destination completo arrastra highlights, comida, seguridad, reseñas…:
+ * ~150 KB para 21 destinos que la tarjeta no usa.
+ */
+export type DestinationCard = Pick<
+  Destination,
+  | "id"
+  | "slug"
+  | "name"
+  | "shortName"
+  | "state"
+  | "region"
+  | "description"
+  | "averageDailyBudget"
+  | "bestTimeToVisit"
+>;

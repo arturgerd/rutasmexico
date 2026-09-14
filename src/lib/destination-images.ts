@@ -100,7 +100,10 @@ export const DESTINATION_IMAGES: Record<string, DestinationImage> = {
 
 // Hero/background images for pages
 export const PAGE_HERO_IMAGES = {
-  home: "https://images.unsplash.com/photo-1518638150340-f706e86654de?w=1920&h=800&fit=crop&q=80", // Chichen Itza
+  // Chichén Itzá (Unsplash photo-1518638150340, licencia Unsplash) servida
+  // desde /public como WebP: es el LCP de la home y así el optimizador de
+  // imágenes no depende de un fetch a Unsplash en cada miss de caché.
+  home: "/images/hero-home.webp",
   flights: "https://images.unsplash.com/photo-1558882423-f05f3544bebc?w=1920&h=600&fit=crop&q=80", // Airplane wing from window
   hotels: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1920&h=600&fit=crop&q=80", // Hotel resort
   buses: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1920&h=600&fit=crop&q=80", // Bus travel

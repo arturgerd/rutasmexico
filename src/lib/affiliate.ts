@@ -151,7 +151,7 @@ export function getTourSearchUrl(params: {
   const { cityName, locale = "es" } = params;
   const partnerId = AFFILIATE_CONFIG.getYourGuide.partnerId;
 
-  return `https://www.getyourguide.${locale === "es" ? "es" : locale === "fr" ? "fr" : "com"}/s/?q=${encodeURIComponent(cityName + " Mexico")}&partner_id=${partnerId}`;
+  return `https://www.getyourguide.${locale === "es" ? "es" : "com"}/s/?q=${encodeURIComponent(cityName + " Mexico")}&partner_id=${partnerId}`;
 }
 
 // ============================================================
@@ -250,7 +250,7 @@ export function getBookingUrl(params: {
   const { cityName, checkIn, checkOut, locale = "es" } = params;
   const aid = AFFILIATE_CONFIG.booking.aid;
 
-  return `https://www.booking.com/searchresults.${locale === "es" ? "es" : locale === "fr" ? "fr" : "en-gb"}.html?ss=${encodeURIComponent(cityName + ", Mexico")}&checkin=${checkIn}&checkout=${checkOut}&aid=${aid}&no_rooms=1&group_adults=2`;
+  return `https://www.booking.com/searchresults.${locale === "es" ? "es" : "en-gb"}.html?ss=${encodeURIComponent(cityName + ", Mexico")}&checkin=${checkIn}&checkout=${checkOut}&aid=${aid}&no_rooms=1&group_adults=2`;
 }
 
 // ============================================================

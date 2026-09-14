@@ -5,22 +5,19 @@
     "destinationId": "cdmx",
     "name": {
       "es": "Ciudad de México - Estadio Azteca",
-      "en": "Mexico City - Estadio Azteca",
-      "zh": "墨西哥城 - 阿兹特克体育场"
+      "en": "Mexico City - Estadio Azteca"
     },
     "stadium": {
       "name": "Estadio Azteca",
       "capacity": 87000,
       "address": {
         "es": "Calz. de Tlalpan 3465, Sta. Úrsula Coapa, Coyoacán, CDMX",
-        "en": "Calz. de Tlalpan 3465, Sta. Úrsula Coapa, Coyoacán, Mexico City",
-        "zh": "墨西哥城科约阿坎区圣乌尔苏拉科阿帕，特拉尔潘大道3465号"
+        "en": "Calz. de Tlalpan 3465, Sta. Úrsula Coapa, Coyoacán, Mexico City"
       },
       "yearBuilt": 1966,
       "description": {
         "es": "Estadio histórico que albergó las finales de los Mundiales de 1970 y 1986. Aquí ocurrieron la 'Mano de Dios' y el 'Gol del Siglo' de Maradona. Es el único estadio en el mundo que será sede de tres Copas del Mundo. Con capacidad para 87,000 espectadores, el Azteca es un templo del fútbol mundial y un símbolo de la pasión mexicana por este deporte.",
-        "en": "Historic stadium that hosted the 1970 and 1986 World Cup finals. Maradona's famous 'Hand of God' and 'Goal of the Century' both happened here. It is the only stadium in the world to host three FIFA World Cups. With a capacity of 87,000 spectators, the Azteca is a temple of world football and a symbol of Mexico's passion for the beautiful game.",
-        "zh": "历史悠久的体育场，曾举办1970年和1986年世界杯决赛。马拉多纳著名的「上帝之手」和「世纪进球」都在这里诞生。这是世界上唯一一座将举办三届世界杯的体育场。可容纳87,000名观众的阿兹特克体育场是世界足球的殿堂，也是墨西哥足球热情的象征。"
+        "en": "Historic stadium that hosted the 1970 and 1986 World Cup finals. Maradona's famous 'Hand of God' and 'Goal of the Century' both happened here. It is the only stadium in the world to host three FIFA World Cups. With a capacity of 87,000 spectators, the Azteca is a temple of world football and a symbol of Mexico's passion for the beautiful game."
       }
     },
     "matches": [
@@ -29,13 +26,11 @@
         "time": "13:00",
         "teamA": {
           "es": "México",
-          "en": "Mexico",
-          "zh": "墨西哥"
+          "en": "Mexico"
         },
         "teamB": {
           "es": "Sudáfrica",
-          "en": "South Africa",
-          "zh": "南非"
+          "en": "South Africa"
         },
         "round": "group",
         "group": "A",
@@ -46,13 +41,11 @@
         "time": "19:00",
         "teamA": {
           "es": "Chequia",
-          "en": "Czechia",
-          "zh": "捷克"
+          "en": "Czechia"
         },
         "teamB": {
           "es": "México",
-          "en": "Mexico",
-          "zh": "墨西哥"
+          "en": "Mexico"
         },
         "round": "group",
         "group": "A",
@@ -97,78 +90,65 @@
     ],
     "howToGetThere": {
       "es": "El Estadio Azteca se encuentra al sur de la Ciudad de México en la alcaldía Coyoacán. La forma más económica de llegar es tomar el Metro Línea 2 (azul) hasta la estación Tasqueña y de ahí tomar un autobús o taxi hacia el estadio (10 minutos). También puedes usar el Metrobús Línea 1 hasta la estación Estadio Azteca. Uber y DiDi cuestan entre $150 y $250 MXN desde las zonas Roma, Condesa o Centro Histórico. El estacionamiento es muy limitado los días de partido, así que se recomienda usar transporte público. Llega al menos 3 horas antes del partido para pasar los filtros de seguridad FIFA sin prisas.",
-      "en": "Estadio Azteca is located in southern Mexico City in the Coyoacán borough. The most affordable way to get there is taking Metro Line 2 (blue) to Tasqueña station and then a bus or taxi to the stadium (10 minutes). You can also use Metrobús Line 1 to the Estadio Azteca stop. Uber and DiDi cost between $150 and $250 MXN from the Roma, Condesa, or Centro Histórico areas. Parking is very limited on match days, so public transportation is strongly recommended. Arrive at least 3 hours before kickoff to get through FIFA security screenings without stress.",
-      "zh": "阿兹特克体育场位于墨西哥城南部的科约阿坎区。最经济的到达方式是乘坐地铁2号线（蓝色）到塔斯克尼亚站，然后乘公交或出租车前往体育场（10分钟）。也可以乘坐快速公交1号线到阿兹特克体育场站。从罗马区、孔德萨区或历史中心打Uber或DiDi费用在150至250墨西哥比索之间。比赛日停车位非常有限，强烈建议使用公共交通。请至少提前3小时到场，从容通过FIFA安检。"
+      "en": "Estadio Azteca is located in southern Mexico City in the Coyoacán borough. The most affordable way to get there is taking Metro Line 2 (blue) to Tasqueña station and then a bus or taxi to the stadium (10 minutes). You can also use Metrobús Line 1 to the Estadio Azteca stop. Uber and DiDi cost between $150 and $250 MXN from the Roma, Condesa, or Centro Histórico areas. Parking is very limited on match days, so public transportation is strongly recommended. Arrive at least 3 hours before kickoff to get through FIFA security screenings without stress."
     },
     "nearbyHotels": {
       "es": "Las mejores zonas para hospedarse son: Zona Rosa (15 min al estadio, vida nocturna y restaurantes), Condesa/Roma (20 min, barrios de moda con cafés y galerías), Centro Histórico (25 min, monumentos y cultura), y Coyoacán (10 min, el barrio más cercano al estadio con ambiente bohemio). Se recomienda reservar con al menos 6 meses de anticipación, ya que los precios se dispararán durante el Mundial. Los hoteles en Coyoacán ofrecen la mejor relación distancia-precio.",
-      "en": "The best areas to stay are: Zona Rosa (15 min to the stadium, nightlife and restaurants), Condesa/Roma (20 min, trendy neighborhoods with cafés and galleries), Centro Histórico (25 min, monuments and culture), and Coyoacán (10 min, the closest neighborhood to the stadium with a bohemian vibe). Book at least 6 months in advance, as prices will skyrocket during the World Cup. Hotels in Coyoacán offer the best distance-to-price ratio.",
-      "zh": "最佳住宿区域：粉红区（距体育场15分钟，夜生活和餐饮丰富）、孔德萨/罗马区（20分钟，时尚街区，咖啡馆和画廊）、历史中心（25分钟，古迹和文化）和科约阿坎（10分钟，距体育场最近的波西米亚风格街区）。建议至少提前6个月预订，世界杯期间价格会飙升。科约阿坎的酒店性价比最高。"
+      "en": "The best areas to stay are: Zona Rosa (15 min to the stadium, nightlife and restaurants), Condesa/Roma (20 min, trendy neighborhoods with cafés and galleries), Centro Histórico (25 min, monuments and culture), and Coyoacán (10 min, the closest neighborhood to the stadium with a bohemian vibe). Book at least 6 months in advance, as prices will skyrocket during the World Cup. Hotels in Coyoacán offer the best distance-to-price ratio."
     },
     "fanZones": {
       "es": "La Fan Fest principal estará en el Zócalo de la Ciudad de México, con pantallas gigantes, música en vivo y comida. También habrá activaciones a lo largo del Paseo de la Reforma y en la zona del Ángel de la Independencia. Espera pantallas gigantes, DJs, puestos de comida mexicana e internacional, y mercancía oficial FIFA. La entrada es gratuita y el ambiente será espectacular con miles de aficionados de todo el mundo.",
-      "en": "The main Fan Fest will be at Mexico City's Zócalo square, featuring giant screens, live music, and food. There will also be activations along Paseo de la Reforma and around the Angel of Independence monument. Expect giant screens, DJs, Mexican and international food stalls, and official FIFA merchandise. Entry is free and the atmosphere will be spectacular with thousands of fans from around the world.",
-      "zh": "主球迷嘉年华将在墨西哥城宪法广场举行，设有巨型屏幕、现场音乐和美食。改革大道沿线和独立天使纪念碑周围也将有活动。预计将有巨型屏幕、DJ、墨西哥和国际美食摊位以及FIFA官方商品。入场免费，来自世界各地的数千名球迷将营造壮观的氛围。"
+      "en": "The main Fan Fest will be at Mexico City's Zócalo square, featuring giant screens, live music, and food. There will also be activations along Paseo de la Reforma and around the Angel of Independence monument. Expect giant screens, DJs, Mexican and international food stalls, and official FIFA merchandise. Entry is free and the atmosphere will be spectacular with thousands of fans from around the world."
     },
     "tips": [
       {
         "title": {
           "es": "Estadio sin efectivo",
-          "en": "Cashless stadium",
-          "zh": "无现金体育场"
+          "en": "Cashless stadium"
         },
         "content": {
           "es": "El Estadio Azteca será completamente cashless durante el Mundial. Trae tarjetas de crédito/débito o configura tu billetera digital (Apple Pay, Google Pay) antes de llegar. No se aceptará efectivo para comida, bebidas ni mercancía dentro del estadio.",
-          "en": "Estadio Azteca will be completely cashless during the World Cup. Bring credit/debit cards or set up your digital wallet (Apple Pay, Google Pay) before arriving. Cash will not be accepted for food, drinks, or merchandise inside the stadium.",
-          "zh": "世界杯期间阿兹特克体育场将完全无现金运营。请携带信用卡/借记卡或提前设置数字钱包（Apple Pay、Google Pay）。场内购买食品、饮料和商品不接受现金。"
+          "en": "Estadio Azteca will be completely cashless during the World Cup. Bring credit/debit cards or set up your digital wallet (Apple Pay, Google Pay) before arriving. Cash will not be accepted for food, drinks, or merchandise inside the stadium."
         }
       },
       {
         "title": {
           "es": "Altitud de 2,240 metros",
-          "en": "Altitude of 2,240 meters",
-          "zh": "海拔2,240米"
+          "en": "Altitude of 2,240 meters"
         },
         "content": {
           "es": "La Ciudad de México está a 2,240 metros sobre el nivel del mar. Si vienes de una ciudad a nivel del mar, podrías sentir falta de aire, dolor de cabeza o mareos. Llega al menos 2 días antes para aclimatarte, bebe mucha agua y evita el alcohol excesivo los primeros días.",
-          "en": "Mexico City sits at 2,240 meters (7,350 feet) above sea level. If you're coming from a sea-level city, you may experience shortness of breath, headaches, or dizziness. Arrive at least 2 days early to acclimatize, drink plenty of water, and avoid excessive alcohol during your first days.",
-          "zh": "墨西哥城海拔2,240米。如果你来自海平面城市，可能会感到呼吸急促、头痛或头晕。至少提前2天到达以适应海拔，多喝水，最初几天避免过量饮酒。"
+          "en": "Mexico City sits at 2,240 meters (7,350 feet) above sea level. If you're coming from a sea-level city, you may experience shortness of breath, headaches, or dizziness. Arrive at least 2 days early to acclimatize, drink plenty of water, and avoid excessive alcohol during your first days."
         }
       },
       {
         "title": {
           "es": "Temporada de lluvias",
-          "en": "Rainy season",
-          "zh": "雨季"
+          "en": "Rainy season"
         },
         "content": {
           "es": "Junio es temporada de lluvias en la Ciudad de México. Las lluvias suelen caer por la tarde/noche y pueden ser intensas. Trae una chamarra impermeable ligera o poncho. Las mañanas suelen ser soleadas y agradables.",
-          "en": "June is rainy season in Mexico City. Rain usually falls in the afternoon/evening and can be intense. Bring a lightweight rain jacket or poncho. Mornings are usually sunny and pleasant.",
-          "zh": "6月是墨西哥城的雨季。降雨通常在下午/傍晚，可能很大。请带一件轻便防雨外套或雨披。早晨通常阳光明媚、气候宜人。"
+          "en": "June is rainy season in Mexico City. Rain usually falls in the afternoon/evening and can be intense. Bring a lightweight rain jacket or poncho. Mornings are usually sunny and pleasant."
         }
       },
       {
         "title": {
           "es": "Seguridad y acceso",
-          "en": "Security and access",
-          "zh": "安全与入场"
+          "en": "Security and access"
         },
         "content": {
           "es": "No se permiten mochilas ni bolsas grandes dentro del estadio. Llega al menos 3 horas antes del partido para pasar los filtros de seguridad FIFA. Solo se permiten bolsas transparentes pequeñas. Trae tu boleto digital cargado en tu teléfono con batería suficiente.",
-          "en": "Backpacks and large bags are not allowed inside the stadium. Arrive at least 3 hours before kickoff to get through FIFA security screenings. Only small clear bags are permitted. Bring your digital ticket loaded on your phone with sufficient battery.",
-          "zh": "体育场内不允许携带背包和大型包袋。请至少提前3小时到场通过FIFA安检。只允许携带小型透明包袋。请确保手机电量充足，加载好电子门票。"
+          "en": "Backpacks and large bags are not allowed inside the stadium. Arrive at least 3 hours before kickoff to get through FIFA security screenings. Only small clear bags are permitted. Bring your digital ticket loaded on your phone with sufficient battery."
         }
       },
       {
         "title": {
           "es": "Transporte de regreso",
-          "en": "Return transportation",
-          "zh": "赛后交通"
+          "en": "Return transportation"
         },
         "content": {
           "es": "El Metro estará extremadamente lleno después de los partidos. Considera usar Uber o DiDi (programa tu viaje con anticipación ya que habrá tarifa dinámica) o caminar hasta la estación de Metrobús que suele estar menos saturada. Ten paciencia, la salida de 87,000 personas toma tiempo.",
-          "en": "The Metro will be extremely crowded after matches. Consider using Uber or DiDi (book ahead as surge pricing will apply) or walking to the Metrobús station which is usually less crowded. Be patient - getting 87,000 people out takes time.",
-          "zh": "赛后地铁将极其拥挤。考虑使用Uber或DiDi（提前预约，因为会有动态加价）或步行到通常较不拥挤的快速公交站。请耐心等待——87,000人散场需要时间。"
+          "en": "The Metro will be extremely crowded after matches. Consider using Uber or DiDi (book ahead as surge pricing will apply) or walking to the Metrobús station which is usually less crowded. Be patient - getting 87,000 people out takes time."
         }
       }
     ],
@@ -1069,22 +1049,19 @@
     "destinationId": "monterrey",
     "name": {
       "es": "Monterrey - Estadio BBVA",
-      "en": "Monterrey - BBVA Stadium",
-      "zh": "蒙特雷 - BBVA体育场"
+      "en": "Monterrey - BBVA Stadium"
     },
     "stadium": {
       "name": "Estadio BBVA",
       "capacity": 53500,
       "address": {
         "es": "Av. Pablo Livas 2011, La Pastora, Guadalupe, Nuevo León",
-        "en": "Av. Pablo Livas 2011, La Pastora, Guadalupe, Nuevo León",
-        "zh": "新莱昂州瓜达卢佩市拉帕斯托拉，巴勃罗·利瓦斯大道2011号"
+        "en": "Av. Pablo Livas 2011, La Pastora, Guadalupe, Nuevo León"
       },
       "yearBuilt": 2015,
       "description": {
         "es": "Estadio moderno inaugurado en 2015, hogar del CF Monterrey (Rayados). Destaca por su impresionante fachada de acero y sus excelentes instalaciones de primer nivel. Es uno de los estadios más nuevos de América Latina y cuenta con tecnología de punta, palcos de lujo y una experiencia de primer mundo para los aficionados.",
-        "en": "Modern stadium opened in 2015, home of CF Monterrey (Rayados). Known for its striking steel facade and excellent world-class facilities. It is one of the newest stadiums in Latin America, featuring cutting-edge technology, luxury suites, and a first-class experience for fans.",
-        "zh": "2015年启用的现代化体育场，蒙特雷足球俱乐部（光芒队）的主场。以其令人印象深刻的钢结构外墙和一流设施著称。这是拉丁美洲最新的体育场之一，配备尖端技术、豪华包厢，为球迷提供世界级体验。"
+        "en": "Modern stadium opened in 2015, home of CF Monterrey (Rayados). Known for its striking steel facade and excellent world-class facilities. It is one of the newest stadiums in Latin America, featuring cutting-edge technology, luxury suites, and a first-class experience for fans."
       }
     },
     "matches": [
@@ -1112,78 +1089,65 @@
     ],
     "howToGetThere": {
       "es": "El Estadio BBVA se ubica en el municipio de Guadalupe, a unos 20 minutos del centro de Monterrey. Puedes tomar el Metro hasta la estación Exposición y de ahí usar los shuttles oficiales FIFA que operarán los días de partido. Uber y DiDi cuestan entre $200 y $350 MXN desde el centro de Monterrey. También habrá estacionamiento disponible en plazas comerciales cercanas con servicio de transporte al estadio. Planea tu llegada con anticipación ya que las vialidades se congestionan mucho en días de partido.",
-      "en": "Estadio BBVA is located in the municipality of Guadalupe, about 20 minutes from downtown Monterrey. You can take the Metro to Exposición station and then use the official FIFA shuttles that will operate on match days. Uber and DiDi cost between $200 and $350 MXN from downtown Monterrey. Parking will also be available at nearby shopping malls with shuttle service to the stadium. Plan your arrival ahead of time as roads get very congested on match days.",
-      "zh": "BBVA体育场位于瓜达卢佩市，距蒙特雷市中心约20分钟。可以乘坐地铁到展览站，然后使用比赛日运营的FIFA官方班车。从蒙特雷市中心打Uber或DiDi费用在200至350墨西哥比索之间。附近购物中心也有停车位并提供到体育场的摆渡车服务。请提前规划到达时间，比赛日道路非常拥堵。"
+      "en": "Estadio BBVA is located in the municipality of Guadalupe, about 20 minutes from downtown Monterrey. You can take the Metro to Exposición station and then use the official FIFA shuttles that will operate on match days. Uber and DiDi cost between $200 and $350 MXN from downtown Monterrey. Parking will also be available at nearby shopping malls with shuttle service to the stadium. Plan your arrival ahead of time as roads get very congested on match days."
     },
     "nearbyHotels": {
       "es": "Las mejores zonas para hospedarse son: Barrio Antiguo en el centro (20 min al estadio, vida nocturna y restaurantes tradicionales), San Pedro Garza García (25 min, zona de lujo con hoteles premium y restaurantes gourmet), y Valle Oriente (15 min, zona de negocios con hoteles modernos). Los precios de hoteles subirán considerablemente durante el Mundial, así que reserva con la mayor anticipación posible.",
-      "en": "The best areas to stay are: Barrio Antiguo downtown (20 min to the stadium, nightlife and traditional restaurants), San Pedro Garza García (25 min, luxury area with premium hotels and gourmet restaurants), and Valle Oriente (15 min, business district with modern hotels). Hotel prices will increase considerably during the World Cup, so book as far in advance as possible.",
-      "zh": "最佳住宿区域：市中心老城区（距体育场20分钟，夜生活和传统餐厅）、圣佩德罗加尔萨加西亚（25分钟，豪华区域，高端酒店和美食餐厅）和东方谷（15分钟，商务区，现代酒店）。世界杯期间酒店价格将大幅上涨，请尽早预订。"
+      "en": "The best areas to stay are: Barrio Antiguo downtown (20 min to the stadium, nightlife and traditional restaurants), San Pedro Garza García (25 min, luxury area with premium hotels and gourmet restaurants), and Valle Oriente (15 min, business district with modern hotels). Hotel prices will increase considerably during the World Cup, so book as far in advance as possible."
     },
     "fanZones": {
       "es": "La Fan Fest principal de Monterrey estará en la Macroplaza, una de las plazas públicas más grandes del mundo. El Barrio Antiguo ofrecerá ambiente nocturno con bares y restaurantes temáticos. El Parque Fundidora también tendrá actividades y pantallas para ver los partidos. Monterrey es famoso por su escena gastronómica, así que aprovecha para probar la comida regia entre partidos.",
-      "en": "Monterrey's main Fan Fest will be at the Macroplaza, one of the largest public squares in the world. Barrio Antiguo will offer nightlife with themed bars and restaurants. Fundidora Park will also have activities and screens to watch matches. Monterrey is famous for its food scene, so take advantage and try the local cuisine between matches.",
-      "zh": "蒙特雷主球迷嘉年华将在宏伟广场举行，这是世界上最大的公共广场之一。老城区将提供主题酒吧和餐厅的夜间娱乐。丰迪多拉公园也将设有观赛活动和屏幕。蒙特雷以其美食场景闻名，趁比赛间隙品尝当地美食。"
+      "en": "Monterrey's main Fan Fest will be at the Macroplaza, one of the largest public squares in the world. Barrio Antiguo will offer nightlife with themed bars and restaurants. Fundidora Park will also have activities and screens to watch matches. Monterrey is famous for its food scene, so take advantage and try the local cuisine between matches."
     },
     "tips": [
       {
         "title": {
           "es": "Calor extremo",
-          "en": "Extreme heat",
-          "zh": "极端高温"
+          "en": "Extreme heat"
         },
         "content": {
           "es": "Junio en Monterrey alcanza temperaturas de 35-40°C con alta humedad. Es ESENCIAL traer protector solar de alto SPF, gorra o sombrero, y una botella de agua reutilizable. La hidratación constante es vital. Considera comprar un abanico portátil o toallas húmedas para refrescarte.",
-          "en": "June in Monterrey reaches temperatures of 35-40°C (95-104°F) with high humidity. It is ESSENTIAL to bring high-SPF sunscreen, a cap or hat, and a reusable water bottle. Constant hydration is vital. Consider buying a portable fan or wet towels to cool down.",
-          "zh": "蒙特雷6月气温可达35-40°C，湿度较高。必须携带高倍防晒霜、帽子和可重复使用的水瓶。持续补水至关重要。考虑购买便携风扇或湿毛巾降温。"
+          "en": "June in Monterrey reaches temperatures of 35-40°C (95-104°F) with high humidity. It is ESSENTIAL to bring high-SPF sunscreen, a cap or hat, and a reusable water bottle. Constant hydration is vital. Consider buying a portable fan or wet towels to cool down."
         }
       },
       {
         "title": {
           "es": "Secciones sin sombra",
-          "en": "No shade in many sections",
-          "zh": "许多区域没有遮阳"
+          "en": "No shade in many sections"
         },
         "content": {
           "es": "Muchas secciones del Estadio BBVA no tienen techo ni sombra. Si tienes opción, elige asientos en zonas cubiertas o en la sombra del lado poniente del estadio para partidos vespertinos. Trae lentes de sol y protección para el cuello.",
-          "en": "Many sections of Estadio BBVA have no roof or shade. If you have the option, choose seats in covered areas or on the shaded west side of the stadium for afternoon matches. Bring sunglasses and neck protection.",
-          "zh": "BBVA体育场许多区域没有顶棚或遮阳。如有选择，下午比赛请选择有遮盖区域或体育场西侧阴凉处的座位。请带太阳镜和颈部防晒。"
+          "en": "Many sections of Estadio BBVA have no roof or shade. If you have the option, choose seats in covered areas or on the shaded west side of the stadium for afternoon matches. Bring sunglasses and neck protection."
         }
       },
       {
         "title": {
           "es": "Transporte y tarifas dinámicas",
-          "en": "Transportation and surge pricing",
-          "zh": "交通与动态加价"
+          "en": "Transportation and surge pricing"
         },
         "content": {
           "es": "Los días de partido, Uber y DiDi tendrán tarifa dinámica muy alta. Reserva tu transporte con anticipación o usa el Metro hasta la estación Exposición y los shuttles oficiales FIFA. Si manejas, llega muy temprano para asegurar estacionamiento en las plazas cercanas.",
-          "en": "On match days, Uber and DiDi will have very high surge pricing. Book your ride in advance or use the Metro to Exposición station and the official FIFA shuttles. If driving, arrive very early to secure parking at nearby shopping malls.",
-          "zh": "比赛日Uber和DiDi将大幅动态加价。提前预约出行或乘坐地铁到展览站并使用FIFA官方班车。如果自驾，请提早到达以确保在附近购物中心停车。"
+          "en": "On match days, Uber and DiDi will have very high surge pricing. Book your ride in advance or use the Metro to Exposición station and the official FIFA shuttles. If driving, arrive very early to secure parking at nearby shopping malls."
         }
       },
       {
         "title": {
           "es": "Vistas espectaculares",
-          "en": "Spectacular views",
-          "zh": "壮观景色"
+          "en": "Spectacular views"
         },
         "content": {
           "es": "El Estadio BBVA ofrece vistas impresionantes del Cerro de la Silla y las montañas de la Sierra Madre. Lleva tu cámara o teléfono cargado para capturar fotos increíbles, especialmente al atardecer cuando la luz es perfecta sobre las montañas.",
-          "en": "Estadio BBVA offers stunning views of Cerro de la Silla and the Sierra Madre mountains. Bring your camera or charged phone to capture amazing photos, especially at sunset when the light is perfect on the mountains.",
-          "zh": "BBVA体育场可以欣赏鞍山和马德雷山脉的壮丽景色。带上相机或充满电的手机拍摄精彩照片，尤其是日落时分山脉上的光线最为完美。"
+          "en": "Estadio BBVA offers stunning views of Cerro de la Silla and the Sierra Madre mountains. Bring your camera or charged phone to capture amazing photos, especially at sunset when the light is perfect on the mountains."
         }
       },
       {
         "title": {
           "es": "Gastronomía regia",
-          "en": "Local cuisine",
-          "zh": "当地美食"
+          "en": "Local cuisine"
         },
         "content": {
           "es": "No te pierdas la gastronomía de Monterrey antes o después del partido: cabrito al pastor (platillo emblema), machaca con huevo, carne asada norteña, y las famosas tortillas de harina. La zona de Barrio Antiguo y San Pedro tienen los mejores restaurantes.",
-          "en": "Don't miss Monterrey's cuisine before or after the match: cabrito al pastor (signature dish), machaca con huevo, northern-style carne asada, and the famous flour tortillas. The Barrio Antiguo and San Pedro areas have the best restaurants.",
-          "zh": "赛前赛后别错过蒙特雷美食：烤羊羔（招牌菜）、干牛肉炒蛋、北方风味烤肉和著名的面粉玉米饼。老城区和圣佩德罗区有最好的餐厅。"
+          "en": "Don't miss Monterrey's cuisine before or after the match: cabrito al pastor (signature dish), machaca con huevo, northern-style carne asada, and the famous flour tortillas. The Barrio Antiguo and San Pedro areas have the best restaurants."
         }
       }
     ],
@@ -1931,22 +1895,19 @@
     "destinationId": "guadalajara",
     "name": {
       "es": "Guadalajara - Estadio Akron",
-      "en": "Guadalajara - Akron Stadium",
-      "zh": "瓜达拉哈拉 - 阿克龙体育场"
+      "en": "Guadalajara - Akron Stadium"
     },
     "stadium": {
       "name": "Estadio Akron",
       "capacity": 49850,
       "address": {
         "es": "Av. de las Rosas 3800, Jardines de Nuevo México, Zapopan, Jalisco",
-        "en": "Av. de las Rosas 3800, Jardines de Nuevo México, Zapopan, Jalisco",
-        "zh": "哈利斯科州萨波潘市新墨西哥花园，玫瑰大道3800号"
+        "en": "Av. de las Rosas 3800, Jardines de Nuevo México, Zapopan, Jalisco"
       },
       "yearBuilt": 2010,
       "description": {
         "es": "Hogar del CD Guadalajara (Chivas), el equipo más popular de México. Destaca por su icónico diseño en forma de volcán y su impresionante arquitectura. Ubicado en Zapopan, municipio metropolitano de Guadalajara. Fue sede de los Juegos Panamericanos 2011 y cuenta con excelentes instalaciones deportivas y de entretenimiento.",
-        "en": "Home of CD Guadalajara (Chivas), the most popular team in Mexico. Known for its iconic volcano-shaped design and impressive architecture. Located in Zapopan, a metropolitan municipality of Guadalajara. It hosted the 2011 Pan American Games and features excellent sports and entertainment facilities.",
-        "zh": "瓜达拉哈拉足球俱乐部（芝华士）的主场，墨西哥最受欢迎的球队。以其标志性的火山造型设计和令人印象深刻的建筑著称。位于瓜达拉哈拉都会区的萨波潘市。曾举办2011年泛美运动会，拥有出色的体育和娱乐设施。"
+        "en": "Home of CD Guadalajara (Chivas), the most popular team in Mexico. Known for its iconic volcano-shaped design and impressive architecture. Located in Zapopan, a metropolitan municipality of Guadalajara. It hosted the 2011 Pan American Games and features excellent sports and entertainment facilities."
       }
     },
     "matches": [
@@ -1955,13 +1916,11 @@
         "time": "19:00",
         "teamA": {
           "es": "México",
-          "en": "Mexico",
-          "zh": "墨西哥"
+          "en": "Mexico"
         },
         "teamB": {
           "es": "Corea del Sur",
-          "en": "South Korea",
-          "zh": "韩国"
+          "en": "South Korea"
         },
         "round": "group",
         "group": "A",
@@ -1970,78 +1929,65 @@
     ],
     "howToGetThere": {
       "es": "El Estadio Akron está en Zapopan, a unos 30 minutos del centro de Guadalajara. Puedes tomar el Tren Ligero Línea 3 hasta la estación Periférico y de ahí usar los shuttles oficiales FIFA que operarán los días de partido. Uber y DiDi cuestan entre $250 y $400 MXN desde el centro. También habrá autobuses organizados para aficionados desde varios puntos de la ciudad. El estadio está en zona suburbana, así que planea tu transporte de ida y vuelta antes de salir.",
-      "en": "Estadio Akron is in Zapopan, about 30 minutes from downtown Guadalajara. You can take Tren Ligero Line 3 to Periférico station and then use the official FIFA shuttles that will operate on match days. Uber and DiDi cost between $250 and $400 MXN from downtown. There will also be organized fan buses from various points in the city. The stadium is in a suburban area, so plan your round-trip transportation before heading out.",
-      "zh": "阿克龙体育场位于萨波潘市，距瓜达拉哈拉市中心约30分钟。可以乘坐轻轨3号线到环城站，然后使用比赛日运营的FIFA官方班车。从市中心打Uber或DiDi费用在250至400墨西哥比索之间。城市各处也将有组织球迷巴士。体育场位于郊区，请提前规划往返交通。"
+      "en": "Estadio Akron is in Zapopan, about 30 minutes from downtown Guadalajara. You can take Tren Ligero Line 3 to Periférico station and then use the official FIFA shuttles that will operate on match days. Uber and DiDi cost between $250 and $400 MXN from downtown. There will also be organized fan buses from various points in the city. The stadium is in a suburban area, so plan your round-trip transportation before heading out."
     },
     "nearbyHotels": {
       "es": "Las mejores zonas para hospedarse son: Centro Histórico y Chapultepec (30 min al estadio, ambiente vibrante con bares, restaurantes y vida nocturna), Zona Expo/Minerva (20 min, hoteles de categoría superior y zona comercial elegante), y Zapopan centro (10 min, la opción más cercana al estadio con buena oferta hotelera). Reserva con anticipación ya que la demanda será altísima.",
-      "en": "The best areas to stay are: Centro Histórico and Chapultepec (30 min to the stadium, vibrant atmosphere with bars, restaurants, and nightlife), Zona Expo/Minerva (20 min, upscale hotels and elegant shopping area), and downtown Zapopan (10 min, the closest option to the stadium with good hotel selection). Book in advance as demand will be extremely high.",
-      "zh": "最佳住宿区域：历史中心和查普尔特佩克（距体育场30分钟，酒吧、餐厅和夜生活氛围热烈）、展览区/密涅瓦（20分钟，高端酒店和优雅购物区）和萨波潘市中心（10分钟，距体育场最近，酒店选择丰富）。需求极高，请提前预订。"
+      "en": "The best areas to stay are: Centro Histórico and Chapultepec (30 min to the stadium, vibrant atmosphere with bars, restaurants, and nightlife), Zona Expo/Minerva (20 min, upscale hotels and elegant shopping area), and downtown Zapopan (10 min, the closest option to the stadium with good hotel selection). Book in advance as demand will be extremely high."
     },
     "fanZones": {
       "es": "La Fan Fest principal estará en la Plaza de la Liberación en el centro de Guadalajara, con pantallas gigantes y entretenimiento. El barrio de Chapultepec será el epicentro de la vida nocturna con sus bares y restaurantes. La Av. Vallarta también tendrá activaciones y entretenimiento. Guadalajara es la tierra del tequila y el mariachi, así que espera degustaciones de tequila y música de mariachi por toda la ciudad.",
-      "en": "The main Fan Fest will be at Plaza de la Liberación in downtown Guadalajara, with giant screens and entertainment. The Chapultepec neighborhood will be the nightlife epicenter with its bars and restaurants. Av. Vallarta will also have activations and entertainment. Guadalajara is the land of tequila and mariachi, so expect tequila tastings and mariachi music throughout the city.",
-      "zh": "主球迷嘉年华将在瓜达拉哈拉市中心的解放广场举行，设有巨型屏幕和娱乐活动。查普尔特佩克街区将成为夜生活中心，酒吧和餐厅云集。巴亚尔塔大道也将有活动和娱乐。瓜达拉哈拉是龙舌兰酒和墨西哥流浪乐队的故乡，全城都将有龙舌兰品鉴和流浪乐队表演。"
+      "en": "The main Fan Fest will be at Plaza de la Liberación in downtown Guadalajara, with giant screens and entertainment. The Chapultepec neighborhood will be the nightlife epicenter with its bars and restaurants. Av. Vallarta will also have activations and entertainment. Guadalajara is the land of tequila and mariachi, so expect tequila tastings and mariachi music throughout the city."
     },
     "tips": [
       {
         "title": {
           "es": "Zona suburbana - planea tu regreso",
-          "en": "Suburban location - plan your return",
-          "zh": "郊区位置 - 提前规划返程"
+          "en": "Suburban location - plan your return"
         },
         "content": {
           "es": "El Estadio Akron está en una zona suburbana de Zapopan sin mucho transporte público nocturno. ANTES de ir al partido, asegúrate de tener un plan de regreso: reserva un Uber/DiDi con anticipación, coordina con tu grupo, o identifica las paradas de shuttles FIFA. Después del partido la zona se satura y conseguir transporte puede tomar más de una hora.",
-          "en": "Estadio Akron is in a suburban area of Zapopan without much late-night public transportation. BEFORE going to the match, make sure you have a return plan: book an Uber/DiDi in advance, coordinate with your group, or identify FIFA shuttle stops. After the match the area gets saturated and finding transportation can take over an hour.",
-          "zh": "阿克龙体育场位于萨波潘郊区，夜间公共交通不多。在去比赛之前，请确保有返程计划：提前预约Uber/DiDi、与同行者协调或确认FIFA班车站点。赛后该区域交通饱和，找到交通工具可能需要一个多小时。"
+          "en": "Estadio Akron is in a suburban area of Zapopan without much late-night public transportation. BEFORE going to the match, make sure you have a return plan: book an Uber/DiDi in advance, coordinate with your group, or identify FIFA shuttle stops. After the match the area gets saturated and finding transportation can take over an hour."
         }
       },
       {
         "title": {
           "es": "Clima agradable con lluvias ocasionales",
-          "en": "Pleasant weather with occasional rain",
-          "zh": "气候宜人偶有降雨"
+          "en": "Pleasant weather with occasional rain"
         },
         "content": {
           "es": "El clima de Guadalajara en junio es cálido pero agradable (25-30°C), mucho más llevadero que Monterrey. Sin embargo, pueden caer lluvias repentinas por la tarde. Trae una chamarra ligera impermeable por si acaso, pero en general disfrutarás de un clima muy cómodo para el fútbol.",
-          "en": "Guadalajara's weather in June is warm but pleasant (25-30°C / 77-86°F), much more bearable than Monterrey. However, sudden afternoon rain showers can occur. Bring a light waterproof jacket just in case, but overall you'll enjoy very comfortable weather for football.",
-          "zh": "瓜达拉哈拉6月的天气温暖宜人（25-30°C），比蒙特雷舒适得多。不过下午可能会突然下雨。以防万一带一件轻便防水外套，但总体上你将享受非常舒适的观球天气。"
+          "en": "Guadalajara's weather in June is warm but pleasant (25-30°C / 77-86°F), much more bearable than Monterrey. However, sudden afternoon rain showers can occur. Bring a light waterproof jacket just in case, but overall you'll enjoy very comfortable weather for football."
         }
       },
       {
         "title": {
           "es": "Tierra del tequila",
-          "en": "Tequila country",
-          "zh": "龙舌兰酒之乡"
+          "en": "Tequila country"
         },
         "content": {
           "es": "Guadalajara es la puerta al pueblo mágico de Tequila, a solo 1 hora en auto. En días sin partido, visita las destilerías de tequila (José Cuervo, Herradura, Casa Noble) y disfruta de una experiencia única. También puedes tomar el Tren del Tequila, una experiencia turística con degustación incluida.",
-          "en": "Guadalajara is the gateway to the magical town of Tequila, just 1 hour away by car. On non-match days, visit the tequila distilleries (José Cuervo, Herradura, Casa Noble) and enjoy a unique experience. You can also take the Tequila Train, a tourist experience with tasting included.",
-          "zh": "瓜达拉哈拉是通往龙舌兰魔力小镇的门户，仅需1小时车程。在非比赛日，参观龙舌兰酒厂（何塞·库尔沃、赫拉杜拉、贵族之家）并享受独特体验。也可以乘坐龙舌兰列车，这是一项包含品酒的旅游体验。"
+          "en": "Guadalajara is the gateway to the magical town of Tequila, just 1 hour away by car. On non-match days, visit the tequila distilleries (José Cuervo, Herradura, Casa Noble) and enjoy a unique experience. You can also take the Tequila Train, a tourist experience with tasting included."
         }
       },
       {
         "title": {
           "es": "Vida nocturna en Chapultepec",
-          "en": "Chapultepec nightlife",
-          "zh": "查普尔特佩克夜生活"
+          "en": "Chapultepec nightlife"
         },
         "content": {
           "es": "El barrio de Chapultepec es la zona de vida nocturna más popular de Guadalajara y es completamente caminable. Encontrarás bares de craft beer, mezcalerías, restaurantes de autor y antros. Es el lugar perfecto para celebrar después de un partido de México. La Av. Chapultepec se llena de vida cada noche.",
-          "en": "The Chapultepec neighborhood is Guadalajara's most popular nightlife area and is completely walkable. You'll find craft beer bars, mezcalerías, upscale restaurants, and clubs. It's the perfect place to celebrate after a Mexico match. Av. Chapultepec comes alive every night.",
-          "zh": "查普尔特佩克街区是瓜达拉哈拉最受欢迎的夜生活区，完全适合步行。这里有精酿啤酒吧、梅斯卡尔酒吧、高档餐厅和夜店。是墨西哥队比赛后庆祝的完美场所。查普尔特佩克大道每晚都充满活力。"
+          "en": "The Chapultepec neighborhood is Guadalajara's most popular nightlife area and is completely walkable. You'll find craft beer bars, mezcalerías, upscale restaurants, and clubs. It's the perfect place to celebrate after a Mexico match. Av. Chapultepec comes alive every night."
         }
       },
       {
         "title": {
           "es": "Mercancía oficial vs. pirata",
-          "en": "Official vs. counterfeit merchandise",
-          "zh": "官方商品与仿冒品"
+          "en": "Official vs. counterfeit merchandise"
         },
         "content": {
           "es": "Compra mercancía oficial FIFA en las Fan Fest o tiendas autorizadas. Cerca del estadio abundan los vendedores de mercancía pirata de baja calidad. La mercancía oficial tiene hologramas de autenticidad y es de mejor calidad. Las Fan Fest suelen tener las mejores ofertas en productos oficiales.",
-          "en": "Buy official FIFA merchandise at Fan Fests or authorized stores. Near the stadium, there will be plenty of counterfeit low-quality merchandise vendors. Official merchandise has authenticity holograms and is better quality. Fan Fests usually have the best deals on official products.",
-          "zh": "在球迷嘉年华或授权店购买FIFA官方商品。体育场附近会有大量仿冒低质商品摊贩。官方商品带有防伪全息标志，品质更好。球迷嘉年华通常有官方产品的最佳优惠。"
+          "en": "Buy official FIFA merchandise at Fan Fests or authorized stores. Near the stadium, there will be plenty of counterfeit low-quality merchandise vendors. Official merchandise has authenticity holograms and is better quality. Fan Fests usually have the best deals on official products."
         }
       }
     ],

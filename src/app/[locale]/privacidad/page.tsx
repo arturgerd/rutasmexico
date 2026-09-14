@@ -3,11 +3,10 @@ import Link from "next/link";
 import { t3, seoAlternates, seoOpenGraph } from "@/lib/utils";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
-  const title = t3(locale, "Política de Privacidad", "Privacy Policy", "Politique de Confidentialité");
+  const title = t3(locale, "Política de Privacidad", "Privacy Policy");
   const description = t3(locale,
     "Política de privacidad de RutasMéxico. Cómo recopilamos, usamos y protegemos tu información.",
-    "RutasMéxico privacy policy. How we collect, use and protect your information.",
-    "Politique de confidentialité de RutasMéxico. Comment nous collectons, utilisons et protégeons vos informations."
+    "RutasMéxico privacy policy. How we collect, use and protect your information."
   );
   return {
     title,
@@ -27,22 +26,22 @@ export default function PrivacidadPage({ params: { locale } }: { params: { local
     <div className="min-h-screen bg-arena-50">
       <div className="container-custom py-12 max-w-4xl">
         {/* Breadcrumb */}
-        <nav className="text-sm text-arena-700 mb-8">
+        <nav aria-label="Breadcrumb" className="text-sm text-arena-700 mb-8">
           <Link href={`/${locale}`} className="hover:text-terracotta-500 transition-colors">
-            {t3(locale, "Inicio", "Home", "Accueil")}
+            {t3(locale, "Inicio", "Home")}
           </Link>
           <span className="mx-2">/</span>
           <span className="text-arena-600">
-            {t3(locale, "Política de Privacidad", "Privacy Policy", "Politique de Confidentialité")}
+            {t3(locale, "Política de Privacidad", "Privacy Policy")}
           </span>
         </nav>
 
         <div className="bg-white rounded-2xl shadow-lg border border-arena-100 p-8 md:p-12">
           <h1 className="font-display text-3xl md:text-4xl font-bold text-arena-900 mb-2">
-            {t3(locale, "Política de Privacidad", "Privacy Policy", "Politique de Confidentialité")}
+            {t3(locale, "Política de Privacidad", "Privacy Policy")}
           </h1>
           <p className="text-arena-700 text-sm mb-8">
-            {t3(locale, `Última actualización: ${lastUpdated}`, `Last updated: March 23, 2026`, `Dernière mise à jour : 23 mars 2026`)}
+            {t3(locale, `Última actualización: ${lastUpdated}`, `Last updated: March 23, 2026`)}
           </p>
 
           <div className="prose prose-lg max-w-none prose-headings:font-display prose-headings:text-arena-900 prose-p:text-arena-600 prose-li:text-arena-600 prose-strong:text-arena-800 prose-a:text-terracotta-500">
@@ -111,69 +110,6 @@ export default function PrivacidadPage({ params: { locale } }: { params: { local
                 <h2>9. Contact Us</h2>
                 <p>If you have questions about this Privacy Policy, please contact us at:</p>
                 <p><strong>Email:</strong> contacto@rutasmexico.com.mx</p>
-              </>
-            ) : locale === "fr" ? (
-              <>
-                <h2>1. Introduction</h2>
-                <p>Bienvenue sur RutasMéxico (&quot;nous&quot;, &quot;notre&quot;). Nous exploitons le site web rutasmexico.com.mx. Cette Politique de Confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous visitez notre site web.</p>
-
-                <h2>2. Informations que nous collectons</h2>
-                <h3>Informations collectées automatiquement</h3>
-                <p>Lorsque vous visitez notre site web, nous pouvons automatiquement collecter certaines informations, notamment :</p>
-                <ul>
-                  <li>Adresse IP et localisation géographique approximative</li>
-                  <li>Type et version du navigateur</li>
-                  <li>Système d&apos;exploitation</li>
-                  <li>Pages visitées et temps passé sur chaque page</li>
-                  <li>Site web de référence</li>
-                </ul>
-
-                <h3>Cookies et technologies de suivi</h3>
-                <p>Nous utilisons des cookies et des technologies de suivi similaires pour améliorer votre expérience de navigation et analyser le trafic du site. Ceux-ci comprennent :</p>
-                <ul>
-                  <li><strong>Cookies essentiels :</strong> Nécessaires au bon fonctionnement du site.</li>
-                  <li><strong>Cookies d&apos;analyse :</strong> Nous aident à comprendre comment les visiteurs interagissent avec notre site.</li>
-                  <li><strong>Cookies publicitaires :</strong> Utilisés par Google AdSense pour afficher des annonces pertinentes.</li>
-                </ul>
-
-                <h2>3. Comment nous utilisons vos informations</h2>
-                <p>Nous utilisons les informations collectées pour :</p>
-                <ul>
-                  <li>Fournir et améliorer notre site web et nos services</li>
-                  <li>Analyser les tendances d&apos;utilisation pour améliorer l&apos;expérience utilisateur</li>
-                  <li>Afficher des publicités pertinentes via Google AdSense</li>
-                  <li>Générer des références d&apos;affiliation via nos partenaires de voyage</li>
-                </ul>
-
-                <h2>4. Services tiers</h2>
-                <p>Notre site web utilise les services tiers suivants qui peuvent collecter des informations :</p>
-                <ul>
-                  <li><strong>Google AdSense :</strong> Affiche des annonces personnalisées. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Politique de confidentialité de Google</a>.</li>
-                  <li><strong>Travelpayouts / Aviasales :</strong> Notre partenaire d&apos;affiliation pour les recherches de vols et d&apos;hôtels. <a href="https://www.travelpayouts.com/privacy" target="_blank" rel="noopener noreferrer">Politique de confidentialité de Travelpayouts</a>.</li>
-                  <li><strong>Vercel :</strong> Notre hébergeur. <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Politique de confidentialité de Vercel</a>.</li>
-                </ul>
-
-                <h2>5. Vos droits</h2>
-                <p>Selon votre localisation, vous pouvez avoir les droits suivants concernant vos données personnelles :</p>
-                <ul>
-                  <li>Droit d&apos;accès, de rectification ou de suppression de vos données</li>
-                  <li>Droit d&apos;opposition ou de limitation du traitement</li>
-                  <li>Droit à la portabilité des données</li>
-                  <li>Droit de refuser la publicité ciblée</li>
-                </ul>
-
-                <h2>6. Sécurité des données</h2>
-                <p>Nous mettons en œuvre des mesures techniques et organisationnelles raisonnables pour protéger vos informations.</p>
-
-                <h2>7. Confidentialité des enfants</h2>
-                <p>Notre site web ne s&apos;adresse pas aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d&apos;informations personnelles auprès d&apos;enfants.</p>
-
-                <h2>8. Modifications de cette politique</h2>
-                <p>Nous pouvons mettre à jour cette Politique de Confidentialité périodiquement. Toute modification sera publiée sur cette page.</p>
-
-                <h2>9. Nous contacter</h2>
-                <p>Si vous avez des questions, contactez-nous à :</p>
-                <p><strong>Email :</strong> contacto@rutasmexico.com.mx</p>
               </>
             ) : (
               <>

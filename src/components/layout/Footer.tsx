@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <nav aria-label={locale === "es" ? "Enlaces rápidos" : "Quick links"}>
             <h3 className="font-display font-semibold text-white mb-4">{t("quickLinks")}</h3>
             <ul className="space-y-2 text-sm">
               <li>
@@ -73,10 +73,10 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </nav>
 
           {/* Legal */}
-          <div>
+          <nav aria-label="Legal">
             <h3 className="font-display font-semibold text-white mb-4">Legal</h3>
             <ul className="space-y-2 text-sm">
               <li>
@@ -100,7 +100,7 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
 
         {/* Site-wide affiliate + advertising disclosure — required by FTC and AdSense

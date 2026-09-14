@@ -27,23 +27,21 @@ export default function FutbolBanner({ locale }: { locale: string }) {
           <div className="flex-1">
             <div className="inline-flex items-center gap-2 bg-oro-400 rounded-full px-4 py-1.5 mb-4 shadow-lg">
               <span className="text-sm font-bold tracking-wide text-arena-900">
-                ⚽ {t3(locale, "FÚTBOL EN MÉXICO", "FOOTBALL IN MEXICO", "FOOTBALL AU MEXIQUE")}
+                ⚽ {t3(locale, "FÚTBOL EN MÉXICO", "FOOTBALL IN MEXICO")}
               </span>
             </div>
             <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-3 drop-shadow-lg">
               {t3(
                 locale,
                 "Liga MX y Leagues Cup 2026",
-                "Liga MX & Leagues Cup 2026",
-                "Liga MX et Leagues Cup 2026"
+                "Liga MX & Leagues Cup 2026"
               )}
             </h2>
             <p className="text-white/85 text-base md:text-lg max-w-2xl leading-relaxed">
               {t3(
                 locale,
                 "Calendario y resultados del Apertura 2026 y de la Leagues Cup: horarios en hora del centro de México, estadio y ciudad de cada partido. Y si te animas a ir, tenemos las guías de vuelos, autobuses y hoteles para llegar al estadio.",
-                "Apertura 2026 and Leagues Cup schedules and results: kickoff times in Mexico City time, stadium and city for every match. And if you feel like going, our flight, bus and hotel guides get you to the stadium.",
-                "Calendrier et résultats de l'Apertura 2026 et de la Leagues Cup : horaires, stades et villes de chaque match."
+                "Apertura 2026 and Leagues Cup schedules and results: kickoff times in Mexico City time, stadium and city for every match. And if you feel like going, our flight, bus and hotel guides get you to the stadium."
               )}
             </p>
           </div>
@@ -53,7 +51,7 @@ export default function FutbolBanner({ locale }: { locale: string }) {
               href={`/${locale}/futbol`}
               className="bg-white text-emerald-700 font-bold py-3.5 px-6 rounded-xl text-center shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200"
             >
-              📅 {t3(locale, "Ver calendario y resultados", "See schedule & results", "Voir le calendrier")}
+              📅 {t3(locale, "Ver calendario y resultados", "See schedule & results")}
             </Link>
           </div>
         </div>
@@ -75,7 +73,7 @@ export default function FutbolBanner({ locale }: { locale: string }) {
                 </div>
                 <div className="text-xs text-oro-300 mt-2 font-semibold">
                   {m.date.slice(8, 10)}/{m.date.slice(5, 7)}
-                  {m.time ? ` · ${m.time} ${t3(locale, "(centro de MX)", "(CDMX time)", "(heure de Mexico)")}` : ""} · {m.comp}
+                  {m.time ? ` · ${m.time} ${t3(locale, "(centro de MX)", "(CDMX time)")}` : ""} · {m.comp}
                 </div>
               </Link>
             ))}

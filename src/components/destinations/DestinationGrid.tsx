@@ -3,13 +3,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useLocale } from "next-intl";
-import { Destination } from "@/types/destination";
+import { DestinationCard } from "@/types/destination";
 import { localize, formatCurrency } from "@/lib/utils";
 import { Locale } from "@/types/common";
 import { getDestinationImage } from "@/lib/destination-images";
 
 interface DestinationGridProps {
-  destinations: Destination[];
+  destinations: DestinationCard[];
 }
 
 export default function DestinationGrid({ destinations }: DestinationGridProps) {

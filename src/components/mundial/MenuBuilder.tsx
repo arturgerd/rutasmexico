@@ -13,7 +13,6 @@ interface Props {
 const ML_BASE = "https://listado.mercadolibre.com.mx/";
 
 function pick(lang: { es: string; en: string; fr: string }, locale: string) {
-  if (locale === "fr") return lang.fr;
   if (locale === "en") return lang.en;
   return lang.es;
 }
@@ -66,17 +65,16 @@ export default function MenuBuilder({ menu, locale }: Props) {
     <div id="menu-builder" className="bg-gradient-to-br from-arena-50 via-amber-50 to-orange-50 rounded-3xl p-6 md:p-8 border border-arena-200 shadow-sm">
       <div className="text-center mb-6">
         <div className="inline-flex items-center gap-2 bg-jade-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-3">
-          🇲🇽 {t3(locale, "Interactivo", "Interactive", "Interactif")}
+          🇲🇽 {t3(locale, "Interactivo", "Interactive")}
         </div>
         <h3 className="font-display text-2xl md:text-3xl font-bold text-arena-800 mb-2">
-          {t3(locale, "Arma tu menú mundialista", "Build your World Cup menu", "Compose ton menu Coupe du Monde")}
+          {t3(locale, "Arma tu menú mundialista", "Build your World Cup menu")}
         </h3>
         <p className="text-arena-600 text-sm md:text-base max-w-xl mx-auto">
           {t3(
             locale,
             "Elige una bebida y un antojito mexicano. Te decimos cómo pedirlo en español, qué tan típica es la combinación y un poco de su historia.",
-            "Pick a drink and a Mexican snack. We'll tell you how to order it in Spanish, how iconic the combo is, and a bit of its history.",
-            "Choisis une boisson et un antojito mexicain. On te dit comment commander en espagnol, à quel point la combinaison est typique et un peu d'histoire."
+            "Pick a drink and a Mexican snack. We'll tell you how to order it in Spanish, how iconic the combo is, and a bit of its history."
           )}
         </p>
       </div>
@@ -85,7 +83,7 @@ export default function MenuBuilder({ menu, locale }: Props) {
       <div className="mb-8">
         <SectionTitle
           emoji="🥤"
-          label={t3(locale, "1. Elige tu bebida", "1. Pick your drink", "1. Choisis ta boisson")}
+          label={t3(locale, "1. Elige tu bebida", "1. Pick your drink")}
         />
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mt-4">
           {menu.drinks.map((d) => (
@@ -104,7 +102,7 @@ export default function MenuBuilder({ menu, locale }: Props) {
       <div className="mb-8">
         <SectionTitle
           emoji="🌮"
-          label={t3(locale, "2. Elige tu antojito", "2. Pick your bite", "2. Choisis ton antojito")}
+          label={t3(locale, "2. Elige tu antojito", "2. Pick your bite")}
         />
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mt-4">
           {menu.foods.map((f) => (
@@ -125,7 +123,7 @@ export default function MenuBuilder({ menu, locale }: Props) {
           <div className="flex items-start justify-between gap-3 mb-5">
             <div>
               <div className="text-xs font-bold uppercase tracking-wider text-jade-700 mb-1">
-                📋 {t3(locale, "Tu pedido", "Your order", "Ta commande")}
+                📋 {t3(locale, "Tu pedido", "Your order")}
               </div>
               <h4 className="font-display text-xl md:text-2xl font-bold text-arena-800">
                 {drink && pick(drink.name, locale)}
@@ -137,7 +135,7 @@ export default function MenuBuilder({ menu, locale }: Props) {
               onClick={reset}
               className="text-xs text-arena-500 hover:text-arena-800 underline whitespace-nowrap"
             >
-              ↻ {t3(locale, "Empezar de nuevo", "Start over", "Recommencer")}
+              ↻ {t3(locale, "Empezar de nuevo", "Start over")}
             </button>
           </div>
 
@@ -147,7 +145,7 @@ export default function MenuBuilder({ menu, locale }: Props) {
               <div className="flex items-center gap-2 mb-2">
                 <span className="text-lg">⭐</span>
                 <span className="font-bold text-arena-800">
-                  {t3(locale, "Calificación del maridaje", "Pairing rating", "Note d'accord")}:
+                  {t3(locale, "Calificación del maridaje", "Pairing rating")}:
                 </span>
                 <div className="flex gap-0.5">
                   {Array.from({ length: 5 }).map((_, i) => (
@@ -156,10 +154,10 @@ export default function MenuBuilder({ menu, locale }: Props) {
                 </div>
                 <span className="text-xs text-arena-500">
                   {rating === 5
-                    ? t3(locale, "Combo clásico", "Classic combo", "Combo classique")
+                    ? t3(locale, "Combo clásico", "Classic combo")
                     : rating === 4
-                    ? t3(locale, "Excelente", "Excellent", "Excellent")
-                    : t3(locale, "Funciona", "Works", "Ça marche")}
+                    ? t3(locale, "Excelente", "Excellent")
+                    : t3(locale, "Funciona", "Works")}
                 </span>
               </div>
               {pairingNote && <p className="text-sm text-arena-700 leading-relaxed">{pairingNote}</p>}
@@ -169,7 +167,7 @@ export default function MenuBuilder({ menu, locale }: Props) {
           {/* Order phrase */}
           <div className="bg-arena-900 text-white rounded-xl p-5 mb-5">
             <div className="text-xs font-bold uppercase tracking-wider text-oro-300 mb-2">
-              🗣️ {t3(locale, "Cómo pedirlo en español", "How to order in Spanish", "Comment commander en espagnol")}
+              🗣️ {t3(locale, "Cómo pedirlo en español", "How to order in Spanish")}
             </div>
             <p className="font-display text-lg md:text-xl text-white leading-snug">
               <span className="text-oro-300">&ldquo;</span>
@@ -179,12 +177,12 @@ export default function MenuBuilder({ menu, locale }: Props) {
             {locale !== "es" && (
               <div className="mt-3 pt-3 border-t border-arena-700">
                 <div className="text-xs text-arena-700 mb-1">
-                  {locale === "fr" ? "🔊 Prononciation phonétique" : "🔊 Phonetic pronunciation"}
+                  🔊 Phonetic pronunciation
                 </div>
                 <p className="text-sm text-arena-300 italic">
-                  {drink && (locale === "fr" ? drink.orderPhrase.pronFr : drink.orderPhrase.pronEn)}
+                  {drink && drink.orderPhrase.pronEn}
                   {drink && food && " · "}
-                  {food && (locale === "fr" ? food.orderPhrase.pronFr : food.orderPhrase.pronEn)}
+                  {food && food.orderPhrase.pronEn}
                 </p>
               </div>
             )}
@@ -202,8 +200,7 @@ export default function MenuBuilder({ menu, locale }: Props) {
               🛒 {t3(
                 locale,
                 "Prepáralo en casa: encuentra los ingredientes en Mercado Libre",
-                "Make it at home: find the ingredients on Mercado Libre",
-                "Fais-le chez toi : trouve les ingrédients sur Mercado Libre"
+                "Make it at home: find the ingredients on Mercado Libre"
               )}
             </div>
             <div className="flex flex-wrap gap-2 justify-center">
@@ -214,7 +211,7 @@ export default function MenuBuilder({ menu, locale }: Props) {
                   rel="sponsored noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-white text-arena-800 font-semibold py-2 px-4 rounded-lg shadow hover:shadow-md transition-all hover:-translate-y-0.5 text-sm"
                 >
-                  {drink.emoji} {t3(locale, "Buscar", "Search", "Chercher")}: {drink.mlSearch}
+                  {drink.emoji} {t3(locale, "Buscar", "Search")}: {drink.mlSearch}
                 </a>
               )}
               {food && (
@@ -224,7 +221,7 @@ export default function MenuBuilder({ menu, locale }: Props) {
                   rel="sponsored noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-white text-arena-800 font-semibold py-2 px-4 rounded-lg shadow hover:shadow-md transition-all hover:-translate-y-0.5 text-sm"
                 >
-                  {food.emoji} {t3(locale, "Buscar", "Search", "Chercher")}: {food.mlSearch}
+                  {food.emoji} {t3(locale, "Buscar", "Search")}: {food.mlSearch}
                 </a>
               )}
             </div>
@@ -238,8 +235,7 @@ export default function MenuBuilder({ menu, locale }: Props) {
             👆 {t3(
               locale,
               "Selecciona arriba para armar tu orden",
-              "Select above to build your order",
-              "Sélectionne ci-dessus pour composer ta commande"
+              "Select above to build your order"
             )}
           </p>
         </div>
@@ -325,17 +321,17 @@ function DetailCard({ item, locale }: { item: MenuItem; locale: string }) {
       <p className="text-xs text-arena-600 leading-relaxed mb-3">{pick(item.description, locale)}</p>
       <details className="text-xs">
         <summary className="cursor-pointer font-semibold text-jade-700 hover:text-jade-800">
-          {t3(locale, "Más detalles", "More details", "Plus de détails")} ▾
+          {t3(locale, "Más detalles", "More details")} ▾
         </summary>
         <div className="mt-2 space-y-2 text-arena-700">
           <p>
-            <span className="font-semibold">🥄 {t3(locale, "Lleva", "Contains", "Contient")}:</span> {pick(item.ingredients, locale)}
+            <span className="font-semibold">🥄 {t3(locale, "Lleva", "Contains")}:</span> {pick(item.ingredients, locale)}
           </p>
           <p>
-            <span className="font-semibold">💡 {t3(locale, "Tip", "Tip", "Astuce")}:</span> {pick(item.servingTip, locale)}
+            <span className="font-semibold">💡 {t3(locale, "Tip", "Tip")}:</span> {pick(item.servingTip, locale)}
           </p>
           <p>
-            <span className="font-semibold">🔄 {t3(locale, "Variantes", "Variants", "Variantes")}:</span> {pick(item.variants, locale)}
+            <span className="font-semibold">🔄 {t3(locale, "Variantes", "Variants")}:</span> {pick(item.variants, locale)}
           </p>
           <p className="text-arena-500 italic">
             ✨ {pick(item.funFact, locale)}

@@ -12,14 +12,10 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const year = new Date().getFullYear();
   const title = locale === "es"
     ? `Bodas en México ${year} | Venues inclusivos, despedidas y guía LGBTIQ+`
-    : locale === "fr"
-      ? `Mariages au Mexique ${year} | Lieux inclusifs, enterrements et guide LGBTIQ+`
-      : `Weddings in Mexico ${year} | Inclusive venues, parties & LGBTIQ+ guide`;
+    : `Weddings in Mexico ${year} | Inclusive venues, parties & LGBTIQ+ guide`;
   const description = locale === "es"
     ? `Planifica tu boda soñada en México. Venues accesibles e inclusivos, despedidas de soltera y soltero, bodas LGBTIQ+ y guía completa con precios ${year}.`
-    : locale === "fr"
-      ? `Planifiez le mariage de vos rêves au Mexique. Lieux accessibles et inclusifs, enterrements de vie de garçon et de jeune fille, mariages LGBTIQ+ et guide complet avec prix ${year}.`
-      : `Plan your dream wedding in Mexico. Accessible and inclusive venues, bachelor & bachelorette parties, LGBTIQ+ weddings, and complete guide with prices ${year}.`;
+    : `Plan your dream wedding in Mexico. Accessible and inclusive venues, bachelor & bachelorette parties, LGBTIQ+ weddings, and complete guide with prices ${year}.`;
   return {
     title,
     description,

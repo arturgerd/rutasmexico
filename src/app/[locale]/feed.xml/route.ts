@@ -30,17 +30,13 @@ export async function GET(
   const posts = await getAllBlogPosts();
   const l = locale as Locale;
   const siteTitle =
-    locale === "fr"
-      ? "RutasMexico — Blog voyage au Mexique"
-      : locale === "en"
-        ? "RutasMexico — Mexico travel blog"
-        : "RutasMéxico — Blog de viajes por México";
+    locale === "en"
+      ? "RutasMexico — Mexico travel blog"
+      : "RutasMéxico — Blog de viajes por México";
   const siteDescription =
-    locale === "fr"
-      ? "Guides, itinéraires et conseils pour voyager au Mexique."
-      : locale === "en"
-        ? "Guides, itineraries and tips for traveling in Mexico."
-        : "Guías, itinerarios y consejos para viajar por México.";
+    locale === "en"
+      ? "Guides, itineraries and tips for traveling in Mexico."
+      : "Guías, itinerarios y consejos para viajar por México.";
 
   const feedUrl = `${BASE_URL}/${locale}/feed.xml`;
   const blogUrl = `${BASE_URL}/${locale}/blog`;

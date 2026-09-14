@@ -91,8 +91,7 @@ export default function RouteDetail({ route, origin, destination, guidesMap, air
               {t3(
                 locale,
                 `Cómo viajar de ${localize(origin.name, locale)} a ${localize(destination.name, locale)}: vuelo, autobús y auto`,
-                `How to travel from ${localize(origin.name, locale)} to ${localize(destination.name, locale)}: flight, bus & car`,
-                `Comment voyager de ${localize(origin.name, locale)} à ${localize(destination.name, locale)} : avion, bus et voiture`
+                `How to travel from ${localize(origin.name, locale)} to ${localize(destination.name, locale)}: flight, bus & car`
               )}
             </h1>
           </div>
@@ -224,7 +223,7 @@ export default function RouteDetail({ route, origin, destination, guidesMap, air
         {(relatedRoutes.length > 0 || destinationSlug) && (
           <section className="mt-12 pt-8 border-t border-arena-200">
             <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">
-              {t3(locale, "Continúa explorando", "Keep exploring", "Continuez à explorer")}
+              {t3(locale, "Continúa explorando", "Keep exploring")}
             </h2>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {destinationSlug && (
@@ -234,14 +233,13 @@ export default function RouteDetail({ route, origin, destination, guidesMap, air
                     className="block p-4 rounded-xl border border-arena-200 bg-white hover:border-terracotta-400 hover:shadow-md transition-all"
                   >
                     <span className="text-xs uppercase tracking-wide text-terracotta-500 font-semibold">
-                      {t3(locale, "Guía del destino", "Destination guide", "Guide de la destination")}
+                      {t3(locale, "Guía del destino", "Destination guide")}
                     </span>
                     <p className="mt-1 font-semibold text-arena-900">
                       {t3(
                         locale,
                         `Guía completa de ${localize(destination.name, locale)}`,
-                        `Complete guide to ${localize(destination.name, locale)}`,
-                        `Guide complet de ${localize(destination.name, locale)}`
+                        `Complete guide to ${localize(destination.name, locale)}`
                       )}
                     </p>
                   </Link>
@@ -254,7 +252,7 @@ export default function RouteDetail({ route, origin, destination, guidesMap, air
                     className="block p-4 rounded-xl border border-arena-200 bg-white hover:border-terracotta-400 hover:shadow-md transition-all"
                   >
                     <span className="text-xs uppercase tracking-wide text-azul-500 font-semibold">
-                      {t3(locale, "Ruta relacionada", "Related route", "Itinéraire associé")}
+                      {t3(locale, "Ruta relacionada", "Related route")}
                     </span>
                     <p className="mt-1 font-semibold text-arena-900">
                       {r.originName} → {r.destName}
@@ -270,7 +268,7 @@ export default function RouteDetail({ route, origin, destination, guidesMap, air
         {faqs.length > 0 && (
           <section className="mt-12 bg-white rounded-2xl shadow-lg border border-arena-100 p-6 md:p-8">
             <h2 className="font-display text-xl font-bold text-arena-900 mb-4">
-              {t3(locale, "Preguntas frecuentes", "Frequently asked questions", "Questions fréquentes")}
+              {t3(locale, "Preguntas frecuentes", "Frequently asked questions")}
             </h2>
             <div className="divide-y divide-arena-100">
               {faqs.map((f, i) => (

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { getAllDestinations } from "@/lib/data/destinations";
+import { getAllDestinations, toDestinationCard } from "@/lib/data/destinations";
 import DestinationGrid from "@/components/destinations/DestinationGrid";
 import DestinationsGuide from "@/components/editorial/DestinationsGuide";
 import AffiliateDisclosure from "@/components/editorial/AffiliateDisclosure";
@@ -49,7 +49,7 @@ export default async function DestinosPage({ params: { locale } }: { params: { l
             <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm rounded-full px-4 py-2 mb-4 border border-white/20">
               <span>🇲🇽</span>
               <span className="text-white text-sm font-medium">
-                {locale === "es" ? "10+ destinos increibles" : "10+ amazing destinations"}
+                {locale === "es" ? `${destinations.length} destinos increíbles` : `${destinations.length} amazing destinations`}
               </span>
             </div>
             <h1 className="font-display text-3xl md:text-5xl font-bold text-white mb-3 drop-shadow-lg">
@@ -65,7 +65,7 @@ export default async function DestinosPage({ params: { locale } }: { params: { l
       <AffiliateDisclosure locale={locale} />
       <div className="bg-arena-50 pb-12">
         <div className="container-custom -mt-4 relative z-20">
-          <DestinationGrid destinations={destinations} />
+          <DestinationGrid destinations={destinations.map(toDestinationCard)} />
           <DestinationsGuide locale={locale} />
         </div>
       </div>

@@ -1,6 +1,7 @@
 "use server";
 
 import { serverEnv } from "@/lib/env";
+import { isRateLimited } from "@/lib/rate-limit";
 
 export type ContactState = { ok: boolean; message: string } | null;
 
@@ -15,6 +16,15 @@ export async function submitContact(_prev: ContactState, formData: FormData): Pr
 
   if (honeypot) {
     return { ok: true, message: "" };
+  }
+
+  if (isRateLimited("contact")) {
+    return {
+      ok: false,
+      message: isEn
+        ? "Too many messages in a short time. Please try again in a few minutes."
+        : "Demasiados envíos en poco tiempo. Intenta de nuevo en unos minutos.",
+    };
   }
 
   if (!name || name.length < 2 || name.length > 80) {

@@ -33,7 +33,7 @@ export default function BlogContent({ post, relatedPosts = [] }: { post: BlogPos
 
   const formatDate = (dateStr: string) => {
     const date = new Date(dateStr + "T12:00:00");
-    return date.toLocaleDateString(locale === "es" ? "es-MX" : locale === "fr" ? "fr-FR" : "en-US", {
+    return date.toLocaleDateString(locale === "es" ? "es-MX" : "en-US", {
       year: "numeric",
       month: "long",
       day: "numeric",
@@ -45,7 +45,7 @@ export default function BlogContent({ post, relatedPosts = [] }: { post: BlogPos
       <Breadcrumbs
         className="mb-6"
         items={[
-          { name: t3(locale, "Inicio", "Home", "Accueil"), href: `/${locale}` },
+          { name: t3(locale, "Inicio", "Home"), href: `/${locale}` },
           { name: "Blog", href: `/${locale}/blog` },
           { name: l(post.title, locale) },
         ]}
@@ -71,7 +71,7 @@ export default function BlogContent({ post, relatedPosts = [] }: { post: BlogPos
         <div className="flex items-center gap-3 mt-6 pb-6 border-b border-arena-200">
           <Link
             href={`/${locale}/nosotros`}
-            aria-label={`${t3(locale, "Sobre", "About", "À propos de")} ${post.author}`}
+            aria-label={`${t3(locale, "Sobre", "About")} ${post.author}`}
             className="w-11 h-11 rounded-full bg-gradient-to-br from-terracotta-500 to-terracotta-700 flex items-center justify-center font-display font-bold text-sm text-white shadow-sm flex-shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 focus-visible:ring-offset-2"
           >
             {post.author.split(" ").map((n) => n[0]).slice(0, 2).join("")}
@@ -79,7 +79,7 @@ export default function BlogContent({ post, relatedPosts = [] }: { post: BlogPos
           <div className="text-sm">
             <div className="text-arena-900">
               <span className="text-arena-500">
-                {t3(locale, "Por ", "By ", "Par ")}
+                {t3(locale, "Por ", "By ")}
               </span>
               <Link
                 href={`/${locale}/nosotros`}
@@ -89,7 +89,7 @@ export default function BlogContent({ post, relatedPosts = [] }: { post: BlogPos
               </Link>
               <span className="text-arena-700"> · </span>
               <span className="text-arena-700">
-                {t3(locale, "Editor de RutasMéxico", "Editor at RutasMéxico", "Éditeur de RutasMéxico")}
+                {t3(locale, "Editor de RutasMéxico", "Editor at RutasMéxico")}
               </span>
             </div>
             <div className="text-arena-700 mt-0.5 flex flex-wrap items-center gap-x-1.5">
@@ -98,13 +98,13 @@ export default function BlogContent({ post, relatedPosts = [] }: { post: BlogPos
                 <>
                   <span>·</span>
                   <span>
-                    {t3(locale, "Actualizado", "Updated", "Mis à jour")}{" "}
+                    {t3(locale, "Actualizado", "Updated")}{" "}
                     <time dateTime={post.updatedDate}>{formatDate(post.updatedDate)}</time>
                   </span>
                 </>
               )}
               <span>·</span>
-              <span>{post.readingTime} {t3(locale, "min de lectura", "min read", "min de lecture")}</span>
+              <span>{post.readingTime} {t3(locale, "min de lectura", "min read")}</span>
             </div>
           </div>
         </div>
@@ -159,7 +159,7 @@ export default function BlogContent({ post, relatedPosts = [] }: { post: BlogPos
       {relatedPosts.length > 0 && (
         <section className="mt-12 pt-8 border-t border-arena-200">
           <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">
-            {t3(locale, "Artículos relacionados", "Related articles", "Articles connexes")}
+            {t3(locale, "Artículos relacionados", "Related articles")}
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {relatedPosts.map((rp) => (
@@ -182,7 +182,7 @@ export default function BlogContent({ post, relatedPosts = [] }: { post: BlogPos
           href={`/${locale}/blog`}
           className="inline-flex items-center gap-2 text-terracotta-500 font-semibold hover:text-terracotta-600 transition-colors"
         >
-          ← {t3(locale, "Volver al blog", "Back to blog", "Retour au blog")}
+          ← {t3(locale, "Volver al blog", "Back to blog")}
         </Link>
       </div>
     </article>
