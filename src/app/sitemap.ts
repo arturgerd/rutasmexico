@@ -90,8 +90,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  // Blog posts — use real publishedDate / updatedDate so Google sees stable timestamps
-  for (const post of blogPosts) {
+  // Blog posts — use real publishedDate / updatedDate so Google sees stable timestamps.
+  // Posts dated in the future are scheduled (the blog loader hides them until their
+  // date), so keep them out of the sitemap too: advertising a URL that 404s is worse
+  // than listing it a day late.
+  const today = new Date().toISOString().slice(0, 10);
+  for (const post of blogPosts.filter((p) => p.publishedDate <= today)) {
     const postWithDates = post as typeof post & { updatedDate?: string };
     const isMundialPost = post.slug.includes("mundial") || post.slug.includes("estadio-azteca") || post.slug.includes("estadio-bbva");
     for (const locale of locales) {
