@@ -1,4 +1,4 @@
-import { BlogPost, BlogCategory } from "@/types/blog";
+import { BlogPost, BlogCategory, BlogPostSummary } from "@/types/blog";
 import blogPostsData from "@/data/blog-posts.json";
 import { blogPostSchema, validateData } from "./schemas";
 
@@ -20,6 +20,27 @@ const blogPosts = validatedPosts
 
 export async function getAllBlogPosts(): Promise<BlogPost[]> {
   return blogPosts;
+}
+
+/** Proyección sin `content`, para listados y tarjetas (ver BlogPostSummary). */
+export function toBlogSummary(p: BlogPost): BlogPostSummary {
+  return {
+    id: p.id,
+    slug: p.slug,
+    title: p.title,
+    excerpt: p.excerpt,
+    author: p.author,
+    category: p.category,
+    publishedDate: p.publishedDate,
+    updatedDate: p.updatedDate,
+    featuredImage: p.featuredImage,
+    tags: p.tags,
+    readingTime: p.readingTime,
+  };
+}
+
+export async function getAllBlogSummaries(): Promise<BlogPostSummary[]> {
+  return blogPosts.map(toBlogSummary);
 }
 
 export async function getBlogPostBySlug(slug: string): Promise<BlogPost | null> {

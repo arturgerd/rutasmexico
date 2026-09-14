@@ -29,32 +29,31 @@ export default function FinalFeature({ locale }: FinalFeatureProps) {
       <div className="container-custom relative grid md:grid-cols-2 gap-10 md:gap-16 items-center">
         <div>
           <span className="inline-block text-oro-300 text-xs font-bold tracking-[0.2em] uppercase mb-3">
-            {t3(locale, "Campeón del mundo", "World champions", "Champions du monde")}
+            {t3(locale, "Campeón del mundo", "World champions")}
           </span>
           <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
-            {t3(locale, "🇪🇸 España 1-0 Argentina 🇦🇷", "🇪🇸 Spain 1-0 Argentina 🇦🇷", "🇪🇸 Espagne 1-0 Argentine 🇦🇷")}
+            {t3(locale, "🇪🇸 España 1-0 Argentina 🇦🇷", "🇪🇸 Spain 1-0 Argentina 🇦🇷")}
           </h2>
           <p className="text-arena-200 text-base md:text-lg mb-8 max-w-lg leading-relaxed">
             {t3(
               locale,
               "España conquistó su segunda Copa del Mundo el 19 de julio en el MetLife Stadium con gol de Ferran Torres en la prórroga (106'). Argentina se quedó a un paso del bicampeonato. ¿Se te antojó Nueva York? Planea tu viaje desde México.",
-              "Spain won its second World Cup on July 19 at MetLife Stadium with a Ferran Torres goal in extra time (106'). Argentina fell just short of back-to-back titles. Craving New York? Plan your trip from Mexico.",
-              "L'Espagne a remporté sa deuxième Coupe du Monde le 19 juillet au MetLife Stadium grâce à un but de Ferran Torres en prolongation (106'). L'Argentine a échoué à un pas du doublé. Envie de New York ? Planifiez votre voyage depuis le Mexique."
+              "Spain won its second World Cup on July 19 at MetLife Stadium with a Ferran Torres goal in extra time (106'). Argentina fell just short of back-to-back titles. Craving New York? Plan your trip from Mexico."
             )}
           </p>
 
           <div className="flex flex-wrap gap-3 mb-8">
             <div className="bg-arena-800/60 backdrop-blur-sm border border-arena-700 rounded-xl px-4 py-3">
               <div className="text-oro-300 font-display font-bold text-lg">19 jul 2026</div>
-              <div className="text-arena-300 text-xs uppercase tracking-wider">{t3(locale, "Fecha", "Date", "Date")}</div>
+              <div className="text-arena-300 text-xs uppercase tracking-wider">{t3(locale, "Fecha", "Date")}</div>
             </div>
             <div className="bg-arena-800/60 backdrop-blur-sm border border-arena-700 rounded-xl px-4 py-3">
               <div className="text-oro-300 font-display font-bold text-lg">MetLife</div>
-              <div className="text-arena-300 text-xs uppercase tracking-wider">{t3(locale, "Estadio", "Stadium", "Stade")}</div>
+              <div className="text-arena-300 text-xs uppercase tracking-wider">{t3(locale, "Estadio", "Stadium")}</div>
             </div>
             <div className="bg-arena-800/60 backdrop-blur-sm border border-arena-700 rounded-xl px-4 py-3">
               <div className="text-oro-300 font-display font-bold text-lg">82,500</div>
-              <div className="text-arena-300 text-xs uppercase tracking-wider">{t3(locale, "Aforo", "Capacity", "Capacité")}</div>
+              <div className="text-arena-300 text-xs uppercase tracking-wider">{t3(locale, "Aforo", "Capacity")}</div>
             </div>
           </div>
 
@@ -65,7 +64,7 @@ export default function FinalFeature({ locale }: FinalFeatureProps) {
               rel="nofollow sponsored noopener"
               className="inline-flex items-center gap-2 bg-oro-400 hover:bg-oro-300 text-arena-900 font-bold py-3.5 px-6 rounded-xl shadow-lg transition-colors"
             >
-              ✈️ {t3(locale, "Vuelos MEX → Nueva York", "Flights MEX → New York", "Vols MEX → New York")}
+              ✈️ {t3(locale, "Vuelos MEX → Nueva York", "Flights MEX → New York")}
             </a>
             <a
               href={klookNYC}
@@ -73,7 +72,7 @@ export default function FinalFeature({ locale }: FinalFeatureProps) {
               rel="nofollow sponsored noopener"
               className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold py-3.5 px-6 rounded-xl transition-colors"
             >
-              🗽 {t3(locale, "Tours en NYC", "Tours in NYC", "Tours à NYC")}
+              🗽 {t3(locale, "Tours en NYC", "Tours in NYC")}
             </a>
           </div>
         </div>
@@ -92,7 +91,7 @@ export default function FinalFeature({ locale }: FinalFeatureProps) {
                 🏆
               </div>
               <div className="font-display text-white text-2xl md:text-3xl font-bold drop-shadow-lg mt-2">
-                {t3(locale, "España campeón", "Spain champions", "L'Espagne championne")}
+                {t3(locale, "España campeón", "Spain champions")}
               </div>
               <div className="text-white/90 text-sm md:text-base mt-1 uppercase tracking-widest">
                 New Jersey · USA

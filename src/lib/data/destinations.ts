@@ -1,5 +1,5 @@
 import destinationsData from "@/data/destinations.json";
-import { Destination } from "@/types/destination";
+import { Destination, DestinationCard } from "@/types/destination";
 import { destinationSchema, validateData } from "./schemas";
 
 const destinations = validateData(
@@ -50,4 +50,19 @@ export async function getNearbyDestinations(
     .map((d) => ({ ...d, distanceKm: haversineKm(current.coordinates, d.coordinates) }))
     .sort((a, b) => a.distanceKm - b.distanceKm)
     .slice(0, count);
+}
+
+/** Recorte de un destino a lo que pinta su tarjeta (ver DestinationCard). */
+export function toDestinationCard(d: Destination): DestinationCard {
+  return {
+    id: d.id,
+    slug: d.slug,
+    name: d.name,
+    shortName: d.shortName,
+    state: d.state,
+    region: d.region,
+    description: d.description,
+    averageDailyBudget: d.averageDailyBudget,
+    bestTimeToVisit: d.bestTimeToVisit,
+  };
 }

@@ -8,13 +8,11 @@ import { buildBreadcrumbList } from "@/lib/mundial-schema";
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const title = t3(locale,
     "Liga MX y Leagues Cup 2026 — Calendario, horarios y sedes",
-    "Liga MX & Leagues Cup 2026 — Schedule, Times & Stadiums",
-    "Liga MX et Leagues Cup 2026 — Calendrier, horaires et stades"
+    "Liga MX & Leagues Cup 2026 — Schedule, Times & Stadiums"
   );
   const description = t3(locale,
     "Resultados y próximos partidos de la Liga MX (Apertura 2026) y la Leagues Cup: horarios en hora del centro de México, estadio y ciudad de cada partido, con guías para viajar a verlos.",
-    "Liga MX (Apertura 2026) and Leagues Cup results and upcoming fixtures: kickoff times in Mexico City time, stadium and city for every match, plus travel guides to see them live.",
-    "Résultats et prochains matchs de la Liga MX et de la Leagues Cup : horaires, stades et villes."
+    "Liga MX (Apertura 2026) and Leagues Cup results and upcoming fixtures: kickoff times in Mexico City time, stadium and city for every match, plus travel guides to see them live."
   );
   return {
     title,
@@ -46,8 +44,8 @@ function MatchRow({ match, locale }: { match: FutbolMatch; locale: string }) {
         <div className="font-semibold text-arena-700">{formatMatchDate(match.date, locale)}</div>
         <div>
           {match.time
-            ? `${match.time} ${t3(locale, "(centro de MX)", "(CDMX time)", "(heure de Mexico)")}`
-            : t3(locale, "Hora por confirmar", "Time TBC", "Heure à confirmer")}
+            ? `${match.time} ${t3(locale, "(centro de MX)", "(CDMX time)")}`
+            : t3(locale, "Hora por confirmar", "Time TBC")}
         </div>
       </div>
       <div className="flex-1 flex items-center gap-2 font-medium text-arena-800">
@@ -106,18 +104,17 @@ export default async function FutbolPage({ params: { locale } }: { params: { loc
   const data = getFutbolData();
 
   const breadcrumbs = buildBreadcrumbList(locale, [
-    { name: t3(locale, "Inicio", "Home", "Accueil"), url: `https://rutasmexico.com.mx/${locale}` },
-    { name: t3(locale, "Fútbol en México", "Football in Mexico", "Football au Mexique") },
+    { name: t3(locale, "Inicio", "Home"), url: `https://rutasmexico.com.mx/${locale}` },
+    { name: t3(locale, "Fútbol en México", "Football in Mexico") },
   ]);
 
-  const upcomingLabel = t3(locale, "Próximos partidos", "Upcoming matches", "Prochains matchs");
-  const resultsLabel = t3(locale, "Resultados recientes", "Recent results", "Résultats récents");
+  const upcomingLabel = t3(locale, "Próximos partidos", "Upcoming matches");
+  const resultsLabel = t3(locale, "Resultados recientes", "Recent results");
   const emptyUpcoming = t3(locale,
     "Sin partidos programados confirmados por ahora.",
-    "No confirmed upcoming matches for now.",
-    "Pas de matchs programmés confirmés pour le moment."
+    "No confirmed upcoming matches for now."
   );
-  const emptyResults = t3(locale, "Aún no hay resultados.", "No results yet.", "Pas encore de résultats.");
+  const emptyResults = t3(locale, "Aún no hay resultados.", "No results yet.");
 
   const competitions = [
     { key: "ligaMX", emoji: "🇲🇽", comp: data.ligaMX },
@@ -131,23 +128,22 @@ export default async function FutbolPage({ params: { locale } }: { params: { loc
       {/* Hero */}
       <div className="bg-arena-900 py-12 md:py-16">
         <div className="container-custom">
-          <nav className="text-xs text-arena-700 mb-4">
-            <Link href={`/${locale}`} className="hover:text-white">{t3(locale, "Inicio", "Home", "Accueil")}</Link>
+          <nav aria-label="Breadcrumb" className="text-xs text-arena-700 mb-4">
+            <Link href={`/${locale}`} className="hover:text-white">{t3(locale, "Inicio", "Home")}</Link>
             {" / "}
-            <span className="text-arena-500">{t3(locale, "Fútbol", "Football", "Football")}</span>
+            <span className="text-arena-500">{t3(locale, "Fútbol", "Football")}</span>
           </nav>
           <h1 className="font-display text-3xl md:text-5xl font-bold text-white mb-4">
-            {t3(locale, "Liga MX y Leagues Cup 2026", "Liga MX & Leagues Cup 2026", "Liga MX et Leagues Cup 2026")}
+            {t3(locale, "Liga MX y Leagues Cup 2026", "Liga MX & Leagues Cup 2026")}
           </h1>
           <p className="text-arena-300 max-w-3xl leading-relaxed">
             {t3(locale,
               "Horarios, sedes y resultados de la Liga MX (Apertura 2026) y de la Leagues Cup, el torneo entre clubes de la Liga MX y la MLS. Todos los horarios están en hora del centro de México. Si planeas viajar a un partido, revisa nuestras guías de vuelos, autobuses y destinos para armar la ruta.",
-              "Kickoff times, stadiums and results for Liga MX (Apertura 2026) and the Leagues Cup, the tournament between Liga MX and MLS clubs. All times are Mexico City time. Planning to travel to a match? Check our flight, bus and destination guides to plan the trip.",
-              "Horaires, stades et résultats de la Liga MX et de la Leagues Cup. Tous les horaires sont à l'heure de Mexico."
+              "Kickoff times, stadiums and results for Liga MX (Apertura 2026) and the Leagues Cup, the tournament between Liga MX and MLS clubs. All times are Mexico City time. Planning to travel to a match? Check our flight, bus and destination guides to plan the trip."
             )}
           </p>
           <p className="text-arena-500 text-xs mt-4">
-            {t3(locale, "Última actualización:", "Last updated:", "Dernière mise à jour :")} {data.updated}
+            {t3(locale, "Última actualización:", "Last updated:")} {data.updated}
           </p>
         </div>
       </div>
@@ -186,19 +182,18 @@ export default async function FutbolPage({ params: { locale } }: { params: { loc
           <p className="text-white text-lg font-medium mb-4">
             {t3(locale,
               "¿Vas al estadio? Compara vuelos y autobuses a la ciudad del partido.",
-              "Going to the stadium? Compare flights and buses to the match city.",
-              "Vous allez au stade ? Comparez vols et bus vers la ville du match."
+              "Going to the stadium? Compare flights and buses to the match city."
             )}
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link href={`/${locale}/vuelos`} className="bg-white text-arena-900 font-bold px-5 py-2.5 rounded-full hover:bg-arena-100 transition-colors">
-              ✈️ {t3(locale, "Buscar vuelos", "Search flights", "Chercher des vols")}
+              ✈️ {t3(locale, "Buscar vuelos", "Search flights")}
             </Link>
             <Link href={`/${locale}/autobuses`} className="bg-white/15 text-white font-bold px-5 py-2.5 rounded-full hover:bg-white/25 transition-colors">
-              🚌 {t3(locale, "Buscar autobuses", "Search buses", "Chercher des bus")}
+              🚌 {t3(locale, "Buscar autobuses", "Search buses")}
             </Link>
             <Link href={`/${locale}/destinos`} className="bg-white/15 text-white font-bold px-5 py-2.5 rounded-full hover:bg-white/25 transition-colors">
-              🗺️ {t3(locale, "Ver destinos", "See destinations", "Voir les destinations")}
+              🗺️ {t3(locale, "Ver destinos", "See destinations")}
             </Link>
           </div>
         </div>

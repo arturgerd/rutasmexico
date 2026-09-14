@@ -36,13 +36,7 @@ export default function Error({
       retry: "Try again",
       home: "Back to home",
     },
-    fr: {
-      title: "Une erreur est survenue",
-      desc: "Une erreur inattendue s'est produite. Vous pouvez réessayer ou revenir à l'accueil.",
-      retry: "Réessayer",
-      home: "Retour à l'accueil",
-    },
-  }[locale === "fr" ? "fr" : locale === "en" ? "en" : "es"];
+  }[locale === "en" ? "en" : "es"];
 
   return (
     <div className="container-custom py-20 md:py-28 text-center">

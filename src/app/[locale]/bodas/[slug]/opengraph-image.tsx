@@ -18,15 +18,13 @@ export default async function Image({ params: { locale, slug } }: { params: { lo
     emoji: "💍",
     title: ogText(locale,
       `Bodas en ${name}`,
-      `Weddings in ${name}`,
-      `Mariages à ${name}`
+      `Weddings in ${name}`
     ),
     subtitle: ogText(locale,
       `${venueCount} venues · Despedidas · Bodas LGBTIQ+ · Guía inclusiva`,
-      `${venueCount} venues · Parties · LGBTIQ+ weddings · Inclusive guide`,
-      `${venueCount} lieux · Enterrements · Mariages LGBTIQ+ · Guide inclusif`
+      `${venueCount} venues · Parties · LGBTIQ+ weddings · Inclusive guide`
     ),
     background: "linear-gradient(135deg, #da4b1a 0%, #902e1a 100%)",
-    badgeText: ogText(locale, "Guía 2026", "2026 Guide", "Guide 2026"),
+    badgeText: ogText(locale, "Guía 2026", "2026 Guide"),
   });
 }

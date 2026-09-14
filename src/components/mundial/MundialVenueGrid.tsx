@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 import { useLocale } from "next-intl";
-import { MundialVenue } from "@/types/mundial";
+import { MundialVenueCard } from "@/types/mundial";
 import { localize, formatCurrency, t3 } from "@/lib/utils";
 import { Locale } from "@/types/common";
 
 interface MundialVenueGridProps {
-  venues: MundialVenue[];
+  venues: MundialVenueCard[];
 }
 
 export default function MundialVenueGrid({ venues }: MundialVenueGridProps) {
@@ -35,14 +35,14 @@ export default function MundialVenueGrid({ venues }: MundialVenueGridProps) {
                   <h3 className="font-display font-bold text-arena-800 text-lg">
                     {localize(venue.name, locale)}
                   </h3>
-                  <p className="text-sm text-arena-500">{venue.stadium.name} • {venue.stadium.capacity.toLocaleString()} {t3(locale, "asientos", "seats", "places")}</p>
+                  <p className="text-sm text-arena-500">{venue.stadium.name} • {venue.stadium.capacity.toLocaleString()} {t3(locale, "asientos", "seats")}</p>
                 </div>
               </div>
 
               {/* Mexico games highlight */}
               {mexicoGames.length > 0 && (
                 <div className="bg-jade-50 border border-jade-200 rounded-lg p-3 mb-4">
-                  <p className="text-xs font-bold text-jade-700 uppercase mb-2">🇲🇽 {t3(locale, "Partidos de México", "Mexico matches", "Matchs du Mexique")}</p>
+                  <p className="text-xs font-bold text-jade-700 uppercase mb-2">🇲🇽 {t3(locale, "Partidos de México", "Mexico matches")}</p>
                   {mexicoGames.map((match, i) => (
                     <p key={i} className="text-sm text-jade-600">
                       {match.date.slice(5)} • {localize(match.teamA, locale)} vs {localize(match.teamB, locale)}
@@ -53,9 +53,9 @@ export default function MundialVenueGrid({ venues }: MundialVenueGridProps) {
 
               {/* Stats */}
               <div className="flex items-center justify-between text-xs text-arena-700 mt-3">
-                <span>⚽ {totalMatches} {t3(locale, "partidos", "matches", "matchs")}</span>
+                <span>⚽ {totalMatches} {t3(locale, "partidos", "matches")}</span>
                 <span className="font-semibold text-terracotta-600 bg-terracotta-50 px-2 py-0.5 rounded-full">
-                  {t3(locale, "Desde", "From", "Dès")} {formatCurrency(venue.avgMatchDayBudget.min, venue.avgMatchDayBudget.currency)}/{t3(locale, "día", "day", "jour")}
+                  {t3(locale, "Desde", "From")} {formatCurrency(venue.avgMatchDayBudget.min, venue.avgMatchDayBudget.currency)}/{t3(locale, "día", "day")}
                 </span>
               </div>
             </div>

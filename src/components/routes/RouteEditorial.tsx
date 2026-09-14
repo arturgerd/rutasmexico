@@ -9,7 +9,6 @@ interface Props {
 }
 
 function t(obj: { es: string; en: string; fr: string }, locale: string): string {
-  if (locale === "fr") return obj.fr || obj.en || obj.es;
   if (locale === "en") return obj.en || obj.es;
   return obj.es;
 }

@@ -61,7 +61,7 @@ export default async function Image({ params }: { params: { locale: string; rout
           }}
         >
           <div style={{ fontSize: 30, opacity: 0.85, fontWeight: 500, display: "flex" }}>
-            {params.locale === "es" ? "Cómo viajar de" : params.locale === "fr" ? "Comment voyager de" : "How to travel from"}
+            {params.locale === "es" ? "Cómo viajar de" : "How to travel from"}
           </div>
 
           <div
@@ -108,7 +108,7 @@ export default async function Image({ params }: { params: { locale: string; rout
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
           <div style={{ display: "flex", flexDirection: "column" }}>
             <div style={{ fontSize: 24, opacity: 0.8 }}>
-              {params.locale === "es" ? "Desde" : params.locale === "fr" ? "Dès" : "From"}
+              {params.locale === "es" ? "Desde" : "From"}
             </div>
             <div style={{ fontSize: 56, fontWeight: 800, color: "#F4A261" }}>{minPrice}</div>
           </div>

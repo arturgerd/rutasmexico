@@ -97,7 +97,7 @@ export default async function BlogPostPage({
     articleSection: post.category,
     wordCount,
     timeRequired: `PT${post.readingTime}M`,
-    inLanguage: locale === "es" ? "es-MX" : locale === "fr" ? "fr-FR" : "en-US",
+    inLanguage: locale === "es" ? "es-MX" : "en-US",
   };
 
   // Detect listicle / step-by-step posts so we can emit HowTo schema. Catches:

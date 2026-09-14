@@ -12,16 +12,14 @@ export default async function Image({ params: { locale } }: { params: { locale: 
     title: ogText(
       locale,
       "Del aeropuerto de Cancún a tu hotel",
-      "From Cancún airport to your hotel",
-      "De l'aéroport de Cancún à votre hôtel"
+      "From Cancún airport to your hotel"
     ),
     subtitle: ogText(
       locale,
       "ADO · Taxi · Traslado privado · Renta de auto",
-      "ADO bus · Taxi · Private transfer · Car rental",
-      "Bus ADO · Taxi · Transfert privé · Location"
+      "ADO bus · Taxi · Private transfer · Car rental"
     ),
     background: "linear-gradient(135deg, #066948 0%, #03442e 100%)",
-    badgeText: ogText(locale, "Precios verificados", "Verified prices", "Prix vérifiés"),
+    badgeText: ogText(locale, "Precios verificados", "Verified prices"),
   });
 }

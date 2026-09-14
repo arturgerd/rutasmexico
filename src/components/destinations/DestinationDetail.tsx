@@ -198,7 +198,7 @@ export default function DestinationDetail({ destination, routes, terminals, loca
             {hasGallery && (
               <div className="bg-white rounded-2xl p-6 shadow-sm mt-6">
                 <h3 className="font-display text-xl font-bold text-arena-900 mb-4">
-                  📸 {(locale as string) === "fr" ? "Galerie" : locale === "es" ? "Galería" : "Gallery"}
+                  📸 {locale === "es" ? "Galería" : "Gallery"}
                 </h3>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                   {galleryImages.map((src, i) => (
@@ -211,7 +211,7 @@ export default function DestinationDetail({ destination, routes, terminals, loca
                     >
                       <Image
                         src={src}
-                        alt={`${localize(destination.name, locale)} ${i + 1}`}
+                        alt={`${localize(destination.name, locale)}: ${locale === "es" ? "foto" : "photo"} ${i + 1} ${locale === "es" ? "de" : "of"} ${galleryImages.length}`}
                         fill
                         sizes="(max-width: 768px) 50vw, 33vw"
                         className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -221,9 +221,7 @@ export default function DestinationDetail({ destination, routes, terminals, loca
                   ))}
                 </div>
                 <p className="text-xs text-arena-700 mt-3 text-center">
-                  {(locale as string) === "fr"
-                    ? "Clique sur une image pour la voir en grand"
-                    : locale === "es"
+                  {locale === "es"
                     ? "Haz clic en cualquier imagen para verla en tamaño completo"
                     : "Click any photo to open full size"}
                 </p>
@@ -235,21 +233,21 @@ export default function DestinationDetail({ destination, routes, terminals, loca
               <div className="mt-6 space-y-6">
                 <article className="bg-white rounded-2xl p-6 shadow-sm">
                   <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">
-                    {t3(locale, `Cómo llegar a ${localize(destination.name, locale)}`, `How to get to ${localize(destination.name, locale)}`, `Comment se rendre à ${localize(destination.name, locale)}`)}
+                    {t3(locale, `Cómo llegar a ${localize(destination.name, locale)}`, `How to get to ${localize(destination.name, locale)}`)}
                   </h2>
                   <p className="text-arena-700 leading-relaxed whitespace-pre-line">{localize(expandedContent.howToGetThere, locale)}</p>
                 </article>
 
                 <article className="bg-white rounded-2xl p-6 shadow-sm">
                   <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">
-                    {t3(locale, "Dónde hospedarse", "Where to stay", "Où loger")}
+                    {t3(locale, "Dónde hospedarse", "Where to stay")}
                   </h2>
                   <p className="text-arena-700 leading-relaxed whitespace-pre-line">{localize(expandedContent.whereToStay, locale)}</p>
                 </article>
 
                 <article className="bg-white rounded-2xl p-6 shadow-sm">
                   <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">
-                    {t3(locale, "Cómo moverte en la ciudad", "Getting around", "Se déplacer dans la ville")}
+                    {t3(locale, "Cómo moverte en la ciudad", "Getting around")}
                   </h2>
                   <p className="text-arena-700 leading-relaxed whitespace-pre-line">{localize(expandedContent.gettingAround, locale)}</p>
                 </article>
@@ -262,21 +260,21 @@ export default function DestinationDetail({ destination, routes, terminals, loca
 
                 <article className="bg-white rounded-2xl p-6 shadow-sm">
                   <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">
-                    {t3(locale, "Escena gastronómica", "Food scene", "Scène gastronomique")}
+                    {t3(locale, "Escena gastronómica", "Food scene")}
                   </h2>
                   <p className="text-arena-700 leading-relaxed whitespace-pre-line">{localize(expandedContent.foodScene, locale)}</p>
                 </article>
 
                 <article className="bg-white rounded-2xl p-6 shadow-sm">
                   <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">
-                    {t3(locale, "Mejor época para visitar", "Best time to visit", "Meilleure période pour visiter")}
+                    {t3(locale, "Mejor época para visitar", "Best time to visit")}
                   </h2>
                   <p className="text-arena-700 leading-relaxed whitespace-pre-line">{localize(expandedContent.bestTime, locale)}</p>
                 </article>
 
                 <article className="bg-white rounded-2xl p-6 shadow-sm">
                   <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">
-                    {t3(locale, "Costos diarios estimados", "Estimated daily costs", "Coûts journaliers estimés")}
+                    {t3(locale, "Costos diarios estimados", "Estimated daily costs")}
                   </h2>
                   <p className="text-arena-700 leading-relaxed whitespace-pre-line">{localize(expandedContent.dailyCost, locale)}</p>
                 </article>
@@ -284,7 +282,7 @@ export default function DestinationDetail({ destination, routes, terminals, loca
                 {expandedContent.faqs.length > 0 && (
                   <article className="bg-white rounded-2xl p-6 shadow-sm">
                     <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">
-                      {t3(locale, "Preguntas frecuentes", "Frequently asked questions", "Questions fréquentes")}
+                      {t3(locale, "Preguntas frecuentes", "Frequently asked questions")}
                     </h2>
                     <div className="divide-y divide-arena-200">
                       {expandedContent.faqs.map((faq, i) => {
@@ -317,7 +315,7 @@ export default function DestinationDetail({ destination, routes, terminals, loca
             {relatedBlog.length > 0 && (
               <section className="mt-8 bg-white rounded-2xl p-6 shadow-sm">
                 <h2 className="font-display text-2xl font-bold text-arena-900 mb-4">
-                  {t3(locale, "Guías relacionadas", "Related guides", "Guides connexes")}
+                  {t3(locale, "Guías relacionadas", "Related guides")}
                 </h2>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {relatedBlog.map((post) => (
@@ -396,10 +394,10 @@ export default function DestinationDetail({ destination, routes, terminals, loca
                 <span className="text-xl">💍</span>
                 <div>
                   <p className="font-semibold text-sm text-arena-900 group-hover:text-terracotta-600">
-                    {t3(locale, "Casarte aquí", "Get married here", "Se marier ici")}
+                    {t3(locale, "Casarte aquí", "Get married here")}
                   </p>
                   <p className="text-xs text-arena-700">
-                    {t3(locale, "Guía de bodas y venues", "Wedding & venue guide", "Guide mariages et lieux")}
+                    {t3(locale, "Guía de bodas y venues", "Wedding & venue guide")}
                   </p>
                 </div>
               </Link>

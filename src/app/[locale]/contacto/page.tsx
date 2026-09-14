@@ -6,13 +6,11 @@ import ContactForm from "./ContactForm";
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const title = t3(locale,
     "Contacto RutasMéxico | Preguntas y colaboraciones",
-    "Contact RutasMéxico | Questions & collaborations",
-    "Contact RutasMéxico | Questions et collaborations"
+    "Contact RutasMéxico | Questions & collaborations"
   );
   const description = t3(locale,
     "¿Preguntas sobre vuelos, autobuses, hoteles o rutas en México? Contáctanos para sugerencias, colaboraciones editoriales o reportar errores en RutasMéxico.",
-    "Questions about flights, buses, hotels or routes in Mexico? Contact us for suggestions, editorial collaborations or to report errors on RutasMéxico.",
-    "Questions sur les vols, bus, hôtels ou itinéraires au Mexique ? Contactez-nous pour suggestions, collaborations éditoriales ou signaler des erreurs."
+    "Questions about flights, buses, hotels or routes in Mexico? Contact us for suggestions, editorial collaborations or to report errors on RutasMéxico."
   );
   return {
     title,
@@ -30,25 +28,24 @@ export default function ContactoPage({ params: { locale } }: { params: { locale:
     <div className="min-h-screen bg-arena-50">
       <div className="container-custom py-12 max-w-4xl">
         {/* Breadcrumb */}
-        <nav className="text-sm text-arena-700 mb-8">
+        <nav aria-label="Breadcrumb" className="text-sm text-arena-700 mb-8">
           <Link href={`/${locale}`} className="hover:text-terracotta-500 transition-colors">
-            {t3(locale, "Inicio", "Home", "Accueil")}
+            {t3(locale, "Inicio", "Home")}
           </Link>
           <span className="mx-2">/</span>
           <span className="text-arena-600">
-            {t3(locale, "Contacto", "Contact", "Contact")}
+            {t3(locale, "Contacto", "Contact")}
           </span>
         </nav>
 
         <div className="bg-white rounded-2xl shadow-lg border border-arena-100 p-8 md:p-12">
           <h1 className="font-display text-3xl md:text-4xl font-bold text-arena-900 mb-4">
-            {t3(locale, "Contacto", "Contact Us", "Contactez-nous")}
+            {t3(locale, "Contacto", "Contact Us")}
           </h1>
           <p className="text-arena-500 text-lg mb-10">
             {t3(locale,
               "¿Tienes preguntas, sugerencias o quieres colaborar con nosotros? Nos encantaría saber de ti.",
-              "Have questions, suggestions or want to collaborate with us? We'd love to hear from you.",
-              "Vous avez des questions, des suggestions ou souhaitez collaborer avec nous ? Nous serions ravis de vous entendre."
+              "Have questions, suggestions or want to collaborate with us? We'd love to hear from you."
             )}
           </p>
 
@@ -71,8 +68,7 @@ export default function ContactoPage({ params: { locale } }: { params: { locale:
                   <p className="text-sm text-arena-700 mt-1">
                     {t3(locale,
                       "Respondemos en 24-48 horas",
-                      "We respond within 24-48 hours",
-                      "Nous répondons sous 24-48 heures"
+                      "We respond within 24-48 hours"
                     )}
                   </p>
                 </div>
@@ -85,10 +81,10 @@ export default function ContactoPage({ params: { locale } }: { params: { locale:
                 </div>
                 <div>
                   <h3 className="font-display font-bold text-arena-900 mb-1">
-                    {t3(locale, "Ubicación", "Location", "Emplacement")}
+                    {t3(locale, "Ubicación", "Location")}
                   </h3>
                   <p className="text-arena-600">
-                    {t3(locale, "Ciudad de México, México", "Mexico City, Mexico", "Mexico, Mexique")}
+                    {t3(locale, "Ciudad de México, México", "Mexico City, Mexico")}
                   </p>
                 </div>
               </div>
@@ -108,7 +104,7 @@ export default function ContactoPage({ params: { locale } }: { params: { locale:
             {/* Form */}
             <div>
               <h2 className="font-display text-xl font-bold text-arena-900 mb-6">
-                {t3(locale, "Envíanos un mensaje", "Send us a message", "Envoyez-nous un message")}
+                {t3(locale, "Envíanos un mensaje", "Send us a message")}
               </h2>
               <ContactForm locale={locale} />
             </div>

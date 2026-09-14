@@ -22,12 +22,22 @@ function getLocaleFromPath(pathname: string): string {
   return match ? match[1] : "es";
 }
 
-// Push a gtag command to the dataLayer without needing the global function reference
+// Send a command to Google tag. gtag.js only processes `arguments` objects
+// pushed onto dataLayer; a plain array is silently ignored. That was a real
+// bug in production: pressing "Aceptar" never flipped Consent Mode to
+// "granted", so GA4 ran cookieless for everyone. Prefer the canonical
+// `window.gtag` stub defined in the locale layout (beforeInteractive) and,
+// if it is somehow missing, push `arguments` exactly like that stub does.
 function gtag(...args: unknown[]) {
   if (typeof window === "undefined") return;
+  const w = window as unknown as { gtag?: (...a: unknown[]) => void };
+  if (typeof w.gtag === "function") {
+    w.gtag(...args);
+    return;
+  }
   window.dataLayer = window.dataLayer || [];
-  // gtag is traditionally implemented by pushing the raw `arguments`; we emulate it with an array
-  window.dataLayer.push(args);
+  // eslint-disable-next-line prefer-rest-params
+  window.dataLayer.push(arguments);
 }
 
 export default function ConsentManager() {

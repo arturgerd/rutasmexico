@@ -30,7 +30,7 @@ export default function HeroSection({ airports }: HeroSectionProps) {
         className="object-cover"
         priority
         sizes="100vw"
-        quality={85}
+        quality={75}
       />
       {/* Dark overlay for readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70" />

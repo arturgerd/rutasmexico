@@ -7,13 +7,11 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   // so we drop "RutasMéxico" from this string to avoid the duplicated suffix.
   const title = t3(locale,
     "Sobre nosotros — Guía de viajes por México",
-    "About us — Mexico Travel Guide & Comparison",
-    "À propos — Guide de voyage au Mexique"
+    "About us — Mexico Travel Guide & Comparison"
   );
   const description = t3(locale,
     "Conoce al equipo detrás de RutasMéxico: comparamos vuelos, autobuses, hoteles y rutas para que viajes por México al mejor precio, sin anuncios invasivos.",
-    "Meet the team behind RutasMéxico: we compare flights, buses, hotels and routes so you can travel Mexico at the best price, without invasive ads.",
-    "Découvrez l'équipe derrière RutasMéxico : nous comparons vols, bus, hôtels et itinéraires pour voyager au Mexique au meilleur prix, sans publicités intrusives."
+    "Meet the team behind RutasMéxico: we compare flights, buses, hotels and routes so you can travel Mexico at the best price, without invasive ads."
   );
   return {
     title,
@@ -37,9 +35,7 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
     alternateName: ["Arturo Gerardo García Álvarez", "Gerardo Álvarez"],
     jobTitle: locale === "es"
       ? "Fundador y editor de RutasMéxico"
-      : locale === "fr"
-        ? "Fondateur et éditeur de RutasMéxico"
-        : "Founder and editor of RutasMéxico",
+      : "Founder and editor of RutasMéxico",
     description: locale === "es"
       ? "Viajero mexicano radicado en CDMX. Ha recorrido las 32 entidades federativas verificando rutas, terminales y precios de transporte. Verifica precios trimestralmente y confirma cada artículo contra fuentes oficiales (Volaris, VivaAerobus, Aeroméxico, ADO, ETN, Primera Plus)."
       : "Mexican traveler based in Mexico City. Has visited all 32 Mexican states verifying routes, terminals and transport prices. Reviews prices quarterly and confirms every article against official sources (Volaris, VivaAerobus, Aeromexico, ADO, ETN, Primera Plus).",
@@ -79,13 +75,13 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
       />
       <div className="container-custom py-12 max-w-4xl">
         {/* Breadcrumb */}
-        <nav className="text-sm text-arena-700 mb-8">
+        <nav aria-label="Breadcrumb" className="text-sm text-arena-700 mb-8">
           <Link href={`/${locale}`} className="hover:text-terracotta-500 transition-colors">
-            {t3(locale, "Inicio", "Home", "Accueil")}
+            {t3(locale, "Inicio", "Home")}
           </Link>
           <span className="mx-2">/</span>
           <span className="text-arena-600">
-            {t3(locale, "Sobre nosotros", "About us", "À propos")}
+            {t3(locale, "Sobre nosotros", "About us")}
           </span>
         </nav>
 
@@ -96,15 +92,13 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
             <h1 className="font-display text-3xl md:text-4xl font-bold text-arena-900 mb-4">
               {t3(locale,
                 "Sobre RutasMéxico",
-                "About RutasMéxico",
-                "À propos de RutasMéxico"
+                "About RutasMéxico"
               )}
             </h1>
             <p className="text-arena-500 text-lg max-w-2xl mx-auto">
               {t3(locale,
                 "Somos un equipo apasionado por México que creamos la guía de viajes más completa y accesible para explorar nuestro país.",
-                "We are a team passionate about Mexico, creating the most complete and accessible travel guide to explore our country.",
-                "Nous sommes une équipe passionnée par le Mexique, créant le guide de voyage le plus complet et accessible pour explorer notre pays."
+                "We are a team passionate about Mexico, creating the most complete and accessible travel guide to explore our country."
               )}
             </p>
           </div>
@@ -117,13 +111,12 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
               </div>
               <div>
                 <h2 className="font-display text-2xl font-bold text-arena-900 mb-3">
-                  {t3(locale, "Nuestra misión", "Our mission", "Notre mission")}
+                  {t3(locale, "Nuestra misión", "Our mission")}
                 </h2>
                 <p className="text-arena-600 leading-relaxed">
                   {t3(locale,
                     "En RutasMéxico creemos que viajar por nuestro país debería ser fácil, accesible y emocionante para todos. Nuestra misión es proporcionar información detallada, actualizada y confiable sobre cómo moverse entre las ciudades más increíbles de México, para que cada viajero pueda planificar su aventura con confianza.",
-                    "At RutasMéxico, we believe that traveling across our country should be easy, accessible, and exciting for everyone. Our mission is to provide detailed, up-to-date, and reliable information about how to get around Mexico's most incredible cities, so every traveler can plan their adventure with confidence.",
-                    "Chez RutasMéxico, nous croyons que voyager à travers notre pays devrait être facile, accessible et passionnant pour tous. Notre mission est de fournir des informations détaillées, à jour et fiables sur la façon de se déplacer entre les villes les plus incroyables du Mexique, afin que chaque voyageur puisse planifier son aventure en toute confiance."
+                    "At RutasMéxico, we believe that traveling across our country should be easy, accessible, and exciting for everyone. Our mission is to provide detailed, up-to-date, and reliable information about how to get around Mexico's most incredible cities, so every traveler can plan their adventure with confidence."
                   )}
                 </p>
               </div>
@@ -143,7 +136,7 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
               </div>
               <div className="flex-1">
                 <p className="text-xs uppercase tracking-wider text-terracotta-600 font-semibold mb-1">
-                  {t3(locale, "Editor responsable", "Lead editor", "Éditeur responsable")}
+                  {t3(locale, "Editor responsable", "Lead editor")}
                 </p>
                 <h2 className="font-display text-2xl font-bold text-arena-900 mb-1">
                   Arturo García
@@ -151,18 +144,16 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
                 <p className="text-sm text-arena-700 mb-3">
                   {t3(locale,
                     "Fundador y editor — Ciudad de México",
-                    "Founder and editor — Mexico City",
-                    "Fondateur et éditeur — Mexico"
+                    "Founder and editor — Mexico City"
                   )}
                 </p>
                 <p className="text-arena-700 leading-relaxed mb-4">
                   {t3(locale,
                     "Viajero mexicano radicado en CDMX. He recorrido las 32 entidades federativas verificando rutas, terminales y precios de transporte. Cada artículo de RutasMéxico se publica solo después de que confirmo personalmente los datos clave (precios, horarios, terminales) o los verifico contra las fuentes oficiales de las aerolíneas (Volaris, VivaAerobus, Aeroméxico) y líneas de autobús (ADO, ETN, Primera Plus).",
-                    "Mexican traveler based in Mexico City. I have visited all 32 Mexican states verifying routes, terminals and transport prices. Every RutasMéxico article is only published after I personally confirm the key data (prices, schedules, terminals) or verify it against the official sources of airlines (Volaris, VivaAerobus, Aeroméxico) and bus lines (ADO, ETN, Primera Plus).",
-                    "Voyageur mexicain basé à Mexico. J'ai parcouru les 32 États du Mexique en vérifiant itinéraires, terminaux et tarifs. Chaque article de RutasMéxico n'est publié qu'après avoir confirmé personnellement les données clés ou les avoir vérifiées auprès des sources officielles."
+                    "Mexican traveler based in Mexico City. I have visited all 32 Mexican states verifying routes, terminals and transport prices. Every RutasMéxico article is only published after I personally confirm the key data (prices, schedules, terminals) or verify it against the official sources of airlines (Volaris, VivaAerobus, Aeroméxico) and bus lines (ADO, ETN, Primera Plus)."
                   )}
                 </p>
-                <div className="flex flex-wrap items-center gap-3 mb-4" aria-label={t3(locale, "Redes sociales del autor", "Author social profiles", "Profils sociaux de l'auteur")}>
+                <div className="flex flex-wrap items-center gap-3 mb-4" aria-label={t3(locale, "Redes sociales del autor", "Author social profiles")}>
                   <a href="https://www.linkedin.com/in/arturo-garcia-ia/" target="_blank" rel="me noopener noreferrer" className="text-arena-700 hover:text-terracotta-600 text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 rounded">LinkedIn</a>
                   <span className="text-arena-300" aria-hidden>·</span>
                   <a href="https://www.youtube.com/@arturog-IA" target="_blank" rel="me noopener noreferrer" className="text-arena-700 hover:text-terracotta-600 text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 rounded">YouTube</a>
@@ -176,33 +167,31 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
                   <div className="bg-white rounded-lg border border-arena-200 px-3 py-2">
                     <div className="font-semibold text-arena-900">
-                      {t3(locale, "Especialidad", "Expertise", "Spécialité")}
+                      {t3(locale, "Especialidad", "Expertise")}
                     </div>
                     <div className="text-arena-700 mt-0.5">
                       {t3(locale,
                         "Transporte interurbano, presupuestos, Mundial 2026",
-                        "Domestic transport, budgets, World Cup 2026",
-                        "Transport intérieur, budgets, Coupe du Monde 2026"
+                        "Domestic transport, budgets, World Cup 2026"
                       )}
                     </div>
                   </div>
                   <div className="bg-white rounded-lg border border-arena-200 px-3 py-2">
                     <div className="font-semibold text-arena-900">
-                      {t3(locale, "Verificación", "Verification", "Vérification")}
+                      {t3(locale, "Verificación", "Verification")}
                     </div>
                     <div className="text-arena-700 mt-0.5">
                       <Link href={`/${locale}/metodologia`} className="text-terracotta-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 rounded">
                         {t3(locale,
                           "Ver metodología editorial",
-                          "See editorial methodology",
-                          "Voir méthodologie"
+                          "See editorial methodology"
                         )}
                       </Link>
                     </div>
                   </div>
                   <div className="bg-white rounded-lg border border-arena-200 px-3 py-2">
                     <div className="font-semibold text-arena-900">
-                      {t3(locale, "Contacto", "Contact", "Contact")}
+                      {t3(locale, "Contacto", "Contact")}
                     </div>
                     <div className="text-arena-700 mt-0.5">
                       <Link href={`/${locale}/contacto`} className="text-terracotta-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 rounded">
@@ -223,13 +212,12 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
               </div>
               <div>
                 <h2 className="font-display text-2xl font-bold text-arena-900 mb-3">
-                  {t3(locale, "Qué hacemos", "What we do", "Ce que nous faisons")}
+                  {t3(locale, "Qué hacemos", "What we do")}
                 </h2>
                 <p className="text-arena-600 leading-relaxed mb-4">
                   {t3(locale,
                     "Investigamos, verificamos y publicamos guías paso a paso para viajar entre las principales ciudades de México. Cada ruta incluye:",
-                    "We research, verify, and publish step-by-step guides for traveling between Mexico's main cities. Each route includes:",
-                    "Nous recherchons, vérifions et publions des guides étape par étape pour voyager entre les principales villes du Mexique. Chaque itinéraire comprend :"
+                    "We research, verify, and publish step-by-step guides for traveling between Mexico's main cities. Each route includes:"
                   )}
                 </p>
               </div>
@@ -237,49 +225,45 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ml-16">
               <div className="p-4 bg-arena-50 rounded-xl border border-arena-100">
                 <h3 className="font-semibold text-arena-800 text-sm mb-1">
-                  {t3(locale, "Comparación de transporte", "Transport comparison", "Comparaison des transports")}
+                  {t3(locale, "Comparación de transporte", "Transport comparison")}
                 </h3>
                 <p className="text-sm text-arena-500">
                   {t3(locale,
                     "Vuelos, autobuses y opciones en auto con precios estimados y tiempos reales.",
-                    "Flights, buses, and driving options with estimated prices and real times.",
-                    "Vols, bus et options en voiture avec prix estimés et temps réels."
+                    "Flights, buses, and driving options with estimated prices and real times."
                   )}
                 </p>
               </div>
               <div className="p-4 bg-arena-50 rounded-xl border border-arena-100">
                 <h3 className="font-semibold text-arena-800 text-sm mb-1">
-                  {t3(locale, "Guías de destino", "Destination guides", "Guides de destination")}
+                  {t3(locale, "Guías de destino", "Destination guides")}
                 </h3>
                 <p className="text-sm text-arena-500">
                   {t3(locale,
                     "Información completa sobre qué hacer, comer y cómo moverse en cada ciudad.",
-                    "Complete information about what to do, eat, and how to get around each city.",
-                    "Informations complètes sur quoi faire, manger et comment se déplacer dans chaque ville."
+                    "Complete information about what to do, eat, and how to get around each city."
                   )}
                 </p>
               </div>
               <div className="p-4 bg-arena-50 rounded-xl border border-arena-100">
                 <h3 className="font-semibold text-arena-800 text-sm mb-1">
-                  {t3(locale, "Blog de viajes", "Travel blog", "Blog de voyage")}
+                  {t3(locale, "Blog de viajes", "Travel blog")}
                 </h3>
                 <p className="text-sm text-arena-500">
                   {t3(locale,
                     "Artículos con tips, mejores épocas para viajar y guías especializadas.",
-                    "Articles with tips, best times to travel, and specialized guides.",
-                    "Articles avec des conseils, les meilleures périodes pour voyager et des guides spécialisés."
+                    "Articles with tips, best times to travel, and specialized guides."
                   )}
                 </p>
               </div>
               <div className="p-4 bg-arena-50 rounded-xl border border-arena-100">
                 <h3 className="font-semibold text-arena-800 text-sm mb-1">
-                  {t3(locale, "Búsqueda de vuelos y hoteles", "Flight & hotel search", "Recherche de vols et hôtels")}
+                  {t3(locale, "Búsqueda de vuelos y hoteles", "Flight & hotel search")}
                 </h3>
                 <p className="text-sm text-arena-500">
                   {t3(locale,
                     "Herramientas integradas para buscar y comparar precios de vuelos y alojamiento.",
-                    "Integrated tools to search and compare flight and accommodation prices.",
-                    "Outils intégrés pour rechercher et comparer les prix des vols et hébergements."
+                    "Integrated tools to search and compare flight and accommodation prices."
                   )}
                 </p>
               </div>
@@ -294,7 +278,7 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
               </div>
               <div>
                 <h2 className="font-display text-2xl font-bold text-arena-900 mb-3">
-                  {t3(locale, "Nuestros valores", "Our values", "Nos valeurs")}
+                  {t3(locale, "Nuestros valores", "Our values")}
                 </h2>
               </div>
             </div>
@@ -302,39 +286,36 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
               <div className="text-center p-6 bg-terracotta-50 rounded-xl border border-terracotta-100">
                 <span className="text-3xl block mb-3">🔍</span>
                 <h3 className="font-display font-bold text-terracotta-700 mb-2">
-                  {t3(locale, "Información verificada", "Verified information", "Information vérifiée")}
+                  {t3(locale, "Información verificada", "Verified information")}
                 </h3>
                 <p className="text-sm text-terracotta-600/80">
                   {t3(locale,
                     "Cada ruta y precio es investigado y actualizado regularmente.",
-                    "Every route and price is researched and regularly updated.",
-                    "Chaque itinéraire et prix est recherché et régulièrement mis à jour."
+                    "Every route and price is researched and regularly updated."
                   )}
                 </p>
               </div>
               <div className="text-center p-6 bg-azul-50 rounded-xl border border-azul-100">
                 <span className="text-3xl block mb-3">🌍</span>
                 <h3 className="font-display font-bold text-azul-700 mb-2">
-                  {t3(locale, "Accesibilidad", "Accessibility", "Accessibilité")}
+                  {t3(locale, "Accesibilidad", "Accessibility")}
                 </h3>
                 <p className="text-sm text-azul-600/80">
                   {t3(locale,
                     "Contenido disponible en español, inglés y francés para todos los viajeros.",
-                    "Content available in Spanish, English, and French for all travelers.",
-                    "Contenu disponible en espagnol, anglais et français pour tous les voyageurs."
+                    "Content available in Spanish, English, and French for all travelers."
                   )}
                 </p>
               </div>
               <div className="text-center p-6 bg-jade-50 rounded-xl border border-jade-100">
                 <span className="text-3xl block mb-3">❤️</span>
                 <h3 className="font-display font-bold text-jade-700 mb-2">
-                  {t3(locale, "Amor por México", "Love for Mexico", "Amour du Mexique")}
+                  {t3(locale, "Amor por México", "Love for Mexico")}
                 </h3>
                 <p className="text-sm text-jade-600/80">
                   {t3(locale,
                     "Promovemos el turismo responsable y la riqueza cultural de cada destino.",
-                    "We promote responsible tourism and the cultural richness of each destination.",
-                    "Nous promouvons le tourisme responsable et la richesse culturelle de chaque destination."
+                    "We promote responsible tourism and the cultural richness of each destination."
                   )}
                 </p>
               </div>
@@ -349,13 +330,12 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
               </div>
               <div>
                 <h2 className="font-display text-2xl font-bold text-arena-900 mb-3">
-                  {t3(locale, "Transparencia", "Transparency", "Transparence")}
+                  {t3(locale, "Transparencia", "Transparency")}
                 </h2>
                 <p className="text-arena-600 leading-relaxed">
                   {t3(locale,
                     "RutasMéxico es un sitio independiente. Parte de nuestros ingresos proviene de enlaces de afiliado a servicios de viaje (como búsquedas de vuelos y hoteles) y publicidad. Esto nos permite mantener el contenido gratuito y actualizado. Los enlaces de afiliado no afectan nuestras recomendaciones: siempre priorizamos la mejor opción para el viajero.",
-                    "RutasMéxico is an independent website. Part of our revenue comes from affiliate links to travel services (such as flight and hotel searches) and advertising. This allows us to keep our content free and up-to-date. Affiliate links do not affect our recommendations: we always prioritize the best option for the traveler.",
-                    "RutasMéxico est un site indépendant. Une partie de nos revenus provient de liens d'affiliation vers des services de voyage (comme les recherches de vols et d'hôtels) et de la publicité. Cela nous permet de maintenir notre contenu gratuit et à jour. Les liens d'affiliation n'affectent pas nos recommandations : nous privilégions toujours la meilleure option pour le voyageur."
+                    "RutasMéxico is an independent website. Part of our revenue comes from affiliate links to travel services (such as flight and hotel searches) and advertising. This allows us to keep our content free and up-to-date. Affiliate links do not affect our recommendations: we always prioritize the best option for the traveler."
                   )}
                 </p>
               </div>
@@ -367,15 +347,14 @@ export default function NosotrosPage({ params: { locale } }: { params: { locale:
             <p className="text-arena-500 mb-4">
               {t3(locale,
                 "¿Tienes preguntas o sugerencias? Nos encantaría escucharte.",
-                "Have questions or suggestions? We'd love to hear from you.",
-                "Des questions ou des suggestions ? Nous serions ravis de vous entendre."
+                "Have questions or suggestions? We'd love to hear from you."
               )}
             </p>
             <Link
               href={`/${locale}/contacto`}
               className="inline-flex items-center gap-2 bg-terracotta-500 hover:bg-terracotta-600 text-white font-semibold py-3 px-6 rounded-xl transition-colors"
             >
-              {t3(locale, "Contáctanos", "Contact us", "Contactez-nous")} →
+              {t3(locale, "Contáctanos", "Contact us")} →
             </Link>
           </div>
         </div>

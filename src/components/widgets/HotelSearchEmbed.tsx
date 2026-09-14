@@ -140,10 +140,10 @@ export default function HotelSearchEmbed() {
       <div className="bg-white rounded-2xl shadow-xl border border-arena-100 overflow-hidden">
         <div className="bg-gradient-to-r from-amber-600 to-orange-500 px-6 py-4">
           <h2 className="font-display text-xl font-bold text-white flex items-center gap-2">
-            🏨 {t3(locale, "Busca hoteles baratos en México", "Search cheap hotels in Mexico", "Recherchez des hôtels pas chers au Mexique")}
+            🏨 {t3(locale, "Busca hoteles baratos en México", "Search cheap hotels in Mexico")}
           </h2>
           <p className="text-white/80 text-sm mt-1">
-            {t3(locale, "Compara precios de Booking.com, Expedia, Hotels.com, Hoteles.com y más", "Compare prices from Booking.com, Expedia, Hotels.com, Hoteles.com and more", "Comparez Booking.com, Expedia, Hotels.com, Hoteles.com et plus")}
+            {t3(locale, "Compara precios de Booking.com, Expedia, Hotels.com, Hoteles.com y más", "Compare prices from Booking.com, Expedia, Hotels.com, Hoteles.com and more")}
           </p>
         </div>
 
@@ -151,7 +151,7 @@ export default function HotelSearchEmbed() {
           {/* City selector with optgroups */}
           <div>
             <label htmlFor={cityId} className="block text-xs font-semibold text-arena-500 mb-1">
-              {t3(locale, "Destino", "Destination", "Destination")}
+              {t3(locale, "Destino", "Destination")}
             </label>
             <select
               id={cityId}
@@ -159,22 +159,22 @@ export default function HotelSearchEmbed() {
               onChange={(e) => setCity(e.target.value)}
               className="w-full p-3 bg-arena-50 rounded-xl border border-arena-200 text-arena-800 focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500"
             >
-              <option value="">{t3(locale, "🏨 Selecciona destino", "🏨 Select destination", "🏨 Sélectionnez une destination")}</option>
-              <optgroup label={t3(locale, "🏖️ Playas", "🏖️ Beaches", "🏖️ Plages")}>
+              <option value="">{t3(locale, "🏨 Selecciona destino", "🏨 Select destination")}</option>
+              <optgroup label={t3(locale, "🏖️ Playas", "🏖️ Beaches")}>
                 {sortedCities.filter(c => c.type === "playa").map((c) => (
                   <option key={c.id} value={c.id}>
                     {c.emoji} {l(c.name, locale)} — {l(c.state, locale)}
                   </option>
                 ))}
               </optgroup>
-              <optgroup label={t3(locale, "🏛️ Ciudades", "🏛️ Cities", "🏛️ Villes")}>
+              <optgroup label={t3(locale, "🏛️ Ciudades", "🏛️ Cities")}>
                 {sortedCities.filter(c => c.type === "ciudad").map((c) => (
                   <option key={c.id} value={c.id}>
                     {c.emoji} {l(c.name, locale)} — {l(c.state, locale)}
                   </option>
                 ))}
               </optgroup>
-              <optgroup label={t3(locale, "⛪ Pueblos Mágicos", "⛪ Magical Towns", "⛪ Villages magiques")}>
+              <optgroup label={t3(locale, "⛪ Pueblos Mágicos", "⛪ Magical Towns")}>
                 {sortedCities.filter(c => c.type === "pueblo").map((c) => (
                   <option key={c.id} value={c.id}>
                     {c.emoji} {l(c.name, locale)} — {l(c.state, locale)}
@@ -188,7 +188,7 @@ export default function HotelSearchEmbed() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <div>
               <label htmlFor={inId} className="block text-xs font-semibold text-arena-500 mb-1">
-                {t3(locale, "Fecha de entrada", "Check-in", "Date d'arrivée")}
+                {t3(locale, "Fecha de entrada", "Check-in")}
               </label>
               <input
                 id={inId}
@@ -201,7 +201,7 @@ export default function HotelSearchEmbed() {
             </div>
             <div>
               <label htmlFor={outId} className="block text-xs font-semibold text-arena-500 mb-1">
-                {t3(locale, "Fecha de salida", "Check-out", "Date de départ")}
+                {t3(locale, "Fecha de salida", "Check-out")}
               </label>
               <input
                 id={outId}
@@ -214,7 +214,7 @@ export default function HotelSearchEmbed() {
             </div>
             <div>
               <label htmlFor={roomsId} className="block text-xs font-semibold text-arena-500 mb-1">
-                {t3(locale, "Habitaciones", "Rooms", "Chambres")}
+                {t3(locale, "Habitaciones", "Rooms")}
               </label>
               <select
                 id={roomsId}
@@ -224,7 +224,7 @@ export default function HotelSearchEmbed() {
               >
                 {[1, 2, 3, 4].map((n) => (
                   <option key={n} value={n}>
-                    {n} {t3(locale, n === 1 ? "habitación" : "habitaciones", n === 1 ? "room" : "rooms", n === 1 ? "chambre" : "chambres")}
+                    {n} {t3(locale, n === 1 ? "habitación" : "habitaciones", n === 1 ? "room" : "rooms")}
                   </option>
                 ))}
               </select>
@@ -235,7 +235,7 @@ export default function HotelSearchEmbed() {
             onClick={handleSearch}
             className="w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white py-3 rounded-xl text-base font-bold hover:from-amber-600 hover:to-orange-600 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
           >
-            🔍 {t3(locale, "Encuentra el hotel más barato", "Find the cheapest hotel", "Trouver l'hôtel le moins cher")}
+            🔍 {t3(locale, "Encuentra el hotel más barato", "Find the cheapest hotel")}
           </button>
 
           {error && (
@@ -245,7 +245,7 @@ export default function HotelSearchEmbed() {
           {/* Comparison badge */}
           <div className="flex flex-wrap items-center gap-2 text-xs">
             <span className="text-arena-700 font-medium">
-              {t3(locale, "Comparamos:", "We compare:", "Nous comparons :")}
+              {t3(locale, "Comparamos:", "We compare:")}
             </span>
             {["Booking.com", "Expedia", "Hotels.com", "Agoda", "Hoteles.com"].map((site) => (
               <span key={site} className="px-2 py-0.5 bg-amber-50 rounded-full border border-amber-200 text-amber-700 font-medium">
@@ -264,21 +264,21 @@ export default function HotelSearchEmbed() {
               <span className="text-2xl">✅</span>
               <div>
                 <h3 className="font-display font-bold text-green-800">
-                  {t3(locale, "¡Búsqueda de hoteles abierta!", "Hotel search opened!", "Recherche d'hôtels ouverte !")}
+                  {t3(locale, "¡Búsqueda de hoteles abierta!", "Hotel search opened!")}
                 </h3>
                 <p className="text-sm text-green-600">
-                  {t3(locale, "Comparando precios de hoteles en nueva pestaña", "Comparing hotel prices in new tab", "Comparaison des prix d'hôtels dans un nouvel onglet")}
+                  {t3(locale, "Comparando precios de hoteles en nueva pestaña", "Comparing hotel prices in new tab")}
                 </p>
               </div>
             </div>
             <div className="flex gap-3 mt-3">
               <a href={lastSearchUrl} target="_blank" rel="sponsored noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-xl text-sm font-semibold hover:bg-green-700 transition-colors">
-                {t3(locale, "Ver resultados →", "View results →", "Voir les résultats →")}
+                {t3(locale, "Ver resultados →", "View results →")}
               </a>
               <button onClick={() => setSearchDone(false)}
                 className="inline-flex items-center gap-2 bg-arena-100 text-arena-600 px-4 py-2 rounded-xl text-sm font-semibold hover:bg-arena-200 transition-colors">
-                {t3(locale, "Nueva búsqueda", "New search", "Nouvelle recherche")}
+                {t3(locale, "Nueva búsqueda", "New search")}
               </button>
             </div>
           </div>
@@ -291,7 +291,7 @@ export default function HotelSearchEmbed() {
           {/* Beach destinations */}
           <div>
             <h3 className="font-display font-bold text-arena-900 text-lg mb-4">
-              {t3(locale, "🏖️ Hoteles en la playa", "🏖️ Beach hotels", "🏖️ Hôtels de plage")}
+              {t3(locale, "🏖️ Hoteles en la playa", "🏖️ Beach hotels")}
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
               {beachCities.map((c) => {
@@ -316,7 +316,7 @@ export default function HotelSearchEmbed() {
                         {l(c.state, locale)}
                       </p>
                       <p className="text-amber-300 text-xs font-semibold mt-0.5">
-                        {t3(locale, `Desde ${formatPrice(c.priceFrom)}/noche`, `From ${formatPrice(c.priceFrom)}/night`, `À partir de ${formatPrice(c.priceFrom)}/nuit`)}
+                        {t3(locale, `Desde ${formatPrice(c.priceFrom)}/noche`, `From ${formatPrice(c.priceFrom)}/night`)}
                       </p>
                     </div>
                   </button>
@@ -328,7 +328,7 @@ export default function HotelSearchEmbed() {
           {/* City & culture destinations */}
           <div>
             <h3 className="font-display font-bold text-arena-900 text-lg mb-4">
-              {t3(locale, "🏛️ Hoteles en ciudades y pueblos mágicos", "🏛️ City & magical town hotels", "🏛️ Hôtels en villes et villages magiques")}
+              {t3(locale, "🏛️ Hoteles en ciudades y pueblos mágicos", "🏛️ City & magical town hotels")}
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
               {cultureCities.map((c) => {
@@ -353,7 +353,7 @@ export default function HotelSearchEmbed() {
                         {l(c.state, locale)}
                       </p>
                       <p className="text-amber-300 text-xs font-semibold mt-0.5">
-                        {t3(locale, `Desde ${formatPrice(c.priceFrom)}/noche`, `From ${formatPrice(c.priceFrom)}/night`, `À partir de ${formatPrice(c.priceFrom)}/nuit`)}
+                        {t3(locale, `Desde ${formatPrice(c.priceFrom)}/noche`, `From ${formatPrice(c.priceFrom)}/night`)}
                       </p>
                     </div>
                   </button>

@@ -64,15 +64,13 @@ export default function ToursAndActivities({ destinationSlug, cityName, locale }
       <h2 className="font-display text-2xl font-bold text-arena-900 mb-2">
         {t3(locale,
           `Tours y actividades en ${cityName}`,
-          `Tours and activities in ${cityName}`,
-          `Activités à ${cityName}`
+          `Tours and activities in ${cityName}`
         )}
       </h2>
       <p className="text-arena-600 text-sm mb-5 leading-relaxed">
         {t3(locale,
           `Compara opciones en dos plataformas con cancelación gratuita y reseñas verificadas. Reservar por estos enlaces no te cuesta nada extra y nos ayuda a mantener las guías actualizadas.`,
-          `Compare options on two platforms with free cancellation and verified reviews. Booking through these links costs you nothing extra and helps us keep the guides updated.`,
-          `Comparez les options sur deux plateformes avec annulation gratuite et avis vérifiés.`
+          `Compare options on two platforms with free cancellation and verified reviews. Booking through these links costs you nothing extra and helps us keep the guides updated.`
         )}
       </p>
 
@@ -91,12 +89,11 @@ export default function ToursAndActivities({ destinationSlug, cityName, locale }
             <p className="text-sm text-arena-600 leading-snug">
               {t3(locale,
                 `Tours guiados, traslados y experiencias en ${cityName}.`,
-                `Guided tours, transfers and experiences in ${cityName}.`,
-                `Visites guidées, transferts et expériences à ${cityName}.`
+                `Guided tours, transfers and experiences in ${cityName}.`
               )}
             </p>
             <span className="text-sm font-semibold text-terracotta-600 group-hover:text-terracotta-700 mt-auto">
-              {t3(locale, "Ver tours →", "See tours →", "Voir les tours →")}
+              {t3(locale, "Ver tours →", "See tours →")}
             </span>
           </a>
         )}
@@ -115,12 +112,11 @@ export default function ToursAndActivities({ destinationSlug, cityName, locale }
             <p className="text-sm text-arena-600 leading-snug">
               {t3(locale,
                 `Entradas a museos, sitios arqueológicos y atracciones en ${cityName}.`,
-                `Tickets to museums, archaeological sites and attractions in ${cityName}.`,
-                `Billets pour musées, sites archéologiques et attractions à ${cityName}.`
+                `Tickets to museums, archaeological sites and attractions in ${cityName}.`
               )}
             </p>
             <span className="text-sm font-semibold text-terracotta-600 group-hover:text-terracotta-700 mt-auto">
-              {t3(locale, "Ver entradas →", "See tickets →", "Voir les billets →")}
+              {t3(locale, "Ver entradas →", "See tickets →")}
             </span>
           </a>
         )}
@@ -129,8 +125,7 @@ export default function ToursAndActivities({ destinationSlug, cityName, locale }
       <p className="text-[11px] text-arena-500 mt-4 leading-relaxed">
         {t3(locale,
           "Enlaces patrocinados (rel=\"sponsored\"). RutasMéxico recibe una comisión si reservas, sin costo extra para ti.",
-          "Sponsored links (rel=\"sponsored\"). RutasMéxico earns a commission if you book, at no extra cost to you.",
-          "Liens sponsorisés. RutasMéxico reçoit une commission si vous réservez, sans frais supplémentaires pour vous."
+          "Sponsored links (rel=\"sponsored\"). RutasMéxico earns a commission if you book, at no extra cost to you."
         )}
       </p>
     </article>

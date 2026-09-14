@@ -15,7 +15,7 @@ export default async function RecentBlogPosts({ posts }: RecentBlogPostsProps) {
   const formatDate = (dateStr: string) => {
     const date = new Date(dateStr + "T12:00:00");
     return date.toLocaleDateString(
-      locale === "es" ? "es-MX" : locale === "fr" ? "fr-FR" : "en-US",
+      locale === "es" ? "es-MX" : "en-US",
       { year: "numeric", month: "long", day: "numeric" }
     );
   };
@@ -25,17 +25,16 @@ export default async function RecentBlogPosts({ posts }: RecentBlogPostsProps) {
       <div className="container-custom">
         <div className="text-center mb-12">
           <span className="inline-block px-4 py-1.5 bg-jade-100 text-jade-700 rounded-full text-sm font-semibold mb-4">
-            {t3(locale, "Blog de viajes", "Travel Blog", "Blog de voyage")}
+            {t3(locale, "Blog de viajes", "Travel Blog")}
           </span>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-arena-900 mb-3">
-            {t3(locale, "Últimos artículos", "Latest Articles", "Derniers articles")}
+            {t3(locale, "Últimos artículos", "Latest Articles")}
           </h2>
           <p className="text-arena-500 text-lg max-w-2xl mx-auto">
             {t3(
               locale,
               "Guías, consejos y todo lo que necesitas para tu próximo viaje por México",
-              "Guides, tips and everything you need for your next trip across Mexico",
-              "Guides, conseils et tout ce dont vous avez besoin pour votre prochain voyage au Mexique"
+              "Guides, tips and everything you need for your next trip across Mexico"
             )}
           </p>
         </div>
@@ -76,7 +75,7 @@ export default async function RecentBlogPosts({ posts }: RecentBlogPostsProps) {
                 <div className="flex items-center justify-between mt-4 text-xs text-arena-700">
                   <span>{formatDate(post.publishedDate)}</span>
                   <span>
-                    {post.readingTime} {t3(locale, "min de lectura", "min read", "min de lecture")}
+                    {post.readingTime} {t3(locale, "min de lectura", "min read")}
                   </span>
                 </div>
               </div>
@@ -90,7 +89,7 @@ export default async function RecentBlogPosts({ posts }: RecentBlogPostsProps) {
             href={`/${locale}/blog`}
             className="btn-primary inline-flex items-center gap-2"
           >
-            {t3(locale, "Ver todos los artículos", "View all articles", "Voir tous les articles")}
+            {t3(locale, "Ver todos los artículos", "View all articles")}
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>

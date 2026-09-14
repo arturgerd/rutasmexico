@@ -40,14 +40,12 @@ export async function generateMetadata({ params: { locale, routeSlug } }: { para
 
   const titleEs = `${originName} a ${destName} ${year}: vuelo, bus o auto`;
   const titleEn = `${originName} to ${destName} ${year}: flight, bus or car`;
-  const titleFr = `${originName} à ${destName} ${year} : avion, bus, voiture`;
 
   const descEs = `Vuelo, autobús o auto de ${originName} a ${destName} desde ${minPrice} ${currency}. Guía con precios reales y rutas paso a paso ${year}.`;
   const descEn = `Flight, bus or car from ${originName} to ${destName} from ${minPrice} ${currency}. Real prices and step-by-step routes ${year}.`;
-  const descFr = `Avion, bus ou voiture de ${originName} à ${destName} dès ${minPrice} ${currency}. Tarifs réels et itinéraires pas à pas ${year}.`;
 
-  const title = locale === "en" ? titleEn : locale === "fr" ? titleFr : titleEs;
-  const description = locale === "en" ? descEn : locale === "fr" ? descFr : descEs;
+  const title = locale === "en" ? titleEn : titleEs;
+  const description = locale === "en" ? descEn : descEs;
 
   return {
     title,
@@ -152,7 +150,7 @@ export default async function RouteDetailPage({
   // Merge editorial FAQs (hand-written, higher quality) into the schema
   if (editorialContent?.faqs?.length) {
     const pickLocale = (t: { es: string; en: string; fr: string }) =>
-      locale === "fr" ? t.fr || t.en || t.es : locale === "en" ? t.en || t.es : t.es;
+      locale === "en" ? t.en || t.es : t.es;
     for (const faq of editorialContent.faqs) {
       faqItems.push({
         "@type": "Question",
@@ -191,8 +189,8 @@ export default async function RouteDetailPage({
       <div className="container-custom pt-4">
         <Breadcrumbs
           items={[
-            { name: locale === "es" ? "Inicio" : locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
-            { name: locale === "es" ? "Rutas" : locale === "fr" ? "Itinéraires" : "Routes", href: `/${locale}/rutas` },
+            { name: locale === "es" ? "Inicio" : "Home", href: `/${locale}` },
+            { name: locale === "es" ? "Rutas" : "Routes", href: `/${locale}/rutas` },
             { name: `${originName} → ${destName}` },
           ]}
         />

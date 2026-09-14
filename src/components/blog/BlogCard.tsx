@@ -3,16 +3,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useLocale } from "next-intl";
-import { BlogPost } from "@/types/blog";
+import { BlogPostSummary } from "@/types/blog";
 import { l, t3 } from "@/lib/utils";
 import { getCategoryLabel, getCategoryColor } from "@/lib/blog-category";
 
-export default function BlogCard({ post }: { post: BlogPost }) {
+export default function BlogCard({ post }: { post: BlogPostSummary }) {
   const locale = useLocale();
 
   const formatDate = (dateStr: string) => {
     const date = new Date(dateStr + "T12:00:00");
-    return date.toLocaleDateString(locale === "es" ? "es-MX" : locale === "fr" ? "fr-FR" : "en-US", {
+    return date.toLocaleDateString(locale === "es" ? "es-MX" : "en-US", {
       year: "numeric",
       month: "long",
       day: "numeric",
@@ -50,7 +50,7 @@ export default function BlogCard({ post }: { post: BlogPost }) {
         </p>
         <div className="flex items-center justify-between mt-4 text-xs text-arena-700">
           <span>{formatDate(post.publishedDate)}</span>
-          <span>{post.readingTime} {t3(locale, "min de lectura", "min read", "min de lecture")}</span>
+          <span>{post.readingTime} {t3(locale, "min de lectura", "min read")}</span>
         </div>
       </div>
     </Link>

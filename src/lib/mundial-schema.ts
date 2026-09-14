@@ -164,9 +164,7 @@ export function buildTournamentSchema(venues: MundialVenue[], locale: string) {
     description:
       locale === "es"
         ? "La Copa Mundial de la FIFA 2026 se disputó en 16 sedes de México, Estados Unidos y Canadá del 11 de junio al 19 de julio de 2026. México albergó el partido inaugural en el Estadio Azteca y España se coronó campeón al vencer 1-0 a Argentina en la final."
-        : locale === "fr"
-          ? "La Coupe du Monde de la FIFA 2026 s'est déroulée dans 16 stades au Mexique, aux États-Unis et au Canada du 11 juin au 19 juillet 2026. Le match d'ouverture a eu lieu au Estadio Azteca et l'Espagne a été sacrée championne en battant l'Argentine 1-0 en finale."
-          : "The FIFA World Cup 2026 was held across 16 venues in Mexico, the United States and Canada from June 11 to July 19, 2026. Mexico hosted the opening match at Estadio Azteca and Spain were crowned champions after beating Argentina 1-0 in the final.",
+        : "The FIFA World Cup 2026 was held across 16 venues in Mexico, the United States and Canada from June 11 to July 19, 2026. Mexico hosted the opening match at Estadio Azteca and Spain were crowned champions after beating Argentina 1-0 in the final.",
     startDate: TOURNAMENT_START,
     endDate: TOURNAMENT_END,
     url: `${BASE_URL}/${locale}/mundial`,

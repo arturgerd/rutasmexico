@@ -58,7 +58,7 @@ export default function InteractiveMapExplorer({ destinations }: InteractiveMapE
               : "bg-white text-arena-600 border-arena-200 hover:border-arena-400 hover:shadow-md"
           }`}
         >
-          🗺️ {t3(locale, "Todos", "All", "Tous")}
+          🗺️ {t3(locale, "Todos", "All")}
           <span className={`ml-1.5 text-xs ${activeRegion === "all" ? "text-white/80" : "text-arena-700"}`}>
             ({destinations.length})
           </span>
@@ -109,7 +109,7 @@ export default function InteractiveMapExplorer({ destinations }: InteractiveMapE
             <div className="px-4 py-3 bg-arena-50 border-b border-arena-100">
               <p className="text-xs font-semibold text-arena-500 uppercase tracking-wide">
                 {activeRegion === "all"
-                  ? t3(locale, "Todos los destinos", "All destinations", "Toutes les destinations")
+                  ? t3(locale, "Todos los destinos", "All destinations")
                   : locale === "es"
                   ? REGION_STYLE[activeRegion].label.es
                   : REGION_STYLE[activeRegion].label.en}
@@ -117,8 +117,8 @@ export default function InteractiveMapExplorer({ destinations }: InteractiveMapE
               <p className="text-sm text-arena-700 font-medium mt-0.5">
                 {filtered.length}{" "}
                 {filtered.length === 1
-                  ? t3(locale, "destino", "destination", "destination")
-                  : t3(locale, "destinos", "destinations", "destinations")}
+                  ? t3(locale, "destino", "destination")
+                  : t3(locale, "destinos", "destinations")}
               </p>
             </div>
 
@@ -127,8 +127,7 @@ export default function InteractiveMapExplorer({ destinations }: InteractiveMapE
                 <div className="p-6 text-center text-sm text-arena-700">
                   {t3(locale,
                     "No hay destinos en esta región todavía.",
-                    "No destinations in this region yet.",
-                    "Pas de destinations dans cette région."
+                    "No destinations in this region yet."
                   )}
                 </div>
               ) : (
@@ -179,7 +178,7 @@ export default function InteractiveMapExplorer({ destinations }: InteractiveMapE
                           onClick={(e) => e.stopPropagation()}
                           className="inline-block mt-1.5 text-[11px] text-terracotta-600 hover:text-terracotta-700 font-medium"
                         >
-                          {t3(locale, "Ver guía →", "View guide →", "Voir le guide →")}
+                          {t3(locale, "Ver guía →", "View guide →")}
                         </Link>
                       </div>
                     </button>
@@ -195,8 +194,7 @@ export default function InteractiveMapExplorer({ destinations }: InteractiveMapE
       <p className="text-xs text-arena-700 text-center mt-4">
         {t3(locale,
           "💡 Haz clic en un destino de la lista para verlo en el mapa",
-          "💡 Click a destination from the list to see it on the map",
-          "💡 Cliquez sur une destination pour la voir sur la carte"
+          "💡 Click a destination from the list to see it on the map"
         )}
       </p>
     </div>

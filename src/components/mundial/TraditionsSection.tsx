@@ -73,14 +73,13 @@ export default function TraditionsSection({ locale }: { locale: string }) {
   return (
     <div className="bg-white rounded-2xl p-6 shadow-sm mt-6">
       <h3 className="font-display font-bold text-arena-800 text-lg mb-2">
-        🎉 {t3(locale, "Tradiciones y ambiente en el estadio", "Stadium traditions & atmosphere", "Traditions et ambiance au stade")}
+        🎉 {t3(locale, "Tradiciones y ambiente en el estadio", "Stadium traditions & atmosphere")}
       </h3>
       <p className="text-sm text-arena-500 mb-5">
         {t3(
           locale,
           "Escucha cómo suena el Mundial mexicano: toca ▶ en cada tarjeta.",
-          "Hear what the Mexican World Cup sounds like: tap ▶ on each card.",
-          "Écoute à quoi ressemble la Coupe du Monde mexicaine : touche ▶ sur chaque carte."
+          "Hear what the Mexican World Cup sounds like: tap ▶ on each card."
         )}
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
@@ -92,8 +91,7 @@ export default function TraditionsSection({ locale }: { locale: string }) {
         🎵 {t3(
           locale,
           "Clips de audio: Cielito Lindo (Wikimedia, dominio público). Trompeta y multitud sintetizados bajo CC0.",
-          "Audio clips: Cielito Lindo (Wikimedia, public domain). Trumpet and crowd synthesized under CC0.",
-          "Extraits audio : Cielito Lindo (Wikimedia, domaine public). Trompette et foule synthétisées sous CC0."
+          "Audio clips: Cielito Lindo (Wikimedia, public domain). Trumpet and crowd synthesized under CC0."
         )}
       </p>
     </div>
@@ -105,10 +103,10 @@ function TraditionCard({ tradition, locale }: { tradition: Tradition; locale: st
   const [playing, setPlaying] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const title = t3(locale, tradition.title.es, tradition.title.en, tradition.title.fr);
-  const description = t3(locale, tradition.description.es, tradition.description.en, tradition.description.fr);
+  const title = t3(locale, tradition.title.es, tradition.title.en);
+  const description = t3(locale, tradition.description.es, tradition.description.en);
   const audioLabel = tradition.audioLabel
-    ? t3(locale, tradition.audioLabel.es, tradition.audioLabel.en, tradition.audioLabel.fr)
+    ? t3(locale, tradition.audioLabel.es, tradition.audioLabel.en)
     : "";
 
   useEffect(() => {
@@ -190,9 +188,9 @@ function TraditionCard({ tradition, locale }: { tradition: Tradition; locale: st
                 )}
                 <span>
                   {playing
-                    ? t3(locale, "Detener", "Stop", "Arrêter")
+                    ? t3(locale, "Detener", "Stop")
                     : loading
-                    ? t3(locale, "Cargando…", "Loading…", "Chargement…")
+                    ? t3(locale, "Cargando…", "Loading…")
                     : audioLabel}
                 </span>
               </button>

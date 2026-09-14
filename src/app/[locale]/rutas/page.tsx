@@ -11,14 +11,10 @@ export const revalidate = 86400;
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const title = locale === "es"
     ? "Rutas entre ciudades de México | Vuelos y bus"
-    : locale === "fr"
-      ? "Itinéraires au Mexique | Vols et bus"
-      : "Routes in Mexico | Flights and buses";
+    : "Routes in Mexico | Flights and buses";
   const description = locale === "es"
     ? "Compara como viajar entre ciudades de Mexico: vuelos, autobuses, tiempos, distancias y precios. CDMX, Cancun, Guadalajara, Monterrey y mas de 50 rutas."
-    : locale === "fr"
-      ? "Comparez comment voyager entre les villes du Mexique: vols, bus, temps, distances et prix. Mexico, Cancun, Guadalajara, Monterrey et plus de 50 itineraires."
-      : "Compare how to travel between Mexican cities: flights, buses, travel times, distances and prices. Mexico City, Cancun, Guadalajara, Monterrey and 50+ routes.";
+    : "Compare how to travel between Mexican cities: flights, buses, travel times, distances and prices. Mexico City, Cancun, Guadalajara, Monterrey and 50+ routes.";
   return {
     title,
     description,
@@ -57,9 +53,7 @@ export default async function RutasPage({ params: { locale } }: { params: { loca
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: locale === "es"
-      ? "Rutas entre ciudades de México"
-      : locale === "fr" ? "Itinéraires au Mexique" : "Routes between Mexican cities",
+    name: locale === "es" ? "Rutas entre ciudades de México" : "Routes between Mexican cities",
     itemListElement: routeItems,
   };
 
@@ -77,7 +71,7 @@ export default async function RutasPage({ params: { locale } }: { params: { loca
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <div className="container-custom">
-        <RouteSearch destinations={destinations} routes={routes} />
+        <RouteSearch destinations={destinations.map((d) => ({ id: d.id, name: d.name }))} routes={routes} />
         <RoutesGuide locale={locale} />
       </div>
     </div>

@@ -34,7 +34,7 @@ export default function ImageCarousel({ images, alt, height = "h-48" }: ImageCar
     <div className={`relative ${height} w-full overflow-hidden`}>
       <Image
         src={images[current]}
-        alt={`${alt} ${current + 1}`}
+        alt={images.length > 1 ? `${alt} (${current + 1}/${images.length})` : alt}
         fill
         className="object-cover"
         sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"

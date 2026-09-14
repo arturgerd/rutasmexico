@@ -3,11 +3,10 @@ import Link from "next/link";
 import { t3, seoAlternates, seoOpenGraph } from "@/lib/utils";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
-  const title = t3(locale, "Términos y Condiciones", "Terms of Service", "Conditions d'Utilisation");
+  const title = t3(locale, "Términos y Condiciones", "Terms of Service");
   const description = t3(locale,
     "Términos y condiciones de uso de RutasMéxico.",
-    "RutasMéxico terms of service and conditions of use.",
-    "Conditions d'utilisation de RutasMéxico."
+    "RutasMéxico terms of service and conditions of use."
   );
   return {
     title,
@@ -27,22 +26,22 @@ export default function TerminosPage({ params: { locale } }: { params: { locale:
     <div className="min-h-screen bg-arena-50">
       <div className="container-custom py-12 max-w-4xl">
         {/* Breadcrumb */}
-        <nav className="text-sm text-arena-700 mb-8">
+        <nav aria-label="Breadcrumb" className="text-sm text-arena-700 mb-8">
           <Link href={`/${locale}`} className="hover:text-terracotta-500 transition-colors">
-            {t3(locale, "Inicio", "Home", "Accueil")}
+            {t3(locale, "Inicio", "Home")}
           </Link>
           <span className="mx-2">/</span>
           <span className="text-arena-600">
-            {t3(locale, "Términos y Condiciones", "Terms of Service", "Conditions d'Utilisation")}
+            {t3(locale, "Términos y Condiciones", "Terms of Service")}
           </span>
         </nav>
 
         <div className="bg-white rounded-2xl shadow-lg border border-arena-100 p-8 md:p-12">
           <h1 className="font-display text-3xl md:text-4xl font-bold text-arena-900 mb-2">
-            {t3(locale, "Términos y Condiciones", "Terms of Service", "Conditions d'Utilisation")}
+            {t3(locale, "Términos y Condiciones", "Terms of Service")}
           </h1>
           <p className="text-arena-700 text-sm mb-8">
-            {t3(locale, `Última actualización: ${lastUpdated}`, `Last updated: March 23, 2026`, `Dernière mise à jour : 23 mars 2026`)}
+            {t3(locale, `Última actualización: ${lastUpdated}`, `Last updated: March 23, 2026`)}
           </p>
 
           <div className="prose prose-lg max-w-none prose-headings:font-display prose-headings:text-arena-900 prose-p:text-arena-600 prose-li:text-arena-600 prose-strong:text-arena-800 prose-a:text-terracotta-500">
@@ -108,56 +107,6 @@ export default function TerminosPage({ params: { locale } }: { params: { locale:
                 <h2>12. Contact</h2>
                 <p>For questions about these terms, contact us at:</p>
                 <p><strong>Email:</strong> contacto@rutasmexico.com.mx</p>
-              </>
-            ) : locale === "fr" ? (
-              <>
-                <h2>1. Acceptation des conditions</h2>
-                <p>En accédant et en utilisant RutasMéxico (rutasmexico.com.mx), vous acceptez d&apos;être lié par ces Conditions d&apos;Utilisation. Si vous n&apos;acceptez pas ces conditions, veuillez ne pas utiliser notre site web.</p>
-
-                <h2>2. Description du service</h2>
-                <p>RutasMéxico est un site d&apos;information et de comparaison de voyages qui fournit :</p>
-                <ul>
-                  <li>Guides de voyage et informations sur les destinations au Mexique</li>
-                  <li>Recherche de vols et comparaison de prix via Aviasales/Travelpayouts</li>
-                  <li>Recherche d&apos;hôtels et comparaison de prix</li>
-                  <li>Informations sur les itinéraires de bus et liens de réservation</li>
-                  <li>Conseils de voyage et articles de blog</li>
-                </ul>
-                <p>Nous agissons en tant qu&apos;agrégateur d&apos;informations et service de référencement affilié. Nous ne vendons pas directement de billets, de chambres d&apos;hôtel ou de services de voyage.</p>
-
-                <h2>3. Divulgation d&apos;affiliation</h2>
-                <p>RutasMéxico participe à des programmes d&apos;affiliation, notamment Travelpayouts. Lorsque vous cliquez sur des liens vers des sites tiers et effectuez un achat, nous pouvons recevoir une commission sans coût supplémentaire pour vous.</p>
-
-                <h2>4. Aucune garantie sur les prix et les informations</h2>
-                <p>Bien que nous fassions des efforts raisonnables pour assurer l&apos;exactitude :</p>
-                <ul>
-                  <li>Les prix affichés sont des estimations et peuvent changer sans préavis</li>
-                  <li>La disponibilité des vols et des hôtels est sujette à modification</li>
-                  <li>Les informations de voyage peuvent devenir obsolètes</li>
-                  <li>Nous ne sommes pas responsables des inexactitudes dans les données de tiers</li>
-                </ul>
-
-                <h2>5. Sites web tiers</h2>
-                <p>Notre site contient des liens vers des sites tiers. Nous ne sommes pas responsables du contenu ou des pratiques de ces sites externes.</p>
-
-                <h2>6. Propriété intellectuelle</h2>
-                <p>Tout le contenu de RutasMéxico est notre propriété et est protégé par les lois sur le droit d&apos;auteur. Vous ne pouvez pas reproduire ou distribuer ce contenu sans notre autorisation écrite.</p>
-
-                <h2>7. Limitation de responsabilité</h2>
-                <p>RutasMéxico est fourni &quot;tel quel&quot; sans garantie d&apos;aucune sorte. Nous ne serons pas responsables des dommages indirects résultant de votre utilisation du site.</p>
-
-                <h2>8. Publicité</h2>
-                <p>Notre site affiche des publicités via Google AdSense. Ces annonces peuvent être personnalisées en fonction de votre activité de navigation.</p>
-
-                <h2>9. Modifications des conditions</h2>
-                <p>Nous nous réservons le droit de modifier ces conditions à tout moment. Les changements prennent effet immédiatement après publication.</p>
-
-                <h2>10. Droit applicable</h2>
-                <p>Ces conditions sont régies par les lois du Mexique. Tout litige sera résolu devant les tribunaux de Mexico.</p>
-
-                <h2>11. Contact</h2>
-                <p>Pour toute question, contactez-nous à :</p>
-                <p><strong>Email :</strong> contacto@rutasmexico.com.mx</p>
               </>
             ) : (
               <>

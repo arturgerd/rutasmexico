@@ -30,9 +30,9 @@ export default async function MundialSimuladorPage({ params: { locale } }: { par
   const teams = getSimTeams();
 
   const breadcrumbs = buildBreadcrumbList(locale, [
-    { name: t3(locale, "Inicio", "Home", "Accueil"), url: `https://rutasmexico.com.mx/${locale}` },
-    { name: t3(locale, "Mundial 2026", "World Cup 2026", "Coupe du Monde 2026"), url: `https://rutasmexico.com.mx/${locale}/mundial` },
-    { name: t3(locale, "Simulador", "Simulator", "Simulateur") },
+    { name: t3(locale, "Inicio", "Home"), url: `https://rutasmexico.com.mx/${locale}` },
+    { name: t3(locale, "Mundial 2026", "World Cup 2026"), url: `https://rutasmexico.com.mx/${locale}/mundial` },
+    { name: t3(locale, "Simulador", "Simulator") },
   ]);
 
   return (
@@ -42,12 +42,12 @@ export default async function MundialSimuladorPage({ params: { locale } }: { par
       {/* Hero */}
       <div className="bg-arena-900 py-12 md:py-16">
         <div className="container-custom">
-          <nav className="text-xs text-arena-300 mb-4">
-            <Link href={`/${locale}`} className="hover:text-white">{t3(locale, "Inicio", "Home", "Accueil")}</Link>
+          <nav aria-label="Breadcrumb" className="text-xs text-arena-300 mb-4">
+            <Link href={`/${locale}`} className="hover:text-white">{t3(locale, "Inicio", "Home")}</Link>
             {" / "}
-            <Link href={`/${locale}/mundial`} className="hover:text-white">{t3(locale, "Mundial 2026", "World Cup 2026", "Coupe du Monde 2026")}</Link>
+            <Link href={`/${locale}/mundial`} className="hover:text-white">{t3(locale, "Mundial 2026", "World Cup 2026")}</Link>
             {" / "}
-            <span className="text-white">{t3(locale, "Simulador", "Simulator", "Simulateur")}</span>
+            <span className="text-white">{t3(locale, "Simulador", "Simulator")}</span>
           </nav>
           <div className="text-center">
             <div className="inline-flex items-center gap-2 bg-jade-600 rounded-full px-5 py-2 mb-4">

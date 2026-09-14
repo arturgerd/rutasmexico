@@ -7,14 +7,13 @@ import mundialVenues from "@/data/mundial-venues.json";
 import camionesCancun from "@/data/camiones-cancun.json";
 
 const BASE_URL = "https://rutasmexico.com.mx";
-// FR omitted from sitemap until translations reach parity with es/en —
-// exposing FR URLs with mostly-Spanish content triggers Google duplicate-content penalties.
-// Routes still resolve at /fr/* via next-intl; we just don't advertise them to crawlers yet.
+// Only es/en: FR was retired as a locale (routing.ts declares es/en and
+// next.config.mjs 301s /fr/* to /es/*), so there is nothing else to advertise.
 const locales = ["es", "en"];
 
 // Stable build-time date so the sitemap doesn't tell Google "everything changed"
 // on every crawl. Bump this when doing a sweep update across many static pages.
-const BUILD_DATE = new Date("2026-07-19");
+const BUILD_DATE = new Date("2026-09-13");
 
 // Per-entry lastModified resolver: if a data file entry exposes its own lastModified
 // (yyyy-mm-dd or ISO), use it; otherwise fall back to BUILD_DATE. This lets us refresh

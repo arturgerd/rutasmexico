@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 import { useLocale } from "next-intl";
-import { BlogPost, BlogCategory } from "@/types/blog";
+import { BlogPostSummary, BlogCategory } from "@/types/blog";
 import { Locale } from "@/types/common";
 import { t3 } from "@/lib/utils";
 import BlogCard from "./BlogCard";
 
 interface BlogFilterProps {
-  posts: BlogPost[];
+  posts: BlogPostSummary[];
 }
 
 const CATEGORIES: { id: "all" | BlogCategory; labelEs: string; labelEn: string; labelFr: string; emoji: string }[] = [
@@ -50,7 +50,7 @@ export default function BlogFilter({ posts }: BlogFilterProps) {
                   : "bg-white text-arena-600 border-arena-200 hover:border-terracotta-300 hover:text-terracotta-600 hover:shadow-md"
               }`}
             >
-              {cat.emoji} {t3(locale, cat.labelEs, cat.labelEn, cat.labelFr)}
+              {cat.emoji} {t3(locale, cat.labelEs, cat.labelEn)}
               <span className={`ml-1.5 text-xs ${isActive ? "text-white/80" : "text-arena-700"}`}>
                 ({count})
               </span>
@@ -65,8 +65,7 @@ export default function BlogFilter({ posts }: BlogFilterProps) {
           {t3(
             locale,
             `Mostrando ${filteredPosts.length} artículo${filteredPosts.length !== 1 ? "s" : ""} en esta categoría`,
-            `Showing ${filteredPosts.length} article${filteredPosts.length !== 1 ? "s" : ""} in this category`,
-            `${filteredPosts.length} article${filteredPosts.length !== 1 ? "s" : ""} dans cette catégorie`
+            `Showing ${filteredPosts.length} article${filteredPosts.length !== 1 ? "s" : ""} in this category`
           )}
         </p>
       )}
@@ -83,7 +82,7 @@ export default function BlogFilter({ posts }: BlogFilterProps) {
         <div className="text-center py-16">
           <p className="text-4xl mb-4">🔍</p>
           <p className="text-arena-500 text-lg">
-            {t3(locale, "No hay artículos en esta categoría aún", "No articles in this category yet", "Pas encore d'articles dans cette catégorie")}
+            {t3(locale, "No hay artículos en esta categoría aún", "No articles in this category yet")}
           </p>
         </div>
       )}

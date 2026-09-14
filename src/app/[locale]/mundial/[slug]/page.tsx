@@ -24,8 +24,7 @@ export async function generateMetadata({ params: { locale, slug } }: { params: {
   const cityOnly = fullName.split(/\s*-\s*/)[0].trim();
   const title = t3(locale as Locale,
     `Mundial 2026 en ${cityOnly} - ${venue.stadium.name}`,
-    `World Cup 2026 in ${cityOnly} - ${venue.stadium.name}`,
-    `Coupe du Monde 2026 à ${cityOnly} - ${venue.stadium.name}`
+    `World Cup 2026 in ${cityOnly} - ${venue.stadium.name}`
   );
   // Truncate the venue description to ~155 chars so SERP snippet doesn't get cut
   // mid-word; the full prose still renders inside the page body. Cut on a word
@@ -59,11 +58,11 @@ export default async function MundialVenuePage({
   const venueName = localize(venue.name, locale as Locale);
   const breadcrumbs = buildBreadcrumbList(locale, [
     {
-      name: t3(locale as Locale, "Inicio", "Home", "Accueil"),
+      name: t3(locale as Locale, "Inicio", "Home"),
       url: `https://rutasmexico.com.mx/${locale}`,
     },
     {
-      name: t3(locale as Locale, "Mundial 2026", "World Cup 2026", "Coupe du Monde 2026"),
+      name: t3(locale as Locale, "Mundial 2026", "World Cup 2026"),
       url: `https://rutasmexico.com.mx/${locale}/mundial`,
     },
     { name: venueName },
@@ -89,8 +88,8 @@ export default async function MundialVenuePage({
       <div className="container-custom pt-4">
         <Breadcrumbs
           items={[
-            { name: t3(locale as Locale, "Inicio", "Home", "Accueil"), href: `/${locale}` },
-            { name: t3(locale as Locale, "Mundial 2026", "World Cup 2026", "Coupe du Monde 2026"), href: `/${locale}/mundial` },
+            { name: t3(locale as Locale, "Inicio", "Home"), href: `/${locale}` },
+            { name: t3(locale as Locale, "Mundial 2026", "World Cup 2026"), href: `/${locale}/mundial` },
             { name: venueName },
           ]}
         />

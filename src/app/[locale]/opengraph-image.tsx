@@ -11,15 +11,13 @@ export default async function Image({ params: { locale } }: { params: { locale: 
     emoji: "🇲🇽",
     title: ogText(locale,
       "RutasMéxico",
-      "RutasMéxico",
       "RutasMéxico"
     ),
     subtitle: ogText(locale,
       "Vuelos · Autobuses · Hoteles · Guías de viaje",
-      "Flights · Buses · Hotels · Travel guides",
-      "Vols · Bus · Hôtels · Guides de voyage"
+      "Flights · Buses · Hotels · Travel guides"
     ),
     background: "linear-gradient(135deg, #da4b1a 0%, #742918 50%, #1e2d89 100%)",
-    badgeText: ogText(locale, "La mejor guía de viaje", "The best travel guide", "Le meilleur guide de voyage"),
+    badgeText: ogText(locale, "La mejor guía de viaje", "The best travel guide"),
   });
 }

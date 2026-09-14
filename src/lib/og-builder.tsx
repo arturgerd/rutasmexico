@@ -96,8 +96,7 @@ export function buildLandingOg({
   );
 }
 
-export function ogText(locale: string, es: string, en: string, fr: string): string {
-  if (locale === "fr") return fr;
+export function ogText(locale: string, es: string, en: string): string {
   if (locale === "en") return en;
   return es;
 }

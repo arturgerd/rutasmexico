@@ -10,16 +10,40 @@ import Icon from "@/components/ui/Icon";
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
+  const mobileNavRef = useRef<HTMLElement>(null);
   const t = useTranslations("common");
   const locale = useLocale();
 
-  // Close the mobile menu on Escape and return focus to the toggle button (a11y).
+  // Mobile menu keyboard handling (a11y): move focus into the menu when it
+  // opens, keep Tab cycling between the toggle button and the menu items so
+  // focus cannot wander into the page behind it, and close on Escape returning
+  // focus to the toggle button.
   useEffect(() => {
     if (!mobileMenuOpen) return;
+    const focusables = () => {
+      const inNav = mobileNavRef.current
+        ? Array.from(mobileNavRef.current.querySelectorAll<HTMLElement>("a[href], button:not([disabled])"))
+        : [];
+      return menuButtonRef.current ? [menuButtonRef.current, ...inNav] : inNav;
+    };
+    focusables()[1]?.focus();
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         setMobileMenuOpen(false);
         menuButtonRef.current?.focus();
+        return;
+      }
+      if (e.key !== "Tab") return;
+      const items = focusables();
+      if (items.length === 0) return;
+      const first = items[0];
+      const last = items[items.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
       }
     };
     document.addEventListener("keydown", onKeyDown);
@@ -82,7 +106,7 @@ export default function Header() {
               desplegable, y los enlaces secundarios no aparecen hasta xl. En
               ambos casos el menu movil los lista todos, asi que no se pierde
               ningun destino: solo cambia por donde se llega. */}
-          <nav className="hidden lg:flex items-center gap-3">
+          <nav aria-label={locale === "es" ? "Navegación principal" : "Main navigation"} className="hidden lg:flex items-center gap-3">
             {primaryLinks.map((link) => (
               <Link
                 key={link.href}
@@ -118,7 +142,11 @@ export default function Header() {
             ref={menuButtonRef}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="lg:hidden p-3 -mr-3 min-w-[44px] min-h-[44px] inline-flex items-center justify-center text-arena-700 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500"
-            aria-label={mobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
+            aria-label={
+              mobileMenuOpen
+                ? locale === "es" ? "Cerrar menú" : "Close menu"
+                : locale === "es" ? "Abrir menú" : "Open menu"
+            }
             aria-expanded={mobileMenuOpen}
             aria-controls="mobile-nav"
           >
@@ -136,7 +164,12 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <nav id="mobile-nav" className="lg:hidden pb-4 border-t border-arena-200 pt-4">
+          <nav
+            id="mobile-nav"
+            ref={mobileNavRef}
+            aria-label={locale === "es" ? "Menú de navegación" : "Navigation menu"}
+            className="lg:hidden pb-4 border-t border-arena-200 pt-4"
+          >
             <div className="flex flex-col gap-3">
               <Link
                 href={`/${locale}/futbol`}

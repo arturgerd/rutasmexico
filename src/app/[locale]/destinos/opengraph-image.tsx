@@ -11,15 +11,13 @@ export default async function Image({ params: { locale } }: { params: { locale: 
     emoji: "🌎",
     title: ogText(locale,
       "Destinos imperdibles de México",
-      "Must-visit destinations in Mexico",
-      "Destinations incontournables au Mexique"
+      "Must-visit destinations in Mexico"
     ),
     subtitle: ogText(locale,
       "Playas, pueblos mágicos, ciudades coloniales y zonas arqueológicas",
-      "Beaches, magical towns, colonial cities and archaeological sites",
-      "Plages, villages magiques, villes coloniales et sites archéologiques"
+      "Beaches, magical towns, colonial cities and archaeological sites"
     ),
     background: "linear-gradient(135deg, #e96424 0%, #b53717 100%)",
-    badgeText: ogText(locale, "Guías completas", "Complete guides", "Guides complets"),
+    badgeText: ogText(locale, "Guías completas", "Complete guides"),
   });
 }

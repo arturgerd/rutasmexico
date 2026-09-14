@@ -30,8 +30,8 @@ export default async function MundialPenalesPage({ params: { locale } }: { param
   const teams = getSimTeams();
 
   const breadcrumbs = buildBreadcrumbList(locale, [
-    { name: t3(locale, "Inicio", "Home", "Accueil"), url: `https://rutasmexico.com.mx/${locale}` },
-    { name: t3(locale, "Mundial 2026", "World Cup 2026", "Coupe du Monde 2026"), url: `https://rutasmexico.com.mx/${locale}/mundial` },
+    { name: t3(locale, "Inicio", "Home"), url: `https://rutasmexico.com.mx/${locale}` },
+    { name: t3(locale, "Mundial 2026", "World Cup 2026"), url: `https://rutasmexico.com.mx/${locale}/mundial` },
     { name: t3(locale, "Penales", "Penalties") },
   ]);
 
@@ -42,7 +42,7 @@ export default async function MundialPenalesPage({ params: { locale } }: { param
       {/* Hero */}
       <div className="bg-arena-900 py-10 md:py-14">
         <div className="container-custom">
-          <nav className="text-xs text-arena-300 mb-4">
+          <nav aria-label="Breadcrumb" className="text-xs text-arena-300 mb-4">
             <Link href={`/${locale}`} className="hover:text-white">{t3(locale, "Inicio", "Home")}</Link>
             {" / "}
             <Link href={`/${locale}/mundial`} className="hover:text-white">{t3(locale, "Mundial 2026", "World Cup 2026")}</Link>

@@ -81,7 +81,7 @@ export default function MercadoLibreBanner({ context = "general" }: MercadoLibre
               {locale === "en" ? product.name.en : product.name.es}
             </p>
             <span className="inline-block text-xs font-bold text-white bg-oro-500 group-hover:bg-terracotta-500 transition-colors px-3 py-1.5 rounded-full">
-              {t3(locale, "Ver en ML", "View on ML", "Voir sur ML")}
+              {t3(locale, "Ver en ML", "View on ML")}
             </span>
           </a>
         ))}

@@ -11,15 +11,13 @@ export default async function Image({ params: { locale } }: { params: { locale: 
     emoji: "🚌",
     title: ogText(locale,
       "Autobuses baratos en México",
-      "Cheap bus tickets in Mexico",
-      "Billets de bus pas chers"
+      "Cheap bus tickets in Mexico"
     ),
     subtitle: ogText(locale,
-      "ADO · ETN · Primera Plus · Estrella Roja · Pullman",
       "ADO · ETN · Primera Plus · Estrella Roja · Pullman",
       "ADO · ETN · Primera Plus · Estrella Roja · Pullman"
     ),
     background: "linear-gradient(135deg, #cc8a01 0%, #864d0c 100%)",
-    badgeText: ogText(locale, "30+ líneas", "30+ companies", "30+ compagnies"),
+    badgeText: ogText(locale, "30+ líneas", "30+ companies"),
   });
 }

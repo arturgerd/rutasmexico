@@ -25,14 +25,8 @@ export function formatDuration(minutes: number): string {
 /**
  * Inline translation helper for the supported locales (es/en).
  * Usage: t3(locale, "Hola", "Hello")
- *
- * The trailing `_fr` parameter is accepted but ignored — it remains in the
- * signature so legacy callers still type-check without a sweeping refactor.
- * French was removed as a supported locale (see /fr/* → /es/* redirect in
- * next.config.mjs); any callsite still passing a third string is dead code.
  */
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-export function t3(locale: string, es: string, en: string, _fr?: string): string {
+export function t3(locale: string, es: string, en: string): string {
   if (locale === "es") return es;
   return en;
 }

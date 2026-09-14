@@ -1,5 +1,5 @@
 import { setRequestLocale } from "next-intl/server";
-import { getAllBlogPosts } from "@/lib/data/blog";
+import { getAllBlogSummaries } from "@/lib/data/blog";
 import BlogFilter from "@/components/blog/BlogFilter";
 import { t3, seoAlternates, seoOpenGraph } from "@/lib/utils";
 
@@ -9,14 +9,12 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const year = new Date().getFullYear();
   const title = t3(locale,
     `Blog de Viajes México ${year} | Guías, tips y rutas`,
-    `Mexico Travel Blog ${year} | Guides, tips & routes`,
-    `Blog de Voyage Mexique ${year} | Guides, conseils et routes`
+    `Mexico Travel Blog ${year} | Guides, tips & routes`
   );
   const description = t3(
     locale,
     `Guías completas, comparativas de aerolíneas, tips de seguridad, rutas y consejos reales para viajar por México en ${year}. Ahorra tiempo y dinero en cada viaje.`,
-    `Complete guides, airline comparisons, safety tips, routes and real advice for traveling Mexico in ${year}. Save time and money on every trip.`,
-    `Guides complets, comparatifs de compagnies, conseils de sécurité, itinéraires et astuces pour voyager au Mexique en ${year}. Économisez sur chaque voyage.`
+    `Complete guides, airline comparisons, safety tips, routes and real advice for traveling Mexico in ${year}. Save time and money on every trip.`
   );
   return {
     title,
@@ -29,7 +27,9 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 export default async function BlogPage({ params: { locale } }: { params: { locale: string } }) {
   setRequestLocale(locale);
-  const posts = await getAllBlogPosts();
+  // Solo el resumen de cada post: el HTML del artículo no se necesita aquí y
+  // BlogFilter es un componente cliente (todo lo que recibe viaja al navegador).
+  const posts = await getAllBlogSummaries();
 
   const baseUrl = "https://rutasmexico.com.mx";
   const isEs = locale === "es";
@@ -37,7 +37,7 @@ export default async function BlogPage({ params: { locale } }: { params: { local
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: isEs ? "Blog de Viajes México" : locale === "fr" ? "Blog de Voyage Mexique" : "Mexico Travel Blog",
+    name: isEs ? "Blog de Viajes México" : "Mexico Travel Blog",
     numberOfItems: posts.length,
     itemListElement: posts.map((p, i) => ({
       "@type": "ListItem",
@@ -67,18 +67,17 @@ export default async function BlogPage({ params: { locale } }: { params: { local
           <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm rounded-full px-4 py-2 mb-4 border border-white/20">
             <span>📝</span>
             <span className="text-white text-sm font-medium">
-              {t3(locale, `${posts.length} artículos`, `${posts.length} articles`, `${posts.length} articles`)}
+              {t3(locale, `${posts.length} artículos`, `${posts.length} articles`)}
             </span>
           </div>
           <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
-            {t3(locale, "Blog de Viajes", "Travel Blog", "Blog de Voyage")}
+            {t3(locale, "Blog de Viajes", "Travel Blog")}
           </h1>
           <p className="text-white/80 text-lg max-w-2xl mx-auto">
             {t3(
               locale,
               "Guías, tips y consejos prácticos para descubrir lo mejor de México",
-              "Guides, tips and practical advice to discover the best of Mexico",
-              "Guides, conseils et astuces pratiques pour découvrir le meilleur du Mexique"
+              "Guides, tips and practical advice to discover the best of Mexico"
             )}
           </p>
         </div>
